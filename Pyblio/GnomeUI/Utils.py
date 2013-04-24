@@ -23,14 +23,15 @@
 
 import os
 
-import gtk, pango
-import gtk.glade
+from gi.repository import Gtk, Pango, Gdk
+# import gtk, pango
+# import Gtk.glade
 
-from gnome import ui
+# from gnome import ui
 
 from Pyblio import Config, version
 
-import gconf
+from gi.repository import GConf
 
 class Callback:
 
@@ -40,11 +41,11 @@ class Callback:
     def __init__ (self, question, parent = None, cancel_add = False):
 
         self.dialog = \
-                    gtk.MessageDialog (parent,
-                                       gtk.DIALOG_MODAL |
-                                       gtk.DIALOG_DESTROY_WITH_PARENT,
-                                       gtk.MESSAGE_QUESTION,
-                                       gtk.BUTTONS_YES_NO,
+                    Gtk.MessageDialog (parent,
+                                       Gtk.DialogFlags.MODAL |
+                                       Gtk.DialogFlags.DESTROY_WITH_PARENT,
+                                       Gtk.MessageType.QUESTION,
+                                       Gtk.ButtonsType.YES_NO,
                                        question)
         if cancel_add:
             self.dialog.add_button(gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL)
@@ -53,9 +54,9 @@ class Callback:
 
     def answer (self):
         res = self.dialog.run ()
-        if res == gtk.RESPONSE_YES:
+        if res == Gtk.RESPONSE_YES:
             res = True
-        elif res == gtk.RESPONSE_NO:
+        elif res == Gtk.RESPONSE_NO:
             res = False
         else:
             res = 2
@@ -96,7 +97,7 @@ class GladeWindow:
     def __init__ (self, parent = None, window = None):
         
         gp = os.path.join(glade_root, self.gladeinfo ['file'])
-        self.xml = gtk.glade.XML (gp, window, domain = "pybliographer")
+        self.xml = Gtk.glade.XML (gp, window, domain = "pybliographer")
         self.xml.signal_autoconnect (self)
 
         for w in self.xml.get_widget_prefix ('_w_'):
@@ -131,27 +132,29 @@ class GladeWindow:
         return
     
     
-config = gconf.client_get_default ()
+config = GConf.Client.get_default ()
 
 cursor = {
-    'clock' : gtk.gdk.Cursor (gtk.gdk.WATCH),
-    'normal': gtk.gdk.Cursor (gtk.gdk.LEFT_PTR),
+    'clock' : Gdk.Cursor.new(Gdk.CursorType.WATCH),
+    'normal': Gdk.Cursor.new(Gdk.CursorType.LEFT_PTR),
     }
 
 
 def set_cursor (self, name):
 
+    # FIXME: Port to Gtk3
+    return
     window = self.get_toplevel ().window
     if not window: return
     
     window.set_cursor (cursor [name])
         
-    while gtk.events_pending ():
-        gtk.main_iteration (False)
+    while Gtk.events_pending ():
+        Gtk.main_iteration (False)
     return
 
 
-##_tooltips = gtk.Tooltips ()
+##_tooltips = Gtk.Tooltips ()
 
 
 ##def set_tip (w, text):
@@ -168,7 +171,7 @@ def set_cursor (self, name):
 def popup_add (menu, item, action = None, argument = None):
     ''' Helper to add a new menu entry '''
     
-    tmp = gtk.MenuItem (item)
+    tmp = Gtk.MenuItem (item)
     if action:
         tmp.connect ('activate', action, argument)
     
@@ -180,19 +183,19 @@ def popup_add (menu, item, action = None, argument = None):
 def error_dialog (title, err, parent = None):
 
     dialog = \
-           gtk.MessageDialog (parent,
-                              gtk.DIALOG_MODAL |
-                              gtk.DIALOG_DESTROY_WITH_PARENT,
-                              gtk.MESSAGE_ERROR,
+           Gtk.MessageDialog (parent,
+                              Gtk.DialogFlags.MODAL |
+                              Gtk.DialogFlags.DESTROY_WITH_PARENT,
+                              Gtk.MessageType.ERROR,
                               message_format = title)
 
-    b = dialog.add_button (gtk.STOCK_OK, gtk.RESPONSE_OK)
+    b = dialog.add_button (Gtk.STOCK_OK, Gtk.ResponseType.OK)
     b.set_property ('has_default', True)
     
-    buff = gtk.TextBuffer ()
-    title = buff.create_tag ('title', weight = pango.WEIGHT_BOLD)
+    buff = Gtk.TextBuffer ()
+    title = buff.create_tag ('title', weight = Pango.Weight.BOLD)
 
-    text = gtk.TextView ()
+    text = Gtk.TextView ()
     text.set_editable (False)
     text.set_cursor_visible (False)
     text.set_buffer (buff)
@@ -205,9 +208,9 @@ def error_dialog (title, err, parent = None):
     
     buff.insert (iter, str (err))
     
-    holder = gtk.ScrolledWindow ()
-    holder.set_policy (gtk.POLICY_AUTOMATIC,
-                       gtk.POLICY_AUTOMATIC)
+    holder = Gtk.ScrolledWindow ()
+    holder.set_policy (Gtk.PolicyType.AUTOMATIC,
+                       Gtk.PolicyType.AUTOMATIC)
     holder.add (text)
     
     dialog.vbox.pack_start (holder)
