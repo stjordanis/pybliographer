@@ -25,10 +25,8 @@
 
 from gi.repository import GObject
 
-# from gnome import ui
 from gettext import gettext as _
-# import gnome
-from gi.repository import Gtk, Gdk
+from gi.repository import Gtk, Gdk, GdkPixbuf
 
 from Pyblio.GnomeUI import Editor, Entry, FileSelector, Format
 from Pyblio.GnomeUI import Index, OpenURL, Search, Utils
@@ -1229,34 +1227,37 @@ class Document (Connector.Publisher):
             self.w.error (_("Can't display documentation:\n%s") % msg)
             
         return
-    
+
     def about (self, *arg):
-
-	pybliologo = gtk.gdk.pixbuf_new_from_file(
-			os.path.join (version.pybdir, 'pixmaps', 'pybliographic-logo.png'))
-        about = ui.About ('Pybliographic',
-                          version.version,
-                          _("This program is copyrighted under the GNU GPL"),
-                          _("GNOME interface to the Pybliographer system."),
-                          ['Hervé Dréau',
-                           'Frédéric Gobry',
-                           'Zoltán Kóta',
-                           'Travis Oliphant',
-                           'Darrell Rudmann',
-                           'Peter Schulte-Stracke',
-                           'John Vu'],
-                          ['Yuri Bongiorno',
-                           'Frédéric Gobry',
-                           'Zoltán Kóta'],
-                          _('GNOME Translation Team'),
-                          pybliologo)
-
-        about.set_transient_for (self.w)
+        pybliologo = GdkPixbuf.Pixbuf.new_from_file(
+                        os.path.join (version.pybdir,
+                                      'pixmaps',
+                                      'pybliographic-logo.png'))
+        authors = ['Hervé Dréau',
+                   'Frédéric Gobry',
+                   'Zoltán Kóta',
+                   'Travis Oliphant',
+                   'Darrell Rudmann',
+                   'Peter Schulte-Stracke',
+                   'John Vu',
+                   'Germán Poo-Caamaño']
+        documentors = ['Yuri Bongiorno',
+                       'Frédéric Gobry',
+                       'Zoltán Kóta']
+        translators = _('GNOME Translation Team')
         
-        link = ui.HRef ('http://www.pybliographer.org/',
-                        _("Pybliographer Home Page"))
-        link.show ()
-        about.vbox.pack_start (link)
+        about = Gtk.AboutDialog(
+                        parent=self.w,
+                        program_name='Pybliographic',
+                        version=version.version,
+                        website='http://www.pybliographer.org/',
+                        comments=_("GNOME interface to the Pybliographer system."),
+                        license_type=Gtk.License.GPL_2_0,
+                        authors=authors,
+                        documenters=documentors,
+                        translator_credits=translators,
+                        logo=)
+
+        about.connect('response', lambda w, b: w.destroy())
         about.show()
-        return
 
