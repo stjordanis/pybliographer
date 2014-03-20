@@ -42,8 +42,9 @@ appdata_DATA = pybliographic.appdata.xml
 
 bin_SCRIPTS = pybliographer
 
+pyb_DATA = pybrc.py
+
 EXTRA_DIST = 	setup-check.py			\
-		pybrc.py 			\
 	 	pybliographer.py 		\
 		etc/installer.in		\
 		pybliographic.appdata.xml	\
@@ -59,11 +60,6 @@ pybliographic.desktop: pybliographic.desktop.in po/*.po
 pybliographer: $(top_srcdir)/pybliographer.py etc/installer
 	$(SHELL) etc/installer < $(top_srcdir)/pybliographer.py > pybliographer
 	chmod 755 pybliographer
-
-install-data-local:
-	mv -f $(DESTDIR)$(pybdir)/pybrc.py $(DESTDIR)$(pybdir)/pybrc.old || true
-	$(INSTALL_DATA) $(srcdir)/pybrc.py $(DESTDIR)$(pybdir)
-	$(Python) -c "import compileall ; compileall.compile_dir ('"$(DESTDIR)$(pybdir)"');"
 
 update_desktop_database = update-desktop-database $(DESTDIR)$(appdir) \
 	|| echo "**** Warning: cannot update mime cache (recommended for Gnome >= 2.8)"
