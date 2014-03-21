@@ -25,7 +25,6 @@ pybdir  = $(datadir)/$(PACKAGE)
 appdir  = $(datadir)/applications
 
 SUBDIRS = 	Pyblio 		\
-		.		\
 		scripts		\
 		tests		\
 		Styles		\
@@ -44,22 +43,43 @@ bin_SCRIPTS = pybliographer
 
 pyb_DATA = pybrc.py
 
+desktopdir = $(datadir)/applications
+desktop_in_files = pybliographic.desktop.in
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+
+@INTLTOOL_DESKTOP_RULE@
+
+INTLTOOL = 			\
+	intltool-extract.in 	\
+	intltool-merge.in 	\
+	intltool-update.in
+
 EXTRA_DIST = 	setup-check.py			\
-	 	pybliographer.py 		\
-		etc/installer.in		\
+	 	pybliographer.in 		\
 		pybliographic.appdata.xml	\
-		pybliographic.desktop.in
+		$(desktop_in_files) $(INTLTOOL) $(pyb_DATA)
 
-dist-hook:
-	intltool-merge -d po pybliographic.desktop.in $(distdir)/pybliographic.desktop
+CLEANFILES = pybliographer $(desktop_DATA)
 
-pybliographic.desktop: pybliographic.desktop.in po/*.po
-	intltool-merge -d po pybliographic.desktop.in pybliographic.desktop \
-		|| echo "**** Warning: cannot update desktop file"
+DISTCLEANFILES = 		\
+	intltool-extract 	\
+	intltool-merge 		\
+	intltool-update
 
-pybliographer: $(top_srcdir)/pybliographer.py etc/installer
-	$(SHELL) etc/installer < $(top_srcdir)/pybliographer.py > pybliographer
-	chmod 755 pybliographer
+pybliographer: pybliographer.in
+	sed \
+		-e s!\@bin_dir\@!$(bindir)!               \
+		-e s!\@libpyb\@!$(libdir)/$(PACKAGE)!     \
+		-e s!\@datapyb\@!$(datadir)/$(PACKAGE)!   \
+		-e s!\@python_path\@!\@Python\@!          \
+		-e s!\@package\@!$(PACKAGE)!              \
+		-e s!\@version\@!$(VERSION)!              \
+		-e s!\@locale_dir\@!$(localedir)!         \
+		-e s!\@p_datadir\@!$(datadir)/$(PACKAGE)! \
+		< $< > $@
+	chmod 755 $@
+
+pybliographer: Makefile
 
 update_desktop_database = update-desktop-database $(DESTDIR)$(appdir) \
 	|| echo "**** Warning: cannot update mime cache (recommended for Gnome >= 2.8)"
