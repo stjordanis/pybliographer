@@ -194,6 +194,7 @@ class Document (Connector.Publisher):
         self.uim.ensure_update ()
 
         gp = os.path.join(Utils.glade_root, 'pyblio.ui')
+        icon_file = os.path.join (version.pixmapsdir, 'pybliographic.png')
         
         self.xml = Gtk.Builder()
         self.xml.set_translation_domain('pybliographer')
@@ -201,6 +202,7 @@ class Document (Connector.Publisher):
         self.xml.connect_signals(self)
 
         self.w = self.xml.get_object ('main')
+        self.w.set_icon_from_file (icon_file)
         self.paned = self.xml.get_object ('main_pane')
 
         box = self.xml.get_object ('grid')
@@ -1228,8 +1230,7 @@ class Document (Connector.Publisher):
 
     def about (self, *arg):
         pybliologo = GdkPixbuf.Pixbuf.new_from_file(
-                        os.path.join (version.pybdir,
-                                      'pixmaps',
+                        os.path.join (version.pixmapsdir,
                                       'pybliographic-logo.png'))
         authors = ['Hervé Dréau',
                    'Frédéric Gobry',
@@ -1254,7 +1255,7 @@ class Document (Connector.Publisher):
                         authors=authors,
                         documenters=documentors,
                         translator_credits=translators,
-                        logo=)
+                        logo=pybliologo)
 
         about.connect('response', lambda w, b: w.destroy())
         about.show()
