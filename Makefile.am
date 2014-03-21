@@ -54,7 +54,7 @@ INTLTOOL = 			\
 	intltool-merge.in 	\
 	intltool-update.in
 
-EXTRA_DIST = 	setup-check.py			\
+EXTRA_DIST = \
 	 	pybliographer.in 		\
 		pybliographic.appdata.xml	\
 		$(desktop_in_files) $(INTLTOOL) $(pyb_DATA)
@@ -71,7 +71,6 @@ pybliographer: pybliographer.in
 		-e s!\@bin_dir\@!$(bindir)!               \
 		-e s!\@libpyb\@!$(libdir)/$(PACKAGE)!     \
 		-e s!\@datapyb\@!$(datadir)/$(PACKAGE)!   \
-		-e s!\@python_path\@!\@Python\@!          \
 		-e s!\@package\@!$(PACKAGE)!              \
 		-e s!\@version\@!$(VERSION)!              \
 		-e s!\@locale_dir\@!$(localedir)!         \
