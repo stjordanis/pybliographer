@@ -26,6 +26,7 @@
 from gi.repository import GObject
 
 from gettext import gettext as _
+from gettext import ngettext as _n 
 from gi.repository import Gtk, Gdk, GdkPixbuf
 
 from Pyblio.GnomeUI import Editor, Entry, FileSelector, Format
@@ -441,12 +442,10 @@ class Document (Connector.Publisher):
         
         if li == ld:
             if   ld == 0: num = _("[no entry]")
-            elif ld == 1: num = _("[1 entry]")
-            else:         num = _("[%d entries]")    %  ld
+            else:         num = _n("[%d entry]", "[%d entries]", ld) % ld
         else:
             if   ld == 0: num = _("[no entry]")
-            elif ld == 1: num = _("[%d/1 entry]")    % li
-            else:         num = _("[%d/%d entries]") % (li, ld)
+            else:         num = _n("[%d/%d entry]", "[%d/%d entries]", ld) % (li, ld)
 
         text = text + ' ' + num
         
@@ -954,7 +953,9 @@ class Document (Connector.Publisher):
         if l == 0: return
 
         if l > 5:
-            if not Utils.Callback (_("Really edit %d entries?")
+            if not Utils.Callback (_n("Really edit %d entry?", 
+                                      "Really edit %d entries?",
+                                      l)
                                    % l, parent = self.w).answer ():
                 return
 
@@ -1001,7 +1002,7 @@ class Document (Connector.Publisher):
         offset = self.index.get_item_position (entries [-1])
 
         if l > 1:
-            question = _("Remove all the %d entries?") % len (entries)
+            question = _n("Remove %d entry?", "Remove all %d entries?", l) % l
         else:
             question = _("Remove entry `%s'?") % entries [0].key.key
             

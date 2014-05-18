@@ -22,6 +22,8 @@
 
 import os, sys, string
 from Pyblio import Config, Exceptions
+from gettext import gettext as _
+from gettext import ngettext as _n
 
 import locale
 charset = locale.getlocale () [1] or 'ascii'
@@ -57,7 +59,10 @@ for dir in sys.argv [2:]:
         # try to open the database
         try:
             b = bibopen (f)
-            print (_("file `%s' is ok [%d entries]") % (f, len (b))).encode (charset)
+            print (_n("file “%s” is ok [%d entry]", 
+                      "file “%s” is ok [%d entries]", 
+                      len(b)) 
+                   % (f, len (b))).encode (charset)
         except (Exceptions.ParserError, KeyError), err:
             broken.append (str (err))
 
