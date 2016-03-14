@@ -5,14 +5,14 @@
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Paweł Żołnowski <pawel@zolnowski.name>, 2014.
-# Piotr Drąg <piotrdrag@gmail.com>, 2015.
-# Aviary.pl <gnomepl@aviary.pl>, 2014-2015.
+# Piotr Drąg <piotrdrag@gmail.com>, 2015-2016.
+# Aviary.pl <gnomepl@aviary.pl>, 2014-2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: pybliographer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-02 20:25+0200\n"
-"PO-Revision-Date: 2015-09-02 20:27+0200\n"
+"POT-Creation-Date: 2016-03-14 04:39+0100\n"
+"PO-Revision-Date: 2016-03-14 04:40+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -1150,7 +1150,7 @@ msgstr ""
 #. save history
 #: ../pybliographic.desktop.in.h:1
 msgid "Pybliographic Bibliography Manager"
-msgstr "Menedżer bibliografii Pybliographic"
+msgstr "Pybliographer"
 
 #: ../pybliographic.desktop.in.h:2
 msgid "Bibliography Manager"
