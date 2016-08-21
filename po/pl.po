@@ -1,28 +1,24 @@
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Aviary.pl
-# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
-# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
-# gnomepl@aviary.pl
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Polish translation for pybliographer.
+# Copyright © 2014-2016 the pybliographer authors.
+# This file is distributed under the same license as the pybliographer package.
 # Paweł Żołnowski <pawel@zolnowski.name>, 2014.
 # Piotr Drąg <piotrdrag@gmail.com>, 2015-2016.
-# Aviary.pl <gnomepl@aviary.pl>, 2014-2016.
+# Aviary.pl <community-poland@mozilla.org>, 2014-2016.
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: pybliographer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-14 04:39+0100\n"
-"PO-Revision-Date: 2016-03-14 04:40+0100\n"
+"POT-Creation-Date: 2016-08-21 16:17+0200\n"
+"PO-Revision-Date: 2016-08-21 16:18+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Poedit-Language: Polish\n"
-"X-Poedit-Country: Poland\n"
 
 #: ../Pyblio/Autoload.py:78
 #, python-format
@@ -59,12 +55,12 @@ msgstr "Liczba całkowita powyżej %d"
 #: ../Pyblio/Config.py:246
 #, python-format
 msgid "Integer between %d and %d"
-msgstr "Liczba całkowita między %d a %d"
+msgstr "Liczba całkowita między %d a %d"
 
 #: ../Pyblio/Config.py:258
 #, python-format
 msgid "Element in `%s'"
-msgstr "Element w „%s”"
+msgstr "Element w „%s”"
 
 #: ../Pyblio/Config.py:278
 #, python-format
@@ -101,7 +97,7 @@ msgstr "Niedozwolony dzień"
 #: ../Pyblio/Fields.py:510
 #, python-format
 msgid "in %s"
-msgstr "w %s"
+msgstr "w %s"
 
 #: ../Pyblio/Format/BibTeX.py:323 ../Pyblio/Format/BibTeX.py:371
 #, python-format
@@ -327,7 +323,7 @@ msgstr "Brak wyników wyszukiwania"
 #. error
 #: ../Pyblio/GnomeUI/Document.py:523
 msgid "An error occured during Medline Query"
-msgstr "Błąd podczas korzystania z bazy Medline"
+msgstr "Błąd podczas korzystania z bazy Medline"
 
 #. get a new file name
 #: ../Pyblio/GnomeUI/Document.py:533
@@ -423,7 +419,7 @@ msgid ""
 "An entry called `%s' already exists.\n"
 "Rename and add it anyway?"
 msgstr ""
-"Wpis o nazwie „%s” już istnieje.\n"
+"Wpis o nazwie „%s” już istnieje.\n"
 "Dodać go, zmieniając jego nazwę?"
 
 #: ../Pyblio/GnomeUI/Document.py:917
@@ -463,7 +459,7 @@ msgid ""
 "Can't connect to LyX:\n"
 "%s"
 msgstr ""
-"Nie można się połączyć z LyX:\n"
+"Nie można się połączyć z LyX:\n"
 "%s"
 
 #: ../Pyblio/GnomeUI/Document.py:1222
@@ -682,7 +678,7 @@ msgstr "Powiązane"
 
 #: ../Pyblio/GnomeUI/Fields.py:321
 msgid "Please, select an entry type from previous page."
-msgstr "Proszę zaznaczyć rodzaj wpisu w poprzedniej karcie."
+msgstr "Proszę zaznaczyć rodzaj wpisu w poprzedniej karcie."
 
 #: ../Pyblio/GnomeUI/Fields.py:332
 #, python-format
@@ -798,7 +794,7 @@ msgstr "Powiązanie"
 
 #: ../Pyblio/GnomeUI/glade/fields1.glade.h:1
 msgid "Entry types and field names configuration"
-msgstr "Ustawienia rodzajów wpisów i nazw pól"
+msgstr "Ustawienia rodzajów wpisów i nazw pól"
 
 #: ../Pyblio/GnomeUI/glade/fields1.glade.h:12
 msgid ""
@@ -809,9 +805,9 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
-"Proszę zaznaczyć rodzaj wpisu i określić\n"
+"Proszę zaznaczyć rodzaj wpisu i określić\n"
 "jego powiązane pola (obowiązkowe\n"
-"i opcjonalne) w następnej karcie.\n"
+"i opcjonalne) w następnej karcie.\n"
 "\n"
 "\n"
 "\n"
@@ -850,7 +846,7 @@ msgstr "Baza Medline"
 
 #: ../Pyblio/GnomeUI/glade/medline.glade.h:2
 msgid "Enter your Medline Query"
-msgstr "Kryterium wyszukiwania w bazie Medline"
+msgstr "Kryterium wyszukiwania w bazie Medline"
 
 #: ../Pyblio/GnomeUI/glade/medline.glade.h:3
 msgid ""
@@ -858,7 +854,7 @@ msgid ""
 "PubMed for:"
 msgstr ""
 "Fraza \n"
-"wyszukiwania w PubMed:"
+"wyszukiwania w PubMed:"
 
 #: ../Pyblio/GnomeUI/glade/medline.glade.h:6
 msgid ""
@@ -882,7 +878,7 @@ msgid ""
 "with abstracts"
 msgstr ""
 "Tylko elementy\n"
-"z abstraktami"
+"z abstraktami"
 
 #: ../Pyblio/GnomeUI/glade/medline.glade.h:12
 msgid ""
@@ -906,7 +902,7 @@ msgid ""
 "Month and day are optional."
 msgstr ""
 "Format daty RRRR/MM/DD\n"
-"Miesiąc i dzień są opcjonalne."
+"Miesiąc i dzień są opcjonalne."
 
 #: ../Pyblio/GnomeUI/glade/medline.glade.h:18
 msgid "Limited to:"
@@ -1095,7 +1091,7 @@ msgid ""
 "URL: %s"
 msgstr ""
 "Nie odnaleziono wpisu dla typu MIME %s\n"
-"w opcji konfiguracji resource/viewers.\n"
+"w opcji konfiguracji resource/viewers.\n"
 "Zaleca się dodanie takiego wpisu.\n"
 "Adres URL: %s"
 
@@ -1135,7 +1131,7 @@ msgstr "%s: błąd: nie można otworzyć pliku „%s”"
 #: ../pybliographer.py:124
 #, python-format
 msgid "For help, run %s and type `help' at the prompt"
-msgstr "Aby uzyskać pomoc, należy uruchomić %s i wpisać polecenie `help'"
+msgstr "Aby uzyskać pomoc, należy uruchomić %s i wpisać polecenie `help'"
 
 #: ../pybliographer.py:133
 msgid ""
@@ -1331,7 +1327,7 @@ msgstr "Plik już istnieje: „%s”"
 #: ../scripts/pybliotext.py:127
 #, python-format
 msgid "A file with the same name already exists: `%s'"
-msgstr "Plik o takiej samej nazwie już istnieje: „%s”"
+msgstr "Plik o takiej samej nazwie już istnieje: „%s”"
 
 #: ../scripts/pybliotext.py:178
 msgid "no citation found"
