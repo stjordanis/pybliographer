@@ -94,7 +94,7 @@ def bibopen (entity, how = None):
 	if opener:
 	    base = opener (url, 0)
 	else:
-	    raise Exceptions.FormatError (_("method `%s' provides no opener") % how)
+	    raise Exceptions.FormatError (_("method “%s” provides no opener") % how)
 
 	return base
 
@@ -102,7 +102,7 @@ def bibopen (entity, how = None):
     url = Fields.URL (entity)
 
     if url.url [0] == 'file' and not os.path.exists (url.url [2]):
-	raise Exceptions.FileError (_("File `%s' does not exist") % url.get_url ())
+	raise Exceptions.FileError (_("File “%s” does not exist") % url.get_url ())
 
     # eventually load a new module
     if how is None:
@@ -113,7 +113,7 @@ def bibopen (entity, how = None):
     base = simple_try (url, how)
 
     if base is None:
-	raise Exceptions.FormatError (_("don't know how to open `%s'") % entity)
+	raise Exceptions.FormatError (_("don’t know how to open “%s”") % entity)
 
     return base
 
@@ -141,7 +141,7 @@ def bibiter (entity, how = None):
 	if opener:
 	    base = opener (url, 0)
 	else:
-	    raise Exceptions.FormatError (_("method `%s' provides no iterator") % how)
+	    raise Exceptions.FormatError (_("method “%s” provides no iterator") % how)
 
 	return base
 
@@ -149,7 +149,7 @@ def bibiter (entity, how = None):
     url = Fields.URL (entity)
 
     if url.url [0] == 'file' and not os.path.exists (url.url [2]):
-	raise Exceptions.FileError (_("File `%s' does not exist") % str (url))
+	raise Exceptions.FileError (_("File “%s” does not exist") % str (url))
 
     # eventually load a new module
     if how is None:
@@ -160,7 +160,7 @@ def bibiter (entity, how = None):
     base = simple_try (url, how)
 
     if base is None:
-	raise Exceptions.FormatError (_("don't know how to open `%s'") % entity)
+	raise Exceptions.FormatError (_("don’t know how to open “%s”") % entity)
 
     return base
 

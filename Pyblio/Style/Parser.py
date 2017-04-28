@@ -259,7 +259,7 @@ class XMLBib (sax.handler.ContentHandler):
         try:
             val = attrs [attr]
         except KeyError:
-            self._error (_("missing '%s' attribute") % attr)
+            self._error (_("missing “%s” attribute") % attr)
 
         return val
 

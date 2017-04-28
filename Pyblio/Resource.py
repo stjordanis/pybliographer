@@ -79,7 +79,7 @@ def StartViewer (entry, key, stringuri, parent=None, document=None):
 	if not message.answer (): return
 
     if document:
-	document.statusbar.set_status (_("Determining Mime Type ... "))
+	document.statusbar.set_status (_("Determining Mime Type… "))
 
     try:
 	mimetype =  Compat.get_mime_type (fileuri)
@@ -96,7 +96,7 @@ def StartViewer (entry, key, stringuri, parent=None, document=None):
     mimetype1 = mimetype.split ('/', 1) [0]
 
     if document:
- 	document.statusbar.set_status (_("Accessing resource ..."))
+ 	document.statusbar.set_status (_("Accessing resource…"))
 
     if scheme == 'file' and not location:
 	filename = path
@@ -135,7 +135,7 @@ def StartViewer (entry, key, stringuri, parent=None, document=None):
 	    ) or "%s %s&" %(cmd, filename)
 
 	if document:
-	    document.statusbar.set_status (_("Starting application ..."))
+	    document.statusbar.set_status (_("Starting application…"))
 	os.system (command)
     else:
 	Utils.error_dialog (_("No application to view resource"),

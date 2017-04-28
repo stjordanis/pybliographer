@@ -32,7 +32,7 @@ import locale
 charset = locale.getlocale () [1] or 'ascii'
 
 def usage ():
-    print _("usage: pybliotex <latexfile> [bibtexfiles...]").encode (charset)
+    print _("usage: pybliotex <latexfile> [bibtexfiles…]").encode (charset)
     return
 
 def error (message):
@@ -84,7 +84,7 @@ else:
     if os.path.exists (full): url = Fields.URL (full)
 
 if not url:
-    error (_("can't find style `%s'") % style)
+    error (_("can’t find style “%s”") % style)
 
 # open the .bbl file
 bblfile = os.path.splitext (os.path.split (latex) [1]) [0] + '.bbl'

@@ -500,7 +500,7 @@ class URL (BaseField):
 	self.old_url = self.string.decode ('latin-1')
 	self.edit.set_text (self.old_url)
 	self.box.pack_start (self.edit)
-	self.button = gtk.Button (_('Browse...'))
+	self.button = gtk.Button (_('Browse…'))
 	self.button.connect ("clicked", self.cb_clicked)
 	self.box.pack_start (self.button, False)
 	h.pack_start (self.box)
@@ -915,7 +915,7 @@ class RealEditor (Connector.Publisher):
             if key != self.entry.key:
                 if database.has_key (key):
                      Compat.error_dialog_parented (
-                         _("Key `%s' already exists") % str (key.key),
+                         _("Key “%s” already exists") % str (key.key),
                          self.w.get_toplevel ())
                      return None
                 
@@ -932,7 +932,7 @@ class RealEditor (Connector.Publisher):
                 f = Types.get_field(item.field)
                 
                 Compat.error_dialog_parented(
-                    _("The `%s' field contains a non Latin-1 symbol") %
+                    _("The “%s” field contains a non Latin-1 symbol") %
                     f.name, self.w.get_toplevel())
                 return None
             

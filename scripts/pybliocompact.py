@@ -28,7 +28,7 @@ import locale
 charset = locale.getlocale () [1] or 'ascii'
 
 def usage ():
-    print _("usage: pybliocompact <latexfile> <bibtexfiles...>").encode (charset)
+    print _("usage: pybliocompact <latexfile> <bibtexfiles…>").encode (charset)
     return
 
 def error (msg):
@@ -160,6 +160,6 @@ for bib in bibtex:
 
 # check if we were able to solve all the citations
 if len (entries) > 0:
-    error (_("can't find the following entries: %s")
+    error (_("can’t find the following entries: %s")
            % string.join (entries, ", "))
 

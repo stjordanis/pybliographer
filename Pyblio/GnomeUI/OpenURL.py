@@ -59,7 +59,7 @@ class OpenDialog (Connector.Publisher, Utils.GladeWindow):
 
         if has_auto:
             iter = liststore.append ()
-            liststore.set (iter, 0, _(' - According to file suffix - '))
+            liststore.set (iter, 0, _(' — According to file suffix — '))
             self.ftype = None
         else:
             self.ftype = liste [0]

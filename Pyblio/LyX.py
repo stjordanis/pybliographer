@@ -35,13 +35,13 @@ class LyXClient:
         try:
             ans = os.stat (pin)
         except OSError, msg:
-            raise IOError (_("no input pipe `%s'") % pin)
+            raise IOError (_("no input pipe “%s”") % pin)
         
         pout = os.path.expanduser (base + '.out')
         try:
             ans = os.stat (pout)
         except os.error:
-            raise IOError (_("no output pipe `%s'") % pout)
+            raise IOError (_("no output pipe “%s”") % pout)
 
         def noaction (* arg): return
         

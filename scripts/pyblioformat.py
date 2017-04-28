@@ -32,7 +32,7 @@ import locale
 charset = locale.getlocale () [1] or 'ascii'
 
 def usage ():
-    print _("""usage: pyblioformat [options] <database...>
+    print _("""usage: pyblioformat [options] <database…>
 
     options:
       -o file, --output=file		specify an output filename
@@ -91,21 +91,21 @@ for opt, value in optlist:
         try:
             outfile = open (value, 'w')
         except IOError, err:
-            error (_("can't open `%s': %s") % (value, str (err).decode (charset)))
+            error (_("can’t open “%s”: %s") % (value, str (err).decode (charset)))
         continue
 
     if opt == '-l' or opt == '--list':
         try:
             list = Autoload.available (value)
         except KeyError:
-            error (_("unknown list `%s'") % value)
+            error (_("unknown list “%s”") % value)
             
         if list:
-            print (_("pyblioformat: available values for `%s':") % value).encode (charset)
+            print (_("pyblioformat: available values for “%s”:") % value).encode (charset)
             print "  " + string.join (list, ", ")
             sys.exit (0)
         else:
-            warning (_("empty value list `%s'") % value)
+            warning (_("empty value list “%s”") % value)
             sys.exit (0)
             
     if opt == '-h' or opt == '--help':
@@ -134,7 +134,7 @@ files  = args
 # get the specified style and the output
 output = Autoload.get_by_name ('output', format)
 if output is None:
-    error (_("unknown output format `%s'") % format)
+    error (_("unknown output format “%s”") % format)
 
 url = None
 style = os.path.splitext (style) [0]
@@ -147,10 +147,10 @@ else:
     if os.path.exists (full): url = Fields.URL (full)
 
 if not url:
-    error (_("can't find style `%s'") % style)
+    error (_("can’t find style “%s”") % style)
 
 
-sys.stderr.write ((_("pyblioformat: using style `%s', format `%s'\n") % (style, output.name)).encode (charset))
+sys.stderr.write ((_("pyblioformat: using style “%s”, format “%s”\n") % (style, output.name)).encode (charset))
 
 formatter = output.data
 
@@ -165,7 +165,7 @@ if header:
                 outfile.write (line)
         h.close ()
     except IOError, err:
-        error (_("can't open header `%s': %s") % (header, str (err).decode (charset)))
+        error (_("can’t open header “%s”: %s") % (header, str (err).decode (charset)))
 
 # write the data
 for file in files:
@@ -173,7 +173,7 @@ for file in files:
     try:
         db = bibopen (file)
     except IOError, err:
-        error (_("can't open database: %s") % file)
+        error (_("can’t open database: %s") % file)
 
     Utils.generate (url, formatter, db, db.keys (), outfile)
     
@@ -188,7 +188,7 @@ if footer:
                 outfile.write (line)
         h.close ()
     except IOError, err:
-        error (_("can't open footer `%s': %s") % (footer, str (err).decode (charset)))
+        error (_("can’t open footer “%s”: %s") % (footer, str (err).decode (charset)))
 
         
 outfile.close ()

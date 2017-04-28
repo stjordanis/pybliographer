@@ -91,7 +91,7 @@ class URLFileSelection (gtk.FileChooserDialog):
 	    self.formats = []
 
 	    if has_auto:
-		self.menu.append_text (_(' - According to file suffix - '))
+		self.menu.append_text (_(' — According to file suffix — '))
 		self.ftype = None
                 self.formats.append(None)
                 

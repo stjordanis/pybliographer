@@ -46,7 +46,7 @@ def print_version ():
 def copyright ():
 	print 'Copyright (C) 1998-2004 Frederic GOBRY'
 	print _("This is free software with ABSOLUTELY NO WARRANTY.").encode (charset)
-	print _("For details, type `warranty'.").encode (charset)
+	print _("For details, type “warranty”.").encode (charset)
 
 def warranty ():
 	print_version ()
@@ -109,7 +109,7 @@ for opt, value in optlist:
 		try:
 			os.stat (value)
 		except os.error:
-			print (_("%s: error: can't open file `%s'") \
+			print (_("%s: error: can’t open file “%s”") \
 			      % (progname, value)).encode (charset)
 			sys.exit (1)
 		
@@ -122,7 +122,7 @@ for opt, value in optlist:
 
 	if opt == '-h' or opt == '--help':
 		print_version ()
-		print (_("For help, run %s and type `help' at the prompt") 
+		print (_("For help, run %s and type “help” at the prompt") 
 		       % progname).encode (charset)
 		sys.exit (0)
 		
@@ -161,7 +161,7 @@ if len (args) > 0 :
 	try:
 		os.stat (filename)
 	except os.error:
-		print (_("%s: error: can't open file `%s'") % (progname, filename)).encode (charset)
+		print (_("%s: error: can’t open file “%s”") % (progname, filename)).encode (charset)
 		sys.exit (1)
 	else:
 		execfile (filename, user_global)

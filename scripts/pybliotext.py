@@ -38,7 +38,7 @@ import locale
 charset = locale.getlocale () [1] or 'ascii'
 
 def usage ():
-    print _("usage: pybliotext [-o outputfile] [-s style] <textfile> <bibfiles...>").encode (charset)
+    print _("usage: pybliotext [-o outputfile] [-s style] <textfile> <bibfiles…>").encode (charset)
     return
 
 def error (msg):
@@ -91,7 +91,7 @@ else:
     if os.path.exists (full): url = Fields.URL (full)
 
 if not url:
-    error (_("can't find style `%s'") % style)
+    error (_("can’t find style “%s”") % style)
 
 
 spstyle = os.path.split (style) [1]
@@ -114,17 +114,17 @@ else:
 output = Autoload.get_by_name ('output', format)
 
 if output is None:
-    error (_("unknown output format `%s'") % format)
+    error (_("unknown output format “%s”") % format)
 
 
 
 reffile = outfile + '.ref'
 
 if os.path.exists(outfile):
-    error (_("File already exists: `%s'") % outfile)
+    error (_("File already exists: “%s”") % outfile)
 
 if os.path.exists(reffile):
-    error (_("A file with the same name already exists: `%s'") % reffile)
+    error (_("A file with the same name already exists: “%s”") % reffile)
 
 textfile = args [0]
 bibfile = args [1:]
@@ -190,7 +190,7 @@ entries = h
 order = copy.copy (entries)
 
 
-sys.stderr.write ((_("pybliotext: using style `%s', format `%s'\n") % (style, output.name)).encode (charset))
+sys.stderr.write ((_("pybliotext: using style “%s”, format “%s”\n") % (style, output.name)).encode (charset))
 
 formatter = output.data
 
@@ -237,7 +237,7 @@ for bib in bibfile:
 
 # check if we were able to solve all the citations
 if len (entries) > 0:
-    error (_("can't find the following entries: %s")
+    error (_("can’t find the following entries: %s")
            % string.join (entries, ", "))
 
 
@@ -249,7 +249,7 @@ keys = map (lambda x: Key.Key (r, x), order)
 try:
     refs = open (reffile, 'w')
 except IOError, err:
-    error (_("can't open `%s': %s") % (reffile, str (err).decode (charset)))
+    error (_("can’t open “%s”: %s") % (reffile, str (err).decode (charset)))
 
 refs.write ("\n\nReferences:\n")
 
@@ -275,7 +275,7 @@ if oldnew:
     try:
         dest = open (outfile, 'a')
     except IOError, err:
-        error (_("can't open `%s': %s") % (outfile, str (err).decode (charset)))
+        error (_("can’t open “%s”: %s") % (outfile, str (err).decode (charset)))
 
     citations = []
     
@@ -313,12 +313,12 @@ else:
     try:
         copyfile (textfile, outfile)
     except:
-        error (_("can't create `%s'") % outfile)
+        error (_("can’t create “%s”") % outfile)
 
     try:
         dest = open (outfile, 'a')
     except IOError, err:
-        error (_("can't open `%s': %s") % (outfile, str (err).decode (charset)))
+        error (_("can’t open “%s”: %s") % (outfile, str (err).decode (charset)))
 
 
 # appending the reference list
@@ -339,6 +339,6 @@ dest.close ()
 try:
     os.remove (reffile)
 except:
-    warning (_("can't remove `%s'") % reffile)
+    warning (_("can’t remove “%s”") % reffile)
 
 print _("Done").encode (charset)

@@ -50,7 +50,7 @@ class ConfigItem:
         if self.type:
             if not self.type.match (value):
                 raise ValueError(
-                    _("value of `%s' should be of type %s") % (
+                    _("value of “%s” should be of type %s") % (
                     self.name, str (self.type)))
             
         # eventually call the hook
@@ -256,7 +256,7 @@ class Element:
         return value in self.get()
 
     def __str__ (self):
-        return _("Element in `%s'") % str (self.get ())
+        return _("Element in “%s”") % str (self.get ())
 
     
 class Tuple:

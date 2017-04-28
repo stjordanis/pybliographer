@@ -158,8 +158,8 @@ class Document (Connector.Publisher):
             ('Close', gtk.STOCK_CLOSE,  None,         None,   None,     self.close_document),
             ('Quit', gtk.STOCK_QUIT,  None,         None,   None,     self.exit_application),
 
-            ('Merge',   None, _('Merge With...'),    '<control>g',  None, self.merge_database),
-            ('Medline', None, _('Medline Query...'), '<control>m',  None, self.query_database),
+            ('Merge',   None, _('Merge With…'),    '<control>g',  None, self.merge_database),
+            ('Medline', None, _('Medline Query…'), '<control>m',  None, self.query_database),
 
 
 
@@ -172,11 +172,11 @@ class Document (Connector.Publisher):
             ('Delete', gtk.STOCK_DELETE,  None,         None,   None,     self.delete_entry),
             ('Find', gtk.STOCK_FIND,  None,         None,   None,     self.find_entries),
             
-            ('Sort', None, _('S_ort...'), None,  None, self.sort_entries),
-            ('Cite', gtk.STOCK_JUMP_TO,   _('Cite...'), None,  _('Cite key(s)'), self.lyx_cite),
-            ('Format', gtk.STOCK_EXECUTE, _('Format...'), None,  None, self.format_entries),
+            ('Sort', None, _('S_ort…'), None,  None, self.sort_entries),
+            ('Cite', gtk.STOCK_JUMP_TO,   _('Cite…'), None,  _('Cite key(s)'), self.lyx_cite),
+            ('Format', gtk.STOCK_EXECUTE, _('Format…'), None,  None, self.format_entries),
 
-            ('Fields', None, _('Fields...'), None,  None, self.set_fields),
+            ('Fields', None, _('Fields…'), None,  None, self.set_fields),
             ('Preferences', gtk.STOCK_PREFERENCES,  None,         None,   None,     self.set_preferences),
             ('Forget', None, _('Forget all changes'),     None,   None,     self.forget_changes_cb),
             
@@ -390,7 +390,7 @@ class Document (Connector.Publisher):
         try:
             file = open (output, 'w')
         except IOError, err:
-            self.w.error (_("can't open file `%s' for writing:\n%s")
+            self.w.error (_("can’t open file “%s” for writing:\n%s")
                           % (output, str (err)))
             return
         
@@ -411,7 +411,7 @@ class Document (Connector.Publisher):
             Pyblio.Style.Utils.generate (url, format, self.data, entries, file)
         except RuntimeError, err:
             print err
-            self.w.error (_("Error while parsing `%s':\n%s") % (style, err))
+            self.w.error (_("Error while parsing “%s”:\n%s") % (style, err))
         return
 
 
@@ -651,7 +651,7 @@ class Document (Connector.Publisher):
                         os.remove (old_auto_save)
                     except (OSError, IOError), error:
                         Utils.set_cursor (self.w, 'normal')
-                        self.w.error (_("Unable to remove autosave file `%s':\n%s") % (str (old_auto_save), str (error)))
+                        self.w.error (_("Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
                         return
 
 
@@ -730,7 +730,7 @@ class Document (Connector.Publisher):
                 self.data.update (Sort.Sort([Sort.KeySort()]))
             except (OSError, IOError), error:
                 Utils.set_cursor (self.w, 'normal')
-                self.w.error (_("Unable to save `%s':\n%s") % (str (self.data.key),
+                self.w.error (_("Unable to save “%s”:\n%s") % (str (self.data.key),
                                                                str (error)))
                 return
         except:
@@ -738,7 +738,7 @@ class Document (Connector.Publisher):
             traceback.print_exception (etype, value, tb)
             
             Utils.set_cursor (self.w, 'normal')
-            self.w.error (_("An internal error occurred during saving\nTry to Save As..."))
+            self.w.error (_("An internal error occurred during saving\nTry to Save As…"))
             return
 
         Utils.set_cursor (self.w, 'normal')
@@ -753,13 +753,13 @@ class Document (Connector.Publisher):
     def save_document_as (self, * arg):
         # get a new file name
         (url, how) = FileSelector.URLFileSelection (
-	    _("Save As..."), has_auto = False, is_save = True).run ()
+	    _("Save As…"), has_auto = False, is_save = True).run ()
         
         if url is None: return
 
         if os.path.exists (url):
             if not Utils.Callback (
-		_("The file `%s' already exists.\nOverwrite it?")
+		_("The file “%s” already exists.\nOverwrite it?")
 		% url, parent = self.w).answer ():
                 return
 
@@ -792,7 +792,7 @@ class Document (Connector.Publisher):
                         os.remove (old_auto_save)
                     except (OSError, IOError), error:
                         Utils.set_cursor (self.w, 'normal')
-                        self.w.error (_("Unable to remove autosave file `%s':\n%s") % (str (old_auto_save), str (error)))
+                        self.w.error (_("Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
                         return
 
         
@@ -852,7 +852,7 @@ class Document (Connector.Publisher):
                         os.remove (old_auto_save)
                     except (OSError, IOError), error:
                         Utils.set_cursor (self.w, 'normal')
-                        self.w.error (_("Unable to remove autosave file `%s':\n%s") % (str (old_auto_save), str (error)))
+                        self.w.error (_("Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
                         return
 
         return answer
@@ -877,7 +877,7 @@ class Document (Connector.Publisher):
         for entry in entries:
             
             if self.data.would_have_key (entry.key):
-                if not Utils.Callback (_("An entry called `%s' already exists.\nRename and add it anyway?")
+                if not Utils.Callback (_("An entry called “%s” already exists.\nRename and add it anyway?")
                                        % entry.key.key, parent = self.w).answer ():
                     continue
                 
@@ -997,7 +997,7 @@ class Document (Connector.Publisher):
         if l > 1:
             question = _("Remove all the %d entries?") % len (entries)
         else:
-            question = _("Remove entry `%s'?") % entries [0].key.key
+            question = _("Remove entry “%s”?") % entries [0].key.key
             
         if not Utils.Callback (question,
                                parent = self.w).answer ():
@@ -1095,7 +1095,7 @@ class Document (Connector.Publisher):
             try:
                 self.lyx = LyX.LyXClient ()
             except IOError, msg:
-                self.w.error (_("Can't connect to LyX:\n%s") % msg)
+                self.w.error (_("Can’t connect to LyX:\n%s") % msg)
                 return
 
         keys = string.join (map (lambda x: x.key.key, entries), ', ')
@@ -1103,7 +1103,7 @@ class Document (Connector.Publisher):
             self.lyx ('citation-insert', keys)
         except IOError, msg:
             msg = msg [1].decode (enc)
-            self.w.error (_("Can't connect to LyX:\n%s") % msg)
+            self.w.error (_("Can’t connect to LyX:\n%s") % msg)
         return
     
 
@@ -1219,7 +1219,7 @@ class Document (Connector.Publisher):
             gtk.show_uri (None, "help:pybliographer", timestamp)
             
         except gobject.GError, msg:
-            self.w.error (_("Can't display documentation:\n%s") % msg)
+            self.w.error (_("Can’t display documentation:\n%s") % msg)
             
         return
     

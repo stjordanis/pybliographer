@@ -321,7 +321,7 @@ class DataBase(Base.DataBase):
 	    valid = re.compile('^\w+$')
 	    for k in user.keys():
 		if not valid.match(k):
-		    raise TypeError, _("key `%s' is malformed") % k
+		    raise TypeError, _("key “%s” is malformed") % k
 		_bibtex.set_string(self.parser, k,
                                    _bibtex.reverse(_base_fieldtype[Text],
                                                    Config.get('bibtex+/braces').data,
@@ -338,7 +338,7 @@ class DataBase(Base.DataBase):
                     self.add(entry)
                 else:
                     if self.dict.has_key(entry.key):
-                        errors.append(_("%s:%d: key `%s' already defined") % (
+                        errors.append(_("%s:%d: key “%s” already defined") % (
                             str(self.key), entry.line, entry.key.key))
                     else:
                         self.dict [entry.key] = entry
@@ -357,7 +357,7 @@ class DataBase(Base.DataBase):
                 self.add(entry)
             else:
                 if self.dict.has_key(entry.key):
-                    errors.append(_("%s:%d: key `%s' already defined") % (
+                    errors.append(_("%s:%d: key “%s” already defined") % (
                         repr(self.key), entry.line, repr(entry.key.key)))
                 else:
                     self.dict[entry.key] = entry
@@ -369,7 +369,7 @@ class DataBase(Base.DataBase):
 	    valid = re.compile('^\w+$')
 	    for k in user.keys():
 		if not valid.match(k):
-		    raise TypeError, _("key `%s' is malformed") % k
+		    raise TypeError, _("key “%s” is malformed") % k
 		_bibtex.set_string(self.parser, k,
                                    _bibtex.reverse(_base_fieldtype[Text],
                                                    Config.get('bibtex+/braces').data,

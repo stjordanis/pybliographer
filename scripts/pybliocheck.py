@@ -29,7 +29,7 @@ charset = locale.getlocale () [1] or 'ascii'
 
 # check the arguments
 if len (sys.argv) < 3:
-    print _("usage: pybliocheck <file | directory>...").encode (charset)
+    print _("usage: pybliocheck <file | directory>…").encode (charset)
     sys.exit (1)
 
 # list containing the broken entries
@@ -58,7 +58,7 @@ for dir in sys.argv [2:]:
         # try to open the database
         try:
             b = bibopen (f)
-            print (_("file `%s' is ok [%d entries]") % (f, len (b))).encode (charset)
+            print (_("file “%s” is ok [%d entries]") % (f, len (b))).encode (charset)
         except (Exceptions.ParserError, KeyError), err:
             broken.append (str (err))
 

@@ -76,7 +76,7 @@ class Loader:
             import locale
             charset = locale.getlocale () [1] or 'ascii'
             
-            print (_("warning: can't import %s: %s") %
+            print (_("warning: can’t import %s: %s") %
                    (self.module, str (err))).encode (charset)
             return 0
         
