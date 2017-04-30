@@ -1,25 +1,25 @@
 # Swedish messages for pybliographer.
-# Copyright © 2000-2015 Free Software Foundation, Inc.
+# Copyright © 2000-2017 Free Software Foundation, Inc.
 # Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004.
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2010.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2015.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2015, 2017.
 #
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pybliographer\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=pybliographer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-05-08 11:14+0000\n"
-"PO-Revision-Date: 2015-05-28 23:00+0100\n"
+"POT-Creation-Date: 2017-04-28 12:38+0000\n"
+"PO-Revision-Date: 2017-05-01 00:23+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: ../Pyblio/Autoload.py:78
 #, python-format
@@ -325,7 +325,7 @@ msgstr "Din fråga returnerade inget resultat"
 
 #. error
 #: ../Pyblio/GnomeUI/Document.py:523
-msgid "An error occured during Medline Query"
+msgid "An error occurred during Medline Query"
 msgstr "Ett fel uppstod under Medline-fråga"
 
 #. get a new file name
@@ -384,7 +384,7 @@ msgstr ""
 
 #: ../Pyblio/GnomeUI/Document.py:741
 msgid ""
-"An internal error occured during saving\n"
+"An internal error occurred during saving\n"
 "Try to Save As..."
 msgstr ""
 "Ett internt fel uppstod vid sparning\n"
@@ -730,7 +730,7 @@ msgid "[Key Value]"
 msgstr "[Nyckelvärde]"
 
 #: ../Pyblio/GnomeUI/Utils.py:203
-msgid "The following errors occured:\n"
+msgid "The following errors occurred:\n"
 msgstr "Följande fel inträffade:\n"
 
 #: ../Pyblio/GnomeUI/__init__.py:45
@@ -993,8 +993,8 @@ msgid "Expert Search"
 msgstr "Expertsökning"
 
 #: ../Pyblio/GnomeUI/glade/sort.glade.h:1
-msgid "Select sort criterions"
-msgstr "Välj sorteringsvilkor"
+msgid "Select sort criteria"
+msgstr "Välj sorteringsvillkor"
 
 #: ../Pyblio/GnomeUI/glade/sort.glade.h:2
 msgid "Set as default"
