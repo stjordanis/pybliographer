@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pybliographer master\n"
-"POT-Creation-Date: 2017-09-21 13:31+0000\n"
-"PO-Revision-Date: 2017-09-21 21:56+0200\n"
+"POT-Creation-Date: 2017-09-22 12:49+0000\n"
+"PO-Revision-Date: 2017-09-22 21:08+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -1945,8 +1945,8 @@ msgstr "Správce bibliografie Pybliographer"
 #. whatever you like once you have updated your copy of the file.
 #: C/index.page:25
 msgctxt "_"
-msgid "external ref='figures/logo.png' md5='d473ab564d496bb6a48457155655f562'"
-msgstr "external ref='figures/logo.png' md5='d473ab564d496bb6a48457155655f562'"
+msgid "external ref='figures/logo.png' md5='787ee332876d583e1618567210508fb8'"
+msgstr "external ref='figures/logo.png' md5='787ee332876d583e1618567210508fb8'"
 
 #. (itstool) path: page/title
 #: C/index.page:24
