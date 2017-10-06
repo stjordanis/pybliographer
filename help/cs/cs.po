@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pybliographer master\n"
-"POT-Creation-Date: 2017-09-26 14:32+0000\n"
-"PO-Revision-Date: 2017-09-26 19:58+0200\n"
+"POT-Creation-Date: 2017-10-05 12:28+0000\n"
+"PO-Revision-Date: 2017-10-06 07:50+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -213,10 +213,10 @@ msgid ""
 "\"http://pybliographer.org/Mailing_lists\">mailing list</link> also, where "
 "you can get answers for your questions, you can report bugs, etc."
 msgstr ""
-"Pro další informace navštivte prosím <link href=\"http://pybliographer.org/\">"
-"webové stránky Pybliographer</link>. K dispozici je také <link href=\"http://"
-"pybliographer.org/Mailing_lists\">poštovní konference</link>, ve které můžete "
-"získat odpovědi na své dotazy, hlásit chyby atd."
+"Pro další informace navštivte prosím <link href=\"http://pybliographer.org/"
+"\">webové stránky Pybliographer</link>. K dispozici je také <link href="
+"\"http://pybliographer.org/Mailing_lists\">poštovní konference</link>, ve "
+"které můžete získat odpovědi na své dotazy, hlásit chyby atd."
 
 #. (itstool) path: info/desc
 #: C/command-line.page:10
@@ -1168,13 +1168,13 @@ msgid ""
 "sourceforge.net/\"><app>Kile</app></link>, direct queries on Medline, and "
 "saving selected references in different formats are also possible."
 msgstr ""
-"Grafické uživatelské rozhraní je nazýváno <app>Pybliographic</app>. Poskytuje "
-"snadný přístup k většině běžných funkcí výkonného jádra <app>Pybliographer"
-"</app> na pozadí a umožňuje vám hledat, řadit a upravovat bibliografické "
-"záznamy. Navíc je možné přímé vkládání odkazů do <link href=\"http://www.lyx."
-"org/\"><app>Lyx</app></link> a <link href=\"http://kile.sourceforge.net/\">"
-"<app>Kile</app></link>, přímé dotazy na Medline a ukládání vybraných dotazů v "
-"jiných formátech."
+"Grafické uživatelské rozhraní je nazýváno <app>Pybliographic</app>. "
+"Poskytuje snadný přístup k většině běžných funkcí výkonného jádra "
+"<app>Pybliographer</app> na pozadí a umožňuje vám hledat, řadit a upravovat "
+"bibliografické záznamy. Navíc je možné přímé vkládání odkazů do <link href="
+"\"http://www.lyx.org/\"><app>Lyx</app></link> a <link href=\"http://kile."
+"sourceforge.net/\"><app>Kile</app></link>, přímé dotazy na Medline a "
+"ukládání vybraných dotazů v jiných formátech."
 
 #. (itstool) path: info/desc
 #: C/gui-pubmed.page:10
@@ -2709,13 +2709,13 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/whatsnew.page:10
-msgid "New features in <app>Pybliographer</app> 1.2.15."
-msgstr "Nové funkce v <app>Pybliographer</app> 1.2.15."
+msgid "New features in <app>Pybliographer</app> 1.2.18."
+msgstr "Nové funkce v <app>Pybliographer</app> 1.2.18."
 
 #. (itstool) path: page/title
 #: C/whatsnew.page:26
-msgid "What's New in Pybliographer 1.2.15"
-msgstr "Co je nového v Pybliographer 1.2.15"
+msgid "What's New in Pybliographer 1.2.18"
+msgstr "Co je nového v Pybliographer 1.2.18"
 
 #. (itstool) path: page/p
 #: C/whatsnew.page:27
