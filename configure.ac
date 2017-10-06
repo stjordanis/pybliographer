@@ -64,22 +64,15 @@ else
 	AC_MSG_RESULT([disabled by user])
 fi
 
-# i18n
-IT_PROG_INTLTOOL([0.40.0])
-
 GETTEXT_PACKAGE=AC_PACKAGE_TARNAME
 AC_SUBST([GETTEXT_PACKAGE])
 AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], "$GETTEXT_PACKAGE", [Gettext package])
 
+AM_GNU_GETTEXT_VERSION([0.19.7])
+AM_GNU_GETTEXT
+
 # Documentation
 YELP_HELP_INIT
-
-AC_ARG_ENABLE(update-desktop-database,
-AC_HELP_STRING([--disable-update-desktop-database],
-	[do not update desktop database after installation]),,
-	enable_update_desktop_database=yes)
-
-AM_CONDITIONAL(ENABLE_UPDATE_DESKTOP_DATABASE, test x$enable_update_desktop_database = xyes)
 
 AC_CONFIG_FILES(
 	Makefile
@@ -100,7 +93,6 @@ AC_CONFIG_FILES(
 	data/pixmaps/Makefile
 	data/src/Makefile
 )
-
 
 AC_OUTPUT
 

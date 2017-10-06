@@ -78,6 +78,7 @@ Pyblio/recode.py
 Pyblio/userexit.py
 Pyblio/version.py.in
 pybliographer.in
+pybliographic.appdata.xml.in
 pybliographic.desktop.in
 scripts/pybliocheck.py
 scripts/pybliocompact.py

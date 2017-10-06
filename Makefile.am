@@ -17,27 +17,17 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 # 
-# 
-
-DISTCHECK_CONFIGURE_FLAGS = --disable-update-desktop-database
+#
 
 pybdir  = $(datadir)/$(PACKAGE)
-appdir  = $(datadir)/applications
 
-SUBDIRS = 	Pyblio 		\
+SUBDIRS = 	. Pyblio 		\
 		scripts		\
 		tests		\
 		Styles		\
 		po		\
 		help		\
 		data
-
-
-app_DATA = pybliographic.desktop
-
-appdatadir = $(datadir)/appdata
-appdata_DATA = pybliographic.appdata.xml
-
 
 bin_SCRIPTS = pybliographer
 
@@ -46,28 +36,30 @@ pyb_DATA = pybrc.py
 desktopdir = $(datadir)/applications
 desktop_in_files = pybliographic.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+%.desktop: %.desktop.in Makefile
+	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
-@INTLTOOL_DESKTOP_RULE@
-
-INTLTOOL = 			\
-	intltool-extract.in 	\
-	intltool-merge.in 	\
-	intltool-update.in
+appdatadir = $(datadir)/appdata
+appdata_in_files = pybliographic.appdata.xml.in
+appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+%.xml: %.xml.in Makefile
+	$(AM_V_GEN) $(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
 
 EXTRA_DIST = \
-	 	pybliographer.in 		\
-		pybliographic.appdata.xml	\
-		$(desktop_in_files) $(INTLTOOL) $(pyb_DATA)
+ 	pybliographer.in 		\
+	$(appdata_in_files) \
+	$(desktop_in_files) \
+	$(pyb_DATA)
 
-CLEANFILES = pybliographer $(desktop_DATA)
+CLEANFILES = \
+	pybliographer \
+	$(desktop_DATA) \
+	$(appdata_DATA)
 
-DISTCLEANFILES = 		\
-	intltool-extract 	\
-	intltool-merge 		\
-	intltool-update
+DISTCLEANFILES =
 
-pybliographer: pybliographer.in
-	sed \
+pybliographer: pybliographer.in Makefile
+	$(AM_V_GEN)sed \
 		-e s!\@bin_dir\@!$(bindir)!               \
 		-e s!\@libpyb\@!$(libdir)/$(PACKAGE)!     \
 		-e s!\@datapyb\@!$(datadir)/$(PACKAGE)!   \
@@ -75,17 +67,8 @@ pybliographer: pybliographer.in
 		-e s!\@version\@!$(VERSION)!              \
 		-e s!\@locale_dir\@!$(localedir)!         \
 		-e s!\@p_datadir\@!$(datadir)/$(PACKAGE)! \
+		-e s!\@python_path\@!$(PYTHON)! \
 		< $< > $@
-	chmod 755 $@
+	chmod +x $@
 
-pybliographer: Makefile
-
-update_desktop_database = update-desktop-database $(DESTDIR)$(appdir) \
-	|| echo "**** Warning: cannot update mime cache (recommended for Gnome >= 2.8)"
-
-install-data-hook: update-desktop-database
-uninstall-hook: update-desktop-database
-update-desktop-database:
-if ENABLE_UPDATE_DESKTOP_DATABASE
-	$(update_desktop_database)
-endif
+ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}

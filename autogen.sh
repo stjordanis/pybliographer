@@ -33,7 +33,6 @@ GNOMEDOC=`which yelp-build`
 
 run aclocal ${aclocal_extra}
 run autoconf
-run intltoolize
 run automake -a
 
 if [ -x ./config.status ] ; then

@@ -52,7 +52,7 @@ EXTRA_DIST = 	pybscript.in			\
 $(bin_SCRIPTS):
 	$(LN_S) pybscript $@
 
-pybscript: pybscript.in
+pybscript: pybscript.in Makefile
 	sed \
 		-e s!\@bin_dir\@!$(bindir)!               \
 		-e s!\@libpyb\@!$(libdir)/$(PACKAGE)!     \
@@ -63,8 +63,6 @@ pybscript: pybscript.in
 		-e s!\@p_datadir\@!$(datadir)/$(PACKAGE)! \
 		< $< > $@
 	chmod 755 $@
-
-pybscript: Makefile
 
 DISTCLEANFILES = pybscript
 
