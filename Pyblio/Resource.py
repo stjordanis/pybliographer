@@ -37,7 +37,7 @@ import os, sys, urllib, urlparse
 from Pyblio import Config, Fields, userexit
 
 def is_interactive ():
-    return sys.modules.has_key ('gtk')
+    return sys.modules.has_key ('gi.repository.Gtk')
 
 
 class ResourceDirector (object):

@@ -47,15 +47,15 @@ class Callback:
                                        Gtk.ButtonsType.YES_NO,
                                        question)
         if cancel_add:
-            self.dialog.add_button(gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL)
+            self.dialog.add_button(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
 
         return
 
     def answer (self):
         res = self.dialog.run ()
-        if res == Gtk.RESPONSE_YES:
+        if res == Gtk.ResponseType.YES:
             res = True
-        elif res == Gtk.RESPONSE_NO:
+        elif res == Gtk.ResponseType.NO:
             res = False
         else:
             res = 2
