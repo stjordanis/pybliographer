@@ -31,6 +31,9 @@ files    = sys.argv [2:]
 sys.argv = sys.argv [:2] + ['--'] + files
 
 # correctly identify the program
+import gi
+
+gi.require_versions({'Gtk': '3.0'})
 from gi.repository import Gtk
 
 from Pyblio import version
