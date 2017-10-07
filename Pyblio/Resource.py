@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
 # Copyright (C) 2005 Peter Schulte-Stracke
