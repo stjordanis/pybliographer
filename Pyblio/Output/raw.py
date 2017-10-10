@@ -21,9 +21,8 @@
 
 """ This is a module that codes bibliographies into simple text output """
 
-import sys
+from Pyblio import Autoload, Formatter
 
-from Pyblio import Autoload, Base, Formatter
 
 class TextFormat (Formatter.Formatter):
 

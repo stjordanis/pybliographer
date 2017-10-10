@@ -24,7 +24,6 @@
 
 
 from Pyblio import Formatter, Autoload
-import string
 
 
 class HTML (Formatter.Formatter):
