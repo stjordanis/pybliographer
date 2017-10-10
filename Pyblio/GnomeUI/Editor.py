@@ -738,11 +738,8 @@ class RealEditor (Connector.Publisher):
 
 
     def update_notebook (self):
-
         if self.notebook_init:
-            # FIXMEgpoo: Check for secondary effects
-            f = lambda x, y: self.notebook.remove_page(0)
-            self.notebook.foreach(f, None)
+            self.notebook.foreach(lambda x: self.notebook.remove_page(0))
         
         self.notebook_init = True
         self.current_page = None
@@ -947,7 +944,6 @@ class RealEditor (Connector.Publisher):
             try:
                 result = item.update(self.entry)
             except UnicodeError:
-                # FIXMEgpoo: check enconding handling
                 f = Types.get_field(item.field)
                 Utils.error_dialog_s(self.w.get_toplevel (),
                                      _("The `%s' field contains a non Latin-1 symbol") %
