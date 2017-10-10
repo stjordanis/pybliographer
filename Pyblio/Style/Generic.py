@@ -23,7 +23,6 @@
 
 import string
 
-from Pyblio.Style import Parser
 from Pyblio import Autoload, recode
 
 

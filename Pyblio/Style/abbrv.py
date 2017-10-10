@@ -29,10 +29,9 @@
 
 import string
 
-from Pyblio.Style import Parser
 from Pyblio import Autoload, recode
-
 from Pyblio import pybtextvar
+
 
 def author_desc (group, coding, initials = 0, reverse = 0):
     """ Create a nice string describing a group of authors.

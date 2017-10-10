@@ -21,12 +21,12 @@
 
 ''' Parser for XML definitions of the bibliographic output '''
 
+import string, re
+
+from gettext import gettext as _
+from xml import sax
 from Pyblio import Open, Autoload
 
-from xml import sax
-from xml.sax.saxutils import escape, quoteattr
-
-import string, re
 
 _map = string.maketrans ('\t', ' ')
 _cpt = re.compile ('\s+')

@@ -19,8 +19,8 @@
 # 
 # 
 
-from Pyblio.Style import Parser
-from Pyblio import Fields, Autoload
+from Pyblio import Parser
+
 
 def generate (style_url, format, database, keys, output):
     
