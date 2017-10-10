@@ -1,4 +1,4 @@
-from Pyblio import Config, Types
+from Pyblio import Config
 from Pyblio.Format.OvidLike import SimpleField, AuthorField, SourceField, KeywordField
 
 def _get_elements ():

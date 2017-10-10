@@ -1,3 +1,5 @@
+import string
+
 from Pyblio import Config, Types, Fields, Autoload
 
 def _get_entries ():

@@ -1,5 +1,5 @@
 from Pyblio import Config, Fields
-from Pyblio.GnomeUI import Utils, Editor
+from Pyblio.GnomeUI import Editor
 
 from gi.repository import Gtk
 
