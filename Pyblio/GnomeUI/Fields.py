@@ -61,9 +61,6 @@ class FieldsDialog (Utils.GladeWindow):
         self.dialog = self.xml.get_object('fields1')
         self.w = self.xml.get_object('notebook')
 
-##      tooltips = Gtk.Tooltips ()
-##      tooltips.enable ()
-        
         self.menu_items = []
         self.warning = 0
         self.parent = parent

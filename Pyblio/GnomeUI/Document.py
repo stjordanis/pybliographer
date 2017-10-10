@@ -230,16 +230,10 @@ class Document (Connector.Publisher):
         i.set_from_stock(Gtk.STOCK_FIND, Gtk.IconSize.LARGE_TOOLBAR)
         h.pack_start(i, False, False, False)
 
-        # create a tooltips object
-##      self.toolbartips = Gtk.Tooltips()
-
         self.quick_search = Gtk.Entry()
         self.quick_search.connect('activate', self.simple_search)
         h.pack_start(self.quick_search, False, False, False)
-##      self.toolbartips.set_tip(self.quick_search, _('Quick search'))
-
-        if Config.get ('gnome/tooltips').data:
-            self.quick_search.set_tooltip_text (_('Quick search'))
+        self.quick_search.set_tooltip_text (_('Quick search'))
 
         i = Gtk.ToolItem()
         i.add(h)
