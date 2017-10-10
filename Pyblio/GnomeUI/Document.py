@@ -459,22 +459,18 @@ class Document (Connector.Publisher):
     def confirm (self):
         ''' eventually ask for modification cancellation '''
         
-        if self.changed:
-	    if Config.get('gnome/old-confirmation-dialog').data:
-		return Utils.Callback (_("The database has been modified.\nDiscard changes?"),
-				       self.w).answer ()
-      
-	    else:
-		answer = Utils.Callback (_("The database has been modified.\nSave changes?"),
-				         self.w, cancel_add = True).answer ()
-                if answer == 2:
-                    return False
-                elif answer and self.modification_check ():
-                    self.save_document ()
-                    return True
-		else:
-		    return True
-	return 1
+        if not self.changed:
+            return True
+
+        result = Utils.Callback (_("The database has been modified.\nSave changes?"),
+                                 self.w, cancel_add=True).answer()
+        if result == 2:
+            return False
+        elif result and self.modification_check ():
+            self.save_document ()
+            return True
+        else:
+            return True
 
     def modification_check (self):
 	"""Check for external modification, if necessary,
