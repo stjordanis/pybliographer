@@ -25,6 +25,8 @@
 import os
 import gi
 
+from gettext import gettext as _
+
 gi.require_versions({'GConf': '2.0'})
 from gi.repository import Gtk, Pango, Gdk, GConf
 
