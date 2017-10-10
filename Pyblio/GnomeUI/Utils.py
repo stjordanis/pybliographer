@@ -208,7 +208,7 @@ def error_dialog_s(parent, primary, secondary=None):
     dialog = Gtk.MessageDialog(parent,
                                Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT,
                                Gtk.MessageType.ERROR,
-                               Gtk.ButtonsType.CANCEL, primary)
+                               Gtk.ButtonsType.CLOSE, primary)
     if secondary:
         dialog.format_secondary_text(secondary)
     dialog.run()
