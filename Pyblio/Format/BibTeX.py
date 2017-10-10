@@ -22,12 +22,15 @@
 # Extension module for BibTeX files
 
 import _bibtex
-import os, sys, tempfile, pwd, time, traceback, re, string, copy
+import re, string, copy
 
-from types import *
-from Pyblio.Fields import *
+from gettext import gettext as _
+from Pyblio.Fields import Author, AuthorGroup, Date, LongText
+from Pyblio.Fields import Reference, Text, URL
 from Pyblio import Base, Config, Autoload, Types
 from Pyblio import Open, Key, Utils, Iterator, Exceptions
+
+# from types import LongText, Text
 
 # this database is shared between all the unpickled entries
 _unpickle_db = _bibtex.open_string ("<unpickled>", '', 0);
@@ -325,7 +328,6 @@ class DataBase(Base.DataBase):
                                    _bibtex.reverse(_base_fieldtype[Text],
                                                    Config.get('bibtex+/braces').data,
                                                    user [k][0]))
-	finished = 0
 	errors = []
 
 	# Creer la base de cles

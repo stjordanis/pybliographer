@@ -24,7 +24,8 @@
 
 from Pyblio import Base, Fields, Types, Autoload, Open, Iterator, Utils, Config
 
-import re, string,sys
+import re, string
+
 
 header = re.compile ('^(\w\w[\w ][\w ])- (.*)$')
 contin = re.compile ('^      (.*)$')

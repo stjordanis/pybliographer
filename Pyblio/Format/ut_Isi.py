@@ -1,16 +1,12 @@
-#    -*- coding: iso8859-1 -*-
-
+# -*- coding: utf-8 -*-
 
 import cStringIO, os, sys, unittest
 
 sys.path.append (os.path.abspath('../..'))
 print os.path.abspath('../..')
 
-
-
 from Pyblio.Format import isifile
 from Pyblio import Base, Config, Fields
-
 
 
 example_1 = """AU Bogin, B
@@ -166,14 +162,12 @@ def main ():
     
 
 if __name__ == '__main__':
-    
     main()
-
 
 
 ### Local Variables:
 ### Mode: python
-### encoding: iso-8859-1    
+### encoding: utf-8
 ### End:
 
 

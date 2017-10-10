@@ -24,9 +24,8 @@
 """ Extension module for Ovid files """
 
 from Pyblio.Format import OvidLike
-from Pyblio import Base, Open, Config, Types, Autoload
+from Pyblio import Base, Open, Config, Autoload
 
-import string
 
 class Ovid (Base.DataBase):
 

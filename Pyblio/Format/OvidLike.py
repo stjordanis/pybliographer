@@ -23,9 +23,10 @@
 
 """ Parser for files having an Ovid-like structure """
 
-import sys, re, string
+import re, string
 
-from Pyblio import Base, Exceptions, Fields, Iterator, Types, Utils
+from Pyblio import Base, Fields, Iterator, Types
+
 
 SimpleField  = 0
 AuthorField  = 1

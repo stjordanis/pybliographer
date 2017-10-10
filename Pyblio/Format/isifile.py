@@ -160,7 +160,6 @@ class IsifileIterator(Iterator.Iterator):
 
 	for key in ( 'AU', 'ED'):
 	    if lines.has_key(key):
-		field = Types.get_field('author')
 		group = Fields.AuthorGroup()
 		for item in lines[key]:
 		    if string.strip(item) =='[Anon]' :
@@ -271,7 +270,6 @@ def writer (iter, output_stream, preamble=None, postamble = None):
     optional pre- and postamble, onto an output stream.'''
 
     remaining = {}
-    text = []
     global field_map, output
     output = output_stream
     field_map = field_map or reverse_mapping(key_map)

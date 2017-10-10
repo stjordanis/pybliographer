@@ -121,7 +121,7 @@ from Pyblio import Config
 from Pyblio.Key import Key
 from Pyblio.Types import get_entry
 from Pyblio.Format.OvidLike import OvidLike, writer, write_source_field 
-from Pyblio.Fields import Author, AuthorGroup, Date
+from Pyblio.Fields import Date
 
 class WriterCase (unittest.TestCase):
 
