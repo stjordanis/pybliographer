@@ -1,5 +1,7 @@
 import sys
 from Pyblio import Selection, Sort
+from Pyblio.Open import bibwrite, bibopen
+
 
 a = bibopen (sys.argv [2])
 f = open (sys.argv [3], 'w')

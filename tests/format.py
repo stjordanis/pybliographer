@@ -1,6 +1,8 @@
-from Pyblio import Fields, Autoload
-from Pyblio.Style import Utils
 import sys
+from Pyblio import Fields, Autoload
+from Pyblio.Open import bibopen
+from Pyblio.Style import Utils
+
 
 db   = bibopen (sys.argv [2])
 keys = db.keys ()

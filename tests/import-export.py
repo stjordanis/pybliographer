@@ -1,5 +1,7 @@
 import sys
 from Pyblio import Selection, Sort
+from Pyblio.Open import bibwrite, bibopen
+
 
 how = sys.argv [2]
 
