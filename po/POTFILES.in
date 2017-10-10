@@ -23,7 +23,6 @@ Pyblio/Format/Refer.py
 Pyblio/Format/__init__.py
 Pyblio/Format/isifile.py
 Pyblio/Formatter.py
-Pyblio/GnomeUI/Compat.py
 Pyblio/GnomeUI/Config.py
 Pyblio/GnomeUI/Document.py
 Pyblio/GnomeUI/Editor.py

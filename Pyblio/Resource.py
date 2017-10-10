@@ -33,6 +33,7 @@ CHOOSER_ACTIONS = ('enter/edit', 'select', 'select-directory',
                'download', 'move/copy' )
 
 import os, sys, urllib, urlparse
+from gi.repository import Gio
 
 from Pyblio import Config, Fields, userexit
 
@@ -65,7 +66,7 @@ def StartViewer (entry, key, stringuri, parent=None, document=None):
 
     if not is_interactive (): 	return
 
-    from Pyblio.GnomeUI import Compat, Utils    
+    from Pyblio.GnomeUI import Utils    
 
 
     uri = Fields.URL (stringuri)
@@ -81,7 +82,7 @@ def StartViewer (entry, key, stringuri, parent=None, document=None):
 	document.statusbar.set_status (_("Determining Mime Type ... "))
 
     try:
-	mimetype =  Compat.get_mime_type (fileuri)
+	mimetype =  Gio.content_type_get_mime_type(fileuri)
     except RuntimeError, mesg:
 	Utils.error_dialog(_("Cannot determine mime type for item %s ") % entry.key.key, 
 			   _("URL in question is: %s\n"
@@ -111,7 +112,7 @@ def StartViewer (entry, key, stringuri, parent=None, document=None):
 	    tempname = os.tmpnam ()
 	    os.system ("gzip -d < %s >%s" %(filename, tempname))
 	    filename = tempname
-	    mimetype =  Compat.get_mime_type (filename)
+	    mimetype =  Gio.content_type_get_mime_type(filename)
 	except RuntimeError, mesg:
 	    Utils.error_dialog (_("IOError for item %s: cannot uncompress resource.")
 				% entry.key.key, _("URL: %s\nDetails: %s")
