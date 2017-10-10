@@ -213,3 +213,13 @@ def error_dialog_s(parent, primary, secondary=None):
         dialog.format_secondary_text(secondary)
     dialog.run()
     dialog.destroy()
+
+def warning_dialog_s(parent, primary, secondary=None):
+    dialog = Gtk.MessageDialog(parent,
+                               Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT,
+                               Gtk.MessageType.WARNING,
+                               Gtk.ButtonsType.CLOSE, primary)
+    if secondary:
+        dialog.format_secondary_text(secondary)
+    dialog.run()
+    dialog.destroy()

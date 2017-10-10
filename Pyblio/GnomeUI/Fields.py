@@ -63,7 +63,7 @@ class FieldsDialog (Utils.GladeWindow):
         self.w = self.xml.get_object('notebook')
 
         self.menu_items = []
-        self.warning = 0
+        self.warning = False
         self.parent = parent
         self.init_page_1()
         self.init_page_2()
@@ -412,18 +412,16 @@ class FieldsDialog (Utils.GladeWindow):
         return
 
 
-    def apply (self, * arg):
-        if not self.changed: return
+    def apply(self, *arg):
+        if not self.changed:
+            return
         
-        result = self.get ()
-        
-        Config.set_and_save ('base/fields', result)
+        result = self.get()
+        Config.set_and_save('base/fields', result)
 
         if self.parent:
-            self.parent.warning (_("Some changes require to restart Pybliographic\n"
+            Utils.warning_dialog_s(self.parent, _("Some changes require to restart Pybliographic\n"
                                    "to be correctly taken into account"))
-        return
-
 
     def add_cb (self, * arg):
         name = string.strip (self.name.get_text ())
