@@ -32,6 +32,8 @@ import types
 pickle = cPickle
 del cPickle
 
+deprecated_keys = ['gnome/old-confirmation-dialog',]
+
 
 class ConfigItem:
 
@@ -155,14 +157,16 @@ def define (key, description, vtype = None, hook = None, user = None):
     return
 
 
-def set (key, value):
+def set(key, value):
     try:
-        ConfigItems [key].set (value)
+        ConfigItems[key].set(value)
     except KeyError:
-        sys.stderr.write (
-            "pybliographer: warning: configuration key `%s' is undefined\n"
-            % key)
-    return
+        if key not in deprecated_keys:
+            # We removed a configuration setting, we no need to bother
+            # the user about it.
+            sys.stderr.write(
+                "pybliographer: warning: configuration key `%s' is undefined\n"
+                % key)
 
 _changes = {}
 
