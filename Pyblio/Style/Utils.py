@@ -19,7 +19,7 @@
 # 
 # 
 
-from Pyblio import Parser
+from Pyblio.Style import Parser
 
 
 def generate (style_url, format, database, keys, output):
