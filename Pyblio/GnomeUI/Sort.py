@@ -22,11 +22,10 @@
 
 ''' This module implements a Dialog to define Sort criterions '''
 
-import os, string
-
+from gettext import gettext as _
 from gi.repository import Gtk, GObject, GdkPixbuf
 
-from Pyblio import Connector, Sort, Config, version
+from Pyblio import Connector, Sort, Config
 from Pyblio.GnomeUI import Utils
 
 import cPickle

@@ -24,13 +24,13 @@
 #   entry editor for more than 50 chars
 # added: Note taking widget
 
-from gettext import gettext as _
-
-from gi.repository import GObject, Gtk, Gdk
 import copy, re, string
 
-from Pyblio import Base, Config, Connector, Exceptions, Fields, Key, Types
-from Pyblio.GnomeUI import Common, FieldsInfo, FileSelector, Mime, Utils
+from gettext import gettext as _
+from gi.repository import GObject, Gtk, Gdk
+
+from Pyblio import Config, Connector, Exceptions, Fields, Key, Types
+from Pyblio.GnomeUI import FieldsInfo, FileSelector, Mime, Utils
 
 key_re = re.compile("^[\w:_+-.()/]+$")
 
@@ -650,12 +650,8 @@ class RealEditor (Connector.Publisher):
             liststore = self.menu.get_model()
             liststore.clear()
 
-            i = 0
-            history = 0
             for entry in entry_list:
-                if entry == self.entry.type: history = i
                 liststore.append ((entry.name, entry))
-                i = i + 1
 
             self.menu.set_model(liststore)
             return
@@ -664,8 +660,6 @@ class RealEditor (Connector.Publisher):
             
         self.entry = new
         self.update_notebook ()
-        return
-
 
     def apply_cb (self, * args):
         self.issue ('apply')
@@ -1168,7 +1162,7 @@ class Editor(Connector.Publisher):
         if self.native_mode:
             return
         n = self.editor.notebook
-        box = n.get_nth_page(n.get_current_page())
+        n.get_nth_page(n.get_current_page())
 
     def save_size(self):
         if not self.editor:

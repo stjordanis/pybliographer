@@ -19,15 +19,12 @@
 # 
 # 
 
-import string, os, urlparse
-import gettext
-_ = gettext.gettext
+import os
 
-from gi.repository import Gtk, GObject, Gdk
+from gettext import gettext as _
+from gi.repository import Gtk, Gdk
 
-from Pyblio import Open, Types, Base, Fields, Config, Autoload
-
-from Pyblio.GnomeUI import Utils
+from Pyblio import Autoload
 
 
 class URLFileSelection (Gtk.FileChooserDialog):

@@ -22,10 +22,8 @@
 
 ''' Defines a Dialog to open URL '''
 
-from gi.repository import GObject
-from gi.repository import Gtk
-
-import string, os
+from gettext import gettext as _
+from gi.repository import Gtk, GObject
 
 from Pyblio import Connector, Autoload
 from Pyblio.GnomeUI import Utils

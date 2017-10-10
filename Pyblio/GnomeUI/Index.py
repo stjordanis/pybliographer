@@ -38,9 +38,9 @@ from gi.repository import GObject, Gtk, Gdk, GdkPixbuf, Pango
 
 import os.path
 
-from Pyblio.GnomeUI import FieldsInfo, Mime, Utils
+from Pyblio.GnomeUI import Mime, Utils
 
-from string import *
+from string import ascii_letters, digits, join, lower
 
 import cPickle
 

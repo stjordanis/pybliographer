@@ -27,12 +27,13 @@ bibliography '''
 # adapt menu item for this dialog
 # cleaning up
 
+from gettext import gettext as _
 
 from gi.repository import GObject, Gtk
 
-import copy, os, re, string
+import copy, string
 
-from Pyblio import Config, Fields, Types, version
+from Pyblio import Config, Fields, Types
 from Pyblio.GnomeUI import Utils
 
 _typename = {
@@ -183,7 +184,6 @@ class FieldsDialog (Utils.GladeWindow):
         m, iter = sel.get_selected()
         if iter:
             p = self.sfm.convert_iter_to_child_iter(iter)
-            data = self.fm[p]
             self.name1.set_text(self.fm[p][0])
             try:
                 self.menu1.set_active(self.menu_items.index(self.fm[p][3].type))

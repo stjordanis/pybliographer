@@ -34,13 +34,13 @@ from Pyblio.GnomeUI import Index, OpenURL, Search, Utils
 from Pyblio.GnomeUI.Sort import SortDialog
 from Pyblio.GnomeUI.Medline import MedlineUI
 
-from Pyblio import Base, Config, Connector, Exceptions, Fields, Open
-from Pyblio import Query, Resource, Selection, Sort, Types, version
+from Pyblio import Config, Connector, Exceptions, Fields, Open
+from Pyblio import Query, Resource, Selection, Sort, version
 from Pyblio import Search as SearchCls
 
 import Pyblio.Style.Utils
 
-import os, string, copy, types, sys, traceback, stat
+import os, string, types, sys, traceback, stat
 
 import cPickle as pickle
 

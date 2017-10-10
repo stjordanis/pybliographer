@@ -36,8 +36,8 @@ Class filechooserdialog subclasses Gtk.FileChooserDialog and
 RESPONSE_COPY = 1
 RESPONSE_VIEW = 2
 
+from gettext import gettext as _
 from gi.repository import GObject, Gtk, Gdk, Pango
-import sys
 
 from  Pyblio import Fields, Resource
 
@@ -53,7 +53,6 @@ class filechooserbutton (Gtk.Button):
     def __init__ (self, URL=None, action='enter/edit', parent=None):
 	GObject.GObject.__init__ (self)
 
-	g_error = GObject.GError ()
 	self.parent_widget = parent 
 	self.url = URL or Fields.URL ()
 	self.newuri = None

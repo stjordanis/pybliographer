@@ -23,13 +23,13 @@
 # TO DO:
 # List view troubles
 
+from gettext import gettext as _
 from gi.repository import GObject, Gtk
 
-import copy, os.path, re, string   
+import copy, re, string   
 
 from Pyblio.GnomeUI import Utils
-from Pyblio import Config, version
-from Pyblio.Utils import format
+from Pyblio import Config
 
 _map = string.maketrans ('\t\n', '  ')
 _cpt = re.compile ('\s+')

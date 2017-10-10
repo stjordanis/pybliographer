@@ -22,16 +22,12 @@
 
 
 """ This module implements the Search dialog """
+import string, re, sys, traceback
 
-import os
-
+from gettext import gettext as _
 from gi.repository import Gdk, Gtk, GObject
 
-import string, re, sys, traceback, copy
-
-from Pyblio import Types, Search, Config, \
-     Connector, TextUI, version
-
+from Pyblio import Types, Search, Config, Connector, TextUI
 from Pyblio.GnomeUI import Utils
 
 

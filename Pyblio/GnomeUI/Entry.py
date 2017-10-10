@@ -19,12 +19,11 @@
 # 
 # 
 
-from gi.repository import Gdk, Gtk, Pango, GObject
-
 import string
 
-from Pyblio.GnomeUI import Utils
-from Pyblio import Config, recode, Fields
+from gettext import gettext as _
+from gi.repository import Gdk, Gtk, Pango, GObject
+from Pyblio import Fields
 
 
 class Entry:
@@ -100,19 +99,15 @@ class Entry:
             def url_open (w, url):
                 try:
                     Gtk.show_uri(None, url, Gdk.CURRENT_TIME)
-                    
                 except GObject.GError, msg:
-
-                    d = MessageDialog (None,
-                                       DIALOG_MODAL |
-                                       DIALOG_DESTROY_WITH_PARENT,
-                                       MESSAGE_ERROR,
-                                       BUTTONS_CLOSE,
-                                       _('Cannot open URL:\n%s') % msg)
+                    d = Gtk.MessageDialog(None,
+                                          Gtk.DialogFlags.MODAL |
+                                          Gtk.DialogFlags.DESTROY_WITH_PARENT,
+                                          Gtk.MessageType.ERROR,
+                                          Gtk.ButtonsType.CLOSE,
+                                          _('Cannot open URL:\n%s') % msg)
                     d.run ()
                     d.destroy ()
-                    
-                return
                 
             button.connect ('clicked', url_open, field.get_url ())
             
