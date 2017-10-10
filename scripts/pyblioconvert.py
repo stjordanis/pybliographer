@@ -20,10 +20,12 @@
 # 
 # 
 
-import os, sys, string
+import sys, string
 
+from gettext import gettext as _
 import locale
 charset = locale.getlocale () [1] or 'ascii'
+
 
 if len (sys.argv) < 4 or len (sys.argv) > 5:
     print _("usage: pyblioconvert <source>..<target> <input> [output]").encode (charset)

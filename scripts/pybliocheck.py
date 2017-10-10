@@ -24,9 +24,11 @@ import os, sys, string
 from Pyblio import Config, Exceptions
 from gettext import gettext as _
 from gettext import ngettext as _n
+from Pyblio.Open import bibopen
 
 import locale
 charset = locale.getlocale () [1] or 'ascii'
+
 
 # check the arguments
 if len (sys.argv) < 3:

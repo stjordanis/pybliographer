@@ -21,10 +21,14 @@
 # 
 
 import string, os, re, copy, sys
+
+from gettext import gettext as _
 from Pyblio import Base, Config, Fields, Key
+from Pyblio.Open import bibopen, bibwrite
 
 import locale
 charset = locale.getlocale () [1] or 'ascii'
+
 
 def usage ():
     print _("usage: pybliocompact <latexfile> <bibtexfiles...>").encode (charset)

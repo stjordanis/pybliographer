@@ -22,9 +22,10 @@
 
 import string, sys, os
 
+from gettext import gettext as _
 from Pyblio.Output import latexutils
 
-from Pyblio import Base, Autoload, Fields
+from Pyblio import Autoload, Fields
 from Pyblio.Style import Utils
 
 import locale

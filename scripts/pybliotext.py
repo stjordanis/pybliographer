@@ -29,13 +29,14 @@
 import string, os, re, copy, sys, getopt
 from shutil import copyfile
 
-from Pyblio import Base, Key, Autoload
+from gettext import gettext as _
+from Pyblio import Base, Autoload, Key, Fields, pybtextvar
+from Pyblio.Open import bibopen
 from Pyblio.Style import Utils
-
-from Pyblio import pybtextvar
 
 import locale
 charset = locale.getlocale () [1] or 'ascii'
+
 
 def usage ():
     print _("usage: pybliotext [-o outputfile] [-s style] <textfile> <bibfiles...>").encode (charset)
