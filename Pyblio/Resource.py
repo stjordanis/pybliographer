@@ -32,10 +32,13 @@ config_viewers = 'resource/viewers'
 CHOOSER_ACTIONS = ('enter/edit', 'select', 'select-directory',
                'download', 'move/copy' )
 
-import os, sys, urllib, urlparse
+import os, sys, urllib
+
+from gettext import gettext as _
 from gi.repository import Gio
 
 from Pyblio import Config, Fields, userexit
+
 
 def is_interactive ():
     return sys.modules.has_key ('gi.repository.Gtk')

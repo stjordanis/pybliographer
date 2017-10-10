@@ -21,7 +21,7 @@
 
 ''' System for Configuration handling '''
 
-
+from gettext import gettext as _
 import atexit, cPickle, os, string, sys, types
 
 pickle = cPickle

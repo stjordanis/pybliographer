@@ -22,8 +22,8 @@
 ''' In this module are defined the search operators that can be applied
 in a Selection '''
 
-from string import *
 import re
+from string import lower
 
 # ----- Boolean tests -----
 

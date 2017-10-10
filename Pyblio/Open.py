@@ -19,12 +19,11 @@
 # 
 # 
 
+import os, sys, urllib, urlparse
 
-from types import *
-
+from gettext import gettext as _
 from Pyblio import Autoload, Config, Exceptions, Fields, Help
 
-import os, string, sys, tempfile, traceback, urllib, urlparse
 
 def url_to_local (url):
 

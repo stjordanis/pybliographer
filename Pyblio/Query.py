@@ -28,7 +28,7 @@ Updated by Z. Kota in 2011 for eutils.
 """
 
 # The time module is added for querying date ranges of publications
-import urllib, urllib2, sys, re, string, time, tempfile, os
+import urllib, urllib2, time, tempfile, os
 from xml.dom.minidom import parse
 
 

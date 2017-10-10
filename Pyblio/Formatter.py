@@ -25,7 +25,6 @@ realization in a given language '''
 
 import sys
 
-from Pyblio import Autoload, Base
 
 class Formatter:
 

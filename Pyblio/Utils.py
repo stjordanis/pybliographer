@@ -19,11 +19,12 @@
 # 
 # 
 import re
-from string import *
+from string import join, split, rstrip
 
 from Pyblio import Key, Autoload, recode
 
 _flat = recode.recode ('latin1..flat')
+
 
 def compress_page_range (pages, separator='-'):
     """Returns a page range with common prefix

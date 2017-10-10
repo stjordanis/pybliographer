@@ -20,9 +20,10 @@
 # 
 # 
 
-from Pyblio import Fields, Types
+import re, string
 
-import re, string, time
+from Pyblio import Types
+
 
 class Sort:
     ''' This class defines the methods used to sort a database '''

@@ -21,13 +21,11 @@
 
 ''' This module provides basical high level functions '''
 
-from types import *
+import os, sys, string
 
-import os, sys, traceback, tempfile, string
-
-from Pyblio import Base, Help, Search, Types, Autoload, Fields
+from Pyblio import Help, Search, Types, Autoload, Fields
 from Pyblio.Selection import Selection
-from Pyblio.Open import bibopen, bibwrite, bibnew
+from Pyblio.Open import bibwrite
 from Pyblio.Style import Utils
 
 # ----- Create elementary Test -----

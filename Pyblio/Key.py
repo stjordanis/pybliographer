@@ -19,7 +19,7 @@
 # 
 # 
 
-from types import *
+from types import InstanceType
 
 
 class Key:

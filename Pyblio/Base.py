@@ -22,15 +22,12 @@
 ''' This Module contains the base classes one might want to inherit
 from in order to provide a new database format '''
 
+import os
 
-from string import *
-import re, copy, os
-import Pyblio.Help
-from types import *
+from string import lower
+from shutil import copyfile
 
 from Pyblio import Autoload, Config, Iterator, Key, Open, Selection, Utils
-
-from shutil import copyfile
 
 class Entry:
     '''
