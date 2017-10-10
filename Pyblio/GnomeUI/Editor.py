@@ -30,7 +30,7 @@ from gi.repository import GObject, Gtk, Gdk
 import copy, re, string
 
 from Pyblio import Base, Config, Connector, Exceptions, Fields, Key, Types
-from Pyblio.GnomeUI import Common, Compat, FieldsInfo, FileSelector, Mime, Utils
+from Pyblio.GnomeUI import Common, FieldsInfo, FileSelector, Mime, Utils
 
 key_re = re.compile("^[\w:_+-.()/]+$")
 
@@ -356,24 +356,24 @@ class Date (BaseField):
         if text != '':
             try: day = int (text)
             except ValueError:
-                Compat.error_dialog_parented (_("Invalid day field in date"),
-                                                self.day.get_toplevel ())
+                Utils.error_dialog_s(self.day.get_toplevel (),
+                                     _("Invalid day field in date"))
                 return -1
         
         text = string.strip (self.month.get_chars (0, -1)).encode ('latin-1')
         if text != '':
             try: month = int (text)
             except ValueError, err:
-                Compat.error_dialog_parented (_("Invalid month field in date"),
-                                                self.day.get_toplevel ())
+                Utils.error_dialog_s(self.day.get_toplevel (),
+                                     _("Invalid month field in date"))
                 return -1
         
         text = string.strip (self.year.get_chars (0, -1)).encode ('latin-1')
         if text != '':
             try: year = int (text)
             except ValueError: 
-                Compat.error_dialog_parented (_("Invalid year field in date"),
-                                                self.day.get_toplevel ())
+                Utils.error_dialog_s(self.day.get_toplevel (),
+                                     _("Invalid year field in date"))
                 return -1
         
         if self.initial == (day, month, year): return 0
@@ -385,8 +385,8 @@ class Date (BaseField):
         try:
             entry [self.field] = Fields.Date ((year, month, day))
         except Exceptions.DateError, error:
-            Compat.error_dialog_parented (str (error),
-                                            self.day.get_toplevel ())
+            Utils.error_dialog_s(self.day.get_toplevel (),
+                                 str (error))
             return -1
         return 1
 
@@ -926,18 +926,17 @@ class RealEditor (Connector.Publisher):
             modified = True
         else:
             if not key_re.match (key):
-                Compat.error_dialog_parented (
-                    _("Invalid key format"), self.w.get_toplevel ())
+                Utils.error_dialog_s(self.w.get_toplevel (),
+                                     _("Invalid key format"))
                 return None
 
             key = Key.Key (database, key)
 
             if key != self.entry.key:
                 if database.has_key (key):
-                     Compat.error_dialog_parented (
-                         _("Key `%s' already exists") % str (key.key),
-                         self.w.get_toplevel ())
-                     return None
+                    Utils.error_dialog_s(self.w.get_toplevel (),
+                                         _("Key `%s' already exists") % str (key.key))
+                    return None
                 
                 self.entry.key = key
                 modified = True
@@ -950,11 +949,9 @@ class RealEditor (Connector.Publisher):
             except UnicodeError:
                 # FIXMEgpoo: check enconding handling
                 f = Types.get_field(item.field)
-                d = Compat.error_dialog_parented(
-                    _("The `%s' field contains a non Latin-1 symbol") %
-                    f.name, self.w.get_toplevel())
-                d.run()
-                d.destroy()
+                Utils.error_dialog_s(self.w.get_toplevel (),
+                                     _("The `%s' field contains a non Latin-1 symbol") %
+                                       f.name)
                 result = -1
             
             if result == -1: return None
@@ -1014,9 +1011,8 @@ class NativeEditor(Connector.Publisher):
         try:
             text = text.encode('latin-1')
         except UnicodeError:
-            Compat.error_dialog_parented(
-                _("Your text contains non Latin-1 symbols"),
-                self.w.get_toplevel())
+            Utils.error_dialog_s(self.w.get_toplevel (),
+                                 _("Your text contains non Latin-1 symbols"))
             return None
         try:
             new = self.database.create_native(text)

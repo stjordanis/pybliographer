@@ -30,16 +30,6 @@ from gettext import gettext as _
 from gi.repository import Gtk, Gio
 
 
-class error_dialog_parented(Gtk.Dialog):
-    def __init__(self, message, parent):
-        Gtk.Dialog.__init__(self, _("Error"), parent, 0,
-                            (Gtk.STOCK_CLOSE, Gtk.ResponseType.CLOSE))
-        label = Gtk.Label(message)
-        box = self.get_content_area()
-        box.add(label)
-        self.show_all()
-
-
 get_mime_type = Gio.content_type_get_mime_type
 
 
