@@ -30,9 +30,6 @@ from gettext import gettext as _
 gi.require_versions({'GConf': '2.0'})
 from gi.repository import Gtk, Pango, Gdk, GConf
 
-from Pyblio import Config, version
-
-from gi.repository import GConf
 
 class Callback:
 
