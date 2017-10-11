@@ -8,15 +8,11 @@ locale.setlocale (locale.LC_ALL, '')
 import gettext
 gettext.install ('pybliographer', '/usr/local/share/locale', unicode = True)
 
-sys.path.append (os.path.abspath('../..'))
+basedir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append (basedir)
 
 from Pyblio import Base, Config, Fields
-
-Config.parse_directory (os.path.abspath('../ConfDir'))
-Config.load_user ()
-
 from Pyblio.Format import Medline
-
 
 example_1 = """PMID- 15985842
 OWN - NLM
@@ -154,9 +150,13 @@ comparison = {'Holmes': 'W. C.',
 
 class ReaderCase (unittest.TestCase):
     def setUp (self):
+        Config.parse_directory(os.path.join(basedir, 'ConfDir'))
+        Config.load_user()
         self.db = Base.DataBase ('//localhost/Internal')
         self.output = cStringIO.StringIO()
 
+    def teardown(self):
+        Config.forget_changes()
 
     def test01(self):
 	"""Test that all fields are Instances, as

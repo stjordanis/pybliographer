@@ -22,25 +22,25 @@
 
 # Extension module for Medline files
 
-from Pyblio import Base, Fields, Types, Autoload, Open, Iterator, Utils, Config
-
 import re, string
 
+from Pyblio import Base, Fields, Types, Autoload, Open, Iterator, Utils, Config
 
 header = re.compile ('^(\w\w[\w ][\w ])- (.*)$')
 contin = re.compile ('^      (.*)$')
 
-one_to_one = Config.get ('medline/mapping').data
+one_to_one = None
 
 medurl = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?cmd=prlinks&dbfrom=pubmed&retmode=ref&id='
 
 
-class MedlineIterator (Iterator.Iterator):
+class MedlineIterator(Iterator.Iterator):
+    def __init__(self, file):
+        global one_to_one
+        if one_to_one is None:
+            one_to_one = Config.get ('medline/mapping').data
 
-    def __init__ (self, file):
         self.file = file
-        return
-
 
     def first (self):
         # rewind the file
@@ -217,6 +217,9 @@ class Medline (Base.DataBase):
 
 
 def writer (iter, output, **argh):
+    global one_to_one
+    if one_to_one is None:
+        one_to_one = Config.get ('medline/mapping').data
 
     entry = iter.first ()
     while entry:
@@ -305,4 +308,5 @@ Autoload.register ('format', 'Medline', {'open'  : opener,
 ### Local Variables:
 ### Mode: python
 ### py-master-file : "test_medline.py"
+### encoding: utf-8
 ### End:
