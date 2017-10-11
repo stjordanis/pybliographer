@@ -115,7 +115,8 @@ Abstract
 
 import cStringIO, os, os.path, re, sys,unittest
 
-sys.path.append (os.path.abspath('../..'))
+basedir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append(basedir)
 
 from Pyblio.Base import DataBase, Entry
 from Pyblio import Config
@@ -125,16 +126,12 @@ from Pyblio.Format.OvidLike import OvidLike, writer, write_source_field
 from Pyblio.Fields import Date
 
 class WriterCase (unittest.TestCase):
-
     def setUp (self):
-
-
-        Config.parse_directory (os.path.abspath('../ConfDir'))
-        Config.load_user ()
+        Config.parse_directory(os.path.join(basedir, 'ConfDir'))
+        Config.load_user()
         self.db = DataBase ('//localhost/Internal')
         self.output = cStringIO.StringIO()
         self.mapping = Config.get('ovid/mapping').data
-
 
     def test01(self):
 
@@ -149,9 +146,7 @@ class WriterCase (unittest.TestCase):
         writer (self.itera, self.output, self.mapping)
         print self.output.getvalue()
 
-
     def test02source (self):
-
         data = [ ## from cites.ovid
             {'result':
              'International Journal of Hematology. 69(2):81-88, 1999 Feb.',
@@ -384,8 +379,3 @@ if __name__ == '__main__':
 ### Mode: python
 ### encoding: utf-8
 ### End:
-
-
-
-
-

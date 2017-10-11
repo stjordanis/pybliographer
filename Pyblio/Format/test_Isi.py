@@ -2,12 +2,15 @@
 
 import cStringIO, os, sys, unittest
 
-sys.path.append (os.path.abspath('../..'))
-print os.path.abspath('../..')
+basedir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append(basedir)
 
-from Pyblio.Format import isifile
 from Pyblio import Base, Config, Fields
 
+Config.parse_directory(os.path.join(basedir, 'ConfDir'))
+Config.load_user()
+
+from Pyblio.Format import isifile
 
 example_1 = """AU Bogin, B
 TI Evolutionary hypotheses for human childhood
@@ -41,20 +44,18 @@ ER
 """
 
 class ReaderCase (unittest.TestCase):
-
-    def setUp (self):
-
-        Config.parse_directory (os.path.abspath('../ConfDir'))
-        Config.load_user ()
-	print 'CONFIGURATION'
-	print 50*'-'
-	for i in Config.domains ():
-	    print i, Config.keys_in_domain (i)
-	print 'END', 50*'-'
+    def setUp(self):
+        print 'CONFIGURATION'
+        print 50*'-'
+        for i in Config.domains ():
+            print i, Config.keys_in_domain (i)
+        print 'END', 50*'-'
         self.db = Base.DataBase ('//localhost/Internal')
         self.output = cStringIO.StringIO()
 
-        
+    def teardown(self):
+        Config.forget_changes()
+
     def test01(self):
 	"""Test that all fields are Instances, as
 	opposed to strings"""
@@ -169,10 +170,6 @@ if __name__ == '__main__':
 ### Mode: python
 ### encoding: utf-8
 ### End:
-
-
-    
-
 
 
 
