@@ -152,4 +152,8 @@ class StringStream:
         self.text = self.text + text
         return
 
-    
+
+### Local Variables:
+### Mode: python
+### py-master-file : "test_Utils.py"
+### End:
