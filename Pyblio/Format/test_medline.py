@@ -1,5 +1,4 @@
-#    -*- coding: iso8859-1 -*-
-
+# -*- coding: utf-8 -*-
 
 import cStringIO, os, sys, unittest
 
@@ -17,8 +16,6 @@ Config.parse_directory (os.path.abspath('../ConfDir'))
 Config.load_user ()
 
 from Pyblio.Format import Medline
-
-
 
 
 example_1 = """PMID- 15985842
@@ -155,15 +152,12 @@ comparison = {'Holmes': 'W. C.',
 	      'Pardini': 'D.'}
 
 
-
 class ReaderCase (unittest.TestCase):
-
     def setUp (self):
-
         self.db = Base.DataBase ('//localhost/Internal')
         self.output = cStringIO.StringIO()
 
-        
+
     def test01(self):
 	"""Test that all fields are Instances, as
 	opposed to strings"""
@@ -186,7 +180,7 @@ class ReaderCase (unittest.TestCase):
 	"""Test that Initials are formatted correctly.
 	According to Bibtex specs, they must be separated
 	by period, space ('. ')."""
-	    
+
 	inpt = cStringIO.StringIO (example_2)
 	rdr = Medline.MedlineIterator (inpt)
 	e = rdr.first ()
@@ -212,7 +206,6 @@ class ReaderCase (unittest.TestCase):
 		    auth.first, comparison [auth.last])
 	    e = rdr.next ()
 
-
 def suite():
     theSuite = unittest.TestSuite()
 
@@ -222,15 +215,13 @@ def suite():
 
 def main ():
     unittest.main (defaultTest='suite' )
-    
+
 
 if __name__ == '__main__':
-    
     main()
-
 
 
 ### Local Variables:
 ### Mode: python
-### encoding: iso-8859-1    
+### encoding: utf-8
 ### End:

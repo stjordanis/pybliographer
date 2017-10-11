@@ -1,24 +1,24 @@
-# -*- coding: iso-8859-1 -*-
+# -*- coding: utf-8 -*-
 # This file is part of pybliographer
-# 
+#
 # Copyright (C) 1998-2004 Frederic GOBRY
 # Email : gobry@pybliographer.org
-# 	   
+#
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2 
+# as published by the Free Software Foundation; either version 2
 # of the License, or (at your option) any later version.
-#   
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details. 
-# 
+# GNU General Public License for more details.
+#
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-# 
-# 
+#
+#
 
 # Extension module for Medline files
 
@@ -40,8 +40,8 @@ class MedlineIterator (Iterator.Iterator):
     def __init__ (self, file):
         self.file = file
         return
-    
-    
+
+
     def first (self):
         # rewind the file
         self.file.seek (0)
@@ -51,14 +51,14 @@ class MedlineIterator (Iterator.Iterator):
     def next (self):
         current = None
         data    = ''
-        
+
         table = {}
 
         # Skip whitespace
         while 1:
             line = self.file.readline ()
             if line == '': return table
-            
+
             line = string.rstrip (line)
             if line != '': break
 
@@ -70,14 +70,14 @@ class MedlineIterator (Iterator.Iterator):
                         table [current].append (data)
                     else:
                         table [current] = [data]
-                        
+
                 current = string.strip (head.group (1))
                 data    = head.group (2)
             else:
                 cont = contin.match (line)
                 if cont:
                     data = data + ' ' + cont.group (1)
-        
+
             line = self.file.readline ()
             if line == '': break
 
@@ -99,18 +99,18 @@ class MedlineIterator (Iterator.Iterator):
             norm ['url'] = Fields.URL (medurl + table ['PMID'] [0])
             norm ['medline-pmid'] = Fields.Text (table ['PMID'] [0])
             del table ['PMID']
-    
+
         if table.has_key ('UI'):
             norm [one_to_one ['UI']] = Fields.Text (table ['UI'] [0])
             del table ['UI']
 
         if table.has_key ('AU'):
             group = Fields.AuthorGroup ()
-            
+
             for au in table ['AU']:
                 # analyze the author by ourself.
                 first, last, lineage = [], [], []
-                
+
                 for part in string.split (au, ' '):
 		    if part.isupper ():
                         # in upper-case, this is a first name
@@ -144,9 +144,9 @@ class MedlineIterator (Iterator.Iterator):
                     lineage = string.join (lineage, ' ')
                 else:
                     lineage = None
-                    
+
                 group.append (Fields.Author ((None, first, last, lineage)))
-                
+
             norm [one_to_one ['AU']] = group
             del table ['AU']
 
@@ -154,50 +154,50 @@ class MedlineIterator (Iterator.Iterator):
             fields = string.split (table ['DP'][0], ' ')
             norm [one_to_one ['DP']] = Fields.Date (fields [0])
             del table ['DP']
-            
+
         # The simple fields...
         for f in table.keys ():
             f_mapped = one_to_one.get(f, 'medline-%s' %(f.lower()))
             text_type = Types.get_field(f_mapped).type
             norm [f_mapped] = text_type (string.join (table [f], " ; "))
-        
+
         return Base.Entry (None, type, norm)
 
 
 # UI identifiant unique
 # AU auteurs *
-# TI titre 
+# TI titre
 # LA langue *
-# MH mots clés *
+# MH mots clÃ©s *
 # PT *  type : JOURNAL ARTICLE, REVIEW, REVIEW, TUTORIAL,CLINICAL TRIAL,
 #              RANDOMIZED CONTROLLED TRIAL, LETTER, EDITORIAL, MULTICENTER STUDY,
 #              NEWS, HISTORICAL ARTICLE
-# DA date de ?? en yyyymmdd 
+# DA date de ?? en yyyymmdd
 # DP date de ?? en yyyy mois +/-j
-# IS 
+# IS
 # TA titre de la revue
-# PG  
-# SB 
-# CY pays d'édition ?
-# IP  
-# VI 
-# JC  
-# AA semble être toujours Author ou AUTHOR
+# PG
+# SB
+# CY pays d'Ã©dition ?
+# IP
+# VI
+# JC
+# AA semble Ãªtre toujours Author ou AUTHOR
 # EM date de?? en yyyymm
-# AB  
-# AD 
+# AB
+# AD
 # PMID
-# SO  référence complète
+# SO  rÃ©fÃ©rence complÃ¨te
 # RN semble indexer des substances chimiques
 # TT titre dans la langue d'origine
 # 4099 URL vers l'article
 # 4100 URL vers abstract de l'article ??
-    
+
 
 class Medline (Base.DataBase):
-    
+
     id = 'Medline'
-    
+
     properties = {
         'change_id'   : 0,
         'change_type' : 0
@@ -223,7 +223,7 @@ def writer (iter, output, **argh):
 
         ekeys = {}
         for k in entry.keys (): ekeys [k] = 1
-        
+
         med = one_to_one ['UI']
 
         if entry.has_key (med):
@@ -232,11 +232,11 @@ def writer (iter, output, **argh):
         else:
             print "warning: entry has no medline reference"
             ui = 0
-            
+
         output.write ('%-4.4s- %s\n' % ('UI', ui))
 
         med = one_to_one ['AU']
-        
+
         if entry.has_key (med):
             del ekeys [med]
             for auth in entry [med]:
@@ -247,7 +247,7 @@ def writer (iter, output, **argh):
 
                 first = string.join (compact, '')
                 text = string.join ((auth.last or '', first, auth.lineage or ''), ' ')
-                
+
                 output.write ('%-4.4s- %s\n' % ('AU', text))
 
         med = one_to_one ['DP']
@@ -261,7 +261,7 @@ def writer (iter, output, **argh):
 
             if not ekeys.has_key (field): continue
             del ekeys [field]
-            
+
             output.write ('%-4.4s- %s\n' % (key, Utils.format (str (entry [field]),
                                                               75, 0, 6)))
         # write the unknown fields
@@ -272,19 +272,19 @@ def writer (iter, output, **argh):
                 key = string.upper (field [8:])
                 output.write ('%-4.4s- %s\n' % (key, Utils.format (str (entry [field]),
                                                                    75, 0, 6)))
-            
-        
+
+
         entry = iter.next ()
         if entry: output.write ('\n')
 
-        
+
 def opener (url, check):
-	
+
 	base = None
 
 	if (not check) or (url.url [2] [-4:] == '.med'):
 		base = Medline (url)
-		
+
 	return base
 
 
@@ -294,7 +294,7 @@ def iterator (url, check):
 	databases '''
 
         if check and url.url [2] [-4:] != '.med': return
-        
+
         return MedlineIterator (open (Open.url_to_local (url), 'r'))
 
 

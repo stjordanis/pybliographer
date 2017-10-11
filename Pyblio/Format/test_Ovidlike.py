@@ -1,4 +1,5 @@
-#    -*- coding: iso-8859-1 -*-
+#    -*- coding: utf-8 -*-
+
 data = ["""Authors
   Muller S.  Garda P.  Muller JD.  Cansi Y.
 Title
@@ -120,7 +121,7 @@ from Pyblio.Base import DataBase, Entry
 from Pyblio import Config
 from Pyblio.Key import Key
 from Pyblio.Types import get_entry
-from Pyblio.Format.OvidLike import OvidLike, writer, write_source_field 
+from Pyblio.Format.OvidLike import OvidLike, writer, write_source_field
 from Pyblio.Fields import Date
 
 class WriterCase (unittest.TestCase):
@@ -134,20 +135,20 @@ class WriterCase (unittest.TestCase):
         self.output = cStringIO.StringIO()
         self.mapping = Config.get('ovid/mapping').data
 
-        
+
     def test01(self):
 
         self.entry = Entry ( Key('TEST', 'KEY1'), get_entry('article'),
             {'journal': 'CACM',
-             'number': 22, 
+             'number': 22,
              'volume': 123,
              'pages': '234-543'})
         self.db.add(self.entry)
         self.itera = self.db.iterator()
-        
+
         writer (self.itera, self.output, self.mapping)
         print self.output.getvalue()
-        
+
 
     def test02source (self):
 
@@ -158,18 +159,18 @@ class WriterCase (unittest.TestCase):
              'volume': 69, 'number': 2, 'pages': '81-88',
              'date': Date ((1999, 2, None))},
             {'result':
-             'Journal of Trauma-Injury Infection & Critical Care. 44(6):1047-1054; discussion 1054-5, 1998 Jun.',              
+             'Journal of Trauma-Injury Infection & Critical Care. 44(6):1047-1054; discussion 1054-5, 1998 Jun.',
              'journal': 'Journal of Trauma-Injury Infection & Critical Care',
              'volume': 44, 'number': 6, 'pages': '1047-1054',
              'date': Date ((1998, 6, None)),
              'other-note': 'discussion 1054-5'},
             {'result': 'Chemotherapy. 42(3):215-219, 1996 May.',
-             ## date in »cites.ovid«: '1996 May-Jun' ##
-             ## pages in »cites.ovid«: '215-19' ##
+             ## date in Â»cites.ovidÂ«: '1996 May-Jun' ##
+             ## pages in Â»cites.ovidÂ«: '215-19' ##
              'journal': 'Chemotherapy',
              'volume': 42, 'number': 3, 'pages': '215-219',
              'date': Date ((1996, 5, None))},
-            {'result': 'Circulatory Shock. 18(3):193-203, 1986.', 
+            {'result': 'Circulatory Shock. 18(3):193-203, 1986.',
              'journal': 'Circulatory Shock',
              'volume': 18, 'number': 3, 'pages': '193-203',
              'date': Date ('1986')},
@@ -180,7 +181,7 @@ class WriterCase (unittest.TestCase):
              'date': Date ((2002, 9, 23))},]
 
 
-        
+
         for i in data :
 
             e =  Entry ( Key('TEST', 'KEY1'), get_entry('article'),
@@ -190,7 +191,7 @@ class WriterCase (unittest.TestCase):
             write_source_field (self.output, e, self.mapping)
             r = self.output.getvalue()
             self.assertEqual (e['result'], r[9:-1])
-            
+
 
 
 
@@ -260,8 +261,8 @@ class RexpCase  (unittest.TestCase):
               'Biochemistry', '38', '49', None, '16333-16339',
               '1999', 'Dec 7', None),
              ]
-             
-             
+
+
 
 
     def test01 (self):
@@ -273,14 +274,14 @@ class RexpCase  (unittest.TestCase):
                 print m.group(
                     'journal', 'volume', 'number', 'inseries',
                     'pages', 'year', 'month', 'other')
-                self.assertEqual (journal, m.group('journal'))             
-                self.assertEqual (volume, m.group('volume'))             
-                self.assertEqual (number, m.group('number'))             
-                self.assertEqual (inseries, m.group('inseries'))             
-                self.assertEqual (pages, m.group('pages'))             
-                self.assertEqual (year, m.group('year'))             
-                self.assertEqual (month, m.group('month'))             
-                self.assertEqual (other, m.group('other'))             
+                self.assertEqual (journal, m.group('journal'))
+                self.assertEqual (volume, m.group('volume'))
+                self.assertEqual (number, m.group('number'))
+                self.assertEqual (inseries, m.group('inseries'))
+                self.assertEqual (pages, m.group('pages'))
+                self.assertEqual (year, m.group('year'))
+                self.assertEqual (month, m.group('month'))
+                self.assertEqual (other, m.group('other'))
             else: print 'Fehler'
 
 class Rexp2Case (unittest.TestCase):
@@ -299,7 +300,7 @@ class Rexp2Case (unittest.TestCase):
         \.\Z
          """
             , flags= re.VERBOSE)
-       
+
         data = ['Biophysical Journal. 71(6):3320-3329, 1996 Dec.',
                 'Biochemistry. 38(49):16333-16339, 1999 Dec 7.',
                 'VERY HIGH FREQUENCY (VHF) ESR/EPR. 22 PG. 431-464. 2004 [Figures].'
@@ -327,7 +328,7 @@ class Rexp2Case (unittest.TestCase):
             (?P<month>.*)
             \.\s*\Z"""
             , flags= re.VERBOSE)
-       
+
         data = ['Biophysical Journal. 71(6):3320-3329, 1996 Dec.',
                 'Biochemistry. 38(49):16333-16339, 1999 Dec 7.',
                 'VERY HIGH FREQUENCY (VHF) ESR/EPR. 22 PG. 431-464. 2004 [Figures].'
@@ -373,20 +374,18 @@ def suite():
 
 def main ():
     unittest.main (defaultTest='suite' )
-    
+
 
 if __name__ == '__main__':
-    
     main()
-
 
 
 ### Local Variables:
 ### Mode: python
-### encoding: iso-8859-1    
+### encoding: utf-8
 ### End:
 
 
-    
+
 
 
