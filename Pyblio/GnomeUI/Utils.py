@@ -163,46 +163,37 @@ def popup_add (menu, item, action = None, argument = None):
     
     return tmp
 
-def error_dialog (title, err, parent = None):
-
-    dialog = \
-           Gtk.MessageDialog (parent,
-                              Gtk.DialogFlags.MODAL |
-                              Gtk.DialogFlags.DESTROY_WITH_PARENT,
-                              Gtk.MessageType.ERROR,
-                              message_format = title)
-
-    b = dialog.add_button (Gtk.STOCK_OK, Gtk.ResponseType.OK)
-    b.set_property ('has_default', True)
+def error_dialog(title, err, parent=None):
+    dialog = Gtk.MessageDialog(parent,
+                               Gtk.DialogFlags.MODAL |
+                               Gtk.DialogFlags.DESTROY_WITH_PARENT,
+                               Gtk.MessageType.ERROR,
+                               Gtk.ButtonsType.CLOSE,
+                               title)
+    dialog.format_secondary_text(_("The following errors occurred:"))
     
-    buff = Gtk.TextBuffer ()
-    title = buff.create_tag ('title', weight = Pango.Weight.BOLD)
+    buff = Gtk.TextBuffer()
+    iter = buff.get_start_iter()    
+    buff.insert (iter, str(err))
 
-    text = Gtk.TextView ()
-    text.set_editable (False)
-    text.set_cursor_visible (False)
-    text.set_buffer (buff)
-    text.set_size_request (400, 200)
-
-    iter = buff.get_start_iter ()
-    
-    buff.insert_with_tags (iter, _("The following errors occurred:\n"),
-                           title)
-    
-    buff.insert (iter, str (err))
+    text = Gtk.TextView()
+    text.set_editable(False)
+    text.set_cursor_visible(False)
+    text.set_size_request(400, 200)
+    text.set_buffer(buff)
     
     holder = Gtk.ScrolledWindow ()
     holder.set_policy (Gtk.PolicyType.AUTOMATIC,
                        Gtk.PolicyType.AUTOMATIC)
-    holder.add (text)
-    
-    dialog.vbox.pack_start (holder)
-    holder.show_all ()
-    
+    holder.set_property('expand', True)
+    holder.add(text)
+
+    dialog.vbox.pack_start(holder, False, False, 0)
+    dialog.vbox.set_property('spacing', 0)
+    dialog.show_all ()
+
     dialog.run ()
     dialog.destroy ()
-    
-    return
 
 def error_dialog_s(parent, primary, secondary=None):
     dialog = Gtk.MessageDialog(parent,
