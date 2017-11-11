@@ -3,7 +3,7 @@
 # Kenneth Christiansen <kenneth@ripen.dk>, 2000.
 # Keld Simonsen <keld@dkuug.dk>, 2000.
 # Joe Hansen (joedalton2@yahoo.dk), 2010.
-#Alan Mortensen <alanmortensen.am@gmail.com>, 2017.
+# Alan Mortensen <alanmortensen.am@gmail.com>, 2017.
 #
 # annotation -> kommentering
 # entry -> indgang
@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: pybliographer\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=pybliographer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-10-07 01:39+0000\n"
+"POT-Creation-Date: 2017-11-04 12:51+0000\n"
 "PO-Revision-Date: 2017-10-25 17:49+0200\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -33,7 +33,7 @@ msgstr "advarsel: kan ikke importere %s: %s"
 #: ../Pyblio/Config.py:53
 #, python-format
 msgid "value of “%s” should be of type %s"
-msgstr "værdien af \"%s\" bør være af typen %s"
+msgstr "værdien af “%s” bør være af typen %s"
 
 #: ../Pyblio/Config.py:213
 msgid "String"
@@ -65,7 +65,7 @@ msgstr "Heltal mellem %d og %d"
 #: ../Pyblio/Config.py:259
 #, python-format
 msgid "Element in “%s”"
-msgstr "Element i \"%s\""
+msgstr "Element i “%s”"
 
 #: ../Pyblio/Config.py:279
 #, python-format
@@ -108,13 +108,13 @@ msgstr "i %s"
 #: ../Pyblio/Format/BibTeX.py:324 ../Pyblio/Format/BibTeX.py:372
 #, python-format
 msgid "key “%s” is malformed"
-msgstr "nøglen \"%s\" er misdannet"
+msgstr "nøglen “%s” er misdannet"
 
 # .././Pyblio/Format/BibTeX.py:366 :387
 #: ../Pyblio/Format/BibTeX.py:341 ../Pyblio/Format/BibTeX.py:360
 #, python-format
 msgid "%s:%d: key “%s” already defined"
-msgstr "%s:%d: nøglen \"%s\" er allerede defineret"
+msgstr "%s:%d: nøglen “%s” er allerede defineret"
 
 #: ../Pyblio/GnomeUI/Config.py:147 ../Pyblio/GnomeUI/Fields.py:417
 msgid ""
@@ -253,7 +253,7 @@ msgid ""
 "can’t open file “%s” for writing:\n"
 "%s"
 msgstr ""
-"kan ikke åbne filen \"%s\" til skrivning:\n"
+"kan ikke åbne filen “%s” til skrivning:\n"
 "%s"
 
 #: ../Pyblio/GnomeUI/Document.py:414
@@ -262,7 +262,7 @@ msgid ""
 "Error while parsing “%s”:\n"
 "%s"
 msgstr ""
-"Fejl ved fortolkning af \"%s\":\n"
+"Fejl ved fortolkning af “%s”:\n"
 "%s"
 
 #: ../Pyblio/GnomeUI/Document.py:430
@@ -371,7 +371,7 @@ msgid ""
 "Unable to remove autosave file “%s”:\n"
 "%s"
 msgstr ""
-"Kan ikke fjerne den automatisk gemte fil \"%s\":\n"
+"Kan ikke fjerne den automatisk gemte fil “%s”:\n"
 "%s"
 
 #: ../Pyblio/GnomeUI/Document.py:705
@@ -389,7 +389,7 @@ msgid ""
 "Unable to save “%s”:\n"
 "%s"
 msgstr ""
-"Kan ikke gemme \"%s\":\n"
+"Kan ikke gemme “%s”:\n"
 "%s"
 
 #: ../Pyblio/GnomeUI/Document.py:741
@@ -410,7 +410,7 @@ msgid ""
 "The file “%s” already exists.\n"
 "Overwrite it?"
 msgstr ""
-"Filen \"%s\" eksisterer allerede.\n"
+"Filen “%s” eksisterer allerede.\n"
 "Skal den overskrives?"
 
 #: ../Pyblio/GnomeUI/Document.py:769
@@ -432,7 +432,7 @@ msgid ""
 "An entry called “%s” already exists.\n"
 "Rename and add it anyway?"
 msgstr ""
-"En indgang kaldet \"%s\" findes allerede.\n"
+"En indgang kaldet “%s” findes allerede.\n"
 "Skal den omdøbes og tilføjes alligevel?"
 
 #: ../Pyblio/GnomeUI/Document.py:917
@@ -456,7 +456,7 @@ msgstr "Fjern alle %d indgange?"
 #: ../Pyblio/GnomeUI/Document.py:1000
 #, python-format
 msgid "Remove entry “%s”?"
-msgstr "Fjern indgangen \"%s\"?"
+msgstr "Fjern indgangen “%s”?"
 
 #: ../Pyblio/GnomeUI/Document.py:1019
 msgid ""
@@ -603,12 +603,12 @@ msgstr "Ugyldigt format for nøgle"
 #: ../Pyblio/GnomeUI/Editor.py:918
 #, python-format
 msgid "Key “%s” already exists"
-msgstr "Nøglen \"%s\" eksisterer allerede"
+msgstr "Nøglen “%s” eksisterer allerede"
 
 #: ../Pyblio/GnomeUI/Editor.py:935
 #, python-format
 msgid "The “%s” field contains a non Latin-1 symbol"
-msgstr "Feltet \"%s\" indeholder et symbol, som ikke er i Latin-1"
+msgstr "Feltet “%s” indeholder et symbol, som ikke er i Latin-1"
 
 #: ../Pyblio/GnomeUI/Editor.py:997
 msgid "Your text contains non Latin-1 symbols"
@@ -1022,34 +1022,34 @@ msgstr "Angiv som standard"
 #: ../Pyblio/LyX.py:38
 #, python-format
 msgid "no input pipe “%s”"
-msgstr "intet inddata-rør \"%s\""
+msgstr "intet inddata-rør “%s”"
 
 #: ../Pyblio/LyX.py:44
 #, python-format
 msgid "no output pipe “%s”"
-msgstr "intet uddata-rør \"%s\""
+msgstr "intet uddata-rør “%s”"
 
 #: ../Pyblio/Open.py:97
 #, python-format
 msgid "method “%s” provides no opener"
-msgstr "metoden \"%s\" indeholder ingen åbner"
+msgstr "metoden “%s” indeholder ingen åbner"
 
 # .././Pyblio/Open.py:105 :151
 #: ../Pyblio/Open.py:105 ../Pyblio/Open.py:152
 #, python-format
 msgid "File “%s” does not exist"
-msgstr "Filen \"%s\" eksisterer ikke"
+msgstr "Filen “%s” eksisterer ikke"
 
 # .././Pyblio/Open.py:116 :162
 #: ../Pyblio/Open.py:116 ../Pyblio/Open.py:163
 #, python-format
 msgid "don’t know how to open “%s”"
-msgstr "ved ikke hvordan \"%s\" skal åbnes"
+msgstr "ved ikke hvordan “%s” skal åbnes"
 
 #: ../Pyblio/Open.py:144
 #, python-format
 msgid "method “%s” provides no iterator"
-msgstr "metoden \"%s\" returnerer ingen iterator"
+msgstr "metoden “%s” returnerer ingen iterator"
 
 #: ../Pyblio/Resource.py:78
 #, python-format
@@ -1128,7 +1128,7 @@ msgstr ""
 #: ../Pyblio/Style/Parser.py:262
 #, python-format
 msgid "missing “%s” attribute"
-msgstr "mangler attributten \"%s\""
+msgstr "mangler attributten “%s”"
 
 #: ../Pyblio/Style/Parser.py:272
 #, python-format
@@ -1152,18 +1152,18 @@ msgstr "Dette er frit programmel med ABSOLUT INGEN GARANTIER."
 
 #: ../pybliographer.py:49
 msgid "For details, type “warranty”."
-msgstr "Indtast \"warranty\" for detaljer."
+msgstr "Indtast “warranty” for detaljer."
 
 # .././pybliographer.py:110 :158
 #: ../pybliographer.py:112 ../pybliographer.py:164
 #, python-format
 msgid "%s: error: can’t open file “%s”"
-msgstr "%s: fejl: kan ikke åbne filen \"%s\""
+msgstr "%s: fejl: kan ikke åbne filen “%s”"
 
 #: ../pybliographer.py:125
 #, python-format
 msgid "For help, run %s and type “help” at the prompt"
-msgstr "Kør %s for hjælp og indtast \"help\" ved prompten"
+msgstr "Kør %s for hjælp og indtast “help” ved prompten"
 
 #: ../pybliographer.py:134
 msgid ""
@@ -1191,7 +1191,7 @@ msgstr "brug: pybliocheck <fil | mappe> …"
 #: ../scripts/pybliocheck.py:61
 #, python-format
 msgid "file “%s” is ok [%d entries]"
-msgstr "filen \"%s\" er okay [%d indgange]"
+msgstr "filen “%s” er okay [%d indgange]"
 
 #: ../scripts/pybliocompact.py:31
 msgid "usage: pybliocompact <latexfile> <bibtexfiles…>"
@@ -1259,22 +1259,22 @@ msgstr "pyblioformat: advarsel: %s\n"
 #: ../scripts/pybliotext.py:278 ../scripts/pybliotext.py:321
 #, python-format
 msgid "can’t open “%s”: %s"
-msgstr "kan ikke åbne \"%s\": %s"
+msgstr "kan ikke åbne “%s”: %s"
 
 #: ../scripts/pyblioformat.py:101
 #, python-format
 msgid "unknown list “%s”"
-msgstr "ukendt liste \"%s\""
+msgstr "ukendt liste “%s”"
 
 #: ../scripts/pyblioformat.py:104
 #, python-format
 msgid "pyblioformat: available values for “%s”:"
-msgstr "pyblioformat: tilgængelige værdier for \"%s\":"
+msgstr "pyblioformat: tilgængelige værdier for “%s”:"
 
 #: ../scripts/pyblioformat.py:108
 #, python-format
 msgid "empty value list “%s”"
-msgstr "værdilisten \"%s\" er tom"
+msgstr "værdilisten “%s” er tom"
 
 #: ../scripts/pyblioformat.py:130
 msgid "too few arguments"
@@ -1283,23 +1283,23 @@ msgstr "for få argumenter"
 #: ../scripts/pyblioformat.py:137 ../scripts/pybliotext.py:117
 #, python-format
 msgid "unknown output format “%s”"
-msgstr "uddataformatet \"%s\" er ukendt"
+msgstr "uddataformatet “%s” er ukendt"
 
 #: ../scripts/pyblioformat.py:150 ../scripts/pybliotex.py:87
 #: ../scripts/pybliotext.py:94
 #, python-format
 msgid "can’t find style “%s”"
-msgstr "kan ikke finde stilen \"%s\""
+msgstr "kan ikke finde stilen “%s”"
 
 #: ../scripts/pyblioformat.py:153
 #, python-format
 msgid "pyblioformat: using style “%s”, format “%s”\n"
-msgstr "pyblioformat: bruger stilen \"%s\", formatet \"%s\"\n"
+msgstr "pyblioformat: bruger stilen “%s”, formatet “%s”\n"
 
 #: ../scripts/pyblioformat.py:168
 #, python-format
 msgid "can’t open header “%s”: %s"
-msgstr "kan ikke åbne teksthovedet \"%s\": %s"
+msgstr "kan ikke åbne teksthovedet “%s”: %s"
 
 #: ../scripts/pyblioformat.py:176
 #, python-format
@@ -1309,7 +1309,7 @@ msgstr "kan ikke åbne databasen: %s"
 #: ../scripts/pyblioformat.py:191
 #, python-format
 msgid "can’t open footer “%s”: %s"
-msgstr "kan ikke åbne fodnoten \"%s\": %s"
+msgstr "kan ikke åbne fodnoten “%s”: %s"
 
 #: ../scripts/pybliotex.py:35
 msgid "usage: pybliotex <latexfile> [bibtexfiles…]"
@@ -1347,12 +1347,12 @@ msgstr "pybliotext: advarsel: %s\n"
 #: ../scripts/pybliotext.py:124
 #, python-format
 msgid "File already exists: “%s”"
-msgstr "Filen findes allerede: \"%s\""
+msgstr "Filen findes allerede: “%s”"
 
 #: ../scripts/pybliotext.py:127
 #, python-format
 msgid "A file with the same name already exists: “%s”"
-msgstr "En fil med det samme navn findes allerede: \"%s\""
+msgstr "En fil med det samme navn findes allerede: “%s”"
 
 #: ../scripts/pybliotext.py:178
 msgid "no citation found"
@@ -1361,39 +1361,39 @@ msgstr "ingen citering fundet"
 #: ../scripts/pybliotext.py:193
 #, python-format
 msgid "pybliotext: using style “%s”, format “%s”\n"
-msgstr "pybliotext: bruger stilen \"%s\", formatet \"%s\"\n"
+msgstr "pybliotext: bruger stilen “%s”, formatet “%s”\n"
 
 #: ../scripts/pybliotext.py:316
 #, python-format
 msgid "can’t create “%s”"
-msgstr "kan ikke oprette \"%s\""
+msgstr "kan ikke oprette “%s”"
 
 #: ../scripts/pybliotext.py:342
 #, python-format
 msgid "can’t remove “%s”"
-msgstr "kan ikke fjerne \"%s\""
+msgstr "kan ikke fjerne “%s”"
 
 #: ../scripts/pybliotext.py:344
 msgid "Done"
 msgstr "Færdig"
 
 #~ msgid "Medline Query..."
-#~ msgstr "Medlineforespørgsel..."
+#~ msgstr "Medlineforespørgsel …"
 
 #~ msgid "Cite..."
-#~ msgstr "Citer..."
+#~ msgstr "Citer …"
 
 #~ msgid "Fields..."
-#~ msgstr "Felter..."
+#~ msgstr "Felter …"
 
 #~ msgid "_Add..."
-#~ msgstr "_Tilføj..."
+#~ msgstr "_Tilføj …"
 
 #~ msgid "_Edit..."
-#~ msgstr "_Rediger..."
+#~ msgstr "_Rediger …"
 
 #~ msgid "_Delete..."
-#~ msgstr "_Slet..."
+#~ msgstr "_Slet …"
 
 #~ msgid "Pybliographic Bibliography Manager"
 #~ msgstr "Pybliographic - bibliografihåndtering"
