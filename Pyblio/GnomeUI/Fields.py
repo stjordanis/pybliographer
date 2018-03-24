@@ -63,7 +63,7 @@ class FieldsDialog (Utils.GladeWindow):
 ##      tooltips = gtk.Tooltips ()
 ##      tooltips.enable ()
         
-        self.warning = 0
+        self.warning = False
         self.parent = parent
         self.init_page_1()
         self.init_page_2()
@@ -414,10 +414,8 @@ class FieldsDialog (Utils.GladeWindow):
         Config.set_and_save ('base/fields', result)
 
         if self.parent:
-            self.parent.warning (_("Some changes require to restart Pybliographic\n"
+            Utils.warning_dialog_s(self.parent, _("Some changes require to restart Pybliographic\n"
                                    "to be correctly taken into account"))
-        return
-
 
     def add_cb (self, * arg):
         name = string.strip (self.name.get_text ())

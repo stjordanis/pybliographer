@@ -56,7 +56,7 @@ class ConfigDialog (Utils.GladeWindow):
 ##      tooltips = gtk.Tooltips ()
 ##      tooltips.enable ()
         
-        self.warning = 0
+        self.warning = False
         self.parent = parent
         
         domains = Config.domains ()
@@ -142,10 +142,9 @@ class ConfigDialog (Utils.GladeWindow):
         
     def changed (self):
         if not self.warning:
-            self.warning = 1
-            self.parent.warning (
-                _("Some changes require to restart Pybliographic\n"
-                  "to be correctly taken into account"))
+            self.warning = True
+            Utils.warning_dialog_s(self.parent, _("Some changes require to restart Pybliographic\n"
+                                   "to be correctly taken into account"))
 
 
 class BaseConfig:
