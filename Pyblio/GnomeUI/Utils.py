@@ -218,3 +218,13 @@ def error_dialog (title, err, parent = None):
     
     return
 
+
+def error_dialog_s(parent, primary, secondary=None):
+    dialog = gtk.MessageDialog(parent,
+                               gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
+                               gtk.MESSAGE_ERROR,
+                               gtk.BUTTONS_CANCEL, primary)
+    if secondary:
+        dialog.format_secondary_text(secondary)
+    dialog.run()
+    dialog.destroy()
