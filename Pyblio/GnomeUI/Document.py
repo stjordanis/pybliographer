@@ -25,9 +25,6 @@
 
 import gobject
 
-from gnome import ui
-
-import gnome
 import gtk
 import gtk.glade
 
@@ -1223,33 +1220,43 @@ class Document (Connector.Publisher):
             
         return
     
-    def about (self, *arg):
+    def about(self, *arg):
+        def show_url(dialog, url, user_data):
+            gtk.show_uri(None, url, gtk.gdk.CURRENT_TIME)
 
-	pybliologo = gtk.gdk.pixbuf_new_from_file(
-			os.path.join (version.pybdir, 'pixmaps', 'pybliographic-logo.png'))
-        about = ui.About ('Pybliographic',
-                          version.version,
-                          _("This program is copyrighted under the GNU GPL"),
-                          _("GNOME interface to the Pybliographer system."),
-                          ['Hervé Dréau',
-                           'Frédéric Gobry',
-                           'Zoltán Kóta',
-                           'Travis Oliphant',
-                           'Darrell Rudmann',
-                           'Peter Schulte-Stracke',
-                           'John Vu'],
-                          ['Yuri Bongiorno',
-                           'Frédéric Gobry',
-                           'Zoltán Kóta'],
-                          _('GNOME Translation Team'),
-                          pybliologo)
+        pybliologo = gtk.gdk.pixbuf_new_from_file(
+                        os.path.join (version.pybdir,
+                                      'pixmaps',
+                                      'pybliographic-logo.png'))
+        authors = ['Hervé Dréau',
+                   'Frédéric Gobry',
+                   'Zoltán Kóta',
+                   'Travis Oliphant',
+                   'Darrell Rudmann',
+                   'Peter Schulte-Stracke',
+                   'John Vu',
+                   'Germán Poo-Caamaño']
+        documentors = ['Yuri Bongiorno',
+                       'Frédéric Gobry',
+                       'Zoltán Kóta']
+        translators = _('GNOME Translation Team')
+        license = _("This program is copyrighted under the GNU GPL")
+        comments = _("GNOME interface to the Pybliographer system.")
 
-        about.set_transient_for (self.w)
-        
-        link = ui.HRef ('http://www.pybliographer.org/',
-                        _("Pybliographer Home Page"))
-        link.show ()
-        about.vbox.pack_start (link)
-        about.show()
-        return
+        about = gtk.AboutDialog()
+        about.set_program_name('Pybliographic')
+        about.set_version(version.version)
+        about.set_website('http://www.pybliographer.org/')
+        about.set_website_label(_('Pybliographer Home Page'))
+        about.set_comments(comments)
+        about.set_authors(authors)
+        about.set_translator_credits(translators)
+        about.set_documenters(documentors)
+        about.set_logo(pybliologo)
+        about.set_license(license)
 
+        about.set_transient_for(self.w)
+        gtk.about_dialog_set_url_hook(show_url, None)
+
+        about.run()
+        about.destroy()
