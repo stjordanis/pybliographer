@@ -26,7 +26,6 @@ SUBDIRS = glade
 EXTRA_DIST = \
 	Medline.py		\
 	Common.py		\
-	Compat.py		\
 	Config.py		\
 	Format.py		\
 	Document.py 		\
