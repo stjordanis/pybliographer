@@ -41,7 +41,7 @@ for pair in map (None, version, testversion):
         error ('requested version for python is %s, but I detected %s' % (
             sys.argv [1], sys.version))
         
-# check for gtk and gnome 2.0
+# check for gtk
 err = None
 
 try:
@@ -49,9 +49,8 @@ try:
 	
     pygtk.require ('2.0')
     
-    import gnome, gtk
+    import gtk
     import gtk.glade
-    import gnome.ui
     import gconf
 
     v = string.join (map (str, gtk.pygtk_version), '.')
