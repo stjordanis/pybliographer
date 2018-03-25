@@ -20,8 +20,9 @@
 # 
 
 from gtk import *
+import gtk
 
-import pango, gnome, gobject
+import pango, gobject
 
 import string
 
@@ -101,7 +102,7 @@ class Entry:
 
             def url_open (w, url):
                 try:
-                    gnome.url_show (url)
+                    gtk.show_uri(None, url, gtk.gdk.CURRENT_TIME)
                     
                 except gobject.GError, msg:
 
