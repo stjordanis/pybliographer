@@ -28,8 +28,6 @@ import gobject
 import gtk
 import gtk.glade
 
-from gtk import gdk
-
 from Pyblio.GnomeUI import Editor, Entry, FileSelector, Format
 from Pyblio.GnomeUI import Index, OpenURL, Search, Utils
 from Pyblio.GnomeUI.Sort import SortDialog
@@ -208,7 +206,7 @@ class Document (Connector.Publisher):
 
         self.w.add_accel_group (self.uim.get_accel_group ())
 
-        self.w.add_events (gdk.KEY_PRESS_MASK)
+        self.w.add_events (gtk.gdk.KEY_PRESS_MASK)
         
         self.w_save_btn = self.xml.get_widget ('_w_save_btn')
         self.w_save_mnu = self.xml.get_widget ('_w_save_mnu')
