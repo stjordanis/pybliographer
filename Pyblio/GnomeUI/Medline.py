@@ -19,7 +19,6 @@
 # 
 # 
 
-from gnome import ui
 import gtk
 
 from Pyblio.GnomeUI import Utils

@@ -24,7 +24,6 @@
 
 import gobject
 import gtk
-from gnome import ui
 
 import string, os
 

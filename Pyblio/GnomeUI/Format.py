@@ -22,7 +22,6 @@
 ''' Defines a Dialog to format a subset of entries as a bibliography '''
 
 import gtk
-from gnome import ui
 
 import string, os
 

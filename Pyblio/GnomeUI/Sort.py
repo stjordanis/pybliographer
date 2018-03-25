@@ -24,7 +24,6 @@
 import os, string
 
 import gtk, gobject
-from gnome import ui
 
 from Pyblio import Connector, Sort, Config, version
 from Pyblio.GnomeUI import Utils

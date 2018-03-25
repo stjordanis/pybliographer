@@ -26,8 +26,6 @@ import os
 import gtk, pango
 import gtk.glade
 
-from gnome import ui
-
 from Pyblio import Config, version
 
 import gconf

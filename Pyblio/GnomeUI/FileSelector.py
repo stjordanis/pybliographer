@@ -22,8 +22,6 @@
 
 import string, os, urlparse
 
-from gnome import ui
-
 import gtk
 
 from Pyblio import Open, Types, Base, Fields, Config, Autoload

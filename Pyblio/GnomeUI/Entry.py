@@ -20,7 +20,6 @@
 # 
 
 from gtk import *
-from gnome import ui
 
 import pango, gnome, gobject
 

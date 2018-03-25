@@ -24,7 +24,6 @@
 
 import os
 
-from gnome import ui
 import gtk, gobject
 
 import string, re, sys, traceback, copy

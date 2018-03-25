@@ -32,7 +32,6 @@ import pygtk
 pygtk.require ('2.0')
 
 import gnome, gtk
-import gnome.ui
 
 from Pyblio import version
 
