@@ -6,7 +6,7 @@ glade_DATA = 					\
 	pyblio.ui 				\
 	search.glade 				\
 	sort.ui 				\
-	format.glade				\
+	format.ui				\
 	medline.glade 				\
 	config1.glade				\
 	openurl.ui
