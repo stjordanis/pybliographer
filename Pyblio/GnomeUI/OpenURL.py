@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -31,18 +31,18 @@ from Pyblio import Connector, Autoload
 from Pyblio.GnomeUI import Utils
 
 
-class OpenDialog (Connector.Publisher, Utils.GladeWindow):
+class OpenDialog (Connector.Publisher, Utils.Builder):
 
     """ Class implementing the Open Location dialog """
 
-    gladeinfo = { 'file': 'openurl.glade',
+    gladeinfo = { 'file': 'openurl.ui',
                   'root': '_w_openurl',
                   'name': 'openurl'
                   }
 
-    def __init__ (self, parent = None, has_auto = True):
+    def __init__(self, parent=None, has_auto=True):
 
-        Utils.GladeWindow.__init__ (self, parent)
+        Utils.Builder.__init__(self, parent)
 
         liststore = gtk.ListStore (gobject.TYPE_STRING)
         menu = self._w_combobox
