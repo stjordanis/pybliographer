@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -34,27 +35,25 @@ pickle = cPickle
 del cPickle
 
 
-class SortDialog (Connector.Publisher, Utils.GladeWindow):
-
+class SortDialog(Connector.Publisher, Utils.Builder):
     """ Provide a configuration dialog for sorting the main index.
     Emit a 'sort-data' signal when the user chooses new sort options.
     """
 
    # This dialog is described as a glade XML file
-    gladeinfo = { 'file': 'sort.glade',
+    gladeinfo = { 'file': 'sort.ui',
                   'root': '_w_sort',
                   'name': 'sort'
                   }
     
-    def __init__ (self, sort, parent = None):
-
+    def __init__(self, sort, parent=None):
         """ Create the dialog.
 
           - current_sort: the current sorting options
           - parent: parent window
        """
         
-        Utils.GladeWindow.__init__ (self, parent)
+        Utils.Builder.__init__(self, parent)
 
         self._model = gtk.ListStore (gtk.gdk.Pixbuf, str, gobject.TYPE_PYOBJECT, int)
         self._w_tree.set_model (self._model)
