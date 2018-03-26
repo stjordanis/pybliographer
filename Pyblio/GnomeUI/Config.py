@@ -23,9 +23,8 @@
 # List view troubles
 
 import gobject, gtk, gtk.glade
-import gnome.ui 
 
-import copy, os.path, re, string   
+import copy, os.path, re, string
 
 from Pyblio.GnomeUI import Utils
 from Pyblio import Config, version
@@ -133,12 +132,6 @@ class ConfigDialog (Utils.GladeWindow):
 
     def show (self):
         self.dialog.show_all()
-        
-    def display_help (self, w, data):
-        (w, help) = data
-        d = gnome.ui.OkDialog (format (help, 40, 0, 0), w)
-        d.show_all ()
-        return
         
     def changed (self):
         if not self.warning:
