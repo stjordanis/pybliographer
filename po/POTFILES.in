@@ -45,7 +45,7 @@ Pyblio/GnomeUI/glade/fields1.glade
 Pyblio/GnomeUI/glade/format.glade
 Pyblio/GnomeUI/glade/medline.glade
 Pyblio/GnomeUI/glade/openurl.glade
-Pyblio/GnomeUI/glade/pyblio.glade.in
+Pyblio/GnomeUI/glade/pyblio.ui.in
 Pyblio/GnomeUI/glade/search.glade
 Pyblio/GnomeUI/glade/sort.glade
 Pyblio/Help.py
