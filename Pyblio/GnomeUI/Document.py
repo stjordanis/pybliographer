@@ -146,7 +146,7 @@ class Document (Connector.Publisher):
             
             ('New',  gtk.STOCK_NEW,   None,         None,   None,     self.new_document),
             ('Open', gtk.STOCK_OPEN,  None,         None,   _('Open a file'), self.ui_open_document),
-            ('Open_URL', None, _('Open _Location'), '<control>l',   None, self.ui_open_location),
+            ('Open_URL', None, _('Open _Location…'), '<control>l',   None, self.ui_open_location),
             ('Save', gtk.STOCK_SAVE,  None,         None,   _('Save the current file'), self.save_document),
             ('Save_As', gtk.STOCK_SAVE_AS,  None,         None,   None,     self.save_document_as),
             ('Close', gtk.STOCK_CLOSE,  None,         None,   None,     self.close_document),
