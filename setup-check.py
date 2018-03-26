@@ -86,8 +86,8 @@ except:
     error ('unexpected error')
 
 else:
-    if gtk.pygtk_version < (2,14,0):
-        error ('requested version for PyGtk is %s, but I detected %s' % ('2.14.0', v))
+    if gtk.pygtk_version < (2,24,0):
+        error ('requested version for PyGtk is %s, but I detected %s' % ('2.24.0', v))
 
 
 try:
