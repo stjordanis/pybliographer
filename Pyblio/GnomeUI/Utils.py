@@ -229,10 +229,10 @@ def error_dialog_s(parent, primary, secondary=None):
 
 
 def warning_dialog_s(parent, primary, secondary=None):
-    dialog = Gtk.MessageDialog(parent,
-                               Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT,
-                               Gtk.MessageType.WARNING,
-                               Gtk.ButtonsType.CLOSE, primary)
+    dialog = gtk.MessageDialog(parent,
+                               gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
+                               gtk.MESSAGE_WARNING,
+                               gtk.BUTTONS_CLOSE, primary)
     if secondary:
         dialog.format_secondary_text(secondary)
     dialog.run()
