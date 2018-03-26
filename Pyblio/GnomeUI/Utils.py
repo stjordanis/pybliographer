@@ -127,8 +127,72 @@ class GladeWindow:
         config.set_int (cfg + 'height', h)
 
         return
-    
-    
+
+
+class Builder:
+    ''' A Helper class that builds a graphical interface provided by a
+    Glade XML file. This class binds the methods with
+    signal_autoconnect, and imports widgets whose name starts with _w_
+    as instance attributes. Therefore, after init, the instance can refer to:
+
+        self._w_main
+
+    if the glade file defined a _w_main widget.
+
+    This class must be derived and the following class variables must
+    be given some sensible value:
+
+        glade_file  : name of the glade file (with no directory info)
+        root_widget : name of the root widget
+
+    '''
+
+    # This is a class variable that contains the file name to load for
+    # each instance of a subclass.
+    gladeinfo = { 'file': None,
+                  'root': None,
+                  'name': None
+                  }
+
+    def __init__(self, parent=None, window=None):
+
+        fname = os.path.join(glade_root, self.gladeinfo['file'])
+        self.xml = gtk.Builder()
+        self.xml.set_translation_domain('pybliographer')
+        self.xml.add_from_file(fname)
+        self.xml.connect_signals(self)
+
+        for w in self.xml.get_objects():
+            if isinstance(w, gtk.Buildable):
+                name = gtk.Buildable.get_name(w)
+                if name.startswith('_w_'):
+                    setattr(self, name, w)
+
+        # Set the parent window. The root widget is not necessarily
+        # exported as an instance attribute.
+        root = self.xml.get_object(self.gladeinfo['root'])
+        cfg  = '/apps/pybliographic/%s/' % self.gladeinfo['name']
+
+        w = config.get_int(cfg + 'width') or -1
+        h = config.get_int(cfg + 'height') or -1
+
+        if w != -1 and h != -1:
+            root.set_default_size(w, h)
+            root.resize(w, h)
+
+        if parent:
+            root.set_transient_for(parent)
+
+    def size_save (self):
+        root = self.xml.get_object(self.gladeinfo['root'])
+        cfg  = '/apps/pybliographic/%s/' % self.gladeinfo['name']
+
+        w, h = root.get_size()
+
+        config.set_int (cfg + 'width',  w)
+        config.set_int (cfg + 'height', h)
+
+
 config = gconf.client_get_default ()
 
 cursor = {
