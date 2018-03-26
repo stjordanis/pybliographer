@@ -1,29 +1,29 @@
 # -*- coding: utf-8 -*-
 # This file is part of pybliographer
-# 
-# Copyright (C) 2005 Peter Schulte-Stracke
-# Email : mail@schulte-stracke.de
-# 	   
+#
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 2005 Peter Schulte-Stracke <mail@schulte-stracke.de>
+#
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2 
+# as published by the Free Software Foundation; either version 2
 # of the License, or (at your option) any later version.
-#   
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details. 
-# 
+# GNU General Public License for more details.
+#
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-# 
+#
 
 """
  Pyblio.Resource -- handle (electronic) resourcces
 
-     View:          start an application to display a rresource 
- -- 
+     View:          start an application to display a rresource
+ --
 
 """
 
@@ -59,7 +59,7 @@ def get_viewables (item, priority=[]):
     """Return a list of possible viewable resources for an item"""
     R = userexit.resource_viewer_select (Director, item)
     if R: return R
-    viewables = Config.get (config_fields).data 
+    viewables = Config.get (config_fields).data
     return [ (key, item[key], item [key].get_url ()) for key
 	     in priority + viewables if item.has_key (key)]
 
@@ -73,41 +73,42 @@ def StartViewer (entry, key, stringuri, parent=None, document=None):
     uri = Fields.URL (stringuri)
     scheme, location, path, parameters, query, fragment  = uri.url
     fileuri = uri.get_url ()
-    
+
     if uri.invalid or uri.inexact:
 	message = Utils.Callback (
 	    _("Warning: This URL is marked as Invalid or Approximate: %s\nContinue?") % fileuri)
 	if not message.answer (): return
 
     if document:
-	document.statusbar.set_status (_("Determining Mime Type… "))
+	document.statusbar.push(document.context_id,
+                                _(u"Determining Mime Type… "))
 
     try:
 	mimetype =  gio.content_type_guess(fileuri)
     except RuntimeError, mesg:
-	Utils.error_dialog(_("Cannot determine mime type for item %s ") % entry.key.key, 
+	Utils.error_dialog(_("Cannot determine mime type for item %s ") % entry.key.key,
 			   _("URL in question is: %s\n"
 			   "You should check the url or path given for errors.\n"
 			   "Details: %s")
 			   % (fileuri, mesg))
 	if document:
-	    document.statusbar.pop ()
+	    document.statusbar.pop(document.context_id)
 	return
 
     mimetype1 = mimetype.split ('/', 1) [0]
 
     if document:
- 	document.statusbar.set_status (_("Accessing resource…"))
+ 	document.statusbar.push(document.context_id, _(u"Accessing resource…"))
 
     if scheme == 'file' and not location:
 	filename = path
-	
+
     elif mimetype in ['text/html', 'text/plain']:
 	filename = fileuri
 
     else:
 	filename, headers = urllib.urlretrieve (fileuri)
-	
+
     if mimetype == 'application/x-gzip':
 	try:
 	    tempname = os.tmpnam ()
@@ -119,7 +120,7 @@ def StartViewer (entry, key, stringuri, parent=None, document=None):
 				% entry.key.key, _("URL: %s\nDetails: %s")
 				% (filename, mesg))
 	    if document:
-		document.statusbar.pop ()
+		document.statusbar.pop(document.context_id)
 	    return
 
     viewers = [
@@ -136,7 +137,8 @@ def StartViewer (entry, key, stringuri, parent=None, document=None):
 	    ) or "%s %s&" %(cmd, filename)
 
 	if document:
-	    document.statusbar.set_status (_("Starting application…"))
+	    document.statusbar.push(document.context_id,
+                                    _(u"Starting application…"))
 	os.system (command)
     else:
 	Utils.error_dialog (_("No application to view resource"),
@@ -145,12 +147,12 @@ def StartViewer (entry, key, stringuri, parent=None, document=None):
 			    "Please consider adding one.\n"
 			    "URL: %s") % (mimetype, fileuri))
     if document:
- 	document.statusbar.pop ()
+ 	document.statusbar.pop(document.context_id)
 
-    return 
-    
+    return
+
 
 # Local Variables:
 # py-master-file: "ut_resource.py"
-# coding: "latin-1"
+# coding: "utf-8"
 # End:

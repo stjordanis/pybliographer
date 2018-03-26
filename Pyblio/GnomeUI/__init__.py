@@ -31,12 +31,10 @@ sys.argv = sys.argv [:2] + ['--'] + files
 import pygtk
 pygtk.require ('2.0')
 
-import gnome, gtk
+import gtk
 
 from Pyblio import version
 
-prg = gnome.init ('pybliographer', version.version)
-prg.set_property (gnome.PARAM_APP_DATADIR, version.datadir)
 
 def _vnum (t):
     return string.join (map (str, t), '.')
@@ -49,8 +47,3 @@ ui_version = _("This is Pybliographic %s [Python %s, Gtk %s, PyGTK %s]") % (
 sys.argv = sys.argv [:2] + files
 
 del sys, files
-
-import gtk.glade
-
-gtk.glade.bindtextdomain ("pybliographer", version.localedir)
-

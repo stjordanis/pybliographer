@@ -2,8 +2,8 @@
 #
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -26,7 +26,6 @@
 import gobject
 
 import gtk
-import gtk.glade
 
 from Pyblio.GnomeUI import Editor, Entry, FileSelector, Format
 from Pyblio.GnomeUI import Index, OpenURL, Search, Utils
@@ -193,26 +192,30 @@ class Document (Connector.Publisher):
 
         self.uim.ensure_update ()
 
-        gp = os.path.join(Utils.glade_root, 'pyblio.glade')
+        gp = os.path.join(Utils.glade_root, 'pyblio.ui')
         
-        self.xml = gtk.glade.XML (gp, 'main', domain = 'pybliographer')
-        self.xml.signal_autoconnect (self)
+        self.xml = gtk.Builder()
+        self.xml.set_translation_domain('pybliographer')
+        self.xml.add_from_file(gp)
+        self.xml.connect_signals(self)
 
-        self.w = self.xml.get_widget ('main')
-        self.paned = self.xml.get_widget ('main_pane')
+        self.w = self.xml.get_object('main')
+        self.paned = self.xml.get_object('main_pane')
 
-        self.w.set_menus (self.uim.get_widget ('/Menubar'))
-        self.w.set_toolbar (self.uim.get_widget ('/Toolbar'))
+        box = self.xml.get_object('table')
+        menubar = (self.uim.get_widget ('/Menubar'))
+        toolbar = (self.uim.get_widget ('/Toolbar'))
+        box.attach(menubar, 0, 1, 0, 1, yoptions=0)
+        box.attach(toolbar, 0, 1, 1, 2, yoptions=0)
 
         self.w.add_accel_group (self.uim.get_accel_group ())
 
         self.w.add_events (gtk.gdk.KEY_PRESS_MASK)
         
-        self.w_save_btn = self.xml.get_widget ('_w_save_btn')
-        self.w_save_mnu = self.xml.get_widget ('_w_save_mnu')
+        self.w_save_btn = self.xml.get_object('_w_save_btn')
+        self.w_save_mnu = self.xml.get_object('_w_save_mnu')
 
         # We manually add a simple search area
-        t = self.uim.get_widget ('/Toolbar')
         h = gtk.HBox()
 
         i = gtk.Image()
@@ -232,7 +235,7 @@ class Document (Connector.Publisher):
 
         i = gtk.ToolItem()
         i.add(h)
-        t.insert(i, -1)
+        toolbar.insert(i, -1)
         
         i.show_all()
         
@@ -257,7 +260,7 @@ class Document (Connector.Publisher):
         self.paned.add2 (self.display.w)
 
         # Status bar
-        self.statusbar = self.xml.get_widget ('statusbar')
+        self.statusbar = self.xml.get_object('statusbar')
         
         # set window size
         ui_width  = Utils.config.get_int ('/apps/pybliographic/ui/width') or -1
@@ -448,8 +451,8 @@ class Document (Connector.Publisher):
 
         self.actiongroup.get_action ('Save').set_property ('sensitive', self.changed)
 
-        self.statusbar.set_default (text)
-        return
+        self.context_id = self.statusbar.get_context_id('main')
+        self.statusbar.push(self.context_id, text)
 
     
     def confirm (self):
