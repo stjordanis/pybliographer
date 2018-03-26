@@ -25,7 +25,6 @@
 # added: Note taking widget
 
 import copy, gobject, gtk, re, string
-from gnome import ui
 
 from Pyblio import Base, Config, Connector, Exceptions, Fields, Key, Types
 from Pyblio.GnomeUI import Common, FieldsInfo, FileSelector, Mime, Utils
@@ -594,8 +593,8 @@ class RealEditor (Connector.Publisher):
 
         self.newfield_area = gtk.HBox (spacing = 5)
         self.newfield_area.set_border_width (5)
-        self.newfield = ui.Entry ('newfield')
-        
+
+        self.newfield = gtk.Entry()
         self.newfield_area.pack_start (self.newfield)
 
         b = gtk.Button (_("Create Field"))
@@ -645,7 +644,6 @@ class RealEditor (Connector.Publisher):
         self.entry = new
         self.update_notebook ()
         return
-
 
     def apply_cb (self, * args):
         self.issue ('apply')
@@ -878,14 +876,13 @@ class RealEditor (Connector.Publisher):
     #--------------------------------------------------
     
     def create_field(self, *arg):
-        widget = self.newfield.gtk_entry()
-        text   = string.strip(string.lower(widget.get_text()))
+        text   = string.strip(string.lower(self.newfield.get_text()))
         if not re.match(r"[a-z][\w_-]*$", text):
             if not Utils.Callback(
                 "The fieldname '%s' looks invalid.\nReally proceed?" % text,
                 parent=self.w.get_toplevel()).answer():
                 return
-                
+
         # update the current entry
         current = self.update(self.database, copy.deepcopy(self.entry))
         if current is None:
@@ -894,8 +891,6 @@ class RealEditor (Connector.Publisher):
         newtype = Types.get_field(text).type
         self.entry[text] = newtype(_newcontent[newtype])
         self.update_notebook()
-        return
-    
 
     def update (self, database, entry):
         modified = False
