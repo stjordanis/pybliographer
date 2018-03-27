@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -22,7 +23,7 @@
 # TO DO:
 # List view troubles
 
-import gobject, gtk, gtk.glade
+import gobject, gtk
 
 import copy, os.path, re, string
 
@@ -33,20 +34,18 @@ from Pyblio.Utils import format
 _map = string.maketrans ('\t\n', '  ')
 _cpt = re.compile ('\s+')
 
-class ConfigDialog (Utils.GladeWindow):
-
+class ConfigDialog (Utils.Builder):
     gladeinfo = {
-        'file': 'config1.glade',
-        'root': 'config1',
+        'file': 'config.ui',
+        'root': 'config',
         'name': 'configuration'
         }
 
-    def __init__ (self, parent = None):
+    def __init__(self, parent=None):
+        Utils.Builder.__init__(self, parent, window='config')
 
-        Utils.GladeWindow.__init__ (self, parent, window = 'config1')
-
-        self.dialog = self.xml.get_widget ('config1')
-        content = self.xml.get_widget ('dialog-vbox1')
+        self.dialog = self.xml.get_object('config')
+        content = self.xml.get_object('dialog-vbox1')
 
         self.w = gtk.Notebook ()
 
@@ -128,7 +127,7 @@ class ConfigDialog (Utils.GladeWindow):
     def on_close1 (self, w):
 
         self.size_save ()
-        self.dialog.hide_all()
+        self.dialog.hide()
 
     def show (self):
         self.dialog.show_all()

@@ -40,13 +40,13 @@ Pyblio/GnomeUI/Search.py
 Pyblio/GnomeUI/Sort.py
 Pyblio/GnomeUI/Utils.py
 Pyblio/GnomeUI/__init__.py
-Pyblio/GnomeUI/glade/config1.glade
+Pyblio/GnomeUI/glade/config.ui
 Pyblio/GnomeUI/glade/fields.ui
 Pyblio/GnomeUI/glade/format.ui
 Pyblio/GnomeUI/glade/medline.glade
 Pyblio/GnomeUI/glade/openurl.ui
 Pyblio/GnomeUI/glade/pyblio.ui.in
-Pyblio/GnomeUI/glade/search.glade
+Pyblio/GnomeUI/glade/search.ui
 Pyblio/GnomeUI/glade/sort.ui
 Pyblio/Help.py
 Pyblio/Iterator.py

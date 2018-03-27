@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -34,31 +35,28 @@ from Pyblio import Types, Search, Config, \
 from Pyblio.GnomeUI import Utils
 
 
-class SearchDialog (Connector.Publisher, Utils.GladeWindow):
-
+class SearchDialog (Connector.Publisher, Utils.Builder):
     ''' The actual Search Dialog. This dialog is created once, and
     only hidden, not destroyed, to keep it always available in the
     same state.
 
     This dialog emits a "search-data" signal when a new search
     criterion is selected.
-    
     '''
 
-    gladeinfo = { 'name': 'search',
-                  'file': 'search.glade',
-                  'root': '_w_search'
+    gladeinfo = { 'file': 'search.ui',
+                  'root': '_w_search',
+                  'name': 'search'
                   }
     
-    def __init__ (self, parent = None):
-
-        Utils.GladeWindow.__init__ (self, parent)
+    def __init__(self, parent=None):
+        Utils.Builder.__init__(self, parent)
 
         # the tree model contains a string that explains the query,
         # and a python object representing the actual query.
         
-        self._model = gtk.TreeStore (str, gobject.TYPE_PYOBJECT)
-        self._w_tree.set_model (self._model)
+        self._model = gtk.TreeStore(str, object)
+        self._w_tree.set_model(self._model)
 
         # the view does not display the python column, of course.
         col = gtk.TreeViewColumn ('field', gtk.CellRendererText (), text = 0)
@@ -74,27 +72,27 @@ class SearchDialog (Connector.Publisher, Utils.GladeWindow):
         self._selection = self._w_tree.get_selection ()
         self._selection.connect ('changed', self.selection)
         
-        # fill the combo containing the available fields
-        self._w_field.set_popdown_strings ([' - any field - '] +
-                                          list (Config.get
-                                                ('gnome/searched').data) +
-                                          [' - type - ', ' - key - '])
+        field_items = [' - any field - '] + \
+                      list(Config.get('gnome/searched').data) + \
+                      [' - type - ', ' - key - ']
+
+        for f in field_items:
+            self._w_field.append_text(f)
+
+        self._w_field.set_active(0)
 
         # connect a menu to the right button
         self.menu = gtk.Menu ()
         self.delete_button = Utils.popup_add (self.menu, _("Delete"),
                                               self.search_delete)
-        self.menu.show ()
 
         # We are set up.
-        self.show ()
-        return
-
+        self.show()
 
     def show (self):
         ''' Invoked to show the interface again when it has been closed '''
         
-        self._w_search.show ()
+        self._w_search.show_all()
         return
 
 
@@ -103,11 +101,8 @@ class SearchDialog (Connector.Publisher, Utils.GladeWindow):
 
         self.size_save ()
         self._w_search.hide ()
-        return
-    
 
     def apply_cb (self, widget):
-
         ''' Construct the new query and add it to the query tree '''
         
         page = self._w_notebook.get_current_page ()
@@ -126,14 +121,14 @@ class SearchDialog (Connector.Publisher, Utils.GladeWindow):
                 'before' :   TextUI.before,
                 'after' :    TextUI.after,
                 }
-            
-            search = self._w_expert_text.get_text ().encode ('latin-1')
+
+            search = self._w_expert.get_text().encode('latin-1')
             
             try:
                 exec ('tester = ' + search, user_global)
             except:
                 etype, value, tb = sys.exc_info ()
-		traceback.print_exception (etype, value, tb)
+                traceback.print_exception (etype, value, tb)
 
                 d = gtk.MessageDialog (self._w_search,
                                        gtk.DIALOG_DESTROY_WITH_PARENT | gtk.DIALOG_MODAL,
@@ -147,9 +142,8 @@ class SearchDialog (Connector.Publisher, Utils.GladeWindow):
 
         # Simple Search
         elif page == 0:
-            
-            field = self._w_field_text.get_text ().lower ()
-            match = self._w_pattern_text.get_text ()
+            field = self._w_field.get_active_text().lower()
+            match = self._w_pattern.get_text()
             
             if match == '': return
 
@@ -206,26 +200,24 @@ class SearchDialog (Connector.Publisher, Utils.GladeWindow):
             name = str (test)
 
         # Get the path to the query being refined
-        s, iter = self._selection.get_selected ()
-        if iter is None: iter = s.get_iter ((0,))
+        s, parent = self._selection.get_selected()
+        if parent is None: parent = s.get_iter((0,))
 
-        i = s.get_path (iter)
+        parent_path = s.get_path(parent)
 
         # If we are refining a previous query, build the new query as
         # a logical and of the previous and new query.
         
-        current = self._model [i] [1]
+        current = self._model[parent_path][1]
         if current: test = current & test
 
         # Add the new query in the tree and ensure it is visible and selected.
-        iter = self._model.append (iter, (name, test))
-        path = s.get_path (iter)
-        
-        self._w_tree.expand_row (path [:-1], True)
-        self._selection.select_path (path)
-        return
+        child = self._model.append(parent, (name, test))
+        path = s.get_path(child)
 
-    
+        self._w_tree.expand_row(parent_path, True)
+        self._selection.select_path (path)
+
     def selection (self, *arg):
 
         ''' Called when the user clicks on a specific query '''
