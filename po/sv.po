@@ -11,15 +11,15 @@ msgstr ""
 "Project-Id-Version: pybliographer\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=pybliographer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-10-07 01:39+0000\n"
-"PO-Revision-Date: 2017-10-09 22:28+0200\n"
+"POT-Creation-Date: 2018-03-27 03:43+0000\n"
+"PO-Revision-Date: 2018-03-27 23:35+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../Pyblio/Autoload.py:79
 #, python-format
@@ -111,7 +111,7 @@ msgstr "nyckeln ”%s” har felaktigt format"
 msgid "%s:%d: key “%s” already defined"
 msgstr "%s:%d: nyckeln ”%s” är redan definierad"
 
-#: ../Pyblio/GnomeUI/Config.py:147 ../Pyblio/GnomeUI/Fields.py:417
+#: ../Pyblio/GnomeUI/Config.py:138 ../Pyblio/GnomeUI/Fields.py:417
 msgid ""
 "Some changes require to restart Pybliographic\n"
 "to be correctly taken into account"
@@ -119,128 +119,121 @@ msgstr ""
 "Vissa ändringar kräver att du startar om\n"
 "Pybliographic för att de ska fungera"
 
-#: ../Pyblio/GnomeUI/Config.py:429
+#: ../Pyblio/GnomeUI/Config.py:420
 msgid "Add"
 msgstr "Lägg till"
 
-#: ../Pyblio/GnomeUI/Config.py:432
+#: ../Pyblio/GnomeUI/Config.py:423
 msgid "Update"
 msgstr "Uppdatera"
 
-#: ../Pyblio/GnomeUI/Config.py:435 ../Pyblio/GnomeUI/Config.py:549
+#: ../Pyblio/GnomeUI/Config.py:426 ../Pyblio/GnomeUI/Config.py:540
 msgid "Remove"
 msgstr "Ta bort"
 
-#: ../Pyblio/GnomeUI/Config.py:546
+#: ../Pyblio/GnomeUI/Config.py:537
 msgid "Set"
 msgstr "Sätt"
 
-#: ../Pyblio/GnomeUI/Config.py:561
+#: ../Pyblio/GnomeUI/Config.py:552
 msgid "Key:"
 msgstr "Nyckel:"
 
-#: ../Pyblio/GnomeUI/Config.py:563
+#: ../Pyblio/GnomeUI/Config.py:554
 msgid "Value:"
 msgstr "Värde:"
 
 #. id     stock            label         accel   tooltip   callback
-#: ../Pyblio/GnomeUI/Document.py:145
+#: ../Pyblio/GnomeUI/Document.py:139
 msgid "_File"
 msgstr "_Arkiv"
 
-#: ../Pyblio/GnomeUI/Document.py:146
+#: ../Pyblio/GnomeUI/Document.py:140
 msgid "_Edit"
 msgstr "R_edigera"
 
-#: ../Pyblio/GnomeUI/Document.py:147
+#: ../Pyblio/GnomeUI/Document.py:141
 msgid "_View"
 msgstr "_Visa"
 
-#: ../Pyblio/GnomeUI/Document.py:148
+#: ../Pyblio/GnomeUI/Document.py:142
 msgid "_Cite"
 msgstr "_Citera"
 
-#: ../Pyblio/GnomeUI/Document.py:149
+#: ../Pyblio/GnomeUI/Document.py:143
 msgid "_Settings"
 msgstr "_Inställningar"
 
-#: ../Pyblio/GnomeUI/Document.py:150
+#: ../Pyblio/GnomeUI/Document.py:144
 msgid "_Help"
 msgstr "_Hjälp"
 
-#: ../Pyblio/GnomeUI/Document.py:151
+#: ../Pyblio/GnomeUI/Document.py:145
 msgid "Recent documents"
 msgstr "Tidigare dokument"
 
-#: ../Pyblio/GnomeUI/Document.py:154
+#: ../Pyblio/GnomeUI/Document.py:148
 msgid "Open a file"
 msgstr "Öppna en fil"
 
-#: ../Pyblio/GnomeUI/Document.py:155
-msgid "Open _Location"
-msgstr "Öppna _plats"
+#: ../Pyblio/GnomeUI/Document.py:149
+msgid "Open _Location…"
+msgstr "Öppna _plats…"
 
-#: ../Pyblio/GnomeUI/Document.py:156
+#: ../Pyblio/GnomeUI/Document.py:150
 msgid "Save the current file"
 msgstr "Spara aktuell fil"
 
-#: ../Pyblio/GnomeUI/Document.py:161
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:3
+#: ../Pyblio/GnomeUI/Document.py:155
 msgid "Merge With…"
 msgstr "Slå ihop med…"
 
-#: ../Pyblio/GnomeUI/Document.py:162
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:4
+#: ../Pyblio/GnomeUI/Document.py:156
 msgid "Medline Query…"
 msgstr "Medline-fråga…"
 
-#: ../Pyblio/GnomeUI/Document.py:170
+#: ../Pyblio/GnomeUI/Document.py:164
 msgid "Add a new entry"
 msgstr "Lägg till en ny post"
 
-#: ../Pyblio/GnomeUI/Document.py:175
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:9
+#: ../Pyblio/GnomeUI/Document.py:169
 msgid "S_ort…"
 msgstr "S_ortera…"
 
-#: ../Pyblio/GnomeUI/Document.py:176
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:11
+#: ../Pyblio/GnomeUI/Document.py:170
 msgid "Cite…"
 msgstr "Citera…"
 
 # Nycklar eller tangenter?
-#: ../Pyblio/GnomeUI/Document.py:176
+#: ../Pyblio/GnomeUI/Document.py:170
 msgid "Cite key(s)"
 msgstr "Citera nycklar"
 
-#: ../Pyblio/GnomeUI/Document.py:177
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:12
+#: ../Pyblio/GnomeUI/Document.py:171
 msgid "Format…"
 msgstr "Formatera…"
 
-#: ../Pyblio/GnomeUI/Document.py:179
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:14
+#: ../Pyblio/GnomeUI/Document.py:173
 msgid "Fields…"
 msgstr "Fält…"
 
-#: ../Pyblio/GnomeUI/Document.py:181
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:15
+#: ../Pyblio/GnomeUI/Document.py:175
 msgid "Forget all changes"
 msgstr "Glöm alla ändringar"
 
-#: ../Pyblio/GnomeUI/Document.py:185
+#: ../Pyblio/GnomeUI/Document.py:179
 msgid "_Resource"
 msgstr "_Resurs"
 
-#: ../Pyblio/GnomeUI/Document.py:236
+#: ../Pyblio/GnomeUI/Document.py:234
 msgid "Quick search"
 msgstr "Snabbsökning"
 
-#: ../Pyblio/GnomeUI/Document.py:310
+#: ../Pyblio/GnomeUI/Document.py:308
 msgid "Unnamed bibliographic database"
 msgstr "Namnlös bibliografisk databas"
 
-#: ../Pyblio/GnomeUI/Document.py:393
+#: ../Pyblio/GnomeUI/Document.py:391
 #, python-format
 msgid ""
 "can’t open file “%s” for writing:\n"
@@ -249,7 +242,7 @@ msgstr ""
 "kan inte öppna filen ”%s” för skrivning:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:414
+#: ../Pyblio/GnomeUI/Document.py:412
 #, python-format
 msgid ""
 "Error while parsing “%s”:\n"
@@ -258,43 +251,43 @@ msgstr ""
 "Fel vid läsning av ”%s”:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:430
+#: ../Pyblio/GnomeUI/Document.py:428
 msgid "New database"
 msgstr "Ny databas"
 
-#: ../Pyblio/GnomeUI/Document.py:438 ../Pyblio/GnomeUI/Document.py:442
+#: ../Pyblio/GnomeUI/Document.py:436 ../Pyblio/GnomeUI/Document.py:440
 msgid "[no entry]"
 msgstr "[ingen post]"
 
-#: ../Pyblio/GnomeUI/Document.py:439
+#: ../Pyblio/GnomeUI/Document.py:437
 msgid "[1 entry]"
 msgstr "[1 post]"
 
-#: ../Pyblio/GnomeUI/Document.py:440
+#: ../Pyblio/GnomeUI/Document.py:438
 #, python-format
 msgid "[%d entries]"
 msgstr "[%d poster]"
 
-#: ../Pyblio/GnomeUI/Document.py:443
+#: ../Pyblio/GnomeUI/Document.py:441
 #, python-format
 msgid "[%d/1 entry]"
 msgstr "[%d/1 post]"
 
-#: ../Pyblio/GnomeUI/Document.py:444
+#: ../Pyblio/GnomeUI/Document.py:442
 #, python-format
 msgid "[%d/%d entries]"
 msgstr "[%d/%d poster]"
 
-#: ../Pyblio/GnomeUI/Document.py:449
+#: ../Pyblio/GnomeUI/Document.py:447
 msgid "[modified]"
 msgstr "[ändrad]"
 
-#: ../Pyblio/GnomeUI/Document.py:452
+#: ../Pyblio/GnomeUI/Document.py:450
 #, python-format
 msgid "view limited to: %s"
 msgstr "vy begränsad till: %s"
 
-#: ../Pyblio/GnomeUI/Document.py:465
+#: ../Pyblio/GnomeUI/Document.py:463
 msgid ""
 "The database has been modified.\n"
 "Discard changes?"
@@ -302,7 +295,7 @@ msgstr ""
 "Databasen har ändrats.\n"
 "Förkasta ändringarna?"
 
-#: ../Pyblio/GnomeUI/Document.py:469
+#: ../Pyblio/GnomeUI/Document.py:467
 msgid ""
 "The database has been modified.\n"
 "Save changes?"
@@ -310,7 +303,7 @@ msgstr ""
 "Databasen har ändrats.\n"
 "Spara ändringarna?"
 
-#: ../Pyblio/GnomeUI/Document.py:490
+#: ../Pyblio/GnomeUI/Document.py:488
 msgid ""
 "The database has been externally modified.\n"
 "Overwrite changes?"
@@ -319,34 +312,34 @@ msgstr ""
 "Skriv över ändringarna?"
 
 #. no result.
-#: ../Pyblio/GnomeUI/Document.py:519
+#: ../Pyblio/GnomeUI/Document.py:517
 msgid "Your query returned no result"
 msgstr "Din fråga returnerade inget resultat"
 
 #. error
-#: ../Pyblio/GnomeUI/Document.py:523
+#: ../Pyblio/GnomeUI/Document.py:521
 msgid "An error occurred during Medline Query"
 msgstr "Ett fel uppstod under Medline-fråga"
 
 #. get a new file name
-#: ../Pyblio/GnomeUI/Document.py:533
+#: ../Pyblio/GnomeUI/Document.py:531
 msgid "Merge file"
 msgstr "Lägg till filen"
 
-#: ../Pyblio/GnomeUI/Document.py:546 ../Pyblio/GnomeUI/Document.py:633
+#: ../Pyblio/GnomeUI/Document.py:544 ../Pyblio/GnomeUI/Document.py:631
 msgid "Open error"
 msgstr "Fel vid öppning"
 
-#: ../Pyblio/GnomeUI/Document.py:570
+#: ../Pyblio/GnomeUI/Document.py:568
 msgid "Merge status"
 msgstr "Ihopslagningsstatus"
 
 #. get a new file name
-#: ../Pyblio/GnomeUI/Document.py:581
+#: ../Pyblio/GnomeUI/Document.py:579
 msgid "Open file"
 msgstr "Öppna fil"
 
-#: ../Pyblio/GnomeUI/Document.py:619
+#: ../Pyblio/GnomeUI/Document.py:617
 msgid ""
 "An autosave file was found which is newer than the original file.\n"
 "Do you want to restore it?"
@@ -354,8 +347,8 @@ msgstr ""
 "En automatiskt sparad fil hittades vilken är nyare än originalfilen.\n"
 "Vill du återställa den?"
 
-#: ../Pyblio/GnomeUI/Document.py:654 ../Pyblio/GnomeUI/Document.py:795
-#: ../Pyblio/GnomeUI/Document.py:855
+#: ../Pyblio/GnomeUI/Document.py:652 ../Pyblio/GnomeUI/Document.py:793
+#: ../Pyblio/GnomeUI/Document.py:853
 #, python-format
 msgid ""
 "Unable to remove autosave file “%s”:\n"
@@ -364,7 +357,7 @@ msgstr ""
 "Kunde inte ta bort den automatiskt sparade filen ”%s”:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:705
+#: ../Pyblio/GnomeUI/Document.py:703
 #, python-format
 msgid ""
 "Error during autosaving:\n"
@@ -373,7 +366,7 @@ msgstr ""
 "Fel vid automatisk sparning:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:733
+#: ../Pyblio/GnomeUI/Document.py:731
 #, python-format
 msgid ""
 "Unable to save “%s”:\n"
@@ -382,7 +375,7 @@ msgstr ""
 "Kunde inte spara ”%s”:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:741
+#: ../Pyblio/GnomeUI/Document.py:739
 msgid ""
 "An internal error occurred during saving\n"
 "Try to Save As…"
@@ -390,11 +383,11 @@ msgstr ""
 "Ett internt fel uppstod vid sparning\n"
 "Försöker spara som…"
 
-#: ../Pyblio/GnomeUI/Document.py:756
+#: ../Pyblio/GnomeUI/Document.py:754
 msgid "Save As…"
 msgstr "Spara som…"
 
-#: ../Pyblio/GnomeUI/Document.py:762
+#: ../Pyblio/GnomeUI/Document.py:760
 #, python-format
 msgid ""
 "The file “%s” already exists.\n"
@@ -403,7 +396,7 @@ msgstr ""
 "Filen ”%s” finns redan.\n"
 "Vill du skriva över den?"
 
-#: ../Pyblio/GnomeUI/Document.py:769
+#: ../Pyblio/GnomeUI/Document.py:767
 #, python-format
 msgid ""
 "During opening:\n"
@@ -412,11 +405,11 @@ msgstr ""
 "Vid öppnande:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:807
+#: ../Pyblio/GnomeUI/Document.py:805
 msgid "Reopen error"
 msgstr "Återöppningsfel"
 
-#: ../Pyblio/GnomeUI/Document.py:880
+#: ../Pyblio/GnomeUI/Document.py:878
 #, python-format
 msgid ""
 "An entry called “%s” already exists.\n"
@@ -425,31 +418,31 @@ msgstr ""
 "En post som heter ”%s” finns redan.\n"
 "Vill du byta namn och lägga till den i alla fall?"
 
-#: ../Pyblio/GnomeUI/Document.py:917
+#: ../Pyblio/GnomeUI/Document.py:915
 msgid "Really remove all the entries?"
 msgstr "Vill du verkligen ta bort alla poster?"
 
-#: ../Pyblio/GnomeUI/Document.py:937
+#: ../Pyblio/GnomeUI/Document.py:935
 msgid "Create new entry"
 msgstr "Skapa ny post"
 
-#: ../Pyblio/GnomeUI/Document.py:951
+#: ../Pyblio/GnomeUI/Document.py:949
 #, python-format
 msgid "Really edit %d entries?"
 msgstr "Vill du verkligen redigera %d poster?"
 
 # hoppas att ja fungerar som svar KONTROLLERA!
-#: ../Pyblio/GnomeUI/Document.py:998
+#: ../Pyblio/GnomeUI/Document.py:996
 #, python-format
 msgid "Remove all the %d entries?"
 msgstr "Vill du verkligen ta bort alla %d poster?"
 
-#: ../Pyblio/GnomeUI/Document.py:1000
+#: ../Pyblio/GnomeUI/Document.py:998
 #, python-format
 msgid "Remove entry “%s”?"
 msgstr "Ta bort post ”%s”?"
 
-#: ../Pyblio/GnomeUI/Document.py:1019
+#: ../Pyblio/GnomeUI/Document.py:1017
 msgid ""
 "your search text must contain\n"
 "latin-1 characters only"
@@ -457,7 +450,7 @@ msgstr ""
 "din söktext får endast innehålla\n"
 "latin-1-tecken"
 
-#: ../Pyblio/GnomeUI/Document.py:1098 ../Pyblio/GnomeUI/Document.py:1106
+#: ../Pyblio/GnomeUI/Document.py:1096 ../Pyblio/GnomeUI/Document.py:1104
 #, python-format
 msgid ""
 "Can’t connect to LyX:\n"
@@ -466,7 +459,7 @@ msgstr ""
 "Kan inte ansluta till LyX:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:1222
+#: ../Pyblio/GnomeUI/Document.py:1220
 #, python-format
 msgid ""
 "Can’t display documentation:\n"
@@ -475,160 +468,145 @@ msgstr ""
 "Kan inte visa dokumentation:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:1232
-msgid "This program is copyrighted under the GNU GPL"
-msgstr "Detta program är copyrightskyddad under GNU GPL"
-
-#: ../Pyblio/GnomeUI/Document.py:1233
-msgid "GNOME interface to the Pybliographer system."
-msgstr "GNOME-gränssnitt till Pybliographer-systemet."
-
-#: ../Pyblio/GnomeUI/Document.py:1244
+#: ../Pyblio/GnomeUI/Document.py:1243
 msgid "GNOME Translation Team"
 msgstr "GNOME:s översättningsgrupp"
 
-#: ../Pyblio/GnomeUI/Document.py:1250
+#: ../Pyblio/GnomeUI/Document.py:1244
+msgid "This program is copyrighted under the GNU GPL"
+msgstr "Detta program är copyrightskyddad under GNU GPL"
+
+#: ../Pyblio/GnomeUI/Document.py:1245
+msgid "GNOME interface to the Pybliographer system."
+msgstr "GNOME-gränssnitt till Pybliographer-systemet."
+
+#: ../Pyblio/GnomeUI/Document.py:1251
 msgid "Pybliographer Home Page"
 msgstr "Pybliographers hemsida"
 
-#: ../Pyblio/GnomeUI/Editor.py:36
+#: ../Pyblio/GnomeUI/Editor.py:35
 msgid "Last Name, First Name"
 msgstr "Efternamn, Förnamn"
 
-#: ../Pyblio/GnomeUI/Editor.py:37 ../Pyblio/GnomeUI/Editor.py:1293
-#: ../Pyblio/GnomeUI/Fields.py:39 ../Pyblio/GnomeUI/glade/config1.glade.h:10
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:9
+#: ../Pyblio/GnomeUI/Editor.py:36 ../Pyblio/GnomeUI/Editor.py:1289
+#: ../Pyblio/GnomeUI/Fields.py:40
 msgid "Text"
 msgstr "Text"
 
-#: ../Pyblio/GnomeUI/Editor.py:134 ../Pyblio/GnomeUI/Editor.py:1004
+#: ../Pyblio/GnomeUI/Editor.py:133 ../Pyblio/GnomeUI/Editor.py:1000
 msgid "Error in native string parsing"
 msgstr "Fel vid läsning av ursprungssträng"
 
-#: ../Pyblio/GnomeUI/Editor.py:313
+#: ../Pyblio/GnomeUI/Editor.py:312
 msgid "Day"
 msgstr "Dag"
 
-#: ../Pyblio/GnomeUI/Editor.py:322
+#: ../Pyblio/GnomeUI/Editor.py:321
 msgid "Month"
 msgstr "Månad"
 
-#: ../Pyblio/GnomeUI/Editor.py:331
+#: ../Pyblio/GnomeUI/Editor.py:330
 msgid "Year"
 msgstr "År"
 
-#: ../Pyblio/GnomeUI/Editor.py:356
-msgid "Invalid day field in date"
-msgstr "Ogiltigt dagsfält i datum"
-
-#: ../Pyblio/GnomeUI/Editor.py:364
-msgid "Invalid month field in date"
-msgstr "Ogiltigt månadsfält i datum"
-
-#: ../Pyblio/GnomeUI/Editor.py:372
-msgid "Invalid year field in date"
-msgstr "Ogiltigt årsfält i datum"
-
 #. A delete button
-#: ../Pyblio/GnomeUI/Editor.py:420 ../Pyblio/GnomeUI/Search.py:86
+#: ../Pyblio/GnomeUI/Editor.py:419 ../Pyblio/GnomeUI/Search.py:86
 msgid "Delete"
 msgstr "Ta bort"
 
-#: ../Pyblio/GnomeUI/Editor.py:431 ../Pyblio/GnomeUI/Editor.py:444
-#: ../Pyblio/GnomeUI/Editor.py:447
+#: ../Pyblio/GnomeUI/Editor.py:430 ../Pyblio/GnomeUI/Editor.py:443
+#: ../Pyblio/GnomeUI/Editor.py:446
 msgid "[ Drop an Entry here ]"
 msgstr "[ Släpp en post här ]"
 
-#: ../Pyblio/GnomeUI/Editor.py:503
+#: ../Pyblio/GnomeUI/Editor.py:502
 msgid "Browse…"
 msgstr "Bläddra…"
 
-#: ../Pyblio/GnomeUI/Editor.py:526
+#: ../Pyblio/GnomeUI/Editor.py:525
 msgid "Select file"
 msgstr "Välj fil"
 
-#: ../Pyblio/GnomeUI/Editor.py:550 ../Pyblio/GnomeUI/Fields.py:236
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:12
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:11
+#: ../Pyblio/GnomeUI/Editor.py:549 ../Pyblio/GnomeUI/Fields.py:239
 msgid "Entry type"
 msgstr "Inmatningstyp"
 
-#: ../Pyblio/GnomeUI/Editor.py:552
+#: ../Pyblio/GnomeUI/Editor.py:551
 msgid "Key"
 msgstr "Nyckel"
 
-#: ../Pyblio/GnomeUI/Editor.py:601
+#: ../Pyblio/GnomeUI/Editor.py:600
 msgid "Create Field"
 msgstr "Skapa fält"
 
 #. navigation buttons
-#: ../Pyblio/GnomeUI/Editor.py:606
+#: ../Pyblio/GnomeUI/Editor.py:605
 msgid "Back"
 msgstr "Bakåt"
 
-#: ../Pyblio/GnomeUI/Editor.py:609
+#: ../Pyblio/GnomeUI/Editor.py:608
 msgid "Next"
 msgstr "Nästa"
 
-#: ../Pyblio/GnomeUI/Editor.py:729 ../Pyblio/GnomeUI/Fields.py:451
+#: ../Pyblio/GnomeUI/Editor.py:727 ../Pyblio/GnomeUI/Fields.py:449
 msgid "Mandatory"
 msgstr "Nödvändigt"
 
-#: ../Pyblio/GnomeUI/Editor.py:729 ../Pyblio/GnomeUI/Fields.py:452
+#: ../Pyblio/GnomeUI/Editor.py:727 ../Pyblio/GnomeUI/Fields.py:450
 msgid "Optional"
 msgstr "Valfri"
 
-#: ../Pyblio/GnomeUI/Editor.py:729 ../Pyblio/GnomeUI/Editor.py:1208
+#: ../Pyblio/GnomeUI/Editor.py:727 ../Pyblio/GnomeUI/Editor.py:1204
 msgid "Notes"
 msgstr "Anteckningar"
 
-#: ../Pyblio/GnomeUI/Editor.py:729
+#: ../Pyblio/GnomeUI/Editor.py:727
 msgid "Extra"
 msgstr "Extra"
 
-#: ../Pyblio/GnomeUI/Editor.py:910
+#: ../Pyblio/GnomeUI/Editor.py:905
 msgid "Invalid key format"
 msgstr "Ogiltigt nyckelformat"
 
-#: ../Pyblio/GnomeUI/Editor.py:918
+#: ../Pyblio/GnomeUI/Editor.py:914
 #, python-format
 msgid "Key “%s” already exists"
 msgstr "Nyckeln ”%s” existerar redan"
 
-#: ../Pyblio/GnomeUI/Editor.py:935
+#: ../Pyblio/GnomeUI/Editor.py:931
 #, python-format
 msgid "The “%s” field contains a non Latin-1 symbol"
 msgstr "Fältet ”%s” innehåller en symbol som inte är med i Latin-1"
 
-#: ../Pyblio/GnomeUI/Editor.py:997
+#: ../Pyblio/GnomeUI/Editor.py:994
 msgid "Your text contains non Latin-1 symbols"
 msgstr "Din text innehåller symboler som inte är med i Latin-1"
 
-#: ../Pyblio/GnomeUI/Editor.py:1024
+#: ../Pyblio/GnomeUI/Editor.py:1020
 msgid "Edit entry"
 msgstr "Redigera inmatning"
 
-#: ../Pyblio/GnomeUI/Editor.py:1038 ../Pyblio/GnomeUI/Editor.py:1103
+#: ../Pyblio/GnomeUI/Editor.py:1034 ../Pyblio/GnomeUI/Editor.py:1099
 msgid "Native Editing"
 msgstr "Ursprungsredigering"
 
-#: ../Pyblio/GnomeUI/Editor.py:1126
+#: ../Pyblio/GnomeUI/Editor.py:1122
 msgid "Standard Editing"
 msgstr "Standardredigering"
 
-#: ../Pyblio/GnomeUI/Editor.py:1230
+#: ../Pyblio/GnomeUI/Editor.py:1226
 msgid "mandatory"
 msgstr "nödvändigt"
 
-#: ../Pyblio/GnomeUI/Editor.py:1296
+#: ../Pyblio/GnomeUI/Editor.py:1292
 msgid "Enter text here"
 msgstr "Ange text här"
 
-#: ../Pyblio/GnomeUI/Editor.py:1348
+#: ../Pyblio/GnomeUI/Editor.py:1344
 msgid "New Annotation Name"
 msgstr "Nytt annoteringsnamn"
 
-#: ../Pyblio/GnomeUI/Editor.py:1354
+#: ../Pyblio/GnomeUI/Editor.py:1350
 msgid "Name of the new annotation:"
 msgstr "Namn på den nya annoteringen:"
 
@@ -641,42 +619,39 @@ msgstr ""
 "Kan inte öppna URL:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Fields.py:38
+#: ../Pyblio/GnomeUI/Fields.py:39
 msgid "Authors"
 msgstr "Författare"
 
-#: ../Pyblio/GnomeUI/Fields.py:40
+#: ../Pyblio/GnomeUI/Fields.py:41
 msgid "Long Text"
 msgstr "Lång text"
 
-#: ../Pyblio/GnomeUI/Fields.py:41 ../Pyblio/GnomeUI/glade/config1.glade.h:9
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:8
+#: ../Pyblio/GnomeUI/Fields.py:42
 msgid "URL"
 msgstr "URL"
 
-#: ../Pyblio/GnomeUI/Fields.py:42
+#: ../Pyblio/GnomeUI/Fields.py:43
 msgid "Reference"
 msgstr "Referens"
 
-#: ../Pyblio/GnomeUI/Fields.py:43
+#: ../Pyblio/GnomeUI/Fields.py:44
 msgid "Date"
 msgstr "Datum"
 
-#: ../Pyblio/GnomeUI/Fields.py:124 ../Pyblio/GnomeUI/glade/config1.glade.h:7
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:6
+#: ../Pyblio/GnomeUI/Fields.py:123
 msgid "Name"
 msgstr "Namn"
 
-#: ../Pyblio/GnomeUI/Fields.py:127 ../Pyblio/GnomeUI/glade/config1.glade.h:6
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:5
+#: ../Pyblio/GnomeUI/Fields.py:126
 msgid "Type"
 msgstr "Typ"
 
-#: ../Pyblio/GnomeUI/Fields.py:300
+#: ../Pyblio/GnomeUI/Fields.py:303
 msgid "Available"
 msgstr "Tillgänglig"
 
-#: ../Pyblio/GnomeUI/Fields.py:310
+#: ../Pyblio/GnomeUI/Fields.py:313
 msgid "Associated"
 msgstr "Associerad"
 
@@ -689,29 +664,28 @@ msgstr "Välj en inmatningstyp från den föregående sidan."
 msgid "Fields associated with <b>%s</b> entry type"
 msgstr "Fält som är associerade med inmatningstypen <b>%s</b>"
 
-#: ../Pyblio/GnomeUI/FileSelector.py:40
+#: ../Pyblio/GnomeUI/FileSelector.py:38
 msgid "File"
 msgstr "Fil"
 
-#: ../Pyblio/GnomeUI/FileSelector.py:77
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:4
+#: ../Pyblio/GnomeUI/FileSelector.py:75
 msgid "Bibliography type:"
 msgstr "Bibliografityp:"
 
-#: ../Pyblio/GnomeUI/FileSelector.py:94 ../Pyblio/GnomeUI/OpenURL.py:62
+#: ../Pyblio/GnomeUI/FileSelector.py:92 ../Pyblio/GnomeUI/OpenURL.py:61
 msgid " — According to file suffix — "
 msgstr " — Enligt filändelsen — "
 
 #. The root of the search tree is the full database
-#: ../Pyblio/GnomeUI/Search.py:71
+#: ../Pyblio/GnomeUI/Search.py:68
 msgid "Full database"
 msgstr "Hela databasen"
 
-#: ../Pyblio/GnomeUI/Search.py:142
+#: ../Pyblio/GnomeUI/Search.py:136
 msgid "internal error during evaluation"
 msgstr "internt fel vid beräkning"
 
-#: ../Pyblio/GnomeUI/Search.py:196
+#: ../Pyblio/GnomeUI/Search.py:189
 #, python-format
 msgid ""
 "while compiling %s\n"
@@ -721,128 +695,22 @@ msgstr ""
 "fel: %s"
 
 #. These are additional search fields
-#: ../Pyblio/GnomeUI/Sort.py:97
+#: ../Pyblio/GnomeUI/Sort.py:95
 msgid "[Entry Type]"
 msgstr "[Inmatningstyp]"
 
-#: ../Pyblio/GnomeUI/Sort.py:98
+#: ../Pyblio/GnomeUI/Sort.py:96
 msgid "[Key Value]"
 msgstr "[Nyckelvärde]"
 
-#: ../Pyblio/GnomeUI/Utils.py:203
+#: ../Pyblio/GnomeUI/Utils.py:265
 msgid "The following errors occurred:\n"
 msgstr "Följande fel inträffade:\n"
 
-#: ../Pyblio/GnomeUI/__init__.py:45
+#: ../Pyblio/GnomeUI/__init__.py:42
 #, python-format
 msgid "This is Pybliographic %s [Python %s, Gtk %s, PyGTK %s]"
 msgstr "Detta är Pybliographic %s [Python %s, Gtk %s, PyGTK %s]"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:1
-msgid "Pybliographer Configuration"
-msgstr "Konfiguration av Pybliographer"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:2
-msgid "FIELDS DEFINITION"
-msgstr "FÄLTDEFINITION"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:3
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:2
-msgid "Name "
-msgstr "Namn "
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:4
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:3
-msgid "Editor"
-msgstr "Redigerare"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:5
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:4
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:5
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:3
-#: ../Pyblio/GnomeUI/glade/search.glade.h:5
-msgid "*"
-msgstr "*"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:8
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:7
-msgid "Datum"
-msgstr "Datum"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:11
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:10
-msgid "Fields "
-msgstr "Fält "
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:13
-msgid "A"
-msgstr "A"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:14
-msgid "standard fields"
-msgstr "standardfält"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:15
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:19
-msgid "Entries"
-msgstr "Poster"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:16
-msgid "<b>Entry type</b>"
-msgstr "<b>Inmatningstyp</b>"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:17
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:21
-msgid "Association"
-msgstr "Association"
-
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:1
-msgid "Entry types and field names configuration"
-msgstr "Konfiguration av inmatningstyper och fältnamn"
-
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:12
-msgid ""
-"Select an entry type and specify \n"
-"its associated (mandatory and\n"
-"optional) fields on the next page.\n"
-"\n"
-"\n"
-"\n"
-msgstr ""
-"Välj en inmatningstyp och ange dess\n"
-"associerade (nödvändiga och valfria)\n"
-"fält på nästa sida.\n"
-"\n"
-"\n"
-"\n"
-
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:20
-msgid "Information for <b>Article</b> entry type"
-msgstr "Information för inmatningstypen <b>artikel</b>"
-
-#: ../Pyblio/GnomeUI/glade/format.glade.h:1
-msgid "Format entries"
-msgstr "Formatera poster"
-
-#: ../Pyblio/GnomeUI/glade/format.glade.h:2
-msgid "Bibliography style:"
-msgstr "Bibliografistil:"
-
-#: ../Pyblio/GnomeUI/glade/format.glade.h:3
-msgid "Output format:"
-msgstr "Utdataformat:"
-
-#: ../Pyblio/GnomeUI/glade/format.glade.h:4
-msgid "Style Selection"
-msgstr "Stilval"
-
-#: ../Pyblio/GnomeUI/glade/format.glade.h:5
-msgid "Save Formatted as"
-msgstr "Spara formaterad som"
-
-#: ../Pyblio/GnomeUI/glade/format.glade.h:6
-msgid "Output file:"
-msgstr "Utdatafil:"
 
 #: ../Pyblio/GnomeUI/glade/medline.glade.h:1
 msgid "Medline Query"
@@ -859,6 +727,10 @@ msgid ""
 msgstr ""
 "Sök i\n"
 "PubMed efter:"
+
+#: ../Pyblio/GnomeUI/glade/medline.glade.h:5
+msgid "*"
+msgstr "*"
 
 #: ../Pyblio/GnomeUI/glade/medline.glade.h:6
 msgid ""
@@ -912,94 +784,10 @@ msgstr ""
 msgid "Limited to:"
 msgstr "Begränsat till:"
 
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:1
-msgid "Open Location"
-msgstr "Öppna plats"
-
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:2
-msgid "Enter the location (URI) of the file you would like to open:"
-msgstr "Ange platsen (URI) till filen du önskar öppna:"
-
 #. save history
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:1 ../pybliographic.desktop.in.h:1
+#: ../Pyblio/GnomeUI/glade/pyblio.ui.in:7 ../pybliographic.desktop.in.h:1
 msgid "Pybliographer"
 msgstr "Pybliographer"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:2
-msgid "_New"
-msgstr "_Nytt"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:5
-msgid "Previous Documents"
-msgstr "Föregående dokument"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:6
-msgid "_Add…"
-msgstr "_Lägg till…"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:7
-msgid "_Edit…"
-msgstr "R_edigera…"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:8
-msgid "_Delete…"
-msgstr "_Ta bort…"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:10
-msgid "Cite"
-msgstr "Citera"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:13
-msgid "Settings"
-msgstr "Inställningar"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:16
-msgid "Contents"
-msgstr "Innehåll"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:17
-msgid "Open File"
-msgstr "Öppna fil"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:18
-msgid "Save File"
-msgstr "Spara fil"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:1
-msgid "Search"
-msgstr "Sök"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:2
-msgid "Close"
-msgstr "Stäng"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:3
-msgid "Field"
-msgstr "Fält"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:4
-msgid "Pattern"
-msgstr "Mönster"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:6
-msgid "Simple Search"
-msgstr "Enkel sökning"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:7
-msgid "Query"
-msgstr "Fråga"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:8
-msgid "Expert Search"
-msgstr "Expertsökning"
-
-#: ../Pyblio/GnomeUI/glade/sort.glade.h:1
-msgid "Select sort criteria"
-msgstr "Välj sorteringsvillkor"
-
-#: ../Pyblio/GnomeUI/glade/sort.glade.h:2
-msgid "Set as default"
-msgstr "Ställ in som standard"
 
 #: ../Pyblio/LyX.py:38
 #, python-format
@@ -1031,7 +819,7 @@ msgstr "vet inte hur man öppnar ”%s”"
 msgid "method “%s” provides no iterator"
 msgstr "metoden ”%s” tillhandahåller ingen iterator"
 
-#: ../Pyblio/Resource.py:78
+#: ../Pyblio/Resource.py:79
 #, python-format
 msgid ""
 "Warning: This URL is marked as Invalid or Approximate: %s\n"
@@ -1040,16 +828,16 @@ msgstr ""
 "Varning: Denna url är markerad som Ogiltig eller Ungefärlig: %s\n"
 "Fortsätt?"
 
-#: ../Pyblio/Resource.py:82
+#: ../Pyblio/Resource.py:84
 msgid "Determining Mime Type… "
 msgstr "Fastställer Mime-typ… "
 
-#: ../Pyblio/Resource.py:87
+#: ../Pyblio/Resource.py:89
 #, python-format
 msgid "Cannot determine mime type for item %s "
 msgstr "Kan inte fastställa mimetyp för posten %s "
 
-#: ../Pyblio/Resource.py:88
+#: ../Pyblio/Resource.py:90
 #, python-format
 msgid ""
 "URL in question is: %s\n"
@@ -1060,16 +848,16 @@ msgstr ""
 "Du bör kontrollera url:en eller angiven sökväg efter fel.\n"
 "Detaljer: %s"
 
-#: ../Pyblio/Resource.py:99
+#: ../Pyblio/Resource.py:101
 msgid "Accessing resource…"
 msgstr "Kommer åt resurs…"
 
-#: ../Pyblio/Resource.py:117
+#: ../Pyblio/Resource.py:119
 #, python-format
 msgid "IOError for item %s: cannot uncompress resource."
 msgstr "In/ut-fel för posten %s: kan inte packa upp resurs."
 
-#: ../Pyblio/Resource.py:118
+#: ../Pyblio/Resource.py:120
 #, python-format
 msgid ""
 "URL: %s\n"
@@ -1078,15 +866,15 @@ msgstr ""
 "URL: %s\n"
 "Detaljer: %s"
 
-#: ../Pyblio/Resource.py:138
+#: ../Pyblio/Resource.py:141
 msgid "Starting application…"
 msgstr "Startar program…"
 
-#: ../Pyblio/Resource.py:141
+#: ../Pyblio/Resource.py:144
 msgid "No application to view resource"
 msgstr "Inget program för att visa resurs"
 
-#: ../Pyblio/Resource.py:142
+#: ../Pyblio/Resource.py:145
 #, python-format
 msgid ""
 "For mime type %s, no entry found in \n"
@@ -1349,6 +1137,150 @@ msgstr "kan inte ta bort ”%s”"
 #: ../scripts/pybliotext.py:344
 msgid "Done"
 msgstr "Klar"
+
+#~ msgid "Invalid day field in date"
+#~ msgstr "Ogiltigt dagsfält i datum"
+
+#~ msgid "Invalid month field in date"
+#~ msgstr "Ogiltigt månadsfält i datum"
+
+#~ msgid "Invalid year field in date"
+#~ msgstr "Ogiltigt årsfält i datum"
+
+#~ msgid "Pybliographer Configuration"
+#~ msgstr "Konfiguration av Pybliographer"
+
+#~ msgid "FIELDS DEFINITION"
+#~ msgstr "FÄLTDEFINITION"
+
+#~ msgid "Name "
+#~ msgstr "Namn "
+
+#~ msgid "Editor"
+#~ msgstr "Redigerare"
+
+#~ msgid "Datum"
+#~ msgstr "Datum"
+
+#~ msgid "Fields "
+#~ msgstr "Fält "
+
+#~ msgid "A"
+#~ msgstr "A"
+
+#~ msgid "standard fields"
+#~ msgstr "standardfält"
+
+#~ msgid "Entries"
+#~ msgstr "Poster"
+
+#~ msgid "<b>Entry type</b>"
+#~ msgstr "<b>Inmatningstyp</b>"
+
+#~ msgid "Association"
+#~ msgstr "Association"
+
+#~ msgid "Entry types and field names configuration"
+#~ msgstr "Konfiguration av inmatningstyper och fältnamn"
+
+#~ msgid ""
+#~ "Select an entry type and specify \n"
+#~ "its associated (mandatory and\n"
+#~ "optional) fields on the next page.\n"
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Välj en inmatningstyp och ange dess\n"
+#~ "associerade (nödvändiga och valfria)\n"
+#~ "fält på nästa sida.\n"
+#~ "\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Information for <b>Article</b> entry type"
+#~ msgstr "Information för inmatningstypen <b>artikel</b>"
+
+#~ msgid "Format entries"
+#~ msgstr "Formatera poster"
+
+#~ msgid "Bibliography style:"
+#~ msgstr "Bibliografistil:"
+
+#~ msgid "Output format:"
+#~ msgstr "Utdataformat:"
+
+#~ msgid "Style Selection"
+#~ msgstr "Stilval"
+
+#~ msgid "Save Formatted as"
+#~ msgstr "Spara formaterad som"
+
+#~ msgid "Output file:"
+#~ msgstr "Utdatafil:"
+
+#~ msgid "Open Location"
+#~ msgstr "Öppna plats"
+
+#~ msgid "Enter the location (URI) of the file you would like to open:"
+#~ msgstr "Ange platsen (URI) till filen du önskar öppna:"
+
+#~ msgid "_New"
+#~ msgstr "_Nytt"
+
+#~ msgid "Previous Documents"
+#~ msgstr "Föregående dokument"
+
+#~ msgid "_Add…"
+#~ msgstr "_Lägg till…"
+
+#~ msgid "_Edit…"
+#~ msgstr "R_edigera…"
+
+#~ msgid "_Delete…"
+#~ msgstr "_Ta bort…"
+
+#~ msgid "Cite"
+#~ msgstr "Citera"
+
+#~ msgid "Settings"
+#~ msgstr "Inställningar"
+
+#~ msgid "Contents"
+#~ msgstr "Innehåll"
+
+#~ msgid "Open File"
+#~ msgstr "Öppna fil"
+
+#~ msgid "Save File"
+#~ msgstr "Spara fil"
+
+#~ msgid "Search"
+#~ msgstr "Sök"
+
+#~ msgid "Close"
+#~ msgstr "Stäng"
+
+#~ msgid "Field"
+#~ msgstr "Fält"
+
+#~ msgid "Pattern"
+#~ msgstr "Mönster"
+
+#~ msgid "Simple Search"
+#~ msgstr "Enkel sökning"
+
+#~ msgid "Query"
+#~ msgstr "Fråga"
+
+#~ msgid "Expert Search"
+#~ msgstr "Expertsökning"
+
+#~ msgid "Select sort criteria"
+#~ msgstr "Välj sorteringsvillkor"
+
+#~ msgid "Set as default"
+#~ msgstr "Ställ in som standard"
 
 #~ msgid "Pybliographic Bibliography Manager"
 #~ msgstr "Bibliografihanteraren Pybliographic"
