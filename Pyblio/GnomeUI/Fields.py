@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -43,22 +44,19 @@ _typename = {
     Fields.Date        : _('Date')
     }
 
-class FieldsDialog (Utils.GladeWindow):
-
+class FieldsDialog (Utils.Builder):
     gladeinfo = {
-
-        'file': 'fields1.glade',
+        'file': 'fields1.ui',
         'name': 'fields',
         'root': 'fields1'
-        
         }
 
-    def __init__ (self, parent = None):
+    def __init__(self, parent=None):
 
-        Utils.GladeWindow.__init__ (self, parent)
+        Utils.Builder.__init__(self, parent)
         
-        self.dialog = self.xml.get_widget ('fields1')
-        self.w = self.xml.get_widget ('notebook')
+        self.dialog = self.xml.get_object('fields1')
+        self.w = self.xml.get_object('notebook')
 
 ##      tooltips = gtk.Tooltips ()
 ##      tooltips.enable ()
@@ -77,7 +75,7 @@ class FieldsDialog (Utils.GladeWindow):
         self.dialog.show_all ()
 
     def on_close (self, w):
-        self.dialog.hide_all()
+        self.dialog.hide()
         self.size_save ()
         return
     
@@ -118,8 +116,9 @@ class FieldsDialog (Utils.GladeWindow):
     # Page 1
 
     def init_page_1 (self):
+        self.menu_items = []
         
-        self.fields1 = self.xml.get_widget('f_list_1')
+        self.fields1 = self.xml.get_object('f_list_1')
         rend = gtk.CellRendererText()
         col = gtk.TreeViewColumn(_('Name'), rend, text = 0)
         self.fields1.append_column(col)
@@ -127,8 +126,7 @@ class FieldsDialog (Utils.GladeWindow):
         col = gtk.TreeViewColumn(_('Type'), rend, text = 1)
         self.fields1.append_column(col)
         
-        self.fm = gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING,
-                                gobject.TYPE_STRING, gobject.TYPE_PYOBJECT)
+        self.fm = gtk.ListStore(str, str, str, object)
         self.sfm = gtk.TreeModelSort(self.fm)
         self.sfm.set_sort_column_id(2, gtk.SORT_ASCENDING)
         self.fields1.set_model(self.sfm)
@@ -139,14 +137,19 @@ class FieldsDialog (Utils.GladeWindow):
             self.fm.append((item.name,
                             _typename [item.type], key, item)) 
         
-        self.name1 = self.xml.get_widget('name1')
-        self.menu1 = self.xml.get_widget('type1')
-        menu = gtk.Menu ()
-        self.menu1.set_menu (menu)
-        self.menu_items = _typename.keys ()
-        for item in self.menu_items:
-            Utils.popup_add (menu, _typename [item], self.select_menu, item)
-        self.menu1.set_history (0)
+        self.name1 = self.xml.get_object('name1')
+        self.menu1 = self.xml.get_object('type1')
+
+        name_store = gtk.ListStore(str, object)
+        for k, v in sorted(_typename.items(), key=lambda x: x[1]):
+            name_store.append([v, k])
+        self.menu1.set_model(name_store)
+        self.menu1.set_entry_text_column(0)
+        renderer_text = gtk.CellRendererText()
+        self.menu1.pack_start(renderer_text, True)
+        self.menu1.add_attribute(renderer_text, 'text', 0)
+        self.menu1.set_active(0)
+        self.menu_items = [x[1] for x in name_store]
         self.current_menu = self.menu_items [0]
         self.check()
 
@@ -182,10 +185,9 @@ class FieldsDialog (Utils.GladeWindow):
             data = self.fm[p]
             self.name1.set_text(self.fm[p][0])
             try:
-                self.menu1.set_history (
-                    self.menu_items.index(self.fm[p][3].type))
+                self.menu1.set_active(self.menu_items.index(self.fm[p][3].type))
             except ValueError:
-                print self.menu_items, self.fm[p][0], self.fm[p][2]
+                print(self.menu_items, self.fm[p][0], self.fm[p][2])
 
     def on_name1_changed (self, *args):
         sel = self.fields1.get_selection()
@@ -204,7 +206,10 @@ class FieldsDialog (Utils.GladeWindow):
             self.change_fields()
 
     def on_type1_changed (self, *args):
-        x = self.menu_items[self.menu1.get_history()]
+        if len(self.menu_items) <= 0:
+            return
+
+        x = self.menu_items[self.menu1.get_active()]
         sel = self.fields1.get_selection()
         m, iter = sel.get_selected()
         if iter:
@@ -222,10 +227,8 @@ class FieldsDialog (Utils.GladeWindow):
     def init_page_2 (self):
                 # PAGE 2
 
-        self.entries2 = self.xml.get_widget('e_list_2')
-        self.em = gtk.ListStore(gobject.TYPE_STRING,
-                                gobject.TYPE_PYOBJECT,
-                                gobject.TYPE_STRING )
+        self.entries2 = self.xml.get_object('e_list_2')
+        self.em = gtk.ListStore(str, object, str)
         self.entries = copy.copy (Config.get ('base/entries').data)
         for i in self.entries.itervalues():
             self.em.append ((i.name, i, i.name.lower()))
@@ -235,7 +238,7 @@ class FieldsDialog (Utils.GladeWindow):
         rend = gtk.CellRendererText()
         col = gtk.TreeViewColumn(_('Entry type'), rend, text = 0)
         self.entries2.append_column(col)
-        self.name2 = self.xml.get_widget('name2')
+        self.name2 = self.xml.get_object('name2')
         self.s2 = self.entries2.get_selection()
         self.s2.connect('changed', self.elist_select)
         self.check()
@@ -294,14 +297,14 @@ class FieldsDialog (Utils.GladeWindow):
 
     def init_page_3 (self):
         
-        self.flist3a = self.xml.get_widget ('f_list_3a')
+        self.flist3a = self.xml.get_object('f_list_3a')
         self.flist3a.set_model (self.sfm)       
         rend = gtk.CellRendererText()
         col = gtk.TreeViewColumn(_('Available'), rend, text = 0)
         self.flist3a.append_column(col)
         self.s3a = self.flist3a.get_selection()
-        self.label3 = self.xml.get_widget ('entry_type_label')
-        self.flist3b = self.xml.get_widget ('f_list_3b')
+        self.label3 = self.xml.get_object('entry_type_label')
+        self.flist3b = self.xml.get_object('f_list_3b')
         rend = gtk.CellRendererToggle()
         rend.connect('toggled', self.toggle_mandatory)
         col = gtk.TreeViewColumn('X', rend, active = 1)
@@ -309,10 +312,7 @@ class FieldsDialog (Utils.GladeWindow):
         rend = gtk.CellRendererText()
         col = gtk.TreeViewColumn(_('Associated'), rend, text = 2)
         self.flist3b.append_column(col)
-        self.sm = gtk.ListStore(gobject.TYPE_STRING,
-                                gobject.TYPE_BOOLEAN,
-                                gobject.TYPE_STRING,
-                                gobject.TYPE_PYOBJECT)
+        self.sm = gtk.ListStore(str, bool, str, object)
         self.ssm = gtk.TreeModelSort(self.sm)
         self.ssm.set_sort_column_id(0, gtk.SORT_ASCENDING)
         self.flist3b.set_model(self.ssm)
