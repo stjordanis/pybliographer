@@ -1,12 +1,6 @@
 # Site configuration
-
+import os
 from Pyblio import Autoload, Config, version
-
-from Pyblio.TextUI import *
-
-# ==================================================
-
-import string, os
 
 # define autoloaded formats
 
