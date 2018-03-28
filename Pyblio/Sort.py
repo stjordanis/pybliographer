@@ -1,42 +1,44 @@
 # -*- coding: iso-8859-1 -*-
 # This file is part of pybliographer
-# 
+#
 # Copyright (C) 1998-2004 Frederic GOBRY
 # Email : gobry@pybliographer.org
-# 	   
+#
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2 
+# as published by the Free Software Foundation; either version 2
 # of the License, or (at your option) any later version.
-#   
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details. 
-# 
+# GNU General Public License for more details.
+#
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-# 
-# 
+#
+#
 
-from Pyblio import Fields, Types
+import re
+import string
 
-import re, string, time
+from Pyblio import Types
+
 
 class Sort:
     ''' This class defines the methods used to sort a database '''
-    
+
     def __init__ (self, fields = None):
         ''' Create a Sort class with a given set of SortFields '''
-       
+
         self.fields = fields or []
         return
 
     def sort (self, iterator):
         ''' Returns a list of keys sorted according to the current
         sort settings '''
-	
+
         self.base = iterator.base
 
         S = []
@@ -55,7 +57,7 @@ class Sort:
         return 'Sort (%s)' % str (self.fields)
 
 class AnySort (object):
-    
+
     def __init__ (self, ascend = 1):
         self.ascend = ascend
         return
@@ -68,7 +70,7 @@ class AnySort (object):
                 extractor (e))
         else :
             return extractor
-    
+
 class TypeSort (AnySort):
 
     def get_field (self, entry):
@@ -100,7 +102,7 @@ class KeySort (AnySort):
         return [str(entry.key).lower()]
 
 class FieldSort (AnySort):
-    
+
     def __init__ (self, field, ascend = 1):
         self.field  = field
         AnySort.__init__ (self, ascend)
@@ -121,7 +123,7 @@ class FieldSort (AnySort):
                 rakify, entry.get(field, [])))
         else:
             return AnySort.get_extractor(self)
-        
+
     def get_field (self, entry):
         try:
             return entry [self.field]
@@ -133,7 +135,7 @@ class FieldSort (AnySort):
 
     def __cmp__ (self, other):
         if not hasattr (other, 'field'): return -1
-        
+
         return cmp (string.lower (self.field),
                     string.lower (other.field))
 
@@ -142,20 +144,20 @@ class FieldSort (AnySort):
 	    return   [str(entry[self.field]).rstrip().lower()]
 	except KeyError :
 	    return []
-	
+
     def author_editor_extractor (self, entry):
         return map (rakify, entry.get('author', entry.get('editor', [])))
- 
+
     def date_extractor (self, entry):
         d = entry.get('date', 0)
         try:
             return [d.asInt()]
         except AttributeError:
             return [0]
-        
+
 def rakify (author):
 
-    
+
     s = "%s,%s" %(author.last,author.first)
     s = s.lower()
     Z = []

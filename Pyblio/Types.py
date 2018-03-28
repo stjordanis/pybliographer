@@ -19,7 +19,8 @@
 # 
 # 
 
-import string, copy
+import string
+
 from Pyblio import Config, Fields
 
 

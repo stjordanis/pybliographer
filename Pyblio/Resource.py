@@ -2,7 +2,7 @@
 # This file is part of pybliographer
 #
 # Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
-# Copyright (C) 2005 Peter Schulte-Stracke <mail@schulte-stracke.de>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -27,16 +27,19 @@
 
 """
 
+import os
+import sys
+import urllib
+import gio
+
+from Pyblio import Config, Fields, userexit
+
 config_fields = 'resource/viewable-fields'
 config_viewers = 'resource/viewers'
 
 CHOOSER_ACTIONS = ('enter/edit', 'select', 'select-directory',
                'download', 'move/copy' )
 
-import os, sys, urllib, urlparse
-import gio
-
-from Pyblio import Config, Fields, userexit
 
 def is_interactive ():
     return sys.modules.has_key ('gtk')

@@ -1,16 +1,14 @@
 # unit test for Utils
 
-
-import unittest, sys
+import unittest
+import sys
 
 sys.path.append ('..')
 
-from Pyblio import Utils, userformat
-
+from Pyblio import Utils
 
 
 class compress_page_range_test (unittest.TestCase):
-
     data = [("1-9", '1', '9'),
             ("200-201", '200', '1'),
             ("300-500", '300', '500'),
@@ -18,15 +16,10 @@ class compress_page_range_test (unittest.TestCase):
         ]
 
     def test01 (self):
-
         for i in self.data:
             p, r = i[0], i[1:]
             self.assertEqual (Utils.compress_page_range(p,False), r)
 
-        
 
 if __name__ == '__main__':
     unittest.main ()
-                   
-
-
