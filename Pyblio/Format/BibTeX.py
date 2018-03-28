@@ -27,6 +27,8 @@ import re
 import string
 import copy
 
+from gettext import gettext as _
+
 from Pyblio.Fields import Author, AuthorGroup, Date, LongText
 from Pyblio.Fields import Reference, Text, URL
 from Pyblio import Base, Config, Autoload, Types

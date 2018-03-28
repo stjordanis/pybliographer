@@ -25,6 +25,7 @@
 import gobject
 import gtk
 
+from gettext import gettext as _
 
 from Pyblio import Connector, Autoload
 from Pyblio.GnomeUI import Utils

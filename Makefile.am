@@ -1,72 +1,73 @@
 # This file is part of pybliographer
-# 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+#
+# Copyright (C) Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2 
+# as published by the Free Software Foundation; either version 2
 # of the License, or (at your option) any later version.
-#   
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details. 
-# 
+#
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-# 
-# 
-
-DISTCHECK_CONFIGURE_FLAGS = --disable-update-desktop-database
+#
 
 pybdir  = $(datadir)/$(PACKAGE)
-appdir  = $(datadir)/applications
 
-SUBDIRS = 	Pyblio 		\
-		.		\
+SUBDIRS = 	. Pyblio 		\
 		scripts		\
 		tests		\
 		Styles		\
+		data	\
 		po		\
-		help		\
-		data
-
-
-app_DATA = pybliographic.desktop
-
-appdatadir = $(datadir)/appdata
-appdata_DATA = pybliographic.appdata.xml
-
+		help
 
 bin_SCRIPTS = pybliographer
 
 pyb_DATA = pybrc.py
 
-EXTRA_DIST = 	setup-check.py			\
-	 	pybliographer.py 		\
-		etc/installer.in		\
-		pybliographic.appdata.xml	\
-		pybliographic.desktop.in
+desktopdir = $(datadir)/applications
+desktop_in_files = pybliographic.desktop.in
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+%.desktop: %.desktop.in Makefile
+	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
-dist-hook:
-	intltool-merge -d po pybliographic.desktop.in $(distdir)/pybliographic.desktop
+appdatadir = $(datadir)/appdata
+appdata_in_files = pybliographic.appdata.xml.in
+appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+%.xml: %.xml.in Makefile
+	$(AM_V_GEN) $(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
 
-pybliographic.desktop: pybliographic.desktop.in po/*.po
-	intltool-merge -d po pybliographic.desktop.in pybliographic.desktop \
-		|| echo "**** Warning: cannot update desktop file"
+EXTRA_DIST = m4/ChangeLog  \
+	pybliographer.in 		\
+	$(appdata_in_files) \
+	$(desktop_in_files) \
+	$(pyb_DATA)
 
-pybliographer: $(top_srcdir)/pybliographer.py etc/installer
-	$(SHELL) etc/installer < $(top_srcdir)/pybliographer.py > pybliographer
-	chmod 755 pybliographer
+CLEANFILES = \
+	pybliographer \
+	$(desktop_DATA) \
+	$(appdata_DATA)
 
-update_desktop_database = update-desktop-database $(DESTDIR)$(appdir) \
-	|| echo "**** Warning: cannot update mime cache (recommended for Gnome >= 2.8)"
+DISTCLEANFILES =
 
-install-data-hook: update-desktop-database
-uninstall-hook: update-desktop-database
-update-desktop-database:
-if ENABLE_UPDATE_DESKTOP_DATABASE
-	$(update_desktop_database)
-endif
+pybliographer: pybliographer.in Makefile
+	$(AM_V_GEN)sed \
+		-e s!\@bin_dir\@!$(bindir)!               \
+		-e s!\@libpyb\@!$(libdir)/$(PACKAGE)!     \
+		-e s!\@datapyb\@!$(datadir)/$(PACKAGE)!   \
+		-e s!\@package\@!$(PACKAGE)!              \
+		-e s!\@version\@!$(VERSION)!              \
+		-e s!\@locale_dir\@!$(localedir)!         \
+		-e s!\@p_datadir\@!$(datadir)/$(PACKAGE)! \
+		-e s!\@python_path\@!$(PYTHON)!          \
+		< $< > $@
+	chmod +x $@
+
+ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}

@@ -1,28 +1,6 @@
 #!/bin/sh
 
-aclocal_extra=""
-
-if [ -f .autogen.conf ] ; then
-    echo "autogen.sh:sourcing .autogen.conf"
-    . .autogen.conf
-fi
-
-verbose=1
-
-error ()
-{
-    echo "autogen.sh: error: $*"
-    exit 1
-}
-
-run ()
-{
-    if [ $verbose = 1 ] ; then
-	echo "autogen.sh: running: $*"
-    fi
-
-    $* || error "while running $*"
-}
+aclocal_extra="-I m4"
 
 GNOMEDOC=`which yelp-build`
     if test -z $GNOMEDOC; then
@@ -31,13 +9,12 @@ GNOMEDOC=`which yelp-build`
         exit 1
     fi
 
-run aclocal ${aclocal_extra}
-run autoconf
-run automake -a
+aclocal ${aclocal_extra}
+autoreconf --verbose --force --install || exit 1
 
 if [ -x ./config.status ] ; then
-    run ./config.status --recheck
-    run ./config.status
+    ./config.status --recheck
+    ./config.status
 else
-    run ./configure $*
+    ./configure "$@" || exit 1
 fi

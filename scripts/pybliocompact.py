@@ -27,6 +27,8 @@ import re
 import copy
 import sys
 
+from gettext import gettext as _
+
 from Pyblio import Base, Config, Fields, Key
 from Pyblio.Open import bibopen, bibwrite
 

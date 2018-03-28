@@ -26,6 +26,8 @@ import os
 import gtk, pango
 import gconf
 
+from gettext import gettext as _
+
 
 class Callback:
 

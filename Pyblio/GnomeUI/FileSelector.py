@@ -23,6 +23,7 @@
 import os
 import gtk
 
+from gettext import gettext as _
 
 from Pyblio import Autoload
 

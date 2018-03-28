@@ -25,6 +25,7 @@ import string
 import sys
 import os
 
+from gettext import gettext as _
 
 from Pyblio import Autoload, Fields
 from Pyblio.Output import latexutils

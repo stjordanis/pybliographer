@@ -23,6 +23,8 @@
 import sys
 import string
 
+from gettext import gettext as _
+
 import locale
 charset = locale.getlocale () [1] or 'ascii'
 

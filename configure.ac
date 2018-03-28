@@ -27,18 +27,19 @@ AC_INIT([pybliographer], [1.2.18])
 AM_INIT_AUTOMAKE
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
-AC_CONFIG_SRCDIR(pybliographer.py)
+AC_CONFIG_SRCDIR(pybliographer.in)
 
 AC_PROG_LN_S
 
-AC_PATH_PROG(Python, python, no)
+GETTEXT_PACKAGE=AC_PACKAGE_TARNAME
+AC_SUBST([GETTEXT_PACKAGE])
+AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], "$GETTEXT_PACKAGE", [Gettext package])
 
-if test "${Python}" = "no" ; then
-  AC_MSG_ERROR([please install python first])
-fi
+AM_GNU_GETTEXT_VERSION([0.19.8])
+AM_GNU_GETTEXT
 
-dnl Python version
-MINIMUM_VERSION="2.2"
+AM_PATH_PYTHON(2.7)
+PKG_CHECK_MODULES(PYGTK, pygtk-2.0 >= 2.24.0)
 
 # PACKAGERS
 AC_ARG_ENABLE([depchecks],
@@ -47,52 +48,31 @@ AC_ARG_ENABLE([depchecks],
    [],
    [enable_depchecks=yes])
 
-AC_MSG_CHECKING([python requirements])
+AC_MSG_CHECKING([for module requirements])
+if test x${enable_depchecks} = "xyes" ; then
+	# Check that recode and bibtex work as expected
+	${PYTHON} -c "import _recode as r, sys
+sys.exit(not r.recode(r.request('latin1..latex'), 'abcd') == 'abcd')" 2>/dev/null
+	if test $? -ne 0; then
+		AC_MSG_ERROR([Broken recode version])
+	fi
 
-if test ${enable_depchecks} = "yes" ; then
-
-${Python} ${srcdir}/setup-check.py ${MINIMUM_VERSION} 2>&5 1>&2
-
-result=$?
-
-if test -f conftest.out ; then
-	. ./conftest.out
-	rm -f conftest.out
+	${PYTHON} -c "import _bibtex;_bibtex.next_unfiltered" 2>/dev/null
+	if test $? -ne 0; then
+		AC_MSG_ERROR([python-bibtex module required with function 'next_unfiltered'])
+	fi
 else
-	AC_MSG_RESULT([no])
-	AC_MSG_ERROR([unable to run the test program])
+	AC_MSG_RESULT([disabled by user])
 fi
 
-if test $result = 0 ; then
-	if test -z "${Status}" ; then
-	  AC_MSG_RESULT([yes (python ${Python_Version}, python-gtk ${PyGtk_Version})])
-        else
-          AC_MSG_RESULT([assuming yes (${Status})])
-        fi
-else
-	AC_MSG_RESULT([no])
-	AC_MSG_ERROR([${Status}])
-fi
-else
-  AC_MSG_RESULT([disabled by user])
-fi
 
-dnl NLS is now hand-managed for python.
 
 # Documentation
 YELP_HELP_INIT
 
-AC_ARG_ENABLE(update-desktop-database,
-AC_HELP_STRING([--disable-update-desktop-database],
-	[do not update desktop database after installation]),,
-	enable_update_desktop_database=yes)
-
-AM_CONDITIONAL(ENABLE_UPDATE_DESKTOP_DATABASE, test x$enable_update_desktop_database = xyes)
-
-AC_CONFIG_FILES(	
+AC_CONFIG_FILES(
 	Makefile 
-	po/Makefile
-	etc/installer
+	po/Makefile.in
 	scripts/Makefile
 	tests/Makefile
 	Pyblio/Makefile

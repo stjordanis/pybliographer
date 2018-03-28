@@ -24,6 +24,7 @@
 import string
 import re
 
+from gettext import gettext as _
 from xml import sax
 
 from Pyblio import Open, Autoload

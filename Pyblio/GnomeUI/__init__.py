@@ -27,6 +27,7 @@
 import sys
 import string
 
+from gettext import gettext as _
 
 # correctly identify the program
 import pygtk

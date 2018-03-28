@@ -26,6 +26,7 @@ import sys
 import os
 import getopt
 
+from gettext import gettext as _
 
 from Pyblio import Autoload, Fields
 from Pyblio.Style import Utils

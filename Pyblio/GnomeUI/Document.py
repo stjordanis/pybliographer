@@ -33,6 +33,8 @@ import cPickle as pickle
 import gobject
 import gtk
 
+from gettext import gettext as _
+
 from Pyblio.GnomeUI import Editor, Entry, FileSelector, Format
 from Pyblio.GnomeUI import Index, OpenURL, Search, Utils
 from Pyblio.GnomeUI.Sort import SortDialog
@@ -196,13 +198,15 @@ class Document (Connector.Publisher):
         self.uim.ensure_update ()
 
         gp = os.path.join(Utils.glade_root, 'pyblio.ui')
-        
+        icon_file = os.path.join (version.pixmapsdir, 'pybliographic.png')
+
         self.xml = gtk.Builder()
         self.xml.set_translation_domain('pybliographer')
         self.xml.add_from_file(gp)
         self.xml.connect_signals(self)
 
         self.w = self.xml.get_object('main')
+        self.w.set_icon_from_file(icon_file)
         self.paned = self.xml.get_object('main_pane')
 
         box = self.xml.get_object('table')
@@ -1218,8 +1222,7 @@ class Document (Connector.Publisher):
             gtk.show_uri(None, url, gtk.gdk.CURRENT_TIME)
 
         pybliologo = gtk.gdk.pixbuf_new_from_file(
-                        os.path.join (version.pybdir,
-                                      'pixmaps',
+                        os.path.join (version.pixmapsdir,
                                       'pybliographic-logo.png'))
         authors = ['Hervé Dréau',
                    'Frédéric Gobry',

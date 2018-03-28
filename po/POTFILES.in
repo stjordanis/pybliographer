@@ -40,14 +40,14 @@ Pyblio/GnomeUI/Search.py
 Pyblio/GnomeUI/Sort.py
 Pyblio/GnomeUI/Utils.py
 Pyblio/GnomeUI/__init__.py
-[type: gettext/glade]Pyblio/GnomeUI/glade/config.ui
-[type: gettext/glade]Pyblio/GnomeUI/glade/fields.ui
-[type: gettext/glade]Pyblio/GnomeUI/glade/format.ui
-[type: gettext/glade]Pyblio/GnomeUI/glade/medline.ui
-[type: gettext/glade]Pyblio/GnomeUI/glade/openurl.ui
-[type: gettext/glade]Pyblio/GnomeUI/glade/pyblio.ui.in
-[type: gettext/glade]Pyblio/GnomeUI/glade/search.ui
-[type: gettext/glade]Pyblio/GnomeUI/glade/sort.ui
+Pyblio/GnomeUI/glade/config.ui
+Pyblio/GnomeUI/glade/fields.ui
+Pyblio/GnomeUI/glade/format.ui
+Pyblio/GnomeUI/glade/medline.ui
+Pyblio/GnomeUI/glade/openurl.ui
+Pyblio/GnomeUI/glade/pyblio.ui.in
+Pyblio/GnomeUI/glade/search.ui
+Pyblio/GnomeUI/glade/sort.ui
 Pyblio/Help.py
 Pyblio/Iterator.py
 Pyblio/Key.py
@@ -76,7 +76,8 @@ Pyblio/__init__.py
 Pyblio/recode.py
 Pyblio/userexit.py
 Pyblio/version.py.in
-pybliographer.py
+pybliographer.in
+pybliographic.appdata.xml.in
 pybliographic.desktop.in
 scripts/pybliocheck.py
 scripts/pybliocompact.py

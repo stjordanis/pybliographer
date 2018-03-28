@@ -31,6 +31,7 @@ import copy
 import string
 import gtk
 
+from gettext import gettext as _
 
 from Pyblio import Config, Fields, Types
 from Pyblio.GnomeUI import Utils

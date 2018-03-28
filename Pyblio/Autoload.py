@@ -40,6 +40,8 @@ point it provides.
 import string
 import re
 
+from gettext import gettext as _
+
 
 class Loader:
     ''' An object containing the description of a loadable object '''

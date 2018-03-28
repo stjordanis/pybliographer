@@ -32,6 +32,8 @@ import sys
 import urllib
 import gio
 
+from gettext import gettext as _
+
 from Pyblio import Config, Fields, userexit
 
 config_fields = 'resource/viewable-fields'

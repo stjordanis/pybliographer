@@ -28,6 +28,7 @@ import string
 import sys
 import types
 
+from gettext import gettext as _
 
 pickle = cPickle
 del cPickle

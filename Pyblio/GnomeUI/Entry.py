@@ -26,6 +26,7 @@ import gobject
 import gtk
 import pango
 
+from gettext import gettext as _
 
 from Pyblio import Fields
 

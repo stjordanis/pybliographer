@@ -24,6 +24,7 @@ import sys
 import urllib
 import urlparse
 
+from gettext import gettext as _
 
 from Pyblio import Autoload, Config, Exceptions, Fields, Help
 

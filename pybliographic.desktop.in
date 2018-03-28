@@ -1,7 +1,7 @@
 [Desktop Entry]
-_Name=Pybliographer
-_GenericName=Bibliography Manager
-_Comment=Manage bibliographic databases
+Name=Pybliographer
+GenericName=Bibliography Manager
+Comment=Manage bibliographic databases
 Icon=pybliographic
 Exec=pybliographic
 Terminal=false

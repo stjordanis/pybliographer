@@ -26,6 +26,8 @@ import string
 import types
 import urlparse
 
+from gettext import gettext as _
+
 from Pyblio import Exceptions, Key
 
 year_match = re.compile ('(\d\d\d\d)')

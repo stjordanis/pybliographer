@@ -33,6 +33,7 @@ import copy
 import sys
 import getopt
 
+from gettext import gettext as _
 from shutil import copyfile
 
 from Pyblio import Base, Key, Autoload, Fields

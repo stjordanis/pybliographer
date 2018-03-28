@@ -29,6 +29,7 @@ import sys
 import traceback
 import gtk
 
+from gettext import gettext as _
 
 from Pyblio import Types, Search, Config, Connector, TextUI
 from Pyblio.GnomeUI import Utils

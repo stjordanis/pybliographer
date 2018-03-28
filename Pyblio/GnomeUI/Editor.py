@@ -30,6 +30,8 @@ import string
 import gobject
 import gtk
 
+from gettext import gettext as _
+
 from Pyblio import Config, Connector, Exceptions, Fields, Key, Types
 from Pyblio.GnomeUI import FieldsInfo, FileSelector, Mime, Utils
 

@@ -27,6 +27,7 @@ import cPickle
 import gtk
 import gobject
 
+from gettext import gettext as _
 
 from Pyblio import Connector, Sort, Config
 from Pyblio.GnomeUI import Utils

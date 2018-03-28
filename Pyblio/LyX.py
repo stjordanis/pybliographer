@@ -23,6 +23,8 @@ import os
 import string
 import signal
 
+from gettext import gettext as _
+
 from Pyblio import Config
 
 

@@ -29,6 +29,8 @@ import string
 import gobject
 import gtk
 
+from gettext import gettext as _
+
 from Pyblio.GnomeUI import Utils
 from Pyblio import Config
 
