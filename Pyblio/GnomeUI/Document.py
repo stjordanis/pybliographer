@@ -388,8 +388,8 @@ class Document (Connector.Publisher):
         try:
             file = open (output, 'w')
         except IOError, err:
-            self.w.error (_("can’t open file “%s” for writing:\n%s")
-                          % (output, str (err)))
+            Utils.error_dialog_s(_("can’t open file “%s” for writing:\n%s")
+                                 % (output, str(err)))
             return
         
         entries = map (lambda x: x.key, self.index.selection ())
@@ -409,7 +409,7 @@ class Document (Connector.Publisher):
             Pyblio.Style.Utils.generate (url, format, self.data, entries, file)
         except RuntimeError, err:
             print err
-            self.w.error (_("Error while parsing “%s”:\n%s") % (style, err))
+            Utils.error_dialog_s(_("Error while parsing “%s”:\n%s") % (style, err))
         return
 
 
@@ -514,11 +514,11 @@ class Document (Connector.Publisher):
 
         if url is None:
             # no result.
-            self.w.error (_("Your query returned no result"))
+            Utils.error_dialog_s(_("Your query returned no result"))
             return
         elif url is -1:
             # error
-            self.w.error (_("An error occurred during Medline Query"))
+            Utils.error_dialog_s(_("An error occurred during Medline Query"))
             return
 
         self.open_in_new(url, 'medline', no_name=True)
@@ -649,7 +649,7 @@ class Document (Connector.Publisher):
                         os.remove (old_auto_save)
                     except (OSError, IOError), error:
                         Utils.set_cursor (self.w, 'normal')
-                        self.w.error (_("Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
+                        Utils.error_dialog_s(_("Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
                         return
 
 
@@ -700,7 +700,7 @@ class Document (Connector.Publisher):
             try:
                 savefile = open (save, 'w')
             except (IOError, OSError), error:
-                self.w.error (_("Error during autosaving:\n%s") % error [1])
+                Utils.error_dialog_s(_("Error during autosaving:\n%s") % error [1])
                 return False
 
             iterator = Selection.Selection (sort = Sort.Sort([Sort.KeySort()]))
@@ -728,7 +728,7 @@ class Document (Connector.Publisher):
                 self.data.update (Sort.Sort([Sort.KeySort()]))
             except (OSError, IOError), error:
                 Utils.set_cursor (self.w, 'normal')
-                self.w.error (_("Unable to save “%s”:\n%s") % (str (self.data.key),
+                Utils.error_dialog_s(_("Unable to save “%s”:\n%s") % (str (self.data.key),
                                                                str (error)))
                 return
         except:
@@ -736,7 +736,7 @@ class Document (Connector.Publisher):
             traceback.print_exception (etype, value, tb)
             
             Utils.set_cursor (self.w, 'normal')
-            self.w.error (_("An internal error occurred during saving\nTry to Save As…"))
+            Utils.error_dialog_s(_("An internal error occurred during saving\nTry to Save As…"))
             return
 
         Utils.set_cursor (self.w, 'normal')
@@ -764,7 +764,7 @@ class Document (Connector.Publisher):
         try:
             file = open (url, 'w')
         except IOError, error:
-            self.w.error (_("During opening:\n%s") % error [1])
+            Utils.error_dialog_s(_("During opening:\n%s") % error [1])
             return
 
         Utils.set_cursor (self.w, 'clock')
@@ -790,7 +790,7 @@ class Document (Connector.Publisher):
                         os.remove (old_auto_save)
                     except (OSError, IOError), error:
                         Utils.set_cursor (self.w, 'normal')
-                        self.w.error (_("Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
+                        Utils.error_dialog_s(_("Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
                         return
 
         
@@ -850,7 +850,7 @@ class Document (Connector.Publisher):
                         os.remove (old_auto_save)
                     except (OSError, IOError), error:
                         Utils.set_cursor (self.w, 'normal')
-                        self.w.error (_("Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
+                        Utils.error_dialog_s(_("Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
                         return
 
         return answer
@@ -1014,7 +1014,7 @@ class Document (Connector.Publisher):
             try:
                 test = SearchCls.AnyTester(q.encode('latin-1'))
             except UnicodeEncodeError:
-                self.w.error (_("your search text must contain\nlatin-1 characters only"))
+                Utils.error_dialog_s(_("your search text must contain\nlatin-1 characters only"))
                 return
         else:
             test = None
@@ -1093,7 +1093,7 @@ class Document (Connector.Publisher):
             try:
                 self.lyx = LyX.LyXClient ()
             except IOError, msg:
-                self.w.error (_("Can’t connect to LyX:\n%s") % msg)
+                Utils.error_dialog_s(_("Can’t connect to LyX:\n%s") % msg)
                 return
 
         keys = string.join (map (lambda x: x.key.key, entries), ', ')
@@ -1101,7 +1101,7 @@ class Document (Connector.Publisher):
             self.lyx ('citation-insert', keys)
         except IOError, msg:
             msg = msg [1].decode (enc)
-            self.w.error (_("Can’t connect to LyX:\n%s") % msg)
+            Utils.error_dialog_s(_("Can’t connect to LyX:\n%s") % msg)
         return
     
 
@@ -1217,7 +1217,7 @@ class Document (Connector.Publisher):
             gtk.show_uri (None, "help:pybliographer", timestamp)
             
         except gobject.GError, msg:
-            self.w.error (_("Can’t display documentation:\n%s") % msg)
+            Utils.error_dialog_s(_("Can’t display documentation:\n%s") % msg)
             
         return
     
