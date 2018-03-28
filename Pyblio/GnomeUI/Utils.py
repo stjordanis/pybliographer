@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -22,13 +23,11 @@
 ''' Utility functions for Gnome Interface management. '''
 
 import os
-
 import gtk, pango
-import gtk.glade
+import gconf
 
 from Pyblio import Config, version
 
-import gconf
 
 class Callback:
 
@@ -62,71 +61,6 @@ class Callback:
         return res
 
 glade_root = os.path.join(os.path.dirname(__file__), 'glade')
-
-class GladeWindow:
-
-    ''' A Helper class that builds a graphical interface provided by a
-    Glade XML file. This class binds the methods with
-    signal_autoconnect, and imports widgets whose name starts with _w_
-    as instance attributes. Therefore, after init, the instance can refer to:
-
-        self._w_main
-
-    if the glade file defined a _w_main widget.
-
-    This class must be derived and the following class variables must
-    be given some sensible value:
-
-        glade_file  : name of the glade file (with no directory info)
-        root_widget : name of the root widget
-
-    '''
-
-
-    # This is a class variable that contains the file name to load for
-    # each instance of a subclass.
-
-    gladeinfo = { 'file': None,
-                  'root': None,
-                  'name': None
-                  }
-
-    def __init__ (self, parent = None, window = None):
-        
-        gp = os.path.join(glade_root, self.gladeinfo ['file'])
-        self.xml = gtk.glade.XML (gp, window, domain = "pybliographer")
-        self.xml.signal_autoconnect (self)
-
-        for w in self.xml.get_widget_prefix ('_w_'):
-            setattr (self, w.name, w)
-
-        # Set the parent window. The root widget is not necessarily
-        # exported as an instance attribute.
-        root = self.xml.get_widget (self.gladeinfo ['root'])
-        cfg  = '/apps/pybliographic/%s/' % self.gladeinfo ['name']
-        
-        w = config.get_int (cfg + 'width')  or -1
-        h = config.get_int (cfg + 'height') or -1
-
-        if w != -1 and h != -1:
-            root.set_default_size (w, h)
-            root.resize (w, h)
-        
-        if parent:
-            root.set_transient_for (parent)
-            
-        return
-
-    def size_save (self):
-        root = self.xml.get_widget (self.gladeinfo ['root'])
-        cfg  = '/apps/pybliographic/%s/' % self.gladeinfo ['name']
-
-        w, h = root.get_size ()
-
-        config.set_int (cfg + 'width',  w)
-        config.set_int (cfg + 'height', h)
-
-        return
 
 
 class Builder:

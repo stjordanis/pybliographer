@@ -50,7 +50,6 @@ try:
     pygtk.require ('2.0')
     
     import gtk
-    import gtk.glade
     import gconf
 
     v = string.join (map (str, gtk.pygtk_version), '.')

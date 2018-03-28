@@ -11,7 +11,6 @@ BuildArch: noarch
 
 BuildRequires: python >= 2.2
 BuildRequires: pygtk2 >= 2.24.0
-BuildRequires: pygtk2-libglade >= 2.4.0
 BuildRequires: gnome-python2-gconf >= 2.0.3
 BuildRequires: python-bibtex >= 1.2.2
 BuildRequires: gettext
@@ -19,7 +18,6 @@ BuildRequires: scrollkeeper
 
 Requires: python >= 2.2
 Requires: pygtk2 >= 2.24.0
-Requires: pygtk2-libglade >= 2.4.0
 Requires: gnome-python2-gconf >= 2.0.3
 Requires: python-bibtex >= 1.2.2
 Requires: recode >= 3.6-11
