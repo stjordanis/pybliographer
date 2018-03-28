@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -29,7 +29,7 @@ charset = locale.getlocale () [1] or 'ascii'
 
 # check the arguments
 if len (sys.argv) < 3:
-    print _("usage: pybliocheck <file | directory>…").encode (charset)
+    print _(u"usage: pybliocheck <file | directory>…").encode (charset)
     sys.exit (1)
 
 # list containing the broken entries
@@ -58,7 +58,7 @@ for dir in sys.argv [2:]:
         # try to open the database
         try:
             b = bibopen (f)
-            print (_("file “%s” is ok [%d entries]") % (f, len (b))).encode (charset)
+            print (_(u"file “%s” is ok [%d entries]") % (f, len (b))).encode (charset)
         except (Exceptions.ParserError, KeyError), err:
             broken.append (str (err))
 

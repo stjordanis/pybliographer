@@ -146,14 +146,14 @@ class Document (Connector.Publisher):
             
             ('New',  gtk.STOCK_NEW,   None,         None,   None,     self.new_document),
             ('Open', gtk.STOCK_OPEN,  None,         None,   _('Open a file'), self.ui_open_document),
-            ('Open_URL', None, _('Open _Location…'), '<control>l',   None, self.ui_open_location),
+            ('Open_URL', None, _(u'Open _Location…'), '<control>l',   None, self.ui_open_location),
             ('Save', gtk.STOCK_SAVE,  None,         None,   _('Save the current file'), self.save_document),
             ('Save_As', gtk.STOCK_SAVE_AS,  None,         None,   None,     self.save_document_as),
             ('Close', gtk.STOCK_CLOSE,  None,         None,   None,     self.close_document),
             ('Quit', gtk.STOCK_QUIT,  None,         None,   None,     self.exit_application),
 
-            ('Merge',   None, _('Merge With…'),    '<control>g',  None, self.merge_database),
-            ('Medline', None, _('Medline Query…'), '<control>m',  None, self.query_database),
+            ('Merge',   None, _(u'Merge With…'),    '<control>g',  None, self.merge_database),
+            ('Medline', None, _(u'Medline Query…'), '<control>m',  None, self.query_database),
 
 
 
@@ -166,11 +166,11 @@ class Document (Connector.Publisher):
             ('Delete', gtk.STOCK_DELETE,  None,         None,   None,     self.delete_entry),
             ('Find', gtk.STOCK_FIND,  None,         None,   None,     self.find_entries),
             
-            ('Sort', None, _('S_ort…'), None,  None, self.sort_entries),
-            ('Cite', gtk.STOCK_JUMP_TO,   _('Cite…'), None,  _('Cite key(s)'), self.lyx_cite),
-            ('Format', gtk.STOCK_EXECUTE, _('Format…'), None,  None, self.format_entries),
+            ('Sort', None, _(u'S_ort…'), None,  None, self.sort_entries),
+            ('Cite', gtk.STOCK_JUMP_TO,   _(u'Cite…'), None,  _('Cite key(s)'), self.lyx_cite),
+            ('Format', gtk.STOCK_EXECUTE, _(u'Format…'), None,  None, self.format_entries),
 
-            ('Fields', None, _('Fields…'), None,  None, self.set_fields),
+            ('Fields', None, _(u'Fields…'), None,  None, self.set_fields),
             ('Preferences', gtk.STOCK_PREFERENCES,  None,         None,   None,     self.set_preferences),
             ('Forget', None, _('Forget all changes'),     None,   None,     self.forget_changes_cb),
             
@@ -388,7 +388,7 @@ class Document (Connector.Publisher):
         try:
             file = open (output, 'w')
         except IOError, err:
-            Utils.error_dialog_s(_("can’t open file “%s” for writing:\n%s")
+            Utils.error_dialog_s(_(u"can’t open file “%s” for writing:\n%s")
                                  % (output, str(err)))
             return
         
@@ -409,7 +409,7 @@ class Document (Connector.Publisher):
             Pyblio.Style.Utils.generate (url, format, self.data, entries, file)
         except RuntimeError, err:
             print err
-            Utils.error_dialog_s(_("Error while parsing “%s”:\n%s") % (style, err))
+            Utils.error_dialog_s(_(u"Error while parsing “%s”:\n%s") % (style, err))
         return
 
 
@@ -649,7 +649,7 @@ class Document (Connector.Publisher):
                         os.remove (old_auto_save)
                     except (OSError, IOError), error:
                         Utils.set_cursor (self.w, 'normal')
-                        Utils.error_dialog_s(_("Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
+                        Utils.error_dialog_s(_(u"Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
                         return
 
 
@@ -728,7 +728,7 @@ class Document (Connector.Publisher):
                 self.data.update (Sort.Sort([Sort.KeySort()]))
             except (OSError, IOError), error:
                 Utils.set_cursor (self.w, 'normal')
-                Utils.error_dialog_s(_("Unable to save “%s”:\n%s") % (str (self.data.key),
+                Utils.error_dialog_s(_(u"Unable to save “%s”:\n%s") % (str (self.data.key),
                                                                str (error)))
                 return
         except:
@@ -736,7 +736,7 @@ class Document (Connector.Publisher):
             traceback.print_exception (etype, value, tb)
             
             Utils.set_cursor (self.w, 'normal')
-            Utils.error_dialog_s(_("An internal error occurred during saving\nTry to Save As…"))
+            Utils.error_dialog_s(_(u"An internal error occurred during saving\nTry to Save As…"))
             return
 
         Utils.set_cursor (self.w, 'normal')
@@ -751,13 +751,13 @@ class Document (Connector.Publisher):
     def save_document_as (self, * arg):
         # get a new file name
         (url, how) = FileSelector.URLFileSelection (
-	    _("Save As…"), has_auto = False, is_save = True).run ()
+	    _(u"Save As…"), has_auto = False, is_save = True).run ()
         
         if url is None: return
 
         if os.path.exists (url):
             if not Utils.Callback (
-		_("The file “%s” already exists.\nOverwrite it?")
+		_(u"The file “%s” already exists.\nOverwrite it?")
 		% url, parent = self.w).answer ():
                 return
 
@@ -790,7 +790,7 @@ class Document (Connector.Publisher):
                         os.remove (old_auto_save)
                     except (OSError, IOError), error:
                         Utils.set_cursor (self.w, 'normal')
-                        Utils.error_dialog_s(_("Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
+                        Utils.error_dialog_s(_(u"Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
                         return
 
         
@@ -850,7 +850,7 @@ class Document (Connector.Publisher):
                         os.remove (old_auto_save)
                     except (OSError, IOError), error:
                         Utils.set_cursor (self.w, 'normal')
-                        Utils.error_dialog_s(_("Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
+                        Utils.error_dialog_s(_(u"Unable to remove autosave file “%s”:\n%s") % (str (old_auto_save), str (error)))
                         return
 
         return answer
@@ -875,7 +875,7 @@ class Document (Connector.Publisher):
         for entry in entries:
             
             if self.data.would_have_key (entry.key):
-                if not Utils.Callback (_("An entry called “%s” already exists.\nRename and add it anyway?")
+                if not Utils.Callback (_(u"An entry called “%s” already exists.\nRename and add it anyway?")
                                        % entry.key.key, parent = self.w).answer ():
                     continue
                 
@@ -995,7 +995,7 @@ class Document (Connector.Publisher):
         if l > 1:
             question = _("Remove all the %d entries?") % len (entries)
         else:
-            question = _("Remove entry “%s”?") % entries [0].key.key
+            question = _(u"Remove entry “%s”?") % entries [0].key.key
             
         if not Utils.Callback (question,
                                parent = self.w).answer ():
@@ -1093,7 +1093,7 @@ class Document (Connector.Publisher):
             try:
                 self.lyx = LyX.LyXClient ()
             except IOError, msg:
-                Utils.error_dialog_s(_("Can’t connect to LyX:\n%s") % msg)
+                Utils.error_dialog_s(_(u"Can’t connect to LyX:\n%s") % msg)
                 return
 
         keys = string.join (map (lambda x: x.key.key, entries), ', ')
@@ -1101,7 +1101,7 @@ class Document (Connector.Publisher):
             self.lyx ('citation-insert', keys)
         except IOError, msg:
             msg = msg [1].decode (enc)
-            Utils.error_dialog_s(_("Can’t connect to LyX:\n%s") % msg)
+            Utils.error_dialog_s(_(u"Can’t connect to LyX:\n%s") % msg)
         return
     
 
@@ -1217,7 +1217,7 @@ class Document (Connector.Publisher):
             gtk.show_uri (None, "help:pybliographer", timestamp)
             
         except gobject.GError, msg:
-            Utils.error_dialog_s(_("Can’t display documentation:\n%s") % msg)
+            Utils.error_dialog_s(_(u"Can’t display documentation:\n%s") % msg)
             
         return
     

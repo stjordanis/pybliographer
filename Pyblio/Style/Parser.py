@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -259,7 +259,7 @@ class XMLBib (sax.handler.ContentHandler):
         try:
             val = attrs [attr]
         except KeyError:
-            self._error (_("missing “%s” attribute") % attr)
+            self._error (_(u"missing “%s” attribute") % attr)
 
         return val
 

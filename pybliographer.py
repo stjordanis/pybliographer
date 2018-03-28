@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -46,10 +46,11 @@ def print_version ():
 def copyright ():
 	print 'Copyright (C) 1998-2004 Frederic GOBRY'
 	print _("This is free software with ABSOLUTELY NO WARRANTY.").encode (charset)
-	print _("For details, type “warranty”.").encode (charset)
+	print _(u"For details, type “warranty”.").encode (charset)
 
 def warranty ():
 	print_version ()
+	print u'Copyright (C) 2018 Germán Poo-Caamaño'
 	print 'Copyright (C) 1998-2004 Frederic GOBRY'
 	
 	print _("This is free software with ABSOLUTELY NO WARRANTY.").encode (charset)
@@ -109,7 +110,7 @@ for opt, value in optlist:
 		try:
 			os.stat (value)
 		except os.error:
-			print (_("%s: error: can’t open file “%s”") \
+			print (_(u"%s: error: can’t open file “%s”") \
 			      % (progname, value)).encode (charset)
 			sys.exit (1)
 		
@@ -122,7 +123,7 @@ for opt, value in optlist:
 
 	if opt == '-h' or opt == '--help':
 		print_version ()
-		print (_("For help, run %s and type “help” at the prompt") 
+		print (_(u"For help, run %s and type “help” at the prompt")
 		       % progname).encode (charset)
 		sys.exit (0)
 		
@@ -161,7 +162,7 @@ if len (args) > 0 :
 	try:
 		os.stat (filename)
 	except os.error:
-		print (_("%s: error: can’t open file “%s”") % (progname, filename)).encode (charset)
+		print (_(u"%s: error: can’t open file “%s”") % (progname, filename)).encode (charset)
 		sys.exit (1)
 	else:
 		execfile (filename, user_global)

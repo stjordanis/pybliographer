@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -35,13 +35,13 @@ class LyXClient:
         try:
             ans = os.stat (pin)
         except OSError, msg:
-            raise IOError (_("no input pipe “%s”") % pin)
+            raise IOError (_(u"no input pipe “%s”") % pin)
         
         pout = os.path.expanduser (base + '.out')
         try:
             ans = os.stat (pout)
         except os.error:
-            raise IOError (_("no output pipe “%s”") % pout)
+            raise IOError (_(u"no output pipe “%s”") % pout)
 
         def noaction (* arg): return
         

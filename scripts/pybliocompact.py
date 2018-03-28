@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -28,7 +28,7 @@ import locale
 charset = locale.getlocale () [1] or 'ascii'
 
 def usage ():
-    print _("usage: pybliocompact <latexfile> <bibtexfiles…>").encode (charset)
+    print _(u"usage: pybliocompact <latexfile> <bibtexfiles…>").encode (charset)
     return
 
 def error (msg):
@@ -58,7 +58,7 @@ def list_entries (file):
     try:
         aux = open (auxfile, 'r')
     except IOError, err:
-        error ("`%s': %s" % (auxfile, str (err).decode (charset)))
+        error (u"“%s”: %s" % (auxfile, str (err).decode (charset)))
 
     citations = []
 
@@ -160,6 +160,6 @@ for bib in bibtex:
 
 # check if we were able to solve all the citations
 if len (entries) > 0:
-    error (_("can’t find the following entries: %s")
+    error (_(u"can’t find the following entries: %s")
            % string.join (entries, ", "))
 

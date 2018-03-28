@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyirhgt (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -76,7 +76,7 @@ class Loader:
             import locale
             charset = locale.getlocale () [1] or 'ascii'
             
-            print (_("warning: can’t import %s: %s") %
+            print (_(u"warning: can’t import %s: %s") %
                    (self.module, str (err))).encode (charset)
             return 0
         

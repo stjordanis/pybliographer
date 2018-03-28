@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # This file is part of pybliographer
 #  
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -50,7 +50,7 @@ class ConfigItem:
         if self.type:
             if not self.type.match (value):
                 raise ValueError(
-                    _("value of “%s” should be of type %s") % (
+                    _(u"value of “%s” should be of type %s") % (
                     self.name, str (self.type)))
             
         # eventually call the hook
@@ -256,7 +256,7 @@ class Element:
         return value in self.get()
 
     def __str__ (self):
-        return _("Element in “%s”") % str (self.get ())
+        return _(u"Element in “%s”") % str (self.get ())
 
     
 class Tuple:
