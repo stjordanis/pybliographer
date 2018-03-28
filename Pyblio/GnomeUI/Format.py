@@ -22,10 +22,8 @@
 
 ''' Defines a Dialog to format a subset of entries as a bibliography '''
 
+import os
 import gtk
-import gobject
-
-import string, os
 
 from Pyblio import Connector, version, Autoload
 from Pyblio.GnomeUI import Utils

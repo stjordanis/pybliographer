@@ -27,13 +27,14 @@ bibliography '''
 # adapt menu item for this dialog
 # cleaning up
 
+import copy
+import string
+import gtk
 
-import gobject, gtk
 
-import copy, os, re, string
-
-from Pyblio import Config, Fields, Types, version
+from Pyblio import Config, Fields, Types
 from Pyblio.GnomeUI import Utils
+
 
 _typename = {
     Fields.AuthorGroup : _('Authors'),
@@ -43,6 +44,7 @@ _typename = {
     Fields.Reference   : _('Reference'),
     Fields.Date        : _('Date')
     }
+
 
 class FieldsDialog (Utils.Builder):
     gladeinfo = {
@@ -183,11 +185,11 @@ class FieldsDialog (Utils.Builder):
         if iter:
             p = self.sfm.convert_iter_to_child_iter(None, iter)
             data = self.fm[p]
-            self.name1.set_text(self.fm[p][0])
+            self.name1.set_text(data[0])
             try:
-                self.menu1.set_active(self.menu_items.index(self.fm[p][3].type))
+                self.menu1.set_active(self.menu_items.index(data[3].type))
             except ValueError:
-                print(self.menu_items, self.fm[p][0], self.fm[p][2])
+                print(self.menu_items, data[0], data[2])
 
     def on_name1_changed (self, *args):
         sel = self.fields1.get_selection()

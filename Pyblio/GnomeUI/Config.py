@@ -23,16 +23,18 @@
 # TO DO:
 # List view troubles
 
-import gobject, gtk
-
-import copy, os.path, re, string
+import copy
+import re
+import string
+import gobject
+import gtk
 
 from Pyblio.GnomeUI import Utils
-from Pyblio import Config, version
-from Pyblio.Utils import format
+from Pyblio import Config
 
 _map = string.maketrans ('\t\n', '  ')
 _cpt = re.compile ('\s+')
+
 
 class ConfigDialog (Utils.Builder):
     gladeinfo = {

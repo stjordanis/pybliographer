@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of pybliographer
-# 
+#
 # Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
 # Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
@@ -23,8 +23,14 @@
 
 ''' This module defines a Document class '''
 
+import os
+import string
+import types
+import sys
+import traceback
+import stat
+import cPickle as pickle
 import gobject
-
 import gtk
 
 from Pyblio.GnomeUI import Editor, Entry, FileSelector, Format
@@ -32,15 +38,12 @@ from Pyblio.GnomeUI import Index, OpenURL, Search, Utils
 from Pyblio.GnomeUI.Sort import SortDialog
 from Pyblio.GnomeUI.Medline import MedlineUI
 
-from Pyblio import Base, Config, Connector, Exceptions, Fields, Open
-from Pyblio import Query, Resource, Selection, Sort, Types, version
+from Pyblio import Config, Connector, Exceptions, Fields, Open
+from Pyblio import Query, Resource, Selection, Sort, version
 from Pyblio import Search as SearchCls
 
 import Pyblio.Style.Utils
 
-import os, string, copy, types, sys, traceback, stat
-
-import cPickle as pickle
 
 printable = string.lowercase + string.uppercase + string.digits
 

@@ -1,33 +1,37 @@
 # -*- coding: utf-8 -*-
 # This file is part of pybliographer
-# 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
-# 	   
+#
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
+#
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2 
+# as published by the Free Software Foundation; either version 2
 # of the License, or (at your option) any later version.
-#   
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details. 
-# 
+# GNU General Public License for more details.
+#
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-# 
-# 
+#
+#
 
 # TO FIX
 #   entry editor for more than 50 chars
 # added: Note taking widget
 
-import copy, gobject, gtk, re, string
+import copy
+import re
+import string
+import gobject
+import gtk
 
-from Pyblio import Base, Config, Connector, Exceptions, Fields, Key, Types
-from Pyblio.GnomeUI import Common, FieldsInfo, FileSelector, Mime, Utils
+from Pyblio import Config, Connector, Exceptions, Fields, Key, Types
+from Pyblio.GnomeUI import FieldsInfo, FileSelector, Mime, Utils
 
 key_re = re.compile("^[\w:_+-.()/]+$")
 
@@ -359,7 +363,7 @@ class Date (BaseField):
         text = string.strip (self.month.get_chars (0, -1)).encode ('latin-1')
         if text != '':
             try: month = int (text)
-            except ValueError, err:
+            except ValueError:
                 Utils.error_dialog_s(self.day.get_toplevel(),
                                     ("Invalid day field in date"))
                 return -1
@@ -1151,7 +1155,7 @@ class Editor(Connector.Publisher):
         if self.native_mode:
             return
         n = self.editor.notebook
-        box = n.get_nth_page(n.get_current_page())
+        n.get_nth_page(n.get_current_page())
 
     def save_size(self):
         if not self.editor:
@@ -1297,7 +1301,7 @@ class LT_Widget_2:
             self.hidden = False
             self.notebook.insert_page (
                 self.page, self.label, self.position)
-        pos = self.notebook.page_num (self.page)
+        self.notebook.page_num (self.page)
         self.notebook.set_current_page (self.position)
 
     def update (self):

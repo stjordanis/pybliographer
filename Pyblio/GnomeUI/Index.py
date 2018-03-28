@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
+#
 # This file is part of pybliographer
 #
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.or
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -30,16 +32,19 @@
 
 ''' Main index containing the columned view of the entries '''
 
+import os.path
+import cPickle
+import gobject
+import gtk
+import gtk.gdk
+import pango
+
+from string import ascii_letters, lower, join, digits
+
 from Pyblio import Config, Connector, Fields, Resource
 from Pyblio import Types, Sort, userformat, version
+from Pyblio.GnomeUI import Mime, Utils
 
-import gobject, gtk, gtk.gdk, os.path, pango
-
-from Pyblio.GnomeUI import FieldsInfo, Mime, Utils
-
-from string import *
-
-import cPickle
 
 pickle = cPickle
 del cPickle
@@ -49,6 +54,7 @@ for c in ascii_letters + digits:
     _safechar [ord (c)] = c
 
 _safechar = ''.join (_safechar)
+
 
 class Index (Connector.Publisher):
     ''' Graphical index of an iterator '''

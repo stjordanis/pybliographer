@@ -25,7 +25,6 @@
 import gobject
 import gtk
 
-import string, os
 
 from Pyblio import Connector, Autoload
 from Pyblio.GnomeUI import Utils

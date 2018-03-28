@@ -22,14 +22,15 @@
 
 ''' This module implements a Dialog to define Sort criterions '''
 
-import os, string
+import cPickle
 
-import gtk, gobject
+import gtk
+import gobject
 
-from Pyblio import Connector, Sort, Config, version
+
+from Pyblio import Connector, Sort, Config
 from Pyblio.GnomeUI import Utils
 
-import cPickle
 
 pickle = cPickle
 del cPickle

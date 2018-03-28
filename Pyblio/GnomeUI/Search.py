@@ -23,15 +23,14 @@
 
 """ This module implements the Search dialog """
 
-import os
+import string
+import re
+import sys
+import traceback
+import gtk
 
-import gtk, gobject
 
-import string, re, sys, traceback, copy
-
-from Pyblio import Types, Search, Config, \
-     Connector, TextUI, version
-
+from Pyblio import Types, Search, Config, Connector, TextUI
 from Pyblio.GnomeUI import Utils
 
 

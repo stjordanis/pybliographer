@@ -1,22 +1,23 @@
+# -*- coding: utf-8 -*-
 # This file is part of pybliographer
-# 
-# Copyright (C) 2005 Peter Schulte-Stracke
-# Email : mail@schulte-stracke.de
-# 	   
+#
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 2005 Peter Schulte-Stracke <mail@schulte-stracke.de>
+#
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2 
+# as published by the Free Software Foundation; either version 2
 # of the License, or (at your option) any later version.
-#   
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details. 
-# 
+#
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-# 
+#
 
 """
  
@@ -28,17 +29,20 @@ Class fileschooserbutton implements a widget similar to
 Class filechooserdialog subclasses gtk.FileChooserDialog and
       adds some fields to enter additional information for an URL.
 
-      
-     -- 
+
+     --
 
 
 """
-RESPONSE_COPY = 1
-RESPONSE_VIEW = 2
+import gtk
+import gtk.gdk
+import pango
 
-import gobject, gtk, gtk.gdk, pango, sys
 
 from  Pyblio import Fields, Resource
+
+RESPONSE_COPY = 1
+RESPONSE_VIEW = 2
 
 
 def get_icon_theme (widget):
@@ -52,8 +56,7 @@ class filechooserbutton (gtk.Button):
     def __init__ (self, URL=None, action='enter/edit', parent=None):
 	gtk.Button.__init__ (self)
 
-	g_error = gobject.GError ()
-	self.parent_widget = parent 
+	self.parent_widget = parent
 	self.url = URL or Fields.URL ()
 	self.newuri = None
 	assert isinstance (URL, Fields.URL)
@@ -119,7 +122,6 @@ class filechooserbutton (gtk.Button):
 
 
 class filechooserdialog (gtk.FileChooserDialog):
-    
     def __init__ (self, url, title):
 
 	gtk.FileChooserDialog.__init__ (
@@ -202,14 +204,12 @@ class filechooserdialog (gtk.FileChooserDialog):
 	note = self.note_w.get_text ()
 	#print 'DIALOG RUN:', uri, invalid, inexact, date, note
 
-
 	return response, Fields.URL (
 	    uri, invalid=invalid, inexact=inexact,
 	    date=date, note=note)
 
 
-
 # Local Variables:
-# coding: "latin-1"
+# coding: "utf-8"
 # py-master-file: "ut_common.py"
 # End:

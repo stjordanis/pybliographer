@@ -1,33 +1,33 @@
+# -*- coding: utf-8 -*-
+#
 # This file is part of pybliographer
-# 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
-# 	   
+#
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.orgg
+#
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2 
+# as published by the Free Software Foundation; either version 2
 # of the License, or (at your option) any later version.
-#   
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details. 
-# 
+#
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-# 
-# 
-
-from gtk import *
-import gtk
-
-import pango, gobject
+#
+#
 
 import string
+import gobject
+import gtk
+import pango
 
-from Pyblio.GnomeUI import Utils
-from Pyblio import Config, recode, Fields
+
+from Pyblio import Fields
 
 
 class Entry:
@@ -36,7 +36,7 @@ class Entry:
     def __init__ (self):
         ''' Create the graphical widget '''
         
-        self.text = TextView ()
+        self.text = gtk.TextView ()
         self.buff = self.text.get_buffer ()
 
         self.tag = {}
@@ -52,13 +52,13 @@ class Entry:
                  self.buff.create_tag ('body',
                                        left_margin = 20)
 
-        self.w = ScrolledWindow ()
-        self.w.set_policy (POLICY_AUTOMATIC, POLICY_AUTOMATIC)
+        self.w = gtk.ScrolledWindow ()
+        self.w.set_policy (gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC)
         self.w.add (self.text)
 
         self.text.set_editable (False)
         self.text.set_cursor_visible (False)
-        self.text.set_wrap_mode (WRAP_WORD)
+        self.text.set_wrap_mode (gtk.WRAP_WORD)
         self.text.set_left_margin (5)
         self.text.set_right_margin (5)
         
@@ -97,7 +97,7 @@ class Entry:
 
             anchor = self.buff.create_child_anchor (iter)
             
-            button = Button ('...')
+            button = gtk.Button ('...')
             button.show ()
 
             def url_open (w, url):
@@ -106,12 +106,12 @@ class Entry:
                     
                 except gobject.GError, msg:
 
-                    d = MessageDialog (None,
-                                       DIALOG_MODAL |
-                                       DIALOG_DESTROY_WITH_PARENT,
-                                       MESSAGE_ERROR,
-                                       BUTTONS_CLOSE,
-                                       _('Cannot open URL:\n%s') % msg)
+                    d = gtk.MessageDialog (None,
+                                           gtk.DIALOG_MODAL |
+                                           gtk.DIALOG_DESTROY_WITH_PARENT,
+                                           gtk.MESSAGE_ERROR,
+                                           gtk.BUTTONS_CLOSE,
+                                           _('Cannot open URL:\n%s') % msg)
                     d.run ()
                     d.destroy ()
                     
