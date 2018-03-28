@@ -26,8 +26,6 @@ import os
 import gtk, pango
 import gconf
 
-from Pyblio import Config, version
-
 
 class Callback:
 
