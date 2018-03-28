@@ -7,7 +7,7 @@ glade_DATA = 					\
 	search.ui 				\
 	sort.ui 				\
 	format.ui				\
-	medline.glade 				\
+	medline.ui 				\
 	config.ui				\
 	openurl.ui
 

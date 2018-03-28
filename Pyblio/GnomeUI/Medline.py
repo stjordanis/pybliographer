@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -23,124 +24,153 @@ import gtk
 
 from Pyblio.GnomeUI import Utils
 
-class MedlineUI (Utils.GladeWindow):
-
+class MedlineUI(Utils.Builder):
     gladeinfo = { 'name': 'medline',
-                  'file': 'medline.glade',
+                  'file': 'medline.ui',
                   'root': '_w_medline'
                   }
 
-    def __init__ (self, parent = None):
-
-        Utils.GladeWindow.__init__ (self, parent)
+    def __init__(self, parent=None):
+        Utils.Builder.__init__(self, parent)
 
         # Fill in the combo boxes
-        self._w_field.set_popdown_strings (['All Fields', 'Affiliation',
-                                            'Author Name', 'EC/RN Number',
-                                            'Entrez Date', 'Filter',
-                                            'Issue', 'Journal Name',
-                                            'Language', 'MeSH Date',
-                                            'MeSH Major Topic',
-                                            'MeSH Subheading', 'MeSH Terms',
-                                            'Pagination', 'Publication Date',
-                                            'Publication Type', 'Secondary Source ID',
-                                            'Substance Name', 'Text Word',
-                                            'Title', 'Title/Abstract',
-                                            'UID', 'Volume'])
+        field_items = ['All Fields', 'Affiliation',
+                       'Author Name', 'EC/RN Number',
+                       'Entrez Date', 'Filter',
+                       'Issue', 'Journal Name',
+                       'Language', 'MeSH Date',
+                       'MeSH Major Topic',
+                       'MeSH Subheading', 'MeSH Terms',
+                       'Pagination', 'Publication Date',
+                       'Publication Type', 'Secondary Source ID',
+                       'Substance Name', 'Text Word',
+                       'Title', 'Title/Abstract',
+                       'UID', 'Volume']
 
-        self._w_pub_type.set_popdown_strings (['Publication Types', 'Addresses',
-                                               'Bibliography', 'Biography',
-                                               'Classical Article', 'Clinical Conference',
-                                               'Clinical Trial', 'Clinical Trial, Phase I',
-                                               'Clinical Trial, Phase II', 'Clinical Trial, Phase III',
-                                               'Clinical Trial, Phase IV', 'Comment',
-                                               'Congresses', 'Consensus Development Conference',
-                                               'Consensus Development Conference, NIH',
-                                               'Controlled Clinical Trial',
-                                               'Corrected and Republished Article', 'Dictionary',
-                                               'Directory', 'Duplicate Publication',
-                                               'Editorial', 'Evaluation Studies',
-                                               'Festschrift', 'Government Publications',
-                                               'Guideline', 'Historical Article',
-                                               'Interview', 'Journal Article', 'Lectures',
-                                               'Legal Cases', 'Legislation', 'Letter',
-                                               'Meta-Analysis', 'Multicenter Study', 'News',
-                                               'Newspaper Article', 'Overall', 'Periodical Index',
-                                               'Practice Guideline', 'Published Erratum',
-                                               'Randomized Controlled Trial', 'Retraction of Publication',
-                                               'Retracted Publication', 'Review', 'Review, Academic',
-                                               'Review Literature', 'Review, Multicase',
-                                               'Review of Reported Cases', 'Review, Tutorial',
-                                               'Scientific Integrity Review', 'Technical Report',
-                                               'Twin Study', 'Validation Studies'])
+        for item in field_items:
+            self._w_field.append_text(item)
+        self._w_field.set_active(0)
 
-        self._w_language.set_popdown_strings (['Languages', 'English',
-                                               'French', 'German', 'Italian',
-                                               'Japanese', 'Russian', 'Spanish'])
+        pub_type_items = ['Publication Types', 'Addresses',
+                          'Bibliography', 'Biography',
+                          'Classical Article', 'Clinical Conference',
+                          'Clinical Trial', 'Clinical Trial, Phase I',
+                          'Clinical Trial, Phase II', 'Clinical Trial, Phase III',
+                          'Clinical Trial, Phase IV', 'Comment',
+                          'Congresses', 'Consensus Development Conference',
+                          'Consensus Development Conference, NIH',
+                          'Controlled Clinical Trial',
+                          'Corrected and Republished Article', 'Dictionary',
+                          'Directory', 'Duplicate Publication',
+                          'Editorial', 'Evaluation Studies',
+                          'Festschrift', 'Government Publications',
+                          'Guideline', 'Historical Article',
+                          'Interview', 'Journal Article', 'Lectures',
+                          'Legal Cases', 'Legislation', 'Letter',
+                          'Meta-Analysis', 'Multicenter Study', 'News',
+                          'Newspaper Article', 'Overall', 'Periodical Index',
+                          'Practice Guideline', 'Published Erratum',
+                          'Randomized Controlled Trial', 'Retraction of Publication',
+                          'Retracted Publication', 'Review', 'Review, Academic',
+                          'Review Literature', 'Review, Multicase',
+                          'Review of Reported Cases', 'Review, Tutorial',
+                          'Scientific Integrity Review', 'Technical Report',
+                          'Twin Study', 'Validation Studies']
 
-        self._w_subset.set_popdown_strings (['Subsets', 'AIDS', 'AIDS/HIV journals',
-                                             'Bioethics', 'Bioethics journals',
-                                             'Biotechnology journals', 'Communication disorders journals',
-                                             'Complementary and Alternative Medicine',
-                                             'Consumer health journals', 'Core clinical journals',
-                                             'Dental journals', 'Health administration journals',
-                                             'Health tech assessment journals', 'History of Medicine',
-                                             'History of Medicine journals', 'In process',
-                                             'Index Medicus journals', 'MEDLINE', 'NASA journals',
-                                             'Nursing journals', 'PubMed Central', 'Reproduction journals',
-                                             'Space Life Sciences', 'Supplied by Publisher', 'Toxicology'])
+        for item in pub_type_items:
+            self._w_pub_type.append_text(item)
+        self._w_pub_type.set_active(0)
+
+        language_items = (['Languages', 'English',
+                           'French', 'German', 'Italian',
+                           'Japanese', 'Russian', 'Spanish'])
+
+        for item in language_items:
+            self._w_language.append_text(item)
+        self._w_language.set_active(0)
+
+        subset_items = ['Subsets', 'AIDS', 'AIDS/HIV journals',
+                        'Bioethics', 'Bioethics journals',
+                        'Biotechnology journals', 'Communication disorders journals',
+                        'Complementary and Alternative Medicine',
+                        'Consumer health journals', 'Core clinical journals',
+                        'Dental journals', 'Health administration journals',
+                        'Health tech assessment journals', 'History of Medicine',
+                        'History of Medicine journals', 'In process',
+                        'Index Medicus journals', 'MEDLINE', 'NASA journals',
+                        'Nursing journals', 'PubMed Central', 'Reproduction journals',
+                        'Space Life Sciences', 'Supplied by Publisher', 'Toxicology']
         
-        self._w_age.set_popdown_strings (['Ages', 'All Infant: birth-23 month',
-                                          'All Child: 0-18 years', 'All Adult: 19+ years',
-                                          'Newborn: birth-1 month', 'Infant: 1-23 months',
-                                          'Preschool Child: 2-5 years', 'Child: 6-12 years',
-                                          'Adolescent: 13-18 years', 'Adult: 19-44 years',
-                                          'Middle Aged: 45-64 years', 'Aged: 65+ years',
-                                          '80 and over: 80+ years'])
+        for item in subset_items:
+            self._w_subset.append_text(item)
+        self._w_subset.set_active(0)
 
-        self._w_human.set_popdown_strings (['Human or Animal', 'Human', 'Animal'])
+        age_items =['Ages', 'All Infant: birth-23 month',
+                    'All Child: 0-18 years', 'All Adult: 19+ years',
+                    'Newborn: birth-1 month', 'Infant: 1-23 months',
+                    'Preschool Child: 2-5 years', 'Child: 6-12 years',
+                    'Adolescent: 13-18 years', 'Adult: 19-44 years',
+                    'Middle Aged: 45-64 years', 'Aged: 65+ years',
+                    '80 and over: 80+ years']
 
-        self._w_gender.set_popdown_strings (['Gender', 'Female', 'Male'])
+        for item in age_items:
+            self._w_age.append_text(item)
+        self._w_age.set_active(0)
 
-        self._w_entrez_date.set_popdown_strings (['Entrez Date', '30 Days', '60 Days',
-                                                  '90 Days', '180 Days', '1 Year', '2 Years',
-                                                  '5 Years', '10 Years'])
+        human_items = ['Human or Animal', 'Human', 'Animal']
 
-        self._w_pub_date.set_popdown_strings (['Publication Date', 'Entrez Date'])
+        for item in human_items:
+            self._w_human.append_text(item)
+        self._w_human.set_active(0)
 
-        self._w_medline.show ()
-        return
+        gender_items = ['Gender', 'Female', 'Male']
 
-    
-    def run (self):
+        for item in gender_items:
+            self._w_gender.append_text(item)
+        self._w_gender.set_active(0)
 
-        ret = self._w_medline.run ()
+        entrez_date_items = ['Entrez Date', '30 Days', '60 Days',
+                             '90 Days', '180 Days', '1 Year', '2 Years',
+                             '5 Years', '10 Years']
+
+        for item in entrez_date_items:
+            self._w_entrez_date.append_text(item)
+        self._w_entrez_date.set_active(0)
+
+        pub_date_items = ['Publication Date', 'Entrez Date']
+
+        for item in pub_date_items:
+            self._w_pub_date.append_text(item)
+        self._w_pub_date.set_active(0)
+
+        self._w_medline.show()
+
+    def run(self):
+        ret = self._w_medline.run()
 
         if ret != gtk.RESPONSE_OK:
             self._w_medline.destroy ()
             return None
 
         data = (
-            self._w_keyword.entry.get_text (),
+            self._w_keyword.get_text(),
             self._w_max_results.get_value_as_int (),
             self._w_start_results.get_value_as_int (),
-            self._w_field.entry.get_text (),
+            self._w_field.get_active_text(),
             self._w_abstracts.get_active (),
             self._w_ahead.get_active (),
-            self._w_pub_type.entry.get_text (),
-            self._w_language.entry.get_text (),
-            self._w_subset.entry.get_text (),
-            self._w_age.entry.get_text (),
-            self._w_human.entry.get_text (),
-            self._w_gender.entry.get_text (),
-            self._w_entrez_date.entry.get_text (),
-            self._w_pub_date.entry.get_text (),
+            self._w_pub_type.get_active_text(),
+            self._w_language.get_active_text(),
+            self._w_subset.get_active_text(),
+            self._w_age.get_active_text(),
+            self._w_human.get_active_text(),
+            self._w_gender.get_active_text(),
+            self._w_entrez_date.get_active_text(),
+            self._w_pub_date.get_active_text(),
             self._w_from_date.get_text (),
             self._w_to_date.get_text ()
             )
 
-        self._w_keyword.append_history (True, data [0])
-        
         self._w_medline.destroy ()
 
         return data
