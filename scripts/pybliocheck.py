@@ -25,6 +25,9 @@ import os
 import sys
 import string
 
+from gettext import gettext as _
+from gettext import ngettext as _n
+
 from Pyblio import Config, Exceptions
 from Pyblio.Open import bibopen
 
@@ -62,7 +65,10 @@ for dir in sys.argv [2:]:
         # try to open the database
         try:
             b = bibopen (f)
-            print (_(u"file “%s” is ok [%d entries]") % (f, len (b))).encode (charset)
+            print (_n(u"file “%s” is ok [%d entry]",
+                      u"file “%s” is ok [%d entries]",
+                      len(b))
+                   % (f, len (b))).encode(charset)
         except (Exceptions.ParserError, KeyError), err:
             broken.append (str (err))
 
