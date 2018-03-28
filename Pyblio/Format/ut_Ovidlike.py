@@ -1,4 +1,41 @@
-#    -*- coding: iso-8859-1 -*-
+# -*- coding: utf-8 -*-
+# This file is part of pybliographer
+#
+# Copyright (C) 2018 GermÃ¡n Poo-CaamaÃ±o <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#
+
+import cStringIO
+import os
+import os.path
+import re
+import sys
+import unittest
+
+sys.path.append (os.path.abspath('../..'))
+
+from Pyblio.Base import DataBase, Entry
+from Pyblio import Config
+from Pyblio.Key import Key
+from Pyblio.Types import get_entry
+from Pyblio.Format.OvidLike import OvidLike, writer, write_source_field
+from Pyblio.Fields import Date
+
+
 data = ["""Authors
   Muller S.  Garda P.  Muller JD.  Cansi Y.
 Title
@@ -112,17 +149,6 @@ Abstract
   All rights reserved. [References: 31]  """]
 
 
-import cStringIO, os, os.path, re, sys,unittest
-
-sys.path.append (os.path.abspath('../..'))
-
-from Pyblio.Base import DataBase, Entry
-from Pyblio import Config
-from Pyblio.Key import Key
-from Pyblio.Types import get_entry
-from Pyblio.Format.OvidLike import OvidLike, writer, write_source_field 
-from Pyblio.Fields import Author, AuthorGroup, Date
-
 class WriterCase (unittest.TestCase):
 
     def setUp (self):
@@ -164,8 +190,8 @@ class WriterCase (unittest.TestCase):
              'date': Date ((1998, 6, None)),
              'other-note': 'discussion 1054-5'},
             {'result': 'Chemotherapy. 42(3):215-219, 1996 May.',
-             ## date in »cites.ovid«: '1996 May-Jun' ##
-             ## pages in »cites.ovid«: '215-19' ##
+             ## date in Â»cites.ovidÂ«: '1996 May-Jun' ##
+             ## pages in Â»cites.ovidÂ«: '215-19' ##
              'journal': 'Chemotherapy',
              'volume': 42, 'number': 3, 'pages': '215-219',
              'date': Date ((1996, 5, None))},
@@ -376,17 +402,10 @@ def main ():
     
 
 if __name__ == '__main__':
-    
     main()
-
 
 
 ### Local Variables:
 ### Mode: python
-### encoding: iso-8859-1    
+### encoding: utf-8
 ### End:
-
-
-    
-
-

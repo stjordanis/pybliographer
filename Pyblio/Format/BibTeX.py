@@ -23,10 +23,12 @@
 # Extension module for BibTeX files
 
 import _bibtex
-import os, sys, tempfile, pwd, time, traceback, re, string, copy
+import re
+import string
+import copy
 
-from types import *
-from Pyblio.Fields import *
+from Pyblio.Fields import Author, AuthorGroup, Date, LongText
+from Pyblio.Fields import Reference, Text, URL
 from Pyblio import Base, Config, Autoload, Types
 from Pyblio import Open, Key, Utils, Iterator, Exceptions
 
@@ -326,7 +328,6 @@ class DataBase(Base.DataBase):
                                    _bibtex.reverse(_base_fieldtype[Text],
                                                    Config.get('bibtex+/braces').data,
                                                    user [k][0]))
-	finished = 0
 	errors = []
 
 	# Creer la base de cles

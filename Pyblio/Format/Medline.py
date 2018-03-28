@@ -1,8 +1,7 @@
 # -*- coding: iso-8859-1 -*-
 # This file is part of pybliographer
 # 
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
 # 	   
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -22,9 +21,10 @@
 
 # Extension module for Medline files
 
-from Pyblio import Base, Fields, Types, Autoload, Open, Iterator, Utils, Config
+import re
+import string
 
-import re, string,sys
+from Pyblio import Base, Fields, Types, Autoload, Open, Iterator, Utils, Config
 
 header = re.compile ('^(\w\w[\w ][\w ])- (.*)$')
 contin = re.compile ('^      (.*)$')
@@ -167,7 +167,7 @@ class MedlineIterator (Iterator.Iterator):
 # AU auteurs *
 # TI titre 
 # LA langue *
-# MH mots clés *
+# MH mots clÃ©s *
 # PT *  type : JOURNAL ARTICLE, REVIEW, REVIEW, TUTORIAL,CLINICAL TRIAL,
 #              RANDOMIZED CONTROLLED TRIAL, LETTER, EDITORIAL, MULTICENTER STUDY,
 #              NEWS, HISTORICAL ARTICLE
@@ -177,16 +177,16 @@ class MedlineIterator (Iterator.Iterator):
 # TA titre de la revue
 # PG  
 # SB 
-# CY pays d'édition ?
+# CY pays d'Ã©dition ?
 # IP  
 # VI 
 # JC  
-# AA semble être toujours Author ou AUTHOR
+# AA semble Ãªtre toujours Author ou AUTHOR
 # EM date de?? en yyyymm
 # AB  
 # AD 
 # PMID
-# SO  référence complète
+# SO  rÃ©fÃ©rence complÃ¨te
 # RN semble indexer des substances chimiques
 # TT titre dans la langue d'origine
 # 4099 URL vers l'article

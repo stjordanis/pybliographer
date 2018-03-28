@@ -1,23 +1,23 @@
-#This file is part of Pybliographer
-# 
-# Copyright (C) 1998-2004 Peter Schulte-Stracke
-# Email : mail@schulte-stracke.de
-#          
+# -*- coding: utf-8 -*
+# This file is part of Pybliographer
+#
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Peter Schulte-Stracke <mail@schulte-stracke.de>
+#
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2 
+# as published by the Free Software Foundation; either version 2
 # of the License, or (at your option) any later version.
-#   
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details. 
-# 
+#
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-# 
-# 
+#
 
 try: _
 except NameError:
@@ -160,7 +160,6 @@ class IsifileIterator(Iterator.Iterator):
 
 	for key in ( 'AU', 'ED'):
 	    if lines.has_key(key):
-		field = Types.get_field('author')
 		group = Fields.AuthorGroup()
 		for item in lines[key]:
 		    if string.strip(item) =='[Anon]' :
@@ -271,7 +270,6 @@ def writer (iter, output_stream, preamble=None, postamble = None):
     optional pre- and postamble, onto an output stream.'''
 
     remaining = {}
-    text = []
     global field_map, output
     output = output_stream
     field_map = field_map or reverse_mapping(key_map)
@@ -389,4 +387,3 @@ Autoload.register ('format', 'Isifile', {'open': opener,
 ### Mode: python
 ### py-master-file : "ut_Isi.py"
 ### End:
-

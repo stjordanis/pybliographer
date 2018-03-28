@@ -1,31 +1,33 @@
+# -*- coding: utf-8 -*-
 # This file is part of pybliographer
-#  
-# Original author of Ovid reader: Travis Oliphant <Oliphant.Travis@mayo.edu>
 #
-# Copyright (C) 1998-2004 Frederic GOBRY
-# Email : gobry@pybliographer.org
-# 	   
+# Original author of Ovid reader:
+#   Travis Oliphant <Oliphant.Travis@mayo.edu>
+#
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
+#
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2 
+# as published by the Free Software Foundation; either version 2
 # of the License, or (at your option) any later version.
-#   
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details. 
-# 
+# GNU General Public License for more details.
+#
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-# 
-# 
+
 
 """ Parser for files having an Ovid-like structure """
 
-import sys, re, string
+import re
+import string
 
-from Pyblio import Base, Exceptions, Fields, Iterator, Types, Utils
+from Pyblio import Base, Fields, Iterator, Types
 
 SimpleField  = 0
 AuthorField  = 1
@@ -391,12 +393,7 @@ def write_source_field (output, entry, keys):
     output.write ('\n')
 
 
-
-
-
-
 ### Local Variables:
 ### Mode: python
 ### py-master-file : "ut_Ovidlike.py"
 ### End:
-

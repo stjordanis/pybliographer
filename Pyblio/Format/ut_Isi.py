@@ -1,16 +1,38 @@
-#    -*- coding: iso8859-1 -*-
+# -*- coding: utf-8 -*-
+# This file is part of pybliographer
+#
+# Original author of Ovid reader:
+#   Travis Oliphant <Oliphant.Travis@mayo.edu>
+#
+# Copyright (C) 2018 Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#
 
 
-import cStringIO, os, sys, unittest
+import cStringIO
+import os
+import sys
+import unittest
 
 sys.path.append (os.path.abspath('../..'))
 print os.path.abspath('../..')
 
-
-
 from Pyblio.Format import isifile
 from Pyblio import Base, Config, Fields
-
 
 
 example_1 = """AU Bogin, B
@@ -45,7 +67,6 @@ ER
 """
 
 class ReaderCase (unittest.TestCase):
-
     def setUp (self):
 
         Config.parse_directory (os.path.abspath('../ConfDir'))
@@ -114,27 +135,7 @@ class ReaderCase (unittest.TestCase):
 		    auth.first, comparison [auth.last])
 	    e = rdr.next ()
 
-
-    def test03 (self):
-	"""Test that Editors are accepted."""
-	
-	comparison = {'X': 'A. B. C.',
-		      'Y': 'D.',
-		      'Z': 'E. F. G. H.'}
-	    
-	inpt = cStringIO.StringIO (example_3)
-	rdr = isifile.IsifileIterator (inpt)
-	e = rdr.first ()
-	while e:
-	    print e
-	    for auth in e['editor']:
-		print auth
-		self.assertEqual (
-		    auth.first, comparison [auth.last])
-	    e = rdr.next ()
-
-
-    def test03 (self):
+    def test04 (self):
 	"""Test that Editors are accepted."""
 	
 	comparison = {'X': 'A. B. C.',
@@ -166,20 +167,13 @@ def main ():
     
 
 if __name__ == '__main__':
-    
     main()
-
 
 
 ### Local Variables:
 ### Mode: python
-### encoding: iso-8859-1    
+### encoding: utf-8
 ### End:
-
-
-    
-
-
 
 
 
