@@ -395,5 +395,5 @@ def write_source_field (output, entry, keys):
 
 ### Local Variables:
 ### Mode: python
-### py-master-file : "ut_Ovidlike.py"
+### py-master-file : "test_Ovidlike.py"
 ### End:

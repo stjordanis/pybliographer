@@ -303,5 +303,5 @@ Autoload.register ('format', 'Medline', {'open'  : opener,
 
 ### Local Variables:
 ### Mode: python
-### py-master-file : "ut_medline.py"
+### py-master-file : "test_medline.py"
 ### End:

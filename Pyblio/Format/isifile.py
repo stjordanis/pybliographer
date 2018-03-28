@@ -385,5 +385,5 @@ Autoload.register ('format', 'Isifile', {'open': opener,
 
 ### Local Variables:
 ### Mode: python
-### py-master-file : "ut_Isi.py"
+### py-master-file : "test_Isi.py"
 ### End:
