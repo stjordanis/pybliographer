@@ -21,8 +21,14 @@
 # 
 # 
 
-import string, os, re, copy, sys
+import string
+import os
+import re
+import copy
+import sys
+
 from Pyblio import Base, Config, Fields, Key
+from Pyblio.Open import bibopen, bibwrite
 
 import locale
 charset = locale.getlocale () [1] or 'ascii'

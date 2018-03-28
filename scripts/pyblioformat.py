@@ -21,15 +21,19 @@
 # 
 # 
 
-import string, sys, os, getopt
+import string
+import sys
+import os
+import getopt
 
-from Pyblio.Output import latexutils
 
-from Pyblio import Base, Autoload
+from Pyblio import Autoload, Fields
 from Pyblio.Style import Utils
+from Pyblio.Open import bibopen
 
 import locale
 charset = locale.getlocale () [1] or 'ascii'
+
 
 def usage ():
     print _(u"""usage: pyblioformat [options] <database…>

@@ -21,15 +21,18 @@
 # 
 # 
 
-import string, sys, os
+import string
+import sys
+import os
 
+
+from Pyblio import Autoload, Fields
 from Pyblio.Output import latexutils
-
-from Pyblio import Base, Autoload, Fields
 from Pyblio.Style import Utils
 
 import locale
 charset = locale.getlocale () [1] or 'ascii'
+
 
 def usage ():
     print _(u"usage: pybliotex <latexfile> [bibtexfiles…]").encode (charset)

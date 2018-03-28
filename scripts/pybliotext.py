@@ -26,13 +26,19 @@
 # Created by Zoltán Kóta. March, 2004.
 '''Processing keys in a text file and appending a reference list'''
 
-import string, os, re, copy, sys, getopt
+import string
+import os
+import re
+import copy
+import sys
+import getopt
+
 from shutil import copyfile
 
-from Pyblio import Base, Key, Autoload
-from Pyblio.Style import Utils
-
+from Pyblio import Base, Key, Autoload, Fields
 from Pyblio import pybtextvar
+from Pyblio.Open import bibopen
+from Pyblio.Style import Utils
 
 import locale
 charset = locale.getlocale () [1] or 'ascii'

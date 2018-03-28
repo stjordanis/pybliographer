@@ -21,8 +21,12 @@
 # 
 # 
 
-import os, sys, string
+import os
+import sys
+import string
+
 from Pyblio import Config, Exceptions
+from Pyblio.Open import bibopen
 
 import locale
 charset = locale.getlocale () [1] or 'ascii'

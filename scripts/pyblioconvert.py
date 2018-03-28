@@ -20,7 +20,8 @@
 # 
 # 
 
-import os, sys, string
+import sys
+import string
 
 import locale
 charset = locale.getlocale () [1] or 'ascii'
