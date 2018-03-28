@@ -12,7 +12,7 @@
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details. 
+# GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
@@ -52,7 +52,7 @@ key_map = {
 
 xheader  = re.compile('^(\w\w|\w\w+:)( (.*))$')
 header   = re.compile('^(\w\w)( (.*))$')
-contin   = re.compile('^   (.*)$') 
+contin   = re.compile('^   (.*)$')
 sporadic = re.compile('^isifile-(..)$')
 
 field_map = None
@@ -64,7 +64,7 @@ def reverse_mapping(map):
     return remap
 
 
-output = None                  # set by 
+output = None                  # set by
 
 def output_write(key, text):
     # A text is either a string or a list:
@@ -72,7 +72,7 @@ def output_write(key, text):
         output.write ('%2s %s\n' %(key, text[0]))
         for t in text[1:]:
             output.write ('   %s\n' %(t))
-    elif str(text):    
+    elif str(text):
         output.write ('%2s %s\n' % (key, Utils.format(
             str (text), 70, 0, 3)))
 pagenum  = re.compile('(\d) p\.')
@@ -88,13 +88,13 @@ class IsifileIterator(Iterator.Iterator):
         self.extraneous = []
         self.isifileformat = None
         self.isifileinfo = None
-        
+
     def first(self):
         self.file.seek(0)
         return self.next()
 
     def next (self):
-        
+
         lines = {}
         in_table = {}
         file_notes, file_time, file_version, file_format = ('','','','')
@@ -125,7 +125,7 @@ class IsifileIterator(Iterator.Iterator):
         self.isifileinfo = self.isifileinfo or "ISI %s (%s) %s" %(
             file_time, file_notes, login_name)
 
-        
+
         while 1:
             if line == 'ER':break
             if head :
@@ -146,7 +146,7 @@ class IsifileIterator(Iterator.Iterator):
             if line == '': break # error situation
             head = header.match (line)
 
-        
+
         key = 'PT'
         if lines.has_key(key):
             if string.strip(lines[key][0])[0] == 'J':
@@ -154,9 +154,9 @@ class IsifileIterator(Iterator.Iterator):
             else:
                 print 'Warning: Unknown type of entry (%s) -- may need editing.' %(
                     lines[key])
-        
+
         type = Types.get_entry ('article')
-            
+
 
 	for key in ( 'AU', 'ED'):
 	    if lines.has_key(key):
@@ -164,7 +164,7 @@ class IsifileIterator(Iterator.Iterator):
 		for item in lines[key]:
 		    if string.strip(item) =='[Anon]' :
 			auth = [item]
-		    else:        
+		    else:
 			name, firstn = string.split (item, ',')
 			auth = ["%s, " % name]
 			for i in string.strip (firstn):
@@ -174,7 +174,7 @@ class IsifileIterator(Iterator.Iterator):
 		    in_table['author'] = group
 		elif key == 'ED':
 		    in_table['editor'] = group
-		del lines[key]                  
+		del lines[key]
 
         key, key1, key2 = 'PG', 'BP', 'EP'
         if lines.has_key(key1) and lines.has_key(key2):
@@ -182,16 +182,16 @@ class IsifileIterator(Iterator.Iterator):
                 pages = []
                 for i in range(len(lines[key1])):
                     firstpg = lines[key1] [i]
-                    lastpg  = lines[key2] [i]                      
+                    lastpg  = lines[key2] [i]
                     pages.append(('%s -- %s' % (firstpg, lastpg)))
                 in_table['pages'] = Fields.Text (string.join(pages, '; '))
                 del lines[key1]; del lines[key2]
             else: print 'inconsistent BP, EP fields found'
-         
+
         if lines.has_key(key):
             in_table['size'] = Fields.Text ('%s p.' %(lines[key][0]))
             del lines[key]
-            
+
 
         key = 'PY'
         if lines.has_key(key):
@@ -209,7 +209,7 @@ class IsifileIterator(Iterator.Iterator):
             del lines[key]
 
         # journal titles come in various forms
-       
+
         if lines.has_key ('SO'):
             uc_title =  ' '.join(lines['SO'])
             in_table ['journal'] = Fields.Text (uc_title)
@@ -244,7 +244,7 @@ class IsifileIterator(Iterator.Iterator):
 class Isifile (Base.DataBase):
     '''Read a Isifile format database from an URL.'''
     id = 'Isifile'
-    
+
     properties = {
         'change_id'   : 0,
         'change_type' : 0
@@ -259,7 +259,7 @@ class Isifile (Base.DataBase):
         while entry:
             self.add (entry)
             entry = iter.next ()
-        self.postamble = iter.extraneous    
+        self.postamble = iter.extraneous
         return
 
 
@@ -278,10 +278,10 @@ def writer (iter, output_stream, preamble=None, postamble = None):
     output_write('VR', '1.0')
     entry = iter.first()
     while entry:
-        
+
         remaining = {}
         remaining_extra = {}
-        
+
         for fld in entry.keys():
             if field_map.has_key(fld):
                 remaining[fld] = field_map[fld]
@@ -292,7 +292,7 @@ def writer (iter, output_stream, preamble=None, postamble = None):
                 else:
                     remaining [fld] = '%% * ' + fld + ' * '
                     remaining_extra [fld] = '%% * ' + fld + ' * '
-        
+
         if not entry.has_key('isifile-pt'):
             output_write('PT','J')
 
@@ -302,8 +302,8 @@ def writer (iter, output_stream, preamble=None, postamble = None):
                 initials = author.initials()
                 initials = re.sub('\. *','', initials)
                 authors.append( '%s, %s' % (author.last, initials))
-            del remaining ['author']    
-            output_write('AU', authors)    
+            del remaining ['author']
+            output_write('AU', authors)
 
         fld = 'title'
         if entry.has_key(fld):
@@ -321,7 +321,7 @@ def writer (iter, output_stream, preamble=None, postamble = None):
                 output_write('BP', beginpg)
                 output_write('EP', endpg)
             del remaining[fld]
-            
+
 
         fld = 'size'
         if entry.has_key(fld) :
@@ -347,18 +347,18 @@ def writer (iter, output_stream, preamble=None, postamble = None):
             if m:
                 output_write('ID', string.upper(m.group(2)))
                 val = m.group(1) + m.group(3)
-            output_write ('DE', val)     
+            output_write ('DE', val)
             del remaining[fld]
         for field in remaining.keys():
             if remaining_extra.has_key (field): continue
             output_write (remaining[field], entry [field])
         for field in remaining_extra.keys():
             output_write (remaining_extra [field], entry [field])
-        output.write('ER\n')     
+        output.write('ER\n')
         entry = iter.next()
         if entry: output.write('\n')
     if postamble: output.writelines(postamble)
-    
+
 
 def opener (url, check):
 
@@ -374,7 +374,7 @@ def iterator (url, check):
         databases '''
 
         if check and url.url [2] [-4:] != '.isi': return
-        
+
         return IsifileIterator (open (Open.url_to_local (url), 'r'))
 
 Autoload.register ('format', 'Isifile', {'open': opener,

@@ -59,7 +59,7 @@ def format (string, width, first, next):
 
     # if the entry does not fit the current width
     while len (string) > width - current:
-	    
+
         pos = width - current - 1
 
 	# search a previous space
@@ -109,34 +109,34 @@ def generate_key (entry, table):
         else:
             honorific, first, last, lineage = aut [0].format ()
             parts = split (last, ' ')
-	            
+
             if len (parts) == 1:
                 key = parts [0][0:3]
             else:
                 key = join (map (lambda x: x [0], parts), '')
-	
-                
+
+
         if entry.has_key ('date'):
             year = entry ['date'].year
-            
+
             if year: key = key + str (year) [2:]
 
 
     base = _flat (key)
     key  = Key.Key (table, base)
-    
+
     if table.has_key (key):
 	suff = ord ('a')
-	
+
         while table.has_key (key):
             suff = suff + 1
-            
+
             if suff > ord ('z'):
                 suff = ord ('a')
                 base = base + 'a'
 
             key  = Key.Key (table, base + chr (suff))
-            
+
     return Key.Key (table, key)
 
 Autoload.register ('key', 'Default', generate_key)

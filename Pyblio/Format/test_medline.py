@@ -186,7 +186,7 @@ class ReaderCase (unittest.TestCase):
 	"""Test that Initials are formatted correctly.
 	According to Bibtex specs, they must be separated
 	by period, space ('. ')."""
-	    
+
 	inpt = cStringIO.StringIO (example_2)
 	rdr = Medline.MedlineIterator (inpt)
 	e = rdr.first ()
@@ -222,10 +222,10 @@ def suite():
 
 def main ():
     unittest.main (defaultTest='suite' )
-    
+
 
 if __name__ == '__main__':
-    
+
     main()
 
 
