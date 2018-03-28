@@ -1,25 +1,40 @@
-#    -*- coding: iso8859-1 -*-
+# -*- coding: iso-8859-1 -*-
+# This file is part of pybliographer
+#
+# Copyright (C) Germán Poo-Caamaño <gpoo@gnome.org>
+# Copyright (C) 1998-2004 Frederic GOBRY <gobry@pybliographer.org>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#
 
-
-import cStringIO, os, sys, unittest
+import cStringIO
+import os
+import sys
+import unittest
 
 import locale
 locale.setlocale (locale.LC_ALL, '')
 
 import gettext
-gettext.install ('pybliographer', '/usr/local/share/locale', unicode = True)
+gettext.install('pybliographer', '/usr/local/share/locale', unicode=True)
 
-sys.path.append (os.path.abspath('../..'))
+basedir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append (basedir)
 
 from Pyblio import Base, Config, Fields
-
-Config.parse_directory (os.path.abspath('../ConfDir'))
-Config.load_user ()
-
 from Pyblio.Format import Medline
-
-
-
 
 example_1 = """PMID- 15985842
 OWN - NLM
@@ -157,13 +172,15 @@ comparison = {'Holmes': 'W. C.',
 
 
 class ReaderCase (unittest.TestCase):
-
-    def setUp (self):
-
-        self.db = Base.DataBase ('//localhost/Internal')
+    def setUp(self):
+        Config.parse_directory(os.path.join(basedir, 'ConfDir'))
+        Config.load_user()
+        self.db = Base.DataBase('//localhost/Internal')
         self.output = cStringIO.StringIO()
 
-        
+    def teardown(self):
+        Config.forget_changes()
+
     def test01(self):
 	"""Test that all fields are Instances, as
 	opposed to strings"""
@@ -232,5 +249,5 @@ if __name__ == '__main__':
 
 ### Local Variables:
 ### Mode: python
-### encoding: iso-8859-1    
+### encoding: iso-8859-1
 ### End:

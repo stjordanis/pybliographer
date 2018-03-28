@@ -28,8 +28,8 @@ import os
 import sys
 import unittest
 
-sys.path.append (os.path.abspath('../..'))
-print os.path.abspath('../..')
+basedir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append(basedir)
 
 from Pyblio.Format import isifile
 from Pyblio import Base, Config, Fields
@@ -66,11 +66,10 @@ example_3 = """ED X, ABC
 ER
 """
 
-class ReaderCase (unittest.TestCase):
-    def setUp (self):
-
-        Config.parse_directory (os.path.abspath('../ConfDir'))
-        Config.load_user ()
+class ReaderCase(unittest.TestCase):
+    def setUp(self):
+        Config.parse_directory(os.path.join(basedir, 'ConfDir'))
+        Config.load_user()
 	print 'CONFIGURATION'
 	print 50*'-'
 	for i in Config.domains ():
@@ -79,7 +78,6 @@ class ReaderCase (unittest.TestCase):
         self.db = Base.DataBase ('//localhost/Internal')
         self.output = cStringIO.StringIO()
 
-        
     def test01(self):
 	"""Test that all fields are Instances, as
 	opposed to strings"""
@@ -105,7 +103,7 @@ class ReaderCase (unittest.TestCase):
 	comparison = {'X': 'A. B. C.',
 		      'Y': 'D.',
 		      'Z': 'E. F. G. H.'}
-	    
+
 	inpt = cStringIO.StringIO (example_2)
 	rdr = isifile.IsifileIterator (inpt)
 	e = rdr.first ()
@@ -119,11 +117,11 @@ class ReaderCase (unittest.TestCase):
 
     def test03 (self):
 	"""Test that Editors are accepted."""
-	
+
 	comparison = {'X': 'A. B. C.',
 		      'Y': 'D.',
 		      'Z': 'E. F. G. H.'}
-	    
+
 	inpt = cStringIO.StringIO (example_3)
 	rdr = isifile.IsifileIterator (inpt)
 	e = rdr.first ()
@@ -137,11 +135,11 @@ class ReaderCase (unittest.TestCase):
 
     def test04 (self):
 	"""Test that Editors are accepted."""
-	
+
 	comparison = {'X': 'A. B. C.',
 		      'Y': 'D.',
 		      'Z': 'E. F. G. H.'}
-	    
+
 	inpt = cStringIO.StringIO (example_3)
 	rdr = isifile.IsifileIterator (inpt)
 	e = rdr.first ()
@@ -164,7 +162,7 @@ def suite():
 
 def main ():
     unittest.main (defaultTest='suite' )
-    
+
 
 if __name__ == '__main__':
     main()
@@ -174,21 +172,3 @@ if __name__ == '__main__':
 ### Mode: python
 ### encoding: utf-8
 ### End:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

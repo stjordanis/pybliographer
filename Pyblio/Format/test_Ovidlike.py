@@ -26,7 +26,8 @@ import re
 import sys
 import unittest
 
-sys.path.append (os.path.abspath('../..'))
+basedir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append(basedir)
 
 from Pyblio.Base import DataBase, Entry
 from Pyblio import Config
@@ -149,34 +150,27 @@ Abstract
   All rights reserved. [References: 31]  """]
 
 
-class WriterCase (unittest.TestCase):
-
-    def setUp (self):
-
-
-        Config.parse_directory (os.path.abspath('../ConfDir'))
-        Config.load_user ()
-        self.db = DataBase ('//localhost/Internal')
+class WriterCase(unittest.TestCase):
+    def setUp(self):
+        Config.parse_directory(os.path.join(basedir, 'ConfDir'))
+        Config.load_user()
+        self.db = DataBase('//localhost/Internal')
         self.output = cStringIO.StringIO()
         self.mapping = Config.get('ovid/mapping').data
 
-        
     def test01(self):
-
         self.entry = Entry ( Key('TEST', 'KEY1'), get_entry('article'),
             {'journal': 'CACM',
-             'number': 22, 
+             'number': 22,
              'volume': 123,
              'pages': '234-543'})
         self.db.add(self.entry)
         self.itera = self.db.iterator()
-        
+
         writer (self.itera, self.output, self.mapping)
         print self.output.getvalue()
-        
 
     def test02source (self):
-
         data = [ ## from cites.ovid
             {'result':
              'International Journal of Hematology. 69(2):81-88, 1999 Feb.',
@@ -184,7 +178,7 @@ class WriterCase (unittest.TestCase):
              'volume': 69, 'number': 2, 'pages': '81-88',
              'date': Date ((1999, 2, None))},
             {'result':
-             'Journal of Trauma-Injury Infection & Critical Care. 44(6):1047-1054; discussion 1054-5, 1998 Jun.',              
+             'Journal of Trauma-Injury Infection & Critical Care. 44(6):1047-1054; discussion 1054-5, 1998 Jun.',
              'journal': 'Journal of Trauma-Injury Infection & Critical Care',
              'volume': 44, 'number': 6, 'pages': '1047-1054',
              'date': Date ((1998, 6, None)),
@@ -195,7 +189,7 @@ class WriterCase (unittest.TestCase):
              'journal': 'Chemotherapy',
              'volume': 42, 'number': 3, 'pages': '215-219',
              'date': Date ((1996, 5, None))},
-            {'result': 'Circulatory Shock. 18(3):193-203, 1986.', 
+            {'result': 'Circulatory Shock. 18(3):193-203, 1986.',
              'journal': 'Circulatory Shock',
              'volume': 18, 'number': 3, 'pages': '193-203',
              'date': Date ('1986')},
@@ -205,10 +199,7 @@ class WriterCase (unittest.TestCase):
              'volume': 162, 'number': 17, 'pages': '1961-1965',
              'date': Date ((2002, 9, 23))},]
 
-
-        
         for i in data :
-
             e =  Entry ( Key('TEST', 'KEY1'), get_entry('article'),
                          i)
             self.output.seek(0)
@@ -216,13 +207,9 @@ class WriterCase (unittest.TestCase):
             write_source_field (self.output, e, self.mapping)
             r = self.output.getvalue()
             self.assertEqual (e['result'], r[9:-1])
-            
-
-
 
 
 class RexpCase  (unittest.TestCase):
-
     rx = re.compile (# Fall 1:
         r"""(?P<journal>.*?)\.\ +
         (?P<volume>\w+)?
@@ -286,9 +273,6 @@ class RexpCase  (unittest.TestCase):
               'Biochemistry', '38', '49', None, '16333-16339',
               '1999', 'Dec 7', None),
              ]
-             
-             
-
 
     def test01 (self):
         for test in self.data:
@@ -299,18 +283,18 @@ class RexpCase  (unittest.TestCase):
                 print m.group(
                     'journal', 'volume', 'number', 'inseries',
                     'pages', 'year', 'month', 'other')
-                self.assertEqual (journal, m.group('journal'))             
-                self.assertEqual (volume, m.group('volume'))             
-                self.assertEqual (number, m.group('number'))             
-                self.assertEqual (inseries, m.group('inseries'))             
-                self.assertEqual (pages, m.group('pages'))             
-                self.assertEqual (year, m.group('year'))             
-                self.assertEqual (month, m.group('month'))             
-                self.assertEqual (other, m.group('other'))             
+                self.assertEqual (journal, m.group('journal'))
+                self.assertEqual (volume, m.group('volume'))
+                self.assertEqual (number, m.group('number'))
+                self.assertEqual (inseries, m.group('inseries'))
+                self.assertEqual (pages, m.group('pages'))
+                self.assertEqual (year, m.group('year'))
+                self.assertEqual (month, m.group('month'))
+                self.assertEqual (other, m.group('other'))
             else: print 'Fehler'
 
-class Rexp2Case (unittest.TestCase):
 
+class Rexp2Case (unittest.TestCase):
     def test01 (self):
         """Regexp wie oben"""
         rx = re.compile (# Fall 1:
@@ -325,7 +309,7 @@ class Rexp2Case (unittest.TestCase):
         \.\Z
          """
             , flags= re.VERBOSE)
-       
+
         data = ['Biophysical Journal. 71(6):3320-3329, 1996 Dec.',
                 'Biochemistry. 38(49):16333-16339, 1999 Dec 7.',
                 'VERY HIGH FREQUENCY (VHF) ESR/EPR. 22 PG. 431-464. 2004 [Figures].'
@@ -339,7 +323,6 @@ class Rexp2Case (unittest.TestCase):
                     'pages', 'year', 'month', 'other')
             else:
                 print '**** FEHLER', d
-
 
     def test02 (self):
         rx = re.compile (# Fall 1:
@@ -353,7 +336,7 @@ class Rexp2Case (unittest.TestCase):
             (?P<month>.*)
             \.\s*\Z"""
             , flags= re.VERBOSE)
-       
+
         data = ['Biophysical Journal. 71(6):3320-3329, 1996 Dec.',
                 'Biochemistry. 38(49):16333-16339, 1999 Dec 7.',
                 'VERY HIGH FREQUENCY (VHF) ESR/EPR. 22 PG. 431-464. 2004 [Figures].'
@@ -368,8 +351,8 @@ class Rexp2Case (unittest.TestCase):
             else:
                 print '**** FEHLER', d
 
-class AuthorCase (unittest.TestCase):
 
+class AuthorCase (unittest.TestCase):
     def test01 (self):
         aut = ["Marsh D.",
                "de Planque MRR.", "Kruijtzer JAW."]
@@ -378,7 +361,6 @@ class AuthorCase (unittest.TestCase):
         for i in aut:
             x = R.parse_author (i)
             print `x`
-
 
     def test02 (self):
         aut = """Pali T.  Whyteside G.  Dixon N.  Kee TP.  Ball S.  Harrison MA.  Findlay JBC.
@@ -399,7 +381,7 @@ def suite():
 
 def main ():
     unittest.main (defaultTest='suite' )
-    
+
 
 if __name__ == '__main__':
     main()
