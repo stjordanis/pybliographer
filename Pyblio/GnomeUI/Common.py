@@ -127,7 +127,6 @@ class filechooserdialog (gtk.FileChooserDialog):
 	gtk.FileChooserDialog.__init__ (
 	    self, title,  None, gtk.FILE_CHOOSER_ACTION_SAVE,
 	    backend="gnomevfs")
-	tips = gtk.Tooltips ()
 
 	self.set_local_only (False)
 

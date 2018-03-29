@@ -60,9 +60,6 @@ class FieldsDialog (Utils.Builder):
         self.dialog = self.xml.get_object('fields1')
         self.w = self.xml.get_object('notebook')
 
-##      tooltips = gtk.Tooltips ()
-##      tooltips.enable ()
-        
         self.warning = False
         self.parent = parent
         self.init_page_1()

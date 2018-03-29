@@ -53,9 +53,6 @@ class ConfigDialog (Utils.Builder):
 
         content.pack_start (self.w)
 
-##      tooltips = gtk.Tooltips ()
-##      tooltips.enable ()
-        
         self.warning = False
         self.parent = parent
         
@@ -105,10 +102,6 @@ class ConfigDialog (Utils.Builder):
                 
                 cw [item] = edit
                 hbox.pack_start (edit.w, False)
-
-
-##                     tooltips.set_tip (button, desc)
-
                 table.pack_start (hbox,
                                   expand = edit.resize,
                                   fill   = edit.resize)

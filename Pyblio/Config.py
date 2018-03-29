@@ -32,7 +32,8 @@ import types
 pickle = cPickle
 del cPickle
 
-deprecated_keys = ['gnome/old-confirmation-dialog',]
+deprecated_keys = ['gnome/old-confirmation-dialog',
+                   'gnome/tooltips']
 
 
 class ConfigItem:
