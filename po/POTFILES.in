@@ -1,5 +1,7 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
+data/pybliographic.appdata.xml.in
+data/pybliographic.desktop.in
 Pyblio/Autoload.py
 Pyblio/Base.py
 Pyblio/ConfDir/Base.py
@@ -45,7 +47,7 @@ Pyblio/GnomeUI/glade/fields.ui
 Pyblio/GnomeUI/glade/format.ui
 Pyblio/GnomeUI/glade/medline.ui
 Pyblio/GnomeUI/glade/openurl.ui
-Pyblio/GnomeUI/glade/pyblio.ui.in
+Pyblio/GnomeUI/glade/pyblio.ui
 Pyblio/GnomeUI/glade/search.ui
 Pyblio/GnomeUI/glade/sort.ui
 Pyblio/Help.py
@@ -77,8 +79,6 @@ Pyblio/recode.py
 Pyblio/userexit.py
 Pyblio/version.py.in
 pybliographer.in
-pybliographic.appdata.xml.in
-pybliographic.desktop.in
 scripts/pybliocheck.py
 scripts/pybliocompact.py
 scripts/pyblioconvert.py
