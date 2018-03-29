@@ -11,7 +11,7 @@ if _installed:
     pybdir = '@datapyb@'
     localedir = '@locale_dir@'
     version = '@version@'
-    pixmapsdir = '@pixmapsdir@'
+    pixmapsdir = os.path.join(pybdir, 'pixmaps')
 else:
     datadir = os.path.join(_topdir, 'data')
     pybdir = _topdir
