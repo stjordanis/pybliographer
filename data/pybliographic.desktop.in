@@ -2,6 +2,7 @@
 Name=Pybliographer
 GenericName=Bibliography Manager
 Comment=Manage bibliographic databases
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=pybliographic
 Exec=pybliographic
 Terminal=false
