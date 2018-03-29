@@ -32,7 +32,7 @@ bin_SCRIPTS = pybliographer
 
 pyb_DATA = pybrc.py
 
-EXTRA_DIST = m4/ChangeLog  \
+EXTRA_DIST = \
 	pybliographer.in \
 	$(pyb_DATA)
 
