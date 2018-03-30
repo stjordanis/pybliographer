@@ -183,7 +183,7 @@ class Entry (TextBase):
     def update (self, entry):
         if self.buff:
             text = self.buff.get_text (self.buff.get_start_iter (),
-                                       self.buff.get_end_iter ())
+                                       self.buff.get_end_iter (), False)
             text = string.rstrip (text).encode('latin-1')
         else:
             text = string.rstrip \
@@ -222,7 +222,7 @@ class Text (TextBase):
 
     def update (self, entry):
         text = self.buff.get_text (self.buff.get_start_iter (),
-                                   self.buff.get_end_iter ())
+                                   self.buff.get_end_iter (), False)
         text = string.rstrip (text).encode ('latin-1')
         
         if text == self.string: return 0
@@ -256,7 +256,7 @@ class AuthorGroup (BaseField):
 
     def update (self, entry):
         text = self.buff.get_text (self.buff.get_start_iter (),
-                                   self.buff.get_end_iter ())
+                                   self.buff.get_end_iter (), False)
         text = string.strip (text).encode('latin-1')
         
         if text == self.string: return 0
