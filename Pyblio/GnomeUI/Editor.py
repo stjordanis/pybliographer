@@ -54,7 +54,7 @@ class BaseField(Connector.Publisher):
         self.w = gtk.VBox()
 
         h = gtk.HBox(spacing=5)
-        self.w.pack_start(gtk.Label(field), False, False)
+        self.w.pack_start(gtk.Label(field), False, False, 6)
 
         field = string.lower(field)
         self.field = field
@@ -74,7 +74,7 @@ class BaseField(Connector.Publisher):
         
         h.pack_start(img, False, False)
         
-        self.w.pack_start(h, expand, expand)
+        self.w.pack_start(h, expand, expand, 6)
         self.w.show_all()
 
         flag = 0
@@ -157,7 +157,7 @@ class Entry (TextBase):
 
             self.buff = None
             
-            h.pack_start (self.edit)
+            h.pack_start (self.edit, True, True, 0)
             return 0
 
         w = gtk.ScrolledWindow ()
@@ -176,7 +176,7 @@ class Entry (TextBase):
         w.add (self.edit)
         w.show ()
         
-        h.pack_start (w)
+        h.pack_start (w, True, True, 6)
         return 1
 
 
@@ -216,7 +216,7 @@ class Text (TextBase):
         w.add (self.edit)
         w.show ()
 
-        h.pack_start (w)
+        h.pack_start (w, True, True, 6)
         return 1
 
 
@@ -250,7 +250,7 @@ class AuthorGroup (BaseField):
         w.add (self.edit)
         w.show ()
 
-        h.pack_start (w)
+        h.pack_start(w, True, True, 6)
         return 1
 
 
@@ -315,7 +315,7 @@ class Date (BaseField):
         if self.initial [0]:
             self.day.set_text (str (self.initial [0]).decode ('latin-1'))
         hbox.pack_start (self.day)
-        hbox.pack_start (gtk.Label (_("Day")), False, False)
+        hbox.pack_start (gtk.Label (_("Day")), False, False, 3)
         
         self.month = gtk.Entry ()
         self.month.set_size_request (width / 4, height)
@@ -324,7 +324,7 @@ class Date (BaseField):
         if self.initial [1]:
             self.month.set_text (str (self.initial [1]).decode ('latin-1'))
         hbox.pack_start (self.month)
-        hbox.pack_start (gtk.Label (_("Month")), False, False)
+        hbox.pack_start (gtk.Label (_("Month")), False, False, 3)
         
         self.year = gtk.Entry ()
         self.year.set_max_length (4)
@@ -333,10 +333,10 @@ class Date (BaseField):
         if self.initial [2]:
             self.year.set_text (str (self.initial [2]).decode ('latin-1'))
         hbox.pack_start (self.year)
-        hbox.pack_start (gtk.Label (_("Year")), False, False)
+        hbox.pack_start (gtk.Label (_("Year")), False, False, 3)
 
         hbox.show_all ()
-        h.pack_start (hbox)
+        h.pack_start (hbox, True, True, 0)
         return 0
 
 
@@ -418,14 +418,14 @@ class Reference (BaseField):
         
         self.edit.connect ('drag_data_received', self.drag_received)
         
-        box.pack_start (self.edit, True, True)
-        h.pack_start (box)
+        box.pack_start (self.edit, True, True, 6)
+        h.pack_start (box, True, True, 6)
 
         # A delete button
         button = gtk.Button (_('Delete'), gtk.STOCK_DELETE)
         button.connect ('clicked', self._delete)
         
-        h.pack_start (button, False, False)
+        h.pack_start (button, False, False, 6)
         
         box.show_all ()
         return 0
@@ -504,11 +504,11 @@ class URL (BaseField):
 	self.edit.set_editable (True)
 	self.old_url = self.string.decode ('latin-1')
 	self.edit.set_text (self.old_url)
-	self.box.pack_start (self.edit)
+	self.box.pack_start (self.edit, True, True, 6)
 	self.button = gtk.Button (_(u'Browse…'))
 	self.button.connect ("clicked", self.cb_clicked)
-	self.box.pack_start (self.button, False)
-	h.pack_start (self.box)
+	self.box.pack_start (self.button, False, True, 6)
+	h.pack_start (self.box, True, True, 6)
         return 0
   
 ##    def update (self, entry):
@@ -595,7 +595,7 @@ class RealEditor (Connector.Publisher):
         self.menu.connect ("changed", self.menu_select)
         
         table.show_all ()
-        self.w.pack_start (table, False, False)
+        self.w.pack_start (table, False, False, 6)
 
         self.newfield_area = gtk.HBox (spacing = 5)
         self.newfield_area.set_border_width (5)
@@ -621,10 +621,9 @@ class RealEditor (Connector.Publisher):
         
         # Notebook
         self.notebook = gtk.Notebook ()
-        self.notebook.show ()
         self.notebook.connect ('switch-page', self.switch_page_cb)
         
-        self.w.pack_start (self.notebook)
+        self.w.pack_start (self.notebook, True, True, 6)
         self.w.show_all ()
 
         self.lt_init (self.entry, self.fields)
@@ -766,6 +765,7 @@ class RealEditor (Connector.Publisher):
                          Types.get_field(x).type != Fields.LongText]
                 self.add_type1_widget (label, table, i)
 
+        self.notebook.set_border_width(6)
         self.notebook.show ()
         return
 
@@ -1247,7 +1247,7 @@ class LT_Widget_1:
             ebox = gtk.Button()
             ebox.add (vbox)
             ebox.connect ('clicked', self.lt_select_detail, i)
-            content.pack_start(ebox, False, False)
+            content.pack_start(ebox, False, False, 6)
 
         page_child = self.page.get_child()
         if page_child:
@@ -1358,7 +1358,7 @@ class  LT_Dialog_1     :
         
         self.options = gtk.combo_box_new_text ()
 
-        self.dialog.vbox.pack_start (self.options, True, True, 12)
+        self.dialog.vbox.pack_start (self.options, True, True, 6)
         self.fields = [ x for x in Config.get ('base/fields').data
                         if Types.get_field(x).type == Fields.LongText]
         self.fields.sort()
