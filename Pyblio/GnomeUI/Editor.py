@@ -1083,8 +1083,7 @@ class Editor(Connector.Publisher):
             'gnome/native-as-default').data and entry.key)
 
         self.toggle_native()
-        self.w.show_all ()
-        return
+        self.w.run ()
 
     def toggle_native(self, *arg):
         self.save_size()
