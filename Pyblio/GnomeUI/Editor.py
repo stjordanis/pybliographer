@@ -1212,7 +1212,6 @@ class LT_Widget_1:
                               gtk.POLICY_AUTOMATIC)
         self.display_list (self.entry, self.editor.lt_nodes)
 
-        self.page.set_data ('pyblio-owner', self)
         self.page.show_all()
         self.notebook.insert_page (self.page, self.label, position)
         #list_remove (self.editor.fields, self.keys) 
@@ -1284,7 +1283,6 @@ class LT_Widget_2:
         self.label = gtk.Label()
         self.page.add(self.content)
         self.content.grab_focus()
-        self.page.set_data ('pyblio-owner', self)
         self.content.set_wrap_mode (gtk.WRAP_WORD)
         self.buff.connect('changed', self.changed_cb)
         self.hidden = True
