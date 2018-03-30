@@ -34,11 +34,11 @@ class URLFileSelection (gtk.FileChooserDialog):
 
     defaultdir = None
     
-    def __init__(self, title = _("File"),
-                 modal = True, has_auto = True, is_save = False,
-                 directory = None, show_type=True):
+    def __init__(self, title=_("File"),
+                 modal=True, has_auto=True, is_save=False,
+                 directory=None, show_type=True, parent=None):
 
-        gtk.FileChooserDialog.__init__ (self)
+        gtk.FileChooserDialog.__init__(self, parent=parent)
 
         accelerator = gtk.AccelGroup ()
         self.add_accel_group (accelerator)
