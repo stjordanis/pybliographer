@@ -159,46 +159,38 @@ def popup_add (menu, item, action = None, argument = None):
     
     return tmp
 
-def error_dialog (title, err, parent = None):
+def error_dialog(title, err, parent=None):
 
-    dialog = \
-           gtk.MessageDialog (parent,
-                              gtk.DIALOG_MODAL |
-                              gtk.DIALOG_DESTROY_WITH_PARENT,
-                              gtk.MESSAGE_ERROR,
-                              message_format = title)
+    dialog = gtk.MessageDialog(parent,
+                               gtk.DIALOG_MODAL |
+                               gtk.DIALOG_DESTROY_WITH_PARENT,
+                               gtk.MESSAGE_ERROR,
+                               gtk.BUTTONS_CLOSE,
+                               title)
+    dialog.format_secondary_text(_("The following errors occurred:"))
 
-    b = dialog.add_button (gtk.STOCK_OK, gtk.RESPONSE_OK)
-    b.set_property ('has_default', True)
-    
     buff = gtk.TextBuffer ()
-    title = buff.create_tag ('title', weight = pango.WEIGHT_BOLD)
+    iter = buff.get_start_iter()
+    buff.insert(iter, str(err))
 
-    text = gtk.TextView ()
-    text.set_editable (False)
-    text.set_cursor_visible (False)
-    text.set_buffer (buff)
-    text.set_size_request (400, 200)
+    text = gtk.TextView()
+    text.set_editable(False)
+    text.set_cursor_visible(False)
+    text.set_size_request(400, 200)
+    text.set_buffer(buff)
 
-    iter = buff.get_start_iter ()
-    
-    buff.insert_with_tags (iter, _("The following errors occurred:\n"),
-                           title)
-    
-    buff.insert (iter, str (err))
-    
-    holder = gtk.ScrolledWindow ()
-    holder.set_policy (gtk.POLICY_AUTOMATIC,
-                       gtk.POLICY_AUTOMATIC)
-    holder.add (text)
-    
-    dialog.vbox.pack_start (holder)
-    holder.show_all ()
-    
-    dialog.run ()
-    dialog.destroy ()
-    
-    return
+    holder = gtk.ScrolledWindow()
+    holder.set_policy(gtk.POLICY_AUTOMATIC,
+                      gtk.POLICY_AUTOMATIC)
+    holder.set_property('expand', True)
+    holder.add(text)
+
+    dialog.vbox.pack_start(holder, False, False, 0)
+    dialog.vbox.set_property('spacing', 0)
+    dialog.show_all ()
+
+    dialog.run()
+    dialog.destroy()
 
 
 def error_dialog_s(parent, primary, secondary=None):
