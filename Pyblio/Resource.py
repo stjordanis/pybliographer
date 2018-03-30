@@ -44,7 +44,9 @@ CHOOSER_ACTIONS = ('enter/edit', 'select', 'select-directory',
 
 
 def is_interactive ():
-    return sys.modules.has_key ('gtk')
+    r = sys.modules.has_key('gtk') or \
+        sys.modules.has_key('gi.repository.Gtk')
+    return r
 
 
 class ResourceDirector (object):
