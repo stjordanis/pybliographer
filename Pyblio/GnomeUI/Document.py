@@ -1165,11 +1165,11 @@ class Document (Connector.Publisher):
         if self.index.go_to_first(search_text,
                                   self.selection.sort.fields[0]):
             self.statusbar.push(self.context_id,
-                                _(u'Searching for “%s…”') %
+                                _(u'Searching for “%s”…') %
                                 search_text)
         else:
             self.statusbar.push(self.context_id,
-                                _(u'Cannot find “%s…”') %
+                                _(u'Cannot find “%s”…') %
                                 search_text)
 
         return False
