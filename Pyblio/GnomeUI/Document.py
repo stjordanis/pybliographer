@@ -1151,45 +1151,35 @@ class Document (Connector.Publisher):
 			     str(mergeid), gtk.UI_MANAGER_MENUITEM, False)
 	return
     
-    def key_pressed (self, app, event):
-
+    def key_pressed(self, app, event):
         # filter out special keys
-        
         if event.keyval == gtk.keysyms.Escape:
             # the Esc key restores view to "all entries"
             self.limit_view (None, None)
             self.quick_search.set_text('')
-            
-        if (event.string < 'a' or event.string > 'z') and \
-           (event.string < '0' or event.string > '9'): return False
 
         if self.selection.sort is None:
-            app.flash ("Select a column to search in first.")
+            self.statusbar.push(self.context_id,
+                                _('Select a column to search in first'))
             return False
-        
-        if event.string in printable:
-            # the user searches the first entry in its ordering that starts with this letter
-            if self.incremental_search == '':
-                self.incremental_search = event.string
-                self.incremental_start  = event.time
-            else:
-                if event.time - self.incremental_start > 1000:
-                    self.incremental_search = event.string
-                else:
-                    # two keys in a same shot: we search for the composition of the words
-                    self.incremental_search = self.incremental_search + event.string
-                
-                self.incremental_start  = event.time
 
-            # search first occurrence
-            if self.index.go_to_first (self.incremental_search,
-                                       self.selection.sort.fields [0]):
-                app.flash ("Searching for '%s...'" % self.incremental_search)
-            else:
-                app.flash ("Cannot find '%s...'" % self.incremental_search)
-                
+        search_text = self.quick_search.get_text()
+
+        if event.string not in printable or len(search_text) <= 0:
+            return False
+
+        # search first occurrence
+        if self.index.go_to_first(search_text,
+                                  self.selection.sort.fields[0]):
+            self.statusbar.push(self.context_id,
+                                _(u'Searching for “%s…”') %
+                                search_text)
+        else:
+            self.statusbar.push(self.context_id,
+                                _(u'Cannot find “%s…”') %
+                                search_text)
+
         return False
-
 
     def update_configuration (self):
         ''' save current informations about the program '''
