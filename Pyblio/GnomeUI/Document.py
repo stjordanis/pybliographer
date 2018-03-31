@@ -222,23 +222,16 @@ class Document (Connector.Publisher):
         self.w_save_btn = self.xml.get_object('_w_save_btn')
         self.w_save_mnu = self.xml.get_object('_w_save_mnu')
 
-        # We manually add a simple search area
-        h = gtk.HBox()
-
-        i = gtk.Image()
-        i.set_from_stock(gtk.STOCK_FIND, gtk.ICON_SIZE_LARGE_TOOLBAR)
-        h.pack_start(i, False, False)
-
         self.quick_search = gtk.Entry()
+        self.quick_search.set_icon_from_stock(gtk.ENTRY_ICON_PRIMARY, gtk.STOCK_FIND)
         self.quick_search.connect('activate', self.simple_search)
-        h.pack_start(self.quick_search, False, False)
 
-        i = gtk.ToolItem()
-        i.add(h)
-        toolbar.insert(i, -1)
-        
-        i.show_all()
-        
+        tool_item = gtk.ToolItem()
+        tool_item.add(self.quick_search)
+        toolbar.insert(tool_item, -1)
+
+        tool_item.show_all()
+
         # The Index list
         self.index = Index.Index (popup = self.uim.get_widget ('/Popup'))
         self.paned.add1 (self.index.w)
