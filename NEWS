@@ -1,4 +1,31 @@
--*- text -*-
+New in 1.4.0 - 2018-04-03
+
+		* Remove dependency on python-gnome2, python-gnome2-vfs, and
+          python-glade2.
+		* Pybliographer now requires pygtk 2.24.0 and gettext 0.19.8
+		* Improve and simplify the build system
+		* Known regressions to be fixed later:
+          * Format entries cannot be saved
+	    * Known regressions that will not be fixed:
+          * Remove support for old confirmation dialog option
+          * Drop history on combo boxes
+
+		* UI translations:
+			Alan Mortensen (da)
+			Anders Jonsson (sv)
+			Ask Hjorth Larsen (da)
+			Bal√°zs √ör (hu)
+			Daniel Mustieles (es)
+			Jiri Gr√∂nroos (fi)
+			Marek Cernocky (cs)
+			Mario Bl√§ttermann (de)
+			Piotr Dr¬øg (pl)
+			Rafael Fontenelle (pt_BR)
+			¬ø¬ø¬ø¬ø¬ø¬ø¬ø¬ø ¬ø¬ø¬ø¬ø¬ø¬ø¬ø (sr) (sr@latin)
+
+		* Doc translations:
+			Marek Cernocky (cs)
+			Mario Bl√§ttermann (de)
 
 New in 1.2.18 - 2017-10-05
 
@@ -66,41 +93,41 @@ New in 1.2.12 - 2008-11-26
 
 New in 1.2.11 - 2007-09-24
 
-       * Fixed multiple creation of entries (FrÈdÈric)
-       * Fixed bug related to creating a new field (FrÈdÈric)
-       * Rearrangement of glade files (FrÈdÈric)
-       * Updated config loader (FrÈdÈric)
+       * Fixed multiple creation of entries (Fr√©d√©ric)
+       * Fixed bug related to creating a new field (Fr√©d√©ric)
+       * Rearrangement of glade files (Fr√©d√©ric)
+       * Updated config loader (Fr√©d√©ric)
        * Updated translations (Gnome I18n team)
 
 
 New in 1.2.10 - 2007-01-18
 
-       * Open medline queries in a new window (FrÈdÈric)
-       * Better proxy support for medline query (FrÈdÈric)
-       * Minor documentation update (Zolt·n)
+       * Open medline queries in a new window (Fr√©d√©ric)
+       * Better proxy support for medline query (Fr√©d√©ric)
+       * Minor documentation update (Zolt√°n)
        * Updated translations (Gnome I18n team)
 
 
 New in 1.2.9 - 2006-07-11
 
-       * Toolbar search widget (FrÈdÈric)
-       * Improved tooltips (Zolt·n)
-       * Improved latex aux file parsing (FrÈdÈric)
+       * Toolbar search widget (Fr√©d√©ric)
+       * Improved tooltips (Zolt√°n)
+       * Improved latex aux file parsing (Fr√©d√©ric)
        * Fixed bugs related to unicode search queries and 
-         bibtex keys (FrÈdÈric)
+         bibtex keys (Fr√©d√©ric)
        * Updated translations (Gnome I18n team)
 
 
 New in 1.2.8 - 2006-01-20
 
-       * setup-check.py fixed (Zolt·n)
+       * setup-check.py fixed (Zolt√°n)
        * An alternative saving method added. It doesn't break
-         links (Zolt·n)
+         links (Zolt√°n)
        * Fixed error reporting when the lyx pipe is not 
-         available (FrÈdÈric)
+         available (Fr√©d√©ric)
        * Fixed bug related to error_dialog_parented. A 
          compatibility module introduced (Peter)
-       * Fixed document type selection for Save As (FrÈdÈric)
+       * Fixed document type selection for Save As (Fr√©d√©ric)
        * Updated translations (Gnome I18n team)
 
 
@@ -113,22 +140,22 @@ New in 1.2.7 - 2005-10-11
          use of Resources (Peter)
        * BibTeX preamble support (Peter), closes bug #1223989
        * A new bibtex field type (BIBTEX_VERBATIM) added for urls
-         and references (FrÈdÈric)
+         and references (Fr√©d√©ric)
        * A new menu item and dialog has been added for opening 
-         URLs (Zolt·n), closes bug #1256166
-       * File selector reworked (FrÈdÈric)
-       * Updated code to pygtk 2.4 (FrÈdÈric)
-       * Autosave feature (Zolt·n)
-       * Backup toggling (Zolt·n)
+         URLs (Zolt√°n), closes bug #1256166
+       * File selector reworked (Fr√©d√©ric)
+       * Updated code to pygtk 2.4 (Fr√©d√©ric)
+       * Autosave feature (Zolt√°n)
+       * Backup toggling (Zolt√°n)
        * Hitting escape in the main window resets the search 
-         filter (FrÈdÈric)
-       * Improvements of the format dialog (FrÈdÈric)
-       * Added a small notification of the current query (FrÈdÈric)
+         filter (Fr√©d√©ric)
+       * Improvements of the format dialog (Fr√©d√©ric)
+       * Added a small notification of the current query (Fr√©d√©ric)
        * Fixes of sort and isifile issues, and config editor
-         (Peter, FrÈdÈric) 
+         (Peter, Fr√©d√©ric) 
        * Corrected confirmation request when closing a
          modified file (with compatibility switch) (Peter)
-       * i18n fixes (Zolt·n)
+       * i18n fixes (Zolt√°n)
        * Updated translations (Gnome I18n team)
 
 
@@ -137,41 +164,41 @@ New in 1.2.6 - 2005-01-29
        * Fixed parsing of .aux files in pybcompact script (Peter)
        * Miscellaneous fixes in the Ovid import, closes 
          bugs # 1081186,  1078811, 1043582 (Peter)
-       * All the popups can be closed with escape (FrÈdÈric)
+       * All the popups can be closed with escape (Fr√©d√©ric)
        * Parentheses are now allowed in BibTeX keys, closes 
-         bug # #600394  (FrÈdÈric)
-       * Fixed crossref handling in pybcompact script (FrÈdÈric)
-       * Restored Search as you type (FrÈdÈric)
+         bug # #600394  (Fr√©d√©ric)
+       * Fixed crossref handling in pybcompact script (Fr√©d√©ric)
+       * Restored Search as you type (Fr√©d√©ric)
        * German translation update (Frank Arnold)
        * Sort code reworked (partially, Peter)
        * Iterator code reworked for __iter__ compatibility
          (partially, Peter)  
        * Added a check for an (approximately ?) valid bibtex field 
          name to GnomeUI.Editor, closes bug 744086 (Peter).
-       * Updated translations from CVS (FrÈdÈric)
+       * Updated translations from CVS (Fr√©d√©ric)
        * Added PYBLIOGRAPHER_DATABASE environment variable to
          specify a default database for pybliographic (Peter)
 
 New in 1.2.5 - 2004-11-25
 
-       * translation of the extra scripts  (Zolt·n)
-       * fixed use of translations in the interface (Zolt·n)
-       * fixed arguments handling in pybliographic (FrÈdÈric)
-       * Gnome 2.8 compatibility (Zolt·n)
+       * translation of the extra scripts  (Zolt√°n)
+       * fixed use of translations in the interface (Zolt√°n)
+       * fixed arguments handling in pybliographic (Fr√©d√©ric)
+       * Gnome 2.8 compatibility (Zolt√°n)
        * fixed bugs #1024414, #1024412 (Fred)
        * use of the new Gtk File selector (Tom Parker)
        * many fixes in the Ovid parser (Peter)
        * fixes and improvements in the synthetic fields (Peter)
-       * fixed search of accented words (FrÈdÈric)
+       * fixed search of accented words (Fr√©d√©ric)
 
 
 New in 1.2.4 - 2004-07-18
 
         * Fixes in the ISI and Ovid parsers (Peter)
         * Fixed LyX citing on python2.2
-        * Added a new tool: pybtext (Zolt·n)
+        * Added a new tool: pybtext (Zolt√°n)
 	* Fixed native editing of a new entry
-	* Improved documentation and translations (Zolt·n)
+	* Improved documentation and translations (Zolt√°n)
 	* Fixed history in Medline queries
 	* Added support for annotations (Peter)
 	* Fixed i18n support for dynamic windows
@@ -181,7 +208,7 @@ New in 1.2.4 - 2004-07-18
 New in 1.2.3 - 2004-03-11
 
 	* Updated translations (Gnome I18n team)
-	* Improved documentation (Zolt·n)
+	* Improved documentation (Zolt√°n)
 	* Improved / fixed error messages
 	* Saving the sort order works
 	* Configuration of the text widget to use for editing
@@ -193,7 +220,7 @@ New in 1.2.3 - 2004-03-11
 
 New in 1.2.2 - 2004-01-08
 
-        * Updated english documentation in Gnome format (Zolt·n)
+        * Updated english documentation in Gnome format (Zolt√°n)
 	* Additional shortcuts (Albert)
         * Updated translations
 	* Medline queries return URLs to the paper (John V.)
@@ -279,7 +306,7 @@ New in 1.0.6  - 2000-10-17
 
         * Works with Python 2.0
 	* Capability to create alternate key generators
-	* Fixed the Refer -> BibTeX converter for special characters (angstrˆm)
+	* Fixed the Refer -> BibTeX converter for special characters (angstr√∂m)
 
 
 New in 1.0.5  - 2000-10-01
@@ -292,7 +319,7 @@ New in 1.0.5  - 2000-10-01
 New in 1.0.4  - 2000-07-27
 
 	* fixed bugs in strict bibtex parsing
-	* reading of ﬂ character from bibtex
+	* reading of √ü character from bibtex
 	* Refer now supports %F labels (Martin Wilck)
 	* better behavior of the index scroll list
 	* added scrollbar in entry edition window
