@@ -34,6 +34,7 @@ pyb_DATA = pybrc.py
 
 EXTRA_DIST = \
 	pybliographer.in \
+	README.md \
 	$(pyb_DATA)
 
 CLEANFILES = \
