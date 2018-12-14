@@ -10,7 +10,7 @@
   <description xml:lang="en">Pybliographer is a tool for managing bibliographic databases.</description>
   <homepage rdf:resource="http://pybliographer.org" />
   <mailing-list rdf:resource="https://lists.sourceforge.net/lists/listinfo/pybliographer-general" />
-  <bug-database rdf:resource="https://bugzilla.gnome.org/browse.cgi?product=pybliographer" />
+  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/pybliographer/issues/" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#desktop" />
   <license rdf:resource="http://usefulinc.com/doap/licenses/gpl"/>
   <download-page rdf:resource="http://download.gnome.org/sources/pybliographer/"/>
