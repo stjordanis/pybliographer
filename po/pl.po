@@ -1,17 +1,16 @@
 # Polish translation for pybliographer.
-# Copyright © 2014-2018 the pybliographer authors.
+# Copyright © 2014-2019 the pybliographer authors.
 # This file is distributed under the same license as the pybliographer package.
 # Paweł Żołnowski <pawel@zolnowski.name>, 2014.
-# Piotr Drąg <piotrdrag@gmail.com>, 2015-2018.
-# Aviary.pl <community-poland@mozilla.org>, 2014-2018.
+# Piotr Drąg <piotrdrag@gmail.com>, 2015-2019.
+# Aviary.pl <community-poland@mozilla.org>, 2014-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pybliographer\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=pybliographer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-03-31 17:18+0000\n"
-"PO-Revision-Date: 2018-03-31 19:19+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/pybliographer/issues\n"
+"POT-Creation-Date: 2018-06-10 18:11+0000\n"
+"PO-Revision-Date: 2019-02-21 18:04+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -769,7 +768,7 @@ msgstr "Wystąpiły następujące błędy:"
 #: Pyblio/GnomeUI/__init__.py:48
 #, python-format
 msgid "This is Pybliographic %s [Python %s, Gtk %s, PyGTK %s]"
-msgstr "Pybliographic %s [Python %s, GTK+ %s, PyGTK %s]"
+msgstr "Pybliographic %s [Python %s, GTK %s, PyGTK %s]"
 
 #: Pyblio/GnomeUI/glade/config.ui:7
 msgid "Pybliographer Configuration"
