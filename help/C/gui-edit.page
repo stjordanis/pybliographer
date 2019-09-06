@@ -40,7 +40,7 @@
       a fake representation, and indicates it was not able to do a good job 
       on this field by setting a red symbol on its right, instead of a green one.
       </p>
-    <note type="warning">
+    <note style="warning">
       <p>If you edit such an  entry, you can loose  the additional
       information it  contained. To avoid this,  consider using native
       editing (see <link xref="gui-edit#gui-edit-native" />).</p>
