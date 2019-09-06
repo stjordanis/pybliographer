@@ -43,7 +43,7 @@
 	<p>We'll provide assorted bits of additional information in tips 
         	and notes as well.</p>
 
-	  <note style="tip" id="example-tip">
+	  <note style="tip">
 	      <title>Tip</title>
 	      <p>
 		Tips and bits of extra information will look like
@@ -51,7 +51,7 @@
 	      </p>
 	    </note>
           
-           <note id="example-note">
+           <note style="note">
                <title>Note</title>
 	      <p>
 		Notes will look like this.
@@ -61,7 +61,7 @@
         <p>
          We'll have warnings, in cases where you should be careful:</p>
 
-	    <note style="warning" id="example-warning">
+	    <note style="warning">
 	      <title>Example Warning</title>
 	      <p>
 		This is what a warning looks like. If there's a chance
