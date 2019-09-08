@@ -8,112 +8,157 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pybliographer\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=pybliographer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-10-07 01:39+0000\n"
-"PO-Revision-Date: 2018-02-11 17:42+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/pybliographer/issues\n"
+"POT-Creation-Date: 2019-07-21 14:24+0000\n"
+"PO-Revision-Date: 2019-09-08 11:37+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.0.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../Pyblio/Autoload.py:79
+#: data/pybliographic.appdata.xml.in:7 data/pybliographic.desktop.in:3
+#: Pyblio/GnomeUI/glade/pyblio.ui:7
+msgid "Pybliographer"
+msgstr "Pybliographer"
+
+#: data/pybliographic.appdata.xml.in:8
+#, fuzzy
+#| msgid "Manage bibliographic databases"
+msgid "Framework for working with bibliographic databases"
+msgstr "Hallitse lähdetietokantoja"
+
+#: data/pybliographic.appdata.xml.in:10
+msgid ""
+"Pybliographer is a tool for managing bibliographic databases. It can be used "
+"for searching, editing, reformatting, etc. In fact, it’s a simple framework "
+"that provides easy to use python classes and functions, and therefore can be "
+"extended to many uses (generating HTML pages according to bibliographic "
+"searches, etc)."
+msgstr ""
+
+#: data/pybliographic.appdata.xml.in:17
+msgid ""
+"In addition to the scripting environment, a graphical Gnome interface is "
+"available. It provides powerful editing capabilities, a nice hierarchical "
+"search mechanism, direct insertion of references into LyX, direct queries on "
+"Medline, and more. It currently supports the following file formats: BibTeX, "
+"ISI, Medline, Ovid, Refer."
+msgstr ""
+
+#: data/pybliographic.appdata.xml.in:27
+msgid "The main window"
+msgstr "Pääikkuna"
+
+#: data/pybliographic.appdata.xml.in:33
+msgid "Editing an entry"
+msgstr "Muokataan merkintää"
+
+#: data/pybliographic.desktop.in:4
+msgid "Bibliography Manager"
+msgstr "Lähdeluettelojen hallinta"
+
+#: data/pybliographic.desktop.in:5
+msgid "Manage bibliographic databases"
+msgstr "Hallitse lähdetietokantoja"
+
+#: Pyblio/Autoload.py:81
 #, fuzzy, python-format
 #| msgid "warning: can't import %s: %s"
 msgid "warning: can’t import %s: %s"
 msgstr "varoitus: tiedoston %s tuominen epäonnistui: %s"
 
-#: ../Pyblio/Config.py:53
+#: Pyblio/Config.py:61
 #, fuzzy, python-format
 #| msgid "value of `%s' should be of type %s"
 msgid "value of “%s” should be of type %s"
 msgstr "kohdan '%s' arvon pitäisi olla tyyppiä %s"
 
-#: ../Pyblio/Config.py:213
+#: Pyblio/Config.py:223
 msgid "String"
 msgstr "Merkkijono"
 
-#: ../Pyblio/Config.py:222
+#: Pyblio/Config.py:232
 msgid "Boolean"
 msgstr "Totuusarvo"
 
-#: ../Pyblio/Config.py:241
+#: Pyblio/Config.py:251
 msgid "Integer"
 msgstr "Kokonaisluku"
 
-#: ../Pyblio/Config.py:243
+#: Pyblio/Config.py:253
 #, python-format
 msgid "Integer under %d"
 msgstr "Pienempi kokonaisluku kuin %d"
 
-#: ../Pyblio/Config.py:245
+#: Pyblio/Config.py:255
 #, python-format
 msgid "Integer over %d"
 msgstr "Suurempi kokonaisluku kuin %d"
 
-#: ../Pyblio/Config.py:247
+#: Pyblio/Config.py:257
 #, python-format
 msgid "Integer between %d and %d"
 msgstr "Kokonaisluku väliltä %d - %d"
 
-#: ../Pyblio/Config.py:259
+#: Pyblio/Config.py:269
 #, fuzzy, python-format
 #| msgid "Element in `%s'"
 msgid "Element in “%s”"
 msgstr "Osa kohdassa '%s'"
 
-#: ../Pyblio/Config.py:279
+#: Pyblio/Config.py:289
 #, python-format
 msgid "Tuple (%s)"
 msgstr "Tuple (%s)"
 
-#: ../Pyblio/Config.py:300
+#: Pyblio/Config.py:310
 #, python-format
 msgid "List (%s)"
 msgstr "Luettelo (%s)"
 
-#: ../Pyblio/Config.py:325
+#: Pyblio/Config.py:335
 #, python-format
 msgid "Dictionary (%s, %s)"
 msgstr "Sanasto (%s, %s)"
 
-#: ../Pyblio/Config.py:345
+#: Pyblio/Config.py:355
 #, python-format
 msgid "warning: could not restore setting %r to %r: %s"
 msgstr ""
 
-#: ../Pyblio/Fields.py:261
+#: Pyblio/Fields.py:268
 msgid "Illegal year value"
 msgstr "Virheellinen vuoden arvo"
 
-#: ../Pyblio/Fields.py:265
+#: Pyblio/Fields.py:272
 msgid "Illegal month value"
 msgstr "Virheellinen kuukauden arvo"
 
-#: ../Pyblio/Fields.py:269
+#: Pyblio/Fields.py:276
 msgid "Illegal day value"
 msgstr "Virheellinen päivän arvo"
 
-#: ../Pyblio/Fields.py:510
+#: Pyblio/Fields.py:517
 #, python-format
 msgid "in %s"
 msgstr "kohdassa %s"
 
-#: ../Pyblio/Format/BibTeX.py:324 ../Pyblio/Format/BibTeX.py:372
+#: Pyblio/Format/BibTeX.py:328 Pyblio/Format/BibTeX.py:375
 #, python-format
 msgid "key “%s” is malformed"
 msgstr "avain “%s” on viallinen"
 
-#: ../Pyblio/Format/BibTeX.py:341 ../Pyblio/Format/BibTeX.py:360
+#: Pyblio/Format/BibTeX.py:344 Pyblio/Format/BibTeX.py:363
 #, fuzzy, python-format
 #| msgid "%s:%d: key `%s' already defined"
 msgid "%s:%d: key “%s” already defined"
 msgstr "%s:%d: avain '%s' on jo määritelty"
 
-#: ../Pyblio/GnomeUI/Config.py:147 ../Pyblio/GnomeUI/Fields.py:417
+#: Pyblio/GnomeUI/Config.py:135 Pyblio/GnomeUI/Fields.py:417
 msgid ""
 "Some changes require to restart Pybliographic\n"
 "to be correctly taken into account"
@@ -121,147 +166,125 @@ msgstr ""
 "Pybliographer pitää käynnistää uudelleen, jotta\n"
 "eräät muutokset tulevat voimaan."
 
-#: ../Pyblio/GnomeUI/Config.py:429
+#: Pyblio/GnomeUI/Config.py:417
 msgid "Add"
 msgstr "Lisää"
 
-#: ../Pyblio/GnomeUI/Config.py:432
+#: Pyblio/GnomeUI/Config.py:420
 msgid "Update"
 msgstr "Päivitä"
 
-#: ../Pyblio/GnomeUI/Config.py:435 ../Pyblio/GnomeUI/Config.py:549
+#: Pyblio/GnomeUI/Config.py:423 Pyblio/GnomeUI/Config.py:537
 msgid "Remove"
 msgstr "Poista"
 
-#: ../Pyblio/GnomeUI/Config.py:546
+#: Pyblio/GnomeUI/Config.py:534
 msgid "Set"
 msgstr "Aseta"
 
-#: ../Pyblio/GnomeUI/Config.py:561
+#: Pyblio/GnomeUI/Config.py:549
 msgid "Key:"
 msgstr "Avain:"
 
-#: ../Pyblio/GnomeUI/Config.py:563
+#: Pyblio/GnomeUI/Config.py:551
 msgid "Value:"
 msgstr "Arvo:"
 
 #. id     stock            label         accel   tooltip   callback
-#: ../Pyblio/GnomeUI/Document.py:145
+#: Pyblio/GnomeUI/Document.py:144
 msgid "_File"
 msgstr "_Tiedosto"
 
-#: ../Pyblio/GnomeUI/Document.py:146
+#: Pyblio/GnomeUI/Document.py:145
 msgid "_Edit"
 msgstr "_Muokkaa"
 
-#: ../Pyblio/GnomeUI/Document.py:147
+#: Pyblio/GnomeUI/Document.py:146
 msgid "_View"
 msgstr "_Näytä"
 
-#: ../Pyblio/GnomeUI/Document.py:148
+#: Pyblio/GnomeUI/Document.py:147
 msgid "_Cite"
 msgstr "_Lainaus"
 
-#: ../Pyblio/GnomeUI/Document.py:149
+#: Pyblio/GnomeUI/Document.py:148
 msgid "_Settings"
 msgstr "_Asetukset"
 
-#: ../Pyblio/GnomeUI/Document.py:150
+#: Pyblio/GnomeUI/Document.py:149
 msgid "_Help"
 msgstr "O_hje"
 
-#: ../Pyblio/GnomeUI/Document.py:151
+#: Pyblio/GnomeUI/Document.py:150
 msgid "Recent documents"
 msgstr "Äskettäiset asiakirjat"
 
-#: ../Pyblio/GnomeUI/Document.py:154
+#: Pyblio/GnomeUI/Document.py:153
 msgid "Open a file"
 msgstr "Avaa tiedosto"
 
-#: ../Pyblio/GnomeUI/Document.py:155
-msgid "Open _Location"
-msgstr "Avaa _sijainti"
+#: Pyblio/GnomeUI/Document.py:154
+msgid "Open _Location…"
+msgstr "Avaa _sijainti…"
 
-#: ../Pyblio/GnomeUI/Document.py:156
+#: Pyblio/GnomeUI/Document.py:155
 msgid "Save the current file"
 msgstr "Tallenna nykyinen tiedosto"
 
-#: ../Pyblio/GnomeUI/Document.py:161
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:3
-#, fuzzy
-#| msgid "Merge With..."
+#: Pyblio/GnomeUI/Document.py:160
 msgid "Merge With…"
-msgstr "Yhdistä kohteeseen..."
+msgstr "Yhdistä kohteeseen…"
 
-#: ../Pyblio/GnomeUI/Document.py:162
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:4
-#, fuzzy
-#| msgid "Medline Query"
+#: Pyblio/GnomeUI/Document.py:161
 msgid "Medline Query…"
-msgstr "Medline-kysely"
+msgstr "Medline-kysely…"
 
-#: ../Pyblio/GnomeUI/Document.py:170
+#: Pyblio/GnomeUI/Document.py:169
 msgid "Add a new entry"
 msgstr "Lisää uusi kohta"
 
-#: ../Pyblio/GnomeUI/Document.py:175
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:9
-#, fuzzy
-#| msgid "S_ort..."
+#: Pyblio/GnomeUI/Document.py:174
 msgid "S_ort…"
-msgstr "_Järjestä..."
+msgstr "_Järjestä…"
 
-#: ../Pyblio/GnomeUI/Document.py:176
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:11
-#, fuzzy
-#| msgid "Cite"
+#: Pyblio/GnomeUI/Document.py:175
 msgid "Cite…"
-msgstr "Lainaa"
+msgstr "Lainaa…"
 
-#: ../Pyblio/GnomeUI/Document.py:176
+#: Pyblio/GnomeUI/Document.py:175
 msgid "Cite key(s)"
 msgstr "Lainausten avaimet"
 
-#: ../Pyblio/GnomeUI/Document.py:177
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:12
+#: Pyblio/GnomeUI/Document.py:176
 msgid "Format…"
 msgstr "Muotoilu…"
 
-#: ../Pyblio/GnomeUI/Document.py:179
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:14
+#: Pyblio/GnomeUI/Document.py:178
 msgid "Fields…"
 msgstr "Kentät…"
 
-#: ../Pyblio/GnomeUI/Document.py:181
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:15
+#: Pyblio/GnomeUI/Document.py:180
 msgid "Forget all changes"
 msgstr "Unohda kaikki muutokset"
 
-#: ../Pyblio/GnomeUI/Document.py:185
+#: Pyblio/GnomeUI/Document.py:184
 msgid "_Resource"
 msgstr "_Resurssi"
 
-#: ../Pyblio/GnomeUI/Document.py:236
-msgid "Quick search"
-msgstr "Nopea haku"
-
-#: ../Pyblio/GnomeUI/Document.py:310
+#: Pyblio/GnomeUI/Document.py:301
 msgid "Unnamed bibliographic database"
 msgstr "Nimeämätön lähdetietokanta"
 
-#: ../Pyblio/GnomeUI/Document.py:393
-#, fuzzy, python-format
-#| msgid ""
-#| "can't open file `%s' for writing:\n"
-#| "%s"
+#: Pyblio/GnomeUI/Document.py:384
+#, python-format
 msgid ""
 "can’t open file “%s” for writing:\n"
 "%s"
 msgstr ""
-"tiedostoa '%s' ei voi avata kirjoitettavaksi:\n"
+"tiedostoa “%s” ei voi avata kirjoitettavaksi:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:414
+#: Pyblio/GnomeUI/Document.py:405
 #, fuzzy, python-format
 #| msgid ""
 #| "Error while parsing `%s':\n"
@@ -273,51 +296,43 @@ msgstr ""
 "Virhe jäsentäessä tiedostoa '%s':\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:430
+#: Pyblio/GnomeUI/Document.py:421
 msgid "New database"
 msgstr "Uusi tietokanta"
 
-#: ../Pyblio/GnomeUI/Document.py:438 ../Pyblio/GnomeUI/Document.py:442
+#: Pyblio/GnomeUI/Document.py:429 Pyblio/GnomeUI/Document.py:433
 msgid "[no entry]"
 msgstr "[ei merkintöjä]"
 
-#: ../Pyblio/GnomeUI/Document.py:439
+#: Pyblio/GnomeUI/Document.py:430
 msgid "[1 entry]"
 msgstr "[1 merkintä]"
 
-#: ../Pyblio/GnomeUI/Document.py:440
+#: Pyblio/GnomeUI/Document.py:431
 #, python-format
 msgid "[%d entries]"
 msgstr "[%d merkintää]"
 
-#: ../Pyblio/GnomeUI/Document.py:443
+#: Pyblio/GnomeUI/Document.py:434
 #, python-format
 msgid "[%d/1 entry]"
 msgstr "[%d/1 merkintää]"
 
-#: ../Pyblio/GnomeUI/Document.py:444
+#: Pyblio/GnomeUI/Document.py:435
 #, python-format
 msgid "[%d/%d entries]"
 msgstr "[%d/%d merkintää]"
 
-#: ../Pyblio/GnomeUI/Document.py:449
+#: Pyblio/GnomeUI/Document.py:440
 msgid "[modified]"
 msgstr "[muokattu]"
 
-#: ../Pyblio/GnomeUI/Document.py:452
+#: Pyblio/GnomeUI/Document.py:443
 #, python-format
 msgid "view limited to: %s"
 msgstr "Rajattu näkymä arvoon: %s"
 
-#: ../Pyblio/GnomeUI/Document.py:465
-msgid ""
-"The database has been modified.\n"
-"Discard changes?"
-msgstr ""
-"Tietokantaa on muutettu.\n"
-"Hylätäänkö muutokset?"
-
-#: ../Pyblio/GnomeUI/Document.py:469
+#: Pyblio/GnomeUI/Document.py:457
 msgid ""
 "The database has been modified.\n"
 "Save changes?"
@@ -325,49 +340,43 @@ msgstr ""
 "Tietokantaa on muutettu.\n"
 "Tallennetaanko muutokset?"
 
-#: ../Pyblio/GnomeUI/Document.py:490
-#, fuzzy
-#| msgid ""
-#| "The database has been externally modified.\n"
-#| "Overwrite changes ?"
+#: Pyblio/GnomeUI/Document.py:477
 msgid ""
 "The database has been externally modified.\n"
 "Overwrite changes?"
 msgstr ""
 "Tietokantaa on muutettu muualta.\n"
-"Haluatko että muutokset korvautuvat?"
+"Korvataanko muutokset?"
 
 #. no result.
-#: ../Pyblio/GnomeUI/Document.py:519
+#: Pyblio/GnomeUI/Document.py:506
 msgid "Your query returned no result"
 msgstr "Kysely ei palauttanaut tuloksia"
 
 #. error
-#: ../Pyblio/GnomeUI/Document.py:523
-#, fuzzy
-#| msgid "Enter your Medline Query"
+#: Pyblio/GnomeUI/Document.py:510
 msgid "An error occurred during Medline Query"
-msgstr "Syötä Medline-kysely"
+msgstr "Medline-kyselyn aikana tapahtui virhe"
 
 #. get a new file name
-#: ../Pyblio/GnomeUI/Document.py:533
+#: Pyblio/GnomeUI/Document.py:520
 msgid "Merge file"
 msgstr "Lisää tiedosto"
 
-#: ../Pyblio/GnomeUI/Document.py:546 ../Pyblio/GnomeUI/Document.py:633
+#: Pyblio/GnomeUI/Document.py:534 Pyblio/GnomeUI/Document.py:622
 msgid "Open error"
 msgstr "Avausvirhe"
 
-#: ../Pyblio/GnomeUI/Document.py:570
+#: Pyblio/GnomeUI/Document.py:558
 msgid "Merge status"
 msgstr "Lisäyksen tila"
 
 #. get a new file name
-#: ../Pyblio/GnomeUI/Document.py:581
+#: Pyblio/GnomeUI/Document.py:569
 msgid "Open file"
 msgstr "Avaa tiedosto"
 
-#: ../Pyblio/GnomeUI/Document.py:619
+#: Pyblio/GnomeUI/Document.py:608
 msgid ""
 "An autosave file was found which is newer than the original file.\n"
 "Do you want to restore it?"
@@ -375,8 +384,8 @@ msgstr ""
 "Automaattitallennus löytyi ja se on uudempi kuin alkuperäinen tiedosto.\n"
 "Haluatko palauttaa sen?"
 
-#: ../Pyblio/GnomeUI/Document.py:654 ../Pyblio/GnomeUI/Document.py:795
-#: ../Pyblio/GnomeUI/Document.py:855
+#: Pyblio/GnomeUI/Document.py:643 Pyblio/GnomeUI/Document.py:786
+#: Pyblio/GnomeUI/Document.py:846
 #, fuzzy, python-format
 #| msgid ""
 #| "Unable to remove autosave file `%s':\n"
@@ -388,7 +397,7 @@ msgstr ""
 "Automaattitallennusta \"%s\" ei voi poistaa:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:705
+#: Pyblio/GnomeUI/Document.py:694
 #, python-format
 msgid ""
 "Error during autosaving:\n"
@@ -397,23 +406,16 @@ msgstr ""
 "Virhe automaattitallennuksessa:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:733
-#, fuzzy, python-format
-#| msgid ""
-#| "Unable to save `%s':\n"
-#| "%s"
+#: Pyblio/GnomeUI/Document.py:722
+#, python-format
 msgid ""
 "Unable to save “%s”:\n"
 "%s"
 msgstr ""
-"Ei voi tallentaa tiedostoa '%s':\n"
+"Ei voi tallentaa tiedostoa “%s”:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:741
-#, fuzzy
-#| msgid ""
-#| "An internal error occured during saving\n"
-#| "Try to Save As..."
+#: Pyblio/GnomeUI/Document.py:730
 msgid ""
 "An internal error occurred during saving\n"
 "Try to Save As…"
@@ -421,23 +423,21 @@ msgstr ""
 "Sisäinen virhe tapahtui tallennettaessa.\n"
 "Yritä tallentaa tiedosto toisella nimellä."
 
-#: ../Pyblio/GnomeUI/Document.py:756
+#. get a new file name
+#: Pyblio/GnomeUI/Document.py:744
 msgid "Save As…"
 msgstr "Tallenna nimellä…"
 
-#: ../Pyblio/GnomeUI/Document.py:762
-#, fuzzy, python-format
-#| msgid ""
-#| "The file `%s' already exists.\n"
-#| "Overwrite it ?"
+#: Pyblio/GnomeUI/Document.py:753
+#, python-format
 msgid ""
 "The file “%s” already exists.\n"
 "Overwrite it?"
 msgstr ""
-"Tiedosto '%s' on jo olemassa.\n"
+"Tiedosto “%s” on jo olemassa.\n"
 "Haluatko korvata sen?"
 
-#: ../Pyblio/GnomeUI/Document.py:769
+#: Pyblio/GnomeUI/Document.py:760
 #, python-format
 msgid ""
 "During opening:\n"
@@ -446,11 +446,11 @@ msgstr ""
 "Avatessa:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:807
+#: Pyblio/GnomeUI/Document.py:798
 msgid "Reopen error"
 msgstr "Uudelleenavausvirhe"
 
-#: ../Pyblio/GnomeUI/Document.py:880
+#: Pyblio/GnomeUI/Document.py:871
 #, fuzzy, python-format
 #| msgid ""
 #| "An entry called `%s' already exists.\n"
@@ -462,35 +462,30 @@ msgstr ""
 "Merkintä, jonka nimi on '%s', on jo olemassa.\n"
 "Nimeä uudelleen ja lisää siitä huolimatta?"
 
-#: ../Pyblio/GnomeUI/Document.py:917
-#, fuzzy
-#| msgid "Really remove all the entries ?"
+#: Pyblio/GnomeUI/Document.py:908
 msgid "Really remove all the entries?"
 msgstr "Haluatko todella poistaa kaikki merkinnät?"
 
-#: ../Pyblio/GnomeUI/Document.py:937
+#: Pyblio/GnomeUI/Document.py:928
 msgid "Create new entry"
 msgstr "Luo uusi merkintä"
 
-#: ../Pyblio/GnomeUI/Document.py:951
-#, fuzzy, python-format
-#| msgid "Really edit %d entries ?"
+#: Pyblio/GnomeUI/Document.py:942
+#, python-format
 msgid "Really edit %d entries?"
 msgstr "Haluatko todella muokata %d merkintää?"
 
-#: ../Pyblio/GnomeUI/Document.py:998
-#, fuzzy, python-format
-#| msgid "Remove all the %d entries ?"
+#: Pyblio/GnomeUI/Document.py:989
+#, python-format
 msgid "Remove all the %d entries?"
 msgstr "Haluatko poistaa kaikki %d merkintää?"
 
-#: ../Pyblio/GnomeUI/Document.py:1000
-#, fuzzy, python-format
-#| msgid "Remove entry `%s' ?"
+#: Pyblio/GnomeUI/Document.py:991
+#, python-format
 msgid "Remove entry “%s”?"
-msgstr "Haluatko poistaa merkinnän '%s'?"
+msgstr "Haluatko poistaa merkinnän “%s”?"
 
-#: ../Pyblio/GnomeUI/Document.py:1019
+#: Pyblio/GnomeUI/Document.py:1010
 msgid ""
 "your search text must contain\n"
 "latin-1 characters only"
@@ -498,11 +493,8 @@ msgstr ""
 "Haettava teksti saa sisältää\n"
 "ainoastaan latin1-merkistön merkkejä"
 
-#: ../Pyblio/GnomeUI/Document.py:1098 ../Pyblio/GnomeUI/Document.py:1106
-#, fuzzy, python-format
-#| msgid ""
-#| "Can't connect to LyX:\n"
-#| "%s"
+#: Pyblio/GnomeUI/Document.py:1089 Pyblio/GnomeUI/Document.py:1097
+#, python-format
 msgid ""
 "Can’t connect to LyX:\n"
 "%s"
@@ -510,11 +502,23 @@ msgstr ""
 "LyXiin ei saada yhteyttä:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:1222
+#: Pyblio/GnomeUI/Document.py:1156
+msgid "Select a column to search in first"
+msgstr ""
+
+#: Pyblio/GnomeUI/Document.py:1168
+#, python-format
+msgid "Searching for “%s”…"
+msgstr "Etsitään “%s”…"
+
+#: Pyblio/GnomeUI/Document.py:1172
 #, fuzzy, python-format
-#| msgid ""
-#| "Can't display documentation:\n"
-#| "%s"
+#| msgid "can't find style `%s'"
+msgid "Cannot find “%s”…"
+msgstr "tyyliä '%s' ei löydy"
+
+#: Pyblio/GnomeUI/Document.py:1203
+#, python-format
 msgid ""
 "Can’t display documentation:\n"
 "%s"
@@ -522,169 +526,153 @@ msgstr ""
 "Dokumentaatiota ei voi näyttää:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:1232
+#: Pyblio/GnomeUI/Document.py:1225
+msgid "GNOME Translation Team"
+msgstr "Gnomen kotoistustiimi"
+
+#: Pyblio/GnomeUI/Document.py:1226
 msgid "This program is copyrighted under the GNU GPL"
 msgstr "Tämä ohjelma on GNU GPL -lisenssin alaisuudessa."
 
-#: ../Pyblio/GnomeUI/Document.py:1233
+#: Pyblio/GnomeUI/Document.py:1227
 #, fuzzy
 #| msgid "Gnome interface to the Pybliographer system."
 msgid "GNOME interface to the Pybliographer system."
 msgstr "Gnome-käyttöliittymä Pybliographer-järjestelmään."
 
-#: ../Pyblio/GnomeUI/Document.py:1244
-#, fuzzy
-#| msgid "Gnome Translation Team"
-msgid "GNOME Translation Team"
-msgstr "Gnomen kotoistustiimi"
-
-#: ../Pyblio/GnomeUI/Document.py:1250
+#: Pyblio/GnomeUI/Document.py:1233
 msgid "Pybliographer Home Page"
 msgstr "Pybliographerin kotisivut"
 
-#: ../Pyblio/GnomeUI/Editor.py:36
+#: Pyblio/GnomeUI/Editor.py:41
 msgid "Last Name, First Name"
 msgstr "Sukunimi, etunimi"
 
-#: ../Pyblio/GnomeUI/Editor.py:37 ../Pyblio/GnomeUI/Editor.py:1293
-#: ../Pyblio/GnomeUI/Fields.py:39 ../Pyblio/GnomeUI/glade/config1.glade.h:10
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:9
+#: Pyblio/GnomeUI/Editor.py:42 Pyblio/GnomeUI/Editor.py:1292
+#: Pyblio/GnomeUI/Fields.py:42
 msgid "Text"
 msgstr "Teksti"
 
-#: ../Pyblio/GnomeUI/Editor.py:134 ../Pyblio/GnomeUI/Editor.py:1004
+#: Pyblio/GnomeUI/Editor.py:139 Pyblio/GnomeUI/Editor.py:1006
 msgid "Error in native string parsing"
 msgstr "Virhe perusmerkkijonotulkissa"
 
-#: ../Pyblio/GnomeUI/Editor.py:313
+#: Pyblio/GnomeUI/Editor.py:318
 msgid "Day"
 msgstr "Päivä"
 
-#: ../Pyblio/GnomeUI/Editor.py:322
+#: Pyblio/GnomeUI/Editor.py:327
 msgid "Month"
 msgstr "Kuukausi"
 
-#: ../Pyblio/GnomeUI/Editor.py:331
+#: Pyblio/GnomeUI/Editor.py:336
 msgid "Year"
 msgstr "Vuosi"
 
-#: ../Pyblio/GnomeUI/Editor.py:356
-msgid "Invalid day field in date"
-msgstr "Virheellinen päivä päivämäärässä"
-
-#: ../Pyblio/GnomeUI/Editor.py:364
-msgid "Invalid month field in date"
-msgstr "Virheellinen kuukausi päivämäärässä"
-
-#: ../Pyblio/GnomeUI/Editor.py:372
-msgid "Invalid year field in date"
-msgstr "Virheellinen vuosi päivämäärässä"
-
 #. A delete button
-#: ../Pyblio/GnomeUI/Editor.py:420 ../Pyblio/GnomeUI/Search.py:86
+#: Pyblio/GnomeUI/Editor.py:425 Pyblio/GnomeUI/Search.py:86
 msgid "Delete"
 msgstr "Poista"
 
-#: ../Pyblio/GnomeUI/Editor.py:431 ../Pyblio/GnomeUI/Editor.py:444
-#: ../Pyblio/GnomeUI/Editor.py:447
+#: Pyblio/GnomeUI/Editor.py:436 Pyblio/GnomeUI/Editor.py:449
+#: Pyblio/GnomeUI/Editor.py:452
 msgid "[ Drop an Entry here ]"
 msgstr "[ Pudota kohta tähän ]"
 
-#: ../Pyblio/GnomeUI/Editor.py:503
+#: Pyblio/GnomeUI/Editor.py:508
 msgid "Browse…"
 msgstr "Selaa…"
 
-#: ../Pyblio/GnomeUI/Editor.py:526
+#: Pyblio/GnomeUI/Editor.py:531
 msgid "Select file"
 msgstr "Valitse tiedosto"
 
-#: ../Pyblio/GnomeUI/Editor.py:550 ../Pyblio/GnomeUI/Fields.py:236
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:12
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:11
+#: Pyblio/GnomeUI/Editor.py:555 Pyblio/GnomeUI/Fields.py:239
+#: Pyblio/GnomeUI/glade/fields.ui:255
 msgid "Entry type"
 msgstr "Merkintätyyppi"
 
-#: ../Pyblio/GnomeUI/Editor.py:552
+#: Pyblio/GnomeUI/Editor.py:557
 msgid "Key"
 msgstr "Avain"
 
-#: ../Pyblio/GnomeUI/Editor.py:601
+#: Pyblio/GnomeUI/Editor.py:606
 msgid "Create Field"
 msgstr "Luo kenttä"
 
 #. navigation buttons
-#: ../Pyblio/GnomeUI/Editor.py:606
+#: Pyblio/GnomeUI/Editor.py:611
 msgid "Back"
 msgstr "Takaisin"
 
-#: ../Pyblio/GnomeUI/Editor.py:609
+#: Pyblio/GnomeUI/Editor.py:614
 msgid "Next"
 msgstr "Seuraava"
 
-#: ../Pyblio/GnomeUI/Editor.py:729 ../Pyblio/GnomeUI/Fields.py:451
+#: Pyblio/GnomeUI/Editor.py:732 Pyblio/GnomeUI/Fields.py:449
 msgid "Mandatory"
 msgstr "Pakollinen"
 
-#: ../Pyblio/GnomeUI/Editor.py:729 ../Pyblio/GnomeUI/Fields.py:452
+#: Pyblio/GnomeUI/Editor.py:732 Pyblio/GnomeUI/Fields.py:450
 msgid "Optional"
 msgstr "Valinnainen"
 
-#: ../Pyblio/GnomeUI/Editor.py:729 ../Pyblio/GnomeUI/Editor.py:1208
+#: Pyblio/GnomeUI/Editor.py:732 Pyblio/GnomeUI/Editor.py:1209
 msgid "Notes"
 msgstr "Muistilaput"
 
-#: ../Pyblio/GnomeUI/Editor.py:729
+#: Pyblio/GnomeUI/Editor.py:732
 msgid "Extra"
 msgstr "Lisä"
 
-#: ../Pyblio/GnomeUI/Editor.py:910
+#: Pyblio/GnomeUI/Editor.py:911
 msgid "Invalid key format"
 msgstr "Virheellinen avainmuoto"
 
-#: ../Pyblio/GnomeUI/Editor.py:918
+#: Pyblio/GnomeUI/Editor.py:920
 #, python-format
 msgid "Key “%s” already exists"
 msgstr "Avain “%s” on jo olemassa"
 
-#: ../Pyblio/GnomeUI/Editor.py:935
+#: Pyblio/GnomeUI/Editor.py:937
 #, fuzzy, python-format
 #| msgid "The `%s' field contains a non Latin-1 symbol"
 msgid "The “%s” field contains a non Latin-1 symbol"
 msgstr "Kenttä \"%s\" sisältää merkin joka ei ole latin1-merkistöstä"
 
-#: ../Pyblio/GnomeUI/Editor.py:997
+#: Pyblio/GnomeUI/Editor.py:1000
 msgid "Your text contains non Latin-1 symbols"
 msgstr "Teksti sisältää muita kuin latin1-merkistön merkkejä"
 
-#: ../Pyblio/GnomeUI/Editor.py:1024
+#: Pyblio/GnomeUI/Editor.py:1026
 msgid "Edit entry"
 msgstr "Muokkaa merkintää"
 
-#: ../Pyblio/GnomeUI/Editor.py:1038 ../Pyblio/GnomeUI/Editor.py:1103
+#: Pyblio/GnomeUI/Editor.py:1040 Pyblio/GnomeUI/Editor.py:1104
 msgid "Native Editing"
 msgstr "Perusmuokkaus"
 
-#: ../Pyblio/GnomeUI/Editor.py:1126
+#: Pyblio/GnomeUI/Editor.py:1127
 msgid "Standard Editing"
 msgstr "Tavallinen muokkaus"
 
-#: ../Pyblio/GnomeUI/Editor.py:1230
+#: Pyblio/GnomeUI/Editor.py:1230
 msgid "mandatory"
 msgstr "pakollinen"
 
-#: ../Pyblio/GnomeUI/Editor.py:1296
+#: Pyblio/GnomeUI/Editor.py:1295
 msgid "Enter text here"
 msgstr "Syötä teksti tähän"
 
-#: ../Pyblio/GnomeUI/Editor.py:1348
+#: Pyblio/GnomeUI/Editor.py:1347
 msgid "New Annotation Name"
 msgstr "Uuden huomautuksen nimi"
 
-#: ../Pyblio/GnomeUI/Editor.py:1354
+#: Pyblio/GnomeUI/Editor.py:1353
 msgid "Name of the new annotation:"
 msgstr "Uuden huomautuksen nimi:"
 
-#: ../Pyblio/GnomeUI/Entry.py:114
+#: Pyblio/GnomeUI/Entry.py:115
 #, python-format
 msgid ""
 "Cannot open URL:\n"
@@ -693,79 +681,75 @@ msgstr ""
 "URLia ei voi avata:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Fields.py:38
+#: Pyblio/GnomeUI/Fields.py:41
 msgid "Authors"
 msgstr "Kirjoittajat"
 
-#: ../Pyblio/GnomeUI/Fields.py:40
+#: Pyblio/GnomeUI/Fields.py:43
 msgid "Long Text"
 msgstr "Pitkä teksti"
 
-#: ../Pyblio/GnomeUI/Fields.py:41 ../Pyblio/GnomeUI/glade/config1.glade.h:9
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:8
+#: Pyblio/GnomeUI/Fields.py:44
 msgid "URL"
 msgstr "URL"
 
-#: ../Pyblio/GnomeUI/Fields.py:42
+#: Pyblio/GnomeUI/Fields.py:45
 msgid "Reference"
 msgstr "Viittaus"
 
-#: ../Pyblio/GnomeUI/Fields.py:43
+#: Pyblio/GnomeUI/Fields.py:46
 msgid "Date"
 msgstr "Päivämäärä"
 
-#: ../Pyblio/GnomeUI/Fields.py:124 ../Pyblio/GnomeUI/glade/config1.glade.h:7
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:6
+#: Pyblio/GnomeUI/Fields.py:123
 msgid "Name"
 msgstr "Nimi"
 
-#: ../Pyblio/GnomeUI/Fields.py:127 ../Pyblio/GnomeUI/glade/config1.glade.h:6
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:5
+#: Pyblio/GnomeUI/Fields.py:126 Pyblio/GnomeUI/glade/fields.ui:167
 msgid "Type"
 msgstr "Tyyppi"
 
-#: ../Pyblio/GnomeUI/Fields.py:300
+#: Pyblio/GnomeUI/Fields.py:303
 msgid "Available"
 msgstr "Käytettävissä"
 
-#: ../Pyblio/GnomeUI/Fields.py:310
+#: Pyblio/GnomeUI/Fields.py:313
 msgid "Associated"
 msgstr "Yhteenkuuluva"
 
-#: ../Pyblio/GnomeUI/Fields.py:321
+#: Pyblio/GnomeUI/Fields.py:321
 msgid "Please, select an entry type from previous page."
 msgstr "Valitse syötteen tyyppi edelliseltä sivulta."
 
-#: ../Pyblio/GnomeUI/Fields.py:332
+#: Pyblio/GnomeUI/Fields.py:332
 #, python-format
 msgid "Fields associated with <b>%s</b> entry type"
 msgstr "Syötetyyppin <b>%s</b> liittyvät kentät"
 
-#: ../Pyblio/GnomeUI/FileSelector.py:40
+#: Pyblio/GnomeUI/FileSelector.py:37
 msgid "File"
 msgstr "Tiedosto"
 
-#: ../Pyblio/GnomeUI/FileSelector.py:77
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:4
+#: Pyblio/GnomeUI/FileSelector.py:74 Pyblio/GnomeUI/glade/openurl.ui:101
 msgid "Bibliography type:"
 msgstr "Bibliografian tyyppi:"
 
-#: ../Pyblio/GnomeUI/FileSelector.py:94 ../Pyblio/GnomeUI/OpenURL.py:62
+#: Pyblio/GnomeUI/FileSelector.py:91 Pyblio/GnomeUI/OpenURL.py:61
 #, fuzzy
 #| msgid " - According to file suffix - "
 msgid " — According to file suffix — "
 msgstr "- Tiedostopäätteen mukaan - "
 
 #. The root of the search tree is the full database
-#: ../Pyblio/GnomeUI/Search.py:71
+#: Pyblio/GnomeUI/Search.py:68
 msgid "Full database"
 msgstr "Koko tietokanta"
 
-#: ../Pyblio/GnomeUI/Search.py:142
+#: Pyblio/GnomeUI/Search.py:136
 msgid "internal error during evaluation"
 msgstr "sisäinen virhe tapahtui selvitettäessä lauseketta"
 
-#: ../Pyblio/GnomeUI/Search.py:196
+#: Pyblio/GnomeUI/Search.py:189
 #, python-format
 msgid ""
 "while compiling %s\n"
@@ -775,86 +759,44 @@ msgstr ""
 "virhe: %s"
 
 #. These are additional search fields
-#: ../Pyblio/GnomeUI/Sort.py:97
+#: Pyblio/GnomeUI/Sort.py:97
 msgid "[Entry Type]"
 msgstr "[Merkinnän tyyppi]"
 
-#: ../Pyblio/GnomeUI/Sort.py:98
+#: Pyblio/GnomeUI/Sort.py:98
 msgid "[Key Value]"
 msgstr "[Avaimen arvo]"
 
-#: ../Pyblio/GnomeUI/Utils.py:203
-msgid "The following errors occurred:\n"
-msgstr "Tapahtui seuraavat virheet:\n"
+#: Pyblio/GnomeUI/Utils.py:170
+msgid "The following errors occurred:"
+msgstr "Tapahtui seuraavat virheet:"
 
-#: ../Pyblio/GnomeUI/__init__.py:45
+#: Pyblio/GnomeUI/__init__.py:48
 #, python-format
 msgid "This is Pybliographic %s [Python %s, Gtk %s, PyGTK %s]"
 msgstr "Tämä on Pybliographic %s [Python %s, Gtk %s, PyGTK %s]"
 
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:1
+#: Pyblio/GnomeUI/glade/config.ui:7
 msgid "Pybliographer Configuration"
 msgstr "Pybliographerin asetukset"
 
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:2
-msgid "FIELDS DEFINITION"
-msgstr "KENTTIEN MÄÄRITTELY"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:3
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:2
-msgid "Name "
-msgstr "Nimi "
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:4
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:3
-msgid "Editor"
-msgstr "Toimittaja"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:5
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:4
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:5
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:3
-#: ../Pyblio/GnomeUI/glade/search.glade.h:5
-msgid "*"
-msgstr "*"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:8
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:7
-msgid "Datum"
-msgstr "Päiväys"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:11
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:10
-msgid "Fields "
-msgstr "Kentät"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:13
-msgid "A"
-msgstr "A"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:14
-msgid "standard fields"
-msgstr "standardikentät"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:15
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:19
-msgid "Entries"
-msgstr "Merkinnät"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:16
-msgid "<b>Entry type</b>"
-msgstr "<b>Merkintätyyppi</b>"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:17
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:21
-msgid "Association"
-msgstr "Yhteenkuuluvuus"
-
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:1
+#: Pyblio/GnomeUI/glade/fields.ui:9
 msgid "Entry types and field names configuration"
 msgstr "Viitetyyppien ja kenttänimien määrittely"
 
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:12
+#: Pyblio/GnomeUI/glade/fields.ui:137
+msgid "Name "
+msgstr "Nimi "
+
+#: Pyblio/GnomeUI/glade/fields.ui:149
+msgid "Editor"
+msgstr "Toimittaja"
+
+#: Pyblio/GnomeUI/glade/fields.ui:211
+msgid "Fields "
+msgstr "Kentät"
+
+#: Pyblio/GnomeUI/glade/fields.ui:286
 msgid ""
 "Select an entry type and specify \n"
 "its associated (mandatory and\n"
@@ -870,43 +812,49 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:20
+#: Pyblio/GnomeUI/glade/fields.ui:318
+msgid "Entries"
+msgstr "Merkinnät"
+
+#: Pyblio/GnomeUI/glade/fields.ui:341
 msgid "Information for <b>Article</b> entry type"
 msgstr "Tietoja <b>Artikkeli</b>-tyyppisestä kohdasta"
 
-#: ../Pyblio/GnomeUI/glade/format.glade.h:1
+#: Pyblio/GnomeUI/glade/fields.ui:420
+msgid "Association"
+msgstr "Yhteenkuuluvuus"
+
+#: Pyblio/GnomeUI/glade/format.ui:7
 msgid "Format entries"
 msgstr "Muotoilumerkinnät"
 
-#: ../Pyblio/GnomeUI/glade/format.glade.h:2
+#: Pyblio/GnomeUI/glade/format.ui:75
 msgid "Bibliography style:"
 msgstr "Bibliografian tyyli:"
 
-#: ../Pyblio/GnomeUI/glade/format.glade.h:3
+#: Pyblio/GnomeUI/glade/format.ui:87
 msgid "Output format:"
 msgstr "Tulostemuoto:"
 
-#: ../Pyblio/GnomeUI/glade/format.glade.h:4
-msgid "Style Selection"
-msgstr "Tyylin valinta"
-
-#: ../Pyblio/GnomeUI/glade/format.glade.h:5
-msgid "Save Formatted as"
-msgstr "Tallenna muotoiltuna nimellä"
-
-#: ../Pyblio/GnomeUI/glade/format.glade.h:6
+#: Pyblio/GnomeUI/glade/format.ui:101
 msgid "Output file:"
 msgstr "Tulostiedosto:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:1
+#: Pyblio/GnomeUI/glade/format.ui:125
+#, fuzzy
+#| msgid "Save Formatted as"
+msgid "Save formatted as"
+msgstr "Tallenna muotoiltuna nimellä"
+
+#: Pyblio/GnomeUI/glade/medline.ui:7
 msgid "Medline Query"
 msgstr "Medline-kysely"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:2
+#: Pyblio/GnomeUI/glade/medline.ui:70
 msgid "Enter your Medline Query"
 msgstr "Syötä Medline-kysely"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:3
+#: Pyblio/GnomeUI/glade/medline.ui:89
 msgid ""
 "Search \n"
 "PubMed for:"
@@ -914,7 +862,7 @@ msgstr ""
 "Etsi \n"
 "PubMedistä: "
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:6
+#: Pyblio/GnomeUI/glade/medline.ui:118
 msgid ""
 "Maximum number\n"
 "of results:"
@@ -922,7 +870,7 @@ msgstr ""
 "Tuloksia\n"
 "enintään:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:8
+#: Pyblio/GnomeUI/glade/medline.ui:149
 msgid ""
 "Starting listing at\n"
 "result number:"
@@ -930,7 +878,7 @@ msgstr ""
 "Aloita listaus\n"
 "tulosnumerosta:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:10
+#: Pyblio/GnomeUI/glade/medline.ui:216
 msgid ""
 "Only items \n"
 "with abstracts"
@@ -938,7 +886,7 @@ msgstr ""
 "Vain julkaisut\n"
 "joissa on johdanto"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:12
+#: Pyblio/GnomeUI/glade/medline.ui:233
 msgid ""
 "Only items \n"
 "ahead of print"
@@ -946,15 +894,15 @@ msgstr ""
 "Vain julkaisut\n"
 "joita ei ole julkaistu"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:14
+#: Pyblio/GnomeUI/glade/medline.ui:385
 msgid "From:"
 msgstr "Alkaen:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:15
+#: Pyblio/GnomeUI/glade/medline.ui:412
 msgid "To:"
 msgstr "Päättyen:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:16
+#: Pyblio/GnomeUI/glade/medline.ui:446
 msgid ""
 "Use the format YYYY/MM/DD\n"
 "Month and day are optional."
@@ -962,137 +910,87 @@ msgstr ""
 "Käytä muotoa VVVV/KK/PP\n"
 "kuukausi ja päivä ovat valinnaisia."
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:18
+#: Pyblio/GnomeUI/glade/medline.ui:461
 msgid "Limited to:"
 msgstr "Rajattu arvoon:"
 
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:1
+#: Pyblio/GnomeUI/glade/openurl.ui:8
 msgid "Open Location"
 msgstr "Avaa sijainti"
 
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:2
+#: Pyblio/GnomeUI/glade/openurl.ui:68
 msgid "Enter the location (URI) of the file you would like to open:"
 msgstr "Syötä avattavan tiedoston sijainti (URI):"
 
-#. save history
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:1 ../pybliographic.desktop.in.h:1
-msgid "Pybliographer"
-msgstr "Pybliographer"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:2
-msgid "_New"
-msgstr "_Uusi"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:5
-msgid "Previous Documents"
-msgstr "Edelliset asiakirjat"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:6
-msgid "_Add…"
-msgstr "_Lisää…"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:7
-msgid "_Edit…"
-msgstr "_Muokkaa…"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:8
-msgid "_Delete…"
-msgstr "_Poista…"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:10
-msgid "Cite"
-msgstr "Lainaa"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:13
-msgid "Settings"
-msgstr "Asetukset"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:16
-msgid "Contents"
-msgstr "Sisältö"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:17
-msgid "Open File"
-msgstr "Avaa tiedosto"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:18
-msgid "Save File"
-msgstr "Tallenna tiedosto"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:1
+#: Pyblio/GnomeUI/glade/search.ui:7
 msgid "Search"
 msgstr "Etsi"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:2
-msgid "Close"
-msgstr "Sulje"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:3
+#: Pyblio/GnomeUI/glade/search.ui:81
 msgid "Field"
 msgstr "Kenttä"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:4
+#: Pyblio/GnomeUI/glade/search.ui:93
 msgid "Pattern"
 msgstr "Etsittävä"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:6
+#: Pyblio/GnomeUI/glade/search.ui:138
 msgid "Simple Search"
 msgstr "Yksinkertainen etsintä"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:7
+#: Pyblio/GnomeUI/glade/search.ui:156
 msgid "Query"
 msgstr "Kysely"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:8
+#: Pyblio/GnomeUI/glade/search.ui:184
 msgid "Expert Search"
 msgstr "Kehittynyt haku"
 
-#: ../Pyblio/GnomeUI/glade/sort.glade.h:1
+#: Pyblio/GnomeUI/glade/sort.ui:7
 #, fuzzy
 #| msgid "Select sort criterions"
 msgid "Select sort criteria"
 msgstr "Valitse järjestysmäärittely"
 
-#: ../Pyblio/GnomeUI/glade/sort.glade.h:2
+#: Pyblio/GnomeUI/glade/sort.ui:40
 msgid "Set as default"
 msgstr "Aseta oletukseksi"
 
-#: ../Pyblio/LyX.py:38
+#: Pyblio/LyX.py:43
 #, fuzzy, python-format
 #| msgid "no input pipe `%s'"
 msgid "no input pipe “%s”"
 msgstr "lukuputkea '%s' ei ole"
 
-#: ../Pyblio/LyX.py:44
+#: Pyblio/LyX.py:50
 #, fuzzy, python-format
 #| msgid "no output pipe `%s'"
 msgid "no output pipe “%s”"
 msgstr "kirjoitusputkea '%s' ei ole"
 
-#: ../Pyblio/Open.py:97
+#: Pyblio/Open.py:99
 #, fuzzy, python-format
 #| msgid "method `%s' provides no opener"
 msgid "method “%s” provides no opener"
 msgstr "tapa '%s' ei tarjoa avaajaa"
 
-#: ../Pyblio/Open.py:105 ../Pyblio/Open.py:152
+#: Pyblio/Open.py:107 Pyblio/Open.py:154
 #, python-format
 msgid "File “%s” does not exist"
 msgstr "Tiedostoa “%s” ei ole olemassa"
 
-#: ../Pyblio/Open.py:116 ../Pyblio/Open.py:163
-#, fuzzy, python-format
-#| msgid "don't know how to open `%s'"
+#: Pyblio/Open.py:118 Pyblio/Open.py:165
+#, python-format
 msgid "don’t know how to open “%s”"
-msgstr "en tiedä kuinka tiedoston '%s' voisi avata"
+msgstr "ei tietoa kuinka tiedoston “%s” voisi avata"
 
-#: ../Pyblio/Open.py:144
+#: Pyblio/Open.py:146
 #, fuzzy, python-format
 #| msgid "method `%s' provides no iterator"
 msgid "method “%s” provides no iterator"
 msgstr "tapa '%s' ei tarjoa iteraattoria"
 
-#: ../Pyblio/Resource.py:78
+#: Pyblio/Resource.py:86
 #, python-format
 msgid ""
 "Warning: This URL is marked as Invalid or Approximate: %s\n"
@@ -1101,18 +999,16 @@ msgstr ""
 "Varoitus: Tämä URL on merkitty virheelliseksi tai arvaukseksi: %s\n"
 "Jatketaanko?"
 
-#: ../Pyblio/Resource.py:82
-#, fuzzy
-#| msgid "Determining Mime Type ... "
+#: Pyblio/Resource.py:91
 msgid "Determining Mime Type… "
-msgstr "Selvitetään MIME-tyyppi..."
+msgstr "Selvitetään MIME-tyyppi… "
 
-#: ../Pyblio/Resource.py:87
+#: Pyblio/Resource.py:96
 #, python-format
 msgid "Cannot determine mime type for item %s "
 msgstr "Kohdan %s MIME-tyyppiä ei voi selvittää"
 
-#: ../Pyblio/Resource.py:88
+#: Pyblio/Resource.py:97
 #, python-format
 msgid ""
 "URL in question is: %s\n"
@@ -1123,18 +1019,16 @@ msgstr ""
 "Tarkista URL tai annettu polku virheiden varalta.\n"
 "Yksityiskohdat: %s"
 
-#: ../Pyblio/Resource.py:99
-#, fuzzy
-#| msgid "Accessing resource ..."
+#: Pyblio/Resource.py:108
 msgid "Accessing resource…"
-msgstr "Avataan resurssia..."
+msgstr "Avataan resurssia…"
 
-#: ../Pyblio/Resource.py:117
+#: Pyblio/Resource.py:126
 #, python-format
 msgid "IOError for item %s: cannot uncompress resource."
 msgstr "IOError kohdalle %s: resurssia ei voi purkaa."
 
-#: ../Pyblio/Resource.py:118
+#: Pyblio/Resource.py:127
 #, python-format
 msgid ""
 "URL: %s\n"
@@ -1143,17 +1037,15 @@ msgstr ""
 "URL: %s\n"
 "Yksityiskohdat: %s"
 
-#: ../Pyblio/Resource.py:138
-#, fuzzy
-#| msgid "Starting application ..."
+#: Pyblio/Resource.py:148
 msgid "Starting application…"
-msgstr "Käynnistetään sovellusta..."
+msgstr "Käynnistetään sovellusta…"
 
-#: ../Pyblio/Resource.py:141
+#: Pyblio/Resource.py:151
 msgid "No application to view resource"
 msgstr "Resurssin näyttämiseen ei löydy sovellusta"
 
-#: ../Pyblio/Resource.py:142
+#: Pyblio/Resource.py:152
 #, python-format
 msgid ""
 "For mime type %s, no entry found in \n"
@@ -1166,50 +1058,49 @@ msgstr ""
 "Jos mahdollista, lisää tämä avain.\n"
 "URL: %s"
 
-#: ../Pyblio/Style/Parser.py:262
+#: Pyblio/Style/Parser.py:263
 #, fuzzy, python-format
 #| msgid "missing '%s' attribute"
 msgid "missing “%s” attribute"
 msgstr "Attribuutti \"%s\" puuttuu"
 
-#: ../Pyblio/Style/Parser.py:272
+#: Pyblio/Style/Parser.py:273
 #, python-format
 msgid "invalid opening tag: %s"
 msgstr "virheellinen avausmerkintä: %s"
 
-#: ../Pyblio/Style/Parser.py:282
+#: Pyblio/Style/Parser.py:283
 #, python-format
 msgid "invalid closing tag: %s"
 msgstr "virheellinen sulkutagi: %s"
 
-#: ../pybliographer.py:44
-#, python-format
+#: pybliographer.in:44
+#, c-format
 msgid "This is %s, version %s"
 msgstr "Tämä on %s, versio %s"
 
-#: ../pybliographer.py:48 ../pybliographer.py:55
+#: pybliographer.in:48 pybliographer.in:56
 msgid "This is free software with ABSOLUTELY NO WARRANTY."
 msgstr "Tämä on vapaata ohjelmistoa, jolla EI OLE MINKÄÄNLAISTA TAKUUTA."
 
-#: ../pybliographer.py:49
+#: pybliographer.in:49
 #, fuzzy
 #| msgid "For details, type `warranty'."
 msgid "For details, type “warranty”."
 msgstr "Jos haluat lisätietoja, niin kirjoita 'warranty'."
 
-#: ../pybliographer.py:112 ../pybliographer.py:164
-#, python-format
-#| msgid "%s: error: can't open file `%s'"
+#: pybliographer.in:113 pybliographer.in:165
+#, c-format
 msgid "%s: error: can’t open file “%s”"
 msgstr "%s: virhe: ei voida avata tiedostoa “%s”"
 
-#: ../pybliographer.py:125
-#, fuzzy, python-format
+#: pybliographer.in:126
+#, fuzzy, c-format
 #| msgid "For help, run %s and type `help' at the prompt"
 msgid "For help, run %s and type “help” at the prompt"
 msgstr "Ohjeita saadaksesi käynnistä %s ja kirjoita 'help' kehotteeseen."
 
-#: ../pybliographer.py:134
+#: pybliographer.in:135
 msgid ""
 "Useful commands:\n"
 "\thelp     to get some help\n"
@@ -1219,56 +1110,50 @@ msgstr ""
 "\thelp     näyttää ohjeita\n"
 "\tquit     lopettaa\n"
 
-#: ../pybliographic.desktop.in.h:2
-msgid "Bibliography Manager"
-msgstr "Lähdeluettelojen hallinta"
-
-#: ../pybliographic.desktop.in.h:3
-msgid "Manage bibliographic databases"
-msgstr "Hallitse lähdetietokantoja"
-
-#: ../scripts/pybliocheck.py:32
+#: scripts/pybliocheck.py:39
 #, fuzzy
 #| msgid "usage: pybliocheck <file | directory>..."
 msgid "usage: pybliocheck <file | directory>…"
 msgstr "käyttö: pybliocheck <tiedosto|kansio>..."
 
-#: ../scripts/pybliocheck.py:61
+#: scripts/pybliocheck.py:68
 #, fuzzy, python-format
 #| msgid "file `%s' is ok [%d entries]"
-msgid "file “%s” is ok [%d entries]"
-msgstr "Tiedosto \"%s\" on ok [%d kohtaa]"
+msgid "file “%s” is ok [%d entry]"
+msgid_plural "file “%s” is ok [%d entries]"
+msgstr[0] "Tiedosto \"%s\" on ok [%d kohtaa]"
+msgstr[1] "Tiedosto \"%s\" on ok [%d kohtaa]"
 
-#: ../scripts/pybliocompact.py:31
+#: scripts/pybliocompact.py:39
 #, fuzzy
 #| msgid "usage: pybliocompact <latexfile> <bibtexfiles...>"
 msgid "usage: pybliocompact <latexfile> <bibtexfiles…>"
 msgstr "usage: pybliocompact <latex-tiedosto> <bibtex-tiedostot...>"
 
-#: ../scripts/pybliocompact.py:35
+#: scripts/pybliocompact.py:43
 #, python-format
 msgid "pybliocompact: error: %s\n"
 msgstr "pybliocompact: virhe: %s\n"
 
-#: ../scripts/pybliocompact.py:100
+#: scripts/pybliocompact.py:108
 msgid "no entry"
 msgstr "ei merkintöjä"
 
-#: ../scripts/pybliocompact.py:163 ../scripts/pybliotext.py:240
+#: scripts/pybliocompact.py:171 scripts/pybliotext.py:247
 #, fuzzy, python-format
 #| msgid "can't find the following entries: %s"
 msgid "can’t find the following entries: %s"
 msgstr "seuraavia merkintöjä ei löydy: %s"
 
-#: ../scripts/pyblioconvert.py:29
+#: scripts/pyblioconvert.py:32
 msgid "usage: pyblioconvert <source>..<target> <input> [output]"
 msgstr "käyttö: pyblioconvert <lähde>..<kohde> <syöte> [tuloste]"
 
-#: ../scripts/pyblioconvert.py:38
+#: scripts/pyblioconvert.py:41
 msgid "pyblioconvert: error: bad conversion format"
 msgstr "pybconvertin virhe: väärä muunnosmuoto"
 
-#: ../scripts/pyblioformat.py:35
+#: scripts/pyblioformat.py:40
 #, fuzzy
 #| msgid ""
 #| "usage: pyblioformat [options] <database...>\n"
@@ -1309,104 +1194,102 @@ msgstr ""
 "      -v, --version\t\t\tnäyttää tämän ohjeviestin\n"
 "    "
 
-#: ../scripts/pyblioformat.py:49
+#: scripts/pyblioformat.py:54
 #, python-format
 msgid "pyblioformat: error: %s\n"
 msgstr "pyblioformat: virhe: %s\n"
 
-#: ../scripts/pyblioformat.py:55
+#: scripts/pyblioformat.py:60
 #, python-format
 msgid "pyblioformat: warning: %s\n"
 msgstr "pyblioformat: varoitus: %s\n"
 
-#: ../scripts/pyblioformat.py:94 ../scripts/pybliotext.py:252
-#: ../scripts/pybliotext.py:278 ../scripts/pybliotext.py:321
+#: scripts/pyblioformat.py:99 scripts/pybliotext.py:259
+#: scripts/pybliotext.py:285 scripts/pybliotext.py:328
 #, python-format
-#| msgid "can't open `%s': %s"
 msgid "can’t open “%s”: %s"
 msgstr "ei voida avata “%s”: %s"
 
-#: ../scripts/pyblioformat.py:101
+#: scripts/pyblioformat.py:106
 #, fuzzy, python-format
 #| msgid "unknown list `%s'"
 msgid "unknown list “%s”"
 msgstr "tuntematon lista \"%s\""
 
-#: ../scripts/pyblioformat.py:104
+#: scripts/pyblioformat.py:109
 #, fuzzy, python-format
 #| msgid "pyblioformat: available values for `%s':"
 msgid "pyblioformat: available values for “%s”:"
 msgstr "pyblioformat: saatavilla olevat arvot kentälle \"%s\":"
 
-#: ../scripts/pyblioformat.py:108
+#: scripts/pyblioformat.py:113
 #, fuzzy, python-format
 #| msgid "empty value list `%s'"
 msgid "empty value list “%s”"
 msgstr "tyhjä arvolista \"%s\""
 
-#: ../scripts/pyblioformat.py:130
+#: scripts/pyblioformat.py:135
 msgid "too few arguments"
 msgstr "liian vähän argumentteja"
 
-#: ../scripts/pyblioformat.py:137 ../scripts/pybliotext.py:117
+#: scripts/pyblioformat.py:142 scripts/pybliotext.py:124
 #, fuzzy, python-format
 #| msgid "unknown output format `%s'"
 msgid "unknown output format “%s”"
 msgstr "tuntematon tulosmuoto \"%s\""
 
-#: ../scripts/pyblioformat.py:150 ../scripts/pybliotex.py:87
-#: ../scripts/pybliotext.py:94
+#: scripts/pyblioformat.py:155 scripts/pybliotex.py:91
+#: scripts/pybliotext.py:101
 #, fuzzy, python-format
 #| msgid "can't find style `%s'"
 msgid "can’t find style “%s”"
 msgstr "tyyliä '%s' ei löydy"
 
-#: ../scripts/pyblioformat.py:153
+#: scripts/pyblioformat.py:158
 #, fuzzy, python-format
 #| msgid "pyblioformat: using style `%s', format `%s'\n"
 msgid "pyblioformat: using style “%s”, format “%s”\n"
 msgstr "pyblioformat: käytetään tyyliä \"%s\", muotoilua \"%s\"\n"
 
-#: ../scripts/pyblioformat.py:168
+#: scripts/pyblioformat.py:173
 #, fuzzy, python-format
 #| msgid "can't open header `%s': %s"
 msgid "can’t open header “%s”: %s"
 msgstr "Yläviitettä \"%s\" ei voi avata: %s"
 
-#: ../scripts/pyblioformat.py:176
+#: scripts/pyblioformat.py:181
 #, python-format
-#| msgid "can't open database: %s"
 msgid "can’t open database: %s"
 msgstr "ei voida avata tietokantaa: %s"
 
-#: ../scripts/pyblioformat.py:191
+#: scripts/pyblioformat.py:196
 #, fuzzy, python-format
 #| msgid "can't open footer `%s': %s"
 msgid "can’t open footer “%s”: %s"
 msgstr "Alaviitettä \"%s\" ei voi avata: %s"
 
-#: ../scripts/pybliotex.py:35
+#: scripts/pybliotex.py:39
 #, fuzzy
 #| msgid "usage: pybliotex <latexfile> [bibtexfiles...]"
 msgid "usage: pybliotex <latexfile> [bibtexfiles…]"
 msgstr "käyttö: pybliotex <latex-tiedosto> [bibtex-tiedostot...]"
 
-#: ../scripts/pybliotex.py:39
+#: scripts/pybliotex.py:43
 #, python-format
 msgid "pybliotex: error: %s\n"
 msgstr "pybliotex: virhe: %s\n"
 
 #. warn the user that some entries were not found
-#: ../scripts/pybliotex.py:60
+#: scripts/pybliotex.py:64
 msgid "pybliotex: warning: the following keys were not resolved"
 msgstr "pybliotex: varoitus: ei voitu selvittää seuraavia avaimia"
 
 #. If the LaTeX document declares no style...
-#: ../scripts/pybliotex.py:65
+#: scripts/pybliotex.py:69
 msgid "no style defined"
 msgstr "tyyliä ei ole määritelty"
 
-#: ../scripts/pybliotext.py:41
+#: scripts/pybliotext.py:48
 #, fuzzy
 #| msgid ""
 #| "usage: pybliotext [-o outputfile] [-s style] <textfile> <bibfiles...>"
@@ -1415,51 +1298,122 @@ msgstr ""
 "käyttö: pybliotext [-o tulostiedosto] [-s tyyli] <tekstitiedosto> "
 "<lähdetiedostot>"
 
-#: ../scripts/pybliotext.py:45
+#: scripts/pybliotext.py:52
 #, python-format
 msgid "pybliotext: error: %s\n"
 msgstr "pybtextin virhe: %s\n"
 
-#: ../scripts/pybliotext.py:50
+#: scripts/pybliotext.py:57
 #, python-format
 msgid "pybliotext: warning: %s\n"
 msgstr "pybtextin varoitus: %s\n"
 
-#: ../scripts/pybliotext.py:124
+#: scripts/pybliotext.py:131
 #, python-format
-#| msgid "File already exists: `%s'"
 msgid "File already exists: “%s”"
 msgstr "Tiedosto on jo olemassa: “%s”"
 
-#: ../scripts/pybliotext.py:127
+#: scripts/pybliotext.py:134
 #, python-format
 msgid "A file with the same name already exists: “%s”"
 msgstr "Tiedosto samalla nimellä on jo olemassa: “%s”"
 
-#: ../scripts/pybliotext.py:178
+#: scripts/pybliotext.py:185
 msgid "no citation found"
 msgstr "lainausta ei löydy"
 
-#: ../scripts/pybliotext.py:193
+#: scripts/pybliotext.py:200
 #, fuzzy, python-format
 #| msgid "pybliotext: using style `%s', format `%s'\n"
 msgid "pybliotext: using style “%s”, format “%s”\n"
 msgstr "pybliotext: käytetään tyyliä \"%s\", muotoilua \"%s\"\n"
 
-#: ../scripts/pybliotext.py:316
+#: scripts/pybliotext.py:323
 #, python-format
 msgid "can’t create “%s”"
 msgstr "ei voi luoda “%s”"
 
-#: ../scripts/pybliotext.py:342
+#: scripts/pybliotext.py:349
 #, python-format
-#| msgid "can't remove `%s'"
 msgid "can’t remove “%s”"
 msgstr "ei voi poistaa “%s”"
 
-#: ../scripts/pybliotext.py:344
+#: scripts/pybliotext.py:351
 msgid "Done"
 msgstr "Valmis"
+
+#~ msgid "Quick search"
+#~ msgstr "Nopea haku"
+
+#~ msgid ""
+#~ "The database has been modified.\n"
+#~ "Discard changes?"
+#~ msgstr ""
+#~ "Tietokantaa on muutettu.\n"
+#~ "Hylätäänkö muutokset?"
+
+#~ msgid "Invalid day field in date"
+#~ msgstr "Virheellinen päivä päivämäärässä"
+
+#~ msgid "Invalid month field in date"
+#~ msgstr "Virheellinen kuukausi päivämäärässä"
+
+#~ msgid "Invalid year field in date"
+#~ msgstr "Virheellinen vuosi päivämäärässä"
+
+#~ msgid "FIELDS DEFINITION"
+#~ msgstr "KENTTIEN MÄÄRITTELY"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "Datum"
+#~ msgstr "Päiväys"
+
+#~ msgid "A"
+#~ msgstr "A"
+
+#~ msgid "standard fields"
+#~ msgstr "standardikentät"
+
+#~ msgid "<b>Entry type</b>"
+#~ msgstr "<b>Merkintätyyppi</b>"
+
+#~ msgid "Style Selection"
+#~ msgstr "Tyylin valinta"
+
+#~ msgid "_New"
+#~ msgstr "_Uusi"
+
+#~ msgid "Previous Documents"
+#~ msgstr "Edelliset asiakirjat"
+
+#~ msgid "_Add…"
+#~ msgstr "_Lisää…"
+
+#~ msgid "_Edit…"
+#~ msgstr "_Muokkaa…"
+
+#~ msgid "_Delete…"
+#~ msgstr "_Poista…"
+
+#~ msgid "Cite"
+#~ msgstr "Lainaa"
+
+#~ msgid "Settings"
+#~ msgstr "Asetukset"
+
+#~ msgid "Contents"
+#~ msgstr "Sisältö"
+
+#~ msgid "Open File"
+#~ msgstr "Avaa tiedosto"
+
+#~ msgid "Save File"
+#~ msgstr "Tallenna tiedosto"
+
+#~ msgid "Close"
+#~ msgstr "Sulje"
 
 #~ msgid "Medline Query..."
 #~ msgstr "Medline-kysely..."
