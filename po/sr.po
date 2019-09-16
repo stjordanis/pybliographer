@@ -6,115 +6,163 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pybliographer\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=pyblio"
-"grapher&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-10-07 01:39+0000\n"
-"PO-Revision-Date: 2018-02-24 09:24+0200\n"
-"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/pybliographer/issues\n"
+"POT-Creation-Date: 2019-07-21 14:24+0000\n"
+"PO-Revision-Date: 2019-09-16 09:08+0200\n"
+"Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: српски <gnome-sr@googlegroups.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
-"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
+"X-Generator: Poedit 2.2.3\n"
 
-#: ../Pyblio/Autoload.py:79
+#: data/pybliographic.appdata.xml.in:7 data/pybliographic.desktop.in:3
+#: Pyblio/GnomeUI/glade/pyblio.ui:7
+msgid "Pybliographer"
+msgstr "Пиблиотекар"
+
+#: data/pybliographic.appdata.xml.in:8
+msgid "Framework for working with bibliographic databases"
+msgstr "Радни оквир за рад са библиографским базама података"
+
+#: data/pybliographic.appdata.xml.in:10
+msgid ""
+"Pybliographer is a tool for managing bibliographic databases. It can be used "
+"for searching, editing, reformatting, etc. In fact, it’s a simple framework "
+"that provides easy to use python classes and functions, and therefore can be "
+"extended to many uses (generating HTML pages according to bibliographic "
+"searches, etc)."
+msgstr ""
+"Пиблиотекар је алат за управљање библиографских база података. Може се "
+"користити за претраживање, уређивање, преформатирање и слично. Тачније, он "
+"је једноставни радни оквир који пружа пајтон класе и функције које су лаке "
+"за коришћење и тиме може да се употреби у разне сврхе (стварање ХТМЛ "
+"страница на основу библиотекарских претрата и слично)."
+
+#: data/pybliographic.appdata.xml.in:17
+msgid ""
+"In addition to the scripting environment, a graphical Gnome interface is "
+"available. It provides powerful editing capabilities, a nice hierarchical "
+"search mechanism, direct insertion of references into LyX, direct queries on "
+"Medline, and more. It currently supports the following file formats: BibTeX, "
+"ISI, Medline, Ovid, Refer."
+msgstr ""
+"Осим окружења за скриптовање, графичко Гном сучеље је доступно. Оно пружа "
+"моћне могућности за уређивање, лепу хијерархијску претрагу, непосредно "
+"убацивање или референце у Ликс (LyX), директне упите на Медлајну и слично. "
+"Тренутно подржава следеће формате датотека: BibTeX, ISI, Medline, Ovid, "
+"Refer."
+
+#: data/pybliographic.appdata.xml.in:27
+msgid "The main window"
+msgstr "Главни прозор"
+
+#: data/pybliographic.appdata.xml.in:33
+msgid "Editing an entry"
+msgstr "Уређујем унос"
+
+#: data/pybliographic.desktop.in:4
+msgid "Bibliography Manager"
+msgstr "Управник библиографије"
+
+#: data/pybliographic.desktop.in:5
+msgid "Manage bibliographic databases"
+msgstr "Управљајте базама библиографских података"
+
+#: Pyblio/Autoload.py:81
 #, python-format
-#| msgid "warning: can't import %s: %s"
 msgid "warning: can’t import %s: %s"
 msgstr "упозорење: не могу да увезем %s: %s"
 
-#: ../Pyblio/Config.py:53
+#: Pyblio/Config.py:61
 #, python-format
-#| msgid "value of `%s' should be of type %s"
 msgid "value of “%s” should be of type %s"
 msgstr "вредност за „%s“ треба да буде типа %s"
 
-#: ../Pyblio/Config.py:213
+#: Pyblio/Config.py:223
 msgid "String"
 msgstr "Ниска"
 
-#: ../Pyblio/Config.py:222
+#: Pyblio/Config.py:232
 msgid "Boolean"
 msgstr "Истинитосна вредност"
 
-#: ../Pyblio/Config.py:241
+#: Pyblio/Config.py:251
 msgid "Integer"
 msgstr "Цео број"
 
-#: ../Pyblio/Config.py:243
+#: Pyblio/Config.py:253
 #, python-format
 msgid "Integer under %d"
 msgstr "Цео број испод %d"
 
-#: ../Pyblio/Config.py:245
+#: Pyblio/Config.py:255
 #, python-format
 msgid "Integer over %d"
 msgstr "Цео број преко %d"
 
-#: ../Pyblio/Config.py:247
+#: Pyblio/Config.py:257
 #, python-format
 msgid "Integer between %d and %d"
 msgstr "Цео број између %d и %d"
 
-#: ../Pyblio/Config.py:259
+#: Pyblio/Config.py:269
 #, python-format
-#| msgid "Element in `%s'"
 msgid "Element in “%s”"
 msgstr "Елемент из „%s“"
 
-#: ../Pyblio/Config.py:279
+#: Pyblio/Config.py:289
 #, python-format
 msgid "Tuple (%s)"
 msgstr "N-торка (%s)"
 
-#: ../Pyblio/Config.py:300
+#: Pyblio/Config.py:310
 #, python-format
 msgid "List (%s)"
 msgstr "Списак (%s)"
 
-#: ../Pyblio/Config.py:325
+#: Pyblio/Config.py:335
 #, python-format
 msgid "Dictionary (%s, %s)"
 msgstr "Речник (%s, %s)"
 
-#: ../Pyblio/Config.py:345
+#: Pyblio/Config.py:355
 #, python-format
 msgid "warning: could not restore setting %r to %r: %s"
 msgstr "упозорење: не могу да повратим подешавање %r за %r: %s"
 
-#: ../Pyblio/Fields.py:261
+#: Pyblio/Fields.py:268
 msgid "Illegal year value"
 msgstr "Неисправна вредност године"
 
-#: ../Pyblio/Fields.py:265
+#: Pyblio/Fields.py:272
 msgid "Illegal month value"
 msgstr "Неисправна вредност месеца"
 
-#: ../Pyblio/Fields.py:269
+#: Pyblio/Fields.py:276
 msgid "Illegal day value"
 msgstr "Неисправна вредност дана"
 
-#: ../Pyblio/Fields.py:510
+#: Pyblio/Fields.py:517
 #, python-format
 msgid "in %s"
 msgstr "у %s"
 
-#: ../Pyblio/Format/BibTeX.py:324 ../Pyblio/Format/BibTeX.py:372
+#: Pyblio/Format/BibTeX.py:328 Pyblio/Format/BibTeX.py:375
 #, python-format
-#| msgid "key `%s' is malformed"
 msgid "key “%s” is malformed"
 msgstr "кључ „%s“ је неисправан"
 
-#: ../Pyblio/Format/BibTeX.py:341 ../Pyblio/Format/BibTeX.py:360
+#: Pyblio/Format/BibTeX.py:344 Pyblio/Format/BibTeX.py:363
 #, python-format
-#| msgid "%s:%d: key `%s' already defined"
 msgid "%s:%d: key “%s” already defined"
 msgstr "%s:%d: кључ „%s“ је већ одређен"
 
-#: ../Pyblio/GnomeUI/Config.py:147 ../Pyblio/GnomeUI/Fields.py:417
+#: Pyblio/GnomeUI/Config.py:135 Pyblio/GnomeUI/Fields.py:417
 msgid ""
 "Some changes require to restart Pybliographic\n"
 "to be correctly taken into account"
@@ -122,137 +170,117 @@ msgstr ""
 "Неке измене захтевају поновно покретање\n"
 "Пиблиотекара како би узеле маха"
 
-#: ../Pyblio/GnomeUI/Config.py:429
+#: Pyblio/GnomeUI/Config.py:417
 msgid "Add"
 msgstr "Додај"
 
-#: ../Pyblio/GnomeUI/Config.py:432
+#: Pyblio/GnomeUI/Config.py:420
 msgid "Update"
 msgstr "Допуни"
 
-#: ../Pyblio/GnomeUI/Config.py:435 ../Pyblio/GnomeUI/Config.py:549
+#: Pyblio/GnomeUI/Config.py:423 Pyblio/GnomeUI/Config.py:537
 msgid "Remove"
 msgstr "Уклони"
 
-#: ../Pyblio/GnomeUI/Config.py:546
+#: Pyblio/GnomeUI/Config.py:534
 msgid "Set"
 msgstr "Постави"
 
-#: ../Pyblio/GnomeUI/Config.py:561
+#: Pyblio/GnomeUI/Config.py:549
 msgid "Key:"
 msgstr "Кључ:"
 
-#: ../Pyblio/GnomeUI/Config.py:563
+#: Pyblio/GnomeUI/Config.py:551
 msgid "Value:"
 msgstr "Вредност:"
 
 #. id     stock            label         accel   tooltip   callback
-#: ../Pyblio/GnomeUI/Document.py:145
+#: Pyblio/GnomeUI/Document.py:144
 msgid "_File"
 msgstr "_Датотека"
 
-#: ../Pyblio/GnomeUI/Document.py:146
+#: Pyblio/GnomeUI/Document.py:145
 msgid "_Edit"
 msgstr "_Уређивање"
 
-#: ../Pyblio/GnomeUI/Document.py:147
+#: Pyblio/GnomeUI/Document.py:146
 msgid "_View"
 msgstr "_Преглед"
 
-#: ../Pyblio/GnomeUI/Document.py:148
+#: Pyblio/GnomeUI/Document.py:147
 msgid "_Cite"
 msgstr "_Цитирај"
 
-#: ../Pyblio/GnomeUI/Document.py:149
+#: Pyblio/GnomeUI/Document.py:148
 msgid "_Settings"
 msgstr "_Подешавања"
 
-#: ../Pyblio/GnomeUI/Document.py:150
+#: Pyblio/GnomeUI/Document.py:149
 msgid "_Help"
 msgstr "По_моћ"
 
-#: ../Pyblio/GnomeUI/Document.py:151
+#: Pyblio/GnomeUI/Document.py:150
 msgid "Recent documents"
 msgstr "Скорашњи документи"
 
-#: ../Pyblio/GnomeUI/Document.py:154
+#: Pyblio/GnomeUI/Document.py:153
 msgid "Open a file"
 msgstr "Отворите датотеку"
 
-#: ../Pyblio/GnomeUI/Document.py:155
-msgid "Open _Location"
-msgstr "Отвори _локацију"
+#: Pyblio/GnomeUI/Document.py:154
+msgid "Open _Location…"
+msgstr "Отвори _локацију…"
 
-#: ../Pyblio/GnomeUI/Document.py:156
+#: Pyblio/GnomeUI/Document.py:155
 msgid "Save the current file"
 msgstr "Сачувајте текућу датотеку"
 
-#: ../Pyblio/GnomeUI/Document.py:161
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:3
-#| msgid "Merge With..."
+#: Pyblio/GnomeUI/Document.py:160
 msgid "Merge With…"
 msgstr "Споји са…"
 
-#: ../Pyblio/GnomeUI/Document.py:162
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:4
-#| msgid "Medline Query"
+#: Pyblio/GnomeUI/Document.py:161
 msgid "Medline Query…"
 msgstr "Упит медлајна…"
 
-#: ../Pyblio/GnomeUI/Document.py:170
+#: Pyblio/GnomeUI/Document.py:169
 msgid "Add a new entry"
 msgstr "Додајте нови унос"
 
-#: ../Pyblio/GnomeUI/Document.py:175
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:9
-#| msgid "S_ort..."
+#: Pyblio/GnomeUI/Document.py:174
 msgid "S_ort…"
 msgstr "Пор_еђај…"
 
-#: ../Pyblio/GnomeUI/Document.py:176
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:11
-#| msgid "Cite"
+#: Pyblio/GnomeUI/Document.py:175
 msgid "Cite…"
 msgstr "Цитирај…"
 
-#: ../Pyblio/GnomeUI/Document.py:176
+#: Pyblio/GnomeUI/Document.py:175
 msgid "Cite key(s)"
 msgstr "Цитирај кључ(еве)"
 
-#: ../Pyblio/GnomeUI/Document.py:177
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:12
-#| msgid "Format..."
+#: Pyblio/GnomeUI/Document.py:176
 msgid "Format…"
 msgstr "Облик…"
 
-#: ../Pyblio/GnomeUI/Document.py:179
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:14
-#| msgid "Fields "
+#: Pyblio/GnomeUI/Document.py:178
 msgid "Fields…"
 msgstr "Поља…"
 
-#: ../Pyblio/GnomeUI/Document.py:181
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:15
+#: Pyblio/GnomeUI/Document.py:180
 msgid "Forget all changes"
 msgstr "Одбаци све измене"
 
-#: ../Pyblio/GnomeUI/Document.py:185
+#: Pyblio/GnomeUI/Document.py:184
 msgid "_Resource"
 msgstr "_Ресурс"
 
-#: ../Pyblio/GnomeUI/Document.py:236
-msgid "Quick search"
-msgstr "Брза претрага"
-
-#: ../Pyblio/GnomeUI/Document.py:310
+#: Pyblio/GnomeUI/Document.py:301
 msgid "Unnamed bibliographic database"
 msgstr "Неименована база библиографских података"
 
-#: ../Pyblio/GnomeUI/Document.py:393
+#: Pyblio/GnomeUI/Document.py:384
 #, python-format
-#| msgid ""
-#| "can't open file `%s' for writing:\n"
-#| "%s"
 msgid ""
 "can’t open file “%s” for writing:\n"
 "%s"
@@ -260,11 +288,8 @@ msgstr ""
 "не могу да отворим датотеку „%s“ ради уписа:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:414
+#: Pyblio/GnomeUI/Document.py:405
 #, python-format
-#| msgid ""
-#| "Error while parsing `%s':\n"
-#| "%s"
 msgid ""
 "Error while parsing “%s”:\n"
 "%s"
@@ -272,55 +297,47 @@ msgstr ""
 "Грешка при обради „%s“:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:430
+#: Pyblio/GnomeUI/Document.py:421
 msgid "New database"
 msgstr "Нова база"
 
-#: ../Pyblio/GnomeUI/Document.py:438 ../Pyblio/GnomeUI/Document.py:442
+#: Pyblio/GnomeUI/Document.py:429 Pyblio/GnomeUI/Document.py:433
 msgid "[no entry]"
 msgstr "[нема уноса]"
 
 # bug: plural-forms
-#: ../Pyblio/GnomeUI/Document.py:439
+#: Pyblio/GnomeUI/Document.py:430
 msgid "[1 entry]"
 msgstr "[1 унос]"
 
 # bug: plural-forms
-#: ../Pyblio/GnomeUI/Document.py:440
+#: Pyblio/GnomeUI/Document.py:431
 #, python-format
 msgid "[%d entries]"
 msgstr "[%d уноса]"
 
 # bug: plural-forms
-#: ../Pyblio/GnomeUI/Document.py:443
+#: Pyblio/GnomeUI/Document.py:434
 #, python-format
 msgid "[%d/1 entry]"
 msgstr "[%d/1 унос]"
 
 # bug: plural-forms
-#: ../Pyblio/GnomeUI/Document.py:444
+#: Pyblio/GnomeUI/Document.py:435
 #, python-format
 msgid "[%d/%d entries]"
 msgstr "[%d/%d уноса]"
 
-#: ../Pyblio/GnomeUI/Document.py:449
+#: Pyblio/GnomeUI/Document.py:440
 msgid "[modified]"
 msgstr "[измењено]"
 
-#: ../Pyblio/GnomeUI/Document.py:452
+#: Pyblio/GnomeUI/Document.py:443
 #, python-format
 msgid "view limited to: %s"
 msgstr "прикажи ограничене на: %s"
 
-#: ../Pyblio/GnomeUI/Document.py:465
-msgid ""
-"The database has been modified.\n"
-"Discard changes?"
-msgstr ""
-"База података је измењена.\n"
-"Да занемарим измене?"
-
-#: ../Pyblio/GnomeUI/Document.py:469
+#: Pyblio/GnomeUI/Document.py:457
 msgid ""
 "The database has been modified.\n"
 "Save changes?"
@@ -328,7 +345,7 @@ msgstr ""
 "База података је измењена.\n"
 "Да сачувам измене?"
 
-#: ../Pyblio/GnomeUI/Document.py:490
+#: Pyblio/GnomeUI/Document.py:477
 msgid ""
 "The database has been externally modified.\n"
 "Overwrite changes?"
@@ -337,34 +354,34 @@ msgstr ""
 "Да препишем измене?"
 
 #. no result.
-#: ../Pyblio/GnomeUI/Document.py:519
+#: Pyblio/GnomeUI/Document.py:506
 msgid "Your query returned no result"
 msgstr "Ваш упит није вратио резултат"
 
 #. error
-#: ../Pyblio/GnomeUI/Document.py:523
+#: Pyblio/GnomeUI/Document.py:510
 msgid "An error occurred during Medline Query"
 msgstr "Дошло је до грешке за време упита Медлајна"
 
 #. get a new file name
-#: ../Pyblio/GnomeUI/Document.py:533
+#: Pyblio/GnomeUI/Document.py:520
 msgid "Merge file"
 msgstr "Споји датотеку"
 
-#: ../Pyblio/GnomeUI/Document.py:546 ../Pyblio/GnomeUI/Document.py:633
+#: Pyblio/GnomeUI/Document.py:534 Pyblio/GnomeUI/Document.py:622
 msgid "Open error"
 msgstr "Грешка при отварању"
 
-#: ../Pyblio/GnomeUI/Document.py:570
+#: Pyblio/GnomeUI/Document.py:558
 msgid "Merge status"
 msgstr "Стање спајања"
 
 #. get a new file name
-#: ../Pyblio/GnomeUI/Document.py:581
+#: Pyblio/GnomeUI/Document.py:569
 msgid "Open file"
 msgstr "Отвори датотеку"
 
-#: ../Pyblio/GnomeUI/Document.py:619
+#: Pyblio/GnomeUI/Document.py:608
 msgid ""
 "An autosave file was found which is newer than the original file.\n"
 "Do you want to restore it?"
@@ -372,12 +389,9 @@ msgstr ""
 "Пронађена је самочувајућа датотека која је новија од оригиналне.\n"
 "Да ли желите да је повратите?"
 
-#: ../Pyblio/GnomeUI/Document.py:654 ../Pyblio/GnomeUI/Document.py:795
-#: ../Pyblio/GnomeUI/Document.py:855
+#: Pyblio/GnomeUI/Document.py:643 Pyblio/GnomeUI/Document.py:786
+#: Pyblio/GnomeUI/Document.py:846
 #, python-format
-#| msgid ""
-#| "Unable to remove autosave file `%s':\n"
-#| "%s"
 msgid ""
 "Unable to remove autosave file “%s”:\n"
 "%s"
@@ -385,7 +399,7 @@ msgstr ""
 "Не могу да уклоним самочувајућу датотеку „%s“:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:705
+#: Pyblio/GnomeUI/Document.py:694
 #, python-format
 msgid ""
 "Error during autosaving:\n"
@@ -394,11 +408,8 @@ msgstr ""
 "Грешка за време самочувања:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:733
+#: Pyblio/GnomeUI/Document.py:722
 #, python-format
-#| msgid ""
-#| "Unable to save `%s':\n"
-#| "%s"
 msgid ""
 "Unable to save “%s”:\n"
 "%s"
@@ -406,10 +417,7 @@ msgstr ""
 "Не могу да сачувам „%s“:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:741
-#| msgid ""
-#| "An internal error occurred during saving\n"
-#| "Try to Save As..."
+#: Pyblio/GnomeUI/Document.py:730
 msgid ""
 "An internal error occurred during saving\n"
 "Try to Save As…"
@@ -417,16 +425,13 @@ msgstr ""
 "Дошло је до унутрашње грешке при снимању\n"
 "Покушајте да сачувате као…"
 
-#: ../Pyblio/GnomeUI/Document.py:756
-#| msgid "Save As..."
+#. get a new file name
+#: Pyblio/GnomeUI/Document.py:744
 msgid "Save As…"
 msgstr "Сачувај као…"
 
-#: ../Pyblio/GnomeUI/Document.py:762
+#: Pyblio/GnomeUI/Document.py:753
 #, python-format
-#| msgid ""
-#| "The file `%s' already exists.\n"
-#| "Overwrite it?"
 msgid ""
 "The file “%s” already exists.\n"
 "Overwrite it?"
@@ -434,7 +439,7 @@ msgstr ""
 "Датотека „%s“ већ постоји.\n"
 "Да је преснимим?"
 
-#: ../Pyblio/GnomeUI/Document.py:769
+#: Pyblio/GnomeUI/Document.py:760
 #, python-format
 msgid ""
 "During opening:\n"
@@ -443,15 +448,12 @@ msgstr ""
 "При отварању:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:807
+#: Pyblio/GnomeUI/Document.py:798
 msgid "Reopen error"
 msgstr "Грешка поновног отварања"
 
-#: ../Pyblio/GnomeUI/Document.py:880
+#: Pyblio/GnomeUI/Document.py:871
 #, python-format
-#| msgid ""
-#| "An entry called `%s' already exists.\n"
-#| "Rename and add it anyway?"
 msgid ""
 "An entry called “%s” already exists.\n"
 "Rename and add it anyway?"
@@ -459,33 +461,32 @@ msgstr ""
 "Већ постоји унос са називом „%s“.\n"
 "Да га преименујем и додам у сваком случају?"
 
-#: ../Pyblio/GnomeUI/Document.py:917
+#: Pyblio/GnomeUI/Document.py:908
 msgid "Really remove all the entries?"
 msgstr "Да ли заиста да уклоним све уносе?"
 
-#: ../Pyblio/GnomeUI/Document.py:937
+#: Pyblio/GnomeUI/Document.py:928
 msgid "Create new entry"
 msgstr "Направите нови унос"
 
 # bug: plural-forms
-#: ../Pyblio/GnomeUI/Document.py:951
+#: Pyblio/GnomeUI/Document.py:942
 #, python-format
 msgid "Really edit %d entries?"
 msgstr "Да ли заиста да уредим %d уноса?"
 
 # bug: plural-forms
-#: ../Pyblio/GnomeUI/Document.py:998
+#: Pyblio/GnomeUI/Document.py:989
 #, python-format
 msgid "Remove all the %d entries?"
 msgstr "Да ли да уклоним свих %d уноса?"
 
-#: ../Pyblio/GnomeUI/Document.py:1000
+#: Pyblio/GnomeUI/Document.py:991
 #, python-format
-#| msgid "Remove entry `%s'?"
 msgid "Remove entry “%s”?"
 msgstr "Да ли да уклоним унос „%s“?"
 
-#: ../Pyblio/GnomeUI/Document.py:1019
+#: Pyblio/GnomeUI/Document.py:1010
 msgid ""
 "your search text must contain\n"
 "latin-1 characters only"
@@ -493,11 +494,8 @@ msgstr ""
 "ваш текст за претрагу мора да садржи\n"
 "само латиничне-1 знаке"
 
-#: ../Pyblio/GnomeUI/Document.py:1098 ../Pyblio/GnomeUI/Document.py:1106
+#: Pyblio/GnomeUI/Document.py:1089 Pyblio/GnomeUI/Document.py:1097
 #, python-format
-#| msgid ""
-#| "Can't connect to LyX:\n"
-#| "%s"
 msgid ""
 "Can’t connect to LyX:\n"
 "%s"
@@ -505,11 +503,22 @@ msgstr ""
 "Не могу да се повежем са ЛиКс-ом:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:1222
+#: Pyblio/GnomeUI/Document.py:1156
+msgid "Select a column to search in first"
+msgstr "Изабери колону коју прво треба претражити"
+
+#: Pyblio/GnomeUI/Document.py:1168
 #, python-format
-#| msgid ""
-#| "Can't display documentation:\n"
-#| "%s"
+msgid "Searching for “%s”…"
+msgstr "Тражим ставку „%s“…"
+
+#: Pyblio/GnomeUI/Document.py:1172
+#, python-format
+msgid "Cannot find “%s”…"
+msgstr "Не могу да нађем „%s“"
+
+#: Pyblio/GnomeUI/Document.py:1203
+#, python-format
 msgid ""
 "Can’t display documentation:\n"
 "%s"
@@ -517,167 +526,150 @@ msgstr ""
 "Не могу да прикажем документацију:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:1232
-msgid "This program is copyrighted under the GNU GPL"
-msgstr "Овај програм је заштићен ауторским правима према Гнуовој ОЈЛ"
-
-#: ../Pyblio/GnomeUI/Document.py:1233
-msgid "GNOME interface to the Pybliographer system."
-msgstr "Гномово сучеље за систем Пиблиотекара."
-
-#: ../Pyblio/GnomeUI/Document.py:1244
+#: Pyblio/GnomeUI/Document.py:1225
 msgid "GNOME Translation Team"
 msgstr "Гномов преводилачки тим"
 
-#: ../Pyblio/GnomeUI/Document.py:1250
+#: Pyblio/GnomeUI/Document.py:1226
+msgid "This program is copyrighted under the GNU GPL"
+msgstr "Овај програм је заштићен ауторским правима према Гнуовој ОЈЛ"
+
+#: Pyblio/GnomeUI/Document.py:1227
+msgid "GNOME interface to the Pybliographer system."
+msgstr "Гномово сучеље за систем Пиблиотекара."
+
+#: Pyblio/GnomeUI/Document.py:1233
 msgid "Pybliographer Home Page"
 msgstr "Матична страница Пиблиотекара"
 
-#: ../Pyblio/GnomeUI/Editor.py:36
+#: Pyblio/GnomeUI/Editor.py:41
 msgid "Last Name, First Name"
 msgstr "Презиме, име"
 
-#: ../Pyblio/GnomeUI/Editor.py:37 ../Pyblio/GnomeUI/Editor.py:1293
-#: ../Pyblio/GnomeUI/Fields.py:39 ../Pyblio/GnomeUI/glade/config1.glade.h:10
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:9
+#: Pyblio/GnomeUI/Editor.py:42 Pyblio/GnomeUI/Editor.py:1292
+#: Pyblio/GnomeUI/Fields.py:42
 msgid "Text"
 msgstr "Текст"
 
-#: ../Pyblio/GnomeUI/Editor.py:134 ../Pyblio/GnomeUI/Editor.py:1004
+#: Pyblio/GnomeUI/Editor.py:139 Pyblio/GnomeUI/Editor.py:1006
 msgid "Error in native string parsing"
 msgstr "Грешка у природној обради ниске"
 
-#: ../Pyblio/GnomeUI/Editor.py:313
+#: Pyblio/GnomeUI/Editor.py:318
 msgid "Day"
 msgstr "Дан"
 
-#: ../Pyblio/GnomeUI/Editor.py:322
+#: Pyblio/GnomeUI/Editor.py:327
 msgid "Month"
 msgstr "Месец"
 
-#: ../Pyblio/GnomeUI/Editor.py:331
+#: Pyblio/GnomeUI/Editor.py:336
 msgid "Year"
 msgstr "Година"
 
-#: ../Pyblio/GnomeUI/Editor.py:356
-msgid "Invalid day field in date"
-msgstr "Неисправно поље дана у датуму"
-
-#: ../Pyblio/GnomeUI/Editor.py:364
-msgid "Invalid month field in date"
-msgstr "Неисправно поље месеца у датуму"
-
-#: ../Pyblio/GnomeUI/Editor.py:372
-msgid "Invalid year field in date"
-msgstr "Неисправно поље године у датуму"
-
 #. A delete button
-#: ../Pyblio/GnomeUI/Editor.py:420 ../Pyblio/GnomeUI/Search.py:86
+#: Pyblio/GnomeUI/Editor.py:425 Pyblio/GnomeUI/Search.py:86
 msgid "Delete"
 msgstr "Обриши"
 
-#: ../Pyblio/GnomeUI/Editor.py:431 ../Pyblio/GnomeUI/Editor.py:444
-#: ../Pyblio/GnomeUI/Editor.py:447
+#: Pyblio/GnomeUI/Editor.py:436 Pyblio/GnomeUI/Editor.py:449
+#: Pyblio/GnomeUI/Editor.py:452
 msgid "[ Drop an Entry here ]"
 msgstr "[ Овде убаците унос ]"
 
-#: ../Pyblio/GnomeUI/Editor.py:503
-#| msgid "Browse..."
+#: Pyblio/GnomeUI/Editor.py:508
 msgid "Browse…"
 msgstr "Претражи…"
 
-#: ../Pyblio/GnomeUI/Editor.py:526
+#: Pyblio/GnomeUI/Editor.py:531
 msgid "Select file"
 msgstr "Изаберите датотеку"
 
-#: ../Pyblio/GnomeUI/Editor.py:550 ../Pyblio/GnomeUI/Fields.py:236
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:12
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:11
+#: Pyblio/GnomeUI/Editor.py:555 Pyblio/GnomeUI/Fields.py:239
+#: Pyblio/GnomeUI/glade/fields.ui:255
 msgid "Entry type"
 msgstr "Врста уноса"
 
-#: ../Pyblio/GnomeUI/Editor.py:552
+#: Pyblio/GnomeUI/Editor.py:557
 msgid "Key"
 msgstr "Кључ"
 
-#: ../Pyblio/GnomeUI/Editor.py:601
+#: Pyblio/GnomeUI/Editor.py:606
 msgid "Create Field"
 msgstr "Образуј поље"
 
 #. navigation buttons
-#: ../Pyblio/GnomeUI/Editor.py:606
+#: Pyblio/GnomeUI/Editor.py:611
 msgid "Back"
 msgstr "Назад"
 
-#: ../Pyblio/GnomeUI/Editor.py:609
+#: Pyblio/GnomeUI/Editor.py:614
 msgid "Next"
 msgstr "Следеће"
 
-#: ../Pyblio/GnomeUI/Editor.py:729 ../Pyblio/GnomeUI/Fields.py:451
+#: Pyblio/GnomeUI/Editor.py:732 Pyblio/GnomeUI/Fields.py:449
 msgid "Mandatory"
 msgstr "Обавезно"
 
-#: ../Pyblio/GnomeUI/Editor.py:729 ../Pyblio/GnomeUI/Fields.py:452
+#: Pyblio/GnomeUI/Editor.py:732 Pyblio/GnomeUI/Fields.py:450
 msgid "Optional"
 msgstr "Необавезно"
 
-#: ../Pyblio/GnomeUI/Editor.py:729 ../Pyblio/GnomeUI/Editor.py:1208
+#: Pyblio/GnomeUI/Editor.py:732 Pyblio/GnomeUI/Editor.py:1209
 msgid "Notes"
 msgstr "Напомене"
 
-#: ../Pyblio/GnomeUI/Editor.py:729
+#: Pyblio/GnomeUI/Editor.py:732
 msgid "Extra"
 msgstr "Допунско"
 
-#: ../Pyblio/GnomeUI/Editor.py:910
+#: Pyblio/GnomeUI/Editor.py:911
 msgid "Invalid key format"
 msgstr "Неисправан облик кључа"
 
-#: ../Pyblio/GnomeUI/Editor.py:918
+#: Pyblio/GnomeUI/Editor.py:920
 #, python-format
-#| msgid "Key `%s' already exists"
 msgid "Key “%s” already exists"
 msgstr "Кључ „%s“ већ постоји"
 
-#: ../Pyblio/GnomeUI/Editor.py:935
+#: Pyblio/GnomeUI/Editor.py:937
 #, python-format
-#| msgid "The `%s' field contains a non Latin-1 symbol"
 msgid "The “%s” field contains a non Latin-1 symbol"
 msgstr "Поље „%s“ садржи не Латиничне-1 симболе"
 
-#: ../Pyblio/GnomeUI/Editor.py:997
+#: Pyblio/GnomeUI/Editor.py:1000
 msgid "Your text contains non Latin-1 symbols"
 msgstr "Ваш текст садржи не Латиничне-1 симболе"
 
-#: ../Pyblio/GnomeUI/Editor.py:1024
+#: Pyblio/GnomeUI/Editor.py:1026
 msgid "Edit entry"
 msgstr "Уредите унос"
 
-#: ../Pyblio/GnomeUI/Editor.py:1038 ../Pyblio/GnomeUI/Editor.py:1103
+#: Pyblio/GnomeUI/Editor.py:1040 Pyblio/GnomeUI/Editor.py:1104
 msgid "Native Editing"
 msgstr "Природно уређивање"
 
-#: ../Pyblio/GnomeUI/Editor.py:1126
+#: Pyblio/GnomeUI/Editor.py:1127
 msgid "Standard Editing"
 msgstr "Обично уређивање"
 
-#: ../Pyblio/GnomeUI/Editor.py:1230
+#: Pyblio/GnomeUI/Editor.py:1230
 msgid "mandatory"
 msgstr "обавезно"
 
-#: ../Pyblio/GnomeUI/Editor.py:1296
+#: Pyblio/GnomeUI/Editor.py:1295
 msgid "Enter text here"
 msgstr "Овде унесите текст"
 
-#: ../Pyblio/GnomeUI/Editor.py:1348
+#: Pyblio/GnomeUI/Editor.py:1347
 msgid "New Annotation Name"
 msgstr "Назив нове забелешке"
 
-#: ../Pyblio/GnomeUI/Editor.py:1354
+#: Pyblio/GnomeUI/Editor.py:1353
 msgid "Name of the new annotation:"
 msgstr "Назив за нову забелешку:"
 
-#: ../Pyblio/GnomeUI/Entry.py:114
+#: Pyblio/GnomeUI/Entry.py:115
 #, python-format
 msgid ""
 "Cannot open URL:\n"
@@ -686,79 +678,74 @@ msgstr ""
 "Не могу да отворим адресу:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Fields.py:38
+#: Pyblio/GnomeUI/Fields.py:41
 msgid "Authors"
 msgstr "Аутори"
 
-#: ../Pyblio/GnomeUI/Fields.py:40
+#: Pyblio/GnomeUI/Fields.py:43
 msgid "Long Text"
 msgstr "Дуги текст"
 
-#: ../Pyblio/GnomeUI/Fields.py:41 ../Pyblio/GnomeUI/glade/config1.glade.h:9
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:8
+#: Pyblio/GnomeUI/Fields.py:44
 msgid "URL"
 msgstr "Адреса"
 
 # Или ставити „референца“, пошто није баш јасно да ли се „позива на“, или „позива се из“
-#: ../Pyblio/GnomeUI/Fields.py:42
+#: Pyblio/GnomeUI/Fields.py:45
 msgid "Reference"
 msgstr "Позива се на"
 
-#: ../Pyblio/GnomeUI/Fields.py:43
+#: Pyblio/GnomeUI/Fields.py:46
 msgid "Date"
 msgstr "Датум"
 
-#: ../Pyblio/GnomeUI/Fields.py:124 ../Pyblio/GnomeUI/glade/config1.glade.h:7
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:6
+#: Pyblio/GnomeUI/Fields.py:123
 msgid "Name"
 msgstr "Назив"
 
-#: ../Pyblio/GnomeUI/Fields.py:127 ../Pyblio/GnomeUI/glade/config1.glade.h:6
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:5
+#: Pyblio/GnomeUI/Fields.py:126 Pyblio/GnomeUI/glade/fields.ui:167
 msgid "Type"
 msgstr "Врста"
 
-#: ../Pyblio/GnomeUI/Fields.py:300
+#: Pyblio/GnomeUI/Fields.py:303
 msgid "Available"
 msgstr "Доступно"
 
-#: ../Pyblio/GnomeUI/Fields.py:310
+#: Pyblio/GnomeUI/Fields.py:313
 msgid "Associated"
 msgstr "Повезано"
 
-#: ../Pyblio/GnomeUI/Fields.py:321
+#: Pyblio/GnomeUI/Fields.py:321
 msgid "Please, select an entry type from previous page."
 msgstr "Изаберите врсту уноса са претходне странице."
 
-#: ../Pyblio/GnomeUI/Fields.py:332
+#: Pyblio/GnomeUI/Fields.py:332
 #, python-format
 msgid "Fields associated with <b>%s</b> entry type"
 msgstr "Поља повезана са уносом врсте <b>%s</b>"
 
-#: ../Pyblio/GnomeUI/FileSelector.py:40
+#: Pyblio/GnomeUI/FileSelector.py:37
 msgid "File"
 msgstr "Датотека"
 
-#: ../Pyblio/GnomeUI/FileSelector.py:77
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:4
+#: Pyblio/GnomeUI/FileSelector.py:74 Pyblio/GnomeUI/glade/openurl.ui:101
 msgid "Bibliography type:"
 msgstr "Врста библиографије:"
 
-#: ../Pyblio/GnomeUI/FileSelector.py:94 ../Pyblio/GnomeUI/OpenURL.py:62
-#| msgid " - According to file suffix - "
+#: Pyblio/GnomeUI/FileSelector.py:91 Pyblio/GnomeUI/OpenURL.py:61
 msgid " — According to file suffix — "
 msgstr " — Према суфиксу датотеке — "
 
 #. The root of the search tree is the full database
-#: ../Pyblio/GnomeUI/Search.py:71
+#: Pyblio/GnomeUI/Search.py:68
 msgid "Full database"
 msgstr "Читава база података"
 
-#: ../Pyblio/GnomeUI/Search.py:142
+#: Pyblio/GnomeUI/Search.py:136
 msgid "internal error during evaluation"
 msgstr "унутрашња грешка при вредновању"
 
-#: ../Pyblio/GnomeUI/Search.py:196
+#: Pyblio/GnomeUI/Search.py:189
 #, python-format
 msgid ""
 "while compiling %s\n"
@@ -768,86 +755,44 @@ msgstr ""
 "грешка: %s"
 
 #. These are additional search fields
-#: ../Pyblio/GnomeUI/Sort.py:97
+#: Pyblio/GnomeUI/Sort.py:97
 msgid "[Entry Type]"
 msgstr "[Врста уноса]"
 
-#: ../Pyblio/GnomeUI/Sort.py:98
+#: Pyblio/GnomeUI/Sort.py:98
 msgid "[Key Value]"
 msgstr "[Вредност кључа]"
 
-#: ../Pyblio/GnomeUI/Utils.py:203
-msgid "The following errors occurred:\n"
-msgstr "Догодиле су се следеће грешке:\n"
+#: Pyblio/GnomeUI/Utils.py:170
+msgid "The following errors occurred:"
+msgstr "Догодиле су се следеће грешке:"
 
-#: ../Pyblio/GnomeUI/__init__.py:45
+#: Pyblio/GnomeUI/__init__.py:48
 #, python-format
 msgid "This is Pybliographic %s [Python %s, Gtk %s, PyGTK %s]"
 msgstr "Ово је Пиблиотекар %s [Питон %s, Гтк+ %s, ПиГтк %s]"
 
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:1
+#: Pyblio/GnomeUI/glade/config.ui:7
 msgid "Pybliographer Configuration"
 msgstr "Подешавања Пиблиотекара"
 
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:2
-msgid "FIELDS DEFINITION"
-msgstr "ДЕФИНИЦИЈА ПОЉА"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:3
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:2
-msgid "Name "
-msgstr "Назив "
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:4
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:3
-msgid "Editor"
-msgstr "Уређивач"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:5
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:4
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:5
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:3
-#: ../Pyblio/GnomeUI/glade/search.glade.h:5
-msgid "*"
-msgstr "*"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:8
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:7
-msgid "Datum"
-msgstr "Датум"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:11
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:10
-msgid "Fields "
-msgstr "Поља "
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:13
-msgid "A"
-msgstr "А"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:14
-msgid "standard fields"
-msgstr "уобичајена поља"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:15
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:19
-msgid "Entries"
-msgstr "Уноси"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:16
-msgid "<b>Entry type</b>"
-msgstr "<b>Врста уноса</b>"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:17
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:21
-msgid "Association"
-msgstr "У вези са"
-
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:1
+#: Pyblio/GnomeUI/glade/fields.ui:9
 msgid "Entry types and field names configuration"
 msgstr "Подешавање врсте уноса и назива поља"
 
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:12
+#: Pyblio/GnomeUI/glade/fields.ui:137
+msgid "Name "
+msgstr "Назив "
+
+#: Pyblio/GnomeUI/glade/fields.ui:149
+msgid "Editor"
+msgstr "Уређивач"
+
+#: Pyblio/GnomeUI/glade/fields.ui:211
+msgid "Fields "
+msgstr "Поља "
+
+#: Pyblio/GnomeUI/glade/fields.ui:286
 msgid ""
 "Select an entry type and specify \n"
 "its associated (mandatory and\n"
@@ -863,43 +808,47 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:20
+#: Pyblio/GnomeUI/glade/fields.ui:318
+msgid "Entries"
+msgstr "Уноси"
+
+#: Pyblio/GnomeUI/glade/fields.ui:341
 msgid "Information for <b>Article</b> entry type"
 msgstr "Подаци за врсту уноса <b>Чланак</b>"
 
-#: ../Pyblio/GnomeUI/glade/format.glade.h:1
+#: Pyblio/GnomeUI/glade/fields.ui:420
+msgid "Association"
+msgstr "У вези са"
+
+#: Pyblio/GnomeUI/glade/format.ui:7
 msgid "Format entries"
 msgstr "Облик уноса"
 
-#: ../Pyblio/GnomeUI/glade/format.glade.h:2
+#: Pyblio/GnomeUI/glade/format.ui:75
 msgid "Bibliography style:"
 msgstr "Стил библиографије:"
 
-#: ../Pyblio/GnomeUI/glade/format.glade.h:3
+#: Pyblio/GnomeUI/glade/format.ui:87
 msgid "Output format:"
 msgstr "Излазни облик:"
 
-#: ../Pyblio/GnomeUI/glade/format.glade.h:4
-msgid "Style Selection"
-msgstr "Избор стила"
-
-#: ../Pyblio/GnomeUI/glade/format.glade.h:5
-msgid "Save Formatted as"
-msgstr "Сачувај уобиличено као"
-
-#: ../Pyblio/GnomeUI/glade/format.glade.h:6
+#: Pyblio/GnomeUI/glade/format.ui:101
 msgid "Output file:"
 msgstr "Излазна датотека:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:1
+#: Pyblio/GnomeUI/glade/format.ui:125
+msgid "Save formatted as"
+msgstr "Сачувај форматирано као"
+
+#: Pyblio/GnomeUI/glade/medline.ui:7
 msgid "Medline Query"
 msgstr "Упит медлајна"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:2
+#: Pyblio/GnomeUI/glade/medline.ui:70
 msgid "Enter your Medline Query"
 msgstr "Унесите ваш упит медлајна"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:3
+#: Pyblio/GnomeUI/glade/medline.ui:89
 msgid ""
 "Search \n"
 "PubMed for:"
@@ -907,7 +856,7 @@ msgstr ""
 "Претражи \n"
 "ПубМед за:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:6
+#: Pyblio/GnomeUI/glade/medline.ui:118
 msgid ""
 "Maximum number\n"
 "of results:"
@@ -915,7 +864,7 @@ msgstr ""
 "Највећи број\n"
 "резултата:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:8
+#: Pyblio/GnomeUI/glade/medline.ui:149
 msgid ""
 "Starting listing at\n"
 "result number:"
@@ -923,7 +872,7 @@ msgstr ""
 "Покрени испис код\n"
 "резултата број:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:10
+#: Pyblio/GnomeUI/glade/medline.ui:216
 msgid ""
 "Only items \n"
 "with abstracts"
@@ -931,7 +880,7 @@ msgstr ""
 "Само ставке\n"
 "са апстрактима"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:12
+#: Pyblio/GnomeUI/glade/medline.ui:233
 msgid ""
 "Only items \n"
 "ahead of print"
@@ -939,15 +888,15 @@ msgstr ""
 "Само ставке\n"
 "испред штампе"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:14
+#: Pyblio/GnomeUI/glade/medline.ui:385
 msgid "From:"
 msgstr "Од:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:15
+#: Pyblio/GnomeUI/glade/medline.ui:412
 msgid "To:"
 msgstr "До:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:16
+#: Pyblio/GnomeUI/glade/medline.ui:446
 msgid ""
 "Use the format YYYY/MM/DD\n"
 "Month and day are optional."
@@ -955,139 +904,82 @@ msgstr ""
 "Користите облик ГГГГ/ММ/ДД\n"
 "Месец и дан су необавезни."
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:18
+#: Pyblio/GnomeUI/glade/medline.ui:461
 msgid "Limited to:"
 msgstr "Ограничено на:"
 
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:1
+#: Pyblio/GnomeUI/glade/openurl.ui:8
 msgid "Open Location"
 msgstr "Отвори локацију"
 
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:2
+#: Pyblio/GnomeUI/glade/openurl.ui:68
 msgid "Enter the location (URI) of the file you would like to open:"
 msgstr "Унесите адресу датотеке коју желите да отворите:"
 
-#. save history
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:1 ../pybliographic.desktop.in.h:1
-msgid "Pybliographer"
-msgstr "Пиблиотекар"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:2
-msgid "_New"
-msgstr "_Ново"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:5
-msgid "Previous Documents"
-msgstr "Претходни документи"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:6
-msgid "_Add…"
-msgstr "_Додај…"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:7
-#| msgid "_Edit"
-msgid "_Edit…"
-msgstr "_Уреди…"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:8
-#| msgid "Delete"
-msgid "_Delete…"
-msgstr "_Обриши…"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:10
-msgid "Cite"
-msgstr "Цитирај"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:13
-msgid "Settings"
-msgstr "Подешавања"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:16
-msgid "Contents"
-msgstr "Садржај"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:17
-msgid "Open File"
-msgstr "Отвори датотеку"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:18
-msgid "Save File"
-msgstr "Сачувај датотеку"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:1
+#: Pyblio/GnomeUI/glade/search.ui:7
 msgid "Search"
 msgstr "Претрага"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:2
-msgid "Close"
-msgstr "Затвори"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:3
+#: Pyblio/GnomeUI/glade/search.ui:81
 msgid "Field"
 msgstr "Поље"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:4
+#: Pyblio/GnomeUI/glade/search.ui:93
 msgid "Pattern"
 msgstr "Образац"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:6
+#: Pyblio/GnomeUI/glade/search.ui:138
 msgid "Simple Search"
 msgstr "Једноставна претрага"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:7
+#: Pyblio/GnomeUI/glade/search.ui:156
 msgid "Query"
 msgstr "Упит"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:8
+#: Pyblio/GnomeUI/glade/search.ui:184
 msgid "Expert Search"
 msgstr "Стручна претрага"
 
-#: ../Pyblio/GnomeUI/glade/sort.glade.h:1
+#: Pyblio/GnomeUI/glade/sort.ui:7
 msgid "Select sort criteria"
 msgstr "Изаберите правило уређивања"
 
-#: ../Pyblio/GnomeUI/glade/sort.glade.h:2
+#: Pyblio/GnomeUI/glade/sort.ui:40
 msgid "Set as default"
 msgstr "Постави као подразумевано"
 
-#: ../Pyblio/LyX.py:38
+#: Pyblio/LyX.py:43
 #, python-format
-#| msgid "no input pipe `%s'"
 msgid "no input pipe “%s”"
 msgstr "нема улазне спојке „%s“"
 
-#: ../Pyblio/LyX.py:44
+#: Pyblio/LyX.py:50
 #, python-format
-#| msgid "no output pipe `%s'"
 msgid "no output pipe “%s”"
 msgstr "нема излазне спојке „%s“"
 
-#: ../Pyblio/Open.py:97
+#: Pyblio/Open.py:99
 #, python-format
-#| msgid "method `%s' provides no opener"
 msgid "method “%s” provides no opener"
 msgstr "метода „%s“ не обезбеђује отварача"
 
-#: ../Pyblio/Open.py:105 ../Pyblio/Open.py:152
+#: Pyblio/Open.py:107 Pyblio/Open.py:154
 #, python-format
-#| msgid "File `%s' does not exist"
 msgid "File “%s” does not exist"
 msgstr "Датотека „%s“ не постоји"
 
-#: ../Pyblio/Open.py:116 ../Pyblio/Open.py:163
+#: Pyblio/Open.py:118 Pyblio/Open.py:165
 #, python-format
-#| msgid "don't know how to open `%s'"
 msgid "don’t know how to open “%s”"
 msgstr "не умем да отворим „%s“"
 
 # можда „пролазника“ (онај који пролази кроз све вредности) уместо „итератора“?
-#: ../Pyblio/Open.py:144
+#: Pyblio/Open.py:146
 #, python-format
-#| msgid "method `%s' provides no iterator"
 msgid "method “%s” provides no iterator"
 msgstr "метода „%s“ не обезбеђује итератора"
 
-#: ../Pyblio/Resource.py:78
+#: Pyblio/Resource.py:86
 #, python-format
 msgid ""
 "Warning: This URL is marked as Invalid or Approximate: %s\n"
@@ -1096,17 +988,16 @@ msgstr ""
 "Упозорење: Ова адреса је обележена као неисправна или приближна: %s\n"
 "Да ли да наставим?"
 
-#: ../Pyblio/Resource.py:82
-#| msgid "Determining Mime Type ... "
+#: Pyblio/Resource.py:91
 msgid "Determining Mime Type… "
 msgstr "Одређујем миме врсту… "
 
-#: ../Pyblio/Resource.py:87
+#: Pyblio/Resource.py:96
 #, python-format
 msgid "Cannot determine mime type for item %s "
 msgstr "Не могу да одредим миме врсту за ставку „%s“ "
 
-#: ../Pyblio/Resource.py:88
+#: Pyblio/Resource.py:97
 #, python-format
 msgid ""
 "URL in question is: %s\n"
@@ -1117,17 +1008,16 @@ msgstr ""
 "Треба да проверите адресу или путању дату за грешке.\n"
 "Појединости: %s"
 
-#: ../Pyblio/Resource.py:99
-#| msgid "Accessing resource ..."
+#: Pyblio/Resource.py:108
 msgid "Accessing resource…"
 msgstr "Приступам извору…"
 
-#: ../Pyblio/Resource.py:117
+#: Pyblio/Resource.py:126
 #, python-format
 msgid "IOError for item %s: cannot uncompress resource."
 msgstr "УИ грешка за ставку „%s“: не могу да распакујем извор."
 
-#: ../Pyblio/Resource.py:118
+#: Pyblio/Resource.py:127
 #, python-format
 msgid ""
 "URL: %s\n"
@@ -1136,16 +1026,15 @@ msgstr ""
 "Адреса: %s\n"
 "Појединости: %s"
 
-#: ../Pyblio/Resource.py:138
-#| msgid "Starting application ..."
+#: Pyblio/Resource.py:148
 msgid "Starting application…"
 msgstr "Покрећем програм…"
 
-#: ../Pyblio/Resource.py:141
+#: Pyblio/Resource.py:151
 msgid "No application to view resource"
 msgstr "Нема програма за преглед извора"
 
-#: ../Pyblio/Resource.py:142
+#: Pyblio/Resource.py:152
 #, python-format
 msgid ""
 "For mime type %s, no entry found in \n"
@@ -1158,49 +1047,45 @@ msgstr ""
 "Узмите у обзир додавање једног.\n"
 "Адреса: %s"
 
-#: ../Pyblio/Style/Parser.py:262
+#: Pyblio/Style/Parser.py:263
 #, python-format
-#| msgid "missing '%s' attribute"
 msgid "missing “%s” attribute"
 msgstr "недостаје „%s“ особина"
 
-#: ../Pyblio/Style/Parser.py:272
+#: Pyblio/Style/Parser.py:273
 #, python-format
 msgid "invalid opening tag: %s"
 msgstr "неисправна ознака отварања: %s"
 
-#: ../Pyblio/Style/Parser.py:282
+#: Pyblio/Style/Parser.py:283
 #, python-format
 msgid "invalid closing tag: %s"
 msgstr "неисправна ознака затварања: %s"
 
-#: ../pybliographer.py:44
-#, python-format
+#: pybliographer.in:44
+#, c-format
 msgid "This is %s, version %s"
 msgstr "Ово је %s, издање %s"
 
-#: ../pybliographer.py:48 ../pybliographer.py:55
+#: pybliographer.in:48 pybliographer.in:56
 msgid "This is free software with ABSOLUTELY NO WARRANTY."
 msgstr "Ово је слободан софтвер БЕЗ ИКАКВЕ ГАРАНЦИЈЕ."
 
-#: ../pybliographer.py:49
-#| msgid "For details, type `warranty'."
+#: pybliographer.in:49
 msgid "For details, type “warranty”."
 msgstr "За појединости, укуцајте „warranty“."
 
-#: ../pybliographer.py:112 ../pybliographer.py:164
-#, python-format
-#| msgid "%s: error: can't open file `%s'"
+#: pybliographer.in:113 pybliographer.in:165
+#, c-format
 msgid "%s: error: can’t open file “%s”"
 msgstr "%s: грешка: не могу да отворим датотеку „%s“"
 
-#: ../pybliographer.py:125
-#, python-format
-#| msgid "For help, run %s and type `help' at the prompt"
+#: pybliographer.in:126
+#, c-format
 msgid "For help, run %s and type “help” at the prompt"
 msgstr "За помоћ, покрените „%s“ и укуцајте „help“ на упиту"
 
-#: ../pybliographer.py:134
+#: pybliographer.in:135
 msgid ""
 "Useful commands:\n"
 "\thelp     to get some help\n"
@@ -1210,66 +1095,46 @@ msgstr ""
 "\thelp     да добијете нешто помоћи\n"
 "\tquit     да изађете\n"
 
-#: ../pybliographic.desktop.in.h:2
-msgid "Bibliography Manager"
-msgstr "Управник библиографије"
-
-#: ../pybliographic.desktop.in.h:3
-msgid "Manage bibliographic databases"
-msgstr "Управљајте базама библиографских података"
-
-#: ../scripts/pybliocheck.py:32
-#| msgid "usage: pybliocheck <file | directory>..."
+#: scripts/pybliocheck.py:39
 msgid "usage: pybliocheck <file | directory>…"
 msgstr "употреба: pybliocheck <датотека | директоријум>…"
 
-#: ../scripts/pybliocheck.py:61
+#: scripts/pybliocheck.py:68
 #, python-format
-#| msgid "file `%s' is ok [%d entries]"
-msgid "file “%s” is ok [%d entries]"
-msgstr "датотека „%s“ је у реду [%d ставке]"
+msgid "file “%s” is ok [%d entry]"
+msgid_plural "file “%s” is ok [%d entries]"
+msgstr[0] "датотека „%s“ је у реду [%d ставке]"
+msgstr[1] "датотека „%s“ је у реду [%d ставке]"
+msgstr[2] "датотека „%s“ је у реду [%d ставке]"
+msgstr[3] "датотека „%s“ је у реду [%d ставке]"
 
-#: ../scripts/pybliocompact.py:31
-#| msgid "usage: pybliocompact <latexfile> <bibtexfiles...>"
+#: scripts/pybliocompact.py:39
 msgid "usage: pybliocompact <latexfile> <bibtexfiles…>"
 msgstr "употреба: pybliocompact <латекс-датотека> <бибтекс-датотеке…>"
 
-#: ../scripts/pybliocompact.py:35
+#: scripts/pybliocompact.py:43
 #, python-format
 msgid "pybliocompact: error: %s\n"
 msgstr "pybliocompact: грешка: %s\n"
 
-#: ../scripts/pybliocompact.py:100
+#: scripts/pybliocompact.py:108
 msgid "no entry"
 msgstr "нема уноса"
 
-#: ../scripts/pybliocompact.py:163 ../scripts/pybliotext.py:240
+#: scripts/pybliocompact.py:171 scripts/pybliotext.py:247
 #, python-format
-#| msgid "can't find the following entries: %s"
 msgid "can’t find the following entries: %s"
 msgstr "не могу да нађем наредне уносе: %s"
 
-#: ../scripts/pyblioconvert.py:29
+#: scripts/pyblioconvert.py:32
 msgid "usage: pyblioconvert <source>..<target> <input> [output]"
 msgstr "употреба: pyblioconvert <извор>..<одредиште> <улаз> [излаз]"
 
-#: ../scripts/pyblioconvert.py:38
+#: scripts/pyblioconvert.py:41
 msgid "pyblioconvert: error: bad conversion format"
 msgstr "pyblioconvert: грешка: лош облик претварања"
 
-#: ../scripts/pyblioformat.py:35
-#| msgid ""
-#| "usage: pyblioformat [options] <database...>\n"
-#| "\n"
-#| "    options:\n"
-#| "      -o file, --output=file\t\tspecify an output filename\n"
-#| "      -s style, --style=style\t\tspecify a bibliography style\n"
-#| "      -f format, --format=format\tspecify an output format\n"
-#| "      -H header, --header=header\tdefines a header file\n"
-#| "      -F footer, --footer=footer\tdefines a footer file\n"
-#| "      -l 'output', --list='output'\tlists the available output formats\n"
-#| "      -h, --help\t\t\tshow this help message\n"
-#| "    "
+#: scripts/pyblioformat.py:40
 msgid ""
 "usage: pyblioformat [options] <database…>\n"
 "\n"
@@ -1295,157 +1160,214 @@ msgstr ""
 "      -h,          --help\t\tприказује ову поруку помоћи\n"
 "    "
 
-#: ../scripts/pyblioformat.py:49
+#: scripts/pyblioformat.py:54
 #, python-format
 msgid "pyblioformat: error: %s\n"
 msgstr "pyblioformat: грешка: %s\n"
 
-#: ../scripts/pyblioformat.py:55
+#: scripts/pyblioformat.py:60
 #, python-format
 msgid "pyblioformat: warning: %s\n"
 msgstr "pyblioformat: упозорење: %s\n"
 
-#: ../scripts/pyblioformat.py:94 ../scripts/pybliotext.py:252
-#: ../scripts/pybliotext.py:278 ../scripts/pybliotext.py:321
+#: scripts/pyblioformat.py:99 scripts/pybliotext.py:259
+#: scripts/pybliotext.py:285 scripts/pybliotext.py:328
 #, python-format
-#| msgid "can't open `%s': %s"
 msgid "can’t open “%s”: %s"
 msgstr "не могу да отворим „%s“: %s"
 
-#: ../scripts/pyblioformat.py:101
+#: scripts/pyblioformat.py:106
 #, python-format
-#| msgid "unknown list `%s'"
 msgid "unknown list “%s”"
 msgstr "непознат списак „%s“"
 
-#: ../scripts/pyblioformat.py:104
+#: scripts/pyblioformat.py:109
 #, python-format
-#| msgid "pyblioformat: available values for `%s':"
 msgid "pyblioformat: available values for “%s”:"
 msgstr "pyblioformat: доступне вредности за „%s“:"
 
-#: ../scripts/pyblioformat.py:108
+#: scripts/pyblioformat.py:113
 #, python-format
-#| msgid "empty value list `%s'"
 msgid "empty value list “%s”"
 msgstr "празан списак вредности „%s“"
 
-#: ../scripts/pyblioformat.py:130
+#: scripts/pyblioformat.py:135
 msgid "too few arguments"
 msgstr "премало аргумената"
 
-#: ../scripts/pyblioformat.py:137 ../scripts/pybliotext.py:117
+#: scripts/pyblioformat.py:142 scripts/pybliotext.py:124
 #, python-format
-#| msgid "unknown output format `%s'"
 msgid "unknown output format “%s”"
 msgstr "непознат излазни облик „%s“"
 
-#: ../scripts/pyblioformat.py:150 ../scripts/pybliotex.py:87
-#: ../scripts/pybliotext.py:94
+#: scripts/pyblioformat.py:155 scripts/pybliotex.py:91
+#: scripts/pybliotext.py:101
 #, python-format
-#| msgid "can't find style `%s'"
 msgid "can’t find style “%s”"
 msgstr "не могу да нађем стил „%s“"
 
-#: ../scripts/pyblioformat.py:153
+#: scripts/pyblioformat.py:158
 #, python-format
-#| msgid "pyblioformat: using style `%s', format `%s'\n"
 msgid "pyblioformat: using style “%s”, format “%s”\n"
 msgstr "pyblioformat: користим стил „%s“, облика „%s“\n"
 
-#: ../scripts/pyblioformat.py:168
+#: scripts/pyblioformat.py:173
 #, python-format
-#| msgid "can't open header `%s': %s"
 msgid "can’t open header “%s”: %s"
 msgstr "не могу да отворим заглавље „%s“: %s"
 
-#: ../scripts/pyblioformat.py:176
+#: scripts/pyblioformat.py:181
 #, python-format
-#| msgid "can't open database: %s"
 msgid "can’t open database: %s"
 msgstr "не могу да отворим базу података: %s"
 
-#: ../scripts/pyblioformat.py:191
+#: scripts/pyblioformat.py:196
 #, python-format
-#| msgid "can't open footer `%s': %s"
 msgid "can’t open footer “%s”: %s"
 msgstr "не могу да отворим подножје „%s“: %s"
 
-#: ../scripts/pybliotex.py:35
-#| msgid "usage: pybliotex <latexfile> [bibtexfiles...]"
+#: scripts/pybliotex.py:39
 msgid "usage: pybliotex <latexfile> [bibtexfiles…]"
 msgstr "употреба: pybliotex <латекс-датотека> [бибтекс-датотеке…]"
 
-#: ../scripts/pybliotex.py:39
+#: scripts/pybliotex.py:43
 #, python-format
 msgid "pybliotex: error: %s\n"
 msgstr "pybliotex: грешка: %s\n"
 
 #. warn the user that some entries were not found
-#: ../scripts/pybliotex.py:60
+#: scripts/pybliotex.py:64
 msgid "pybliotex: warning: the following keys were not resolved"
 msgstr "pybliotex: упозорење: наредни кључеви нису разрешени"
 
 #. If the LaTeX document declares no style...
-#: ../scripts/pybliotex.py:65
+#: scripts/pybliotex.py:69
 msgid "no style defined"
 msgstr "стил није одређен"
 
-#: ../scripts/pybliotext.py:41
-#| msgid ""
-#| "usage: pybliotext [-o outputfile] [-s style] <textfile> <bibfiles...>"
+#: scripts/pybliotext.py:48
 msgid "usage: pybliotext [-o outputfile] [-s style] <textfile> <bibfiles…>"
 msgstr ""
-"употреба: pybliotext [-o излазна датотека] [-s стил] <датотека текста> <"
-"датотека библиографије…>"
+"употреба: pybliotext [-o излазна датотека] [-s стил] <датотека текста> "
+"<датотека библиографије…>"
 
-#: ../scripts/pybliotext.py:45
+#: scripts/pybliotext.py:52
 #, python-format
 msgid "pybliotext: error: %s\n"
 msgstr "pybliotext: грешка: %s\n"
 
-#: ../scripts/pybliotext.py:50
+#: scripts/pybliotext.py:57
 #, python-format
 msgid "pybliotext: warning: %s\n"
 msgstr "pybliotext: упозорење: %s\n"
 
-#: ../scripts/pybliotext.py:124
+#: scripts/pybliotext.py:131
 #, python-format
-#| msgid "File already exists: `%s'"
 msgid "File already exists: “%s”"
 msgstr "Датотека већ постоји: „%s“"
 
-#: ../scripts/pybliotext.py:127
+#: scripts/pybliotext.py:134
 #, python-format
-#| msgid "A file with the same name already exists: `%s'"
 msgid "A file with the same name already exists: “%s”"
 msgstr "Датотека са истим називом већ постоји: „%s“"
 
-#: ../scripts/pybliotext.py:178
+#: scripts/pybliotext.py:185
 msgid "no citation found"
 msgstr "није пронађен цитат"
 
-#: ../scripts/pybliotext.py:193
+#: scripts/pybliotext.py:200
 #, python-format
-#| msgid "pybliotext: using style `%s', format `%s'\n"
 msgid "pybliotext: using style “%s”, format “%s”\n"
 msgstr "pybliotext: користим стил „%s“, облика „%s“\n"
 
-#: ../scripts/pybliotext.py:316
+#: scripts/pybliotext.py:323
 #, python-format
-#| msgid "can't create `%s'"
 msgid "can’t create “%s”"
 msgstr "не могу да направим „%s“"
 
-#: ../scripts/pybliotext.py:342
+#: scripts/pybliotext.py:349
 #, python-format
-#| msgid "can't remove `%s'"
 msgid "can’t remove “%s”"
 msgstr "не могу да уклоним „%s“"
 
-#: ../scripts/pybliotext.py:344
+#: scripts/pybliotext.py:351
 msgid "Done"
 msgstr "Урађено"
+
+#~ msgid "Quick search"
+#~ msgstr "Брза претрага"
+
+#~ msgid ""
+#~ "The database has been modified.\n"
+#~ "Discard changes?"
+#~ msgstr ""
+#~ "База података је измењена.\n"
+#~ "Да занемарим измене?"
+
+#~ msgid "Invalid day field in date"
+#~ msgstr "Неисправно поље дана у датуму"
+
+#~ msgid "Invalid month field in date"
+#~ msgstr "Неисправно поље месеца у датуму"
+
+#~ msgid "Invalid year field in date"
+#~ msgstr "Неисправно поље године у датуму"
+
+#~ msgid "FIELDS DEFINITION"
+#~ msgstr "ДЕФИНИЦИЈА ПОЉА"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "Datum"
+#~ msgstr "Датум"
+
+#~ msgid "A"
+#~ msgstr "А"
+
+#~ msgid "standard fields"
+#~ msgstr "уобичајена поља"
+
+#~ msgid "<b>Entry type</b>"
+#~ msgstr "<b>Врста уноса</b>"
+
+#~ msgid "Style Selection"
+#~ msgstr "Избор стила"
+
+#~ msgid "_New"
+#~ msgstr "_Ново"
+
+#~ msgid "Previous Documents"
+#~ msgstr "Претходни документи"
+
+#~ msgid "_Add…"
+#~ msgstr "_Додај…"
+
+#~| msgid "_Edit"
+#~ msgid "_Edit…"
+#~ msgstr "_Уреди…"
+
+#~| msgid "Delete"
+#~ msgid "_Delete…"
+#~ msgstr "_Обриши…"
+
+#~ msgid "Cite"
+#~ msgstr "Цитирај"
+
+#~ msgid "Settings"
+#~ msgstr "Подешавања"
+
+#~ msgid "Contents"
+#~ msgstr "Садржај"
+
+#~ msgid "Open File"
+#~ msgstr "Отвори датотеку"
+
+#~ msgid "Save File"
+#~ msgstr "Сачувај датотеку"
+
+#~ msgid "Close"
+#~ msgstr "Затвори"
 
 #~ msgid "Medline Query..."
 #~ msgstr "Упит медлајна..."
