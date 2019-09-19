@@ -1,0 +1,1238 @@
+# Basque translation for pybliographer.
+# Copyright (C) 2019 pybliographer's COPYRIGHT HOLDER
+# This file is distributed under the same license as the pybliographer package.
+# Asier Sarasua Garmendia <asier.sarasua@gmail.com>, 2019.
+#
+msgid ""
+msgstr "Project-Id-Version: pybliographer master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/pybliographer/issues\n"
+"POT-Creation-Date: 2019-09-16 07:09+0000\n"
+"PO-Revision-Date: 2019-09-19 10:00+0000\n"
+"Last-Translator: Asier Sarasua Garmendia <asier.sarasua@gmail.com>\n"
+"Language-Team: Basque <librezale@librezale.eus>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/pybliographic.appdata.xml.in:7 data/pybliographic.desktop.in:3
+#: Pyblio/GnomeUI/glade/pyblio.ui:7
+msgid "Pybliographer"
+msgstr "Pybliographer"
+
+#: data/pybliographic.appdata.xml.in:8
+msgid "Framework for working with bibliographic databases"
+msgstr "Datu-base bibliografikoekin aritzeko lan-markoa"
+
+#: data/pybliographic.appdata.xml.in:10
+msgid ""
+"Pybliographer is a tool for managing bibliographic databases. It can be used "
+"for searching, editing, reformatting, etc. In fact, it’s a simple framework "
+"that provides easy to use python classes and functions, and therefore can be "
+"extended to many uses (generating HTML pages according to bibliographic "
+"searches, etc)."
+msgstr "Pybliographer datu-base bibliografikoak kudeatzeko tresna bat da. Bilaketak egiteko, editatzeko, formatua aldatzeko eta abar erabili daiteke. Izatez, erraz erabiltzen diren Python klaseak eskaintzen dituen lan-marko sinple bat da, eta beraz, erabilera askotarako hedatu daiteke (HTML orriak sortzea bilaketa bibliografikoen arabera, etab.)"
+
+#: data/pybliographic.appdata.xml.in:17
+msgid ""
+"In addition to the scripting environment, a graphical Gnome interface is "
+"available. It provides powerful editing capabilities, a nice hierarchical "
+"search mechanism, direct insertion of references into LyX, direct queries on "
+"Medline, and more. It currently supports the following file formats: BibTeX, "
+"ISI, Medline, Ovid, Refer."
+msgstr "Scripten inguruneaz gain, GNOME interfaze grafikoa ere eskaintzen du. Edizioko ahalmen sendoak, bilaketak egiteko mekanismo hierarkiko ona, LyX aplikazioan erreferentziak zuzenean txertatzeko aukera, Medilinen kontsulta zuzenak egitea, eta beste hamaika eginbide eskaintzen ditu. Honako fitxategi-formatuak onartzen ditu: BibTeX, ISI, Medline, Ovid, Refer. "
+
+#: data/pybliographic.appdata.xml.in:27
+msgid "The main window"
+msgstr "Leiho nagusia"
+
+#: data/pybliographic.appdata.xml.in:33
+msgid "Editing an entry"
+msgstr "Sarrera bat editatzea"
+
+#: data/pybliographic.desktop.in:4
+msgid "Bibliography Manager"
+msgstr "Bibliografia-kudeatzailea"
+
+#: data/pybliographic.desktop.in:5
+msgid "Manage bibliographic databases"
+msgstr "Kudeatu datu-base bibliografikoak"
+
+#: Pyblio/Autoload.py:81
+#, python-format
+msgid "warning: can’t import %s: %s"
+msgstr "abisua: ezin da %s inportatu: %s"
+
+#: Pyblio/Config.py:61
+#, python-format
+msgid "value of “%s” should be of type %s"
+msgstr "“%s” balioak %s motakoa izan behar luke"
+
+#: Pyblio/Config.py:223
+msgid "String"
+msgstr "Katea"
+
+#: Pyblio/Config.py:232
+msgid "Boolean"
+msgstr "Boolearra"
+
+#: Pyblio/Config.py:251
+msgid "Integer"
+msgstr "Osokoa"
+
+#: Pyblio/Config.py:253
+#, python-format
+msgid "Integer under %d"
+msgstr "%d azpiko zenbaki osoa"
+
+#: Pyblio/Config.py:255
+#, python-format
+msgid "Integer over %d"
+msgstr "%d gaineko zenbaki osoa"
+
+#: Pyblio/Config.py:257
+#, python-format
+msgid "Integer between %d and %d"
+msgstr "%d eta %d arteko zenbaki osoa"
+
+#: Pyblio/Config.py:269
+#, python-format
+msgid "Element in “%s”"
+msgstr "Elementua “%s”(e)n"
+
+#: Pyblio/Config.py:289
+#, python-format
+msgid "Tuple (%s)"
+msgstr "Tupla (%s)"
+
+#: Pyblio/Config.py:310
+#, python-format
+msgid "List (%s)"
+msgstr "Zerrenda (%s)"
+
+#: Pyblio/Config.py:335
+#, python-format
+msgid "Dictionary (%s, %s)"
+msgstr "Hiztegia (%s, %s)"
+
+#: Pyblio/Config.py:355
+#, python-format
+msgid "warning: could not restore setting %r to %r: %s"
+msgstr "abisua: ezin izan da %r ezarpena leheneratu eta %r bihurtu: %s"
+
+#: Pyblio/Fields.py:268
+msgid "Illegal year value"
+msgstr "baliogabeko urte balioa"
+
+#: Pyblio/Fields.py:272
+msgid "Illegal month value"
+msgstr "baliogabeko hilabete balioa"
+
+#: Pyblio/Fields.py:276
+msgid "Illegal day value"
+msgstr "baliogabeko egun balioa"
+
+#: Pyblio/Fields.py:517
+#, python-format
+msgid "in %s"
+msgstr "%s(e)n"
+
+#: Pyblio/Format/BibTeX.py:328 Pyblio/Format/BibTeX.py:375
+#, python-format
+msgid "key “%s” is malformed"
+msgstr "“%s” gakoa gaizki formatuta dago"
+
+#: Pyblio/Format/BibTeX.py:344 Pyblio/Format/BibTeX.py:363
+#, python-format
+msgid "%s:%d: key “%s” already defined"
+msgstr "%s:%d: “%s” gakoa dagoeneko definituta dago"
+
+#: Pyblio/GnomeUI/Config.py:135 Pyblio/GnomeUI/Fields.py:417
+msgid ""
+"Some changes require to restart Pybliographic\n"
+"to be correctly taken into account"
+msgstr "Zenbait aldaketak Pybliographic berrabiaraztea eskatzen dute\n"
+"behar den moduan kontuan har daitezen"
+
+#: Pyblio/GnomeUI/Config.py:417
+msgid "Add"
+msgstr "Gehitu"
+
+#: Pyblio/GnomeUI/Config.py:420
+msgid "Update"
+msgstr "Eguneratu"
+
+#: Pyblio/GnomeUI/Config.py:423 Pyblio/GnomeUI/Config.py:537
+msgid "Remove"
+msgstr "Kendu"
+
+#: Pyblio/GnomeUI/Config.py:534
+msgid "Set"
+msgstr "Ezarri"
+
+#: Pyblio/GnomeUI/Config.py:549
+msgid "Key:"
+msgstr "Gakoa:"
+
+#: Pyblio/GnomeUI/Config.py:551
+msgid "Value:"
+msgstr "Balioa:"
+
+#. id     stock            label         accel   tooltip   callback
+#: Pyblio/GnomeUI/Document.py:144
+msgid "_File"
+msgstr "_Fitxategia"
+
+#: Pyblio/GnomeUI/Document.py:145
+msgid "_Edit"
+msgstr "_Editatu"
+
+#: Pyblio/GnomeUI/Document.py:146
+msgid "_View"
+msgstr "_Ikusi"
+
+#: Pyblio/GnomeUI/Document.py:147
+msgid "_Cite"
+msgstr "_Aipatu"
+
+#: Pyblio/GnomeUI/Document.py:148
+msgid "_Settings"
+msgstr "E_zarpenak"
+
+#: Pyblio/GnomeUI/Document.py:149
+msgid "_Help"
+msgstr "_Laguntza"
+
+#: Pyblio/GnomeUI/Document.py:150
+msgid "Recent documents"
+msgstr "Azken dokumentuak"
+
+#: Pyblio/GnomeUI/Document.py:153
+msgid "Open a file"
+msgstr "Ireki fitxategia"
+
+#: Pyblio/GnomeUI/Document.py:154
+msgid "Open _Location…"
+msgstr "Ireki _kokalekua…"
+
+#: Pyblio/GnomeUI/Document.py:155
+msgid "Save the current file"
+msgstr "Uneko fitxategia gordetzen du"
+
+#: Pyblio/GnomeUI/Document.py:160
+msgid "Merge With…"
+msgstr "Batu honekin…"
+
+#: Pyblio/GnomeUI/Document.py:161
+msgid "Medline Query…"
+msgstr "Medline kontsulta…"
+
+#: Pyblio/GnomeUI/Document.py:169
+msgid "Add a new entry"
+msgstr "Gehitu sarrera berria"
+
+#: Pyblio/GnomeUI/Document.py:174
+msgid "S_ort…"
+msgstr "O_rdenatu…"
+
+#: Pyblio/GnomeUI/Document.py:175
+msgid "Cite…"
+msgstr "Aipatu…"
+
+#: Pyblio/GnomeUI/Document.py:175
+msgid "Cite key(s)"
+msgstr "Aipatu gakoa(k)"
+
+#: Pyblio/GnomeUI/Document.py:176
+msgid "Format…"
+msgstr "Formatua…"
+
+#: Pyblio/GnomeUI/Document.py:178
+msgid "Fields…"
+msgstr "Eremuak…"
+
+#: Pyblio/GnomeUI/Document.py:180
+msgid "Forget all changes"
+msgstr "Ahaztu aldaketa guztiak"
+
+#: Pyblio/GnomeUI/Document.py:184
+msgid "_Resource"
+msgstr "_Baliabidea"
+
+#: Pyblio/GnomeUI/Document.py:301
+msgid "Unnamed bibliographic database"
+msgstr "Izenik gabeko datu-base bibliografikoa"
+
+#: Pyblio/GnomeUI/Document.py:384
+#, python-format
+msgid ""
+"can’t open file “%s” for writing:\n"
+"%s"
+msgstr "Ezin da “%s” fitxategia ireki idazteko:\n"
+"%s"
+
+#: Pyblio/GnomeUI/Document.py:405
+#, python-format
+msgid ""
+"Error while parsing “%s”:\n"
+"%s"
+msgstr "Errorera“%s” analizatzean:\n"
+"%s"
+
+#: Pyblio/GnomeUI/Document.py:421
+msgid "New database"
+msgstr "Datu-base berria"
+
+#: Pyblio/GnomeUI/Document.py:429 Pyblio/GnomeUI/Document.py:433
+msgid "[no entry]"
+msgstr "[sarrerarik ez]"
+
+#: Pyblio/GnomeUI/Document.py:430
+msgid "[1 entry]"
+msgstr "[sarrera bat]"
+
+#: Pyblio/GnomeUI/Document.py:431
+#, python-format
+msgid "[%d entries]"
+msgstr "[%d sarrera]"
+
+#: Pyblio/GnomeUI/Document.py:434
+#, python-format
+msgid "[%d/1 entry]"
+msgstr "[%d/1 sarrera]"
+
+#: Pyblio/GnomeUI/Document.py:435
+#, python-format
+msgid "[%d/%d entries]"
+msgstr "[%d/%d sarrera]"
+
+#: Pyblio/GnomeUI/Document.py:440
+msgid "[modified]"
+msgstr "[aldatua]"
+
+#: Pyblio/GnomeUI/Document.py:443
+#, python-format
+msgid "view limited to: %s"
+msgstr "bistaren muga: %s"
+
+#: Pyblio/GnomeUI/Document.py:457
+msgid ""
+"The database has been modified.\n"
+"Save changes?"
+msgstr "Datu-basea aldatu egin da.\n"
+"Aldaketak gorde?"
+
+#: Pyblio/GnomeUI/Document.py:477
+msgid ""
+"The database has been externally modified.\n"
+"Overwrite changes?"
+msgstr "Datu-basea kanpoan aldatu da.\n"
+"Aldaketak gainidatzi?"
+
+#. no result.
+#: Pyblio/GnomeUI/Document.py:506
+msgid "Your query returned no result"
+msgstr "Zure kontsultak ez du emaitzarik itzuli"
+
+#. error
+#: Pyblio/GnomeUI/Document.py:510
+msgid "An error occurred during Medline Query"
+msgstr "Errorea gertatu da Medline kontsultatzean"
+
+#. get a new file name
+#: Pyblio/GnomeUI/Document.py:520
+msgid "Merge file"
+msgstr "Konbinatu fitxategia"
+
+#: Pyblio/GnomeUI/Document.py:534 Pyblio/GnomeUI/Document.py:622
+msgid "Open error"
+msgstr "Irekitze-errorea"
+
+#: Pyblio/GnomeUI/Document.py:558
+msgid "Merge status"
+msgstr "Konbinazioaren egoera"
+
+#. get a new file name
+#: Pyblio/GnomeUI/Document.py:569
+msgid "Open file"
+msgstr "Ireki fitxategia"
+
+#: Pyblio/GnomeUI/Document.py:608
+msgid ""
+"An autosave file was found which is newer than the original file.\n"
+"Do you want to restore it?"
+msgstr "Automatikoki gordetako fitxategi bat aurkitu da eta jatorrizko fitxategia baino berriagoa da.\n"
+"Leheneratu nahi duzu?"
+
+#: Pyblio/GnomeUI/Document.py:643 Pyblio/GnomeUI/Document.py:786
+#: Pyblio/GnomeUI/Document.py:846
+#, python-format
+msgid ""
+"Unable to remove autosave file “%s”:\n"
+"%s"
+msgstr "Ezin da gordetze automatikoko “%s” fitxategia kendu:\n"
+"%s"
+
+#: Pyblio/GnomeUI/Document.py:694
+#, python-format
+msgid ""
+"Error during autosaving:\n"
+"%s"
+msgstr "Errorea automatikoki gordetzean:\n"
+"%s"
+
+#: Pyblio/GnomeUI/Document.py:722
+#, python-format
+msgid ""
+"Unable to save “%s”:\n"
+"%s"
+msgstr "Ezin izan da “%s” gorde:\n"
+"%s"
+
+#: Pyblio/GnomeUI/Document.py:730
+msgid ""
+"An internal error occurred during saving\n"
+"Try to Save As…"
+msgstr "Barne-errorea gertatu da gordetzean.\n"
+"Saiatu 'Gorde honela…' erabilita"
+
+#. get a new file name
+#: Pyblio/GnomeUI/Document.py:744
+msgid "Save As…"
+msgstr "Gorde honela…"
+
+#: Pyblio/GnomeUI/Document.py:753
+#, python-format
+msgid ""
+"The file “%s” already exists.\n"
+"Overwrite it?"
+msgstr "“%s” fitxategia badago lehendik ere.\n"
+"Gainidatzi?"
+
+#: Pyblio/GnomeUI/Document.py:760
+#, python-format
+msgid ""
+"During opening:\n"
+"%s"
+msgstr "Irekitzean:\n"
+"%s"
+
+#: Pyblio/GnomeUI/Document.py:798
+msgid "Reopen error"
+msgstr "Errorea berriro irekitzean"
+
+#: Pyblio/GnomeUI/Document.py:871
+#, python-format
+msgid ""
+"An entry called “%s” already exists.\n"
+"Rename and add it anyway?"
+msgstr "“%s” deitzen den sarrera badago lehendik ere.\n"
+"Aldatu izena eta gehitu?"
+
+#: Pyblio/GnomeUI/Document.py:908
+msgid "Really remove all the entries?"
+msgstr "Benetan kendu nahi dituzu sarrera guztiak?"
+
+#: Pyblio/GnomeUI/Document.py:928
+msgid "Create new entry"
+msgstr "Sortu sarrera berria"
+
+#: Pyblio/GnomeUI/Document.py:942
+#, python-format
+msgid "Really edit %d entries?"
+msgstr "Benetan editatu nahi dituzu %d sarrera?"
+
+#: Pyblio/GnomeUI/Document.py:989
+#, python-format
+msgid "Remove all the %d entries?"
+msgstr "Kendu %d sarrera guztiak?"
+
+#: Pyblio/GnomeUI/Document.py:991
+#, python-format
+msgid "Remove entry “%s”?"
+msgstr "Kendu “%s” sarrera?"
+
+#: Pyblio/GnomeUI/Document.py:1010
+msgid ""
+"your search text must contain\n"
+"latin-1 characters only"
+msgstr "Zure bilaketak latin-1 karaktereak\n"
+"soilik eduki behar ditu"
+
+#: Pyblio/GnomeUI/Document.py:1089 Pyblio/GnomeUI/Document.py:1097
+#, python-format
+msgid ""
+"Can’t connect to LyX:\n"
+"%s"
+msgstr "Ezin da LyX aplikazioarekin konektatu:\n"
+"%s"
+
+#: Pyblio/GnomeUI/Document.py:1156
+msgid "Select a column to search in first"
+msgstr "Hautatu zutabe bat, lehenengo hartan bilatzeko"
+
+#: Pyblio/GnomeUI/Document.py:1168
+#, python-format
+msgid "Searching for “%s”…"
+msgstr "“%s” bilatzen…"
+
+#: Pyblio/GnomeUI/Document.py:1172
+#, python-format
+msgid "Cannot find “%s”…"
+msgstr "Ezin da “%s” aurkitu…"
+
+#: Pyblio/GnomeUI/Document.py:1203
+#, python-format
+msgid ""
+"Can’t display documentation:\n"
+"%s"
+msgstr "Ezin da dokumentazioa bistaratu:\n"
+"%s"
+
+#: Pyblio/GnomeUI/Document.py:1225
+msgid "GNOME Translation Team"
+msgstr "GNOME itzulpen-taldea"
+
+#: Pyblio/GnomeUI/Document.py:1226
+msgid "This program is copyrighted under the GNU GPL"
+msgstr "Programa hau GNU GPL lizentzia pean dago"
+
+#: Pyblio/GnomeUI/Document.py:1227
+msgid "GNOME interface to the Pybliographer system."
+msgstr "GNOME interfazea Pybliographer sistemarako."
+
+#: Pyblio/GnomeUI/Document.py:1233
+msgid "Pybliographer Home Page"
+msgstr "Pybliographer webgunea"
+
+#: Pyblio/GnomeUI/Editor.py:41
+msgid "Last Name, First Name"
+msgstr "Abizena, Izena"
+
+#: Pyblio/GnomeUI/Editor.py:42 Pyblio/GnomeUI/Editor.py:1292
+#: Pyblio/GnomeUI/Fields.py:42
+msgid "Text"
+msgstr "Testua"
+
+#: Pyblio/GnomeUI/Editor.py:139 Pyblio/GnomeUI/Editor.py:1006
+msgid "Error in native string parsing"
+msgstr "Errorea jatorrizko kate-analisian"
+
+#: Pyblio/GnomeUI/Editor.py:318
+msgid "Day"
+msgstr "Eguna"
+
+#: Pyblio/GnomeUI/Editor.py:327
+msgid "Month"
+msgstr "Hila"
+
+#: Pyblio/GnomeUI/Editor.py:336
+msgid "Year"
+msgstr "Urtea"
+
+#. A delete button
+#: Pyblio/GnomeUI/Editor.py:425 Pyblio/GnomeUI/Search.py:86
+msgid "Delete"
+msgstr "Ezabatu"
+
+#: Pyblio/GnomeUI/Editor.py:436 Pyblio/GnomeUI/Editor.py:449
+#: Pyblio/GnomeUI/Editor.py:452
+msgid "[ Drop an Entry here ]"
+msgstr "[ Jaregin sarrera bat hemen ]"
+
+#: Pyblio/GnomeUI/Editor.py:508
+msgid "Browse…"
+msgstr "Arakatu…"
+
+#: Pyblio/GnomeUI/Editor.py:531
+msgid "Select file"
+msgstr "Hautatu fitxategia"
+
+#: Pyblio/GnomeUI/Editor.py:555 Pyblio/GnomeUI/Fields.py:239
+#: Pyblio/GnomeUI/glade/fields.ui:255
+msgid "Entry type"
+msgstr "Sarrera mota"
+
+#: Pyblio/GnomeUI/Editor.py:557
+msgid "Key"
+msgstr "Gakoa"
+
+#: Pyblio/GnomeUI/Editor.py:606
+msgid "Create Field"
+msgstr "Sortu eremua"
+
+#. navigation buttons
+#: Pyblio/GnomeUI/Editor.py:611
+msgid "Back"
+msgstr "Atzera"
+
+#: Pyblio/GnomeUI/Editor.py:614
+msgid "Next"
+msgstr "Hurrengoa"
+
+#: Pyblio/GnomeUI/Editor.py:732 Pyblio/GnomeUI/Fields.py:449
+msgid "Mandatory"
+msgstr "Derrigorrezkoa"
+
+#: Pyblio/GnomeUI/Editor.py:732 Pyblio/GnomeUI/Fields.py:450
+msgid "Optional"
+msgstr "Aukerakoa"
+
+#: Pyblio/GnomeUI/Editor.py:732 Pyblio/GnomeUI/Editor.py:1209
+msgid "Notes"
+msgstr "Notes"
+
+#: Pyblio/GnomeUI/Editor.py:732
+msgid "Extra"
+msgstr "Gehigarria"
+
+#: Pyblio/GnomeUI/Editor.py:911
+msgid "Invalid key format"
+msgstr "Baliogabeko gako-formatua"
+
+#: Pyblio/GnomeUI/Editor.py:920
+#, python-format
+msgid "Key “%s” already exists"
+msgstr "“%s” gakoa badago lehendik ere"
+
+#: Pyblio/GnomeUI/Editor.py:937
+#, python-format
+msgid "The “%s” field contains a non Latin-1 symbol"
+msgstr "“%s” eremuak Latin-1 ez den ikur bat du"
+
+#: Pyblio/GnomeUI/Editor.py:1000
+msgid "Your text contains non Latin-1 symbols"
+msgstr "Zure testuak Latin-1 ez diren ikurrak ditu"
+
+#: Pyblio/GnomeUI/Editor.py:1026
+msgid "Edit entry"
+msgstr "Editatu sarrera"
+
+#: Pyblio/GnomeUI/Editor.py:1040 Pyblio/GnomeUI/Editor.py:1104
+msgid "Native Editing"
+msgstr "Jatorrizko edizioa"
+
+#: Pyblio/GnomeUI/Editor.py:1127
+msgid "Standard Editing"
+msgstr "Edizio estandarra"
+
+#: Pyblio/GnomeUI/Editor.py:1230
+msgid "mandatory"
+msgstr "derrigorrezkoa"
+
+#: Pyblio/GnomeUI/Editor.py:1295
+msgid "Enter text here"
+msgstr "Sartu testua hemen"
+
+#: Pyblio/GnomeUI/Editor.py:1347
+msgid "New Annotation Name"
+msgstr "Oharpenaren izen berria"
+
+#: Pyblio/GnomeUI/Editor.py:1353
+msgid "Name of the new annotation:"
+msgstr "Oharpen berriaren izena:"
+
+#: Pyblio/GnomeUI/Entry.py:115
+#, python-format
+msgid ""
+"Cannot open URL:\n"
+"%s"
+msgstr "Ezin da URLa ireki:\n"
+"%s"
+
+#: Pyblio/GnomeUI/Fields.py:41
+msgid "Authors"
+msgstr "Egileak"
+
+#: Pyblio/GnomeUI/Fields.py:43
+msgid "Long Text"
+msgstr "Testu luzea"
+
+#: Pyblio/GnomeUI/Fields.py:44
+msgid "URL"
+msgstr "URLa"
+
+#: Pyblio/GnomeUI/Fields.py:45
+msgid "Reference"
+msgstr "Erreferentzia"
+
+#: Pyblio/GnomeUI/Fields.py:46
+msgid "Date"
+msgstr "Data"
+
+#: Pyblio/GnomeUI/Fields.py:123
+msgid "Name"
+msgstr "Izena"
+
+#: Pyblio/GnomeUI/Fields.py:126 Pyblio/GnomeUI/glade/fields.ui:167
+msgid "Type"
+msgstr "Mota"
+
+#: Pyblio/GnomeUI/Fields.py:303
+msgid "Available"
+msgstr "Erabilgarri"
+
+#: Pyblio/GnomeUI/Fields.py:313
+msgid "Associated"
+msgstr "Lotua"
+
+#: Pyblio/GnomeUI/Fields.py:321
+msgid "Please, select an entry type from previous page."
+msgstr "Hautatu sarrera mota bat aurreko orrian."
+
+#: Pyblio/GnomeUI/Fields.py:332
+#, python-format
+msgid "Fields associated with <b>%s</b> entry type"
+msgstr "<b>%s</b> sarrera motari lotutako eremuak"
+
+#: Pyblio/GnomeUI/FileSelector.py:37
+msgid "File"
+msgstr "Fitxategia"
+
+#: Pyblio/GnomeUI/FileSelector.py:74 Pyblio/GnomeUI/glade/openurl.ui:101
+msgid "Bibliography type:"
+msgstr "Bibliografia mota"
+
+#: Pyblio/GnomeUI/FileSelector.py:91 Pyblio/GnomeUI/OpenURL.py:61
+msgid " — According to file suffix — "
+msgstr " — Fitxategi-atzizkiaren arabera — "
+
+#. The root of the search tree is the full database
+#: Pyblio/GnomeUI/Search.py:68
+msgid "Full database"
+msgstr "Datu-base betea"
+
+#: Pyblio/GnomeUI/Search.py:136
+msgid "internal error during evaluation"
+msgstr "barne-errorea ebaluazioan"
+
+#: Pyblio/GnomeUI/Search.py:189
+#, python-format
+msgid ""
+"while compiling %s\n"
+"error: %s"
+msgstr "%s konpilatzean\n"
+"errorea: %s"
+
+#. These are additional search fields
+#: Pyblio/GnomeUI/Sort.py:97
+msgid "[Entry Type]"
+msgstr "[Sarrera mota]"
+
+#: Pyblio/GnomeUI/Sort.py:98
+msgid "[Key Value]"
+msgstr "[Gako-balioa]"
+
+#: Pyblio/GnomeUI/Utils.py:170
+msgid "The following errors occurred:"
+msgstr "Honako erroreak gertatu dira:"
+
+#: Pyblio/GnomeUI/__init__.py:48
+#, python-format
+msgid "This is Pybliographic %s [Python %s, Gtk %s, PyGTK %s]"
+msgstr "Hau Pybliographic %s da [Python %s, Gtk %s, PyGTK %s]"
+
+#: Pyblio/GnomeUI/glade/config.ui:7
+msgid "Pybliographer Configuration"
+msgstr "Pybliographer konfigurazioa"
+
+#: Pyblio/GnomeUI/glade/fields.ui:9
+msgid "Entry types and field names configuration"
+msgstr "Sarrera moten eta eremu-izenen konfigurazioa"
+
+#: Pyblio/GnomeUI/glade/fields.ui:137
+msgid "Name "
+msgstr "Izena "
+
+#: Pyblio/GnomeUI/glade/fields.ui:149
+msgid "Editor"
+msgstr "Editorea"
+
+#: Pyblio/GnomeUI/glade/fields.ui:211
+msgid "Fields "
+msgstr "Eremuak "
+
+#: Pyblio/GnomeUI/glade/fields.ui:286
+msgid ""
+"Select an entry type and specify \n"
+"its associated (mandatory and\n"
+"optional) fields on the next page.\n"
+"\n"
+"\n"
+"\n"
+msgstr "Hautatu sarrera mota bat eta zehaztu\n"
+"hari lotutako (derrigorrezko eta\n"
+"aukerako) eremuak hurrengo orrian.\n"
+"\n"
+"\n"
+"\n"
+
+#: Pyblio/GnomeUI/glade/fields.ui:318
+msgid "Entries"
+msgstr "Sarrerak"
+
+#: Pyblio/GnomeUI/glade/fields.ui:341
+msgid "Information for <b>Article</b> entry type"
+msgstr "Informazioa <b>Artikulua</b> sarrera motarako"
+
+#: Pyblio/GnomeUI/glade/fields.ui:420
+msgid "Association"
+msgstr "Elkarketa"
+
+#: Pyblio/GnomeUI/glade/format.ui:7
+msgid "Format entries"
+msgstr "Eman formatu sarrerei"
+
+#: Pyblio/GnomeUI/glade/format.ui:75
+msgid "Bibliography style:"
+msgstr "Estilo bibliografikoa:"
+
+#: Pyblio/GnomeUI/glade/format.ui:87
+msgid "Output format:"
+msgstr "Irteerako formatua:"
+
+#: Pyblio/GnomeUI/glade/format.ui:101
+msgid "Output file:"
+msgstr "Irteerako fitxategia:"
+
+#: Pyblio/GnomeUI/glade/format.ui:125
+msgid "Save formatted as"
+msgstr "Gorde formatua honela:"
+
+#: Pyblio/GnomeUI/glade/medline.ui:7
+msgid "Medline Query"
+msgstr "Medline kontsulta"
+
+#: Pyblio/GnomeUI/glade/medline.ui:70
+msgid "Enter your Medline Query"
+msgstr "Sartu zure Medline kontsulta"
+
+#: Pyblio/GnomeUI/glade/medline.ui:89
+msgid ""
+"Search \n"
+"PubMed for:"
+msgstr "Bilatu \n"
+"PubMed-en honakoa:"
+
+#: Pyblio/GnomeUI/glade/medline.ui:118
+msgid ""
+"Maximum number\n"
+"of results:"
+msgstr "Gehieneko\n"
+"emaitza kopurua:"
+
+#: Pyblio/GnomeUI/glade/medline.ui:149
+msgid ""
+"Starting listing at\n"
+"result number:"
+msgstr "Zerrenda honako\n"
+"emaitza-zenbakian hasten:"
+
+#: Pyblio/GnomeUI/glade/medline.ui:216
+msgid ""
+"Only items \n"
+"with abstracts"
+msgstr "Laburpenak dituzten\n"
+"elementuak soilik"
+
+#: Pyblio/GnomeUI/glade/medline.ui:233
+msgid ""
+"Only items \n"
+"ahead of print"
+msgstr "Inprimatze-aurreko\n"
+"elementuak soilik"
+
+#: Pyblio/GnomeUI/glade/medline.ui:385
+msgid "From:"
+msgstr "Nondik:"
+
+#: Pyblio/GnomeUI/glade/medline.ui:412
+msgid "To:"
+msgstr "Hona:"
+
+#: Pyblio/GnomeUI/glade/medline.ui:446
+msgid ""
+"Use the format YYYY/MM/DD\n"
+"Month and day are optional."
+msgstr "Erabili UUUU/HH/EE formatua\n"
+"Hilabetea eta eguna aukerakoak dira."
+
+#: Pyblio/GnomeUI/glade/medline.ui:461
+msgid "Limited to:"
+msgstr "Muga honekin:"
+
+#: Pyblio/GnomeUI/glade/openurl.ui:8
+msgid "Open Location"
+msgstr "Ireki kokalekua"
+
+#: Pyblio/GnomeUI/glade/openurl.ui:68
+msgid "Enter the location (URI) of the file you would like to open:"
+msgstr "Sartu ireki nahi duzun fitxategiaren kokalekua (URIa):"
+
+#: Pyblio/GnomeUI/glade/search.ui:7
+msgid "Search"
+msgstr "Bilatu"
+
+#: Pyblio/GnomeUI/glade/search.ui:81
+msgid "Field"
+msgstr "Eremua"
+
+#: Pyblio/GnomeUI/glade/search.ui:93
+msgid "Pattern"
+msgstr "Eredua"
+
+#: Pyblio/GnomeUI/glade/search.ui:138
+msgid "Simple Search"
+msgstr "Bilaketa erraza"
+
+#: Pyblio/GnomeUI/glade/search.ui:156
+msgid "Query"
+msgstr "Kontsulta"
+
+#: Pyblio/GnomeUI/glade/search.ui:184
+msgid "Expert Search"
+msgstr "Bilaketa aditua"
+
+#: Pyblio/GnomeUI/glade/sort.ui:7
+msgid "Select sort criteria"
+msgstr "Hautatu ordenatze-irizpideak"
+
+#: Pyblio/GnomeUI/glade/sort.ui:40
+msgid "Set as default"
+msgstr "Ezarri lehenetsi gisa"
+
+#: Pyblio/LyX.py:43
+#, python-format
+msgid "no input pipe “%s”"
+msgstr "ez dago sarrerako “%s” kanalizaziorik"
+
+#: Pyblio/LyX.py:50
+#, python-format
+msgid "no output pipe “%s”"
+msgstr "ez dago irteerako “%s” kanalizaziorik"
+
+#: Pyblio/Open.py:99
+#, python-format
+msgid "method “%s” provides no opener"
+msgstr "“%s” metodoak ez du irekitzailerik eskaintzen"
+
+#: Pyblio/Open.py:107 Pyblio/Open.py:154
+#, python-format
+msgid "File “%s” does not exist"
+msgstr "“%s” fitxategia ez da existitzen"
+
+#: Pyblio/Open.py:118 Pyblio/Open.py:165
+#, python-format
+msgid "don’t know how to open “%s”"
+msgstr "ez daki “%s” nola ireki"
+
+#: Pyblio/Open.py:146
+#, python-format
+msgid "method “%s” provides no iterator"
+msgstr "“%s” metodoak ez du iteratzailerik eskaintzen"
+
+#: Pyblio/Resource.py:86
+#, python-format
+msgid ""
+"Warning: This URL is marked as Invalid or Approximate: %s\n"
+"Continue?"
+msgstr "Abisua: URL hau baliogabeko edo ez zehatz gisa markatu da: %s\n"
+"Jarraitu?"
+
+#: Pyblio/Resource.py:91
+msgid "Determining Mime Type… "
+msgstr "MIME mota zehazten… "
+
+#: Pyblio/Resource.py:96
+#, python-format
+msgid "Cannot determine mime type for item %s "
+msgstr "Ezin izan da %s elementuaren MIME mota zehaztu "
+
+#: Pyblio/Resource.py:97
+#, python-format
+msgid ""
+"URL in question is: %s\n"
+"You should check the url or path given for errors.\n"
+"Details: %s"
+msgstr "URLa honakoa da: %s\n"
+"URLa edo bidea egiaztatu beharko zenituzke.\n"
+"Xehetasunak: %s"
+
+#: Pyblio/Resource.py:108
+msgid "Accessing resource…"
+msgstr "Baliabidea atzitzen…"
+
+#: Pyblio/Resource.py:126
+#, python-format
+msgid "IOError for item %s: cannot uncompress resource."
+msgstr "IOError errorea %s elementurako: ezin da baliabidea deskonprimitu."
+
+#: Pyblio/Resource.py:127
+#, python-format
+msgid ""
+"URL: %s\n"
+"Details: %s"
+msgstr "URLa: %s\n"
+"Xehetasunak: %s"
+
+#: Pyblio/Resource.py:148
+msgid "Starting application…"
+msgstr "Aplikazioa abiarazten…"
+
+#: Pyblio/Resource.py:151
+msgid "No application to view resource"
+msgstr "Ez dago aplikaziorik baliabidea bistaratzeko"
+
+#: Pyblio/Resource.py:152
+#, python-format
+msgid ""
+"For mime type %s, no entry found in \n"
+"configuration option resource/viewers.\n"
+"Please consider adding one.\n"
+"URL: %s"
+msgstr "%s MIME motarako, ez da sarrerarik aurkitu \n"
+"baliabideen/ikustaileen konfigurazio-aukeretan.\n"
+"Horietako bat gehitzea ondo legoke.\n"
+"URLa: %s"
+
+#: Pyblio/Style/Parser.py:263
+#, python-format
+msgid "missing “%s” attribute"
+msgstr "“%s” atributua falta da"
+
+#: Pyblio/Style/Parser.py:273
+#, python-format
+msgid "invalid opening tag: %s"
+msgstr "baliogabeko irekitze-etiketa: %s"
+
+#: Pyblio/Style/Parser.py:283
+#, python-format
+msgid "invalid closing tag: %s"
+msgstr "baliogabeko ixte-etiketa: %s"
+
+#: pybliographer.in:44
+#, c-format
+msgid "This is %s, version %s"
+msgstr "Hau %s da, %s bertsioa"
+
+#: pybliographer.in:48 pybliographer.in:56
+msgid "This is free software with ABSOLUTELY NO WARRANTY."
+msgstr "Hau software librea da, BERMERIK GABEKOA."
+
+#: pybliographer.in:49
+msgid "For details, type “warranty”."
+msgstr "Xehetasunetarako, idatzi “warranty”."
+
+#: pybliographer.in:113 pybliographer.in:165
+#, c-format
+msgid "%s: error: can’t open file “%s”"
+msgstr "%s: errorera: ezin da “%s” fitxategia ireki"
+
+#: pybliographer.in:126
+#, c-format
+msgid "For help, run %s and type “help” at the prompt"
+msgstr "Laguntzarako, exekutatu %s eta idatzi “help” gonbitean"
+
+#: pybliographer.in:135
+msgid ""
+"Useful commands:\n"
+"\thelp     to get some help\n"
+"\tquit     to quit\n"
+msgstr "Komando erabilgarriak:\n"
+"\thelp    laguntza eskuratzeko\n"
+"\tquit     irteteko\n"
+
+#: scripts/pybliocheck.py:39
+msgid "usage: pybliocheck <file | directory>…"
+msgstr "erabilera: pybliocheck <fitxategia | direktorioa>…"
+
+#: scripts/pybliocheck.py:68
+#, python-format
+msgid "file “%s” is ok [%d entry]"
+msgid_plural "file “%s” is ok [%d entries]"
+msgstr[0] "“%s” fitxategia ondo dago [sarrera %d]"
+msgstr[1] "“%s” fitxategia ondo dago [%d sarrera]"
+
+#: scripts/pybliocompact.py:39
+msgid "usage: pybliocompact <latexfile> <bibtexfiles…>"
+msgstr "erabilera: pybliocompact <latex-fitxategia> <bibtex-fitxategiak…>"
+
+#: scripts/pybliocompact.py:43
+#, python-format
+msgid "pybliocompact: error: %s\n"
+msgstr "pybliocompact: errorea: %s\n"
+
+#: scripts/pybliocompact.py:108
+msgid "no entry"
+msgstr "sarrerarik ez"
+
+#: scripts/pybliocompact.py:171 scripts/pybliotext.py:247
+#, python-format
+msgid "can’t find the following entries: %s"
+msgstr "ezin dira honako sarrerak aurkitu: %s"
+
+#: scripts/pyblioconvert.py:32
+msgid "usage: pyblioconvert <source>..<target> <input> [output]"
+msgstr "erabilera: pyblioconvert <iturburua>..<helburua> <sarrera> [irteera]"
+
+#: scripts/pyblioconvert.py:41
+msgid "pyblioconvert: error: bad conversion format"
+msgstr "pyblioconvert: errorea: bihurketarako formatu okerra"
+
+#: scripts/pyblioformat.py:40
+msgid ""
+"usage: pyblioformat [options] <database…>\n"
+"\n"
+"    options:\n"
+"      -o file, --output=file\t\tspecify an output filename\n"
+"      -s style, --style=style\t\tspecify a bibliography style\n"
+"      -f format, --format=format\tspecify an output format\n"
+"      -H header, --header=header\tdefines a header file\n"
+"      -F footer, --footer=footer\tdefines a footer file\n"
+"      -l 'output', --list='output'\tlists the available output formats\n"
+"      -h, --help\t\t\tshow this help message\n"
+"    "
+msgstr "erabilera: pyblioformat [aukerak] <datu-basea…>\n"
+"\n"
+"    aukerak:\n"
+"      -o fitxategia, --output=fitxategia\tzehaztu irteerako fitxategia\n"
+"      -s estiloa, --style=estiloa\t\tzehaztu estilo bibliografikoa\n"
+"      -f formatua, --format=formatua\tzehaztu irteerako formatua\n"
+"      -H goiburua, --header=goiburua\tdefinitu goiburu-fitxategia\n"
+"      -F orri-oina, --footer=orri-oina\tdefinitu orri-oinaren fitxategia\n"
+"      -l 'irteera', --list='irteera'\t\tzerrendatu irteerako formatu erabilgarriak\n"
+"      -h, --help\t\t\terakutsi laguntza-mezu hau\n"
+"    "
+
+#: scripts/pyblioformat.py:54
+#, python-format
+msgid "pyblioformat: error: %s\n"
+msgstr "pyblioformat: errorea: %s\n"
+
+#: scripts/pyblioformat.py:60
+#, python-format
+msgid "pyblioformat: warning: %s\n"
+msgstr "pyblioformat: abisua: %s\n"
+
+#: scripts/pyblioformat.py:99 scripts/pybliotext.py:259
+#: scripts/pybliotext.py:285 scripts/pybliotext.py:328
+#, python-format
+msgid "can’t open “%s”: %s"
+msgstr "ezin da “%s” ireki: %s"
+
+#: scripts/pyblioformat.py:106
+#, python-format
+msgid "unknown list “%s”"
+msgstr "“%s” zerrenda ezezaguna"
+
+#: scripts/pyblioformat.py:109
+#, python-format
+msgid "pyblioformat: available values for “%s”:"
+msgstr "pyblioformat: “%s” objekturako balio erabilgarriak:"
+
+#: scripts/pyblioformat.py:113
+#, python-format
+msgid "empty value list “%s”"
+msgstr "balioen “%s” zerrenda hutsa"
+
+#: scripts/pyblioformat.py:135
+msgid "too few arguments"
+msgstr "argumentu gutxiegi"
+
+#: scripts/pyblioformat.py:142 scripts/pybliotext.py:124
+#, python-format
+msgid "unknown output format “%s”"
+msgstr "irteerako “%s” formatu ezezaguna"
+
+#: scripts/pyblioformat.py:155 scripts/pybliotex.py:91
+#: scripts/pybliotext.py:101
+#, python-format
+msgid "can’t find style “%s”"
+msgstr "ezin da “%s” estiloa aurkitu"
+
+#: scripts/pyblioformat.py:158
+#, python-format
+msgid "pyblioformat: using style “%s”, format “%s”\n"
+msgstr "pyblioformat: “%s” estiloa, “%s” formatua erabiltzen\n"
+
+#: scripts/pyblioformat.py:173
+#, python-format
+msgid "can’t open header “%s”: %s"
+msgstr "ezin da “%s” goiburua ireki: %s"
+
+#: scripts/pyblioformat.py:181
+#, python-format
+msgid "can’t open database: %s"
+msgstr "ezin da datu-basea ireki: %s"
+
+#: scripts/pyblioformat.py:196
+#, python-format
+msgid "can’t open footer “%s”: %s"
+msgstr "ezin da “%s” orri-oina ireki: %s"
+
+#: scripts/pybliotex.py:39
+msgid "usage: pybliotex <latexfile> [bibtexfiles…]"
+msgstr "erabilera: pybliotex <latex-fitxategia> [bibtex-fitxategiak…]"
+
+#: scripts/pybliotex.py:43
+#, python-format
+msgid "pybliotex: error: %s\n"
+msgstr "pybliotex: errorea: %s\n"
+
+#. warn the user that some entries were not found
+#: scripts/pybliotex.py:64
+msgid "pybliotex: warning: the following keys were not resolved"
+msgstr "pybliotex: abisua: honako gako-hitzak ez dira ebatzi"
+
+#. If the LaTeX document declares no style...
+#: scripts/pybliotex.py:69
+msgid "no style defined"
+msgstr "ez da estilorik definitu"
+
+#: scripts/pybliotext.py:48
+msgid "usage: pybliotext [-o outputfile] [-s style] <textfile> <bibfiles…>"
+msgstr "erabilera: pybliotext [-o irteera-fitxategia] [-s estiloa] <testu-fitxategia> <bib-fitxategiak…>"
+
+#: scripts/pybliotext.py:52
+#, python-format
+msgid "pybliotext: error: %s\n"
+msgstr "pybliotext: errorea: %s\n"
+
+#: scripts/pybliotext.py:57
+#, python-format
+msgid "pybliotext: warning: %s\n"
+msgstr "pybliotext: abisua: %s\n"
+
+#: scripts/pybliotext.py:131
+#, python-format
+msgid "File already exists: “%s”"
+msgstr "Fitxategia badago lehendik: “%s”"
+
+#: scripts/pybliotext.py:134
+#, python-format
+msgid "A file with the same name already exists: “%s”"
+msgstr "Badago izen bera duen fitxategi bat: “%s”"
+
+#: scripts/pybliotext.py:185
+msgid "no citation found"
+msgstr "ez da aipamenik aurkitu"
+
+#: scripts/pybliotext.py:200
+#, python-format
+msgid "pybliotext: using style “%s”, format “%s”\n"
+msgstr "pybliotext: “%s” estiloa, “%s” formatua erabiltzen\n"
+
+#: scripts/pybliotext.py:323
+#, python-format
+msgid "can’t create “%s”"
+msgstr "ezin da “%s” sortu"
+
+#: scripts/pybliotext.py:349
+#, python-format
+msgid "can’t remove “%s”"
+msgstr "ezin da “%s” kendu"
+
+#: scripts/pybliotext.py:351
+msgid "Done"
+msgstr "Eginda"
