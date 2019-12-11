@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybliographer.help.master\n"
 "POT-Creation-Date: 2019-09-19 15:05+0000\n"
-"PO-Revision-Date: 2019-12-02 16:39+0100\n"
+"PO-Revision-Date: 2019-12-11 09:18+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -1152,7 +1152,6 @@ msgstr "Abrir una base de datos"
 
 #. (itstool) path: page/p
 #: C/gui-opening.page:28
-#, fuzzy
 #| msgid ""
 #| "To open an existing database, click on the <gui>Open</gui> toolbar button "
 #| "or go in the <gui>File</gui> menu, and select <guiseq><gui>File</"
@@ -1228,7 +1227,6 @@ msgstr "La interfaz gráfica"
 
 #. (itstool) path: page/p
 #: C/gui.page:28
-#, fuzzy
 #| msgid ""
 #| "The graphical user interface is called <app>Pybliographic</app>. It "
 #| "provides a simple access to the most common features of the underlying "
@@ -1251,10 +1249,10 @@ msgstr ""
 "simple a la mayoría de las funciones comunes del motor subyacente, "
 "<app>Pybliographer</app>, y le permite buscar, ordenar y modificar entradas "
 "bibliográficas. Por otra parte, también son posibles las inserciones "
-"directas o referencias en <link href=\"http://www.lyx.org/\" type=\"http"
-"\"><app>Lyx</app></link> y <link href=\"http://kile.sourceforge.net/\" type="
-"\"http\"><app>Kile</app></link>, consultas directas en Medline y guardar "
-"referencias seleccionadas en diferentes formatos."
+"directas o referencias en <link href=\"http://www.lyx.org/\"><app>Lyx</app></"
+"link> y <link href=\"http://kile.sourceforge.net/\"><app>Kile</app></link>, "
+"consultas directas en Medline y guardar referencias seleccionadas en "
+"diferentes formatos."
 
 #. (itstool) path: info/desc
 #: C/gui-pubmed.page:10
@@ -1294,7 +1292,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/gui-pubmed.page:33
-#, fuzzy
 #| msgid ""
 #| "<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png"
 #| "\">Pybliographer logo</media> Pybliographer Bibliography manager"
@@ -1302,8 +1299,8 @@ msgid ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/medline.png\"> "
 "Medline query </media>"
 msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png\">Logo de "
-"Pybliographer</media> Gestor bibliográfico Pybliographer"
+"<media type=\"image\" mime=\"image/png\" src=\"figures/medline.png\"> "
+"Consulta Medline </media>"
 
 #. (itstool) path: page/p
 #: C/gui-pubmed.page:37
@@ -1332,7 +1329,6 @@ msgstr "Buscando"
 
 #. (itstool) path: page/p
 #: C/gui-searching.page:28
-#, fuzzy
 #| msgid ""
 #| "<app>Pybliographic</app> offers a quite powerful searching mechanism. For "
 #| "searching you can use the quick search entry of the toolbar or the search "
@@ -1350,7 +1346,7 @@ msgstr ""
 "buscar, puede usar la entrada de búsqueda rápida en la barra de herramientas "
 "o el diálogo de búsqueda. Para abrir el diálogo de búsqueda, pulse en "
 "<guiseq><gui>Editar</gui><gui>Buscar</gui></guiseq> en el menú. El diálogo "
-"que aparece (vela la siguiente imagen) muestra un formulario de búsqueda en "
+"que aparece (vea la siguiente imagen) muestra un formulario de búsqueda en "
 "la parte superior."
 
 #. (itstool) path: p/media
@@ -1580,7 +1576,6 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/gui-settings.page:38
-#, fuzzy
 #| msgid ""
 #| "Selecting the <guiseq><gui>Settings</gui><gui>Fields</gui></guiseq> menu "
 #| "item, it is possible to add or remove fields, to set their type, and to "
@@ -1610,7 +1605,6 @@ msgstr "Preferencias"
 
 #. (itstool) path: section/p
 #: C/gui-settings.page:49
-#, fuzzy
 #| msgid ""
 #| "Clicking on the <guiseq><gui>Settings</gui><gui>Preferences</gui></"
 #| "guiseq> menu item, a lot of configuration options can be controlled. Such "
@@ -1644,7 +1638,6 @@ msgstr "Ordenar"
 
 #. (itstool) path: page/p
 #: C/gui-sorting.page:28
-#, fuzzy
 #| msgid ""
 #| "Clicking on the title of each column in the main index provides some "
 #| "rudimentary way of sorting a database. A much powerful method is to open "
@@ -2025,7 +2018,6 @@ msgstr "Usar <app>Pybliographic</app> con <app>LyX</app>"
 
 #. (itstool) path: page/p
 #: C/gui-usinglyx.page:28
-#, fuzzy
 #| msgid ""
 #| "It is possible to directly use <app>Pybliographer</app> in order to "
 #| "insert bibliographic references into <app>LyX</app>. It is done through "
@@ -2352,7 +2344,6 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/scripting-existing.page:40
-#, fuzzy
 #| msgid ""
 #| "It is possible to use its output directly in an emacs compile buffer, in "
 #| "order to jump directly to the encountered errors. To do so, type "
