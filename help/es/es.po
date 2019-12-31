@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pybliographer.help.master\n"
-"POT-Creation-Date: 2019-09-19 15:05+0000\n"
+"POT-Creation-Date: 2019-12-11 09:26+0000\n"
 "PO-Revision-Date: 2019-12-11 09:18+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
@@ -20,7 +20,6 @@ msgstr ""
 "X-Generator: Gtranslator 3.34.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#| msgid "translator-credits"
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
@@ -86,7 +85,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/about.page:31
-#| msgid "Contributions:"
 msgid "<em>Contributions:</em>"
 msgstr "<em>Contribuciones:</em>"
 
@@ -181,10 +179,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/about.page:54
-#| msgid ""
-#| "This manual was written with the help of the <link href=\"http://live."
-#| "gnome.org/DocumentationProject\" type=\"http\">GNOME Documentation "
-#| "Project</link>."
 msgid ""
 "This manual was written with the help of the <link href=\"https://wiki.gnome."
 "org/DocumentationProject\">GNOME Documentation Project</link>."
@@ -203,9 +197,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/about.page:63
-#| msgid ""
-#| "For more information please visit the <link href=\"http://pybliographer."
-#| "org/\" type=\"http\"><app>Pybliographer</app> website</link>."
 msgid ""
 "For more information please visit the <link href=\"http://pybliographer.org/"
 "\"><app>Pybliographer</app> website</link>."
@@ -225,12 +216,6 @@ msgstr "Fuentes de ayuda adicional"
 
 #. (itstool) path: page/p
 #: C/addhelp.page:27
-#| msgid ""
-#| "For additional information, please, visit the <link href=\"http://"
-#| "pybliographer.org/\" type=\"http\">Pybliographer website</link>. There is "
-#| "a <link href=\"http://pybliographer.org/Mailing_lists\" type=\"http"
-#| "\">mailing list</link> also, where you can get answers for your "
-#| "questions, you can report bugs, etc."
 msgid ""
 "For additional information, please, visit the <link href=\"http://"
 "pybliographer.org/\">Pybliographer website</link>. There is a <link href="
@@ -558,7 +543,7 @@ msgstr ""
 "Para iniciar <app>Pybliographer</app> en modo gráfico desde una línea de "
 "comandos, escriba el siguiente comando y pulse <key>Intro</key>: "
 "<cmd>pybliographic</cmd>. Para obtener más información sobre la interfaz "
-"gráfica, consulte la <link xref=\"gui\"/>."
+"gráfica, consulte la sección <link xref=\"gui\"/>."
 
 #. (itstool) path: section/p
 #: C/gettingstarted.page:54
@@ -659,10 +644,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/gui-creating.page:32
-#| msgid ""
-#| "To add a new entry, you can use the <guiseq><gui>Edit</gui><gui>Add</"
-#| "gui></guiseq> menu, directly the <gui>Add</gui> toolbar button or click "
-#| "with the right button in the list window and select <gui>Add</gui>."
 msgid ""
 "To add a new entry, you can use the <guiseq><gui>Edit</gui> <gui>Add</gui></"
 "guiseq> menu, directly the <gui>Add</gui> toolbar button or click with the "
@@ -703,16 +684,12 @@ msgstr "Edición básica"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/gui-edit.page:31
-#| msgid "@@image: 'figures/edit.png'; md5=8c5c88ea0416f223dad77ad0c5d498f4"
 msgctxt "_"
 msgid "external ref='figures/edit.png' md5='8c5c88ea0416f223dad77ad0c5d498f4'"
 msgstr "external ref='figures/edit.png' md5='8c5c88ea0416f223dad77ad0c5d498f4'"
 
 #. (itstool) path: section/p
 #: C/gui-edit.page:31
-#| msgid ""
-#| "<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png"
-#| "\">Pybliographer logo</media> Pybliographer Bibliography manager"
 msgid ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/edit.png\"> The "
 "Edition window </media>"
@@ -747,7 +724,7 @@ msgid ""
 "\"gui-edit#gui-edit-native\"/>)."
 msgstr ""
 "Si edita una entrada, puede perder la información adicional que contenga. "
-"Para evitar esto, considere usar la edición nativa (consulte la <link xref="
+"Para evitar esto, considere usar la edición nativa (consulte la sección <link xref="
 "\"gui-edit#gui-edit-native\"/>)."
 
 #. (itstool) path: section/p
@@ -805,7 +782,6 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/gui-edit.page:73
-#| msgid "@@image: 'figures/edit2.png'; md5=899d1d9761324f427bea18eba973c66d"
 msgctxt "_"
 msgid "external ref='figures/edit2.png' md5='899d1d9761324f427bea18eba973c66d'"
 msgstr ""
@@ -813,9 +789,6 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/gui-edit.page:73
-#| msgid ""
-#| "<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png"
-#| "\">Pybliographer logo</media> Pybliographer Bibliography manager"
 msgid ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/edit2.png\"> The "
 "Edition window - Optional fields </media>"
@@ -939,7 +912,6 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/gui-formats.page:33
-#| msgid "@@image: 'figures/format.png'; md5=734464fc1276ef9b3f2bc8cb34f2504e"
 msgctxt "_"
 msgid ""
 "external ref='figures/format.png' md5='734464fc1276ef9b3f2bc8cb34f2504e'"
@@ -948,9 +920,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/gui-formats.page:33
-#| msgid ""
-#| "<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png"
-#| "\">Pybliographer logo</media> Pybliographer Bibliography manager"
 msgid ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/format.png\"> "
 "Formatting entries </media>"
@@ -1034,7 +1003,7 @@ msgstr ""
 "Si una entrada contiene un campo <em>URL</em>, al pulsar sobre el botón "
 "pequeño junto al URL, se ejecuta la aplicación apropiada para ver el objeto "
 "destino (ej. visor PDF para archivos PDF, navegador web para direcciones "
-"HTTP). Consulte la <link xref=\"gui-edit\"/> sobre cómo añadir un campo URL "
+"HTTP). Consulte la sección <link xref=\"gui-edit\"/> sobre cómo añadir un campo URL "
 "a una entrada. Alternativamente, puede abrir el URL con la ayuda del "
 "elemento del submenú <guiseq><gui>Ver</gui><gui>Recurso</gui></guiseq>, o "
 "con el menú emergente <guiseq><gui>Recurso</gui></guiseq> proporcionado para "
@@ -1075,16 +1044,12 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/gui-navigating.page:72
-#| msgid "@@image: 'figures/main.png'; md5=bf9ce1d3e626213520d3220eb46558dd"
 msgctxt "_"
 msgid "external ref='figures/main.png' md5='bf9ce1d3e626213520d3220eb46558dd'"
 msgstr "external ref='figures/main.png' md5='bf9ce1d3e626213520d3220eb46558dd'"
 
 #. (itstool) path: page/p
 #: C/gui-navigating.page:72
-#| msgid ""
-#| "<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png"
-#| "\">Pybliographer logo</media> Pybliographer Bibliography manager"
 msgid ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/main.png\"> The main "
 "window </media>"
@@ -1152,10 +1117,6 @@ msgstr "Abrir una base de datos"
 
 #. (itstool) path: page/p
 #: C/gui-opening.page:28
-#| msgid ""
-#| "To open an existing database, click on the <gui>Open</gui> toolbar button "
-#| "or go in the <gui>File</gui> menu, and select <guiseq><gui>File</"
-#| "gui><gui>Open</gui></guiseq>."
 msgid ""
 "To open an existing database, click on the <gui>Open</gui> toolbar button or "
 "go in the <gui>File</gui> menu, and select <guiseq> <gui>File</"
@@ -1171,16 +1132,12 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/gui-opening.page:32
-#| msgid "@@image: 'figures/open.png'; md5=ad69c2047262f00a361f1ac860773b8a"
 msgctxt "_"
 msgid "external ref='figures/open.png' md5='ad69c2047262f00a361f1ac860773b8a'"
 msgstr "external ref='figures/open.png' md5='ad69c2047262f00a361f1ac860773b8a'"
 
 #. (itstool) path: page/p
 #: C/gui-opening.page:32
-#| msgid ""
-#| "<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png"
-#| "\">Pybliographer logo</media> Pybliographer Bibliography manager"
 msgid ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/open.png\"> Opening a "
 "database </media>"
@@ -1227,15 +1184,6 @@ msgstr "La interfaz gráfica"
 
 #. (itstool) path: page/p
 #: C/gui.page:28
-#| msgid ""
-#| "The graphical user interface is called <app>Pybliographic</app>. It "
-#| "provides a simple access to the most common features of the underlying "
-#| "engine, <app>Pybliographer</app> and lets you search, sort and modify "
-#| "bibliographic entries. Moreover, direct insertion of references into "
-#| "<link href=\"http://www.lyx.org/\" type=\"http\"><app>Lyx</app></link> "
-#| "and <link href=\"http://kile.sourceforge.net/\" type=\"http\"><app>Kile</"
-#| "app></link>, direct queries on Medline, and saving selected references in "
-#| "different formats are also possible."
 msgid ""
 "The graphical user interface is called <app>Pybliographic</app>. It provides "
 "a simple access to the most common features of the underlying engine, "
@@ -1283,7 +1231,6 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/gui-pubmed.page:33
-#| msgid "@@image: 'figures/medline.png'; md5=09532a6de80c9c22b06efefb6401558c"
 msgctxt "_"
 msgid ""
 "external ref='figures/medline.png' md5='09532a6de80c9c22b06efefb6401558c'"
@@ -1292,9 +1239,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/gui-pubmed.page:33
-#| msgid ""
-#| "<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png"
-#| "\">Pybliographer logo</media> Pybliographer Bibliography manager"
 msgid ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/medline.png\"> "
 "Medline query </media>"
@@ -1329,12 +1273,6 @@ msgstr "Buscando"
 
 #. (itstool) path: page/p
 #: C/gui-searching.page:28
-#| msgid ""
-#| "<app>Pybliographic</app> offers a quite powerful searching mechanism. For "
-#| "searching you can use the quick search entry of the toolbar or the search "
-#| "dialog. To open the search dialog, click on <guiseq><gui>Edit</"
-#| "gui><gui>Search</gui></guiseq> in the menu. The dialog that appears (see "
-#| "the picture below) displays a search form at the top."
 msgid ""
 "<app>Pybliographic</app> offers a quite powerful searching mechanism. For "
 "searching you can use the quick search entry of the toolbar or the search "
@@ -1355,7 +1293,6 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/gui-searching.page:34
-#| msgid "@@image: 'figures/search.png'; md5=584e9a19da7d5bc43929fd7926c3602b"
 msgctxt "_"
 msgid ""
 "external ref='figures/search.png' md5='584e9a19da7d5bc43929fd7926c3602b'"
@@ -1364,9 +1301,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/gui-searching.page:34
-#| msgid ""
-#| "<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png"
-#| "\">Pybliographer logo</media> Pybliographer Bibliography manager"
 msgid ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/search.png\"> The "
 "Search dialog </media>"
@@ -1555,7 +1489,6 @@ msgstr "Tipos de entradas y configuración de nombres de campos"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/gui-settings.page:34
-#| msgid "@@image: 'figures/fields.png'; md5=12bf133c7494df1eba6d1ab878609df3"
 msgctxt "_"
 msgid ""
 "external ref='figures/fields.png' md5='12bf133c7494df1eba6d1ab878609df3'"
@@ -1564,9 +1497,6 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/gui-settings.page:34
-#| msgid ""
-#| "<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png"
-#| "\">Pybliographer logo</media> Pybliographer Bibliography manager"
 msgid ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/fields.png\"> "
 "Configuration of fields and entry types </media>"
@@ -1576,13 +1506,6 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/gui-settings.page:38
-#| msgid ""
-#| "Selecting the <guiseq><gui>Settings</gui><gui>Fields</gui></guiseq> menu "
-#| "item, it is possible to add or remove fields, to set their type, and to "
-#| "define which fields should be associated with a given type of entry. In "
-#| "addition, the mandatory and optional fields are also can be varied. In "
-#| "the window displayed above, as an example, the association of the "
-#| "<em>Article</em> entry type can be seen."
 msgid ""
 "Selecting the <guiseq><gui>Settings</gui><gui>Fields</gui> </guiseq> menu "
 "item, it is possible to add or remove fields, to set their type, and to "
@@ -1605,13 +1528,6 @@ msgstr "Preferencias"
 
 #. (itstool) path: section/p
 #: C/gui-settings.page:49
-#| msgid ""
-#| "Clicking on the <guiseq><gui>Settings</gui><gui>Preferences</gui></"
-#| "guiseq> menu item, a lot of configuration options can be controlled. Such "
-#| "options are, for instance, settings of the different type of "
-#| "bibliographic database formats, autosave, size of history, default "
-#| "editing mode, the default type of a newly created entry, and resource "
-#| "configuration."
 msgid ""
 "Clicking on the <guiseq><gui>Settings</gui><gui>Preferences</gui> </guiseq> "
 "menu item, a lot of configuration options can be controlled. Such options "
@@ -1638,14 +1554,6 @@ msgstr "Ordenar"
 
 #. (itstool) path: page/p
 #: C/gui-sorting.page:28
-#| msgid ""
-#| "Clicking on the title of each column in the main index provides some "
-#| "rudimentary way of sorting a database. A much powerful method is to open "
-#| "the sort dialog (in <guiseq><gui>Edit</gui><gui>Sort</gui></guiseq>). "
-#| "This menu, displayed in the picture below, gives a list of fields which "
-#| "can be used as sort criterions, plus a flag indicating how they are "
-#| "currently used. By clicking twice on the item, it is possible to choose "
-#| "how the field will be used:"
 msgid ""
 "Clicking on the title of each column in the main index provides some "
 "rudimentary way of sorting a database. A much powerful method is to open the "
@@ -1704,16 +1612,12 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/gui-sorting.page:55
-#| msgid "@@image: 'figures/sort.png'; md5=c7a4506cb27428d7b2a0d10b9d3a98b2"
 msgctxt "_"
 msgid "external ref='figures/sort.png' md5='c7a4506cb27428d7b2a0d10b9d3a98b2'"
 msgstr "external ref='figures/sort.png' md5='c7a4506cb27428d7b2a0d10b9d3a98b2'"
 
 #. (itstool) path: page/p
 #: C/gui-sorting.page:55
-#| msgid ""
-#| "<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png"
-#| "\">Pybliographer logo</media> Pybliographer Bibliography manager"
 msgid ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/sort.png\"> The Sort "
 "dialog </media>"
@@ -1801,14 +1705,6 @@ msgstr ""
 #. (itstool) path: section/screen
 #: C/gui-styles.page:56
 #, no-wrap
-#| msgid ""
-#| "\n"
-#| "  &lt;module name=\"generic\"&gt;\n"
-#| "    &lt;define field=\"author\"&gt;full_authors&lt;/define&gt;\n"
-#| "    &lt;define field=\"editor\"&gt;first_last_full_authors&lt;/define&gt;\n"
-#| "    &lt;define field=\"date\"&gt;european_date&lt;/define&gt;\n"
-#| "    &lt;define method=\"keys\"&gt;string_keys&lt;/define&gt;\n"
-#| "  &lt;/module&gt;\n"
 msgid ""
 "<code>\n"
 "  &lt;module name=\"generic\"&gt;\n"
@@ -1851,7 +1747,6 @@ msgstr ""
 #. (itstool) path: section/screen
 #: C/gui-styles.page:73
 #, no-wrap
-#| msgid "Autoload.preregister ('style','Generic','Pyblio.Style.Generic')"
 msgid "<code>Autoload.preregister ('style','Generic','Pyblio.Style.Generic')</code>\n"
 msgstr "<code>Autoload.preregister ('style','Generic','Pyblio.Style.Generic')</code>\n"
 
@@ -2018,14 +1913,6 @@ msgstr "Usar <app>Pybliographic</app> con <app>LyX</app>"
 
 #. (itstool) path: page/p
 #: C/gui-usinglyx.page:28
-#| msgid ""
-#| "It is possible to directly use <app>Pybliographer</app> in order to "
-#| "insert bibliographic references into <app>LyX</app>. It is done through "
-#| "the <app>LyX</app><em>server</em>. The path of the <app>LyX</app> server "
-#| "pipe can be defined in the <guiseq><gui>Tools</gui><gui>Preferences</"
-#| "gui></guiseq> dialog of LyX. The same path should be given in "
-#| "<app>Pybliographer</app>'s settings (the default value is <file>~/.lyx/"
-#| "lyxpipe)</file>."
 msgid ""
 "It is possible to directly use <app>Pybliographer</app> in order to insert "
 "bibliographic references into <app>LyX</app>. It is done through the "
@@ -2084,14 +1971,12 @@ msgstr ""
 
 #. (itstool) path: info/title
 #: C/index.page:7
-#| msgid "Pybliographer manual"
 msgctxt "link"
 msgid "Pybliographer manual"
 msgstr "Manual de Pybliographer"
 
 #. (itstool) path: info/title
 #: C/index.page:8
-#| msgid "Pybliographer Bibliography manager"
 msgctxt "text"
 msgid "Pybliographer Bibliography manager"
 msgstr "Gestor bibliográfico Pybliographer"
@@ -2161,7 +2046,6 @@ msgstr "Es libre de:"
 
 #. (itstool) path: item/title
 #: C/license.page:26
-#| msgid "To share"
 msgid "<em>To share</em>"
 msgstr "<em>Compartir</em>"
 
@@ -2172,7 +2056,6 @@ msgstr "Copiar, distribuir y transmitir el trabajo."
 
 #. (itstool) path: item/title
 #: C/license.page:30
-#| msgid "To remix"
 msgid "<em>To remix</em>"
 msgstr "<em>Hacer obras derivadas</em>"
 
@@ -2188,7 +2071,6 @@ msgstr "Bajo las siguientes condiciones:"
 
 #. (itstool) path: item/title
 #: C/license.page:39
-#| msgid "Attribution"
 msgid "<em>Attribution</em>"
 msgstr "<em>Atribución</em>"
 
@@ -2205,7 +2087,6 @@ msgstr ""
 
 #. (itstool) path: item/title
 #: C/license.page:47
-#| msgid "Share Alike"
 msgid "<em>Share Alike</em>"
 msgstr "<em>Compartir igual</em>"
 
@@ -2268,10 +2149,6 @@ msgstr ""
 #. (itstool) path: page/screen
 #: C/scripting-basics.page:37
 #, no-wrap
-#| msgid ""
-#| "\n"
-#| "\t<output>bash$ </output><cmd>pyblioconvert</cmd> refer..bibtex <var>toto.refer</var> <var>toto.bib</var>\n"
-#| "      "
 msgid ""
 "\n"
 "    <output>bash$ </output><cmd>pybliographer [--quiet] </cmd><var>myscript.py</var>\n"
@@ -2344,12 +2221,6 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/scripting-existing.page:40
-#| msgid ""
-#| "It is possible to use its output directly in an emacs compile buffer, in "
-#| "order to jump directly to the encountered errors. To do so, type "
-#| "<keyseq><key>M</key><key>x</key></keyseq><cmd>compile</cmd>, then the "
-#| "command <cmd>pybliocheck <var>yourfiles</var></cmd>, and use the middle "
-#| "button of the mouse to jump into the faulty file."
 msgid ""
 "It is possible to use its output directly in an emacs compile buffer, in "
 "order to jump directly to the encountered errors. To do so, type "
@@ -2452,10 +2323,6 @@ msgstr "El formato general del comando es"
 #. (itstool) path: section/screen
 #: C/scripting-existing.page:93
 #, no-wrap
-#| msgid ""
-#| "\n"
-#| "\t<output>bash$ </output><cmd>pyblioconvert</cmd> refer..bibtex <var>toto.refer</var> <var>toto.bib</var>\n"
-#| "      "
 msgid ""
 "\n"
 "\t<output>bash$ </output><cmd>pyblioformat</cmd> <var>[options] database...</var>\n"
@@ -2807,7 +2674,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/typcon.page:31
-#| msgid "Applications"
 msgid "<app>Applications</app>"
 msgstr "<app>Aplicaciones</app>"
 
@@ -2823,7 +2689,6 @@ msgstr "<file>Nombres_de_archivos</file>"
 
 #. (itstool) path: item/p
 #: C/typcon.page:34
-#| msgid "Replaceable text"
 msgid "<var>Replaceable text</var>"
 msgstr "<var>Texto reemplazable</var>"
 
@@ -2836,9 +2701,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/typcon.page:37
-#| msgid ""
-#| "Menu selections look like this: <guiseq><gui>Menu</gui><gui>Submenu</"
-#| "gui><gui>Menu Item</gui></guiseq>"
 msgid ""
 "Menu selections look like this: <guiseq><gui>Menu</gui> <gui>Submenu</"
 "gui><gui>Menu Item</gui></guiseq>"
@@ -2853,7 +2715,6 @@ msgstr "<gui>Botones</gui> que puede pulsar"
 
 #. (itstool) path: item/p
 #: C/typcon.page:40
-#| msgid "Anything you type in"
 msgid "<input>Anything you type in</input>"
 msgstr "<input>Cualquier cosa que escriba</input>"
 
@@ -2907,13 +2768,11 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/whatsnew.page:10
-#| msgid "New features in <app>Pybliographer</app> 1.2.15."
 msgid "New features in <app>Pybliographer</app> 1.2.18."
 msgstr "Nuevas funcionalidades en <app>Pybliographer</app> 1.2.18."
 
 #. (itstool) path: page/title
 #: C/whatsnew.page:26
-#| msgid "What's New in Pybliographer 1.2.15"
 msgid "What's New in Pybliographer 1.2.18"
 msgstr "Lo nuevo de Pybliographer 1.2.18"
 
