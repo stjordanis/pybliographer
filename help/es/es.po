@@ -1,15 +1,13 @@
-# translation of pybliographer.help.master.po to Español
-# Spanish translation for pybliographer.
-# Copyright (C) 2010 pybliographer's COPYRIGHT HOLDER
-# This file is distributed under the same license as the pybliographer package.
-# Jorge González <jorgegonz@svn.gnome.org>, 2010.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2010-2019.
+# Spanish translation for recipes.
+# Copyright (C) 2017 recipes's COPYRIGHT HOLDER
+# This file is distributed under the same license as the recipes package.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2017-2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: pybliographer.help.master\n"
-"POT-Creation-Date: 2019-12-11 09:26+0000\n"
-"PO-Revision-Date: 2019-12-11 09:18+0100\n"
+"Project-Id-Version: recipes master\n"
+"POT-Creation-Date: 2019-10-28 15:52+0000\n"
+"PO-Revision-Date: 2019-10-28 16:51+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -22,3018 +20,1787 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
-"Daniel Mustieles <daniel.mustieles@gmail.com>, 2010-2019\n"
-"Jorge González <jorgegonz@svn.gnome.org>, 2010"
+msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2017-2019"
 
 #. (itstool) path: info/desc
-#: C/about.page:10
-msgid "Information about <app>Pybliographer</app>."
-msgstr "Información acerca de <app>Pybliographer</app>."
+#: C/add-recipe-description.page:12
+msgid "How to add a recipe description and dietary restrictions."
+msgstr "Cómo añadir la descripción de una receta y restricciones alimentarias."
 
 #. (itstool) path: credit/name
-#. (itstool) path: item/p
-#: C/about.page:14 C/about.page:38 C/addhelp.page:14 C/command-line.page:14
-#: C/customization.page:14 C/gettingstarted.page:14 C/gui-creating.page:14
-#: C/gui-edit.page:14 C/gui-formats.page:14 C/gui-navigating.page:14
-#: C/gui-opening.page:14 C/gui.page:14 C/gui-pubmed.page:14
-#: C/gui-searching.page:14 C/gui-settings.page:14 C/gui-sorting.page:14
-#: C/gui-styles.page:14 C/gui-usinglyx.page:14 C/index.page:12
-#: C/scripting-basics.page:14 C/scripting-existing.page:14
-#: C/scripting-writeown.page:14 C/typcon.page:14 C/whatsnew.page:14
-msgid "Zoltán Kóta"
-msgstr "Zoltán Kóta"
-
-#. (itstool) path: credit/name
-#. (itstool) path: item/p
-#: C/about.page:18 C/about.page:36 C/addhelp.page:18 C/command-line.page:18
-#: C/customization.page:18 C/gettingstarted.page:18 C/gui-creating.page:18
-#: C/gui-edit.page:18 C/gui-formats.page:18 C/gui-navigating.page:18
-#: C/gui-opening.page:18 C/gui.page:18 C/gui-pubmed.page:18
-#: C/gui-searching.page:18 C/gui-settings.page:18 C/gui-sorting.page:18
-#: C/gui-styles.page:18 C/gui-usinglyx.page:18 C/index.page:16
-#: C/scripting-basics.page:18 C/scripting-existing.page:18
-#: C/scripting-writeown.page:18 C/typcon.page:18 C/whatsnew.page:18
-msgid "Frédéric Gobry"
-msgstr "Frédéric Gobry"
+#: C/add-recipe-description.page:15 C/add-recipe-details.page:16
+#: C/add-recipe-directions.page:15 C/add-recipe-images.page:15
+#: C/add-recipe-ingredients.page:15 C/add-recipe.page:11 C/chef.page:14
+#: C/common-problems.page:11 C/contribute.page:12 C/cooking.page:12
+#: C/find-recipe.page:11 C/index.page:10 C/notes.page:11 C/share.page:12
+#: C/shop.page:12
+msgid "Paul Cutler"
+msgstr "Paul Cutler"
 
 #. (itstool) path: license/p
-#: C/about.page:22 C/addhelp.page:22 C/command-line.page:22
-#: C/customization.page:22 C/gettingstarted.page:22 C/gui-creating.page:22
-#: C/gui-edit.page:22 C/gui-formats.page:22 C/gui-navigating.page:22
-#: C/gui-opening.page:22 C/gui.page:22 C/gui-pubmed.page:22
-#: C/gui-searching.page:22 C/gui-settings.page:22 C/gui-sorting.page:22
-#: C/gui-styles.page:22 C/gui-usinglyx.page:22 C/index.page:20
-#: C/scripting-basics.page:22 C/scripting-existing.page:22
-#: C/scripting-writeown.page:22 C/typcon.page:22 C/whatsnew.page:22
-msgid "Creative Commons Share Alike 3.0"
-msgstr "Creative Commons Compartir Igual 3.0"
+#: C/add-recipe-description.page:19 C/add-recipe-details.page:20
+#: C/add-recipe-directions.page:19 C/add-recipe-images.page:19
+#: C/add-recipe-ingredients.page:19 C/add-recipe.page:15 C/chef.page:18
+#: C/common-problems.page:15 C/contribute.page:16 C/cooking.page:16
+#: C/find-recipe.page:15 C/index.page:15 C/notes.page:15 C/share.page:24
+#: C/shop.page:16
+msgid "Creative Commons Share Alike 4.0"
+msgstr "Creative Commons Compartir Igual 4.0"
 
 #. (itstool) path: page/title
-#: C/about.page:26
-msgid "Authors"
-msgstr "Autores"
+#: C/add-recipe-description.page:23
+msgid "Add a Description"
+msgstr "Añadir una descripción"
 
 #. (itstool) path: page/p
-#: C/about.page:27
+#: C/add-recipe-description.page:25
 msgid ""
-"<app>Pybliographer</app> was originally written by Frédéric Gobry. Many "
-"thanks to all contributors for their fruitful work."
+"Press the <gui>New Recipe</gui> in the upper left corner of <app>Recipes</"
+"app>. In the <gui>Description</gui> section, use the text box to describe "
+"the recipe in detail."
 msgstr ""
-"Frédéric Gobry escribió <app>Pybliographer</app>. Muchas gracias a todos los "
-"que han contribuido por su fructífero trabajo."
+"Pulse en <gui>Receta nueva</gui> en la esquina superior izquierda de "
+"<app>Recetas</app>. En el apartado <gui>Descripción</gui> use la caja de "
+"texto para describir con detalle la receta."
 
 #. (itstool) path: page/p
-#: C/about.page:31
-msgid "<em>Contributions:</em>"
-msgstr "<em>Contribuciones:</em>"
-
-#. (itstool) path: item/p
-#: C/about.page:34
-msgid "Yuri Bongiorno"
-msgstr "Yuri Bongiorno"
-
-#. (itstool) path: item/desc
-#: C/about.page:34
-msgid "Documentation, translations"
-msgstr "Documentación, traducciones"
-
-#. (itstool) path: item/p
-#: C/about.page:35
-msgid "Hervé Dréau"
-msgstr "Hervé Dréau"
-
-#. (itstool) path: item/desc
-#: C/about.page:35
-msgid "Internationalization, UI goodies"
-msgstr "Internacionalización, mejoras de la IU"
-
-#. (itstool) path: item/desc
-#: C/about.page:36
-msgid "Project maintainer, core application, Gnome interface, documentation"
-msgstr ""
-"Mantenedor del proyecto, núcleo de la aplicación, interfaz de GNOME, "
-"documentación"
-
-#. (itstool) path: item/desc
-#: C/about.page:38
-msgid "Documentation, packaging, ui code"
-msgstr "Documentación, empaquetado, código de la IU"
-
-#. (itstool) path: item/p
-#: C/about.page:40
-msgid "Travis Oliphant"
-msgstr "Travis Oliphant"
-
-#. (itstool) path: item/desc
-#: C/about.page:40
-msgid "Original Ovid parser"
-msgstr "Analizador Ovid original"
-
-#. (itstool) path: item/p
-#: C/about.page:41
-msgid "Darrell Rudmann"
-msgstr "Darrell Rudmann"
-
-#. (itstool) path: item/desc
-#: C/about.page:41
-msgid "APA 4th edition style"
-msgstr "Estilo de edición APA 4th"
-
-#. (itstool) path: item/p
-#: C/about.page:42
-msgid "Peter Schulte-Stracke"
-msgstr "Peter Schulte-Stracke"
-
-#. (itstool) path: item/desc
-#: C/about.page:42
-msgid "Application design, requirement docs, import and ui code"
-msgstr ""
-"Diseño de aplicaciones, documentos de requisitos, importación y código de la "
-"IU"
-
-#. (itstool) path: item/p
-#: C/about.page:44
-msgid "John Vu"
-msgstr "John Vu"
-
-#. (itstool) path: item/desc
-#: C/about.page:44
-msgid "Medline database parser"
-msgstr "Analizador de bases de datos Medline"
-
-#. (itstool) path: page/p
-#: C/about.page:47
-msgid "Thanks to everyone who helped out with the bug tracking process."
-msgstr ""
-"Gracias a todos los que han ayudado con el proceso de seguimiento de errores."
-
-#. (itstool) path: page/p
-#: C/about.page:50
+#: C/add-recipe-description.page:28
 msgid ""
-"Many thanks also to the Documentation Translators and the Gnome Translation "
-"Teams."
+"Below the Description field you can select a checkbox if the recipe meets "
+"any dietary restrictions. The dietary restrictions will help for searching "
+"recipes later."
 msgstr ""
-"Gracias también a los traductores de la documentación y a los equipos de "
-"traducción de GNOME."
+"Debajo del campo Descripción puede seleccionar una casilla si la receta "
+"cumple alguna restricción alimentaria. Este tipo de restricciones ayudarán a "
+"la hora de buscar recetas."
 
-#. (itstool) path: page/p
-#: C/about.page:54
+#. (itstool) path: item/p
+#: C/add-recipe-description.page:33
 msgid ""
-"This manual was written with the help of the <link href=\"https://wiki.gnome."
-"org/DocumentationProject\">GNOME Documentation Project</link>."
+"<gui>Gluten-free</gui>: Select for recipes that do not include wheat or "
+"related grains."
 msgstr ""
-"Este manual se ha escrito con la ayuda del <link href=\"https://wiki.gnome."
-"org/DocumentationProject\">Proyecto de documentación de GNOME</link>."
+"<gui>Sin gluten</gui>: seleccionar para recetas que no incluyan trigo o "
+"cereales relacionados."
 
-#. (itstool) path: page/p
-#: C/about.page:59
+#. (itstool) path: item/p
+#: C/add-recipe-description.page:35
 msgid ""
-"If you contributed to this project but do not see your name here, please "
-"contact the project maintainer and he'll list you."
+"<gui>Vegetarian</gui>: Select for recipes that only include vegetables and "
+"do not include meat, poultry or seafood. Vegetarian recipes may include "
+"dairy or eggs."
 msgstr ""
-"Si ha contribuido con este proyecto pero no ve su nombre aquí, contacte con "
-"el mantenedor del proyecto y él le incluirá en la lista"
+"<gui>Vegetariana</gui>: seleccionar para recetas que sólo incluyen vegetales "
+"y no incluyen carne, aves de corral ni mariscos. Las recetas vegetarianas "
+"pueden contener huevos o lácteos."
 
-#. (itstool) path: page/p
-#: C/about.page:63
-msgid ""
-"For more information please visit the <link href=\"http://pybliographer.org/"
-"\"><app>Pybliographer</app> website</link>."
+#. (itstool) path: item/p
+#: C/add-recipe-description.page:38
+msgid "<gui>Nut-free</gui>: Select for recipes that do not include any nuts."
 msgstr ""
-"Para más información, visite la <link href=\"http://pybliographer.org/"
-"\">página web de <app>Pybliographer</app></link>."
+"<gui>Sin nueces</gui>: seleccionar para recetas que no contienen ningún tipo "
+"de nueces."
+
+#. (itstool) path: item/p
+#: C/add-recipe-description.page:40
+msgid ""
+"<gui>Milk-free</gui>: Select for recipes that do not include dairy products, "
+"such as milk or cheese."
+msgstr ""
+"<gui>Sin lácteos</gui>: seleccionar para recetas que no contienen productos "
+"lácteos, como la leche o el queso."
+
+#. (itstool) path: item/p
+#: C/add-recipe-description.page:42
+msgid ""
+"<gui>Vegan</gui>: Recipes that do not include any product from an animal. "
+"This includes meat, dairy, eggs and more."
+msgstr ""
+"<gui>Vegana</gui>: recetas que no incluyen ningún producto procedente de "
+"ningún animal. Esto incluye carne, lácteos, huevos y más cosas."
 
 #. (itstool) path: info/desc
-#: C/addhelp.page:10
-msgid "Where you can get additional help."
-msgstr "Donde puede obtener ayuda adicional."
+#: C/add-recipe-details.page:12
+msgid "Add recipe name, serving size, cooking and preparation time, and more."
+msgstr ""
+"Añada el nombre de la receta, la cantidad, el tiempo de preparación y "
+"cocinado y más."
 
 #. (itstool) path: page/title
-#: C/addhelp.page:26
-msgid "Additional Help Sources"
-msgstr "Fuentes de ayuda adicional"
+#: C/add-recipe-details.page:24
+msgid "Add Recipe Details"
+msgstr "Añadir detalles de la receta"
 
 #. (itstool) path: page/p
-#: C/addhelp.page:27
+#: C/add-recipe-details.page:25
 msgid ""
-"For additional information, please, visit the <link href=\"http://"
-"pybliographer.org/\">Pybliographer website</link>. There is a <link href="
-"\"http://pybliographer.org/Mailing_lists\">mailing list</link> also, where "
-"you can get answers for your questions, you can report bugs, etc."
+"Press the <gui>New Recipe</gui> in the upper left corner of <app>Recipes</"
+"app> and include the following information about your recipe in the "
+"<gui>Details</gui> section. The recipe name and serving size is required and "
+"all other fields are optional. It is helpful to fill as many fields as "
+"possible to help when searching <app>Recipes</app>."
 msgstr ""
-"Para obtener información adicional, visite la <link href=\"http://"
-"pybliographer.org/\">página web de Pybliographer</link>. También hay una "
-"<link href=\"http://pybliographer.org/Mailing_lists\">lista de correo</"
-"link>, donde puede encontrar respuestas a sus preguntas, informar de "
-"errores, etc."
+"Puse en <gui>Receta nueva</gui> en la esquina superior izquierda de "
+"<app>Recetas</app> e incluya la siguiente información sobre su receta en la "
+"sección <gui>Detalles</gui>. El nombre de la receta y el tamaño de las "
+"raciones es obligatorio, y el resto de campos son opcionales. Sirve de ayuda "
+"rellenar todos los campos posibles, para facilitar la búsqueda de "
+"<app>Recetas</app>."
+
+#. (itstool) path: item/p
+#: C/add-recipe-details.page:32
+msgid ""
+"<gui>Name Your Recipe</gui>: Enter the name of the recipe in the text box."
+msgstr ""
+"<gui>Nombre de la receta</gui>: introduzca el nombre de la receta en el "
+"campo de texto."
+
+#. (itstool) path: item/p
+#: C/add-recipe-details.page:35
+msgid ""
+"<gui>Serves</gui>: Enter a number or press the <gui style=\"button\">+</gui> "
+"button to enter how many servings the recipe will make."
+msgstr ""
+"<gui>Raciones</gui>: introduzca un número o pulse el botón <gui style="
+"\"button\">+</gui> para indicar cuántas raciones saldrán de la receta."
+
+#. (itstool) path: item/p
+#: C/add-recipe-details.page:39
+msgid ""
+"<gui>Preparation Time</gui>: From the drop down box, choose how long it "
+"takes to pepare the ingredients prior to cooking."
+msgstr ""
+"<gui>Tiempo de preparación</gui>: en el menú desplegable, elija cuánto "
+"tiempo se tarda en preparar los ingredientes antes de cocinarlos."
+
+#. (itstool) path: item/p
+#: C/add-recipe-details.page:42
+msgid ""
+"<gui>Cooking Time</gui>: From the drop down box, choose how long it takes to "
+"cook the recipe."
+msgstr ""
+"<gui>Tiempo de cocción</gui>: en el menú desplegable, elija cuánto tiempo se "
+"tarda en cocinar la receta."
+
+#. (itstool) path: item/p
+#: C/add-recipe-details.page:45
+msgid ""
+"<gui>Cuisine</gui>: From the drop down box, choose the type of food or the "
+"region from where the recipe comes from. You can also enter the type of "
+"cuisine if it is not included in the list."
+msgstr ""
+"<gui>Cocina</gui>: en el menú desplegable, elija el tipo de comida o la "
+"región de la que procede la receta. También puede introducir el tipo de "
+"cocina si no está incluido en la lista."
+
+#. (itstool) path: item/p
+#: C/add-recipe-details.page:49
+msgid ""
+"<gui>Meal</gui>: From the drop down box, choose what type of meal the recipe "
+"makes. Examples include breakfast or dinner; or types of food such as pasta "
+"or cocktails. You can also enter the type of meal if it is not included in "
+"the list."
+msgstr ""
+"<gui>Comida</gui>: en el menú desplegable, elija para qué comida es la "
+"receta. Los ejemplos incluyen desayuno o cena; o tipos de comida como pasta "
+"o cócteles. También puede introducir el tipo de comida si no aparece en la "
+"lista."
+
+#. (itstool) path: item/p
+#: C/add-recipe-details.page:54
+msgid ""
+"<gui>Season</gui>: From the drop down box, choose from the season or holiday "
+"that the recipe is typically associated with. You can also enter the season "
+"or holiday if it is not included in the list."
+msgstr ""
+"<gui>Temporada</gui>:en el menú desplegable, elija con qué temporada se "
+"asocia habitualmente la receta. También puede introducir la temporada si no "
+"aparece en la lista."
+
+#. (itstool) path: item/p
+#: C/add-recipe-details.page:59
+msgid ""
+"<gui>Spiciness</gui>: From the drop down menu, choose how spicy the recipe "
+"is."
+msgstr ""
+"<gui>Picante</gui>: en el menú desplegable, indique cómo de picante es la "
+"receta."
 
 #. (itstool) path: info/desc
-#: C/command-line.page:10
-msgid "Using <app>Pybliographer</app> with a terminal."
-msgstr "Usar <app>Pybliographer</app> en una terminal."
+#: C/add-recipe-directions.page:12
+msgid "How to add each step to cook a recipe and at what temperature."
+msgstr "Cómo añadir cada paso para cocinar una receta y a qué temperatura."
 
 #. (itstool) path: page/title
-#: C/command-line.page:26
-msgid "The command line interface"
-msgstr "La interfaz de la línea de comandos"
+#: C/add-recipe-directions.page:23
+msgid "Add Cooking Directions"
+msgstr "Añadir instrucciones de preparación"
+
+#. (itstool) path: section/title
+#: C/add-recipe-directions.page:26
+msgid "Add steps"
+msgstr "Añadir pasos"
+
+#. (itstool) path: section/p
+#: C/add-recipe-directions.page:27
+msgid ""
+"Press the <gui>New Recipe</gui> in the upper left corner of <app>Recipes</"
+"app>. In the Directions text box, type the steps needed to create the "
+"recipe. To separate each step, press <key>Enter</key> twice to create a new "
+"paragraph for each step. <app>Recipes</app> will automatically create a "
+"separate steps for each paragraph in your recipe. These steps will be used "
+"when it is time to cook using full screen mode in <app>Recipes</app>."
+msgstr ""
+"Pulse en <gui>Receta nueva</gui> en la esquina superior izquierda de "
+"<app>Recetas</app>. En la caja de texto Instrucciones escriba los pasos "
+"necesarios para elaborar la receta. Para separar los pasos entre sí, pulse "
+"<key>Intro</key> dos veces para crear un nuevo párrafo.<app>Recetas</app> "
+"creará automáticamente un paso separado por cada párrafo en su receta. Estos "
+"pasos se usarán cuando vaya a cocinar usando el modo a pantalla completa de "
+"<app>Recetas</app>."
+
+#. (itstool) path: section/p
+#: C/add-recipe-directions.page:34
+msgid ""
+"In each paragraph for each step, you can include the following tags for "
+"adding images, timers or temperature. You can only use an image or a timer, "
+"but not both in an individual step. The information in the tags will be "
+"available when viewing the recipe or when in hands-free mode. All tags are "
+"enclosed within brackets."
+msgstr ""
+"En cada párrafo para cada paso puede incluir las siguientes etiquetas o "
+"añadir imágenes, tiempos o temperatura. Sólo puede usar una imagen o un "
+"tiempo, pero no ambos en un único paso. La información en las etiquetas "
+"estará disponible cuando vea la receta o cuando esté en modo manos libres. "
+"Todas las etiquetas deben ir entre corchetes."
+
+#. (itstool) path: section/title
+#: C/add-recipe-directions.page:42
+msgid "Add timers"
+msgstr "Añadir tiempos"
+
+#. (itstool) path: section/p
+#: C/add-recipe-directions.page:43
+msgid ""
+"To create a timer, enter how long the timer should be within brackets. The "
+"format is [timer:hours:minutes:seconds, description]."
+msgstr ""
+"Para crear una indicación de tiempo, introduzca cuánto debe durar entre "
+"corchetes. El formato es [timer:horas:minutos:segundos, descripción]."
+
+#. (itstool) path: section/p
+#: C/add-recipe-directions.page:46
+msgid "Timer examples:"
+msgstr "Ejemplos de tiempos:"
+
+#. (itstool) path: item/p
+#: C/add-recipe-directions.page:50
+msgid ""
+"<cmd>[timer:00:30, stir ingredients]</cmd> - Stir ingredients for thirty "
+"seconds."
+msgstr ""
+"<cmd>[timer:00:30, remover]</cmd> - Remover los ingredientes durante 30 "
+"segundos."
+
+#. (itstool) path: item/p
+#: C/add-recipe-directions.page:55
+msgid ""
+"<cmd>[timer:01:30, stir ingredients]</cmd> - Stir ingredients for one minute "
+"and thirty seconds."
+msgstr ""
+"<cmd>[timer:01:30, remover]</cmd> - Remover los ingredientes durante un "
+"minuto y 30 segundos."
+
+#. (itstool) path: item/p
+#: C/add-recipe-directions.page:60
+msgid ""
+"<cmd>[timer:01:01:30, preheat oven]</cmd> - Preheat oven for one hour, one "
+"minute and thirty seconds."
+msgstr ""
+"<cmd>[timer:01:01:30, precalentar horno]</cmd> - Precalentar el horno "
+"durante una hora, un minuto y 30 segundos"
+
+#. (itstool) path: section/title
+#: C/add-recipe-directions.page:68
+msgid "Add images to each step"
+msgstr "Añadir imágenes a cada paso"
+
+#. (itstool) path: section/p
+#: C/add-recipe-directions.page:69
+msgid ""
+"You can add an image or photo of the finished recipe and also a photo of "
+"each each step of making a recipe. See <link xref=\"add-recipe-images\"/> "
+"for how to add an image or images to your recipe."
+msgstr ""
+"Puede añadir una imagen o una foto para la receta terminada y también una "
+"foto para cada paso de su elaboración. Consulte la sección <link xref=\"add-recipe-"
+"images\"/> para saber cómo añadir imágenes a su receta."
+
+#. (itstool) path: item/p
+#: C/add-recipe-directions.page:76
+msgid ""
+"To assign one of the photos you have added, you will need to know the "
+"image's number. Press the <gui>Add Image</gui> button at the bottom "
+"<app>Recipes</app> window. Thumbnails of each photo you have added will be "
+"displayed. The first image would be number one, the second would be number "
+"two and so on."
+msgstr ""
+"Para asignar una de las imágenes que ha añadido necesita saber el número de "
+"imagen. Pulse el botón <gui>Añadir imagen</gui> en la parte inferior de la "
+"ventana de <app>Recetas</app>. Se mostrarán las miniaturas de cada foto que "
+"haya añadido. La primera imagen debe ser la número uno, la segunda la número "
+"dos, y así sucesivamente."
+
+#. (itstool) path: item/p
+#: C/add-recipe-directions.page:84
+msgid "Add the tag <cmd>[image:1]</cmd> to add the first image to a step."
+msgstr ""
+"Añada la etiqueta <cmd>[image:1]</cmd> para añadir la primera imagen a un "
+"paso."
+
+#. (itstool) path: item/p
+#: C/add-recipe-directions.page:89
+msgid ""
+"Add additional image tags with the correct number for as many steps as you "
+"wish."
+msgstr ""
+"Añada etiquetas de imágenes adicionales con el número correcto para tantos "
+"pasos como quieras."
+
+#. (itstool) path: section/title
+#: C/add-recipe-directions.page:98
+msgid "Temperature"
+msgstr "Temperatura"
+
+#. (itstool) path: section/p
+#: C/add-recipe-directions.page:99
+msgid ""
+"You can add the temperature a step needs to be cooked at by adding a "
+"temperature tag."
+msgstr ""
+"Puede añadir la temperatura que un paso necesita añadiendo una etiqueta de "
+"temperatura."
+
+#. (itstool) path: item/p
+#: C/add-recipe-directions.page:103
+msgid ""
+"Add the tag <cmd>[temperature:200C]</cmd>. You can set the temperature in "
+"Celsius with a C or Fahrenheit with an F following the temperature."
+msgstr ""
+"Añada la etiqueta <cmd>[temperature:200C]</cmd>. Puede indicar la "
+"temperatura en grados Celsius con una C o Fahrenheit con una F a "
+"continuación de la temperatura."
+
+#. (itstool) path: info/desc
+#: C/add-recipe-images.page:12
+msgid "How to add images to a recipe and for each step when cooking."
+msgstr ""
+"Cómo añadir imágenes a una receta para cada paso cuando se está cocinando."
+
+#. (itstool) path: page/title
+#: C/add-recipe-images.page:23
+msgid "Add Images and Photos"
+msgstr "Añadir imágenes y fotos"
 
 #. (itstool) path: page/p
-#: C/command-line.page:28
+#: C/add-recipe-images.page:24
 msgid ""
-"To start <app>Pybliographer</app> in command line mode, type the following "
-"command:"
+"Press the <gui>New Recipe</gui> in the upper left corner of <app>Recipes</"
+"app>. To add an image to your recipe:"
 msgstr ""
-"Para iniciar <app>Pybliographer</app> en una línea de comandos, escriba el "
-"siguiente comando:"
+"Pulse en <gui>Receta nueva</gui> en la esquina superior izquierda de "
+"<app>Recetas</app>. Para añadir una imagen:"
 
-#. (itstool) path: page/screen
-#: C/command-line.page:30
-#, no-wrap
+#. (itstool) path: item/p
+#: C/add-recipe-images.page:28 C/add-recipe-images.page:49
 msgid ""
-"\n"
-"  <output>bash$ </output><input>pybliographer</input>\n"
-"  This is pybliographer, version 1.2.12\n"
-"  Copyright (C) 1998-2004 Frederic GOBRY\n"
-"  This is free software with ABSOLUTELY NO WARRANTY.\n"
-"  For details, type `warranty'.\n"
-"  Useful commands:\n"
-"         help     to get some help\n"
-"         quit     to quit\n"
-"                                                                                \n"
-"  &gt;&gt;\n"
-"  "
+"Press the <gui style=\"button\">+</gui> button below the camera icon or "
+"press <guiseq> <gui>Add Image</gui> <gui style=\"button\">+</gui></guiseq> "
+"at the bottom of the <app>Recipes</app> window."
 msgstr ""
-"\n"
-"  <output>bash$ </output><input>pybliographer</input>\n"
-"  Esto es pybliographer, versión 1.2.12\n"
-"  Copyright (C) 1998-2004 Frederic GOBRY\n"
-"  Esto es software libre sin NINGÚN TIPO DE GARANTÍA.\n"
-"  Para obtener más detalles, teclee «warranty».\n"
-"  Comandos útiles:\n"
-"         help     para obtener más ayuda\n"
-"         quit     para salir\n"
-"                                                                                \n"
-"  &gt;&gt;\n"
-"  "
+"Pulse el botón <gui style=\"button\">+</gui> que hay debajo del icono de la "
+"cámara o pulse <guiseq> <gui>Añadir imagen</gui> <gui style=\"button\">+</"
+"gui></guiseq> en la parte inferior de la ventana de <app>Recetas</app>."
+
+#. (itstool) path: item/p
+#: C/add-recipe-images.page:35
+msgid "Select the image you would like to add."
+msgstr "Seleccione la imagen que quiere añadir."
+
+#. (itstool) path: item/p
+#: C/add-recipe-images.page:39 C/add-recipe-images.page:61
+msgid "Press <gui>Open</gui>"
+msgstr "Pulse <gui>Abrir</gui>"
 
 #. (itstool) path: page/p
-#: C/command-line.page:43
+#: C/add-recipe-images.page:44
 msgid ""
-"To get some help about how to use <app>Pybliographer</app> in this mode, "
-"type <cmd>help</cmd> at the <app>Pybliographer</app> prompt."
+"You may want to add multiple images to the recipe. When using hands-free "
+"mode, <app>Recipes</app> can display an image for each step when cooking. To "
+"add multiple images:"
 msgstr ""
-"Para obtener ayuda sobre cómo usar <app>Pybliographer</app> en este modo, "
-"escriba <cmd>help</cmd> aen el símbolo del sistema de <app>Pybliographer</"
+"Puede querer añadir varias imágenes a una receta. Cuando use el modo manos "
+"libres, <app>Recetas</app> puede mostrar una imagen por cada paso al "
+"cocinar. Para añadir varias imágenes:"
+
+#. (itstool) path: item/p
+#: C/add-recipe-images.page:56
+msgid ""
+"Select multiple images by pressing <key>Control</key> and the images you "
+"would like to add."
+msgstr ""
+"Seleccione varias imágenes pulsando la tecla <key>Ctrl</key> y en las "
+"imágenes que quiere añadir."
+
+#. (itstool) path: page/p
+#: C/add-recipe-images.page:65
+msgid ""
+"After adding an image, you can rotate it, make it the default image for the "
+"recipe, or remove it from the recipe."
+msgstr ""
+"Después de añadir una imagen, puede rotarla, hacer que sea la predeterminada "
+"para esa receta o quitarla."
+
+#. (itstool) path: p/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/add-recipe-images.page:73
+msgctxt "_"
+msgid ""
+"external ref='images/rotate-left.png' md5='b939aa1d6573f18f6e85672c9406346f'"
+msgstr ""
+"external ref='images/rotate-left.png' md5='b939aa1d6573f18f6e85672c9406346f'"
+
+#. (itstool) path: item/p
+#: C/add-recipe-images.page:70
+msgid ""
+"To rotate an image to the left press the <gui>Rotate Image</gui> button: "
+"<media type=\"image\" mime=\"image/png\" src=\"images/rotate-left.png\" its:"
+"translate=\"yes\"><span its:translate=\"yes\">Rotate Image</span> </media>"
+msgstr ""
+"Para rotar una imagen a la izquierda pulse el botón <gui>Rotar imagen</gui>: "
+"<media type=\"image\" mime=\"image/png\" src=\"images/rotate-left.png\" its:"
+"translate=\"yes\"><span its:translate=\"yes\">Rotar imagen</span> </media>"
+
+#. (itstool) path: p/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/add-recipe-images.page:80
+msgctxt "_"
+msgid ""
+"external ref='images/rotate-right.png' md5='f459dc336c62fe96e3ab6edd90a0b1ea'"
+msgstr ""
+"external ref='images/rotate-right.png' md5='f459dc336c62fe96e3ab6edd90a0b1ea'"
+
+#. (itstool) path: item/p
+#: C/add-recipe-images.page:77
+msgid ""
+"To rotate an image to the right press the <gui>Rotate Image</gui> button: "
+"<media type=\"image\" mime=\"image/png\" src=\"images/rotate-right.png\" its:"
+"translate=\"yes\"><span its:translate=\"yes\">Rotate Image</span> </media>"
+msgstr ""
+"Para rotar una imagen a la derecha pulse el botón <gui>Rotar imagen</gui>: "
+"<media type=\"image\" mime=\"image/png\" src=\"images/rotate-right.png\" its:"
+"translate=\"yes\"><span its:translate=\"yes\">Rotar imagen</span> </media>"
+
+#. (itstool) path: p/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/add-recipe-images.page:87
+msgctxt "_"
+msgid "external ref='images/star.png' md5='d117abab03b6751c30a15e7fc8d2df51'"
+msgstr "external ref='images/star.png' md5='d117abab03b6751c30a15e7fc8d2df51'"
+
+#. (itstool) path: item/p
+#: C/add-recipe-images.page:84
+msgid ""
+"To make an image the default image for the recipe, press the <gui>Default "
+"Image</gui> button: <media type=\"image\" mime=\"image/png\" src=\"images/"
+"star.png\" its:translate=\"yes\"><span its:translate=\"yes\">Default Image </"
+"span></media>"
+msgstr ""
+"Para hacer que una imagen sea la predeterminada de una receta pulse el botón "
+"<gui>Imagen predeterminada</gui>: <media type=\"image\" mime=\"image/png\" "
+"src=\"images/star.png\" its:translate=\"yes\"><span its:translate=\"yes"
+"\">Imagen predeterminada </span></media>"
+
+#. (itstool) path: p/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/add-recipe-images.page:94 C/shop.page:89
+msgctxt "_"
+msgid "external ref='images/trash.png' md5='803809373918657f15776ff05db8f33c'"
+msgstr "external ref='images/trash.png' md5='803809373918657f15776ff05db8f33c'"
+
+#. (itstool) path: item/p
+#: C/add-recipe-images.page:91
+msgid ""
+"To remove an image from the the recipe, press the <gui>Remove Image</gui> "
+"button: <media type=\"image\" mime=\"image/png\" src=\"images/trash.png\" "
+"its:translate=\"yes\"><span its:translate=\"yes\">Remove Image </span></"
+"media>"
+msgstr ""
+"Para quitar una imagen de una receta pulse el botón <gui>Quitar imagen</"
+"gui>: <media type=\"image\" mime=\"image/png\" src=\"images/trash.png\" its:"
+"translate=\"yes\"><span its:translate=\"yes\">Quitar imagen </span></media>"
+
+#. (itstool) path: info/desc
+#: C/add-recipe-ingredients.page:12
+msgid "How to add ingredients and lists."
+msgstr "Cómo añadir ingredientes y listas."
+
+#. (itstool) path: page/title
+#: C/add-recipe-ingredients.page:23
+msgid "Add Ingredients"
+msgstr "Añadir ingredientes"
+
+#. (itstool) path: page/p
+#: C/add-recipe-ingredients.page:24
+msgid ""
+"You can add the ingredients and create lists for the recipe. Lists are used "
+"for recipes that have different parts, such as a cake that has an ingredient "
+"list for the cake and an ingredient list for the frosting. To create a list:"
+msgstr ""
+"Puede añadir los ingredientes y crear una lista para cada receta. Las listas "
+"se usan para recetas que tienen diferentes partes, por ejemplo un pastel que "
+"tiene una lista de ingredientes para el bizcocho y otra para la cobertura. "
+"Para crear una lista:"
+
+#. (itstool) path: item/p
+#: C/add-recipe-ingredients.page:29
+msgid ""
+"Press the <gui>New Recipe</gui> in the upper left corner of <app>Recipes</"
 "app>."
-
-#. (itstool) path: page/p
-#: C/command-line.page:46
-msgid ""
-"The next example shows how to open a database and make a simple search in "
-"it. See the following commands and the output:"
 msgstr ""
-"El siguiente ejemplo muestra cómo abrir una base de datos y hacer una "
-"búsqueda sencilla en ella. Vea los siguientes comandos y la salida:"
-
-#. (itstool) path: page/screen
-#: C/command-line.page:48
-#, no-wrap
-msgid ""
-"\n"
-"  &gt;&gt; db = bibopen (\"database.bib\")\n"
-"  &gt;&gt; iterator = search (db, 'author = Mantsch')\n"
-"  &gt;&gt; ls (iterator)\n"
-"  The Use and Misuse of FTIR Spectro  Jackson, Michael; Mantsc  [JM95            ]\n"
-"  Phospholipid phase transitions in   Mantsch, H. H.; McElhane  [MM01            ]\n"
-"  &gt;&gt; \n"
-"  "
-msgstr ""
-"\n"
-"  &gt;&gt; db = bibopen (\"database.bib\")\n"
-"  &gt;&gt; iterator = search (db, 'author = Mantsch')\n"
-"  &gt;&gt; ls (iterator)\n"
-"  The Use and Misuse of FTIR Spectro  Jackson, Michael; Mantsc  [JM95            ]\n"
-"  Phospholipid phase transitions in   Mantsch, H. H.; McElhane  [MM01            ]\n"
-"  &gt;&gt; \n"
-"  "
-
-#. (itstool) path: page/p
-#: C/command-line.page:56
-msgid ""
-"To see the complete entries listed by the command <cmd>ls (iterator)</cmd>:"
-msgstr ""
-"Ver las entradas completas listadas por el comando <cmd>ls (iterator)</cmd>:"
-
-#. (itstool) path: page/screen
-#: C/command-line.page:58
-#, no-wrap
-msgid ""
-"\n"
-"  &gt;&gt; more (iterator)\n"
-"  Article [JM95]\n"
-"  ----------------------------------------------------------------------\n"
-"    Author         Jackson, Michael; Mantsch, Henry H.\n"
-"    Title          The Use and Misuse of FTIR Spectroscopy in the\n"
-"                   Determination of Protein Structure\n"
-"    Journal        Critical Reviews in Biochemistry and Molecular Biology\n"
-"    Date           1995\n"
-"    Volume         30\n"
-"    Number         2\n"
-"    Pages          95-120\n"
-"    keywords       infrared spectroscopy; proteins; secondary structure;\n"
-"                   quantitation\n"
-"    comments       Review\n"
-" \n"
-"  Article [MM01]\n"
-"  ----------------------------------------------------------------------\n"
-"    Author         Mantsch, H. H.; McElhaney, R. N.\n"
-"    Title          Phospholipid phase transitions in model and biological\n"
-"                   membranes as studied by infrared spectroscopy\n"
-"    Journal        Chemistry and Physics of Lipids\n"
-"    Date           1991\n"
-"    Volume         57\n"
-"  --More--\n"
-"  "
-msgstr ""
-"\n"
-"  &gt;&gt; more (iterator)\n"
-"  Article [JM95]\n"
-"  ----------------------------------------------------------------------\n"
-"    Author         Jackson, Michael; Mantsch, Henry H.\n"
-"    Title          The Use and Misuse of FTIR Spectroscopy in the\n"
-"                   Determination of Protein Structure\n"
-"    Journal        Critical Reviews in Biochemistry and Molecular Biology\n"
-"    Date           1995\n"
-"    Volume         30\n"
-"    Number         2\n"
-"    Pages          95-120\n"
-"    keywords       infrared spectroscopy; proteins; secondary structure;\n"
-"                   quantitation\n"
-"    comments       Review\n"
-" \n"
-"  Article [MM01]\n"
-"  ----------------------------------------------------------------------\n"
-"    Author         Mantsch, H. H.; McElhaney, R. N.\n"
-"    Title          Phospholipid phase transitions in model and biological\n"
-"                   membranes as studied by infrared spectroscopy\n"
-"    Journal        Chemistry and Physics of Lipids\n"
-"    Date           1991\n"
-"    Volume         57\n"
-"  --More--\n"
-"  "
-
-#. (itstool) path: info/desc
-#: C/customization.page:10
-msgid "How to customize this application to match your needs."
-msgstr "Como personalizar esta aplicación para ajustarse a sus necesidades."
-
-#. (itstool) path: page/title
-#: C/customization.page:26
-msgid "Advanced Configuration"
-msgstr "Configuración avanzada"
-
-#. (itstool) path: page/p
-#: C/customization.page:28
-msgid ""
-"The configuration system is heavily based on <app>Python</app>'s module "
-"system. The configuration files are standard <app>Pybliographer</app> "
-"scripts (that is, python code making use of <app>Pybliographer</app> extra "
-"classes and functions), whose single special feature is to be automatically "
-"parsed at startup or when needed."
-msgstr ""
-"La configuración del sistema está fuertemente basada en el sistema de "
-"módulos de <app>Python</app>. Los archivos de configuración son scripts "
-"estándar de <app>Pybliographer</app> (esto es, código python que hace uso de "
-"funciones y clases adicionales de <app>Pybliographer</app>), cuya única "
-"características especial es que se analizan automáticamente al inicio o "
-"cuando se necesitan."
-
-#. (itstool) path: section/title
-#: C/customization.page:35
-msgid "Files involved"
-msgstr "Archivos involucrados"
-
-#. (itstool) path: section/p
-#: C/customization.page:37
-msgid ""
-"The first file to be parsed is <file>${prefix}/share/pybliographer/pybrc.py "
-"</file>. It serves as a bootstrap for the general configuration mechanism, "
-"and defines:"
-msgstr ""
-"El primer archivo que analizar es <file>${prefix}/share/pybliographer/pybrc."
-"py </file>. Proporciona un proceso de arranque para el mecanismo general de "
-"configuración, y define:"
+"Pulse en <gui>Receta nueva</gui> en la esquina superior izquierda de "
+"<app>Recetas</app>."
 
 #. (itstool) path: item/p
-#: C/customization.page:43
-msgid "the available input and output formats"
-msgstr "los formatos de entrada y salida disponibles"
+#: C/add-recipe-ingredients.page:32
+msgid ""
+"Press the <gui>Add List</gui> button in the <gui>Ingredients</gui> section."
+msgstr ""
+"Pulse el botón <gui>Añadir lista</gui> en la sección <gui>Ingredientes</gui>."
 
 #. (itstool) path: item/p
-#: C/customization.page:47
-msgid "where to find the configuration directories."
-msgstr "donde encontrar las carpetas de configuración."
-
-#. (itstool) path: section/p
-#: C/customization.page:51
+#: C/add-recipe-ingredients.page:35
 msgid ""
-"A configuration directory holds a list of files which are parsed when "
-"needed. For example, if a method requires some configuration data for the "
-"bibtex module, it will import the corresponding file in this directory."
+"Enter the name of the list, such as cake, in the <gui>Name of the List</gui> "
+"text box."
 msgstr ""
-"Una carpeta de configuración contiene una lista de archivos que se analizan "
-"cuando es necesario. Por ejemplo, si un método requiere algunos datos de "
-"configuración para el módulo BibTeX, importará el archivo correspondiente en "
-"esta carpeta."
+"Introduzca el nombre de la receta, por ejemplo «Pastel» en la caja de texto "
+"<gui>Nombre de la lista</gui>."
 
-#. (itstool) path: section/p
-#: C/customization.page:56
-msgid ""
-"This mechanism allows more flexibility to add new formats: the new format "
-"can be installed with a default configuration without messing with the "
-"global configuration file. In addition, the program imports only what is "
-"needed, decreasing its startup time."
-msgstr ""
-"Este mecanismo permite más flexibilidad para añadir formatos nuevos: el "
-"formato nuevo se puede instalar con una configuración predeterminada, sin "
-"interferir en el archivo de configuración global. Además, el programa sólo "
-"importa lo que es necesario, reduciendo el tiempo de inicio."
-
-#. (itstool) path: section/p
-#: C/customization.page:62
-msgid ""
-"Finally, if the user provides a file called <file>.pybrc.py</file> in its "
-"home directory, this file is then parsed. Of course it can also define a "
-"private configuration directory, and override what has been defined before."
-msgstr ""
-"Finalmente, si el usuario proporciona un archivo llamado <file>.pybrc.py</"
-"file> en su carpeta personal, se analizará este archivo. Por supuesto, puede "
-"definir una carpeta de configuración privada, y anular lo definido "
-"anteriormente."
-
-#. (itstool) path: section/title
-#: C/customization.page:69
-msgid "The <sys>Config</sys> module"
-msgstr "El módulo <sys>Config</sys>"
-
-#. (itstool) path: section/p
-#: C/customization.page:71
-msgid ""
-"All the data that can be configured should be handled by the so-called "
-"<sys>Config</sys> module. It provides a standard interface to set/get and "
-"document configuration items."
-msgstr ""
-"Todos los datos que se pueden configurar se deben manejar con el módulo "
-"llamado <sys>Config</sys>. Proporciona una interfaz estándar para configurar/"
-"consultar y documentar los elementos de configuración."
-
-#. (itstool) path: info/desc
-#: C/gettingstarted.page:10
-msgid "Your first steps in <app>Pybliographer</app>."
-msgstr "Sus primeros pasos en <app>Pybliographer</app>."
-
-#. (itstool) path: page/title
-#: C/gettingstarted.page:26
-msgid "Getting Started"
-msgstr "Primeros pasos"
-
-#. (itstool) path: section/title
-#: C/gettingstarted.page:29
-msgid "What is <app>Pybliographer</app>?"
-msgstr "¿Qué es <app>Pybliographer</app>?"
-
-#. (itstool) path: section/p
-#: C/gettingstarted.page:30
-msgid ""
-"Pybliographer is a tool for working with bibliographic databases. It "
-"provides a general framework that can be used to manipulate these databases "
-"with a simple graphical interface, but that can also be easily extended by "
-"the mean of a scripting language, to fit a wide range of needs."
-msgstr ""
-"Pybliographer es una herramienta para trabajar con bases de datos "
-"bibliográficas. Proporciona un entorno de trabajo que se puede usar para "
-"manipular estas bases de datos con una interfaz gráfica sencilla, pero "
-"también se puede ampliar fácilmente usando un lenguaje de scripts, para "
-"ajustarse a un amplio rango de necesidades."
-
-#. (itstool) path: section/title
-#: C/gettingstarted.page:40
-msgid "How to start <app>Pybliographer</app>?"
-msgstr "¿Cómo iniciar <app>Pybliographer</app>?"
-
-#. (itstool) path: section/p
-#: C/gettingstarted.page:41
-msgid "You can start <app>Pybliographer</app> in the following ways:"
-msgstr "Puede iniciar <app>Pybliographer</app> de las siguientes maneras:"
-
-#. (itstool) path: section/title
-#: C/gettingstarted.page:45
-msgid "Graphical mode"
-msgstr "Modo gráfico"
-
-#. (itstool) path: section/p
-#: C/gettingstarted.page:46
-msgid ""
-"To start <app>Pybliographer</app> in graphical mode from a command line, "
-"type the following command, then press <key>Return</key>: "
-"<cmd>pybliographic</cmd>. For more information on the graphical interface, "
-"see <link xref=\"gui\"/>."
-msgstr ""
-"Para iniciar <app>Pybliographer</app> en modo gráfico desde una línea de "
-"comandos, escriba el siguiente comando y pulse <key>Intro</key>: "
-"<cmd>pybliographic</cmd>. Para obtener más información sobre la interfaz "
-"gráfica, consulte la sección <link xref=\"gui\"/>."
-
-#. (itstool) path: section/p
-#: C/gettingstarted.page:54
-msgid ""
-"It is possible to set the PYBLIOGRAPHER_DATABASE environment variable to an "
-"admissible bibliography file in order to open it always on startup, if no "
-"files are specified on the command line. Example:"
-msgstr ""
-"Es posible configurar la variable de entorno PYBLIOGRAPHER_DATABASE con un "
-"archivo de bibliografía admisible para abrirla siempre en el inicio, si no "
-"se especifican archivos en la línea de comandos. Ejemplo:"
-
-#. (itstool) path: section/screen
-#: C/gettingstarted.page:59
-#, no-wrap
-msgid ""
-"\n"
-"    \t       <output>bash$ </output><input>export PYBLIOGRAPHER_DATABASE=<var>my/database.bib</var></input>\n"
-"    \t       <output>bash$ </output><input>pybliographic</input>\n"
-"    \t       "
-msgstr ""
-"\n"
-"    \t       <output>bash$ </output><input>export PYBLIOGRAPHER_DATABASE=<var>my/database.bib</var></input>\n"
-"    \t       <output>bash$ </output><input>pybliographic</input>\n"
-"    \t       "
-
-#. (itstool) path: section/p
-#: C/gettingstarted.page:63
-msgid "It is equivalent to"
-msgstr "Es equivalente a"
-
-#. (itstool) path: section/screen
-#: C/gettingstarted.page:64
-#, no-wrap
-msgid ""
-"\n"
-"    \t       <output>bash$ </output><input>pybliographic <var>my/database.bib</var></input>\n"
-"    \t       "
-msgstr ""
-"\n"
-"    \t       <output>bash$ </output><input>pybliographic <var>my/database.bib</var></input>\n"
-"    \t       "
-
-#. (itstool) path: section/title
-#: C/gettingstarted.page:71
-msgid "Command line mode"
-msgstr "Modo línea de comandos"
-
-#. (itstool) path: section/p
-#: C/gettingstarted.page:72
-msgid ""
-"You can start <app>Pybliographer</app> also in command line mode by typing "
-"the following command followed by pressing <key>Return</key>: "
-"<cmd>pybliographer</cmd>. For more information, see <link xref=\"command-line"
-"\"/>."
-msgstr ""
-"También puede iniciar You can start <app>Pybliographer</app> en modo de "
-"línea de comandos, escribiendo el siguiente comando y pulsando <key>Intro</"
-"key>: <cmd>pybliographer</cmd>. Para obtener más información, consulte la "
-"<link xref=\"command-line\"/>."
-
-#. (itstool) path: section/title
-#: C/gettingstarted.page:81
-msgid "From the GNOME menu"
-msgstr "Desde el menú de GNOME"
-
-#. (itstool) path: section/p
-#: C/gettingstarted.page:82
-msgid ""
-"If the <file>*.desktop</file> file of the package is correctly installed in "
-"your sytem, you can find a launcher under the GNOME menu to start the "
-"graphical interface of <app>Pybliographer</app>."
-msgstr ""
-"Si el archivo <file>*.desktop</file> del paquete está instalado "
-"correctamente en su sistema, puede encontrar un lanzador en el menú de GNOME "
-"para iniciar la interfaz gráfica de <app>Pybliographer</app>."
-
-#. (itstool) path: info/desc
-#: C/gui-creating.page:10
-msgid "How to create a new database."
-msgstr "Cómo crear una base de datos nueva."
-
-#. (itstool) path: page/title
-#: C/gui-creating.page:26
-msgid "Creating a new database"
-msgstr "Crea una base de datos nueva"
+#. (itstool) path: item/p
+#: C/add-recipe-ingredients.page:38
+msgid "Repeat this step for as many lists as you may need."
+msgstr "Repita este paso para todas las listas que pueda necesitar."
 
 #. (itstool) path: page/p
-#: C/gui-creating.page:28
+#: C/add-recipe-ingredients.page:41
+msgid "To add ingredients to a recipe or to a list:"
+msgstr "Para añadir un ingrediente a una receta o una lista:"
+
+#. (itstool) path: item/p
+#: C/add-recipe-ingredients.page:43
+msgid "Press the <gui style=\"button\">+</gui> button."
+msgstr "Pulse <gui style=\"button\">+</gui>."
+
+#. (itstool) path: item/p
+#: C/add-recipe-ingredients.page:45
 msgid ""
-"When <app>Pybliographic</app> is opened, you can immediately begin to create "
-"a new database. The type of this database will be determined when you will "
-"save it the first time."
+"Choose the ingredient from the list or enter the ingredient in the "
+"<gui>Search</gui> box."
 msgstr ""
-"Cuando se abre <app>Pybliographic</app> puede empezar inmediatamente a crear "
-"una base de datos nueva. El tipo de esta base de datos se determinará cuando "
-"la guarde por primera vez."
+"Elija el ingrediente de la lista o introdúzcalo en la caja <gui>Buscar</gui>."
 
-#. (itstool) path: page/p
-#: C/gui-creating.page:32
+#. (itstool) path: item/p
+#: C/add-recipe-ingredients.page:48
 msgid ""
-"To add a new entry, you can use the <guiseq><gui>Edit</gui> <gui>Add</gui></"
-"guiseq> menu, directly the <gui>Add</gui> toolbar button or click with the "
-"right button in the list window and select <gui>Add</gui>."
+"Press the <gui>Add</gui> button to add the ingredient to the list or click "
+"<gui>Amount</gui> to how much of the ingredient is needed."
 msgstr ""
-"Para añadir una entrada nueva puede usar el menú <guiseq><gui>Editar</"
-"gui><gui>Añadir</gui></guiseq>, el botón <gui>Añadir</gui> de la barra de "
-"herramientas o pulse con el botón derecho del ratón en la ventana de la "
-"lista y seleccione <gui>Añadir</gui>."
+"Pulse el botón <gui>Añadir</gui> para añadirlo a la lista o pulse en "
+"<gui>Cantidad</gui> para indicar qué cantidad se necesita."
 
-#. (itstool) path: page/p
-#: C/gui-creating.page:38
+#. (itstool) path: item/p
+#: C/add-recipe-ingredients.page:52
 msgid ""
-"You will find more information on the main window's usage in <link xref="
-"\"gui-navigating\"/>."
+"In the <gui>Amount</gui> drop down box you can enter the quantity needed and "
+"then press <gui>Add</gui>. Or you can enter the amount and choose the "
+"measurement from the list and then press the <gui>Add</gui> button."
 msgstr ""
-"Encontrará más información en el uso de la ventana principal en <link xref="
-"\"gui-navigating\"/>."
+"En la caja desplegable <gui>Cantidad</gui> puede introducir la cantidad "
+"necesaria y pulsar <gui>Añadir</gui>. O puede introducir la cantidad y "
+"elegir la medida en la lista y luego pulsar el botón <gui>Añadir</gui>."
 
-#. (itstool) path: info/desc
-#: C/gui-edit.page:10
-msgid "Editing entries."
-msgstr "Editar entradas."
-
-#. (itstool) path: page/title
-#: C/gui-edit.page:25
-msgid "Editing"
-msgstr "Editando"
-
-#. (itstool) path: section/title
-#: C/gui-edit.page:28
-msgid "Basic editing"
-msgstr "Edición básica"
-
-#. (itstool) path: p/media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/gui-edit.page:31
-msgctxt "_"
-msgid "external ref='figures/edit.png' md5='8c5c88ea0416f223dad77ad0c5d498f4'"
-msgstr "external ref='figures/edit.png' md5='8c5c88ea0416f223dad77ad0c5d498f4'"
-
-#. (itstool) path: section/p
-#: C/gui-edit.page:31
+#. (itstool) path: item/p
+#: C/add-recipe-ingredients.page:58
 msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/edit.png\"> The "
-"Edition window </media>"
+"Repeat these steps until all ingredients have been added to the list or "
+"recipe."
 msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/edit.png\"> La "
-"ventana de edición </media>"
-
-#. (itstool) path: section/p
-#: C/gui-edit.page:35
-msgid ""
-"The edition window is represented in the figure above. On the right of each "
-"field, a symbol indicates if <app>Pybliographer</app> has been able to "
-"render all the information given in that field. For example, a BibTeX field "
-"containing an unknown command name cannot be correctly represented. In that "
-"case, <app>Pybliographer</app> provides a fake representation, and indicates "
-"it was not able to do a good job on this field by setting a red symbol on "
-"its right, instead of a green one."
-msgstr ""
-"En la figura anterior se representa la ventana de edición. A la derecha de "
-"cada campo, un símbolo indica si <app>Pybliographer</app> ha podido "
-"renderizar toda la información dada en ese campo. Por ejemplo, un campo de "
-"BibTeX que contenga un nombre de comando desconocido no se podrá representar "
-"correctamente. En ese caso, <app>Pybliographer</app> proporcionará una "
-"información falsa, e indicará que no es capaz de hacer un buen trabajo en "
-"ese campo, colocando un símbolo rojo a su derecha, en lugar de uno verde."
+"Repita estos pasos hasta que se hayan añadido todos los ingredientes a la "
+"lista o a la receta."
 
 #. (itstool) path: note/p
-#: C/gui-edit.page:44
+#: C/add-recipe-ingredients.page:63
 msgid ""
-"If you edit such an entry, you can loose the additional information it "
-"contained. To avoid this, consider using native editing (see <link xref="
-"\"gui-edit#gui-edit-native\"/>)."
+"<app>Recipes</app> does not currently support the ability to convert between "
+"metric units and imperial units."
 msgstr ""
-"Si edita una entrada, puede perder la información adicional que contenga. "
-"Para evitar esto, considere usar la edición nativa (consulte la sección <link xref="
-"\"gui-edit#gui-edit-native\"/>)."
+"<app>Recetas</app> no soporta actualmente la posibilidad de convertir entre "
+"unidades métricas e imperiales."
+
+#. (itstool) path: info/desc
+#: C/add-recipe.page:8
+msgid "Learn how to add your own recipe."
+msgstr "Aprender como añadir su propia receta."
+
+#. (itstool) path: page/title
+#: C/add-recipe.page:19
+msgid "Add a Recipe"
+msgstr "Añadir una receta"
+
+#. (itstool) path: page/p
+#: C/add-recipe.page:21
+msgid ""
+"If you are new to <app>Recipes</app>, these topics will help you to add the "
+"following categories to a recipe."
+msgstr ""
+"Si es la primera vez que usa <app>Recetas</app>, estos temas le ayudarán a "
+"añadir las siguientes categorías a una receta."
+
+#. (itstool) path: info/desc
+#: C/chef.page:11
+msgid "How to add your personal information to recipes."
+msgstr "Cómo añadir su información personal a las recetas."
+
+#. (itstool) path: page/title
+#: C/chef.page:22
+msgid "Add Chef Information"
+msgstr "Añadir información sobre el cocinero"
+
+#. (itstool) path: page/p
+#: C/chef.page:24
+msgid ""
+"You can add your personal information including your full name, short name "
+"and a photo to <app>Recipes</app>. This will create a chef profile that is "
+"used when you create a recipe. This will also help to search for recipes you "
+"have created or to share recipes with friends and family. To add your chef "
+"information:"
+msgstr ""
+"Puede añadir un su información personal a <app>Recetas</app>, incluyendo su "
+"nombre completo, su nombre corto y una foto. Esto creará un perfil de "
+"cocinero. que se usará cuando cree una receta. También le ayudará a buscar "
+"recetas que ha creado o compartido con familiares y amigos. Para añadir su "
+"información de cocinero:"
+
+#. (itstool) path: item/p
+#: C/chef.page:33
+msgid "Press the menu button in the top-right corner of the window."
+msgstr "Pulse el botón de menú en la esquina superior derecha de la ventana."
+
+#. (itstool) path: item/p
+#: C/chef.page:37
+msgid "Select <gui>Chef Informaton</gui>."
+msgstr "Seleccione <gui>Información del cocinero</gui>."
+
+#. (itstool) path: item/p
+#: C/chef.page:41
+msgid "Enter your full name in the <gui>Name..</gui> text box."
+msgstr "Introduzca su nombre completo en la caja de texto <gui>Nombre..</gui>."
+
+#. (itstool) path: item/p
+#: C/chef.page:45
+msgid ""
+"Enter your first name or nickname in the <gui>Short Name..</gui> text box."
+msgstr ""
+"Introduzca su nombre o alias en la caja de texto <gui>Nombre corto..</gui>."
+
+#. (itstool) path: item/p
+#: C/chef.page:50
+msgid ""
+"Press the camera icon and select an image to add as your personal photo and "
+"then press <gui>Open</gui>."
+msgstr ""
+"Pulse el icono de la cámara y elija una imagen para añadirla como su foto "
+"personal y pulse <gui>Abrir</gui>."
+
+#. (itstool) path: item/p
+#: C/chef.page:55
+msgid ""
+"Press the <gui>Save</gui> button to finish entering your chef information."
+msgstr ""
+"Pulse el botón <gui>Guardar</gui> cuando haya terminado de introducir su "
+"información de cocinero."
+
+#. (itstool) path: info/desc
+#: C/common-problems.page:8
+msgid "Solutions to common problems with <app>Recipes</app>."
+msgstr "Soluciones a problemas comunes con <app>Recetas</app>."
+
+#. (itstool) path: page/title
+#. (itstool) path: section/title
+#: C/common-problems.page:19 C/index.page:46
+msgid "Common Problems"
+msgstr "Problemas comunes"
+
+#. (itstool) path: section/title
+#: C/common-problems.page:22
+msgid "Editing Your Recipes"
+msgstr "Editar sus recetas"
 
 #. (itstool) path: section/p
-#: C/gui-edit.page:49
+#: C/common-problems.page:23
 msgid ""
-"To edit the entries, simply type the corresponding text, without any "
-"consideration for the database format being used. For example, with "
-"<app>BibTeX</app>, don't add any <em>{</em> or special characters to "
-"influence the result, as they will be quoted by the system. For fields "
-"requiring names (like author and editor), use the following format: type one "
-"name per line, in the <em>last name, lineage, first name</em> order. If an "
-"author or editor field has too many names, you can end the list of names "
-"with <em>others</em>; the standard bibtex styles convert this to <em>et al</"
-"em>."
+"If you have change the login or user ID you use to log into your computer, "
+"and you can no longer edit the recipes you have created, you will need to "
+"update the <app>Recipes</app> database."
 msgstr ""
-"Para editar las entradas, simplemente escriba el texto correspondiente, sin "
-"tener en cuenta el formato de la base de datos usada. Por ejemplo, con "
-"<app>BibTeX</app>, no añada ninguna <em>{</em> ni caracteres especiales para "
-"modificar el resultado, ya que el sistema los entrecomillará. Para los "
-"campos que requieran nombres (como «autor» o «editor»), use el siguiente "
-"formato: escriba un nombre por línea en el orden <em>apellido, título, "
-"nombre</em>. Si un autor o un editor tienen muchos nombres, puede terminar "
-"la lista de nombres con <em>others</em>; los estilos estándar de bibtext lo "
-"convertirán en <em>et al</em>."
-
-#. (itstool) path: section/p
-#: C/gui-edit.page:59
-msgid ""
-"In addition to the standard fields, you can create your own fields using the "
-"<gui>Create Field</gui> button."
-msgstr ""
-"Además de los campos estándar, puede crear sus propios campos usando el "
-"botón <gui>Crear campo</gui>."
+"Si h cambiado el ID de usuario o de inicio de sesión que usa para usar su "
+"equipo, y no puede volver a editar las recetas que ha creado, necesitará "
+"actualizar la base de datos de <app>Recetas</app>."
 
 #. (itstool) path: note/p
-#: C/gui-edit.page:63
+#: C/common-problems.page:28
 msgid ""
-"You can customize the mandatory and optional fields for the different type "
-"of entries. For example, associating the <em>URL</em> field with a given "
-"type of entry, it is possible to assign an url to an entry (e.g. the "
-"location of the pdf version of an article or the address of a website). See "
-"the window below. More information about the association of fields can be "
-"found in <link xref=\"gui-settings\"/>."
+"You must have the <sys>dconf-editor</sys> package installed. Be very careful "
+"editing application data in <app>dconf-editor</app>. By editing an "
+"application's settings, you may cause that application to stop working "
+"correctly."
 msgstr ""
-"Puede configurar los campos obligatorios y opcionales para los diferentes "
-"tipos de entradas. Por ejemplo, asociando el campo <em>URL</em> con un tipo "
-"de entrada dada, es posible asignar un URL a una entrada (ej. la ubicación "
-"de la versión en PDF de un artículo o la dirección de un sitio web). Vea la "
-"siguiente imagen. Puede encontrar más información sobre la asociación de "
-"campos en <link xref=\"gui-settings\"/>."
+"Debe tener instalado el paquete <sys>dconf-editor</sys>. Tenga mucho cuidado "
+"al editar datos de la aplicación con <app>dconf-editor</app>. Al modificar "
+"la configuración de una aplicación puede hacer que ésta deje de funcionar "
+"correctamente."
+
+#. (itstool) path: section/p
+#: C/common-problems.page:34
+msgid ""
+"To update <app>Recipes</app> to use the old user to allow you to edit your "
+"recipes:"
+msgstr ""
+"Para actualizar <app>Recetas</app> y hacer que use el anterior usuario para "
+"permitirle editar sus recetas:"
+
+#. (itstool) path: item/p
+#: C/common-problems.page:38
+msgid "Open <app>dconf-editor</app>."
+msgstr "Abra <app>dconf-editor</app>."
+
+#. (itstool) path: item/p
+#: C/common-problems.page:41
+msgid ""
+"Select <guiseq><gui>org</gui> <gui>gnome</gui> <gui>recipes</gui> <gui>user</"
+"gui></guiseq>."
+msgstr ""
+"Seleccione <guiseq><gui>org</gui> <gui>gnome</gui> <gui>recipes</gui> "
+"<gui>user</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/common-problems.page:45
+msgid "In the <gui>Custom value</gui> field, enter the old user ID."
+msgstr ""
+"En el campo <gui>Custom value</gui> introduzca el ID del anterior usuario."
+
+#. (itstool) path: item/p
+#: C/common-problems.page:48
+msgid "Close <app>dconf-editor</app>."
+msgstr "Cierre <app>dconf-editor</app>."
+
+#. (itstool) path: item/p
+#: C/common-problems.page:51
+msgid ""
+"Open <app>Recipes</app>. You will now be able to open and edit recipes you "
+"have created."
+msgstr ""
+"Abra <app>Recetas</app>. Ya podrá abrir y editar las recetas que ha creado."
+
+#. (itstool) path: section/title
+#: C/common-problems.page:58
+msgid "Remove or Edit Included Recipes"
+msgstr "Quitar o editar las recetas incluidas"
+
+#. (itstool) path: section/p
+#: C/common-problems.page:59
+msgid ""
+"You can only remove or edit the recipes you create, not the recipes included."
+msgstr ""
+"Sólo puede quitar o editar las recetas que haya creado, no las que vienen "
+"incluidas."
+
+#. (itstool) path: info/desc
+#: C/contribute.page:9
+msgid "How to share your recipes with the GNOME community."
+msgstr "Cómo compartir sus recetas con la comunidad GNOME."
+
+#. (itstool) path: page/title
+#: C/contribute.page:20
+msgid "Contribute Recipes"
+msgstr "Colaborar con Recetas"
+
+#. (itstool) path: page/p
+#: C/contribute.page:22
+msgid ""
+"You can share your recipe with the <app>Recipes</app> developers who may "
+"include your recipe in the <app>Recipes</app> application. Recipes you share "
+"should be of your own creation. To send your recipe:"
+msgstr ""
+"Puede compartir su receta con los desarrolladores de <app>Recetas</app>, "
+"para que la incluyan dentro de la aplicación <app>Recetas</app>, pero que "
+"sean de su creación. Para enviar su receta:"
+
+#. (itstool) path: item/p
+#: C/contribute.page:28
+msgid "Open the recipe you want to share."
+msgstr "Abra la receta que quiere compartir."
+
+#. (itstool) path: item/p
+#: C/contribute.page:32 C/share.page:47
+msgid "Press the <gui>Share</gui> button."
+msgstr "Pulse el botón <gui>Compartir</gui>."
+
+#. (itstool) path: item/p
+#: C/contribute.page:36 C/share.page:51
+msgid ""
+"If you would like to share multiple recipes, press the <gui>Add More</gui> "
+"button in the top-right window and open another recipe and then press "
+"<gui>Share</gui> again."
+msgstr ""
+"Si quiere compartir varias recetas, pulse el botón <gui>Añadir más</gui> en "
+"la parte superior derecha de la ventana, abra otra receta y pulse de nuevo "
+"en <gui>Compartir</gui>."
+
+#. (itstool) path: item/p
+#: C/contribute.page:42
+msgid "Press the <gui>Share</gui> button in the upper-right corner."
+msgstr "Pulse el botón <gui>Compartir</gui> en la esquina superior derecha."
+
+#. (itstool) path: item/p
+#: C/contribute.page:46
+msgid "Select <gui>Contribute to Recipes</gui> in the bottom-right corner."
+msgstr ""
+"Elija <gui>Contribuir con Recetas de GNOME</gui> en la esquina inferior "
+"derecha."
+
+#. (itstool) path: item/p
+#: C/contribute.page:50 C/share.page:61
+msgid ""
+"Choose the email application from the list you want to use to email the "
+"recipe and press the <gui>Select</gui> button."
+msgstr ""
+"Elija en la lista la aplicación de correo-e que quiere usar para enviar por "
+"correo la receta y pulse el botón  <gui>Seleccionar</gui>."
+
+#. (itstool) path: item/p
+#: C/contribute.page:55
+msgid ""
+"Your email application will open and a new email message will be composed. "
+"<app>Recipes</app> will have included the recipe as an attachment and the "
+"<em>Subject</em> and <em>To:</em> line will be automatically filled out for "
+"you."
+msgstr ""
+"Su aplicación de correo-e se abrirá y se redactará un mensaje nuevo. "
+"<app>Recetas</app> habrá incluido la receta como adjunto y las líneas de "
+"<em>Asunto</em> y <em>Para:</em> se rellenarán automáticamente."
+
+#. (itstool) path: item/p
+#: C/contribute.page:62
+msgid ""
+"Press <gui>Send</gui> to email your recipe to the <app>Recipe</app> "
+"developers who will review your recipe for possible inclusion."
+msgstr ""
+"Pulse <gui>Enviar</gui> para enviar su receta a los desarrolladores de "
+"<app>Recetas</app>, que la evaluarán para su posible inclusión."
+
+#. (itstool) path: info/desc
+#: C/cooking.page:9
+msgid "Use hands-free mode or timers to help you cook."
+msgstr "Use el modo manos libres o los tiempos apara ayudarle a cocinar."
+
+#. (itstool) path: page/title
+#: C/cooking.page:20
+msgid "Start Cooking"
+msgstr "Empezar a cocinar"
+
+#. (itstool) path: page/p
+#: C/cooking.page:22
+msgid ""
+"<app>Recipes</app> features a hands-free mode to help you with recipe "
+"directions when you want to cook a recipe. Hands-free mode makes it easy to "
+"view the steps to make a recipe, including starting timers or seeing photos "
+"of each step, if they were included in the recipe."
+msgstr ""
+"<app>Recetas</app> incluye un modo de manos libres par ayudarle con las "
+"instrucciones de una receta cuando vaya a prepararla. Este modo hace que sea "
+"más sencillo ver los pasos de elaboración, incluyendo iniciar los tiempos o "
+"ver las fotos de cada paso, si estaban incluidas en la receta."
+
+#. (itstool) path: page/p
+#: C/cooking.page:27
+msgid "To start cooking with hands-free mode:"
+msgstr "Para empezar a cocinar en modo manos libres:"
+
+#. (itstool) path: item/p
+#: C/cooking.page:30
+msgid "Open the recipe you want to cook."
+msgstr "Abra la receta que quiere preparar."
+
+#. (itstool) path: item/p
+#: C/cooking.page:34
+msgid "Press the <gui>Start Cooking</gui> button in the top right corner."
+msgstr ""
+"Pulse el botón <gui>Empezar a cocinar</gui> en la esquina superior derecha."
+
+#. (itstool) path: item/p
+#: C/cooking.page:38
+msgid ""
+"<app>Recipes</app> will change to full screen mode, also known as hands-free "
+"mode and display the first step to cook the recipe."
+msgstr ""
+"<app>Recetas</app> cambiará al modo de pantalla completa, también conocido "
+"como modo de manos libres y mostrará el primer paso para preparar la receta."
+
+#. (itstool) path: item/p
+#: C/cooking.page:43 C/cooking.page:67
+msgid "To move to the next step of the recipe, press any key on the keyboard."
+msgstr "Para avanzar al siguiente paso, pulse cualquier tecla."
+
+#. (itstool) path: item/p
+#: C/cooking.page:48
+msgid "To move to the previous step, press the left arrow key on the keyboard."
+msgstr ""
+"Para retroceder al paso anterior, pulse la tecla de flecha izquierda en el "
+"teclado."
+
+#. (itstool) path: item/p
+#: C/cooking.page:53
+msgid ""
+"To start a timer, press the <gui>Start</gui> button or <key>Spacebar</key>. "
+"Once you have started a timer, you can press <gui>Pause</gui> to pause the "
+"timer or <gui>Reset</gui> to re-start the timer from the beginning. You can "
+"have multiple timers running and the names of the step associated with each "
+"timer will be shown in the upper left corner of <app>Recipes</app>. When the "
+"timer is done, your computer will beep and <gui>Time is up!</gui> will be "
+"shown."
+msgstr ""
+"Para iniciar un temporizador, pulse el botón <gui>Comenzar</gui> "
+"<key>Espacio</key>. Una vez que lo haya iniciado, puede pulsar <gui>Pausa</"
+"gui> o <gui>Reiniciar</gui> para que empiece de nuevo desde el principio. "
+"Puede tener varios temporizadores al a vez y los nombres de cada apso "
+"asociados a cada uno de ellos se mostrará en la esquina superior izquierda "
+"de <app>Recetas</app>. Cuando termine, el equipo emitirá un sonido y se "
+"mostrará el mensaje <gui>¡Se acabó el tiempo!</gui>."
+
+#. (itstool) path: item/p
+#: C/cooking.page:62
+msgid ""
+"When a timer is running, the name of the timer will be shown in the upper "
+"left corner of hands-free mode. You can move to the next steps while a timer "
+"is running."
+msgstr ""
+"Cuando un temporizador está corriendo, su nombre se mostrará en la esquina "
+"superior izquierda del modo manos libres. Puede pasar a los pasos siguientes "
+"aunque el temporizador esté corriendo."
+
+#. (itstool) path: item/p
+#: C/cooking.page:72
+msgid ""
+"When you have completed all the steps or to exit hands-free mode at any "
+"time, press the <key>Escape</key> key or press the <gui>x</gui> button in "
+"the top-right corner."
+msgstr ""
+"Cuando haya completado todos los pasos, o para salir del modo manos libres "
+"en cualquier momento, pulse la tecla <key>Esc</key> o el botón <gui>x</gui> "
+"en la esquina superior derecha."
+
+#. (itstool) path: info/desc
+#: C/find-recipe.page:8
+msgid "Find a recipe by name, category, cuisine, or chef."
+msgstr "Buscar una receta por nombre, categoría, tipo de cocina o cocinero."
+
+#. (itstool) path: page/title
+#: C/find-recipe.page:19
+msgid "Search Recipes"
+msgstr "Buscar recetas"
+
+#. (itstool) path: section/title
+#: C/find-recipe.page:22
+msgid "Search by Recipe Name, Ingredient or Chef"
+msgstr "Buscar por nombre de la receta, ingrediente o cocinero"
 
 #. (itstool) path: p/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/gui-edit.page:73
+#: C/find-recipe.page:24 C/find-recipe.page:42
 msgctxt "_"
-msgid "external ref='figures/edit2.png' md5='899d1d9761324f427bea18eba973c66d'"
+msgid "external ref='images/search.png' md5='b0c894f87d0a0bca717b52ecf0b4a12e'"
 msgstr ""
-"external ref='figures/edit2.png' md5='899d1d9761324f427bea18eba973c66d'"
+"external ref='images/search.png' md5='b0c894f87d0a0bca717b52ecf0b4a12e'"
 
 #. (itstool) path: section/p
-#: C/gui-edit.page:73
+#: C/find-recipe.page:23
 msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/edit2.png\"> The "
-"Edition window - Optional fields </media>"
+"Press the search button <media type=\"image\" mime=\"image/png\" src="
+"\"images/search.png\" its:translate=\"yes\"> <span its:translate=\"yes"
+"\">Search</span></media> and enter your search query. The search results can "
+"include:"
 msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/edit2.png\"> La "
-"ventana de edición: campos opcionales </media>"
-
-#. (itstool) path: section/p
-#: C/gui-edit.page:77
-msgid ""
-"The following keyboard shortcuts are available during edition (in addition "
-"to the standard ones provided by Gtk):"
-msgstr ""
-"Lo siguientes atajos de teclado están disponibles durante la edición (además "
-"de los estándar, proporcionados por GTK):"
+"Pulse el botón de búsqueda <media type=\"image\" mime=\"image/png\" src="
+"\"images/search.png\" its:translate=\"yes\"> <span its:translate=\"yes"
+"\">Buscar</span></media> e introduzca su consulta. Los resultados de la "
+"búsqueda pueden incluir:"
 
 #. (itstool) path: item/p
-#: C/gui-edit.page:82
-msgid ""
-"<keyseq><key>Ctrl</key><key>TAB</key></keyseq> to jump to the next field"
-msgstr ""
-"<keyseq><key>Ctrl</key><key>Tab</key></keyseq> para saltar al siguiente campo"
+#: C/find-recipe.page:30
+msgid "Recipes that include the text you searched for."
+msgstr "Recetas que incluyen el texto que ha buscado."
 
 #. (itstool) path: item/p
-#: C/gui-edit.page:87
-msgid ""
-"<keyseq><key>Shift</key><key>TAB</key></keyseq> to jump to the previous field"
-msgstr ""
-"<keyseq><key>Shift</key><key>Tab</key></keyseq> para saltar al campo anterior"
+#: C/find-recipe.page:33
+msgid "Ingredients that include the text you searched for."
+msgstr "Ingredientes que incluyen el texto que ha buscado."
 
 #. (itstool) path: item/p
-#: C/gui-edit.page:92
-msgid ""
-"<keyseq><key>Ctrl</key><key>Enter</key></keyseq> to accept the modifications"
-msgstr ""
-"<keyseq><key>Ctrl</key><key>Intro</key></keyseq> para aceptar las "
-"modificaciones"
-
-#. (itstool) path: item/p
-#: C/gui-edit.page:97
-msgid "<key>Esc</key> to cancel the edition"
-msgstr "<key>Esc</key> para cancelar la edición"
-
-#. (itstool) path: section/p
-#: C/gui-edit.page:101
-msgid ""
-"To specify a crossreference to another entry, just drag the entry from the "
-"main list to the <gui>Crossreference</gui> field. To remove a "
-"crossreference, drag an empty selection on the field. To unselect all the "
-"entries, you might need to use the <key>Control</key> key, while clicking on "
-"the entry."
-msgstr ""
-"Para especificar una referencia cruzada a otra entrada, simplemente arrastre "
-"y suelre la entrada desde la lista principal hasta el campo <gui>Referencia "
-"cruzada</gui>. Para quitar una referencia cruzada, arrastre una selección "
-"vacía hasta el campo. Para deseleccionar todas las entradas, debe usar la "
-"tecla <key>Ctrl</key> mientras pulsa sobre la entrada."
-
-#. (itstool) path: section/title
-#: C/gui-edit.page:109
-msgid "Native editing"
-msgstr "Edición nativa"
-
-#. (itstool) path: section/p
-#: C/gui-edit.page:111
-msgid ""
-"For databases like BibTeX that provide a specific syntax (called <em>native</"
-"em> syntax), it is possible to directly edit the entry in this format. Just "
-"click the button called <gui>Native Editing</gui> at the bottom of the "
-"window and type the entry in its native form."
-msgstr ""
-"Para bases de datos como BibTeX que proporcionan una sintaxis específica "
-"(llamada sintaxis <em>nativa</em>), es posible editar directamente la "
-"entrada en este formato. Simplemente pulse el botón <gui>Edición nativa</"
-"gui> en la parte inferior de la ventana y escriba la entrada en su forma "
-"nativa."
-
-#. (itstool) path: section/p
-#: C/gui-edit.page:118
-msgid ""
-"It is also possible to type native commands in the normal editing window. "
-"For example, if you want to use special LaTeX commands like <cmd>\\textbf</"
-"cmd> in a title, you can type them directly in the <gui>Title</gui> field by "
-"preceding the text with a <em>@</em> symbol (as the first character). After "
-"that symbol, you have to use all the BibTeX conventions (braces, "
-"backslashes,...), as none of them will be escaped or modified by "
-"<app>Pybliographer</app>."
-msgstr ""
-"También es posible escribir comandos nativos en la ventana normal de "
-"edición. Por ejemplo, si quiere usar comandos especiales de LaTeX como <cmd>"
-"\\textbf</cmd> en un título, puede escribirlos directamente en el campo "
-"<gui>Título</gui> poniendo del símbolo <em>@</em> antes del texto (como "
-"primer carácter). Después de ese símbolo, debe usar todas las convenciones "
-"de BibTeX (llaves, barras invertidas,...), ya que <app>Pybliographer</app> "
-"no las escapará ni las modificará."
-
-#. (itstool) path: info/desc
-#: C/gui-formats.page:10
-msgid "Other file formats which you can also use."
-msgstr "Otros formatos de archivo que también puede usar"
-
-#. (itstool) path: page/title
-#: C/gui-formats.page:26
-msgid "Saving selected entries in different formats"
-msgstr "Guardar las entradas seleccionadas el diferentes formatos"
-
-#. (itstool) path: page/p
-#: C/gui-formats.page:28
-msgid ""
-"Selected entries can be saved in different formats using the "
-"<guiseq><gui>Cite</gui><gui>Format...</gui></guiseq> menu item, see the "
-"following window:"
-msgstr ""
-"Las entradas seleccionadas se pueden guardar en diferentes formatos usando "
-"el elemento de menú <guiseq><gui>Cita</gui><gui>Formato…</gui></guiseq>, vea "
-"la siguiente ventana:"
+#: C/find-recipe.page:36
+msgid "Chef names."
+msgstr "Nombres de los cocineros."
 
 #. (itstool) path: p/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/gui-formats.page:33
+#: C/find-recipe.page:45 C/find-recipe.page:84 C/find-recipe.page:113
+#: C/find-recipe.page:152
 msgctxt "_"
+msgid "external ref='images/down.png' md5='384329e0a17b79aca6085fe4aab1361f'"
+msgstr "external ref='images/down.png' md5='384329e0a17b79aca6085fe4aab1361f'"
+
+#. (itstool) path: section/p
+#: C/find-recipe.page:40
 msgid ""
-"external ref='figures/format.png' md5='734464fc1276ef9b3f2bc8cb34f2504e'"
+"You can also do a more narrow search by category. Press the search button "
+"<media type=\"image\" mime=\"image/png\" src=\"images/search.png\" its:"
+"translate=\"yes\"> <span its:translate=\"yes\">Search</span></media> and "
+"down icon <media type=\"image\" mime=\"image/png\" src=\"images/down.png\" "
+"its:translate=\"yes\"> <span its:translate=\"yes\">Down</span></media> and "
+"choose from one or more categories."
 msgstr ""
-"external ref='figures/format.png' md5='734464fc1276ef9b3f2bc8cb34f2504e'"
-
-#. (itstool) path: page/p
-#: C/gui-formats.page:33
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/format.png\"> "
-"Formatting entries </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/format.png\"> "
-"Formatear entradas </media>"
-
-#. (itstool) path: page/p
-#: C/gui-formats.page:38
-msgid ""
-"As a result, a formatted output file is generated according to a "
-"bibliographic style, either in HTML, LaTeX, Raw or Text format. The "
-"<app>Pybliographer</app> package contains some bibliographic styles, but own "
-"styles can also be created easily. See also <link xref=\"scripting-"
-"existing#script-scripting-existing-pybformat\"/>."
-msgstr ""
-"Como resultado, el archivo de salida formateado se genera siguiendo un "
-"estilo bibliográfico, ya sea en HTML, LaTeX o formato de texto en bruto. El "
-"paquete <app>Pybliographer</app> contiene alguno estilos bibliográficos, "
-"pero se pueden crear estilos propios fácilmente. Consulte también la <link "
-"xref=\"scripting-existing#script-scripting-existing-pybformat\"/>."
-
-#. (itstool) path: info/desc
-#: C/gui-navigating.page:10
-msgid "Explanations about the navigation in the database."
-msgstr "Explicaciones sobre la navegación en la base de datos."
-
-#. (itstool) path: page/title
-#: C/gui-navigating.page:26
-msgid "Navigating in the entries"
-msgstr "Navegar por las entradas"
-
-#. (itstool) path: page/p
-#: C/gui-navigating.page:28
-msgid ""
-"Once you have opened a database, or started to create a new one, the main "
-"window (see the picture below) displays a list of all the entries on the top "
-"part of it. The fields displayed here can be configured under the "
-"<guiseq><gui>Settings</gui><gui>Preferences</gui></guiseq> menu item."
-msgstr ""
-"na vez que haya abierto una base de datos, o haya empezado a crear una "
-"nueva, la ventana principal (vea la siguiente imagen) muestra una lista de "
-"todas las entradas en su parte superior. Los campos mostrados aquí se pueden "
-"configurar en el elemento de menú <guiseq><gui>Configuración</"
-"gui><gui>Preferencias</gui></guiseq>."
-
-#. (itstool) path: note/p
-#: C/gui-navigating.page:35
-msgid ""
-"It is possible to display two types of combined fields: <em>-author/editor</"
-"em> and <em>-author/title-</em>."
-msgstr ""
-"Es posible mostrar dos tipos dos tipos de campos combinados: <em>-autor/"
-"editor</em> y <em>-autor/título-</em>."
-
-#. (itstool) path: page/p
-#: C/gui-navigating.page:40
-msgid ""
-"Clicking on an entry displays its full content on the lower part of the "
-"window. It is also possible to use the arrow keys to navigate in the upper "
-"list."
-msgstr ""
-"Al pulsar sobre una entrada se muestra todo su contenido en la parte "
-"inferior de la ventana. También es posible usar las teclas de flechas para "
-"navegar por la lista superior."
-
-#. (itstool) path: page/p
-#: C/gui-navigating.page:45
-msgid ""
-"If an entry contains an <em>URL</em> field, clicking on the small button "
-"next to the url, the appropriate application is launched to view the target "
-"object (e.g. PDF viewer for pdf files, web browser for http address). See "
-"<link xref=\"gui-edit\"/> about how to add an URL field to an entry. "
-"Alternatively, you can open the URL with the help of the <guiseq><gui>View</"
-"gui><gui>Resource</gui></guiseq> submenu item or the <guiseq><gui>Resource</"
-"gui></guiseq> pop up menu provided for the item list. If an item contains "
-"one or more viewable fields (like url) containing viewable resources, it is "
-"marked with an icon at the left edge of the item in the upper part of the "
-"main window (see the picture below)."
-msgstr ""
-"Si una entrada contiene un campo <em>URL</em>, al pulsar sobre el botón "
-"pequeño junto al URL, se ejecuta la aplicación apropiada para ver el objeto "
-"destino (ej. visor PDF para archivos PDF, navegador web para direcciones "
-"HTTP). Consulte la sección <link xref=\"gui-edit\"/> sobre cómo añadir un campo URL "
-"a una entrada. Alternativamente, puede abrir el URL con la ayuda del "
-"elemento del submenú <guiseq><gui>Ver</gui><gui>Recurso</gui></guiseq>, o "
-"con el menú emergente <guiseq><gui>Recurso</gui></guiseq> proporcionado para "
-"el elemento de la lista. Si un elemento contiene uno o más campos visibles "
-"(como un URL), se marca con un icono en el borde izquierdo del elemento en "
-"la parte superior de la ventana principal (vea la siguiente imagen)."
-
-#. (itstool) path: note/p
-#: C/gui-navigating.page:58
-msgid ""
-"You can set the viewable fields and the applications used to view the "
-"resources in the <gui>Resource</gui> tab under the <guiseq><gui>Settings</"
-"gui><gui>Preferences</gui></guiseq> menu."
-msgstr ""
-"Puede configurar los campos visibles y las aplicaciones usadas para ver los "
-"recursos en la pestaña <gui>Recurso</gui> del menú "
-"<guiseq><gui>Configuración</gui><gui>Preferencias</gui></guiseq>."
-
-#. (itstool) path: page/p
-#: C/gui-navigating.page:65
-msgid ""
-"Clicking on an entry while pressing the <key>Shift</key> key extends the "
-"selection to the clicked entry. A click while pressing the <key>Control</"
-"key> key toggles the entry without altering the state of the rest of the "
-"selection. With copy and paste, or by drag and drop you can copy one or more "
-"selected entries into a new window or database."
-msgstr ""
-"Al pulsar sobre una entrada mientras se presiona la tecla <key>Mayús</key> "
-"se extiende la selección hasta la entrada pulsada. Una pulsación mientras "
-"presiona la tecla <key>Ctrl</key> marca o desmarca la entrada sin alterar el "
-"estado de las demás. Con copiar y pegar, o arrastrando y soltando puede "
-"copiar una o más entradas seleccionadas en una ventana nueva o en una base "
-"de datos."
-
-#. (itstool) path: p/media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/gui-navigating.page:72
-msgctxt "_"
-msgid "external ref='figures/main.png' md5='bf9ce1d3e626213520d3220eb46558dd'"
-msgstr "external ref='figures/main.png' md5='bf9ce1d3e626213520d3220eb46558dd'"
-
-#. (itstool) path: page/p
-#: C/gui-navigating.page:72
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/main.png\"> The main "
-"window </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/main.png\"> La "
-"ventana principal </media>"
-
-#. (itstool) path: page/p
-#: C/gui-navigating.page:76
-msgid ""
-"Clicking the right button of the mouse in the list opens a contextual menu. "
-"With this menu you can:"
-msgstr ""
-"Al pulsar con el botón derecho del ratón en la lista se abre un menú "
-"contextual. Con este menú puede:"
+"También puede acotar la búsqueda por categoría. Pulse el botón <media type="
+"\"image\" mime=\"image/png\" src=\"images/search.png\" its:translate=\"yes"
+"\"> <span its:translate=\"yes\">Buscar</span></media> y el icono <media type="
+"\"image\" mime=\"image/png\" src=\"images/down.png\" its:translate=\"yes\"> "
+"<span its:translate=\"yes\">Abajo</span></media> y elija una o más "
+"categorías.."
 
 #. (itstool) path: item/p
-#: C/gui-navigating.page:81
-msgid "add a new entry"
-msgstr "añadir una entrada nueva"
+#: C/find-recipe.page:50
+msgid "Meal"
+msgstr "Comida"
 
 #. (itstool) path: item/p
-#: C/gui-navigating.page:84
-msgid "edit the currently selected items"
-msgstr "editar los elementos seleccionados actualmente"
+#: C/find-recipe.page:54
+msgid "Spiciness"
+msgstr "Picante"
 
 #. (itstool) path: item/p
-#: C/gui-navigating.page:87
-msgid "view the resource associated with the selected item"
-msgstr "ver el recurso asociado al elemento seleccionado"
+#: C/find-recipe.page:58
+msgid "Dietary restrictions"
+msgstr "Restricciones alimentarias"
 
 #. (itstool) path: item/p
-#: C/gui-navigating.page:90
-msgid "delete the currently selected items"
-msgstr "eliminar los elementos seleccionados actualmente"
+#: C/find-recipe.page:62
+msgid "Ingredients"
+msgstr "Ingredientes"
 
-#. (itstool) path: page/p
-#: C/gui-navigating.page:94
+#. (itstool) path: section/p
+#: C/find-recipe.page:66
 msgid ""
-"Note that some of these menu options can be disabled for a given database or "
-"entry, provided that the corresponding action can't be performed."
+"<app>Recipes</app> will add a tag for the category you selected and display "
+"it in the search bar. You can then enter text to search within that category "
+"and tag."
 msgstr ""
-"Tenga en cuenta que algunas de estas opciones de menú se pueden desactivar "
-"para la entrada o la base de datos dada, siempre que la acción "
-"correspondiente no se pueda realizar."
+"<app>Recetas</app> añadirá una etiqueta para la categoría que seleccione y "
+"la mostrará en la barra de búsqueda. Puede introducir texto o buscar dentro "
+"de esa categoría y etiqueta."
 
-#. (itstool) path: page/p
-#: C/gui-navigating.page:98
+#. (itstool) path: section/p
+#: C/find-recipe.page:69
 msgid ""
-"By clicking on the column titles of the list, you'll sort the entries "
-"according to the corresponding field."
+"To remove the tag from search, press <gui>x</gui> on the tag in the search "
+"bar."
 msgstr ""
-"Al pulsar en los títulos de la columna de la lista, ordenará las entradas de "
-"acuerdo con el campo correspondiente."
-
-#. (itstool) path: info/desc
-#: C/gui-opening.page:10
-msgid "How to open an existing database."
-msgstr "Cómo abrir una base de datos existente."
-
-#. (itstool) path: page/title
-#: C/gui-opening.page:26
-msgid "Opening a database"
-msgstr "Abrir una base de datos"
-
-#. (itstool) path: page/p
-#: C/gui-opening.page:28
-msgid ""
-"To open an existing database, click on the <gui>Open</gui> toolbar button or "
-"go in the <gui>File</gui> menu, and select <guiseq> <gui>File</"
-"gui><gui>Open</gui></guiseq>."
-msgstr ""
-"Para abrir una base de datos existente, pulse en el botón <gui>Abrir</gui> "
-"de la barra de herramientas o vaya al menú <gui>Archivo</gui> y seleccione "
-"<guiseq><gui>Archivo</gui><gui>Abrir</gui></guiseq>."
-
-#. (itstool) path: p/media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/gui-opening.page:32
-msgctxt "_"
-msgid "external ref='figures/open.png' md5='ad69c2047262f00a361f1ac860773b8a'"
-msgstr "external ref='figures/open.png' md5='ad69c2047262f00a361f1ac860773b8a'"
-
-#. (itstool) path: page/p
-#: C/gui-opening.page:32
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/open.png\"> Opening a "
-"database </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/open.png\"> Abrir una "
-"base de datos </media>"
-
-#. (itstool) path: page/p
-#: C/gui-opening.page:36
-msgid ""
-"A file selection dialog will pop up (see the picture above) and let you "
-"select a file. The type of the database can also be selected. Opening an "
-"existing database, the type can be guessed if you select <gui>- According to "
-"file suffix -</gui>."
-msgstr ""
-"Aparecerá un diálogo de selección de archivo (vea la siguiente imagen) que "
-"le permitirá seleccionar un archivo. También se puede seleccionar el tipo de "
-"base de datos. Al abrir una base de datos, se puede conocer el tipo si "
-"selecciona <gui>: Según el sufijo del archivo:</gui>."
-
-#. (itstool) path: page/p
-#: C/gui-opening.page:41
-msgid ""
-"It is also possible to open a file at a remote location (as well as a local "
-"file) by typing the URI of the file (e.g. <var>http://my.remote.site/ pyblio."
-"bib</var>) using the <gui>Open Location</gui> dialog, which can be invoked "
-"by the <guiseq><gui>File</gui><gui>Open Location</gui></guiseq> menu item."
-msgstr ""
-"También es posible abrir un archivo en una ubicación remota (así como un "
-"archivo local) escribiendo el URI del archivo (ej. <var>http://my.remote."
-"site/ pyblio.bib</var>) usando el diálogo <gui>Abrir ubicación</gui> que se "
-"puede abrir mediante el elemento de menú <guiseq><gui>Avchivo</"
-"gui><gui>Abrir ubicación</gui></guiseq>."
-
-#. (itstool) path: info/desc
-#: C/gui.page:10
-msgid "Explanations about the graphical interface of <app>Pybliographer</app>."
-msgstr "Explicaciones sobre la interfaz gráfica de <app>Pybliographer</app>."
-
-#. (itstool) path: page/title
-#: C/gui.page:26
-msgid "The Graphical Interface"
-msgstr "La interfaz gráfica"
-
-#. (itstool) path: page/p
-#: C/gui.page:28
-msgid ""
-"The graphical user interface is called <app>Pybliographic</app>. It provides "
-"a simple access to the most common features of the underlying engine, "
-"<app>Pybliographer</app> and lets you search, sort and modify bibliographic "
-"entries. Moreover, direct insertion of references into <link href=\"http://"
-"www.lyx.org/\"><app>Lyx</app></link> and <link href=\"http://kile."
-"sourceforge.net/\"><app>Kile</app></link>, direct queries on Medline, and "
-"saving selected references in different formats are also possible."
-msgstr ""
-"La interfaz gráfica se llama <app>Pybliographic</app>. Proporciona un acceso "
-"simple a la mayoría de las funciones comunes del motor subyacente, "
-"<app>Pybliographer</app>, y le permite buscar, ordenar y modificar entradas "
-"bibliográficas. Por otra parte, también son posibles las inserciones "
-"directas o referencias en <link href=\"http://www.lyx.org/\"><app>Lyx</app></"
-"link> y <link href=\"http://kile.sourceforge.net/\"><app>Kile</app></link>, "
-"consultas directas en Medline y guardar referencias seleccionadas en "
-"diferentes formatos."
-
-#. (itstool) path: info/desc
-#: C/gui-pubmed.page:10
-msgid "Using Pubmed for your searches."
-msgstr "Usar Pubmed en sus búsquedas."
-
-#. (itstool) path: page/title
-#: C/gui-pubmed.page:26
-msgid "Searching in PubMed"
-msgstr "Buscar en PubMed"
-
-#. (itstool) path: page/p
-#: C/gui-pubmed.page:28
-msgid ""
-"With <app>Pybliographic</app>, it is possible to perform a Medline search. "
-"To use this option, click on the <guiseq><gui>File</gui><gui>Medline "
-"query... </gui></guiseq> menu item. The upcoming window is represented in "
-"the picture below."
-msgstr ""
-"Con <app>Pybliographic</app> es posible hacer una búsqueda en Medline. Para "
-"usar esta opción, pulse en el elemento de menú <guiseq><gui>Archivo</"
-"gui><gui>Consulta Medline... </gui></guiseq>. La ventana que aparece se "
-"muestra en la siguiente imagen."
-
-#. (itstool) path: p/media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/gui-pubmed.page:33
-msgctxt "_"
-msgid ""
-"external ref='figures/medline.png' md5='09532a6de80c9c22b06efefb6401558c'"
-msgstr ""
-"external ref='figures/medline.png' md5='09532a6de80c9c22b06efefb6401558c'"
-
-#. (itstool) path: page/p
-#: C/gui-pubmed.page:33
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/medline.png\"> "
-"Medline query </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/medline.png\"> "
-"Consulta Medline </media>"
-
-#. (itstool) path: page/p
-#: C/gui-pubmed.page:37
-msgid ""
-"The keyword, you are looking for, should be written into the <em>Search "
-"PubMed for</em> field. As it can be seen in the picture above, a number of "
-"options (limitations) can be set, which can help to obtain an optimal search "
-"result. The matched references, resulted in by the query, appear in the main "
-"window as a new database."
-msgstr ""
-"Debe escribir la palabra clave que está buscando en el campo <em>Buscar "
-"PubMed para</em>. Como se puede ver en la imagen anterior, se puede "
-"establecer un número de opciones (limitaciones), que pueden ayudar a obtener "
-"un resultado de búsqueda óptimo. Las referencias que coinciden, resultado de "
-"la consulta, aparecen en la ventana principal como una base de datos nueva."
-
-#. (itstool) path: info/desc
-#: C/gui-searching.page:10
-msgid "How to find a certain entry in the database."
-msgstr "Cómo encontrar una entrada determinada en la base de datos."
-
-#. (itstool) path: page/title
-#: C/gui-searching.page:26
-msgid "Searching"
-msgstr "Buscando"
-
-#. (itstool) path: page/p
-#: C/gui-searching.page:28
-msgid ""
-"<app>Pybliographic</app> offers a quite powerful searching mechanism. For "
-"searching you can use the quick search entry of the toolbar or the search "
-"dialog. To open the search dialog, click on <guiseq><gui>Edit</gui> "
-"<gui>Search</gui></guiseq> in the menu. The dialog that appears (see the "
-"picture below) displays a search form at the top."
-msgstr ""
-"<app>Pybliographic</app> ofrece un potente mecanismo de búsqueda. Para "
-"buscar, puede usar la entrada de búsqueda rápida en la barra de herramientas "
-"o el diálogo de búsqueda. Para abrir el diálogo de búsqueda, pulse en "
-"<guiseq><gui>Editar</gui><gui>Buscar</gui></guiseq> en el menú. El diálogo "
-"que aparece (vea la siguiente imagen) muestra un formulario de búsqueda en "
-"la parte superior."
-
-#. (itstool) path: p/media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/gui-searching.page:34
-msgctxt "_"
-msgid ""
-"external ref='figures/search.png' md5='584e9a19da7d5bc43929fd7926c3602b'"
-msgstr ""
-"external ref='figures/search.png' md5='584e9a19da7d5bc43929fd7926c3602b'"
-
-#. (itstool) path: page/p
-#: C/gui-searching.page:34
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/search.png\"> The "
-"Search dialog </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/search.png\"> El "
-"diálogo de búsqueda </media>"
+"Para quitar la etiqueta de la búsqueda, pulse <gui>x</gui> en la etiqueta "
+"junto a la barra de búsqueda."
 
 #. (itstool) path: section/title
-#: C/gui-searching.page:39
-msgid "Simple searches"
-msgstr "Búsquedas simples"
+#: C/find-recipe.page:74
+msgid "Search by Categories"
+msgstr "Buscar por categorías"
 
 #. (itstool) path: section/p
-#: C/gui-searching.page:41
+#: C/find-recipe.page:75
 msgid ""
-"With a simple search, you can select the field that will be searched and you "
-"can specify a regular expression to be matched. <gui>- any field -</gui> "
-"means that all the existing fields will be searched. This is usually more "
-"time-consuming."
+"When you create a recipe, you can select if a recipe is in a category, such "
+"as vegan or nut free. To search by category:"
 msgstr ""
-"Con una búsqueda sencilla, puede seleccionar el campo que se buscará y puede "
-"especificar una expresión regular que se ajuste. <gui>- cualquier campo -</"
-"gui> significa que se buscarán todos los campos que existan. Generalmente "
-"esto consume más tiempo."
+"Cuando crea una receta puede elegir si pertenece a una categoría, como "
+"vegetariana o sin nueces. Para buscar por categoría:"
+
+#. (itstool) path: item/p
+#: C/find-recipe.page:78
+msgid ""
+"From the main <app>Recipes</app> window scroll down to <gui>Categories</gui>."
+msgstr ""
+"En la ventana principal de <app>Recetas</app> baje hasta <gui>Categorías</"
+"gui>."
+
+#. (itstool) path: item/p
+#: C/find-recipe.page:82
+msgid ""
+"You can also expand the Categories list by pressing the down icon<media type="
+"\"image\" mime=\"image/png\" src=\"images/down.png\" its:translate=\"yes\"> "
+"<span its:translate=\"yes\">Down</span></media> to show all Categories."
+msgstr ""
+"Puede expandir la lista de categorías pulsando el botón <media type=\"image"
+"\" mime=\"image/png\" src=\"images/down.png\" its:translate=\"yes\"> <span "
+"its:translate=\"yes\">Abajo</span></media> para mostrar todas las categorías."
+
+#. (itstool) path: item/p
+#: C/find-recipe.page:89
+msgid "Press the <gui>Category</gui> to view all recipes in that Category."
+msgstr ""
+"Pulse en <gui>Categoria</gui> para ver todas las recetas de esa categoría."
+
+#. (itstool) path: section/p
+#: C/find-recipe.page:95
+msgid ""
+"If you choose from the vegan, vegetarian, dairy-free, gluten-free or nut-"
+"free categories, the search results will also display a description of the "
+"Category with a <gui>Read More</gui> link you can click to learn more about "
+"the Category."
+msgstr ""
+"Si elige alguna de las categorías vegana, vegetariana, sin lactosa, sin "
+"gluten o sin nueces, los resultados de la búsqueda también mostrarán una "
+"descripción de la categoría, con un enlace <gui>Ver más</gui> que puede "
+"pulsar para saber más sobre esa categoría."
+
+#. (itstool) path: section/p
+#: C/find-recipe.page:100
+msgid ""
+"Note that the information about dietary restrictions is provided by the "
+"recipe authors themselves and cannot be guaranteed to be accurate. Please "
+"always double-check the ingredients if you are serving a person with a "
+"gluten or dairy intolerance."
+msgstr ""
+"Tenga en cuenta que la información sobre restricciones alimentarias la "
+"proporcionan los propios autores de las recetas y no se garantiza que sean "
+"precisas. Compruebe bien siempre los ingredientes si cocina para personas "
+"con intolerancia al gluten o a la lactosa."
 
 #. (itstool) path: section/title
-#: C/gui-searching.page:49
-msgid "Expert searches"
-msgstr "Búsquedas avanzadas"
+#: C/find-recipe.page:107
+msgid "Search for recipes with or without a specific ingredient"
+msgstr "Buscar recetas con o sin un ingrediente específico"
 
 #. (itstool) path: section/p
-#: C/gui-searching.page:51
-msgid "An expert search is an expression that looks like:"
-msgstr "Una búsqueda avanzada es una expresión similar a:"
+#: C/find-recipe.page:108
+msgid ""
+"You can search for recipes that include or do not include a specific "
+"ingredient."
+msgstr "Puede buscar recetas que incluyen o no un ingrediente concreto."
 
-#. (itstool) path: section/code
-#: C/gui-searching.page:53
-#, no-wrap
-msgid "has('author','name') | -has('title','test')"
-msgstr "has('author','name') | -has('title','test')"
+#. (itstool) path: item/p
+#: C/find-recipe.page:112
+msgid ""
+"Press the down arrow <media type=\"image\" mime=\"image/png\" src=\"images/"
+"down.png\" its:translate=\"yes\"> <span its:translate=\"yes\">Down</span></"
+"media> in the search bar."
+msgstr ""
+"Pulse la flecha hacia abajo <media type=\"image\" mime=\"image/png\" src="
+"\"images/down.png\" its:translate=\"yes\"> <span its:translate=\"yes"
+"\">Abajo</span></media> en la barra de búsqueda."
+
+#. (itstool) path: item/p
+#: C/find-recipe.page:117
+msgid "Select the <gui>Ingredients</gui> drop down box."
+msgstr "Seleccione los <gui>Ingredientes</gui> en la caja desplegable."
+
+#. (itstool) path: item/p
+#: C/find-recipe.page:120
+msgid "Select an ingredient from the list, such as <em>Banana</em>."
+msgstr "Seleccione un ingrediente de la lista, por ejemplo <em>Plátano</em>."
 
 #. (itstool) path: section/p
-#: C/gui-searching.page:55
+#: C/find-recipe.page:123
 msgid ""
-"Such an expression means: select the entries where the field <em>author</em> "
-"matches <em>name</em>, or (symbol <em>|</em>) where the field <em>title</em> "
-"does <em>not</em> match <em>test</em>. The boolean <var>and</var> is noted "
-"<em>&amp;</em>."
+"A tag for that ingredient, such as <em>Banana</em>, will be displayed in the "
+"search bar and all recipes that include that bananas will be displayed. If "
+"there are no recipes that match, <gui>No recipes found</gui> will be "
+"displayed. Press the tag in the search bar for <gui>Banana</gui> and the tag "
+"will now show <gui>No Banana</gui> and all recipes that do not include "
+"bananas in the recipe will be displayed. To remove the tag from search, "
+"press <gui>x</gui> on the tag in the search bar."
 msgstr ""
-"Esta expresión significa: seleccionar las entradas donde el campo "
-"<em>author</em> coincide con <em>name</em>, o (símbolo <em>|</em>) donde el "
-"campo <em>title</em> <em>no</em> coincide con <em>test</em>. El <var>and</"
-"var> booleano se escribe <em>&amp;</em>."
-
-#. (itstool) path: section/p
-#: C/gui-searching.page:60
-msgid "There are other commands available for this type of search:"
-msgstr "Hay otros comandos disponibles para este tipo de búsqueda:"
-
-#. (itstool) path: item/p
-#: C/gui-searching.page:65
-msgid "<cmd>has_key(<var>keyname</var>)</cmd> searches on a key name."
-msgstr ""
-"<cmd>has_key(<var>keyname</var>)</cmd> busca en el nombre de una clave."
-
-#. (itstool) path: item/p
-#: C/gui-searching.page:69
-msgid ""
-"<cmd>has_type(<var>typename</var>)</cmd> searches for entries of a given "
-"type name."
-msgstr ""
-"<cmd>has_type(<var>typename</var>)</cmd> busca entradas de un nombre de tipo "
-"dado."
-
-#. (itstool) path: item/p
-#: C/gui-searching.page:73
-msgid ""
-"<cmd>any_has(<var>value</var>)</cmd> searches for the given value in all the "
-"fields of an entry."
-msgstr ""
-"<cmd>any_has(<var>value</var>)</cmd> busca el valor dado en todos los "
-"valores de una entrada."
-
-#. (itstool) path: item/p
-#: C/gui-searching.page:78
-msgid ""
-"<cmd>before(<var>field</var>, <var>year</var>, <var>month</var>, <var>day</"
-"var>)</cmd> searches for entries where the specified date field is older "
-"than the specified date."
-msgstr ""
-"<cmd>before(<var>campo</var>, <var>año</var>, <var>mes</var>, <var>día</"
-"var>)</cmd> busca entradas donde la fecha del campo especificado sea "
-"anterior a la fecha especificada."
-
-#. (itstool) path: item/p
-#: C/gui-searching.page:83
-msgid ""
-"<cmd>after(<var>field</var>, <var>year</var>, <var>month</var>, <var>day</"
-"var>)</cmd> searches for entries where the specified date field is younger "
-"than the specified date."
-msgstr ""
-"<cmd>before(<var>campo</var>, <var>año</var>, <var>mes</var>, <var>día</"
-"var>)</cmd> busca entradas donde la fecha del campo especificado sea "
-"posterior a la fecha especificada."
+"LA etiqueta para ese ingrediente, como por ejemplo <em>plátano</em>, se "
+"mostrará en la barra de búsqueda y todas las recetas que contengan plátano "
+"se mostrarán. Si no hay recetas que coincidan, se mostrará el mensaje "
+"<gui>No se han encontrado recetas</gui>. Pulse en la etiqueta <gui>Plátano</"
+"gui> en la barra de búsqueda y cambiará a <gui>Sin plátano</gui>, y se "
+"mostrarán todas las recetas que no contengan plátano. Para quitar la "
+"etiqueta de la búsqueda, pulse <gui>x</gui> sobre la etiqueta en la barra de "
+"búsqueda."
 
 #. (itstool) path: section/title
-#: C/gui-searching.page:91
-msgid "Hierarchical searches"
-msgstr "Búsquedas jerárquicas"
+#: C/find-recipe.page:134
+msgid "Search by Cuisines"
+msgstr "Buscar por tipo de cocina"
 
 #. (itstool) path: section/p
-#: C/gui-searching.page:93
+#: C/find-recipe.page:135
 msgid ""
-"After a search, only the selected items are displayed in the main window. It "
-"makes it convenient to select a specific author, and then browse its "
-"publications for example."
+"You can also search for a recipe by what type of cuisine the recipe is or "
+"region it is from. This also includes searching for seasonal recipes that "
+"might be made during certain holidays or times of year."
 msgstr ""
-"Después de una búsqueda, sólo se muestran en la ventana principal los "
-"elementos seleccionados. Esto hace que sea conveniente seleccionar un auto "
-"específico, y entonces navegar, por ejemplo, por su publicaciones."
-
-#. (itstool) path: section/p
-#: C/gui-searching.page:97
-msgid ""
-"In addition, the results of all the searches are kept in the tree located "
-"below the search form. Therefore, a new search can be a refinement of a "
-"previous one. If you select the tree item corresponding for example to all "
-"the articles written by a certain Nostradamus, you'll be able to select only "
-"those whose title contains the word eclipse."
-msgstr ""
-"Además, los resultados de todas las búsquedas se mantienen en el árbol "
-"ubicado bajo el formulario de búsqueda. Por lo tanto, una búsqueda nueva "
-"puede ser una mejora de la anterior. Si selecciona el elemento del árbol que "
-"corresponde, por ejemplo, a todos los artículos escritos por un tal "
-"Nostradamus, podrá seleccionar sólo aquellos cuyo título contenga la palabra "
-"«eclipse»."
-
-#. (itstool) path: section/p
-#: C/gui-searching.page:104
-msgid ""
-"Right-clicking in this tree pops up a contextual menu that allows you to "
-"remove unuseful searches."
-msgstr ""
-"Una pulsación con el botón derecho sobre este árbol muestra un menú "
-"contextual que le permite quitar búsquedas inútiles."
-
-#. (itstool) path: section/p
-#: C/gui-searching.page:107
-msgid ""
-"To select the full list of database entries again, just click on the "
-"<gui>Full database</gui> item at the top of the search tree, or push the "
-"'Esc' button on the keyboard when you are in the main window."
-msgstr ""
-"Para seleccionar de nuevo todas las entradas de la base de datos, "
-"simplemente pulse en el elemento <gui>Base de datos completa</gui> en la "
-"parte superior de árbol de búsquedas, o pulse la tecla «Esc» cuando esté en "
-"la ventana principal."
-
-#. (itstool) path: info/desc
-#: C/gui-settings.page:10
-msgid "How to change settings and preferences."
-msgstr "Cómo cambiar configuraciones y preferencias."
-
-#. (itstool) path: page/title
-#: C/gui-settings.page:26
-msgid "Configuration"
-msgstr "Configuración"
-
-#. (itstool) path: page/p
-#: C/gui-settings.page:28
-msgid ""
-"Under the <guiseq><gui>Settings</gui></guiseq> menu, you can find some "
-"options to customize <app>Pybliographer</app>."
-msgstr ""
-"En el menú <guiseq><gui>Configuración</gui></guiseq> puede encontrar algunas "
-"opciones para personalizar <app>Pybliographer</app>."
-
-#. (itstool) path: section/title
-#: C/gui-settings.page:32
-msgid "Entry types and field names configuration"
-msgstr "Tipos de entradas y configuración de nombres de campos"
-
-#. (itstool) path: p/media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/gui-settings.page:34
-msgctxt "_"
-msgid ""
-"external ref='figures/fields.png' md5='12bf133c7494df1eba6d1ab878609df3'"
-msgstr ""
-"external ref='figures/fields.png' md5='12bf133c7494df1eba6d1ab878609df3'"
-
-#. (itstool) path: section/p
-#: C/gui-settings.page:34
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/fields.png\"> "
-"Configuration of fields and entry types </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/fields.png\"> "
-"Configuración de campos y tipos de entradas </media>"
-
-#. (itstool) path: section/p
-#: C/gui-settings.page:38
-msgid ""
-"Selecting the <guiseq><gui>Settings</gui><gui>Fields</gui> </guiseq> menu "
-"item, it is possible to add or remove fields, to set their type, and to "
-"define which fields should be associated with a given type of entry. In "
-"addition, the mandatory and optional fields are also can be varied. In the "
-"window displayed above, as an example, the association of the <em>Article</"
-"em> entry type can be seen."
-msgstr ""
-"Seleccionando el elemento de menú <guiseq><gui>Configuración</"
-"gui><gui>Campos</gui></guiseq>, es posible añadir o quitar campos, "
-"establecer su tipo y definir qué campos deberían estar asociados con un tipo "
-"de entrada dado. Además, los campos obligatorios y opcionales se pueden "
-"cambiar. En la ventana mostrada a continuación, como ejemplo, se puede puede "
-"ver la asociación de un tipo de entrada <em>Artículo</em>."
-
-#. (itstool) path: section/title
-#: C/gui-settings.page:47
-msgid "Preferences"
-msgstr "Preferencias"
-
-#. (itstool) path: section/p
-#: C/gui-settings.page:49
-msgid ""
-"Clicking on the <guiseq><gui>Settings</gui><gui>Preferences</gui> </guiseq> "
-"menu item, a lot of configuration options can be controlled. Such options "
-"are, for instance, settings of the different type of bibliographic database "
-"formats, autosave, size of history, default editing mode, the default type "
-"of a newly created entry, and resource configuration."
-msgstr ""
-"Pulsando en el elemento de menú <guiseq><gui>Configuración</"
-"gui><gui>Preferencias</gui></guiseq> se pueden controlar muchas opciones de "
-"configuración. Estas opciones son, por ejemplo, configuración de los "
-"diferentes tipos de formatos de bases de datos bibliográficas, modo de "
-"edición predeterminado, el tipo predeterminado de una entrada nueva y "
-"configuración de recursos."
-
-#. (itstool) path: info/desc
-#: C/gui-sorting.page:10
-msgid "Customize the sort order of the entries."
-msgstr "Personalizar el orden de colocación de las entradas."
-
-#. (itstool) path: page/title
-#: C/gui-sorting.page:26
-msgid "Sorting"
-msgstr "Ordenar"
-
-#. (itstool) path: page/p
-#: C/gui-sorting.page:28
-msgid ""
-"Clicking on the title of each column in the main index provides some "
-"rudimentary way of sorting a database. A much powerful method is to open the "
-"sort dialog (in <guiseq> <gui>Edit</gui><gui>Sort</gui></guiseq>). This "
-"menu, displayed in the picture below, gives a list of fields which can be "
-"used as sort criteria, plus a flag indicating how they are currently used. "
-"By clicking twice on the item, it is possible to choose how the field will "
-"be used:"
-msgstr ""
-"Al pulsar en el título de cada columna en el índice principal se proporciona "
-"una forma rudimentaria de ordenar una base de datos. Un método mucho más "
-"potente es abrir el diálogo de ordenación (en <guiseq><gui>Editar</"
-"gui><gui>Ordenar</gui></guiseq>). Este menú, que aparecen en la siguiente "
-"imagen, da una lista de campos que se pueden utilizar como criterios de "
-"ordenación, además de una opción que indica la forma en que se usan "
-"actualmente. Al pulsar dos veces sobre el elemento, es posible elegir cómo "
-"el campo se utilizará el campo:"
+"También puede buscar una receta por el tipo de cocina o región a la que "
+"pertenece. Esto también incluye buscar recetas estacionales que se pueden "
+"elaborar durante ciertas fiestas o veces al año."
 
 #. (itstool) path: item/p
-#: C/gui-sorting.page:37
-msgid "Nothing means the field is not in use."
-msgstr "Nada indica que el campo no está en uso."
+#: C/find-recipe.page:140
+msgid ""
+"In the top menu bar of <app>Recipes</app>, press the <gui style=\"button"
+"\">Cuisines</gui> button."
+msgstr ""
+"En la barra de menú superior de <app>Recetas</app>, pulse el botón <gui "
+"style=\"button\">Cocinas</gui>"
 
 #. (itstool) path: item/p
-#: C/gui-sorting.page:40
-msgid "A <em>triangle</em>-like symbol means sort in <em>ascending order</em>."
+#: C/find-recipe.page:144
+msgid ""
+"A list of cuisines from around the world with brief descriptions are "
+"displayed. Click on a world cuisine to see all recipes in that category "
+"sorted by the type of dish."
 msgstr ""
-"Un símbolo similar a un <em>triángulo</em> significa colocar en <em>orden "
-"ascendente</em>."
+"Se muestra una lista de cocinas de todo el mundo con una breve descripción. "
+"Pulse en un tipo de cocina para ver todas la recetas de esa categoría "
+"ordenadas por el tipo de plato."
 
 #. (itstool) path: item/p
-#: C/gui-sorting.page:44
+#: C/find-recipe.page:150
 msgid ""
-"An <em>upside down triangle</em>-like symbol means sort in <em>descending "
-"order</em>."
+"Scroll down to see a list of seasonal categories and press the down icon "
+"<media type=\"image\" mime=\"image/png\" src=\"images/down.png\" its:"
+"translate=\"yes\"> <span its:translate=\"yes\">Down</span></media> to see "
+"all seasonal categories."
 msgstr ""
-"Un símbolo de un <em>triángulo invertido</em> significa ordenación "
-"<em>descendente</em>."
-
-#. (itstool) path: page/p
-#: C/gui-sorting.page:49
-msgid ""
-"The order in which the sorting is performed depends on the order in the "
-"list. To modify this order, simply drag and drop an item to change its "
-"position. To make this sort order default, it can be saved by clicking on "
-"the <gui>Set as default</gui> button."
-msgstr ""
-"El orden en el que se realiza la ordenación depende del orden de la lista. "
-"Para modificar este orden, simplemente arrastre y suelte un elemento para "
-"cambiar su posición. Para hacer este orden el predeterminado, se puede "
-"guardar pulsando en el botón <gui>Establecer como predeterminado</gui>."
-
-#. (itstool) path: p/media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/gui-sorting.page:55
-msgctxt "_"
-msgid "external ref='figures/sort.png' md5='c7a4506cb27428d7b2a0d10b9d3a98b2'"
-msgstr "external ref='figures/sort.png' md5='c7a4506cb27428d7b2a0d10b9d3a98b2'"
-
-#. (itstool) path: page/p
-#: C/gui-sorting.page:55
-msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/sort.png\"> The Sort "
-"dialog </media>"
-msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/sort.png\"> El "
-"diálogo de ordenación </media>"
-
-#. (itstool) path: info/desc
-#: C/gui-styles.page:10
-msgid "Creating your own styles for <app>Pybliographer</app>."
-msgstr "Crear sus propios estilos para <app>Pybliographer</app>."
-
-#. (itstool) path: page/title
-#: C/gui-styles.page:26
-msgid "New Styles"
-msgstr "Estilos nuevos"
-
-#. (itstool) path: page/p
-#: C/gui-styles.page:28
-msgid ""
-"It is possible to describe your own bibliography style, by writing a simple "
-"XML file. The XML file should have the following header:"
-msgstr ""
-"Es posible describir su propio estilo bibliográfico escribiendo un sencillo "
-"archivo XML. El archivo XML debería tener la siguiente cabecera:"
-
-#. (itstool) path: page/screen
-#: C/gui-styles.page:32
-#, no-wrap
-msgid ""
-"\n"
-"      &lt;?xml version=\"1.0\"?&gt;\n"
-"    "
-msgstr ""
-"\n"
-"      &lt;?xml version=\"1.0\"?&gt;\n"
-"    "
-
-#. (itstool) path: page/p
-#: C/gui-styles.page:36
-msgid ""
-"The whole description should fit in a &lt;bibstyle&gt; pair of tags, whose "
-"content is shortly described in this section. It is suggested that the "
-"interested users look at the corresponding DTD, which describes the allowed "
-"syntax in details. This DTD can be found in the same directory as the "
-"default style files."
-msgstr ""
-"La descripción completa debería caber en un par de etiquetas &lt;"
-"bibstyle&gt;, cuyo contenido se describe brevemente en esta sección. Se "
-"sugiere que el usuario interesado mire en la DTD correspondiente, que "
-"describe detalladamente la sintaxis permitida. Esta DTD se puede encontrar "
-"en la misma carpeta que la de los archivos de estilo predeterminados."
-
-#. (itstool) path: section/title
-#: C/gui-styles.page:43
-msgid "Global formatting"
-msgstr "Formateado global"
-
-#. (itstool) path: section/p
-#: C/gui-styles.page:45
-msgid ""
-"The XML style file describes how the different data fields are organized in "
-"order to create a bibliographic style. For example, it can specify that an "
-"article starts with the article title in bold, followed by the authors "
-"names, etc."
-msgstr ""
-"El archivo de estilo XML describe cómo se organizan los diferentes campos de "
-"datos para crear un estilo bibliográfico. Por ejemplo, puede especificar que "
-"un artículo empieza con el título del artículo en negrita, seguido de los "
-"nombres de los autores, etc."
-
-#. (itstool) path: section/p
-#: C/gui-styles.page:50
-msgid ""
-"In its current incarnation, the XML format can however not describe lower-"
-"level informations, like how an author's name should be output. This is done "
-"by pointing to a set of python functions, grouped in a module. Let's "
-"consider the following example:"
-msgstr ""
-"Sin embargo, actualmente XML no puede describir información de bajo nivel, "
-"por ejemplo, cómo debería ser la salida de un nombre de autor. Esto se hace "
-"apuntando a un conjunto de funciones python, agrupadas en un módulo. "
-"Considere el siguiente ejemplo:"
-
-#. (itstool) path: section/screen
-#: C/gui-styles.page:56
-#, no-wrap
-msgid ""
-"<code>\n"
-"  &lt;module name=\"generic\"&gt;\n"
-"    &lt;define field=\"author\"&gt;full_authors&lt;/define&gt;\n"
-"    &lt;define field=\"editor\"&gt;first_last_full_authors&lt;/define&gt;\n"
-"    &lt;define field=\"date\"&gt;european_date&lt;/define&gt;\n"
-"    &lt;define method=\"keys\"&gt;string_keys&lt;/define&gt;\n"
-"  &lt;/module&gt;\n"
-"</code>"
-msgstr ""
-"<code>\n"
-"  &lt;module name=\"generic\"&gt;\n"
-"    &lt;define field=\"author\"&gt;full_authors&lt;/define&gt;\n"
-"    &lt;define field=\"editor\"&gt;first_last_full_authors&lt;/define&gt;\n"
-"    &lt;define field=\"date\"&gt;european_date&lt;/define&gt;\n"
-"    &lt;define method=\"keys\"&gt;string_keys&lt;/define&gt;\n"
-"  &lt;/module&gt;\n"
-"</code>"
-
-#. (itstool) path: section/p
-#: C/gui-styles.page:65
-msgid ""
-"In this example, we require that the <em>author</em> fields should be "
-"formatted by the <code>full_authors()</code> function, located in the "
-"<file>generic</file> module."
-msgstr ""
-"En este ejemplo, se requiere que los campos <em>autor</em> estén formateados "
-"con la función <code>full_authors()</code>, ubicada en el módulo "
-"<file>generic</file>."
-
-#. (itstool) path: section/p
-#: C/gui-styles.page:70
-msgid ""
-"Such a module has to be declared in the <file>pybrc.py</file> file, by a "
-"line like:"
-msgstr ""
-"Un módulo se debe declarar en el archivo <file>pybrc.py</file>, con una "
-"línea como:"
-
-#. (itstool) path: section/screen
-#: C/gui-styles.page:73
-#, no-wrap
-msgid "<code>Autoload.preregister ('style','Generic','Pyblio.Style.Generic')</code>\n"
-msgstr "<code>Autoload.preregister ('style','Generic','Pyblio.Style.Generic')</code>\n"
-
-#. (itstool) path: section/p
-#: C/gui-styles.page:76
-msgid ""
-"The precise definition of the formatting functions is better explained by "
-"looking at the code of <file>Generic.py</file> for example."
-msgstr ""
-"La definición precisa de las funciones de formateado se explica mejor "
-"mirando, por ejemplo, el código de <file>Generic.py</file>."
-
-#. (itstool) path: section/title
-#: C/gui-styles.page:82
-msgid "Bibliography definition"
-msgstr "Definición bibliográfica"
-
-#. (itstool) path: section/p
-#: C/gui-styles.page:84
-msgid ""
-"Once the basic formatting definitions have been specified, it is possible to "
-"describe the aspect of the actual bibliographies with following tags:"
-msgstr ""
-"Una vez que se ha especificado el formato básico de las definiciones, es "
-"posible describir el aspecto de las bibliografías actuales con las "
-"siguientes etiquetas:"
+"Desplácese hacia abajo para ver una lista de categorías estacionales y pulse "
+"el icono <media type=\"image\" mime=\"image/png\" src=\"images/down.png\" "
+"its:translate=\"yes\"> <span its:translate=\"yes\">Abajo</span></media> para "
+"ver todas las categorías."
 
 #. (itstool) path: item/p
-#: C/gui-styles.page:90
-msgid "&lt;style name=\"<var>stylename</var>\"&gt;"
-msgstr "&lt;style name=\"<var>stylename</var>\"&gt;"
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:92
-msgid ""
-"This tag specifies the current display style, among <em>bold, italic, "
-"slanted, emph</em>."
-msgstr ""
-"Esta etiqueta especifica el estilo de visualización actual, entre <em>bold, "
-"italic, slanted, emph</em>."
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:97
-msgid "&lt;inentry name=\"<var>entryname</var>\"&gt;"
-msgstr "&lt;inentry name=\"<var>entryname</var>\"&gt;"
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:99
-msgid ""
-"This tag encloses a block that is only to appear in entries of type "
-"<var>entryname</var>."
-msgstr ""
-"Esta etiqueta encierra un bloque que sólo aparece en las entradas de tipo "
-"<var>entryname</var>."
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:104
-msgid "&lt;notinentry name=\"<var>entryname</var>\"&gt;"
-msgstr "&lt;notinentry name=\"<var>entryname</var>\"&gt;"
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:106
-msgid ""
-"This tag encloses a block that is only to appear in entries that are "
-"<em>not</em> of type <var>entryname</var>."
-msgstr ""
-"Esta etiqueta encierra un bloque que sólo aparece en las entradas que "
-"<em>no</em> son de tipo <var>entryname</var>."
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:112
-msgid "&lt;infield name=\"<var>fieldname</var>\"&gt;"
-msgstr "&lt;infield name=\"<var>fieldname</var>\"&gt;"
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:114
-msgid ""
-"This tag encloses a block that only appears when the specified "
-"<var>fieldname</var> field exists in the current entry."
-msgstr ""
-"Esta etiqueta encierra un bloque que sólo aparece en las entradas que cuando "
-"el campo <var>fieldname</var> especificado existe en la entrada actual."
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:121
-msgid "&lt;notinfield name=\"<var>fieldname</var>\"&gt;"
-msgstr "&lt;notinfield name=\"<var>fieldname</var>\"&gt;"
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:123
-msgid ""
-"This tag encloses a block that only appears when the specified "
-"<var>fieldname</var> field <em>does not</em> exist in the current entry."
-msgstr ""
-"Esta etiqueta encierra un bloque que sólo aparece en las entradas que cuando "
-"el campo <var>fieldname</var>especificado <em>no</em> existe en la entrada "
-"actual."
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:129
-msgid "&lt;content <var>name=</var>\"<var>fieldname</var>\"/&gt;"
-msgstr "&lt;content <var>name=</var>\"<var>fieldname</var>\"/&gt;"
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:131
-msgid ""
-"This empty tag is replaced by the content of the current field (when placed "
-"in a &lt;infield&gt; block) or the content of the field specified as "
-"attribute."
-msgstr ""
-"Esta etiqueta vacía se reemplaza con el contenido del campo actual (cuando "
-"se sitúa en un bloque &lt;infield&gt;) o el contenido del campo especificado "
-"como atributo."
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:137
-msgid "&lt;separator&gt;"
-msgstr "&lt;separator&gt;"
-
-#. (itstool) path: item/p
-#: C/gui-styles.page:139
-msgid ""
-"This tag's content evaluates to nothing when no text has been issued so far. "
-"It is a convenient way to add a delimiter after a series of fields without "
-"being worried of the special case when the fields are not defined."
-msgstr ""
-"El contenido de esta etiqueta se evalúa a nada cuando no hay texto publicado "
-"hasta ahora. Es una forma conveniente de añadir un delimitador después de "
-"una serie de campos sin preocuparse del caso especial cuando los campos no "
-"están definidos."
-
-#. (itstool) path: section/p
-#: C/gui-styles.page:147
-msgid "The existing style files are a good source of examples."
-msgstr "Los archivos de estilo existentes son una buena fuente de ejemplos."
-
-#. (itstool) path: section/title
-#: C/gui-styles.page:151
-msgid "Future of the format"
-msgstr "Futuro del formato"
-
-#. (itstool) path: section/p
-#: C/gui-styles.page:153
-msgid ""
-"In the future, this rudimentary format will most likely be replaced with an "
-"XSL-based mechanism, which should encompass both the XML definition and the "
-"python modules, thus providing standalone style files, parsable by any XSL "
-"parser."
-msgstr ""
-"En el futuro, este formato rudimentario se reemplazará por un mecanismo "
-"basado en XSL, que debería incluir tanto la definición de XML como la de los "
-"módulos de python, proporcionando de este modo archivos de estilo "
-"independientes, interpretables por cualquier analizador XSL."
-
-#. (itstool) path: info/desc
-#: C/gui-usinglyx.page:10
-msgid "Interaction with the <app>LyX</app> document processor."
-msgstr "Interacción con el procesador de documentos <app>LyX</app>."
-
-#. (itstool) path: page/title
-#: C/gui-usinglyx.page:26
-msgid "Using <app>Pybliographic</app> with <app>LyX</app>"
-msgstr "Usar <app>Pybliographic</app> con <app>LyX</app>"
-
-#. (itstool) path: page/p
-#: C/gui-usinglyx.page:28
-msgid ""
-"It is possible to directly use <app>Pybliographer</app> in order to insert "
-"bibliographic references into <app>LyX</app>. It is done through the "
-"<app>LyX</app> <em>server</em>. The path of the <app>LyX</app> server pipe "
-"can be defined in the <guiseq><gui>Tools</gui> <gui>Preferences</gui></"
-"guiseq> dialog of LyX. The same path should be given in <app>Pybliographer</"
-"app>'s settings (the default value is <file>~/.lyx/lyxpipe)</file>."
-msgstr ""
-"Es posible usar <app>Pybliographer</app> directamente para insertar "
-"referencias bibliográficas en <app>LyX</app>. Esto se hace a través del "
-"<em>servidor</em> <app>LyX</app>. La ruta del servidor <app>LyX</app> se "
-"puede definir en el diálogo <guiseq><gui>Herramientas</"
-"gui><gui>Preferencias</gui></guiseq> de Lyx. Se debe poner la misma en la "
-"configuración de <app>Pybliographer</app> (el valor predeterminado es "
-"<file>~/.lyx/lyxpipe)</file>."
-
-#. (itstool) path: page/p
-#: C/gui-usinglyx.page:36
-msgid ""
-"Then, in <app>Pybliographic</app>, it is possible to select one or several "
-"entries and insert their references into a running <app>LyX</app> simply by "
-"clicking the <gui>Cite</gui> toolbar button, or selecting the "
-"<guiseq><gui>Cite</gui><gui>Cite...</gui></guiseq> menu item."
-msgstr ""
-"Entonces, en <app>Pybliographic</app>, es posible seleccionar una o varias "
-"entradas e insertar sus referencias en un <app>LyX</app> en ejecución, "
-"simplemente pulsando el botón <gui>Cita</gui> de la barra de herramientas, o "
-"seleccionando el elemento de menú <guiseq><gui>Cita</gui><gui>Cita…</gui></"
-"guiseq>."
-
-#. (itstool) path: page/p
-#: C/gui-usinglyx.page:41
-msgid ""
-"For the moment, it is the user's job to ensure that he/she inserts entries "
-"corresponding to the actual database being used. <app>Pybliographic</app> "
-"does not handle the full job of bibliography generation; therefore it is "
-"necessary to use <cmd>bibtex</cmd> as described in the <app>LyX</app> "
-"documentation."
-msgstr ""
-"Por el momento, es trabajo del usuario el asegurarse de que inserta las "
-"entradas correspondientes a la base de datos usada actualmente. "
-"<app>Pybliographic</app> no maneja el trabajo de generación de una "
-"bibliografía completa; por lo tanto, es necesario usar <cmd>bibtex</cmd> "
-"como se describe en la documentación de <app>LyX</app>."
-
-#. (itstool) path: note/p
-#: C/gui-usinglyx.page:47
-msgid ""
-"<app>Pybliographic</app> can interact with <app>Kile</app> (&gt;= 1.6) "
-"practically in the same way, since <app>Kile</app> can also read <em>lyx "
-"pipe</em>."
-msgstr ""
-"<app>Pybliographic</app> puede interactuar con <app>Kile</app> (&gt;= 1.6) "
-"prácticamente de la misma manera, ya que <app>Kile</app> también puede leer "
-"<em>tuberías lyx</em>."
+#: C/find-recipe.page:157
+msgid "Select a holiday or season to show all recipes that match."
+msgstr "Seleccione la temporada para mostrar todas las recetas que coincidan."
 
 #. (itstool) path: info/title
 #: C/index.page:7
-msgctxt "link"
-msgid "Pybliographer manual"
-msgstr "Manual de Pybliographer"
-
-#. (itstool) path: info/title
-#: C/index.page:8
 msgctxt "text"
-msgid "Pybliographer Bibliography manager"
-msgstr "Gestor bibliográfico Pybliographer"
+msgid "Recipes"
+msgstr "Recetas"
 
-#. (itstool) path: title/media
+#. (itstool) path: info/desc
+#: C/index.page:19
+msgid "A recipe manager to help you cook."
+msgstr "Un gestor de recetas que le ayuda a cocinar."
+
+#. (itstool) path: page/title
+#: C/index.page:22
+msgid "<_:media-1/> Recipes"
+msgstr "<_:media-1/> Recetas"
+
+#. (itstool) path: page/p
+#: C/index.page:27
+msgid ""
+"<app>Recipes</app> is an easy to use application that will help you discover "
+"what to cook today, tomorrow, the rest of the week, and for special "
+"occasions."
+msgstr ""
+"<app>Recetas</app> es una aplicación fácil de usar que le ayudará a "
+"descubrir qué cocinar hoy, mañana, el resto de la semana y en ocasiones "
+"especiales."
+
+#. (itstool) path: section/title
+#: C/index.page:32
+msgid "Managing Recipes"
+msgstr "Gestionar las recetas"
+
+#. (itstool) path: section/title
+#: C/index.page:37
+msgid "Cooking"
+msgstr "Cocinar"
+
+#. (itstool) path: section/title
+#. (itstool) path: page/title
+#: C/index.page:41 C/share.page:28
+msgid "Printing and Sharing"
+msgstr "Imprimir y compartir"
+
+#. (itstool) path: p/link
+#: C/legal.xml:5
+msgid "Creative Commons Attribution-ShareAlike 4.0 International"
+msgstr "Creative Commons Atribución - Compartir igual 4.0 internacional"
+
+#. (itstool) path: license/p
+#: C/legal.xml:4
+msgid "This work is licensed under a <_:link-1/> license."
+msgstr "Este trabajo está licenciado bajo la <_:link-1/>."
+
+#. (itstool) path: license/p
+#: C/legal.xml:8
+msgid ""
+"As a special exception, the copyright holders give you permission to copy, "
+"modify, and distribute the example code contained in this documentation "
+"under the terms of your choosing, without restriction."
+msgstr ""
+"Como excepción especial, los poseedores de los derechos de autor le dan "
+"permiso para copiar, modificar y distribuir el código de ejemplo contenido "
+"en este documento bajo los términos que usted elija, sin restricción."
+
+#. (itstool) path: info/desc
+#: C/notes.page:8
+msgid "How to add notes to a recipe or make it a favorite."
+msgstr "Cómo añadir notas a una receta o marcarla como favorita."
+
+#. (itstool) path: page/title
+#: C/notes.page:19
+msgid "Add Notes"
+msgstr "Añadir notas"
+
+#. (itstool) path: section/title
+#: C/notes.page:22
+msgid "Add a Note to a Recipe."
+msgstr "Añadir una nota a una receta."
+
+#. (itstool) path: section/p
+#: C/notes.page:23
+msgid ""
+"You can add personal notes to any recipe. You may want to make a note how "
+"you changed the recipe, or if a recipe needed to be cooked shorter or "
+"longer, or if it became a favorite of a friend or family member. To add a "
+"note to a recipe:"
+msgstr ""
+"Puede añadir notas personales a una receta. Puede querer anotar un cambio "
+"que ha hecho, si la receta necesita un tiempo diferente de cocinado o si es "
+"el plato favorito de un amigo o un familiar. Para añadir una nota a una "
+"receta:"
+
+#. (itstool) path: item/p
+#: C/notes.page:29 C/notes.page:52 C/shop.page:26
+msgid "Open a recipe."
+msgstr "Abra una receta."
+
+#. (itstool) path: item/p
+#: C/notes.page:32
+msgid ""
+"Press the <gui style=\"button\">Notes</gui> button in the lower-left corner."
+msgstr ""
+"Pulse el botón <gui style=\"button\">Notas</gui> en la esquina inferior "
+"izquierda."
+
+#. (itstool) path: item/p
+#: C/notes.page:36
+msgid "Enter your notes in the text box."
+msgstr "Introduzca sus notas en la caja de texto."
+
+#. (itstool) path: item/p
+#: C/notes.page:39
+msgid ""
+"Press the <gui style=\"button\">Notes</gui> button again lower-left corner "
+"when finished."
+msgstr ""
+"Pulse otra vez el botón <gui style=\"button\">Notas</gui> en la esquina "
+"inferior izquierda cuando haya terminado."
+
+#. (itstool) path: section/p
+#: C/notes.page:43
+msgid ""
+"Your note will now be displayed below the recipe description and above the "
+"recipe directions."
+msgstr ""
+"Su nota se mostrará debajo de la descripción de la receta, encima del modo "
+"de preparación."
+
+#. (itstool) path: section/title
+#: C/notes.page:48
+msgid "Make a recipe a favorite."
+msgstr "Marcar una receta como favorita."
+
+#. (itstool) path: section/p
+#: C/notes.page:49
+msgid "You can make a recipe a favorite. To favorite a recipe:"
+msgstr "Puede marcar una receta como favorita. Para hacerlo:"
+
+#. (itstool) path: p/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.page:25
+#: C/notes.page:57
 msgctxt "_"
-msgid "external ref='figures/logo.png' md5='787ee332876d583e1618567210508fb8'"
-msgstr "external ref='figures/logo.png' md5='787ee332876d583e1618567210508fb8'"
+msgid "external ref='images/love.png' md5='2ae9287b28d11513d16239afc00147b7'"
+msgstr "external ref='images/love.png' md5='2ae9287b28d11513d16239afc00147b7'"
 
-#. (itstool) path: page/title
-#: C/index.page:24
+#. (itstool) path: item/p
+#: C/notes.page:55
 msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png"
-"\">Pybliographer logo</media> Pybliographer Bibliography manager"
+"Press the <gui>Add to Favorites</gui> <media type=\"image\" mime=\"image/png"
+"\" src=\"images/love.png\" its:translate=\"yes\"> <span its:translate=\"yes"
+"\">Add to Favorites</span></media> button."
 msgstr ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/logo.png\">Logo de "
-"Pybliographer</media> Gestor bibliográfico Pybliographer"
+"Pulse el botón <gui>Añadir a favoritos</gui> <media type=\"image\" mime="
+"\"image/png\" src=\"images/love.png\" its:translate=\"yes\"> <span its:"
+"translate=\"yes\">Añadir a favoritos</span></media>."
 
-#. (itstool) path: section/title
-#: C/index.page:30
-msgid "Preface"
-msgstr "Prefacio"
-
-#. (itstool) path: section/title
-#: C/index.page:34
-msgid "Usage"
-msgstr "Modo de empleo"
-
-#. (itstool) path: section/title
-#: C/index.page:38
-msgid "Advanced Usage"
-msgstr "Uso avanzado"
-
-#. (itstool) path: section/title
-#: C/index.page:42
-msgid "The Scripting Language"
-msgstr "El lenguaje de «scripting»"
+#. (itstool) path: section/p
+#: C/notes.page:62
+msgid ""
+"To remove from favorites, press the <gui>Add to Favorites</gui> button again."
+msgstr ""
+"Para quitarla de favoritos, pulse de nuevo el botón <gui>Añadir a favoritos</"
+"gui>."
 
 #. (itstool) path: info/desc
-#: C/license.page:9
-msgid "Legal information."
-msgstr "Información legal."
+#: C/share.page:9
+msgid "How to print or share recipes and shopping lists."
+msgstr "Cómo imprimir o compartir recetas y listas de la compra."
 
-#. (itstool) path: page/title
-#: C/license.page:12
-msgid "License"
-msgstr "Licencia"
+#. (itstool) path: credit/name
+#: C/share.page:16
+msgid "Jim Campbell"
+msgstr "Jim Campbell"
 
-#. (itstool) path: page/p
-#: C/license.page:13
-msgid ""
-"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
-"Unported license."
-msgstr ""
-"Este trabajo está distribuido bajo una licencia sin soporte CreativeCommons "
-"Compartir-Igual 3.0."
-
-#. (itstool) path: page/p
-#: C/license.page:21
-msgid "You are free:"
-msgstr "Es libre de:"
-
-#. (itstool) path: item/title
-#: C/license.page:26
-msgid "<em>To share</em>"
-msgstr "<em>Compartir</em>"
-
-#. (itstool) path: item/p
-#: C/license.page:27
-msgid "To copy, distribute and transmit the work."
-msgstr "Copiar, distribuir y transmitir el trabajo."
-
-#. (itstool) path: item/title
-#: C/license.page:30
-msgid "<em>To remix</em>"
-msgstr "<em>Hacer obras derivadas</em>"
-
-#. (itstool) path: item/p
-#: C/license.page:31
-msgid "To adapt the work."
-msgstr "Adaptar el trabajo."
-
-#. (itstool) path: page/p
-#: C/license.page:34
-msgid "Under the following conditions:"
-msgstr "Bajo las siguientes condiciones:"
-
-#. (itstool) path: item/title
-#: C/license.page:39
-msgid "<em>Attribution</em>"
-msgstr "<em>Atribución</em>"
-
-#. (itstool) path: item/p
-#: C/license.page:40
-msgid ""
-"You must attribute the work in the manner specified by the author or "
-"licensor (but not in any way that suggests that they endorse you or your use "
-"of the work)."
-msgstr ""
-"Debe reconocer los créditos de la obra de la manera especificada por el "
-"autor o el licenciador (pero no de una manera que sugiera que tiene su apoyo "
-"o apoyan el uso que hace de su obra)."
-
-#. (itstool) path: item/title
-#: C/license.page:47
-msgid "<em>Share Alike</em>"
-msgstr "<em>Compartir igual</em>"
-
-#. (itstool) path: item/p
-#: C/license.page:48
-msgid ""
-"If you alter, transform, or build upon this work, you may distribute the "
-"resulting work only under the same, similar or a compatible license."
-msgstr ""
-"Si altera, transforma o modifica esta obra, sólo puede distribuir la obra "
-"resultante bajo la misma licencia, una similar o una compatible."
-
-#. (itstool) path: page/p
-#: C/license.page:54
-msgid ""
-"For the full text of the license, see the <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
-"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\">Commons Deed</link>."
-msgstr ""
-"Para ver el texto completo de la licencia consulte la <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">página web de Creative "
-"Commons</link> o lea el <link href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\"> Escrito de Commons</link>."
-
-#. (itstool) path: info/desc
-#: C/scripting-basics.page:10
-msgid "Basic information about scripting with <app>Pybliographer</app>."
-msgstr "Información básica sobre scripts con <app>Pybliographer</app>."
-
-#. (itstool) path: page/title
-#: C/scripting-basics.page:26
-msgid "Basics"
-msgstr "Conceptos básicos"
-
-#. (itstool) path: page/p
-#: C/scripting-basics.page:28
-msgid ""
-"<app>Pybliographer</app> is in fact a simple set of classes and functions "
-"written in python, and that provides with a simple and homogenous access to "
-"bibliographic databases. Therefore, it is possible to write python scripts "
-"that make use of these specialized functions. The graphical interface, "
-"<app>Pybliographic</app>, is itself a simple script on top of "
-"<app>Pybliographer</app>."
-msgstr ""
-"<app>Pybliographer</app> es, de hecho, un conjunto de clases y funciones "
-"escritas en python, y esto proporciona un acceso sencillo y homogéneo a "
-"bases de datos bibliográficas. Por lo tanto, es posible escribir scripts en "
-"python que hagan uso de estas funciones especializadas. La interfaz gráfica, "
-"<app>Pybliographer</app>, es en sí un sencillo script sobre "
-"<app>Pybliographer</app>."
-
-#. (itstool) path: page/p
-#: C/scripting-basics.page:35
-msgid "To execute a script written for <app>Pybliographer</app>, simply run"
-msgstr ""
-"Para ejecutar un guión escrito para <app>Pybliographer</app>, simplemente "
-"ejecute"
-
-#. (itstool) path: page/screen
-#: C/scripting-basics.page:37
-#, no-wrap
-msgid ""
-"\n"
-"    <output>bash$ </output><cmd>pybliographer [--quiet] </cmd><var>myscript.py</var>\n"
-"  "
-msgstr ""
-"\n"
-"    <output>bash$ </output><cmd>pybliographer [--quiet] </cmd><var>myscript.py</var>\n"
-"  "
-
-#. (itstool) path: page/p
-#: C/scripting-basics.page:41
-msgid "You can alternatively start your script by"
-msgstr "Alternativamente puede iniciar su script"
-
-#. (itstool) path: page/screen
-#: C/scripting-basics.page:42
-#, no-wrap
-msgid ""
-"\n"
-"      #!/path/to/pybliographer\n"
-"\n"
-"      <var>...rest of your script...</var>\n"
-"    "
-msgstr ""
-"\n"
-"      #!/ruta/de/pybliographer\n"
-"\n"
-"      <var>...resto de su script...</var>\n"
-"    "
-
-#. (itstool) path: page/p
-#: C/scripting-basics.page:47
-msgid "and make it executable."
-msgstr "y hágalo ejecutable."
-
-#. (itstool) path: info/desc
-#: C/scripting-existing.page:10
-msgid "How to use the scripts shipped with <app>Pybliographer</app>."
-msgstr "Cómo usar los scripts proporcionados con <app>Pybliographer</app>."
-
-#. (itstool) path: page/title
-#: C/scripting-existing.page:26
-msgid "Existing scripts"
-msgstr "Scripts existentes"
-
-#. (itstool) path: page/p
-#: C/scripting-existing.page:28
-msgid ""
-"Some scripts are provided with <app>Pybliographer</app>, both as example and "
-"as useful tools. They are quite short and should be readable with basical "
-"knowledge of <app>Python</app>."
-msgstr ""
-"Algunos scripts se proporcionan con <app>Pybliographer</app>, como ejemplos "
-"y herramientas útiles. Son bastante cortos y deberían entenderse con un "
-"conocimiento básico de <app>Python</app>."
+#. (itstool) path: credit/name
+#: C/share.page:20
+msgid "Sindhu S"
+msgstr "Sindhu S"
 
 #. (itstool) path: section/title
-#: C/scripting-existing.page:33
-msgid "pybliocheck"
-msgstr "pybliocheck"
-
-#. (itstool) path: synopsis/p
-#: C/scripting-existing.page:36
-msgid ""
-"This tool takes a list of files or directory, and check if they are valid "
-"(syntax, no entries with the same key,...)"
-msgstr ""
-"Esta herramienta coge una lista de de archivos o carpetas y comprueba si son "
-"válidos (sintaxis, que no haya entradas con la misma clave, etc.)"
+#: C/share.page:31
+msgid "Share a Recipe or Shopping List Using Email"
+msgstr "Compartir una receta o lista de la compra por correo-e"
 
 #. (itstool) path: section/p
-#: C/scripting-existing.page:40
+#: C/share.page:32
 msgid ""
-"It is possible to use its output directly in an emacs compile buffer, in "
-"order to jump directly to the encountered errors. To do so, type "
-"<keyseq><key>M</key><key>x</key></keyseq> <cmd>compile</cmd>, then the "
-"command <cmd>pybliocheck <var>yourfiles</var></cmd>, and use the middle "
-"button of the mouse to jump into the faulty file."
+"You can email a shopping list or recipe to a friend. Shopping lists will "
+"email all of the ingredients needed in the body of an email. If you email a "
+"recipe, the email recipient will receive the recipe as an email attachment. "
+"They can download the attachment and double-click it to import the recipe "
+"you shared into <app>Recipes</app>."
 msgstr ""
-"Es posible usar su salida directamente en un búfer de compilación de emacs, "
-"para saltar directamente a los errores encontrados. Para hacerlo, escriba "
-"<keyseq><key>M</key><key>x</key></keyseq><cmd>compile</cmd>, y el comando "
-"<cmd>pybliocheck <var>yourfiles</var></cmd>, y use el botón central para "
-"saltar al archivo que ha fallado."
-
-#. (itstool) path: section/title
-#: C/scripting-existing.page:49
-msgid "pybliocompact"
-msgstr "pybliocompact"
-
-#. (itstool) path: synopsis/p
-#: C/scripting-existing.page:52
-msgid ""
-"This tool extracts the citations made in a LaTeX document and generates a "
-"BibTeX file containing them."
-msgstr ""
-"Esta herramienta extrae las citas hechas en un documento LaTeX y genera un "
-"archivo BibTeX que las contiene."
-
-#. (itstool) path: section/p
-#: C/scripting-existing.page:57
-msgid ""
-"Usually, one stores its bibliographies in one or several large BibTeX files, "
-"and lets <cmd>bibtex</cmd> extract the entries used in a LaTeX document. But "
-"it is sometime convenient to create a self-contained package (for example to "
-"share it in native form with somebody else, or to store it), with a "
-"minimalistic BibTeX file holding exactly the entries used in LaTeX. This "
-"tool does exactly that: it reads a LaTeX <file>.aux</file> file, and extract "
-"from the specified BibTeX databases the corresponding entries."
-msgstr ""
-"Generalmente, uno almacena sus bibliografías en uno o varios archivos BibTeX "
-"grandes, y permite que <cmd>bibtex</cmd> extraiga las entradas usadas en un "
-"documento LaTeX. Pero a veces es conveniente crear un paquete autocontenido "
-"(por ejemplo, para compartirlo de forma nativa con alguien, o para "
-"almacenarlo), con un archivo BibTeX minimalista que explote exactamente las "
-"entradas usadas en LaTeX. Esta herramienta hace exactamente eso: lee un "
-"archivo LaTeX<file>.aux</file> y extrae las entradas correspondientes de las "
-"bases de datos BibTeX especificadas."
-
-#. (itstool) path: section/title
-#: C/scripting-existing.page:68
-msgid "pyblioconvert"
-msgstr "pyblioconvert"
-
-#. (itstool) path: synopsis/p
-#: C/scripting-existing.page:71
-msgid "This tool converts from one bibliographic format to another."
-msgstr "Esta herramienta convierte de un formato bibliográfico a otro."
-
-#. (itstool) path: section/p
-#: C/scripting-existing.page:75
-msgid ""
-"The general syntax is pretty simple. To convert from Refer to BibTeX for "
-"example, just run:"
-msgstr ""
-"La sintaxis general es muy sencilla. Por ejemplo, para convertir de Refer a "
-"BibTeX ejecute:"
-
-#. (itstool) path: section/screen
-#: C/scripting-existing.page:78
-#, no-wrap
-msgid ""
-"\n"
-"\t<output>bash$ </output><cmd>pyblioconvert</cmd> refer..bibtex <var>toto.refer</var> <var>toto.bib</var>\n"
-"      "
-msgstr ""
-"\n"
-"\t<output>bash$ </output><cmd>pyblioconvert</cmd> refer..bibtex <var>toto.refer</var> <var>toto.bib</var>\n"
-"      "
-
-#. (itstool) path: section/title
-#: C/scripting-existing.page:84
-msgid "pyblioformat"
-msgstr "pyblioformat"
-
-#. (itstool) path: synopsis/p
-#: C/scripting-existing.page:87
-msgid ""
-"This script generates a bibliography according to a bibliographic style, and "
-"outputs it in a specific format (like HTML, LaTeX,...) as it should appear "
-"in a document."
-msgstr ""
-"Este script genera una bibliografía siguiendo un estilo bibliográfico, y lo "
-"genera en un formato específico (similar a HTML, LaTeX, …) como debería "
-"aparecer en un documento."
-
-#. (itstool) path: section/p
-#: C/scripting-existing.page:92 C/scripting-existing.page:176
-msgid "The general form of the command is"
-msgstr "El formato general del comando es"
-
-#. (itstool) path: section/screen
-#: C/scripting-existing.page:93
-#, no-wrap
-msgid ""
-"\n"
-"\t<output>bash$ </output><cmd>pyblioformat</cmd> <var>[options] database...</var>\n"
-"      "
-msgstr ""
-"\n"
-"\t<output>bash$ </output><cmd>pyblioformat</cmd> <var>[options] database...</var>\n"
-"      "
-
-#. (itstool) path: section/p
-#: C/scripting-existing.page:97
-msgid ""
-"This command without options will use the style called <em>alpha</em> to "
-"create a bibliography in <em>Text</em> format. Several options are available "
-"to create these documents:"
-msgstr ""
-"Este comando sin opciones usará el estilo denominado <em>alfa</em> para "
-"crear una bibliografía en formato <em>Texto</em>. Hay disponibles varias "
-"opciones para crear estos documentos:"
-
-#. (itstool) path: item/p
-#: C/scripting-existing.page:104
-msgid ""
-"<cmd>--style=...</cmd> or <cmd>-s ...</cmd>: specify a bibliography style. "
-"This can be a full path to an existing XML file, or a name which will be "
-"searched in the standard places. Default is Alpha."
-msgstr ""
-"<cmd>--style=...</cmd> o <cmd>-s ...</cmd>: especifica un estilo "
-"bibliográfico. Éste puede ser una ruta completa a un archivo XML existente o "
-"a un nombre que se buscará en los lugares habituales. El predeterminado es "
-"«Alpha»."
-
-#. (itstool) path: item/p
-#: C/scripting-existing.page:110
-msgid ""
-"<cmd>--format=...</cmd> or <cmd>-f ...</cmd>: specify an output format "
-"(HTML, LaTeX, Raw, Text, Textau, Textnum). Default is Text. (Textau and "
-"Textnum are just slightly modified versions of Text. See <link xref="
-"\"#script-scripting-existing-pybtext\"/> for more details.)"
-msgstr ""
-"<cmd>--format=...</cmd> o <cmd>-f ...</cmd>: especifica un formato de salida "
-"(HTML, LaTeX, Raw, Text, Textau, Textnum). El predeterminado es «Text». "
-"(Textau y Textnum son versiones ligeramente modificadas de Text. Consulte la "
-"<link xref=\"#script-scripting-existing-pybtext\"/> para obtener más "
-"detalles.)"
-
-#. (itstool) path: item/p
-#: C/scripting-existing.page:117
-msgid ""
-"<cmd>--output=...</cmd> or <cmd>-o ...</cmd>: specify an output filename. "
-"STDOUT is the default."
-msgstr ""
-"<cmd>--output=...</cmd> o <cmd>-o ...</cmd>: especificar un nombre de "
-"archivo de salida. El predeterminado es la salida estándar (STDOUT)."
-
-#. (itstool) path: item/p
-#: C/scripting-existing.page:121
-msgid ""
-"<cmd>--header=...</cmd> or <cmd>-H ...</cmd>: defines a file that will be "
-"prepended to the output file."
-msgstr ""
-"<cmd>--header=...</cmd> o <cmd>-H ...</cmd>: define un archivo que se "
-"antepondrá al archivo de salida."
-
-#. (itstool) path: item/p
-#: C/scripting-existing.page:125
-msgid ""
-"<cmd>--footer=...</cmd> or <cmd>-F ...</cmd>: defines a file that will be "
-"appended to the output file."
-msgstr ""
-"<cmd>--footer=...</cmd> o <cmd>-F ...</cmd>: define un archivo que se "
-"añadirá al archivo de salida."
-
-#. (itstool) path: item/p
-#: C/scripting-existing.page:129
-msgid ""
-"<cmd>--list=output</cmd> or <cmd>-l output</cmd>: lists the available output "
-"formats"
-msgstr ""
-"<cmd>--list=output</cmd> o <cmd>-l output</cmd>: lista los formatos de "
-"salida disponibles"
-
-#. (itstool) path: section/title
-#: C/scripting-existing.page:136
-msgid "pybliotex"
-msgstr "pybliotex"
-
-#. (itstool) path: synopsis/p
-#: C/scripting-existing.page:139
-msgid ""
-"This tool searches for the citations in a LaTeX document and generates a "
-"LaTeX bibliography file."
-msgstr ""
-"Esta herramienta busca las citas en un documento LaTeX y genera un archivo "
-"bibliográfico en LaTeX."
-
-#. (itstool) path: section/p
-#: C/scripting-existing.page:143
-msgid ""
-"This tool reads a LaTeX <file>.aux</file> file, and extracting the "
-"corresponding entries from the specified BibTeX databases creates a LaTeX "
-"<file>.bbl</file> file."
-msgstr ""
-"Esta herramienta lee un archivo <file>.aux</file> de LaTeX, extrae las "
-"entradas correspondientes de las bases de datos de BibTeX y crea un archivo "
-"<file>.bbl</file> de LaTeX."
-
-#. (itstool) path: section/p
-#: C/scripting-existing.page:147
-msgid "The form of the command is"
-msgstr "El formato del comando es"
-
-#. (itstool) path: section/screen
-#: C/scripting-existing.page:148
-#, no-wrap
-msgid ""
-"\n"
-"\t<output>bash$ </output><cmd>pybliotex</cmd> <file>latexfile</file> [<file>bibtexfiles</file>...]\n"
-"      "
-msgstr ""
-"\n"
-"\t<output>bash$ </output><cmd>pybliotex</cmd> <file>archivo-latex</file> [<file>archivos-bibtex</file>...]\n"
-"      "
-
-#. (itstool) path: section/title
-#: C/scripting-existing.page:154
-msgid "pybliotext"
-msgstr "pybliotext"
-
-#. (itstool) path: synopsis/p
-#: C/scripting-existing.page:157
-msgid ""
-"This tool processes a text file containing citations and appends a "
-"bibliography according to a given style."
-msgstr ""
-"Esta herramienta procesa un archivo de texto que contenga citas y añade una "
-"bibliografía siguiendo un estilo dado."
-
-#. (itstool) path: section/p
-#: C/scripting-existing.page:161
-msgid ""
-"The script searches for citations like [key] or [key1,key2...] in a text "
-"file (for example: ...This is a text fragment with citations [AKM95,MPJ+03] "
-"inserted from pybliographer...). First, according to the keys found in the "
-"text file, it generates a reference list. Using an appropriate style (see "
-"below), it replaces the database keys in the text body with the new keys "
-"generated by the style module, and finally it appends the reference list to "
-"the text resulting a new file."
-msgstr ""
-"El script busca citas como [clave] o [clave1,clave2...] en un archivo de "
-"texto (por ejemplo: ...Esto es un fragmento de texto con citas [AKM95,MPJ"
-"+03] insertadas desde pybliographer...). Primero, de acuerdo con la primera "
-"clave encontrada en el archivo de texto, genera una lista de referencias. "
-"Usando un estilo adecuado (vea más abajo), reemplaza las claves de la base "
-"de datos en el cuerpo del texto con las claves nuevas generadas por el "
-"módulo de estilo y, finalmente, añade la lista de referencias al texto "
-"resultante en un archivo nuevo."
+"Puede enviar por correo una lista de la compra o una receta a un amigo. Las "
+"listas de la compra contendrán todos los ingredientes necesarios en el "
+"cuerpo del correo. Si envía una receta, el destinatario del correo la "
+"recibirá como un adjunto. La puede descargar y pulsa sobre ella dos veces "
+"para importarla en <app>Recetas</app>."
 
 #. (itstool) path: note/p
-#: C/scripting-existing.page:171
+#: C/share.page:38
 msgid ""
-"The keys of selected entries can be copied easily from pybliographer into a "
-"text editor or terminal by <em>copy and paste </em> or <em>drag and drop</"
-"em>."
+"You must use an email application to share recipes. Web based email, like "
+"Gmail or Yahoo!, will not work to share recipes."
 msgstr ""
-"Las claves de las entradas seleccionadas se puede copiar fácilmente desde "
-"pybliographer en un editor de texto o en una terminal usando <em>copiar y "
-"pegar</em> o <em>arrastrar y soltar</em>."
+"Debe usar una aplicación de correo para compartir recetas. Los sistemas de "
+"correo web, como Gmail o Yahoo! no funcionarán."
 
-#. (itstool) path: section/screen
-#: C/scripting-existing.page:177
-#, no-wrap
+#. (itstool) path: item/p
+#: C/share.page:43
+msgid "Open the recipe or shopping list you want to email."
+msgstr "Abra la receta o la lista de la compra que quiere enviar por correo."
+
+#. (itstool) path: item/p
+#: C/share.page:57
+msgid "Press the <gui>Share</gui> button in the bottom-right corner."
+msgstr "Pulse el botón <gui>Compartir</gui> en la esquina inferior derecha."
+
+#. (itstool) path: item/p
+#: C/share.page:66
 msgid ""
-"\n"
-"\t<output>bash$ </output><cmd>pybliotext</cmd> [-o outputfile] [-s style] <file>textfile</file> <file>bibfiles...</file>\n"
-"      "
+"A new email message will be opened composed. The <em>Subject</em> line and "
+"email body will be automatically filled out for you. If you are emailing a "
+"shopping list, the shopping list will be included in the body of the email. "
+"If you are sharing a recipe, the recipe will be attached to the email."
 msgstr ""
-"\n"
-"\t<output>bash$ </output><cmd>pybliotext</cmd> [-o archivo_de_salida] [-s estilo] <file>archivo_de_texto</file> <file>archivos_bib...</file>\n"
-"      "
+"Se abrirá un mensaje nuevo ya redactado. La línea del <em>asunto</em> y el "
+"cuerpo se rellenarán automáticamente. Si está enviando una lista de la "
+"compra ésta se incluirá en el cuerpo del correo. Si está compartiendo una "
+"receta se enviará como adjunto en el correo."
 
-#. (itstool) path: section/p
-#: C/scripting-existing.page:181
+#. (itstool) path: item/p
+#: C/share.page:74
 msgid ""
-"This command without the options will use the style called <em>Abbrev</em> "
-"and <file>textfile.pyb</file> as outputfile for processing. <file>textfile</"
-"file> is the name of the file to be processed and <file>bibfiles</file> is "
-"one or more bibliographic database file."
+"Enter the email address of the person you would like to share with and any "
+"additional information in the email body and send your email."
 msgstr ""
-"Este comando sin opciones usará el estilo denominado <em>Abbrev</em> y "
-"<file>archivo_de_texto.pyb</file> como archivo de salida que procesar. "
-"<file>archivo_de_texto</file> es el nombre del archivo que procesar y "
-"<file>archivos_bib</file> son uno o más archivos de bases de datos "
-"bibliográficas."
-
-#. (itstool) path: section/p
-#: C/scripting-existing.page:187
-msgid ""
-"There are three different <em>styles</em> which are designed for pybliotext. "
-"Using <em>abbrvbib</em> results in keys as they are defined in the database. "
-"With the style <em>abbrvau</em>, author-year type keys (e.g. Jackson et al., "
-"2004) can be generated. Using <em>abbrvnum</em>, the script produces a "
-"simple numbered list. For abbrvau and abbrvnum, the formats Textau and "
-"Textnum are used, respectively. They are just simple modifications of the "
-"Text format, optimized for these styles. Using other styles (Alpha, Abbrev "
-"or apa4e), the text body is not processed, but the reference list is "
-"appended in the form that corresponds to the used style."
-msgstr ""
-"Hay tres <em>estilos</em> diferentes diseñados para pybliotext. Usando "
-"<em>abbrvbib</em> las claves son como se han definido en la base de datos. "
-"Con el estilo <em>abbrvau</em>, se puede generar las claves tipo autor-año "
-"(ej. Jackson et al., 2004). Usando <em>abbrvnum</em>, el script produce una "
-"lista numerada. Para «abbrvau» y «abbrvnum», se usan los formatos «Textau» y "
-"«Textnum» respectivamente. Son simples modificaciones del formato «Text», "
-"optimizado para esos estilos. Usando otros estilos (Alpha, Abbrev o apa4e), "
-"el cuerpo del texto no se procesa, pero la lista de referencia se añade al "
-"formulario que corresponde al estilo usado."
-
-#. (itstool) path: info/desc
-#: C/scripting-writeown.page:10
-msgid "Writing your own scripts."
-msgstr "Escribir sus propios scripts."
-
-#. (itstool) path: page/title
-#: C/scripting-writeown.page:26
-msgid "Writing your own scripts"
-msgstr "Escribir sus propios scripts"
-
-#. (itstool) path: page/p
-#: C/scripting-writeown.page:28
-msgid ""
-"To start writing your own script, you can read what follows, and then have a "
-"look at the existing scripts. Trying to adapt them to fit your personal "
-"needs can be a good way of testing what you read."
-msgstr ""
-"Para empezar a escribir su propio script, puede leer lo que viene a "
-"continuación y echar un vistazo a los scripts existentes. Intentar "
-"adaptarlos para que se ajusten a sus necesidades personales puede ser una "
-"buena de probar lo que ha leído"
+"Introduzca la dirección de correo de la persona con la que quiere "
+"compartirla con cualquier información adicional en el cuerpo del correo y "
+"envíelo."
 
 #. (itstool) path: section/title
-#: C/scripting-writeown.page:34
-msgid "Some concepts"
-msgstr "Algunos conceptos"
+#: C/share.page:82
+msgid "Print a Recipe"
+msgstr "Imprimir una receta"
+
+#. (itstool) path: note/p
+#: C/share.page:85
+msgid ""
+"Printing a recipe requires that you have connected and configured your "
+"printer. If you have not done this, please consult the <link href=\"help:"
+"gnome-help/printing\">printing help for GNOME</link>."
+msgstr ""
+"Para imprimir una receta es necesario que tenga conectada y configurada una "
+"impresora. Si no lo ha hecho, consulte la <link href=\"help:gnome-help/"
+"printing\">ayuda para imprimir en GNOME</link>."
 
 #. (itstool) path: section/p
-#: C/scripting-writeown.page:36
+#: C/share.page:90
 msgid ""
-"This section describes some basic classes and ideas that are useful to "
-"understand how <app>Pybliographer</app> works."
+"You can print your recipes using a local or remote printer. To print a "
+"recipe:"
 msgstr ""
-"Esta sección describe algunas clases e ideas básicas, útiles para entender "
-"como trabaja <app>Pybliographer</app>."
-
-#. (itstool) path: section/p
-#: C/scripting-writeown.page:39
-msgid ""
-"In the following, all the modules that will be refered to belong to the "
-"<em>Pyblio</em> domain. So, to access the members of the <em>Open</em> "
-"module, you'll have to write at the beginning of your script something like"
-msgstr ""
-"En la siguiente, todos los módulos que se mencionan pertenecen al dominio "
-"<em>Pyblio</em>. Por lo que, para acceder a los miembros del módulo "
-"<em>Open</em>, deberá haber escrito al principio de su script algo como"
-
-#. (itstool) path: section/screen
-#: C/scripting-writeown.page:44
-#, no-wrap
-msgid "from Pyblio import Open"
-msgstr "from Pyblio import Open"
-
-#. (itstool) path: section/p
-#: C/scripting-writeown.page:46
-msgid ""
-"The <em>Base</em> module contains some of the most basical classes used in "
-"the application:"
-msgstr ""
-"El módulo <em>Base</em> contiene algunas de clases más básicas usadas en la "
-"aplicación:"
+"Puede imprimir sus recetas usando una impresora local o remota. Para "
+"imprimir una receta:"
 
 #. (itstool) path: item/p
-#: C/scripting-writeown.page:51
+#: C/share.page:95
 msgid ""
-"<em>Base.Entry</em> represents a specific bibliographic entry, with all its "
-"fields. It behaves like a hash table which returns the content of a field "
-"given its name"
+"Press the <gui style=\"menuitem\">Print</gui> button in the bottom-right "
+"corner when viewing a recipe."
 msgstr ""
-"<em>Base.Entry</em> representa una entrada bibliográfica específica, con "
-"todos sus campos. Se comporta como una tabla indexada que devuelve el "
-"contenido de un campo a partir de su nombre"
+"Pulse el botón <gui style=\"menuitem\">Imprimir</gui> en la esquina inferior "
+"derecha cuando esté viendo una receta."
 
 #. (itstool) path: item/p
-#: C/scripting-writeown.page:56
-msgid ""
-"<em>Base.DataBase</em> is the class from which every database type inherits. "
-"It behaves like a hash table that returns a Base.Entry given a Base.Key"
+#: C/share.page:99
+msgid "Select the desired printer from the list of printers available."
 msgstr ""
-"<em>Base.DataBase</em> es la clase de la que heredan todos los tipos de "
-"bases de datos. Se comporta como una tabla indexada que devuelve un valor "
-"«Base.Entry» a partir de un valor «Base.Key» dado."
+"Seleccione la impresora que quiere de la lista de impresoras disponibles."
 
-#. (itstool) path: section/p
-#: C/scripting-writeown.page:62
+#. (itstool) path: item/p
+#: C/share.page:102
 msgid ""
-"<em>Key.Key</em> is the object that uniquely identifies an entry. This "
-"object must be unique over the whole application, and is composed of a "
-"database part and an entry part."
+"You can preview the file using <gui style=\"button\">Print Preview</gui> and "
+"once you are satisfied with the settings, press <gui style=\"button\">Print</"
+"gui> to send the file to printer."
 msgstr ""
-"<em>Key.Key</em> es el objeto que identifica inequívocamente a una entrada. "
-"Este objeto debe ser único en toda la aplicación, y se compone de una de "
-"base de datos y de una entrada."
-
-#. (itstool) path: section/p
-#: C/scripting-writeown.page:67
-msgid ""
-"An <em>Iterator</em> is an object that provides a way to access a sequence "
-"of items in order. These iterators are used extensively in "
-"<app>Pybliographer</app>, because they hide the underlying access mechanism, "
-"and provide the same access on any database. They are also perfectly suited "
-"for implementing transparent filtering and sorting of entries: the "
-"<em>Selection.Selection</em> class for example takes an iterator (on a "
-"database for example) and return a new one which will only iterate on a "
-"subset of the entries, according to a search criterion."
-msgstr ""
-"Un <em>Iterador</em> es un objeto que proporciona una vía de acceso a una "
-"secuencia de elementos en orden. Estos iteradores se usan ampliamente en "
-"<app>Pybliographer</app> porque ocultan el mecanismo de acceso subyacente y "
-"proporcionan el mismo acceso a cualquier base de datos. También son "
-"adecuados para filtrados transparentes y ordenación de entradas: la clase "
-"<em>Selection.Selection</em>, por ejemplo, toma un iterador (en una base de "
-"datos, por ejemplo) y devuelve uno nuevo que sólo itera sobre un subconjunto "
-"de entradas, de acuerdo con el criterio de búsqueda."
+"Puede previsualizar el archivo usando el botón de <gui style=\"button"
+"\">Vista previa de impresión</gui> y, una vez que esté satisfecho con la "
+"configuración, pulse <gui style=\"button\">Imprimir</gui> para enviar el "
+"archivo a la impresora."
 
 #. (itstool) path: info/desc
-#: C/typcon.page:10
-msgid "Typographical conventions used in this documentation."
-msgstr "Convenciones tipográficas usadas en esta documentación."
+#: C/shop.page:8
+msgid ""
+"Automatically create a shopping list with the ingredients needed for a "
+"recipe."
+msgstr ""
+"Crear automáticamente una lista de la compra con los ingredientes necesarios "
+"para una receta."
 
 #. (itstool) path: page/title
-#: C/typcon.page:26
-msgid "Typographical Conventions"
-msgstr "Convenciones tipográficas"
+#: C/shop.page:20
+msgid "Create a Shopping List"
+msgstr "Crear una lista de la compra"
 
 #. (itstool) path: page/p
-#: C/typcon.page:27
-msgid "In this book, we'll mark some words with special typography:"
-msgstr ""
-"En este libro, marcaremos algunas palabras con una tipografía especial:"
-
-#. (itstool) path: item/p
-#: C/typcon.page:31
-msgid "<app>Applications</app>"
-msgstr "<app>Aplicaciones</app>"
-
-#. (itstool) path: item/p
-#: C/typcon.page:32
-msgid "<cmd>Commands</cmd> you type at the command line"
-msgstr "<cmd>Comandos</cmd> que escribe en la línea de comandos"
-
-#. (itstool) path: item/p
-#: C/typcon.page:33
-msgid "<file>Filenames</file>"
-msgstr "<file>Nombres_de_archivos</file>"
-
-#. (itstool) path: item/p
-#: C/typcon.page:34
-msgid "<var>Replaceable text</var>"
-msgstr "<var>Texto reemplazable</var>"
-
-#. (itstool) path: item/p
-#: C/typcon.page:35
+#: C/shop.page:22
 msgid ""
-"<gui>Labels</gui> for buttons and other portions of the graphical interface"
+"<app>Recipes</app> will help you create shopping list based on the "
+"ingredients in a recipe. To create a shopping list:"
 msgstr ""
-"<gui>Etiquetas</gui> para botones y otras porciones de la interfaz gráfica"
+"<app>Recetas</app> le ayudará a crear un lista de la compra basada en los "
+"ingredientes de una receta. Para crear una lista de la compra:"
 
 #. (itstool) path: item/p
-#: C/typcon.page:37
+#: C/shop.page:29
 msgid ""
-"Menu selections look like this: <guiseq><gui>Menu</gui> <gui>Submenu</"
-"gui><gui>Menu Item</gui></guiseq>"
+"Press the <gui>Buy Ingredients</gui> button located under the ingredient "
+"list."
 msgstr ""
-"Las selecciones de menú se parecen a esto: <guiseq><gui>Menú</"
-"gui><gui>Submenú</gui><gui>Elemento del menú</gui></guiseq>"
+"Pulse el botón <gui>Comprar ingredientes</gui> situado debajo de la lista de "
+"ingredientes."
 
 #. (itstool) path: item/p
-#: C/typcon.page:39
-msgid "<gui>Buttons</gui> you can click"
-msgstr "<gui>Botones</gui> que puede pulsar"
+#: C/shop.page:33
+msgid ""
+"<app>Recipes</app> will display a pop-up at the top. To view the shopping "
+"list, press the <gui>View Shopping List</gui> button or press <gui>x</gui> "
+"to close the pop-up."
+msgstr ""
+"<app>Recetas</app> mostrará un ventana emergente en la parte superior. Para "
+"ver la lista de la compra, pulse el botón <gui>Ver lista de la compra</gui> "
+"o pulse <gui>x</gui> para cerrar la ventana emergente."
 
 #. (itstool) path: item/p
-#: C/typcon.page:40
-msgid "<input>Anything you type in</input>"
-msgstr "<input>Cualquier cosa que escriba</input>"
+#: C/shop.page:38
+msgid ""
+"Repeat steps for any other recipes you would like the ingredients to be "
+"added to your shopping list."
+msgstr ""
+"Repita estos pasos para cualquier otra receta para la que quiera añadir sus "
+"ingredientes a la lista de la compra."
 
 #. (itstool) path: page/p
-#: C/typcon.page:43
+#: C/shop.page:43
 msgid ""
-"We'll provide assorted bits of additional information in tips and notes as "
-"well."
+"When you are finished adding to the shopping list, press the <gui>View "
+"Shopping List</gui> button, or return to the main <app>Recipes</app> window "
+"and click the <gui>Buy ingredients</gui> bar in the <gui>Today</gui> section."
 msgstr ""
-"Le proporcionaremos una variedad de fragmentos de información adicional en "
-"forma de consejos y de notas."
-
-#. (itstool) path: note/title
-#: C/typcon.page:47
-msgid "Tip"
-msgstr "Consejo"
-
-#. (itstool) path: note/p
-#: C/typcon.page:48
-msgid "Tips and bits of extra information will look like this."
-msgstr "Lo consejos y los fragmentos de información adicional se verán así."
-
-#. (itstool) path: note/title
-#: C/typcon.page:55
-msgid "Note"
-msgstr "Nota"
-
-#. (itstool) path: note/p
-#: C/typcon.page:56
-msgid "Notes will look like this."
-msgstr "La notas se parecen a esto."
+"Cuando termine de añadir la lista de la compra, pulse el botón <gui>Ver "
+"lista de la compra</gui> o vuelva a la página principal de <app>Recetas</"
+"app> y pulse en la barra <gui>Comprar ingredientes</gui> en la sección "
+"<gui>Hoy</gui>."
 
 #. (itstool) path: page/p
-#: C/typcon.page:61
-msgid "We'll have warnings, in cases where you should be careful:"
-msgstr "Tendremos advertencias, para los casos en que deba tener cuidado:"
-
-#. (itstool) path: note/title
-#: C/typcon.page:65
-msgid "Example Warning"
-msgstr "Ejemplo de advertencia"
-
-#. (itstool) path: note/p
-#: C/typcon.page:66
+#: C/shop.page:48
 msgid ""
-"This is what a warning looks like. If there's a chance you'll run into "
-"trouble, we'll warn you beforehand."
+"<app>Recipes</app> will display the <gui>Buy Ingredients</gui> page. The "
+"ingredients you need to purchase for all of the recipes will be displayed in "
+"a list below the recipes that require them."
 msgstr ""
-"Así es una advertencia. Si hay una posibilidad de que se meta en problemas, "
-"le advertiremos previamente."
+"<app>Recetas</app> mostrará la página <gui>Comprar ingredientes</gui>. Los "
+"ingredientes que necesite comprar para todas las recetas se mostrarán en una "
+"lista debajo de las recetas que los requieren."
 
-#. (itstool) path: info/desc
-#: C/whatsnew.page:10
-msgid "New features in <app>Pybliographer</app> 1.2.18."
-msgstr "Nuevas funcionalidades en <app>Pybliographer</app> 1.2.18."
+#. (itstool) path: section/title
+#: C/shop.page:55
+msgid "Edit the Shopping List"
+msgstr "Editar la lista de la compra"
 
-#. (itstool) path: page/title
-#: C/whatsnew.page:26
-msgid "What's New in Pybliographer 1.2.18"
-msgstr "Lo nuevo de Pybliographer 1.2.18"
-
-#. (itstool) path: page/p
-#: C/whatsnew.page:27
+#. (itstool) path: section/p
+#: C/shop.page:56
 msgid ""
-"You can find a list of bugs fixed and features added in the <file>NEWS</"
-"file> and <file>ChangeLog</file> files supplied with the package. See the "
-"source tarball of pybliographer, or the default doc directory of your "
-"distribution (e.g. <file>/usr/share/doc/pybliographer</file>)."
+"You can increase the serving side of a recipe and the shopping list will "
+"automatically increase the quantities of the ingredients you need to "
+"purchase."
 msgstr ""
-"Puede encontrar una lista de errores corregidos y de características en los "
-"archivos <file>NEWS</file> y <file>ChangeLog</file>, proporcionados con el "
-"paquete. Consulte el paquete de código fuente de pybliographer o la carpeta "
-"de documentación predeterminada de su distribución (ej. <file>/usr/share/doc/"
-"pybliographer</file>)."
+"Puede aumentar la cantidad de las raciones de una receta y la lista de la "
+"compra aumentará automáticamente la cantidad de ingredientes que necesita "
+"comprar."
 
-#~ msgid "zoltank@gmail.com"
-#~ msgstr "zoltank@gmail.com"
+#. (itstool) path: item/p
+#: C/shop.page:62
+msgid ""
+"The recipes you have added to the shopping list are shown at the top. In the "
+"upper right corner of the recipe the serving size is shown. Click the number "
+"displayed in the recipe."
+msgstr ""
+"Las recetas que ha añadido a la lista de la compra se muestran en la parte "
+"superior. En la esquina superior derecha de la receta se muestra el tamaño "
+"de la ración. Pulse en el número mostrado en la receta."
 
-#~ msgid "frederic.gobry@epfl.ch"
-#~ msgstr "frederic.gobry@epfl.ch"
+#. (itstool) path: item/p
+#: C/shop.page:68
+msgid ""
+"Increase or decrease the serving size of the recipe by pressing <gui>+</gui> "
+"or <gui>-</gui>."
+msgstr ""
+"Aumente o disminuya el número de raciones de la receta pulsando <gui>+</gui> "
+"o <gui>-</gui>."
 
-#~ msgid "Filenames"
-#~ msgstr "Nombres de archivo"
+#. (itstool) path: section/p
+#: C/shop.page:74
+msgid ""
+"The shopping list will automatically adjust the ingredients needed to "
+"purchase based on the new serving size of the recipe."
+msgstr ""
+"La lista de la compra ajustará automáticamente los ingredientes que hace "
+"falta comprar, basándose en el nuevo número de raciones de la receta."
 
-#~ msgid "bash$"
-#~ msgstr "bash$"
+#. (itstool) path: section/title
+#: C/shop.page:80
+msgid "Remove an Item"
+msgstr "Quitar un elemento"
 
-#~ msgid "[options] database..."
-#~ msgstr "[opciones] base de datos..."
+#. (itstool) path: section/p
+#: C/shop.page:81
+msgid "To remove an item from the shopping list:"
+msgstr "Para quitar un elemento de la lista de la compra:"
 
-#~ msgid "pybliographer [--quiet]"
-#~ msgstr "pybliographer [--quiet]"
+#. (itstool) path: item/p
+#: C/shop.page:84
+msgid "Select an item from the list."
+msgstr "Seleccione un elemento de la lista."
 
-#~ msgid "myscript.py"
-#~ msgstr "myscript.py"
+#. (itstool) path: item/p
+#: C/shop.page:87
+msgid ""
+"Press the Trash <media type=\"image\" mime=\"image/png\" src=\"images/trash."
+"png\" its:translate=\"yes\"> <span its:translate=\"yes\">Trash</span></"
+"media> button and the ingredient is removed from the shopping list."
+msgstr ""
+"Pulse el botón de la papelera <media type=\"image\" mime=\"image/png\" src="
+"\"images/trash.png\" its:translate=\"yes\"> <span its:translate=\"yes"
+"\">Papelera</span></media> y el ingrediente se quitará de la lista de la "
+"compra."
 
-#~ msgid "@@image: 'figures/logo.png'; md5=c888cd1f42ad752bb1f156fe56e7ae86"
-#~ msgstr "@@image: 'figures/logo.png'; md5=c888cd1f42ad752bb1f156fe56e7ae86"
+#. (itstool) path: section/p
+#: C/shop.page:94
+msgid "To add an ingredient back to the shopping list after you removed it:"
+msgstr "Para volver a añadir a la lista un ingrediente que ha quitado:"
 
-#~ msgid "The Sort dialog"
-#~ msgstr "El diálogo «Ordenar»"
+#. (itstool) path: item/p
+#: C/shop.page:97
+msgid "Press the <gui>+</gui> at the bottom of the shopping list."
+msgstr "Pulse el botón <gui>+</gui> de debajo de la lista de la compra."
 
-#~ msgid "Configuration of fields and entry types"
-#~ msgstr "Configuración de campos y tipos de entrada"
+#. (itstool) path: item/p
+#: C/shop.page:100
+msgid ""
+"Select the item you would like added and it will appear in the shopping list."
+msgstr ""
+"Seleccione el elemento que quiere añadir y éste aparecerá en la lista de la "
+"compra."
 
-#~ msgid "The Search dialog"
-#~ msgstr "El diálogo «Buscar»"
-
-#~ msgid "Medline query"
-#~ msgstr "Consulta Medline"
-
-#~ msgid "The main window"
-#~ msgstr "La ventana principal"
-
-#~ msgid "Formatting entries"
-#~ msgstr "Formatear entradas"
-
-#~ msgid "The Edition window"
-#~ msgstr "La ventana «Edición»"
-
-#~ msgid "The Edition window - Optional fields"
-#~ msgstr "La ventana «Edición»: campos opcionales"
-
-#~ msgid "my/database.bib"
-#~ msgstr "my/database.bib"
-
-#~ msgid "export PYBLIOGRAPHER_DATABASE=<placeholder-1/>"
-#~ msgstr "export PYBLIOGRAPHER_DATABASE=<placeholder-1/>"
-
-#~ msgid "pybliographic"
-#~ msgstr "pybliographic"
-
-#~ msgid "pybliographic <placeholder-1/>"
-#~ msgstr "pybliographic <placeholder-1/>"
-
-#~ msgid "pybtex"
-#~ msgstr "pybtex"
-
-#~ msgid ""
-#~ "Pybliographer is a tool for managing bibliographic databases. It can be "
-#~ "used for searching, editing, reformatting, etc."
-#~ msgstr ""
-#~ "Pybliographer es una herramienta para gestionar bases de datos "
-#~ "bibliográficas. Se puede usar para buscar, editar, reformatear, etc."
-
-#~ msgid "2003-2010"
-#~ msgstr "2003-2010"
-
-#~ msgid "1999-2010"
-#~ msgstr "1999-2010"
-
-#~ msgid ""
-#~ "Permission is granted to copy, distribute and/or modify this document "
-#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
-#~ "or any later version published by the Free Software Foundation with no "
-#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
-#~ "can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl"
-#~ "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
-#~ msgstr ""
-#~ "Se otorga permiso para copiar, distribuir y/o modificar este documento "
-#~ "bajo los términos de la Licencia de Documentación Libre de GNU, Versión "
-#~ "1.1 o cualquier otra versión posterior publicada por la Free Software "
-#~ "Foundation; sin Secciones Invariantes ni Textos de Cubierta Delantera ni "
-#~ "Textos de Cubierta Trasera. Puede encontrar una copia de la licencia GFDL "
-#~ "en este <ulink type=\"help\" url=\"ghelp:fdl\">enlace</ulink> o en el "
-#~ "archivo COPYING-DOCS distribuido con este manual."
+#. (itstool) path: section/p
+#: C/shop.page:104
+msgid ""
+"After you have completed your shopping, press the <gui> Done Shopping</gui> "
+"to clear your shopping list."
+msgstr ""
+"Después de hacer la compra, pulse el botón <gui>Compra hecha</gui> para "
+"limpiar su lista de la compra."
 
 #~ msgid ""
-#~ "This manual is part of a collection of GNOME manuals distributed under "
-#~ "the GFDL. If you want to distribute this manual separately from the "
-#~ "collection, you can do so by adding a copy of the license to the manual, "
-#~ "as described in section 6 of the license."
+#~ "Open the <app>Recipes</app> menu from the top bar in the top-right next "
+#~ "to <link href=\"help:gnome-help/shell-introduction#activities"
+#~ "\">Activites</link>."
 #~ msgstr ""
-#~ "Este manual es parte de una colección de manuales de GNOME distribuido "
-#~ "bajo la GFDL. Si quiere distribuir este manual por separado de la "
-#~ "colección, puede hacerlo añadiendo una copia de la licencia al manual, "
-#~ "tal como se describe en la sección 6 de la licencia."
+#~ "Abra el menú de <app>Recetas</app> desde la barra superior a la derecha, "
+#~ "junto a la vista de <link href=\"help:gnome-help/shell-"
+#~ "introduction#activities\">Actividades</link>."
 
-#~ msgid ""
-#~ "Many of the names used by companies to distinguish their products and "
-#~ "services are claimed as trademarks. Where those names appear in any GNOME "
-#~ "documentation, and the members of the GNOME Documentation Project are "
-#~ "made aware of those trademarks, then the names are in capital letters or "
-#~ "initial capital letters."
-#~ msgstr ""
-#~ "Muchos de los nombres utilizados por las empresas para distinguir sus "
-#~ "productos y servicios se consideran marcas comerciales. Cuando estos "
-#~ "nombres aparezcan en la documentación de GNOME, y siempre que se haya "
-#~ "informado a los miembros del Proyecto de documentación de GNOME de dichas "
-#~ "marcas comerciales, los nombres aparecerán en mayúsculas o con las "
-#~ "iniciales en mayúsculas."
+#~ msgid "Images"
+#~ msgstr "Imágenes"
 
-#~ msgid ""
-#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
-#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
-#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
-#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
-#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
-#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
-#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
-#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
-#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
-#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
-#~ "DISCLAIMER; AND"
-#~ msgstr ""
-#~ "EL DOCUMENTO SE PROPORCIONA \"TAL CUAL\", SIN GARANTÍA DE NINGÚN TIPO, NI "
-#~ "EXPLÍCITA NI IMPLÍCITA INCLUYENDO, SIN LIMITACIÓN, GARANTÍA DE QUE EL "
-#~ "DOCUMENTO O VERSIÓN MODIFICADA DE ÉSTE CAREZCA DE DEFECTOS COMERCIALES, "
-#~ "SEA ADECUADO A UN FIN CONCRETO O INCUMPLA ALGUNA NORMATIVA. TODO EL "
-#~ "RIESGO RELATIVO A LA CALIDAD, PRECISIÓN Y UTILIDAD DEL DOCUMENTO O SU "
-#~ "VERSIÓN MODIFICADA RECAE EN USTED. SI CUALQUIER DOCUMENTO O VERSIÓN "
-#~ "MODIFICADA DE AQUÉL RESULTARA DEFECTUOSO EN CUALQUIER ASPECTO, USTED (Y "
-#~ "NO EL REDACTOR INICIAL, AUTOR O CONTRIBUYENTE) ASUMIRÁ LOS COSTES DE TODA "
-#~ "REPARACIÓN, MANTENIMIENTO O CORRECCIÓN NECESARIOS. ESTA RENUNCIA DE "
-#~ "GARANTÍA ES UNA PARTE ESENCIAL DE ESTA LICENCIA. NO SE AUTORIZA EL USO DE "
-#~ "NINGÚN DOCUMENTO NI VERSIÓN MODIFICADA DE ÉSTE POR EL PRESENTE, SALVO "
-#~ "DENTRO DEL CUMPLIMIENTO DE LA RENUNCIA;Y"
+#~ msgid "<_:p-1/>."
+#~ msgstr "<_:p-1/>."
 
-#~ msgid ""
-#~ "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT "
-#~ "(INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL "
-#~ "WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED "
-#~ "VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE "
-#~ "LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
-#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
-#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
-#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
-#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
-#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
-#~ "DAMAGES."
-#~ msgstr ""
-#~ "EN NINGUNA CIRCUNSTANCIA NI SEGÚN NINGÚN ARGUMENTO LEGAL, SEA POR MOTIVOS "
-#~ "CULPOSOS (INCLUIDA LA NEGLIGENCIA), CONTRACTUALES O DE OTRO TIPO, NI EL "
-#~ "AUTOR, NI EL REDACTOR INICIAL, NI CUALQUIER COLABORADOR, NI CUALQUIER "
-#~ "DISTRIBUIDOR DEL DOCUMENTO O VERSIÓN MODIFICADA DEL MISMO, NI CUALQUIER "
-#~ "PROVEEDOR DE CUALQUIERA DE DICHAS PARTES, SERÁN RESPONSABLES, ANTE NINGÚN "
-#~ "TERCERO, DE NINGÚN DAÑO O PERJUICIO DIRECTO, INDIRECTO, ESPECIAL, "
-#~ "INCIDENTAL O CONSIGUIENTE DE NINGÚN TIPO, INCLUIDOS, SIN LIMITACIÓN, LOS "
-#~ "DAÑOS POR PÉRDIDA DE FONDO DE COMERCIO, INTERRUPCIÓN DEL TRABAJO, FALLO O "
-#~ "MAL FUNCIONAMIENTO INFORMÁTICO, NI CUALQUIER OTRO DAÑO O PÉRDIDA "
-#~ "DERIVADOS DEL USO DEL DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO, O "
-#~ "RELACIONADO CON ELLO, INCLUSO SI SE HABÍA COMUNICADO A AQUELLA PARTE LA "
-#~ "POSIBILIDAD DE TALES DAÑOS."
-
-#~ msgid ""
-#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
-#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
-#~ "UNDERSTANDING THAT: <placeholder-1/>"
-#~ msgstr ""
-#~ "ESTE DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO SE PROPORCIONAN "
-#~ "SEGÚN LAS CONDICIONES ESTABLECIDAS EN LA LICENCIA DE DOCUMENTACIÓN LIBRE "
-#~ "DE GNU (GFDL) Y TENIENDO EN CUENTA QUE: <placeholder-1/>"
-
-#~ msgid "Zoltán"
-#~ msgstr "Zoltán"
-
-#~ msgid "Kóta"
-#~ msgstr "Kóta"
-
-#~ msgid "Frédéric"
-#~ msgstr "Frédéric"
-
-#~ msgid "Gobry"
-#~ msgstr "Gobry"
-
-#~ msgid "1999"
-#~ msgstr "1999"
-
-#~ msgid "Pybliographer Manual V2.1"
-#~ msgstr "Manual de Pybliographer V2.1"
-
-#~ msgid "January 2004"
-#~ msgstr "Enero de 2004"
-
-#~ msgid "Zoltán Kóta, Frédéric Gobry"
-#~ msgstr "Zoltán Kóta, Frédéric Gobry"
-
-#~ msgid "Pybliographer Manual V2.2"
-#~ msgstr "Manual de Pybliographer V2.2"
-
-#~ msgid "March 2004"
-#~ msgstr "Marzo de 2004"
-
-#~ msgid "Pybliographer Manual V2.3"
-#~ msgstr "Manual de Pybliographer V2.3"
-
-#~ msgid "June 2004"
-#~ msgstr "Junio de 2004"
-
-#~ msgid "Pybliographer Manual V2.4"
-#~ msgstr "Manual de Pybliographer V2.4"
-
-#~ msgid "November 2004"
-#~ msgstr "Noviembre de 2004"
-
-#~ msgid "Pybliographer Manual V2.5"
-#~ msgstr "Manual de Pybliographer V2.5"
-
-#~ msgid "February 2005"
-#~ msgstr "Febrero de 2005"
-
-#~ msgid "Pybliographer Manual V2.6"
-#~ msgstr "Manual de Pybliographer V2.6"
-
-#~ msgid "October 2008"
-#~ msgstr "Octubre de 2008"
-
-#~ msgid "August 2010"
-#~ msgstr "Agosto de 2010"
-
-#~ msgid "This manual describes version 1.2.14 of Pybliographer."
-#~ msgstr "Este manual describe la versión 1.2.14 de Pybliographer."
-
-#~ msgid "Feedback"
-#~ msgstr "Comentarios"
-
-#~ msgid "Pybliographer"
-#~ msgstr "Pybliographer"
-
-#~ msgid "Customization"
-#~ msgstr "Personalizar"
+#~ msgid "<_:info-1/> <_:title-2/> <_:p-3/> <_:p-4/>. <_:steps-5/>"
+#~ msgstr "<_:info-1/> <_:title-2/> <_:p-3/> <_:p-4/>. <_:steps-5/>"
