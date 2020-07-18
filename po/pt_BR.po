@@ -1,27 +1,27 @@
 # Brazilian Portuguese translation of pybliographer.
-# Copyright (C) 2004-2018 Free Software Foundation, Inc.
+# Copyright (C) 2004-2020 Free Software Foundation, Inc.
 # This file is distributed under the same license as the pybliographer package.
 # Afonso Celso Medina <medina@maua.br>, 2004.
 # Raphael Higino <In Memoriam>, 2004.
 # Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2008.
 # Djavan Fagundes <djavanf@gnome.org>, 2010.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2013, 2014, 2017, 2018.
 # Enrico Nicoletto <liverig@gmail.com>, 2017.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2013-2020.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: pybliographer\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=pyblio"
-"grapher&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-03-31 17:18+0000\n"
-"PO-Revision-Date: 2018-05-04 11:03-0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/pybliographer/issues\n"
+"POT-Creation-Date: 2020-04-01 11:16+0000\n"
+"PO-Revision-Date: 2020-07-18 12:15-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Virtaal 1.0.0-beta1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.36.0\n"
 "X-Project-Style: gnome\n"
 
 #: data/pybliographic.appdata.xml.in:7 data/pybliographic.desktop.in:3
@@ -30,7 +30,6 @@ msgid "Pybliographer"
 msgstr "Pybliographer"
 
 #: data/pybliographic.appdata.xml.in:8
-#| msgid "Manage bibliographic databases"
 msgid "Framework for working with bibliographic databases"
 msgstr "Framework para trabalhar com bancos de dados bibliográficos"
 
@@ -67,7 +66,6 @@ msgid "The main window"
 msgstr "A janela principal"
 
 #: data/pybliographic.appdata.xml.in:33
-#| msgid "Edit entry"
 msgid "Editing an entry"
 msgstr "Edição de uma entrada"
 
@@ -77,13 +75,7 @@ msgstr "Gerenciador bibliográfico"
 
 #: data/pybliographic.desktop.in:5
 msgid "Manage bibliographic databases"
-msgstr "Gerencia bancos de dados bibliográficos"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/pybliographic.desktop.in:7
-#| msgid "Pybliographer"
-msgid "pybliographic"
-msgstr "pybliographic"
+msgstr "Gerencie bancos de dados bibliográficos"
 
 #: Pyblio/Autoload.py:81
 #, python-format
@@ -245,7 +237,6 @@ msgid "Open a file"
 msgstr "Abrir um arquivo"
 
 #: Pyblio/GnomeUI/Document.py:154
-#| msgid "Open _Location"
 msgid "Open _Location…"
 msgstr "Abrir _localização…"
 
@@ -530,7 +521,6 @@ msgstr "Pesquisando por “%s”…"
 
 #: Pyblio/GnomeUI/Document.py:1172
 #, python-format
-#| msgid "can’t find style “%s”"
 msgid "Cannot find “%s”…"
 msgstr "Não foi possível localizar “%s”…"
 
@@ -787,7 +777,6 @@ msgid "[Key Value]"
 msgstr "[Valor da chave]"
 
 #: Pyblio/GnomeUI/Utils.py:170
-#| msgid "The following errors occurred:\n"
 msgid "The following errors occurred:"
 msgstr "Ocorreram os seguintes erros:"
 
@@ -862,7 +851,6 @@ msgid "Output file:"
 msgstr "Arquivo de saída:"
 
 #: Pyblio/GnomeUI/glade/format.ui:125
-#| msgid "Save Formatted as"
 msgid "Save formatted as"
 msgstr "Salvar formatado como"
 
@@ -1133,7 +1121,6 @@ msgstr "uso: pybliocheck <arquivo | diretório>…"
 # .././Pyblio/Open.py:105 :151
 #: scripts/pybliocheck.py:68
 #, python-format
-#| msgid "file “%s” is ok [%d entries]"
 msgid "file “%s” is ok [%d entry]"
 msgid_plural "file “%s” is ok [%d entries]"
 msgstr[0] "o arquivo “%s” está bom [%d entrada]"
@@ -1324,6 +1311,10 @@ msgstr "não foi possível remover “%s”"
 #: scripts/pybliotext.py:351
 msgid "Done"
 msgstr "Concluído"
+
+#~| msgid "Pybliographer"
+#~ msgid "pybliographic"
+#~ msgstr "pybliographic"
 
 #~ msgid "Quick search"
 #~ msgstr "Pesquisa rápida"
