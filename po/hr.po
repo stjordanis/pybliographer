@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: pybliographer 0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/pybliographer/issues\n"
 "POT-Creation-Date: 2020-07-18 15:17+0000\n"
-"PO-Revision-Date: 2020-09-16 19:14+0200\n"
+"PO-Revision-Date: 2020-09-16 19:30+0200\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
@@ -130,7 +130,7 @@ msgstr "Rječnik (%s, %s)"
 #: Pyblio/Config.py:355
 #, python-format
 msgid "warning: could not restore setting %r to %r: %s"
-msgstr "upozorenje: nemoguća obnove postavke %r u %r: %s"
+msgstr "upozorenje: nemoguća obnova postavke %r u %r: %s"
 
 #: Pyblio/Fields.py:268
 msgid "Illegal year value"
@@ -185,7 +185,7 @@ msgstr "Skup"
 
 #: Pyblio/GnomeUI/Config.py:549
 msgid "Key:"
-msgstr "Ključ: "
+msgstr "Ključ:"
 
 #: Pyblio/GnomeUI/Config.py:551
 msgid "Value:"
@@ -258,7 +258,7 @@ msgstr "Citiraj ključ(eve)"
 
 #: Pyblio/GnomeUI/Document.py:176
 msgid "Format…"
-msgstr "Oblikovanje…"
+msgstr "Format…"
 
 #: Pyblio/GnomeUI/Document.py:178
 msgid "Fields…"
@@ -296,7 +296,7 @@ msgstr ""
 
 #: Pyblio/GnomeUI/Document.py:421
 msgid "New database"
-msgstr "Baza podataka"
+msgstr "Nova baza podataka"
 
 #: Pyblio/GnomeUI/Document.py:429 Pyblio/GnomeUI/Document.py:433
 msgid "[no entry]"
@@ -328,7 +328,7 @@ msgstr "[promijenjeno]"
 #: Pyblio/GnomeUI/Document.py:443
 #, python-format
 msgid "view limited to: %s"
-msgstr "Prikaži ograničeno na: %s"
+msgstr "prikaži ograničeno na: %s"
 
 #: Pyblio/GnomeUI/Document.py:457
 msgid ""
@@ -422,7 +422,7 @@ msgstr ""
 #. get a new file name
 #: Pyblio/GnomeUI/Document.py:744
 msgid "Save As…"
-msgstr "Snimi kao…"
+msgstr "Spremi kao…"
 
 #: Pyblio/GnomeUI/Document.py:753
 #, python-format
@@ -893,7 +893,7 @@ msgid ""
 "Month and day are optional."
 msgstr ""
 "Koristite format GGGG/MM/DD\n"
-"Mjesec i dan su nisu obavezni."
+"Mjesec i dan nisu obavezni."
 
 #: Pyblio/GnomeUI/glade/medline.ui:461
 msgid "Limited to:"
@@ -937,7 +937,7 @@ msgstr "Odaberi pravila razvrstavanja"
 
 #: Pyblio/GnomeUI/glade/sort.ui:40
 msgid "Set as default"
-msgstr "Postavi kako zadano"
+msgstr "Postavi kao zadano"
 
 #: Pyblio/LyX.py:43
 #, python-format
@@ -1163,7 +1163,7 @@ msgstr "pyblioformat: upozorenje: %s\n"
 #: scripts/pybliotext.py:285 scripts/pybliotext.py:328
 #, python-format
 msgid "can’t open “%s”: %s"
-msgstr "Nemoguće je otvoriti “%s”: %s"
+msgstr "nemoguće je otvoriti “%s”: %s"
 
 #: scripts/pyblioformat.py:106
 #, python-format
@@ -1236,7 +1236,9 @@ msgstr "stil nije određen"
 
 #: scripts/pybliotext.py:48
 msgid "usage: pybliotext [-o outputfile] [-s style] <textfile> <bibfiles…>"
-msgstr "upotreba: pybliotext <latex datoteka> <tekstna datoteke…>"
+msgstr ""
+"upotreba: pybliotext [-o izlazna datoteka] [-s stil] <tekstna datoteka> <bib "
+"datoteke…>"
 
 #: scripts/pybliotext.py:52
 #, python-format
