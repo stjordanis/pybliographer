@@ -5,7 +5,7 @@ databases.
 
 This software is licensed under the [GPLv2][license].
 
-For more information, please consult the documentation at the [webiste][pybliographer-website].
+For more information, please consult the documentation at the [website][pybliographer-website].
 
 
 ## Requirements
