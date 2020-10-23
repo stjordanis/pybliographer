@@ -6,298 +6,332 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pybliographer master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=pybliographer&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-05-12 21:09+0000\n"
-"PO-Revision-Date: 2017-06-07 12:27+0700\n"
-"Last-Translator: Andika Triwidada <atriwidada@gnome.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/pybliographer/issues\n"
+"POT-Creation-Date: 2020-07-18 15:17+0000\n"
+"PO-Revision-Date: 2020-10-23 10:38+0700\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 2.4.1\n"
+"Plural-Forms: nplurals=2; plural= n!=1;\n"
 
-#: ../Pyblio/Autoload.py:78
+#: data/pybliographic.appdata.xml.in:7 data/pybliographic.desktop.in:3
+#: Pyblio/GnomeUI/glade/pyblio.ui:7
+msgid "Pybliographer"
+msgstr "Pybliographer"
+
+#: data/pybliographic.appdata.xml.in:8
+msgid "Framework for working with bibliographic databases"
+msgstr "Kerangka kerja untuk bekerja dengan basis data bibliografi"
+
+#: data/pybliographic.appdata.xml.in:10
+msgid ""
+"Pybliographer is a tool for managing bibliographic databases. It can be used "
+"for searching, editing, reformatting, etc. In fact, it’s a simple framework "
+"that provides easy to use python classes and functions, and therefore can be "
+"extended to many uses (generating HTML pages according to bibliographic "
+"searches, etc)."
+msgstr ""
+"Pybliographer adalah alat untuk mengelola basis data bibliografi. Ini dapat "
+"digunakan untuk mencari, menyunting, menformat ulang, dll. Bahkan, ini "
+"adalah kerangka kerja sederhana yang menyediakan kelas dan fungsi python "
+"yang mudah digunakan, dan karenanya dapat diperluas ke banyak kegunaan "
+"(menghasilkan halaman HTML menurut pencarian bibliografi, dll)."
+
+#: data/pybliographic.appdata.xml.in:17
+msgid ""
+"In addition to the scripting environment, a graphical Gnome interface is "
+"available. It provides powerful editing capabilities, a nice hierarchical "
+"search mechanism, direct insertion of references into LyX, direct queries on "
+"Medline, and more. It currently supports the following file formats: BibTeX, "
+"ISI, Medline, Ovid, Refer."
+msgstr ""
+"Selain lingkungan skrip, antarmuka Gnome grafis tersedia. Ini memberikan "
+"kemampuan penyuntingan yang kuat, mekanisme pencarian hierarkis yang bagus, "
+"penyisipan referensi langsung ke LyX, kueri langsung di Medline, dan banyak "
+"lagi. Saat ini mendukung format berkas berikut: BibTeX, ISI, Medline, Ovid, "
+"Refer."
+
+#: data/pybliographic.appdata.xml.in:27
+msgid "The main window"
+msgstr "Jendela utama"
+
+#: data/pybliographic.appdata.xml.in:33
+msgid "Editing an entry"
+msgstr "Menyunting entri"
+
+#: data/pybliographic.desktop.in:4
+msgid "Bibliography Manager"
+msgstr "Manajer Bibliografi"
+
+#: data/pybliographic.desktop.in:5
+msgid "Manage bibliographic databases"
+msgstr "Kelola basis data bibliografi"
+
+#: Pyblio/Autoload.py:81
 #, python-format
-msgid "warning: can't import %s: %s"
+msgid "warning: can’t import %s: %s"
 msgstr "peringatan: tidak dapat mengimpor %s: %s"
 
-#: ../Pyblio/Config.py:52
+#: Pyblio/Config.py:61
 #, python-format
-msgid "value of `%s' should be of type %s"
-msgstr "nilai '%s' harus dari tipe %s"
+msgid "value of “%s” should be of type %s"
+msgstr "nilai \"%s\" harus bertipe %s"
 
-#: ../Pyblio/Config.py:212
+#: Pyblio/Config.py:223
 msgid "String"
 msgstr "String"
 
-#: ../Pyblio/Config.py:221
+#: Pyblio/Config.py:232
 msgid "Boolean"
 msgstr "Boolean"
 
-#: ../Pyblio/Config.py:240
+#: Pyblio/Config.py:251
 msgid "Integer"
 msgstr "Integer"
 
-#: ../Pyblio/Config.py:242
+#: Pyblio/Config.py:253
 #, python-format
 msgid "Integer under %d"
 msgstr "Integer di bawah %d"
 
-#: ../Pyblio/Config.py:244
+#: Pyblio/Config.py:255
 #, python-format
 msgid "Integer over %d"
 msgstr "Integer lebih dari %d"
 
-#: ../Pyblio/Config.py:246
+#: Pyblio/Config.py:257
 #, python-format
 msgid "Integer between %d and %d"
 msgstr "Integer antara %d dan %d"
 
-#: ../Pyblio/Config.py:258
+#: Pyblio/Config.py:269
 #, python-format
-msgid "Element in `%s'"
-msgstr "Elemen di '%s'"
+msgid "Element in “%s”"
+msgstr "Elemen di \"%s\""
 
-#: ../Pyblio/Config.py:278
+#: Pyblio/Config.py:289
 #, python-format
 msgid "Tuple (%s)"
 msgstr "Tuple (%s)"
 
-#: ../Pyblio/Config.py:299
+#: Pyblio/Config.py:310
 #, python-format
 msgid "List (%s)"
 msgstr "Daftar (%s)"
 
-#: ../Pyblio/Config.py:324
+#: Pyblio/Config.py:335
 #, python-format
 msgid "Dictionary (%s, %s)"
 msgstr "Kamus (%s, %s)"
 
-#: ../Pyblio/Config.py:344
+#: Pyblio/Config.py:355
 #, python-format
 msgid "warning: could not restore setting %r to %r: %s"
 msgstr "peringatan: tidak bisa mengembalikan pengaturan %r ke %r: %s"
 
-#: ../Pyblio/Fields.py:261
+#: Pyblio/Fields.py:268
 msgid "Illegal year value"
 msgstr "Nilai tahun ilegal"
 
-#: ../Pyblio/Fields.py:265
+#: Pyblio/Fields.py:272
 msgid "Illegal month value"
 msgstr "Nilai bulan ilegal"
 
-#: ../Pyblio/Fields.py:269
+#: Pyblio/Fields.py:276
 msgid "Illegal day value"
-msgstr "Nilai hari Ilegal"
+msgstr "Nilai hari ilegal"
 
-#: ../Pyblio/Fields.py:510
+#: Pyblio/Fields.py:517
 #, python-format
 msgid "in %s"
 msgstr "di %s"
 
-#: ../Pyblio/Format/BibTeX.py:323 ../Pyblio/Format/BibTeX.py:371
+#: Pyblio/Format/BibTeX.py:328 Pyblio/Format/BibTeX.py:375
 #, python-format
-msgid "key `%s' is malformed"
-msgstr "kunci '%s' salah bentuknya"
+msgid "key “%s” is malformed"
+msgstr "kunci \"%s\" salah bentuk"
 
-#: ../Pyblio/Format/BibTeX.py:340 ../Pyblio/Format/BibTeX.py:359
+#: Pyblio/Format/BibTeX.py:344 Pyblio/Format/BibTeX.py:363
 #, python-format
-msgid "%s:%d: key `%s' already defined"
-msgstr "%s:%d: kunci '%s' sudah ditentukan"
+msgid "%s:%d: key “%s” already defined"
+msgstr "%s:%d: kunci \"%s\" sudah ditentukan"
 
-#: ../Pyblio/GnomeUI/Config.py:147 ../Pyblio/GnomeUI/Fields.py:417
+#: Pyblio/GnomeUI/Config.py:135 Pyblio/GnomeUI/Fields.py:417
 msgid ""
 "Some changes require to restart Pybliographic\n"
 "to be correctly taken into account"
 msgstr ""
-"Beberapa perubahan yang diperlukan untuk memulai \n"
-"ulang Pybliographic agar benar diperhitungkan"
+"Beberapa perubahan memerlukan untuk memulai\n"
+"ulang Pybliographic agar berpengaruh"
 
-#: ../Pyblio/GnomeUI/Config.py:429
+#: Pyblio/GnomeUI/Config.py:417
 msgid "Add"
 msgstr "Tambah"
 
-#: ../Pyblio/GnomeUI/Config.py:432
+#: Pyblio/GnomeUI/Config.py:420
 msgid "Update"
 msgstr "Perbarui"
 
-#: ../Pyblio/GnomeUI/Config.py:435 ../Pyblio/GnomeUI/Config.py:549
+#: Pyblio/GnomeUI/Config.py:423 Pyblio/GnomeUI/Config.py:537
 msgid "Remove"
 msgstr "Hapus"
 
-#: ../Pyblio/GnomeUI/Config.py:546
+#: Pyblio/GnomeUI/Config.py:534
 msgid "Set"
 msgstr "Atur"
 
-#: ../Pyblio/GnomeUI/Config.py:561
+#: Pyblio/GnomeUI/Config.py:549
 msgid "Key:"
 msgstr "Kunci:"
 
-#: ../Pyblio/GnomeUI/Config.py:563
+#: Pyblio/GnomeUI/Config.py:551
 msgid "Value:"
 msgstr "Nilai:"
 
 #. id     stock            label         accel   tooltip   callback
-#: ../Pyblio/GnomeUI/Document.py:145
+#: Pyblio/GnomeUI/Document.py:144
 msgid "_File"
 msgstr "_Berkas"
 
-#: ../Pyblio/GnomeUI/Document.py:146
+#: Pyblio/GnomeUI/Document.py:145
 msgid "_Edit"
 msgstr "S_unting"
 
-#: ../Pyblio/GnomeUI/Document.py:147
+#: Pyblio/GnomeUI/Document.py:146
 msgid "_View"
 msgstr "_Lihat"
 
-#: ../Pyblio/GnomeUI/Document.py:148
+#: Pyblio/GnomeUI/Document.py:147
 msgid "_Cite"
 msgstr "_Kutip"
 
-#: ../Pyblio/GnomeUI/Document.py:149
+#: Pyblio/GnomeUI/Document.py:148
 msgid "_Settings"
 msgstr "_Pengaturan"
 
-#: ../Pyblio/GnomeUI/Document.py:150
+#: Pyblio/GnomeUI/Document.py:149
 msgid "_Help"
 msgstr "Ba_ntuan"
 
-#: ../Pyblio/GnomeUI/Document.py:151
+#: Pyblio/GnomeUI/Document.py:150
 msgid "Recent documents"
 msgstr "Dokumen baru-baru ini"
 
-#: ../Pyblio/GnomeUI/Document.py:154
+#: Pyblio/GnomeUI/Document.py:153
 msgid "Open a file"
 msgstr "Buka berkas"
 
-#: ../Pyblio/GnomeUI/Document.py:155
-msgid "Open _Location"
-msgstr "Buka _Lokasi"
+#: Pyblio/GnomeUI/Document.py:154
+msgid "Open _Location…"
+msgstr "Buka _Lokasi…"
 
-#: ../Pyblio/GnomeUI/Document.py:156
+#: Pyblio/GnomeUI/Document.py:155
 msgid "Save the current file"
 msgstr "Simpan berkas ini"
 
-#: ../Pyblio/GnomeUI/Document.py:161
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:3
-msgid "Merge With..."
-msgstr "Gabung Dengan..."
+#: Pyblio/GnomeUI/Document.py:160
+msgid "Merge With…"
+msgstr "Gabung Dengan…"
 
-#: ../Pyblio/GnomeUI/Document.py:162
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:4
-msgid "Medline Query..."
-msgstr "Kueri medline..."
+#: Pyblio/GnomeUI/Document.py:161
+msgid "Medline Query…"
+msgstr "Kueri Medline…"
 
-#: ../Pyblio/GnomeUI/Document.py:170
+#: Pyblio/GnomeUI/Document.py:169
 msgid "Add a new entry"
 msgstr "Tambah entri baru"
 
-#: ../Pyblio/GnomeUI/Document.py:175
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:9
-msgid "S_ort..."
-msgstr "_Urutkan..."
+#: Pyblio/GnomeUI/Document.py:174
+msgid "S_ort…"
+msgstr "_Urutkan…"
 
-#: ../Pyblio/GnomeUI/Document.py:176
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:11
-msgid "Cite..."
-msgstr "Kutip..."
+#: Pyblio/GnomeUI/Document.py:175
+msgid "Cite…"
+msgstr "Kutip…"
 
-#: ../Pyblio/GnomeUI/Document.py:176
+#: Pyblio/GnomeUI/Document.py:175
 msgid "Cite key(s)"
 msgstr "Kunci kutip"
 
-#: ../Pyblio/GnomeUI/Document.py:177
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:12
-msgid "Format..."
-msgstr "Format..."
+#: Pyblio/GnomeUI/Document.py:176
+msgid "Format…"
+msgstr "Format…"
 
-#: ../Pyblio/GnomeUI/Document.py:179
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:14
-msgid "Fields..."
-msgstr "Ruas..."
+#: Pyblio/GnomeUI/Document.py:178
+msgid "Fields…"
+msgstr "Ruas…"
 
-#: ../Pyblio/GnomeUI/Document.py:181
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:15
+#: Pyblio/GnomeUI/Document.py:180
 msgid "Forget all changes"
 msgstr "Lupakan semua perubahan"
 
-#: ../Pyblio/GnomeUI/Document.py:185
+#: Pyblio/GnomeUI/Document.py:184
 msgid "_Resource"
 msgstr "Sumbe_r"
 
-#: ../Pyblio/GnomeUI/Document.py:236
-msgid "Quick search"
-msgstr "Pencarian cepat"
-
-#: ../Pyblio/GnomeUI/Document.py:310
+#: Pyblio/GnomeUI/Document.py:301
 msgid "Unnamed bibliographic database"
 msgstr "Basis data bibliografi tanpa nama"
 
-#: ../Pyblio/GnomeUI/Document.py:393
+#: Pyblio/GnomeUI/Document.py:384
 #, python-format
 msgid ""
-"can't open file `%s' for writing:\n"
+"can’t open file “%s” for writing:\n"
 "%s"
 msgstr ""
-"Tak bisa membuka berkas '%s' untuk menulis:\n"
+"tak bisa membuka berkas \"%s\" untuk menulis:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:414
+#: Pyblio/GnomeUI/Document.py:405
 #, python-format
 msgid ""
-"Error while parsing `%s':\n"
+"Error while parsing “%s”:\n"
 "%s"
 msgstr ""
-"Kesalahan saat menguraikan '%s':\n"
+"Galat saat mengurai \"%s\":\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:430
+#: Pyblio/GnomeUI/Document.py:421
 msgid "New database"
 msgstr "Basis data baru"
 
-#: ../Pyblio/GnomeUI/Document.py:438 ../Pyblio/GnomeUI/Document.py:442
+#: Pyblio/GnomeUI/Document.py:429 Pyblio/GnomeUI/Document.py:433
 msgid "[no entry]"
 msgstr "[tidak ada entri]"
 
-#: ../Pyblio/GnomeUI/Document.py:439
+#: Pyblio/GnomeUI/Document.py:430
 msgid "[1 entry]"
 msgstr "[1 entri]"
 
-#: ../Pyblio/GnomeUI/Document.py:440
+#: Pyblio/GnomeUI/Document.py:431
 #, python-format
 msgid "[%d entries]"
 msgstr "[%d entri]"
 
-#: ../Pyblio/GnomeUI/Document.py:443
+#: Pyblio/GnomeUI/Document.py:434
 #, python-format
 msgid "[%d/1 entry]"
 msgstr "[%d/1 entri]"
 
-#: ../Pyblio/GnomeUI/Document.py:444
+#: Pyblio/GnomeUI/Document.py:435
 #, python-format
 msgid "[%d/%d entries]"
 msgstr "[%d/%d entri]"
 
-#: ../Pyblio/GnomeUI/Document.py:449
+#: Pyblio/GnomeUI/Document.py:440
 msgid "[modified]"
 msgstr "[diubah]"
 
-#: ../Pyblio/GnomeUI/Document.py:452
+#: Pyblio/GnomeUI/Document.py:443
 #, python-format
 msgid "view limited to: %s"
 msgstr "tampilan terbatas pada: %s"
 
-#: ../Pyblio/GnomeUI/Document.py:465
-msgid ""
-"The database has been modified.\n"
-"Discard changes?"
-msgstr ""
-"Basis data telah dimodifikasi.\n"
-"Buang perubahan?"
-
-#: ../Pyblio/GnomeUI/Document.py:469
+#: Pyblio/GnomeUI/Document.py:457
 msgid ""
 "The database has been modified.\n"
 "Save changes?"
@@ -305,7 +339,7 @@ msgstr ""
 "Basis data telah dimodifikasi.\n"
 "Simpan perubahan?"
 
-#: ../Pyblio/GnomeUI/Document.py:490
+#: Pyblio/GnomeUI/Document.py:477
 msgid ""
 "The database has been externally modified.\n"
 "Overwrite changes?"
@@ -314,34 +348,34 @@ msgstr ""
 "Timpa perubahan?"
 
 #. no result.
-#: ../Pyblio/GnomeUI/Document.py:519
+#: Pyblio/GnomeUI/Document.py:506
 msgid "Your query returned no result"
 msgstr "Kueri Anda tidak menghasilkan apa-apa"
 
 #. error
-#: ../Pyblio/GnomeUI/Document.py:523
+#: Pyblio/GnomeUI/Document.py:510
 msgid "An error occurred during Medline Query"
 msgstr "Terjadi kesalahan saat Kueri Medline"
 
 #. get a new file name
-#: ../Pyblio/GnomeUI/Document.py:533
+#: Pyblio/GnomeUI/Document.py:520
 msgid "Merge file"
 msgstr "Gabungkan berkas"
 
-#: ../Pyblio/GnomeUI/Document.py:546 ../Pyblio/GnomeUI/Document.py:633
+#: Pyblio/GnomeUI/Document.py:534 Pyblio/GnomeUI/Document.py:622
 msgid "Open error"
 msgstr "Buka kesalahan"
 
-#: ../Pyblio/GnomeUI/Document.py:570
+#: Pyblio/GnomeUI/Document.py:558
 msgid "Merge status"
 msgstr "Gabungkan status"
 
 #. get a new file name
-#: ../Pyblio/GnomeUI/Document.py:581
+#: Pyblio/GnomeUI/Document.py:569
 msgid "Open file"
 msgstr "Buka berkas"
 
-#: ../Pyblio/GnomeUI/Document.py:619
+#: Pyblio/GnomeUI/Document.py:608
 msgid ""
 "An autosave file was found which is newer than the original file.\n"
 "Do you want to restore it?"
@@ -349,17 +383,17 @@ msgstr ""
 "Berkas simpan otomatis ditemukan yang lebih baru dari berkas aslinya.\n"
 "Apakah kamu ingin mengembalikannya?"
 
-#: ../Pyblio/GnomeUI/Document.py:654 ../Pyblio/GnomeUI/Document.py:795
-#: ../Pyblio/GnomeUI/Document.py:855
+#: Pyblio/GnomeUI/Document.py:643 Pyblio/GnomeUI/Document.py:786
+#: Pyblio/GnomeUI/Document.py:846
 #, python-format
 msgid ""
-"Unable to remove autosave file `%s':\n"
+"Unable to remove autosave file “%s”:\n"
 "%s"
 msgstr ""
-"Tidak dapat menghapus berkas simpan otomatis `%s':\n"
+"Tidak dapat menghapus berkas simpan otomatis \"%s\":\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:705
+#: Pyblio/GnomeUI/Document.py:694
 #, python-format
 msgid ""
 "Error during autosaving:\n"
@@ -368,37 +402,38 @@ msgstr ""
 "Kesalahan saat melakukan simpan otomatis:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:733
+#: Pyblio/GnomeUI/Document.py:722
 #, python-format
 msgid ""
-"Unable to save `%s':\n"
+"Unable to save “%s”:\n"
 "%s"
 msgstr ""
-"Tidak dapat menyimpan `%s':\n"
+"Tidak dapat menyimpan \"%s\":\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:741
+#: Pyblio/GnomeUI/Document.py:730
 msgid ""
 "An internal error occurred during saving\n"
-"Try to Save As..."
+"Try to Save As…"
 msgstr ""
 "Kesalahan internal terjadi saat menyimpan\n"
-"Coba Simpan Sebagai..."
+"Coba Simpan Sebagai…"
 
-#: ../Pyblio/GnomeUI/Document.py:756
-msgid "Save As..."
+#. get a new file name
+#: Pyblio/GnomeUI/Document.py:744
+msgid "Save As…"
 msgstr "Simpan Sebagai…"
 
-#: ../Pyblio/GnomeUI/Document.py:762
+#: Pyblio/GnomeUI/Document.py:753
 #, python-format
 msgid ""
-"The file `%s' already exists.\n"
+"The file “%s” already exists.\n"
 "Overwrite it?"
 msgstr ""
-"Berkas '%s' sudah ada.\n"
-"Menimpanya?"
+"Berkas \"%s\" sudah ada.\n"
+"Ditimpa?"
 
-#: ../Pyblio/GnomeUI/Document.py:769
+#: Pyblio/GnomeUI/Document.py:760
 #, python-format
 msgid ""
 "During opening:\n"
@@ -407,226 +442,226 @@ msgstr ""
 "Saat membuka:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:807
+#: Pyblio/GnomeUI/Document.py:798
 msgid "Reopen error"
 msgstr "Membuka kembali kesalahan"
 
-#: ../Pyblio/GnomeUI/Document.py:880
+#: Pyblio/GnomeUI/Document.py:871
 #, python-format
 msgid ""
-"An entry called `%s' already exists.\n"
+"An entry called “%s” already exists.\n"
 "Rename and add it anyway?"
 msgstr ""
-"Entri bernama '%s' sudah ada.\n"
+"Entri bernama \"%s\" sudah ada.\n"
 "Ganti nama dan tambahkan saja?"
 
-#: ../Pyblio/GnomeUI/Document.py:917
+#: Pyblio/GnomeUI/Document.py:908
 msgid "Really remove all the entries?"
 msgstr "Benar-benar menghapus semua entri?"
 
-#: ../Pyblio/GnomeUI/Document.py:937
+#: Pyblio/GnomeUI/Document.py:928
 msgid "Create new entry"
 msgstr "Buat entri baru"
 
-#: ../Pyblio/GnomeUI/Document.py:951
+#: Pyblio/GnomeUI/Document.py:942
 #, python-format
 msgid "Really edit %d entries?"
 msgstr "Benar-benar menyunting %d entri?"
 
-#: ../Pyblio/GnomeUI/Document.py:998
+#: Pyblio/GnomeUI/Document.py:989
 #, python-format
 msgid "Remove all the %d entries?"
 msgstr "Hapus semua entri %d?"
 
-#: ../Pyblio/GnomeUI/Document.py:1000
+#: Pyblio/GnomeUI/Document.py:991
 #, python-format
-msgid "Remove entry `%s'?"
-msgstr "Hapus entri '%s'?"
+msgid "Remove entry “%s”?"
+msgstr "Hapus entri \"%s\"?"
 
-#: ../Pyblio/GnomeUI/Document.py:1019
+#: Pyblio/GnomeUI/Document.py:1010
 msgid ""
 "your search text must contain\n"
 "latin-1 characters only"
 msgstr ""
-"Teks pencarian Anda harus berisi\n"
+"teks pencarian Anda harus berisi\n"
 "hanya karakter latin-1 saja"
 
-#: ../Pyblio/GnomeUI/Document.py:1098 ../Pyblio/GnomeUI/Document.py:1106
+#: Pyblio/GnomeUI/Document.py:1089 Pyblio/GnomeUI/Document.py:1097
 #, python-format
 msgid ""
-"Can't connect to LyX:\n"
+"Can’t connect to LyX:\n"
 "%s"
 msgstr ""
-"Tak dapat terhubung ke LyX:\n"
+"Tak dapat menyambung ke LyX:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:1222
+#: Pyblio/GnomeUI/Document.py:1156
+msgid "Select a column to search in first"
+msgstr "Pilih kolom untuk dicari terlebih dahulu"
+
+#: Pyblio/GnomeUI/Document.py:1168
+#, python-format
+msgid "Searching for “%s”…"
+msgstr "Mencari \"%s\"…"
+
+#: Pyblio/GnomeUI/Document.py:1172
+#, python-format
+msgid "Cannot find “%s”…"
+msgstr "Tidak dapat menemukan \"%s\"…"
+
+#: Pyblio/GnomeUI/Document.py:1203
 #, python-format
 msgid ""
-"Can't display documentation:\n"
+"Can’t display documentation:\n"
 "%s"
 msgstr ""
 "Tak dapat menampilkan dokumentasi:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Document.py:1230
-msgid "This program is copyrighted under the GNU GPL"
-msgstr "Program ini dilindungi hak cipta di bawah GNU GPL"
-
-#: ../Pyblio/GnomeUI/Document.py:1231
-msgid "GNOME interface to the Pybliographer system."
-msgstr "Antarmuka GNOME ke sistem Pybliographer."
-
-#: ../Pyblio/GnomeUI/Document.py:1242
+#: Pyblio/GnomeUI/Document.py:1225
 msgid "GNOME Translation Team"
 msgstr "Tim Translasi GNOME"
 
-#: ../Pyblio/GnomeUI/Document.py:1247
+#: Pyblio/GnomeUI/Document.py:1226
+msgid "This program is copyrighted under the GNU GPL"
+msgstr "Program ini dilindungi hak cipta di bawah GNU GPL"
+
+#: Pyblio/GnomeUI/Document.py:1227
+msgid "GNOME interface to the Pybliographer system."
+msgstr "Antarmuka GNOME ke sistem Pybliographer."
+
+#: Pyblio/GnomeUI/Document.py:1233
 msgid "Pybliographer Home Page"
 msgstr "Laman Utama Pybliographer"
 
-#: ../Pyblio/GnomeUI/Editor.py:35
+#: Pyblio/GnomeUI/Editor.py:41
 msgid "Last Name, First Name"
 msgstr "Nama Belakang, Nama Depan"
 
-#: ../Pyblio/GnomeUI/Editor.py:36 ../Pyblio/GnomeUI/Editor.py:1292
-#: ../Pyblio/GnomeUI/Fields.py:39 ../Pyblio/GnomeUI/glade/config1.glade.h:10
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:9
+#: Pyblio/GnomeUI/Editor.py:42 Pyblio/GnomeUI/Editor.py:1292
+#: Pyblio/GnomeUI/Fields.py:42
 msgid "Text"
 msgstr "Teks"
 
-#: ../Pyblio/GnomeUI/Editor.py:133 ../Pyblio/GnomeUI/Editor.py:1003
+#: Pyblio/GnomeUI/Editor.py:139 Pyblio/GnomeUI/Editor.py:1006
 msgid "Error in native string parsing"
 msgstr "Kesalahan dalam mengurai string asli"
 
-#: ../Pyblio/GnomeUI/Editor.py:312
+#: Pyblio/GnomeUI/Editor.py:318
 msgid "Day"
 msgstr "Hari"
 
-#: ../Pyblio/GnomeUI/Editor.py:321
+#: Pyblio/GnomeUI/Editor.py:327
 msgid "Month"
 msgstr "Bulan"
 
-#: ../Pyblio/GnomeUI/Editor.py:330
+#: Pyblio/GnomeUI/Editor.py:336
 msgid "Year"
 msgstr "Tahun"
 
-#: ../Pyblio/GnomeUI/Editor.py:355
-msgid "Invalid day field in date"
-msgstr "Ruas hari tidak valid pada tanggal"
-
-#: ../Pyblio/GnomeUI/Editor.py:363
-msgid "Invalid month field in date"
-msgstr "Ruas bulan tidak valid pada tanggal"
-
-#: ../Pyblio/GnomeUI/Editor.py:371
-msgid "Invalid year field in date"
-msgstr "Ruas tahun tidak valid pada tanggal"
-
 #. A delete button
-#: ../Pyblio/GnomeUI/Editor.py:419 ../Pyblio/GnomeUI/Search.py:86
+#: Pyblio/GnomeUI/Editor.py:425 Pyblio/GnomeUI/Search.py:86
 msgid "Delete"
 msgstr "Hapus"
 
-#: ../Pyblio/GnomeUI/Editor.py:430 ../Pyblio/GnomeUI/Editor.py:443
-#: ../Pyblio/GnomeUI/Editor.py:446
+#: Pyblio/GnomeUI/Editor.py:436 Pyblio/GnomeUI/Editor.py:449
+#: Pyblio/GnomeUI/Editor.py:452
 msgid "[ Drop an Entry here ]"
-msgstr "[Jatuhkan Entri di sini]"
+msgstr "[ Jatuhkan Entri di sini ]"
 
-#: ../Pyblio/GnomeUI/Editor.py:502
-msgid "Browse..."
-msgstr "Telusur..."
+#: Pyblio/GnomeUI/Editor.py:508
+msgid "Browse…"
+msgstr "Telusur…"
 
-#: ../Pyblio/GnomeUI/Editor.py:525
+#: Pyblio/GnomeUI/Editor.py:531
 msgid "Select file"
 msgstr "Pilih berkas"
 
-#: ../Pyblio/GnomeUI/Editor.py:549 ../Pyblio/GnomeUI/Fields.py:236
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:12
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:11
+#: Pyblio/GnomeUI/Editor.py:555 Pyblio/GnomeUI/Fields.py:239
+#: Pyblio/GnomeUI/glade/fields.ui:255
 msgid "Entry type"
 msgstr "Tipe entri"
 
-#: ../Pyblio/GnomeUI/Editor.py:551
+#: Pyblio/GnomeUI/Editor.py:557
 msgid "Key"
 msgstr "Kunci"
 
-#: ../Pyblio/GnomeUI/Editor.py:600
+#: Pyblio/GnomeUI/Editor.py:606
 msgid "Create Field"
 msgstr "Buat Ruas"
 
 #. navigation buttons
-#: ../Pyblio/GnomeUI/Editor.py:605
+#: Pyblio/GnomeUI/Editor.py:611
 msgid "Back"
 msgstr "Kembali"
 
-#: ../Pyblio/GnomeUI/Editor.py:608
+#: Pyblio/GnomeUI/Editor.py:614
 msgid "Next"
 msgstr "Selanjutnya"
 
-#: ../Pyblio/GnomeUI/Editor.py:728 ../Pyblio/GnomeUI/Fields.py:451
+#: Pyblio/GnomeUI/Editor.py:732 Pyblio/GnomeUI/Fields.py:449
 msgid "Mandatory"
 msgstr "Wajib"
 
-#: ../Pyblio/GnomeUI/Editor.py:728 ../Pyblio/GnomeUI/Fields.py:452
+#: Pyblio/GnomeUI/Editor.py:732 Pyblio/GnomeUI/Fields.py:450
 msgid "Optional"
 msgstr "Opsional"
 
-#: ../Pyblio/GnomeUI/Editor.py:728 ../Pyblio/GnomeUI/Editor.py:1207
+#: Pyblio/GnomeUI/Editor.py:732 Pyblio/GnomeUI/Editor.py:1209
 msgid "Notes"
 msgstr "Catatan"
 
-#: ../Pyblio/GnomeUI/Editor.py:728
+#: Pyblio/GnomeUI/Editor.py:732
 msgid "Extra"
 msgstr "Ekstra"
 
-#: ../Pyblio/GnomeUI/Editor.py:909
+#: Pyblio/GnomeUI/Editor.py:911
 msgid "Invalid key format"
 msgstr "Format kunci tidak valid"
 
-#: ../Pyblio/GnomeUI/Editor.py:917
+#: Pyblio/GnomeUI/Editor.py:920
 #, python-format
-msgid "Key `%s' already exists"
-msgstr "Kunci '%s' sudah ada"
+msgid "Key “%s” already exists"
+msgstr "Kunci \"%s\" sudah ada"
 
-#: ../Pyblio/GnomeUI/Editor.py:934
+#: Pyblio/GnomeUI/Editor.py:937
 #, python-format
-msgid "The `%s' field contains a non Latin-1 symbol"
-msgstr "Ruas '%s' berisi simbol non Latin-1"
+msgid "The “%s” field contains a non Latin-1 symbol"
+msgstr "Ruas \"%s\" berisi simbol non Latin-1"
 
-#: ../Pyblio/GnomeUI/Editor.py:996
+#: Pyblio/GnomeUI/Editor.py:1000
 msgid "Your text contains non Latin-1 symbols"
 msgstr "Teks Anda berisi simbol non Latin-1"
 
-#: ../Pyblio/GnomeUI/Editor.py:1023
+#: Pyblio/GnomeUI/Editor.py:1026
 msgid "Edit entry"
 msgstr "Sunting entri"
 
-#: ../Pyblio/GnomeUI/Editor.py:1037 ../Pyblio/GnomeUI/Editor.py:1102
+#: Pyblio/GnomeUI/Editor.py:1040 Pyblio/GnomeUI/Editor.py:1104
 msgid "Native Editing"
 msgstr "Penyunting Asli"
 
-#: ../Pyblio/GnomeUI/Editor.py:1125
+#: Pyblio/GnomeUI/Editor.py:1127
 msgid "Standard Editing"
 msgstr "Penyunting Standar"
 
-#: ../Pyblio/GnomeUI/Editor.py:1229
+#: Pyblio/GnomeUI/Editor.py:1230
 msgid "mandatory"
 msgstr "wajib"
 
-#: ../Pyblio/GnomeUI/Editor.py:1295
+#: Pyblio/GnomeUI/Editor.py:1295
 msgid "Enter text here"
 msgstr "Masukkan teks di sini"
 
-#: ../Pyblio/GnomeUI/Editor.py:1347
+#: Pyblio/GnomeUI/Editor.py:1347
 msgid "New Annotation Name"
 msgstr "Nama Anotasi Baru"
 
-#: ../Pyblio/GnomeUI/Editor.py:1353
+#: Pyblio/GnomeUI/Editor.py:1353
 msgid "Name of the new annotation:"
 msgstr "Nama anotasi baru:"
 
-#: ../Pyblio/GnomeUI/Entry.py:114
+#: Pyblio/GnomeUI/Entry.py:115
 #, python-format
 msgid ""
 "Cannot open URL:\n"
@@ -635,77 +670,73 @@ msgstr ""
 "Tidak dapat membuka URL:\n"
 "%s"
 
-#: ../Pyblio/GnomeUI/Fields.py:38
+#: Pyblio/GnomeUI/Fields.py:41
 msgid "Authors"
 msgstr "Penulis"
 
-#: ../Pyblio/GnomeUI/Fields.py:40
+#: Pyblio/GnomeUI/Fields.py:43
 msgid "Long Text"
 msgstr "Teks Panjang"
 
-#: ../Pyblio/GnomeUI/Fields.py:41 ../Pyblio/GnomeUI/glade/config1.glade.h:9
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:8
+#: Pyblio/GnomeUI/Fields.py:44
 msgid "URL"
 msgstr "URL"
 
-#: ../Pyblio/GnomeUI/Fields.py:42
+#: Pyblio/GnomeUI/Fields.py:45
 msgid "Reference"
 msgstr "Referensi"
 
-#: ../Pyblio/GnomeUI/Fields.py:43
+#: Pyblio/GnomeUI/Fields.py:46
 msgid "Date"
 msgstr "Tanggal"
 
-#: ../Pyblio/GnomeUI/Fields.py:124 ../Pyblio/GnomeUI/glade/config1.glade.h:7
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:6
+#: Pyblio/GnomeUI/Fields.py:123
 msgid "Name"
 msgstr "Nama"
 
-#: ../Pyblio/GnomeUI/Fields.py:127 ../Pyblio/GnomeUI/glade/config1.glade.h:6
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:5
+#: Pyblio/GnomeUI/Fields.py:126 Pyblio/GnomeUI/glade/fields.ui:167
 msgid "Type"
 msgstr "Tipe"
 
-#: ../Pyblio/GnomeUI/Fields.py:300
+#: Pyblio/GnomeUI/Fields.py:303
 msgid "Available"
 msgstr "Tersedia"
 
-#: ../Pyblio/GnomeUI/Fields.py:310
+#: Pyblio/GnomeUI/Fields.py:313
 msgid "Associated"
 msgstr "Terkait"
 
-#: ../Pyblio/GnomeUI/Fields.py:321
+#: Pyblio/GnomeUI/Fields.py:321
 msgid "Please, select an entry type from previous page."
 msgstr "Silahkan pilih jenis entri dari halaman sebelumnya."
 
-#: ../Pyblio/GnomeUI/Fields.py:332
+#: Pyblio/GnomeUI/Fields.py:332
 #, python-format
 msgid "Fields associated with <b>%s</b> entry type"
 msgstr "Ruas yang terkait dengan tipe entri <b>%s</b>"
 
-#: ../Pyblio/GnomeUI/FileSelector.py:39
+#: Pyblio/GnomeUI/FileSelector.py:37
 msgid "File"
 msgstr "Berkas"
 
-#: ../Pyblio/GnomeUI/FileSelector.py:76
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:4
+#: Pyblio/GnomeUI/FileSelector.py:74 Pyblio/GnomeUI/glade/openurl.ui:101
 msgid "Bibliography type:"
-msgstr "Tipe Bibliografi"
+msgstr "Tipe Bibliografi:"
 
-#: ../Pyblio/GnomeUI/FileSelector.py:93 ../Pyblio/GnomeUI/OpenURL.py:61
-msgid " - According to file suffix - "
+#: Pyblio/GnomeUI/FileSelector.py:91 Pyblio/GnomeUI/OpenURL.py:61
+msgid " — According to file suffix — "
 msgstr " - Menurut akhiran berkas - "
 
 #. The root of the search tree is the full database
-#: ../Pyblio/GnomeUI/Search.py:71
+#: Pyblio/GnomeUI/Search.py:68
 msgid "Full database"
 msgstr "Basis data lengkap"
 
-#: ../Pyblio/GnomeUI/Search.py:142
+#: Pyblio/GnomeUI/Search.py:136
 msgid "internal error during evaluation"
-msgstr "Kesalahan internal selama evaluasi"
+msgstr "galat internal selama evaluasi"
 
-#: ../Pyblio/GnomeUI/Search.py:196
+#: Pyblio/GnomeUI/Search.py:189
 #, python-format
 msgid ""
 "while compiling %s\n"
@@ -715,86 +746,44 @@ msgstr ""
 "kesalahan: %s"
 
 #. These are additional search fields
-#: ../Pyblio/GnomeUI/Sort.py:97
+#: Pyblio/GnomeUI/Sort.py:97
 msgid "[Entry Type]"
 msgstr "[Tipe Entri]"
 
-#: ../Pyblio/GnomeUI/Sort.py:98
+#: Pyblio/GnomeUI/Sort.py:98
 msgid "[Key Value]"
 msgstr "[Nilai Kunci]"
 
-#: ../Pyblio/GnomeUI/Utils.py:203
-msgid "The following errors occurred:\n"
-msgstr "Kesalahan berikut terjadi:\n"
+#: Pyblio/GnomeUI/Utils.py:170
+msgid "The following errors occurred:"
+msgstr "Kesalahan berikut terjadi:"
 
-#: ../Pyblio/GnomeUI/__init__.py:45
+#: Pyblio/GnomeUI/__init__.py:48
 #, python-format
 msgid "This is Pybliographic %s [Python %s, Gtk %s, PyGTK %s]"
 msgstr "Ini adalah Pybliographic %s [Python %s, Gtk %s, PyGTK %s]"
 
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:1
+#: Pyblio/GnomeUI/glade/config.ui:7
 msgid "Pybliographer Configuration"
 msgstr "Konfigurasi Pybliographer"
 
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:2
-msgid "FIELDS DEFINITION"
-msgstr "DEFINISI RUAS"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:3
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:2
-msgid "Name "
-msgstr "Nama "
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:4
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:3
-msgid "Editor"
-msgstr "Penyunting"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:5
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:4
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:5
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:3
-#: ../Pyblio/GnomeUI/glade/search.glade.h:5
-msgid "*"
-msgstr "*"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:8
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:7
-msgid "Datum"
-msgstr "Datum"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:11
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:10
-msgid "Fields "
-msgstr "Ruas "
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:13
-msgid "A"
-msgstr "A"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:14
-msgid "standard fields"
-msgstr "ruas standar"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:15
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:19
-msgid "Entries"
-msgstr "Entri"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:16
-msgid "<b>Entry type</b>"
-msgstr "<b>Tipe entri</b>"
-
-#: ../Pyblio/GnomeUI/glade/config1.glade.h:17
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:21
-msgid "Association"
-msgstr "Asosiasi"
-
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:1
+#: Pyblio/GnomeUI/glade/fields.ui:9
 msgid "Entry types and field names configuration"
 msgstr "Jenis entri dan konfigurasi nama ruas"
 
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:12
+#: Pyblio/GnomeUI/glade/fields.ui:137
+msgid "Name "
+msgstr "Nama "
+
+#: Pyblio/GnomeUI/glade/fields.ui:149
+msgid "Editor"
+msgstr "Penyunting"
+
+#: Pyblio/GnomeUI/glade/fields.ui:211
+msgid "Fields "
+msgstr "Ruas "
+
+#: Pyblio/GnomeUI/glade/fields.ui:286
 msgid ""
 "Select an entry type and specify \n"
 "its associated (mandatory and\n"
@@ -808,43 +797,47 @@ msgstr ""
 "pada halaman berikutnya.\n"
 "\n"
 
-#: ../Pyblio/GnomeUI/glade/fields1.glade.h:20
+#: Pyblio/GnomeUI/glade/fields.ui:318
+msgid "Entries"
+msgstr "Entri"
+
+#: Pyblio/GnomeUI/glade/fields.ui:341
 msgid "Information for <b>Article</b> entry type"
 msgstr "Informasi untuk tipe entri <b>Artikel</b>"
 
-#: ../Pyblio/GnomeUI/glade/format.glade.h:1
+#: Pyblio/GnomeUI/glade/fields.ui:420
+msgid "Association"
+msgstr "Asosiasi"
+
+#: Pyblio/GnomeUI/glade/format.ui:7
 msgid "Format entries"
 msgstr "Entri format"
 
-#: ../Pyblio/GnomeUI/glade/format.glade.h:2
+#: Pyblio/GnomeUI/glade/format.ui:75
 msgid "Bibliography style:"
 msgstr "Gaya bibliografi:"
 
-#: ../Pyblio/GnomeUI/glade/format.glade.h:3
+#: Pyblio/GnomeUI/glade/format.ui:87
 msgid "Output format:"
 msgstr "Format keluaran:"
 
-#: ../Pyblio/GnomeUI/glade/format.glade.h:4
-msgid "Style Selection"
-msgstr "Seleksi Gaya"
-
-#: ../Pyblio/GnomeUI/glade/format.glade.h:5
-msgid "Save Formatted as"
-msgstr "Simpan Format sebagai"
-
-#: ../Pyblio/GnomeUI/glade/format.glade.h:6
+#: Pyblio/GnomeUI/glade/format.ui:101
 msgid "Output file:"
 msgstr "Berkas keluaran:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:1
+#: Pyblio/GnomeUI/glade/format.ui:125
+msgid "Save formatted as"
+msgstr "Simpan terformat sebagai"
+
+#: Pyblio/GnomeUI/glade/medline.ui:7
 msgid "Medline Query"
 msgstr "Kueri Medline"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:2
+#: Pyblio/GnomeUI/glade/medline.ui:70
 msgid "Enter your Medline Query"
 msgstr "Masukkan Kueri Medline Anda"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:3
+#: Pyblio/GnomeUI/glade/medline.ui:89
 msgid ""
 "Search \n"
 "PubMed for:"
@@ -852,7 +845,7 @@ msgstr ""
 "Cari \n"
 "PubMed untuk:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:6
+#: Pyblio/GnomeUI/glade/medline.ui:118
 msgid ""
 "Maximum number\n"
 "of results:"
@@ -860,7 +853,7 @@ msgstr ""
 "Jumlah hasil\n"
 "maksimal:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:8
+#: Pyblio/GnomeUI/glade/medline.ui:149
 msgid ""
 "Starting listing at\n"
 "result number:"
@@ -868,7 +861,7 @@ msgstr ""
 "Mulai daftar di\n"
 "nomor hasil:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:10
+#: Pyblio/GnomeUI/glade/medline.ui:216
 msgid ""
 "Only items \n"
 "with abstracts"
@@ -876,7 +869,7 @@ msgstr ""
 "Hanya item \n"
 "dengan abstrak"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:12
+#: Pyblio/GnomeUI/glade/medline.ui:233
 msgid ""
 "Only items \n"
 "ahead of print"
@@ -884,15 +877,15 @@ msgstr ""
 "Hanya item \n"
 "di depan cetak"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:14
+#: Pyblio/GnomeUI/glade/medline.ui:385
 msgid "From:"
 msgstr "Dari:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:15
+#: Pyblio/GnomeUI/glade/medline.ui:412
 msgid "To:"
 msgstr "Ke:"
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:16
+#: Pyblio/GnomeUI/glade/medline.ui:446
 msgid ""
 "Use the format YYYY/MM/DD\n"
 "Month and day are optional."
@@ -900,129 +893,81 @@ msgstr ""
 "Gunakan format YYYY/MM/DD\n"
 "Bulan dan hari opsional."
 
-#: ../Pyblio/GnomeUI/glade/medline.glade.h:18
+#: Pyblio/GnomeUI/glade/medline.ui:461
 msgid "Limited to:"
 msgstr "Terbatas pada:"
 
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:1
+#: Pyblio/GnomeUI/glade/openurl.ui:8
 msgid "Open Location"
 msgstr "Buka Lokasi"
 
-#: ../Pyblio/GnomeUI/glade/openurl.glade.h:2
+#: Pyblio/GnomeUI/glade/openurl.ui:68
 msgid "Enter the location (URI) of the file you would like to open:"
 msgstr "Masukkan lokasi (URI) dari berkas yang ingin Anda buka:"
 
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:1
-msgid "Pybliographer"
-msgstr "Pybliographer"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:2
-msgid "_New"
-msgstr "_Baru"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:5
-msgid "Previous Documents"
-msgstr "Dokumen Sebelumnya"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:6
-msgid "_Add..."
-msgstr "T_ambah..."
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:7
-msgid "_Edit..."
-msgstr "_Sunting..."
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:8
-msgid "_Delete..."
-msgstr "_Hapus..."
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:10
-msgid "Cite"
-msgstr "Kutip"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:13
-msgid "Settings"
-msgstr "Pengaturan"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:16
-msgid "Contents"
-msgstr "Konten"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:17
-msgid "Open File"
-msgstr "Buka Berkas"
-
-#: ../Pyblio/GnomeUI/glade/pyblio.glade.in.h:18
-msgid "Save File"
-msgstr "Gagal menyimpan berkas"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:1
+#: Pyblio/GnomeUI/glade/search.ui:7
 msgid "Search"
 msgstr "Cari"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:2
-msgid "Close"
-msgstr "Tutup"
-
-#: ../Pyblio/GnomeUI/glade/search.glade.h:3
+#: Pyblio/GnomeUI/glade/search.ui:81
 msgid "Field"
 msgstr "Ruas"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:4
+#: Pyblio/GnomeUI/glade/search.ui:93
 msgid "Pattern"
 msgstr "Pola"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:6
+#: Pyblio/GnomeUI/glade/search.ui:138
 msgid "Simple Search"
 msgstr "Pencarian Sederhana"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:7
+#: Pyblio/GnomeUI/glade/search.ui:156
 msgid "Query"
 msgstr "Kueri"
 
-#: ../Pyblio/GnomeUI/glade/search.glade.h:8
+#: Pyblio/GnomeUI/glade/search.ui:184
 msgid "Expert Search"
 msgstr "Pencarian Mahir"
 
-#: ../Pyblio/GnomeUI/glade/sort.glade.h:1
+#: Pyblio/GnomeUI/glade/sort.ui:7
 msgid "Select sort criteria"
 msgstr "Pilih kriteria sortir"
 
-#: ../Pyblio/GnomeUI/glade/sort.glade.h:2
+#: Pyblio/GnomeUI/glade/sort.ui:40
 msgid "Set as default"
 msgstr "Atur sebagai bawaan"
 
-#: ../Pyblio/LyX.py:37
+#: Pyblio/LyX.py:43
 #, python-format
-msgid "no input pipe `%s'"
-msgstr "tidak ada pipa masukan '%s'"
+msgid "no input pipe “%s”"
+msgstr "tidak ada pipa masukan \"%s\""
 
-#: ../Pyblio/LyX.py:43
+#: Pyblio/LyX.py:50
 #, python-format
-msgid "no output pipe `%s'"
-msgstr "tidak ada pipa keluaran '%s'"
+msgid "no output pipe “%s”"
+msgstr "tidak ada pipa keluaran \"%s\""
 
-#: ../Pyblio/Open.py:96
+#: Pyblio/Open.py:99
 #, python-format
-msgid "method `%s' provides no opener"
-msgstr "metode '%s' tidak memberikan pembuka"
+msgid "method “%s” provides no opener"
+msgstr "metode \"%s\" tidak memberikan pembuka"
 
-#: ../Pyblio/Open.py:104 ../Pyblio/Open.py:151
+#: Pyblio/Open.py:107 Pyblio/Open.py:154
 #, python-format
-msgid "File `%s' does not exist"
-msgstr "Berkas '%s' tak ada"
+msgid "File “%s” does not exist"
+msgstr "Berkas \"%s\" tak ada"
 
-#: ../Pyblio/Open.py:115 ../Pyblio/Open.py:162
+#: Pyblio/Open.py:118 Pyblio/Open.py:165
 #, python-format
-msgid "don't know how to open `%s'"
-msgstr "tidak tahu cara membuka '%s'"
+msgid "don’t know how to open “%s”"
+msgstr "tidak tahu cara membuka \"%s\""
 
-#: ../Pyblio/Open.py:143
+#: Pyblio/Open.py:146
 #, python-format
-msgid "method `%s' provides no iterator"
-msgstr "metode '%s' tidak memberikan iterator"
+msgid "method “%s” provides no iterator"
+msgstr "metode \"%s\" tidak memberikan iterator"
 
-#: ../Pyblio/Resource.py:77
+#: Pyblio/Resource.py:86
 #, python-format
 msgid ""
 "Warning: This URL is marked as Invalid or Approximate: %s\n"
@@ -1031,16 +976,16 @@ msgstr ""
 "Peringatan: URL ini ditandai sebagai Tidak Valid atau Perkiraan: %s\n"
 "Lanjutkan?"
 
-#: ../Pyblio/Resource.py:81
-msgid "Determining Mime Type ... "
-msgstr "Menentukan Tipe Mime ... "
+#: Pyblio/Resource.py:91
+msgid "Determining Mime Type… "
+msgstr "Menentukan Tipe Mime… "
 
-#: ../Pyblio/Resource.py:86
+#: Pyblio/Resource.py:96
 #, python-format
 msgid "Cannot determine mime type for item %s "
 msgstr "Tidak dapat menentukan tipe mime untuk item %s "
 
-#: ../Pyblio/Resource.py:87
+#: Pyblio/Resource.py:97
 #, python-format
 msgid ""
 "URL in question is: %s\n"
@@ -1051,16 +996,16 @@ msgstr ""
 "Anda harus memeriksa url atau path yang diberikan untuk kesalahan.\n"
 "Rincian: %s"
 
-#: ../Pyblio/Resource.py:98
-msgid "Accessing resource ..."
-msgstr "Mengakses sumber daya ..."
+#: Pyblio/Resource.py:108
+msgid "Accessing resource…"
+msgstr "Mengakses sumber daya…"
 
-#: ../Pyblio/Resource.py:116
+#: Pyblio/Resource.py:126
 #, python-format
 msgid "IOError for item %s: cannot uncompress resource."
 msgstr "IOError untuk item %s: tidak dapat mengompres sumber daya."
 
-#: ../Pyblio/Resource.py:117
+#: Pyblio/Resource.py:127
 #, python-format
 msgid ""
 "URL: %s\n"
@@ -1069,15 +1014,15 @@ msgstr ""
 "URL: %s\n"
 "Rincian: %s"
 
-#: ../Pyblio/Resource.py:137
-msgid "Starting application ..."
-msgstr "Memulai aplikasi ..."
+#: Pyblio/Resource.py:148
+msgid "Starting application…"
+msgstr "Memulai aplikasi…"
 
-#: ../Pyblio/Resource.py:140
+#: Pyblio/Resource.py:151
 msgid "No application to view resource"
 msgstr "Tidak ada aplikasi untuk melihat sumber daya"
 
-#: ../Pyblio/Resource.py:141
+#: Pyblio/Resource.py:152
 #, python-format
 msgid ""
 "For mime type %s, no entry found in \n"
@@ -1090,45 +1035,45 @@ msgstr ""
 "Mohon pertimbangkan untuk menambahkannya.\n"
 "URL: %s"
 
-#: ../Pyblio/Style/Parser.py:261
+#: Pyblio/Style/Parser.py:263
 #, python-format
-msgid "missing '%s' attribute"
-msgstr "kehilangan atribut '%s'"
+msgid "missing “%s” attribute"
+msgstr "kehilangan atribut \"%s\""
 
-#: ../Pyblio/Style/Parser.py:271
+#: Pyblio/Style/Parser.py:273
 #, python-format
 msgid "invalid opening tag: %s"
 msgstr "tag pembuka tidak valid: %s"
 
-#: ../Pyblio/Style/Parser.py:281
+#: Pyblio/Style/Parser.py:283
 #, python-format
 msgid "invalid closing tag: %s"
 msgstr "tag penutup tidak valid: %s"
 
-#: ../pybliographer.py:43
-#, python-format
+#: pybliographer.in:44
+#, c-format
 msgid "This is %s, version %s"
 msgstr "Ini adalah %s, versi %s"
 
-#: ../pybliographer.py:47 ../pybliographer.py:54
+#: pybliographer.in:48 pybliographer.in:56
 msgid "This is free software with ABSOLUTELY NO WARRANTY."
 msgstr "Ini adalah perangkat lunak bebas dengan BENAR-BENAR TIDAK ADA GARANSI."
 
-#: ../pybliographer.py:48
-msgid "For details, type `warranty'."
-msgstr "Untuk rinciannya, ketik 'warranty'."
+#: pybliographer.in:49
+msgid "For details, type “warranty”."
+msgstr "Untuk rinciannya, ketik \"warranty\"."
 
-#: ../pybliographer.py:111 ../pybliographer.py:163
-#, python-format
-msgid "%s: error: can't open file `%s'"
-msgstr "%s: kesalahan: tak bisa membuka berkas '%s'"
+#: pybliographer.in:113 pybliographer.in:165
+#, c-format
+msgid "%s: error: can’t open file “%s”"
+msgstr "%s: galat: tak bisa membuka berkas \"%s\""
 
-#: ../pybliographer.py:124
-#, python-format
-msgid "For help, run %s and type `help' at the prompt"
-msgstr "Untuk bantuan, jalankan %s dan ketik 'help' pada prompt"
+#: pybliographer.in:126
+#, c-format
+msgid "For help, run %s and type “help” at the prompt"
+msgstr "Untuk bantuan, jalankan %s dan ketik \"help\" pada prompt"
 
-#: ../pybliographer.py:133
+#: pybliographer.in:135
 msgid ""
 "Useful commands:\n"
 "\thelp     to get some help\n"
@@ -1138,57 +1083,46 @@ msgstr ""
 "\thelp     untuk mendapatkan bantuan\n"
 "\tquit     untuk keluar\n"
 
-#. save history
-#: ../pybliographic.desktop.in.h:1
-msgid "Pybliographic Bibliography Manager"
-msgstr "Manajer Pybliographic Bibliography"
+#: scripts/pybliocheck.py:39
+msgid "usage: pybliocheck <file | directory>…"
+msgstr "penggunaan: pybliocheck <berkas | direktori>…"
 
-#: ../pybliographic.desktop.in.h:2
-msgid "Bibliography Manager"
-msgstr "Manajer Bibliografi"
-
-#: ../pybliographic.desktop.in.h:3
-msgid "Manage bibliographic databases"
-msgstr "Kelola basis data bibliografi"
-
-#: ../scripts/pybliocheck.py:31
-msgid "usage: pybliocheck <file | directory>..."
-msgstr "penggunaan: pybliocheck <file | directory>..."
-
-#: ../scripts/pybliocheck.py:60
+#: scripts/pybliocheck.py:68
 #, python-format
-msgid "file `%s' is ok [%d entries]"
-msgstr "berkas '%s' ok [%d entri]"
+msgid "file “%s” is ok [%d entry]"
+msgid_plural "file “%s” is ok [%d entries]"
+msgstr[0] "berkas \"%s\" ok [%d entri]"
+msgstr[1] "berkas \"%s\" ok [%d entri]"
 
-#: ../scripts/pybliocompact.py:30
-msgid "usage: pybliocompact <latexfile> <bibtexfiles...>"
-msgstr "penggunaan: pybliocompact <latexfile> <bibtexfiles...>"
+#: scripts/pybliocompact.py:39
+msgid "usage: pybliocompact <latexfile> <bibtexfiles…>"
+msgstr "penggunaan: pybliocompact <latexfile> <bibtexfiles…>"
 
-#: ../scripts/pybliocompact.py:34
+#: scripts/pybliocompact.py:43
 #, python-format
 msgid "pybliocompact: error: %s\n"
 msgstr "pybliocompact: kesalahan: %s\n"
 
-#: ../scripts/pybliocompact.py:99
+#: scripts/pybliocompact.py:108
 msgid "no entry"
 msgstr "tidak ada entri"
 
-#: ../scripts/pybliocompact.py:162 ../scripts/pybliotext.py:240
+#: scripts/pybliocompact.py:171 scripts/pybliotext.py:247
 #, python-format
-msgid "can't find the following entries: %s"
+msgid "can’t find the following entries: %s"
 msgstr "tak dapat menemukan entri berikut: %s"
 
-#: ../scripts/pyblioconvert.py:29
+#: scripts/pyblioconvert.py:32
 msgid "usage: pyblioconvert <source>..<target> <input> [output]"
 msgstr "penggunaan: pyblioconvert <source>..<target> <input> [output]"
 
-#: ../scripts/pyblioconvert.py:38
+#: scripts/pyblioconvert.py:41
 msgid "pyblioconvert: error: bad conversion format"
 msgstr "pyblioconvert: kesalahan: format konversi yang buruk"
 
-#: ../scripts/pyblioformat.py:34
+#: scripts/pyblioformat.py:40
 msgid ""
-"usage: pyblioformat [options] <database...>\n"
+"usage: pyblioformat [options] <database…>\n"
 "\n"
 "    options:\n"
 "      -o file, --output=file\t\tspecify an output filename\n"
@@ -1200,11 +1134,11 @@ msgid ""
 "      -h, --help\t\t\tshow this help message\n"
 "    "
 msgstr ""
-"penggnaan: pyblioformat [options] <database...>\n"
+"penggunaan: pyblioformat [options] <basis data…>\n"
 "\n"
 "    opsi:\n"
-"      -o file, --output=file\tmenentukan nama berkas keluaran\n"
-"      -s style, --style=style\tmenentukan gaya bibliografi\n"
+"      -o berkas, --output=berkas\tmenentukan nama berkas keluaran\n"
+"      -s gaya, --style=gaya\tmenentukan gaya bibliografi\n"
 "      -f format, --format=format\tmenentukan format keluaran\n"
 "      -H header, --header=header\tmendefinisikan berkas header\n"
 "      -F footer, --footer=footer\tmendefinisikan berkas footer\n"
@@ -1212,137 +1146,137 @@ msgstr ""
 "      -h, --help\t\t\ttampilkan pesan bantuan ini\n"
 "    "
 
-#: ../scripts/pyblioformat.py:48
+#: scripts/pyblioformat.py:54
 #, python-format
 msgid "pyblioformat: error: %s\n"
 msgstr "pyblioformat: kesalahan: %s\n"
 
-#: ../scripts/pyblioformat.py:54
+#: scripts/pyblioformat.py:60
 #, python-format
 msgid "pyblioformat: warning: %s\n"
 msgstr "pyblioformat: peringatan: %s\n"
 
-#: ../scripts/pyblioformat.py:93 ../scripts/pybliotext.py:252
-#: ../scripts/pybliotext.py:278 ../scripts/pybliotext.py:321
+#: scripts/pyblioformat.py:99 scripts/pybliotext.py:259
+#: scripts/pybliotext.py:285 scripts/pybliotext.py:328
 #, python-format
-msgid "can't open `%s': %s"
-msgstr "tidak dapat membuka '%s': %s"
+msgid "can’t open “%s”: %s"
+msgstr "tidak dapat membuka \"%s\": %s"
 
-#: ../scripts/pyblioformat.py:100
+#: scripts/pyblioformat.py:106
 #, python-format
-msgid "unknown list `%s'"
-msgstr "daftar tidak diketahui '%s'"
+msgid "unknown list “%s”"
+msgstr "daftar tidak diketahui \"%s\""
 
-#: ../scripts/pyblioformat.py:103
+#: scripts/pyblioformat.py:109
 #, python-format
-msgid "pyblioformat: available values for `%s':"
-msgstr "pyblioformat: nilai yang tersedia untuk '%s':"
+msgid "pyblioformat: available values for “%s”:"
+msgstr "pyblioformat: nilai yang tersedia untuk \"%s\":"
 
-#: ../scripts/pyblioformat.py:107
+#: scripts/pyblioformat.py:113
 #, python-format
-msgid "empty value list `%s'"
-msgstr "daftar nilai kosong '%s'"
+msgid "empty value list “%s”"
+msgstr "daftar nilai kosong \"%s\""
 
-#: ../scripts/pyblioformat.py:129
+#: scripts/pyblioformat.py:135
 msgid "too few arguments"
 msgstr "terlalu sedikit argumen"
 
-#: ../scripts/pyblioformat.py:136 ../scripts/pybliotext.py:117
+#: scripts/pyblioformat.py:142 scripts/pybliotext.py:124
 #, python-format
-msgid "unknown output format `%s'"
-msgstr "format keluaran tidak diketahui '%s'"
+msgid "unknown output format “%s”"
+msgstr "format keluaran tidak diketahui \"%s\""
 
-#: ../scripts/pyblioformat.py:149 ../scripts/pybliotex.py:86
-#: ../scripts/pybliotext.py:94
+#: scripts/pyblioformat.py:155 scripts/pybliotex.py:91
+#: scripts/pybliotext.py:101
 #, python-format
-msgid "can't find style `%s'"
-msgstr "tak dapat menemukan gaya '%s'"
+msgid "can’t find style “%s”"
+msgstr "tak dapat menemukan gaya \"%s\""
 
-#: ../scripts/pyblioformat.py:152
+#: scripts/pyblioformat.py:158
 #, python-format
-msgid "pyblioformat: using style `%s', format `%s'\n"
-msgstr "pyblioformat: mengunakan gaya '%s', format '%s'\n"
+msgid "pyblioformat: using style “%s”, format “%s”\n"
+msgstr "pyblioformat: mengunakan gaya \"%s\", format \"%s\"\n"
 
-#: ../scripts/pyblioformat.py:167
+#: scripts/pyblioformat.py:173
 #, python-format
-msgid "can't open header `%s': %s"
-msgstr "tak dapat membuka header '%s': %s"
+msgid "can’t open header “%s”: %s"
+msgstr "tak dapat membuka header \"%s\": %s"
 
-#: ../scripts/pyblioformat.py:175
+#: scripts/pyblioformat.py:181
 #, python-format
-msgid "can't open database: %s"
+msgid "can’t open database: %s"
 msgstr "tak dapat membuka basis data: %s"
 
-#: ../scripts/pyblioformat.py:190
+#: scripts/pyblioformat.py:196
 #, python-format
-msgid "can't open footer `%s': %s"
-msgstr "tak dapat membuka footer '%s': %s"
+msgid "can’t open footer “%s”: %s"
+msgstr "tak dapat membuka footer \"%s\": %s"
 
-#: ../scripts/pybliotex.py:34
-msgid "usage: pybliotex <latexfile> [bibtexfiles...]"
-msgstr "penggunaan: pybliotex <latexfile> [bibtexfiles...]"
+#: scripts/pybliotex.py:39
+msgid "usage: pybliotex <latexfile> [bibtexfiles…]"
+msgstr "penggunaan: pybliotex <latexfile> [bibtexfiles…]"
 
-#: ../scripts/pybliotex.py:38
+#: scripts/pybliotex.py:43
 #, python-format
 msgid "pybliotex: error: %s\n"
 msgstr "pybliotex: kesalahan: %s\n"
 
 #. warn the user that some entries were not found
-#: ../scripts/pybliotex.py:59
+#: scripts/pybliotex.py:64
 msgid "pybliotex: warning: the following keys were not resolved"
 msgstr "pybliotex: peringatan: kunci berikut tidak terselesaikan"
 
 #. If the LaTeX document declares no style...
-#: ../scripts/pybliotex.py:64
+#: scripts/pybliotex.py:69
 msgid "no style defined"
 msgstr "tidak ada gaya yang didefinisikan"
 
-#: ../scripts/pybliotext.py:41
-msgid "usage: pybliotext [-o outputfile] [-s style] <textfile> <bibfiles...>"
+#: scripts/pybliotext.py:48
+msgid "usage: pybliotext [-o outputfile] [-s style] <textfile> <bibfiles…>"
 msgstr ""
-"penggunaan: pybliotext [-o outputfile] [-s style] <textfile> <bibfiles...>"
+"penggunaan: pybliotext [-o berkasluaran] [-s gaya] <textfile> <bibfiles…>"
 
-#: ../scripts/pybliotext.py:45
+#: scripts/pybliotext.py:52
 #, python-format
 msgid "pybliotext: error: %s\n"
 msgstr "pybliotext: kesalahan: %s\n"
 
-#: ../scripts/pybliotext.py:50
+#: scripts/pybliotext.py:57
 #, python-format
 msgid "pybliotext: warning: %s\n"
 msgstr "pybliotext: peringatan: %s\n"
 
-#: ../scripts/pybliotext.py:124
+#: scripts/pybliotext.py:131
 #, python-format
-msgid "File already exists: `%s'"
-msgstr "Berkas sudah ada: '%s'"
+msgid "File already exists: “%s”"
+msgstr "Berkas sudah ada: \"%s\""
 
-#: ../scripts/pybliotext.py:127
+#: scripts/pybliotext.py:134
 #, python-format
-msgid "A file with the same name already exists: `%s'"
-msgstr "Berkas dengan nama yang sama sudah ada: '%s'"
+msgid "A file with the same name already exists: “%s”"
+msgstr "Berkas dengan nama yang sama sudah ada: \"%s\""
 
-#: ../scripts/pybliotext.py:178
+#: scripts/pybliotext.py:185
 msgid "no citation found"
 msgstr "tidak ada kutipan yang ditemukan"
 
-#: ../scripts/pybliotext.py:193
+#: scripts/pybliotext.py:200
 #, python-format
-msgid "pybliotext: using style `%s', format `%s'\n"
+msgid "pybliotext: using style “%s”, format “%s”\n"
 msgstr ""
-"pybliotext: menggunakan gaya '%s', format '%s'\n"
+"pybliotext: menggunakan gaya \"%s\", format \"%s\"\n"
 "\n"
 
-#: ../scripts/pybliotext.py:316
+#: scripts/pybliotext.py:323
 #, python-format
-msgid "can't create `%s'"
-msgstr "tak dapat membuat '%s'"
+msgid "can’t create “%s”"
+msgstr "tak dapat membuat \"%s\""
 
-#: ../scripts/pybliotext.py:342
+#: scripts/pybliotext.py:349
 #, python-format
-msgid "can't remove `%s'"
-msgstr "tak dapat menghapus '%s'"
+msgid "can’t remove “%s”"
+msgstr "tak dapat menghapus \"%s\""
 
-#: ../scripts/pybliotext.py:344
+#: scripts/pybliotext.py:351
 msgid "Done"
 msgstr "Selesai"
