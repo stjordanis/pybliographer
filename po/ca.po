@@ -112,7 +112,7 @@ msgid ""
 "Some changes require to restart Pybliographic\n"
 "to be correctly taken into account"
 msgstr ""
-"Per fer efectius alguns dels canvis\n"
+"Per a fer efectius alguns dels canvis\n"
 "cal reiniciar el Pybliographic"
 
 #: ../Pyblio/GnomeUI/Config.py:429
@@ -1094,7 +1094,7 @@ msgstr "S'està iniciant l'aplicació..."
 
 #: ../Pyblio/Resource.py:140
 msgid "No application to view resource"
-msgstr "No hi ha cap aplicació per visualitzar el recurs"
+msgstr "No hi ha cap aplicació per a visualitzar el recurs"
 
 #: ../Pyblio/Resource.py:141
 #, python-format
@@ -1108,7 +1108,7 @@ msgstr ""
 "configuració de recurs/visualitzadors per\n"
 "al tipus MIME «%s». Considereu la\n"
 "possibilitat d'afegir-ne una.\n"
-"URL: %s "
+"URL: %s"
 
 #: ../Pyblio/Style/Parser.py:261
 #, python-format
@@ -1146,7 +1146,7 @@ msgstr "%s: error: no es pot obrir el fitxer «%s»"
 #: ../pybliographer.py:124
 #, python-format
 msgid "For help, run %s and type `help' at the prompt"
-msgstr "Per obtenir ajuda, executeu %s i escriviu «help» a l'indicador"
+msgstr "Per a obtenir ajuda, executeu %s i escriviu «help» a l'indicador"
 
 #: ../pybliographer.py:133
 msgid ""
@@ -1155,8 +1155,8 @@ msgid ""
 "\tquit     to quit\n"
 msgstr ""
 "Ordres útils:\n"
-"\thelp     per obtenir ajuda\n"
-"\tquit     per sortir\n"
+"\thelp     per a obtenir ajuda\n"
+"\tquit     per a sortir\n"
 
 #. save history
 #: ../pybliographic.desktop.in.h:1
