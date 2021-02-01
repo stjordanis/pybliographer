@@ -60,5 +60,5 @@ HELP_FILES = 	about.page		\
 		typcon.page		\
 		whatsnew.page
 
-HELP_LINGUAS = cs de el es fr sl
+HELP_LINGUAS = cs de el es fr sl sv
 
